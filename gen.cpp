@@ -45,7 +45,7 @@ void output_code(char *a, std::vector<char *> *transitions) {
 
 	sprintf(buffer, "%d%d%d%d", a[0], a[1], a[2], a[3]);
 	printf("ORDER_%s:\n", buffer);
-	printf("printf(\"%%d\\n\", *segments[%d]);\n", highest);
+	printf("t->results[pos++] = *segments[%d];\n", highest);
 	printf("segments[%d]++;\n", highest);
 
 	puts("if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)");

@@ -1,11 +1,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-struct test {
-	int *postings[4];
-	size_t size;
-	unsigned int seed;
-};
+#include "harness.h"
 
 static int cmp(const void *a, const void *b) {
 	return *(int *)b - *(int *)a;
@@ -23,6 +19,7 @@ struct test *harness_new(size_t size, unsigned int seed) {
 		t->postings[i] = (int *)malloc(sizeof(int) * (size + 1));
 		t->postings[i][size] = 0;
 	}
+	t->results = (int *)malloc(sizeof(int) * size * 4);
 
 	/* Fill */
 	srand(seed);
@@ -35,4 +32,12 @@ struct test *harness_new(size_t size, unsigned int seed) {
 		qsort(t->postings[i], size, sizeof(int), cmp);
 
 	return t;
+}
+
+bool harness_verify(struct test *t) {
+	size_t i;
+	for (i = 1; i < t->size; i++)
+		if (t->results[i-1] < t->results[i])
+			return false;
+	return true;
 }
