@@ -37,4 +37,6 @@ int main() {
 
 	clock_t time_verify = clock();
 	printf("Verify: %f\n", (double)(time_verify - time_merge) / CLOCKS_PER_SEC);
+
+	return 0;
 }
