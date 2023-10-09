@@ -26,9 +26,7 @@ int main() {
 
 	// process
 	size_t pos = 0;
-	for (;;) {
 #include "state-machine.c"
-	}
 
 	clock_t time_merge = clock();
 	printf("Merge: %f\n", (double)(time_merge - time_init) / CLOCKS_PER_SEC);

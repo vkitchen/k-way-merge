@@ -19,4 +19,4 @@ merge-state-machine: gen.o merge-state-machine.o harness.o
 	$(CXX) $(CFLAGS) -o $@ merge-state-machine.o harness.o
 
 clean:
-	rm gen.o merge-heap.o merge-qsort.o merge-state-machine.o harness.o
+	rm gen merge-heap merge-qsort merge-state-machine gen.o merge-heap.o merge-qsort.o merge-state-machine.o harness.o

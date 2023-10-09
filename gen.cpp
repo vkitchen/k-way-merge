@@ -49,7 +49,7 @@ void output_code(char *a, std::vector<char *> *transitions) {
 	printf("segments[%d]++;\n", highest);
 
 	puts("if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)");
-	puts("\tbreak;");
+	puts("\tgoto DONE;");
 
 	printf("if (*segments[%d] >= *segments[%d])\n", highest, second);
 	printf("\tgoto ORDER_%s;\n", buffer);
@@ -125,6 +125,7 @@ int main() {
 		generate_transitions(&transitions, permutations[i]);
 		output_code(permutations[i], &transitions);
 	}
+	puts("DONE: ;");
 
 	// output_code(permutations[13], &transitions);
 
