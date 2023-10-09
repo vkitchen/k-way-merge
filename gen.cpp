@@ -22,21 +22,6 @@ int index_of(char *haystack, int needle) {
 	return -1;
 }
 
-void output_lookup(char *a) {
-	sprintf(buffer, "%d%d%d%d", a[0], a[1], a[2], a[3]);
-	printf("char lookup_%s[] = { %d, %d, %d, %d };\n", buffer, a[0], a[1], a[2], a[3]);
-}
-
-const char *lookup_fn = "\
-int lookup(char *table, char needle) {\n\
-	for (int i = 0; i < 4; i++)\n\
-		if (needle < *segments[table[i]])\n\
-			return i;\n\
-	return 0;\n\
-	}\n\
-}\n\
-";
-
 void output_code(char *a, std::vector<char *> *transitions) {
 	int highest = index_of(a, n);
 	int second = index_of(a, n - 1);
@@ -48,7 +33,7 @@ void output_code(char *a, std::vector<char *> *transitions) {
 	printf("t->results[pos++] = *segments[%d];\n", highest);
 	printf("segments[%d]++;\n", highest);
 
-	puts("if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)");
+	printf("if (*segments[%d] == 0)\n", highest);
 	puts("\tgoto DONE;");
 
 	printf("if (*segments[%d] >= *segments[%d])\n", highest, second);
@@ -126,18 +111,6 @@ int main() {
 		output_code(permutations[i], &transitions);
 	}
 	puts("DONE: ;");
-
-	// output_code(permutations[13], &transitions);
-
-	// for (size_t i = 0; i < permutations.size(); i++)
-	// 	output_lookup(permutations[i]);
-	// puts("");
-
-	// puts(lookup_fn);
-
-	// for (size_t i = 0; i < permutations.size(); i++)
-	//	printf("%d%d%d%d\n", permutations[i][0], permutations[i][1], permutations[i][2], permutations[i][3]);
-	// 	output_code(permutations[i]);
 
 	return 0;
 }

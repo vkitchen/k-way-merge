@@ -7,6 +7,7 @@ all: gen merge-heap merge-qsort merge-state-machine
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
+	./gen > state-machine.c
 
 merge-heap: merge-heap.o harness.o
 	$(CXX) $(CFLAGS) -o $@ merge-heap.o harness.o
@@ -15,7 +16,6 @@ merge-qsort: merge-qsort.o harness.o
 	$(CXX) $(CFLAGS) -o $@ merge-qsort.o harness.o
 
 merge-state-machine: gen.o merge-state-machine.o harness.o
-	./gen > state-machine.c
 	$(CXX) $(CFLAGS) -o $@ merge-state-machine.o harness.o
 
 clean:

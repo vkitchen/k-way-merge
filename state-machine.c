@@ -1,7 +1,7 @@
 ORDER_4321:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[1])
 	goto ORDER_4321;
@@ -15,7 +15,7 @@ else
 ORDER_4312:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[1])
 	goto ORDER_4312;
@@ -29,7 +29,7 @@ else
 ORDER_4231:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[2])
 	goto ORDER_4231;
@@ -43,7 +43,7 @@ else
 ORDER_4213:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[3])
 	goto ORDER_4213;
@@ -57,7 +57,7 @@ else
 ORDER_4132:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[2])
 	goto ORDER_4132;
@@ -71,7 +71,7 @@ else
 ORDER_4123:
 t->results[pos++] = *segments[0];
 segments[0]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[0] == 0)
 	goto DONE;
 if (*segments[0] >= *segments[3])
 	goto ORDER_4123;
@@ -85,7 +85,7 @@ else
 ORDER_3421:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[0])
 	goto ORDER_3421;
@@ -99,7 +99,7 @@ else
 ORDER_3412:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[0])
 	goto ORDER_3412;
@@ -113,7 +113,7 @@ else
 ORDER_3241:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[0])
 	goto ORDER_3241;
@@ -127,7 +127,7 @@ else
 ORDER_3214:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[0])
 	goto ORDER_3214;
@@ -141,7 +141,7 @@ else
 ORDER_3142:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[0])
 	goto ORDER_3142;
@@ -155,7 +155,7 @@ else
 ORDER_3124:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[0])
 	goto ORDER_3124;
@@ -169,7 +169,7 @@ else
 ORDER_2431:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[2])
 	goto ORDER_2431;
@@ -183,7 +183,7 @@ else
 ORDER_2413:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[3])
 	goto ORDER_2413;
@@ -197,7 +197,7 @@ else
 ORDER_2341:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[1])
 	goto ORDER_2341;
@@ -211,7 +211,7 @@ else
 ORDER_2314:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[1])
 	goto ORDER_2314;
@@ -225,7 +225,7 @@ else
 ORDER_2143:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[3])
 	goto ORDER_2143;
@@ -239,7 +239,7 @@ else
 ORDER_2134:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[2])
 	goto ORDER_2134;
@@ -253,7 +253,7 @@ else
 ORDER_1432:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[2])
 	goto ORDER_1432;
@@ -267,7 +267,7 @@ else
 ORDER_1423:
 t->results[pos++] = *segments[1];
 segments[1]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[1] == 0)
 	goto DONE;
 if (*segments[1] >= *segments[3])
 	goto ORDER_1423;
@@ -281,7 +281,7 @@ else
 ORDER_1342:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[1])
 	goto ORDER_1342;
@@ -295,7 +295,7 @@ else
 ORDER_1324:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[1])
 	goto ORDER_1324;
@@ -309,7 +309,7 @@ else
 ORDER_1243:
 t->results[pos++] = *segments[2];
 segments[2]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[2] == 0)
 	goto DONE;
 if (*segments[2] >= *segments[3])
 	goto ORDER_1243;
@@ -323,7 +323,7 @@ else
 ORDER_1234:
 t->results[pos++] = *segments[3];
 segments[3]++;
-if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+if (*segments[3] == 0)
 	goto DONE;
 if (*segments[3] >= *segments[2])
 	goto ORDER_1234;
