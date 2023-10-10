@@ -30,7 +30,7 @@ int main() {
 		t->results[pos++] = *segments[0];
 
 		segments[0] = segments[0].pointer() + 1;
-		if (*segments[0] == 0 && *segments[1] == 0 && *segments[2] == 0 && *segments[3] == 0)
+		if (*segments[0] == 0)
 			break;
 
 		priority.promote(segments[0], 0);
