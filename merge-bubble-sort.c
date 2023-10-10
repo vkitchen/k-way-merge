@@ -8,17 +8,14 @@
 int *segments[4];
 
 static void sort(int **a, int length) {
-	int swapped = 1;
-	while (swapped) {
-		swapped = 0;
-		for (int i = 1; i < length; i++) {
-			if (*a[i-1] < *a[i]) {
-				int *temp = a[i-1];
-				a[i-1] = a[i];
-				a[i] = temp;
-				swapped = 1;
-			}
+	for (int i = length; i > 1; i--) {
+		int *max = a[0];
+		for (int j = 1; j < i; j++) {
+			int *y = a[j];
+			a[j - 1] = (*max <= *y ? max : y);
+			max = (*max <= *y ? y : max);
 		}
+		a[i - 1] = max;
 	}
 }
 
