@@ -24,4 +24,4 @@ main: main.o $(OBJECTS)
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm $(OBJECTS)
+	rm state-machine.cpp gen.o main.o $(OBJECTS)

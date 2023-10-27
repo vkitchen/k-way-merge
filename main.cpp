@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include <time.h>
 
+#include <algorithm>
+#include <array>
+
 #include "config.h"
 #include "harness.h"
 #include "merge_quick_sort.h"
@@ -31,20 +34,11 @@ const char *names[NO_TESTS] = {
 	"State Machine (Lookup Table)",
 };
 
-int main() {
-	functions[0] = merge_quick_sort;
-	functions[1] = merge_bubble_sort;
-	functions[2] = merge_insertion_sort;
-	functions[3] = merge_heap;
-	functions[4] = merge_state_machine_compiled;
-	functions[5] = merge_state_machine_lookup_table;
+int order[NO_TESTS] = {0, 1, 2, 3, 4, 5};
 
-	names[0] = "Quick Sort";
-	names[1] = "Bubble Sort";
-	names[2] = "Insertion Sort";
-	names[3] = "Heap";
-	names[4] = "State Machine (Compiled)";
-	names[5] = "State Machine (Lookup Table)";
+int main() {
+	srand(time(NULL));
+	std::random_shuffle(std::begin(order), std::end(order));
 
 	clock_t time_begin = clock();
 
@@ -55,13 +49,15 @@ int main() {
 	printf("Init: %f\n", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
 
 	for (int i = 0; i < NO_TESTS; i++) {
+		int alg = order[i];
+
 		time_begin = clock();
 
-		(*functions[i])(t);
+		(*functions[alg])(t);
 
 		time_end = clock();
 
-		printf("%s %s %f\n", names[i], harness_verify(t) ? "true" : "false", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+		printf("%s %s %f\n", names[alg], harness_verify(t) ? "true" : "false", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
 	}
 
 	return 0;
