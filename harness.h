@@ -1,5 +1,7 @@
 #pragma once
 
+#include <stdlib.h>
+
 struct test {
 	int *postings[4];
 	int *results;

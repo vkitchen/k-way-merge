@@ -1,28 +1,27 @@
 CFLAGS = -Wall -Wextra -O2 -g
 
-.c.o:
+SRC = \
+	harness.cpp \
+	merge_quick_sort.cpp \
+	merge_insertion_sort.cpp \
+	merge_bubble_sort.cpp \
+	merge_heap.cpp \
+	merge_state_machine_compiled.cpp \
+	merge_state_machine_lookup_table.cpp
+
+OBJECTS = $(SRC:.cpp=.o)
+
+.cpp.o:
 	$(CXX) $(CFLAGS) -c $<
 
-all: gen merge-heap merge-qsort merge-insertion-sort merge-bubble-sort merge-state-machine
+all: gen main
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
-	./gen > state-machine.c
+	./gen > state-machine.cpp
 
-merge-heap: merge-heap.o harness.o
-	$(CXX) $(CFLAGS) -o $@ merge-heap.o harness.o
-
-merge-qsort: merge-qsort.o harness.o
-	$(CXX) $(CFLAGS) -o $@ merge-qsort.o harness.o
-
-merge-insertion-sort: merge-insertion-sort.o harness.o
-	$(CXX) $(CFLAGS) -o $@ merge-insertion-sort.o harness.o
-
-merge-bubble-sort: merge-bubble-sort.o harness.o
-	$(CXX) $(CFLAGS) -o $@ merge-bubble-sort.o harness.o
-
-merge-state-machine: gen.o merge-state-machine.o harness.o
-	$(CXX) $(CFLAGS) -o $@ merge-state-machine.o harness.o
+main: main.o $(OBJECTS)
+	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm gen merge-heap merge-qsort merge-insertion-sort merge-bubble-sort merge-state-machine gen.o merge-heap.o merge-qsort.o merge-insertion-sort.o merge-bubble-sort.o merge-state-machine.o harness.o state-machine.c
+	rm $(OBJECTS)
