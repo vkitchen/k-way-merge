@@ -22,10 +22,10 @@ void merge_insertion_sort(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {
-		t->results[pos++] = *segments[0]++;
-
 		if (*segments[0] == 0)
 			break;
+
+		t->results[pos++] = *segments[0]++;
 
 		sort(segments, n);
 	}

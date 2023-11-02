@@ -17,11 +17,12 @@ void merge_heap(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {
+		if (*segments[0] == 0)
+			break;
+
 		t->results[pos++] = *segments[0];
 
 		segments[0] = segments[0].pointer() + 1;
-		if (*segments[0] == 0)
-			break;
 
 		priority.promote(segments[0], 0);
 	}

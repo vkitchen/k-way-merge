@@ -25,11 +25,10 @@ void merge_state_machine_lookup_table(struct test *t, int n) {
 		size_t seg2 = priorities[state][2];
 		size_t seg3 = priorities[state][3];
 
-		t->results[pos++] = *segments[seg];
-		segments[seg]++;
-
 		if (*segments[seg] == 0)
 			break;
+
+		t->results[pos++] = *segments[seg]++;
 		
 		if (*segments[seg] >= *segments[seg1])
 			state = transitions[state][0];

@@ -17,10 +17,10 @@ void merge_quick_sort(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {
-		t->results[pos++] = *segments[0]++;
-
 		if (*segments[0] == 0)
 			break;
+
+		t->results[pos++] = *segments[0]++;
 
 		qsort(segments, n, sizeof(int *), cmp_p);
 	}

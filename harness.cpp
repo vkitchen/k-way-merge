@@ -22,7 +22,7 @@ struct test *harness_new(size_t length, size_t count, unsigned int seed) {
 		t->postings[i] = (int *)malloc(sizeof(int) * (length + 1));
 		t->postings[i][length] = 0;
 	}
-	t->results = (int *)malloc(sizeof(int) * length * count);
+	t->results = (int *)malloc(sizeof(int) * (length * count + 1));
 
 	/* Fill */
 	srand(seed);
@@ -38,12 +38,12 @@ struct test *harness_new(size_t length, size_t count, unsigned int seed) {
 }
 
 void harness_reset(struct test *t) {
-	memset(t->results, 0, sizeof(int) * t->length * t->count);
+	memset(t->results, 0, sizeof(int) * (t->length * t->count + 1));
 }
 
 bool harness_verify(struct test *t, size_t length, size_t count) {
 	size_t i;
-	if (t->results[0] == 0)
+	if (t->results[0] == 0 || t->results[length * count] != 0)
 		return false;
 
 	for (i = 1; i < length * count; i++) {
@@ -52,5 +52,6 @@ bool harness_verify(struct test *t, size_t length, size_t count) {
 		if (t->results[i-1] < t->results[i])
 			return false;
 	}
+
 	return true;
 }

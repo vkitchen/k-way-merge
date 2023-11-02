@@ -30,11 +30,11 @@ void output_code(char *a, std::vector<char *> *transitions) {
 
 	sprintf(buffer, "%d%d%d%d", a[0], a[1], a[2], a[3]);
 	printf("ORDER_%s:\n", buffer);
-	printf("t->results[pos++] = *segments[%d];\n", highest);
-	printf("segments[%d]++;\n", highest);
 
 	printf("if (*segments[%d] == 0)\n", highest);
 	puts("\tgoto DONE;");
+
+	printf("t->results[pos++] = *segments[%d]++;\n", highest);
 
 	printf("if (*segments[%d] >= *segments[%d])\n", highest, second);
 	printf("\tgoto ORDER_%s;\n", buffer);
