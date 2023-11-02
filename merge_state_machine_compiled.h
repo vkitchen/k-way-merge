@@ -1,3 +1,3 @@
 #pragma once
 
-void merge_state_machine_compiled(struct test *);
+void merge_state_machine_compiled(struct test *, int);

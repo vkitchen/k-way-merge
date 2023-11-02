@@ -13,16 +13,18 @@
 #include "merge_heap.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
+#include "merge_state_machine_lookup_table_alt.h"
 
-#define NO_TESTS 6
+#define NO_TESTS 7
 
-void (*functions[NO_TESTS]) (struct test *) = {
+void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_quick_sort,
 	merge_bubble_sort,
 	merge_insertion_sort,
 	merge_heap,
 	merge_state_machine_compiled,
 	merge_state_machine_lookup_table,
+	merge_state_machine_lookup_table_alt,
 };
 
 const char *names[NO_TESTS] = {
@@ -32,9 +34,10 @@ const char *names[NO_TESTS] = {
 	"Heap",
 	"State Machine (Compiled)",
 	"State Machine (Lookup Table)",
+	"State Machine (Lookup Table, Alternative)",
 };
 
-int order[NO_TESTS] = {0, 1, 2, 3, 4, 5};
+int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6};
 
 int main() {
 	srand(time(NULL));
@@ -42,22 +45,27 @@ int main() {
 
 	clock_t time_begin = clock();
 
-	struct test *t = harness_new(TEST_SIZE, SEED);
+	struct test *t = harness_new(ARRAY_LENGTH, ARRAY_COUNT, SEED);
 
 	clock_t time_end = clock();
 
 	printf("Init: %f\n", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
 
-	for (int i = 0; i < NO_TESTS; i++) {
-		int alg = order[i];
+	for (int n = 3; n <= ARRAY_COUNT; n++) {
+		printf("\n## MERGING %d LISTS ##\n", n);
+		for (int i = 0; i < NO_TESTS; i++) {
+			harness_reset(t);
 
-		time_begin = clock();
+			int alg = order[i];
 
-		(*functions[alg])(t);
+			time_begin = clock();
 
-		time_end = clock();
+			(*functions[alg])(t, n);
 
-		printf("%s %s %f\n", names[alg], harness_verify(t) ? "true" : "false", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+			time_end = clock();
+
+			printf("%s %s %f\n", names[alg], harness_verify(t, ARRAY_LENGTH, n) ? "true" : "false", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+		}
 	}
 
 	return 0;

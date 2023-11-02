@@ -10,7 +10,7 @@ static int cmp_p(const void *a, const void *b) {
 	return **(int **)b - **(int **)a;
 }
 
-void merge_state_machine_lookup_table(struct test *t) {
+void merge_state_machine_lookup_table(struct test *t, int n) {
 	for (int i = 0; i < 4; i++)
 		segments[i] = t->postings[i];
 

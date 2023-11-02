@@ -6,7 +6,7 @@ typedef JASS::pointer_box<int> value_compare_pointer;
 
 static value_compare_pointer segments[4];
 
-void merge_heap(struct test *t) {
+void merge_heap(struct test *t, int n) {
 	for (int i = 0; i < 4; i++)
 		segments[i] = t->postings[i];
 	

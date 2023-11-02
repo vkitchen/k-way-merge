@@ -1,4 +1,6 @@
-char priorities[][4] = {
+#pragma once
+
+static char priorities[][4] = {
 	{ 0, 1, 2, 3 }, // State 0
 	{ 0, 1, 3, 2 }, // State 1
 	{ 0, 2, 1, 3 }, // State 2
@@ -24,7 +26,8 @@ char priorities[][4] = {
 	{ 2, 3, 1, 0 }, // State 22
 	{ 3, 2, 1, 0 }, // State 23
 };
-char transitions[][4] = {
+
+static char transitions[][4] = {
 	{ 0, 6, 12, 18 }, // State 0
 	{ 1, 7, 13, 19 }, // State 1
 	{ 2, 8, 14, 20 }, // State 2
