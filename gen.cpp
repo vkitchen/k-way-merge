@@ -5,7 +5,6 @@
 
 char *a;
 int n;
-char buffer[255];
 
 std::vector<char *> permutations;
 

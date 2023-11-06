@@ -1,10 +1,10 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <vector>
 
-char a[] = { 4, 3, 2, 1, 0 };
-int n = sizeof(a) - 1;
-char buffer[255];
+char *a;
+int n;
 
 std::vector<char *> permutations;
 
@@ -32,19 +32,18 @@ int index_of_permutation(char *needle) {
 
 void output_priorities(int index) {
 	char *a = permutations[index];
-	int highest = index_of(a, n);
-	int second = index_of(a, n - 1);
-	int third = index_of(a, n - 2);
-	int fourth = index_of(a, n - 3);
 
-	printf("\t{ %d, %d, %d, %d }, // State %d\n", highest, second, third, fourth, index);
+	printf("\t{ ");
+	for (int i = 0; i < n; i++)
+		printf("%d, ", index_of(a, n - i));
+	printf("}, // State %d\n", index);
 }
 
 void output_transitions(int index, std::vector<char *> *transitions) {
-	int transition_second = index_of_permutation((*transitions)[0]);
-	int transition_third = index_of_permutation((*transitions)[1]);
-	int transition_fourth = index_of_permutation((*transitions)[2]);
-	printf("\t{ %d, %d, %d, %d }, // State %d\n", index, transition_second, transition_third, transition_fourth, index);
+	printf("\t{ %d, ", index);
+	for (int i = 0; i < n - 1; i++)
+		printf("%d, ", index_of_permutation((*transitions)[i]));
+	printf("}, // State %d\n", index);
 }
 
 
@@ -92,19 +91,34 @@ void generate_transitions(std::vector<char *> *transitions, char *permutation_in
 	}
 }
 
-int main() {
+int main(int argc, char **argv) {
+	if (argc != 2) {
+		puts("Usage: gen [n]");
+		return 0;
+	}
+
+	n = atoi(argv[1]);
+	if (!(3 <= n && n <= 16)) {
+		puts("Error: param [n] not within range 3-16");
+		return 1;
+	}
+
+	a = (char *)malloc(n + 1);
+	for (int i = 0; i < n; i++)
+		a[i] = n - i;
+	a[n] = 0;
+
 	generate_permutations();
 
 	std::vector<char *> transitions;
-	generate_transitions(&transitions, permutations[13]);
 
-	puts("char priorities[][4] = {");
+	printf("static char priorities[][%d] = {\n", n);
 	for (size_t i = 0; i < permutations.size(); i++) {
 		output_priorities(i);
 	}
 	puts("};");
 
-	puts("char transitions[][4] = {");
+	printf("static char transitions[][%d] = {\n", n);
 	for (size_t i = 0; i < permutations.size(); i++) {
 		transitions.clear();
 		generate_transitions(&transitions, permutations[i]);
