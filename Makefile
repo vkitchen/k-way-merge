@@ -12,6 +12,9 @@ SRC = \
 	merge_state_machine_lookup_table_3.cpp \
 	merge_state_machine_lookup_table_4.cpp \
 	merge_state_machine_lookup_table_5.cpp \
+	merge_state_machine_lookup_table_alt_3.cpp \
+	merge_state_machine_lookup_table_alt_4.cpp \
+	merge_state_machine_lookup_table_alt_5.cpp \
 	merge_state_machine_lookup_table_alt.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
