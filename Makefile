@@ -20,10 +20,12 @@ all: gen main
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
-	./gen > state-machine.cpp
+	./gen 3 > state_machine_3.cpp
+	./gen 4 > state_machine_4.cpp
+	./gen 5 > state_machine_5.cpp
 
 main: main.o $(OBJECTS)
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state-machine.cpp gen.o main.o $(OBJECTS)
+	rm state_machine_*.cpp gen.o main.o $(OBJECTS)

@@ -310,4 +310,3 @@ else if (*segments[3] >= *segments[0])
 else
 	goto ORDER_2341;
 
-DONE: ;

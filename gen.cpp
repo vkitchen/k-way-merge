@@ -1,9 +1,10 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <vector>
 
-char a[] = { 4, 3, 2, 1, 0 };
-int n = sizeof(a) - 1;
+char *a;
+int n;
 char buffer[255];
 
 std::vector<char *> permutations;
@@ -25,11 +26,11 @@ int index_of(char *haystack, int needle) {
 void output_code(char *a, std::vector<char *> *transitions) {
 	int highest = index_of(a, n);
 	int second = index_of(a, n - 1);
-	int third = index_of(a, n - 2);
-	int fourth = index_of(a, n - 3);
 
-	sprintf(buffer, "%d%d%d%d", a[0], a[1], a[2], a[3]);
-	printf("ORDER_%s:\n", buffer);
+	printf("ORDER_");
+	for (int i = 0; i < n; i++)
+		printf("%d", a[i]);
+	puts(":");
 
 	printf("if (*segments[%d] == 0)\n", highest);
 	puts("\tgoto DONE;");
@@ -37,20 +38,24 @@ void output_code(char *a, std::vector<char *> *transitions) {
 	printf("t->results[pos++] = *segments[%d]++;\n", highest);
 
 	printf("if (*segments[%d] >= *segments[%d])\n", highest, second);
-	printf("\tgoto ORDER_%s;\n", buffer);
+	printf("\tgoto ORDER_");
+	for (int i = 0; i < n; i++)
+		printf("%d", a[i]);
+	puts(";");
 
-	sprintf(buffer, "%d%d%d%d", (*transitions)[0][0], (*transitions)[0][1], (*transitions)[0][2], (*transitions)[0][3]);
-	printf("else if (*segments[%d] >= *segments[%d])\n", highest, third);
-	printf("\tgoto ORDER_%s;\n", buffer);
+	for (int i = 0; i < n - 1; i++) {
+		int comp = index_of(a, n - 2 - i);
 
-	sprintf(buffer, "%d%d%d%d", (*transitions)[1][0], (*transitions)[1][1], (*transitions)[1][2], (*transitions)[1][3]);
-	printf("else if (*segments[%d] >= *segments[%d])\n", highest, fourth);
-	printf("\tgoto ORDER_%s;\n", buffer);
+		if (i == n - 2)
+			puts("else");
+		else
+			printf("else if (*segments[%d] >= *segments[%d])\n", highest, comp);
 
-	sprintf(buffer, "%d%d%d%d", (*transitions)[2][0], (*transitions)[2][1], (*transitions)[2][2], (*transitions)[2][3]);
-	puts("else");
-	printf("\tgoto ORDER_%s;\n", buffer);
-
+		printf("\tgoto ORDER_");
+		for (int j = 0; j < n; j++)
+			printf("%d", (*transitions)[i][j]);
+		puts(";");
+	}
 
 	puts("");
 }
@@ -99,18 +104,32 @@ void generate_transitions(std::vector<char *> *transitions, char *permutation_in
 	}
 }
 
-int main() {
+int main(int argc, char **argv) {
+	if (argc != 2) {
+		puts("Usage: gen [n]");
+		return 0;
+	}
+
+	n = atoi(argv[1]);
+	if (!(3 <= n && n <= 16)) {
+		puts("Error: param [n] not within range 3-16");
+		return 1;
+	}
+
+	a = (char *)malloc(n + 1);
+	for (int i = 0; i < n; i++)
+		a[i] = n - i;
+	a[n] = 0;
+
 	generate_permutations();
 
 	std::vector<char *> transitions;
-	generate_transitions(&transitions, permutations[13]);
 
 	for (size_t i = 0; i < permutations.size(); i++) {
 		transitions.clear();
 		generate_transitions(&transitions, permutations[i]);
 		output_code(permutations[i], &transitions);
 	}
-	puts("DONE: ;");
 
 	return 0;
 }
