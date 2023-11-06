@@ -22,6 +22,8 @@ void merge_state_machine_compiled(struct test *t, int n) {
 #include "state_machine_4.cpp"
 	} else if (n == 5) {
 #include "state_machine_5.cpp"
+	} else if (n == 6) {
+#include "state_machine_6.cpp"
 	}
 
 DONE: ;

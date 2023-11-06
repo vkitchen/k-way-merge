@@ -7,4 +7,8 @@ void merge_state_machine_lookup_table_alt(struct test *t, int n) {
 		merge_state_machine_lookup_table_alt_4(t);
 	else if (n == 5)
 		merge_state_machine_lookup_table_alt_5(t);
+	else if (n == 6)
+		merge_state_machine_lookup_table_alt_6(t);
+	else if (n == 7)
+		merge_state_machine_lookup_table_alt_7(t);
 }

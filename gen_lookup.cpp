@@ -112,13 +112,19 @@ int main(int argc, char **argv) {
 
 	std::vector<char *> transitions;
 
-	printf("static unsigned char priorities[][%d] = {\n", n);
+	if (n < 6)
+		printf("static unsigned char priorities[][%d] = {\n", n);
+	else
+		printf("static uint16_t priorities[][%d] = {\n", n);
 	for (size_t i = 0; i < permutations.size(); i++) {
 		output_priorities(i);
 	}
 	puts("};");
 
-	printf("static unsigned char transitions[][%d] = {\n", n);
+	if (n < 6)
+		printf("static unsigned char transitions[][%d] = {\n", n);
+	else
+		printf("static uint16_t transitions[][%d] = {\n", n);
 	for (size_t i = 0; i < permutations.size(); i++) {
 		transitions.clear();
 		generate_transitions(&transitions, permutations[i]);
