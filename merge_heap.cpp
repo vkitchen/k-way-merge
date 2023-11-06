@@ -4,13 +4,13 @@
 
 typedef JASS::pointer_box<int> value_compare_pointer;
 
-static value_compare_pointer segments[4];
-
 void merge_heap(struct test *t, int n) {
-	for (int i = 0; i < 4; i++)
+	value_compare_pointer *segments = (value_compare_pointer *)malloc(sizeof(value_compare_pointer) * n);
+
+	for (int i = 0; i < n; i++)
 		segments[i] = t->postings[i];
 	
-	JASS::heap<value_compare_pointer> priority(segments, 4);
+	JASS::heap<value_compare_pointer> priority(segments, n);
 
 	priority.make_heap();
 
@@ -26,4 +26,6 @@ void merge_heap(struct test *t, int n) {
 
 		priority.promote(segments[0], 0);
 	}
+
+	free(segments);
 }
