@@ -2,7 +2,7 @@
 
 #include "harness.h"
 
-#include "state-tables.h"
+#include "state_table_4.h"
 
 static int *segments[4];
 
