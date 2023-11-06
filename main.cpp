@@ -9,17 +9,19 @@
 #include "harness.h"
 #include "merge_quick_sort.h"
 #include "merge_bubble_sort.h"
+#include "merge_double_bubble_sort.h"
 #include "merge_insertion_sort.h"
 #include "merge_heap.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
 
-#define NO_TESTS 7
+#define NO_TESTS 8
 
 void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_quick_sort,
 	merge_bubble_sort,
+	merge_double_bubble_sort,
 	merge_insertion_sort,
 	merge_heap,
 	merge_state_machine_compiled,
@@ -30,6 +32,7 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 const char *names[NO_TESTS] = {
 	"Quick Sort",
 	"Bubble Sort",
+	"Double Bubble Sort",
 	"Insertion Sort",
 	"Heap",
 	"State Machine (Compiled)",
@@ -37,7 +40,7 @@ const char *names[NO_TESTS] = {
 	"State Machine (Lookup Table, Alternative)",
 };
 
-int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6};
+int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7};
 
 int main() {
 	srand(time(NULL));

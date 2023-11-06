@@ -2,13 +2,13 @@
 
 static void sort(int **a, int length) {
 	for (int i = length; i > 1; i--) {
-		int *max = a[0];
+		int *min = a[0];
 		for (int j = 1; j < i; j++) {
 			int *y = a[j];
-			a[j - 1] = (*max <= *y ? max : y);
-			max = (*max <= *y ? y : max);
+			a[j - 1] = (*min >= *y ? min : y);
+			min = (*min >= *y ? y : min);
 		}
-		a[i - 1] = max;
+		a[i - 1] = min;
 	}
 }
 
@@ -23,10 +23,10 @@ void merge_bubble_sort(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {
-		t->results[pos++] = *segments[0]++;
-
 		if (*segments[0] == 0)
 			break;
+
+		t->results[pos++] = *segments[0]++;
 
 		sort(segments, n);
 	}
