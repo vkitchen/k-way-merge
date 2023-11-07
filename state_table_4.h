@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 static unsigned char priorities[][4] = {
 	{ 0, 1, 2, 3, }, // State 0
 	{ 0, 1, 3, 2, }, // State 1

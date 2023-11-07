@@ -112,6 +112,8 @@ int main(int argc, char **argv) {
 
 	std::vector<char *> transitions;
 
+	puts("#include <stdint.h>\n");
+
 	if (n < 6)
 		printf("static unsigned char priorities[][%d] = {\n", n);
 	else
