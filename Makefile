@@ -14,12 +14,16 @@ SRC = \
 	merge_state_machine_lookup_table_5.cpp \
 	merge_state_machine_lookup_table_6.cpp \
 	merge_state_machine_lookup_table_7.cpp \
+	merge_state_machine_lookup_table_8.cpp \
 	merge_state_machine_lookup_table_alt_3.cpp \
 	merge_state_machine_lookup_table_alt_4.cpp \
 	merge_state_machine_lookup_table_alt_5.cpp \
 	merge_state_machine_lookup_table_alt_6.cpp \
 	merge_state_machine_lookup_table_alt_7.cpp \
-	merge_state_machine_lookup_table_alt.cpp
+	merge_state_machine_lookup_table_alt_8.cpp \
+	merge_state_machine_lookup_table_alt.cpp \
+	merge_state_machine_lookup_table_binary_search.cpp \
+	merge_state_machine_lookup_table_binary_search_8.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -31,23 +35,18 @@ all: gen gen-lookup main
 merge_state_machine_compiled.o: merge_state_machine_compiled.cpp
 	$(CXX) -Wall -Wextra -O1 -g -c $<
 
+main.o: main.cpp config.h
+	$(CXX) $(CFLAGS) -c $<
+
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
-	./gen 3 > state_machine_3.cpp
-	./gen 4 > state_machine_4.cpp
-	./gen 5 > state_machine_5.cpp
-	./gen 6 > state_machine_6.cpp
-	./gen 7 > state_machine_7.cpp
+	for i in `seq 3 7`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
 
 gen-lookup: gen_lookup.o
 	$(CXX) $(CFLAGS) -o $@ gen_lookup.o
-	./gen-lookup 3 > state_table_3.h
-	./gen-lookup 4 > state_table_4.h
-	./gen-lookup 5 > state_table_5.h
-	./gen-lookup 6 > state_table_6.h
-	./gen-lookup 7 > state_table_7.h
+	for i in `seq 3 8`; do ./gen-lookup "$$i" > "state_table_$$i.h"; done
 
-main: main.o $(OBJECTS) config.h
+main: main.o $(OBJECTS)
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
