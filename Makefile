@@ -28,6 +28,9 @@ OBJECTS = $(SRC:.cpp=.o)
 
 all: gen gen-lookup main
 
+merge_state_machine_compiled.o: merge_state_machine_compiled.cpp
+	$(CXX) -Wall -Wextra -O1 -g -c $<
+
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
 	./gen 3 > state_machine_3.cpp
@@ -44,7 +47,7 @@ gen-lookup: gen_lookup.o
 	./gen-lookup 6 > state_table_6.h
 	./gen-lookup 7 > state_table_7.h
 
-main: main.o $(OBJECTS)
+main: main.o $(OBJECTS) config.h
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
