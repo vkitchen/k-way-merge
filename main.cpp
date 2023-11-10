@@ -15,8 +15,9 @@
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
+#include "merge_state_machine_lookup_table_asc.h"
 
-#define NO_TESTS 8
+#define NO_TESTS 9
 
 void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_quick_sort,
@@ -27,6 +28,7 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_state_machine_compiled,
 	merge_state_machine_lookup_table,
 	merge_state_machine_lookup_table_alt,
+	merge_state_machine_lookup_table_asc,
 };
 
 const char *names[NO_TESTS] = {
@@ -38,9 +40,10 @@ const char *names[NO_TESTS] = {
 	"State Machine (Compiled)",
 	"State Machine (Lookup Table)",
 	"State Machine (Lookup Table, Alternative)",
+	"State Machine (Lookup Table, Ascending)",
 };
 
-int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7};
+int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7, 8};
 
 int main() {
 	srand(time(NULL));
