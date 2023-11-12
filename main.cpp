@@ -70,7 +70,9 @@ int main() {
 
 			time_end = clock();
 
-			printf("%s %s %f\n", names[alg], harness_verify(t, ARRAY_LENGTH, n) ? "true" : "false", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+			const char *status = harness_verify(t, ARRAY_LENGTH, n);
+
+			printf("%s %s %s %f\n", names[alg], status[0] == '\0' ? "true" : "false", status, (double)(time_end - time_begin) / CLOCKS_PER_SEC);
 		}
 	}
 

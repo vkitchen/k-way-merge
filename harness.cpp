@@ -41,17 +41,19 @@ void harness_reset(struct test *t) {
 	memset(t->results, 0, sizeof(int) * (t->length * t->count + 1));
 }
 
-bool harness_verify(struct test *t, size_t length, size_t count) {
+const char *harness_verify(struct test *t, size_t length, size_t count) {
 	size_t i;
-	if (t->results[0] == 0 || t->results[length * count] != 0)
-		return false;
+	if (t->results[0] == 0)
+		return "Starts with \\0";
+	if (t->results[length * count] != 0)
+		return "Overrun";
 
 	for (i = 1; i < length * count; i++) {
 		if (t->results[i] == 0)
-			return false;
+			return "Includes \\0";
 		if (t->results[i-1] < t->results[i])
-			return false;
+			return "Ascending values";
 	}
 
-	return true;
+	return "";
 }
