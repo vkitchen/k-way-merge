@@ -9,25 +9,7 @@ SRC = \
 	merge_heap.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_lookup_table.cpp \
-	merge_state_machine_lookup_table_3.cpp \
-	merge_state_machine_lookup_table_4.cpp \
-	merge_state_machine_lookup_table_5.cpp \
-	merge_state_machine_lookup_table_6.cpp \
-	merge_state_machine_lookup_table_7.cpp \
-	merge_state_machine_lookup_table_8.cpp \
-	merge_state_machine_lookup_table_alt_3.cpp \
-	merge_state_machine_lookup_table_alt_4.cpp \
-	merge_state_machine_lookup_table_alt_5.cpp \
-	merge_state_machine_lookup_table_alt_6.cpp \
-	merge_state_machine_lookup_table_alt_7.cpp \
-	merge_state_machine_lookup_table_alt_8.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
-	merge_state_machine_lookup_table_asc_3.cpp \
-	merge_state_machine_lookup_table_asc_4.cpp \
-	merge_state_machine_lookup_table_asc_5.cpp \
-	merge_state_machine_lookup_table_asc_6.cpp \
-	merge_state_machine_lookup_table_asc_7.cpp \
-	merge_state_machine_lookup_table_asc_8.cpp \
 	merge_state_machine_lookup_table_asc.cpp
 
 OBJECTS = $(SRC:.cpp=.o)

@@ -1,6 +1,4 @@
-#include <stdint.h>
-
-static uint16_t priorities[][6] = {
+static uint16_t priorities_6[][6] = {
 	{ 5, 4, 3, 2, 1, 0, }, // State 0
 	{ 4, 5, 3, 2, 1, 0, }, // State 1
 	{ 5, 3, 4, 2, 1, 0, }, // State 2
@@ -722,7 +720,7 @@ static uint16_t priorities[][6] = {
 	{ 0, 1, 2, 3, 5, 4, }, // State 718
 	{ 0, 1, 2, 3, 4, 5, }, // State 719
 };
-static uint16_t transitions[][6] = {
+static uint16_t transitions_6[][6] = {
 	{ 0, 1, 3, 9, 33, 153, }, // State 0
 	{ 1, 0, 2, 8, 32, 152, }, // State 1
 	{ 2, 4, 5, 11, 35, 155, }, // State 2

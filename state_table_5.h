@@ -1,6 +1,4 @@
-#include <stdint.h>
-
-static unsigned char priorities[][5] = {
+static unsigned char priorities_5[][5] = {
 	{ 0, 1, 2, 3, 4, }, // State 0
 	{ 0, 1, 2, 4, 3, }, // State 1
 	{ 0, 1, 3, 2, 4, }, // State 2
@@ -122,7 +120,7 @@ static unsigned char priorities[][5] = {
 	{ 3, 4, 2, 1, 0, }, // State 118
 	{ 4, 3, 2, 1, 0, }, // State 119
 };
-static unsigned char transitions[][5] = {
+static unsigned char transitions_5[][5] = {
 	{ 0, 24, 48, 72, 96, }, // State 0
 	{ 1, 25, 49, 73, 97, }, // State 1
 	{ 2, 26, 50, 74, 98, }, // State 2
