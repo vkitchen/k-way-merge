@@ -2,6 +2,7 @@ CFLAGS = -Wall -Wextra -O2 -g
 
 SRC = \
 	harness.cpp \
+	merge_baseline_copy_sort.cpp \
 	merge_quick_sort.cpp \
 	merge_insertion_sort.cpp \
 	merge_bubble_sort.cpp \

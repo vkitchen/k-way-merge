@@ -7,6 +7,7 @@
 
 #include "config.h"
 #include "harness.h"
+#include "merge_baseline_copy_sort.h"
 #include "merge_quick_sort.h"
 #include "merge_bubble_sort.h"
 #include "merge_double_bubble_sort.h"
@@ -59,6 +60,12 @@ int main() {
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("\n## MERGING %d LISTS ##\n", n);
+
+		time_begin = clock();
+		merge_baseline_copy_sort(t, n);
+		time_end = clock();
+		printf("Baseline (copy+sort) %f\n", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+
 		for (int i = 0; i < NO_TESTS; i++) {
 			harness_reset(t);
 

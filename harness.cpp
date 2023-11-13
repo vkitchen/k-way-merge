@@ -22,9 +22,12 @@ struct test *harness_new(size_t length, size_t count, unsigned int seed) {
 		t->postings[i] = (int *)malloc(sizeof(int) * (length + 1));
 		t->postings[i][length] = 0;
 	}
+	t->baseline = (int *)malloc(sizeof(int) * (length * count + 1));
 	t->results = (int *)malloc(sizeof(int) * (length * count + 1));
 
 	/* Fill */
+	memset(t->baseline, 0, sizeof(int) * (t->length * count + 1));
+
 	srand(seed);
 	for (i = 0; i < count; i++)
 		for (j = 0; j < length; j++)
@@ -54,6 +57,10 @@ const char *harness_verify(struct test *t, size_t length, size_t count) {
 		if (t->results[i-1] < t->results[i])
 			return "Ascending values";
 	}
+
+	for (i = 0; i < length * count; i++)
+		if (t->baseline[i] != t->results[i])
+			return "Doesn't match baseline";
 
 	return "";
 }

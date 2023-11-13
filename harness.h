@@ -4,6 +4,7 @@
 
 struct test {
 	int **postings;
+	int *baseline;
 	int *results;
 	size_t length;
 	size_t count;
