@@ -50,11 +50,14 @@ const char *names[NO_TESTS] = {
 	"State Machine (Lookup Table Ascending)",
 };
 
-int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int order[NO_TESTS];
 
 double timings[16][NO_TESTS];
 
 int main() {
+	for (int i = 0; i < NO_TESTS; i++)
+		order[i] = i;
+
 	srand(time(NULL));
 	std::random_shuffle(std::begin(order), std::end(order));
 
