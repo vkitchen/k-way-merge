@@ -9,6 +9,7 @@
 #include "harness.h"
 #include "merge_baseline_copy_sort.h"
 #include "merge_quick_sort.h"
+#include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
 #include "merge_bubble_sort_fast.h"
 #include "merge_double_bubble_sort.h"
@@ -19,10 +20,11 @@
 #include "merge_state_machine_lookup_table_alt.h"
 #include "merge_state_machine_lookup_table_asc.h"
 
-#define NO_TESTS 10
+#define NO_TESTS 11
 
 void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_quick_sort,
+	merge_std_sort,
 	merge_bubble_sort,
 	merge_bubble_sort_fast,
 	merge_double_bubble_sort,
@@ -36,6 +38,7 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 
 const char *names[NO_TESTS] = {
 	"Quick Sort",
+	"Std Sort",
 	"Bubble Sort",
 	"Bubble Sort Fast",
 	"Double Bubble Sort",
@@ -47,7 +50,7 @@ const char *names[NO_TESTS] = {
 	"State Machine (Lookup Table Ascending)",
 };
 
-int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 double timings[16][NO_TESTS];
 

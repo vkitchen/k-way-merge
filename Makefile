@@ -4,6 +4,7 @@ SRC = \
 	harness.cpp \
 	merge_baseline_copy_sort.cpp \
 	merge_quick_sort.cpp \
+	merge_std_sort.cpp \
 	merge_insertion_sort.cpp \
 	merge_bubble_sort.cpp \
 	merge_bubble_sort_fast.cpp \
