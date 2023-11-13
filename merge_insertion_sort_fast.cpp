@@ -1,6 +1,6 @@
 #include "harness.h"
 
-static void sort(int **a, int length) {
+static void sort_full(int **a, int length) {
 	int i, j;
 	for (i = 1; i < length; i++) {
 		int *x = a[i];
@@ -10,13 +10,21 @@ static void sort(int **a, int length) {
 	}
 }
 
-void merge_insertion_sort(struct test *t, int n) {
+static void sort_partial(int **a, int length) {
+	int i;
+	int *x = a[0];
+	for (i = 0; i < length-1 && *a[i+1] > *x; i++)
+		a[i] = a[i+1];
+	a[i] = x;
+}
+
+void merge_insertion_sort_fast(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
 		segments[i] = t->postings[i];
 
-	sort(segments, n);
+	sort_full(segments, n);
 
 	// process
 	size_t pos = 0;
@@ -26,7 +34,7 @@ void merge_insertion_sort(struct test *t, int n) {
 
 		t->results[pos++] = *segments[0]++;
 
-		sort(segments, n);
+		sort_partial(segments, n);
 	}
 
 	free(segments);

@@ -1,0 +1,75 @@
+Init: 343.587221
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 4.124827
+Heap true  1.284093
+State Machine (Lookup Table Ascending) true  1.078350
+Bubble Sort Fast true  0.982788
+Insertion Sort true  1.187259
+State Machine (Lookup Table Alternative) true  1.034144
+State Machine (Compiled) true  0.884526
+Insertion Sort Fast true  0.877239
+State Machine (Lookup Table) true  1.107334
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 7.373409
+Heap true  1.588226
+State Machine (Lookup Table Ascending) true  1.549983
+Bubble Sort Fast true  1.528818
+Insertion Sort true  2.023400
+State Machine (Lookup Table Alternative) true  1.496657
+State Machine (Compiled) true  1.341666
+Insertion Sort Fast true  1.338651
+State Machine (Lookup Table) true  1.511961
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 7.265991
+Heap true  2.113222
+State Machine (Lookup Table Ascending) true  2.239595
+Bubble Sort Fast true  2.180590
+Insertion Sort true  2.922727
+State Machine (Lookup Table Alternative) true  2.190214
+State Machine (Compiled) true  1.924279
+Insertion Sort Fast true  1.805839
+State Machine (Lookup Table) true  2.310215
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 10.227255
+Heap true  2.946518
+State Machine (Lookup Table Ascending) true  2.836843
+Bubble Sort Fast true  2.874672
+Insertion Sort true  3.949025
+State Machine (Lookup Table Alternative) true  2.887391
+State Machine (Compiled) true  2.896026
+Insertion Sort Fast true  2.287057
+State Machine (Lookup Table) true  2.947630
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 9.028830
+Heap true  4.079440
+State Machine (Lookup Table Ascending) true  3.988478
+Bubble Sort Fast true  3.672503
+Insertion Sort true  5.004857
+State Machine (Lookup Table Alternative) true  4.016387
+State Machine (Compiled) false Starts with \0 0.000006
+Insertion Sort Fast true  2.809931
+State Machine (Lookup Table) true  3.965287
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 13.673709
+Heap true  4.616029
+State Machine (Lookup Table Ascending) true  6.979532
+Bubble Sort Fast true  4.585775
+Insertion Sort true  6.234329
+State Machine (Lookup Table Alternative) true  6.988052
+State Machine (Compiled) false Starts with \0 0.000006
+Insertion Sort Fast true  3.435531
+State Machine (Lookup Table) true  7.004017
+
+n,Bubble Sort Fast,Insertion Sort,Insertion Sort Fast,Heap,State Machine (Compiled),State Machine (Lookup Table),State Machine (Lookup Table Alternative),State Machine (Lookup Table Ascending)
+3,0.982788,1.187259,0.877239,1.284093,0.884526,1.107334,1.034144,1.078350
+4,1.528818,2.023400,1.338651,1.588226,1.341666,1.511961,1.496657,1.549983
+5,2.180590,2.922727,1.805839,2.113222,1.924279,2.310215,2.190214,2.239595
+6,2.874672,3.949025,2.287057,2.946518,2.896026,2.947630,2.887391,2.836843
+7,3.672503,5.004857,2.809931,4.079440,0.000006,3.965287,4.016387,3.988478
+8,4.585775,6.234329,3.435531,4.616029,0.000006,7.004017,6.988052,6.979532

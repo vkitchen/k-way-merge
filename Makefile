@@ -6,6 +6,7 @@ SRC = \
 	merge_quick_sort.cpp \
 	merge_std_sort.cpp \
 	merge_insertion_sort.cpp \
+	merge_insertion_sort_fast.cpp \
 	merge_bubble_sort.cpp \
 	merge_bubble_sort_fast.cpp \
 	merge_double_bubble_sort.cpp \
