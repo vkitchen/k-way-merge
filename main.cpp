@@ -43,11 +43,13 @@ const char *names[NO_TESTS] = {
 	"Heap",
 	"State Machine (Compiled)",
 	"State Machine (Lookup Table)",
-	"State Machine (Lookup Table, Alternative)",
-	"State Machine (Lookup Table, Ascending)",
+	"State Machine (Lookup Table Alternative)",
+	"State Machine (Lookup Table Ascending)",
 };
 
 int order[NO_TESTS] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+double timings[16][NO_TESTS];
 
 int main() {
 	srand(time(NULL));
@@ -82,8 +84,26 @@ int main() {
 
 			const char *status = harness_verify(t, ARRAY_LENGTH, n);
 
-			printf("%s %s %s %f\n", names[alg], status[0] == '\0' ? "true" : "false", status, (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+			double runtime = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
+			timings[n][alg] = runtime;
+
+			printf("%s %s %s %f\n", names[alg], status[0] == '\0' ? "true" : "false", status, runtime);
 		}
+	}
+
+	puts("");
+
+	printf("n");
+	for (int i = 0; i < NO_TESTS; i++)
+		printf(",%s", names[i]);
+	puts("");
+
+
+	for (int n = 3; n <= ARRAY_COUNT; n++) {
+		printf("%d", n);
+		for (int i = 0; i < NO_TESTS; i++)
+			printf(",%f", timings[n][i]);
+		puts("");
 	}
 
 	return 0;
