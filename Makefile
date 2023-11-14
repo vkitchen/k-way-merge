@@ -14,7 +14,8 @@ SRC = \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_lookup_table.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
-	merge_state_machine_lookup_table_asc.cpp
+	merge_state_machine_lookup_table_asc.cpp \
+	merge_state_machine_lookup_table_binary_search.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 

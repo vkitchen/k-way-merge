@@ -20,6 +20,7 @@
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
 #include "merge_state_machine_lookup_table_asc.h"
+#include "merge_state_machine_lookup_table_binary_search.h"
 
 #define NO_TESTS 8
 
@@ -29,13 +30,14 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_bubble_sort,
 	merge_bubble_sort_fast,
 //	merge_double_bubble_sort,
-	merge_insertion_sort,
+//	merge_insertion_sort,
 	merge_insertion_sort_fast,
 	merge_heap,
 	merge_state_machine_compiled,
 	merge_state_machine_lookup_table,
 	merge_state_machine_lookup_table_alt,
 	merge_state_machine_lookup_table_asc,
+	merge_state_machine_lookup_table_binary_search,
 };
 
 const char *names[NO_TESTS] = {
@@ -44,13 +46,14 @@ const char *names[NO_TESTS] = {
 //	"Bubble Sort",
 	"Bubble Sort Fast",
 //	"Double Bubble Sort",
-	"Insertion Sort",
+//	"Insertion Sort",
 	"Insertion Sort Fast",
 	"Heap",
 	"State Machine (Compiled)",
 	"State Machine (Lookup Table)",
 	"State Machine (Lookup Table Alternative)",
 	"State Machine (Lookup Table Ascending)",
+	"State Machine (Binary Search)",
 };
 
 int order[NO_TESTS];
