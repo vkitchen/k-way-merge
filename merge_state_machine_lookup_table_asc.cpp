@@ -26,7 +26,7 @@ void merge_state_machine_lookup_table_asc_3(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_3[state][0];
+		size_t seg = priorities_3[state][2];
 
 		if (*segments[seg] == 0)
 			break;
@@ -36,10 +36,10 @@ void merge_state_machine_lookup_table_asc_3(struct test *t) {
 		
 		if (*segments[seg] >= *segments[priorities_3[state][1]])
 			continue;
-		else if (*segments[seg] >= *segments[priorities_3[state][2]])
+		else if (*segments[seg] >= *segments[priorities_3[state][0]])
 			state = transitions_3[state][1];
 		else
-			state = transitions_3[state][2];
+			state = transitions_3[state][0];
 	}
 }
 
@@ -55,7 +55,7 @@ void merge_state_machine_lookup_table_asc_4(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_4[state][0];
+		size_t seg = priorities_4[state][3];
 
 		if (*segments[seg] == 0)
 			break;
@@ -63,14 +63,14 @@ void merge_state_machine_lookup_table_asc_4(struct test *t) {
 		t->results[pos++] = *segments[seg];
 		segments[seg]++;
 		
-		if (*segments[seg] >= *segments[priorities_4[state][1]])
+		if (*segments[seg] >= *segments[priorities_4[state][2]])
 			continue;
-		else if (*segments[seg] >= *segments[priorities_4[state][2]])
-			state = transitions_4[state][1];
-		else if (*segments[seg] >= *segments[priorities_4[state][3]])
+		else if (*segments[seg] >= *segments[priorities_4[state][1]])
 			state = transitions_4[state][2];
+		else if (*segments[seg] >= *segments[priorities_4[state][0]])
+			state = transitions_4[state][1];
 		else
-			state = transitions_4[state][3];
+			state = transitions_4[state][0];
 	}
 }
 
@@ -86,7 +86,7 @@ void merge_state_machine_lookup_table_asc_5(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_5[state][0];
+		size_t seg = priorities_5[state][4];
 
 		if (*segments[seg] == 0)
 			break;
@@ -94,16 +94,16 @@ void merge_state_machine_lookup_table_asc_5(struct test *t) {
 		t->results[pos++] = *segments[seg];
 		segments[seg]++;
 		
-		if (*segments[seg] >= *segments[priorities_5[state][1]])
+		if (*segments[seg] >= *segments[priorities_5[state][3]])
 			continue;
 		else if (*segments[seg] >= *segments[priorities_5[state][2]])
-			state = transitions_5[state][1];
-		else if (*segments[seg] >= *segments[priorities_5[state][3]])
-			state = transitions_5[state][2];
-		else if (*segments[seg] >= *segments[priorities_5[state][4]])
 			state = transitions_5[state][3];
+		else if (*segments[seg] >= *segments[priorities_5[state][1]])
+			state = transitions_5[state][2];
+		else if (*segments[seg] >= *segments[priorities_5[state][0]])
+			state = transitions_5[state][1];
 		else
-			state = transitions_5[state][4];
+			state = transitions_5[state][0];
 	}
 }
 
@@ -119,7 +119,7 @@ void merge_state_machine_lookup_table_asc_6(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_6[state][0];
+		size_t seg = priorities_6[state][5];
 
 		if (*segments[seg] == 0)
 			break;
@@ -127,18 +127,18 @@ void merge_state_machine_lookup_table_asc_6(struct test *t) {
 		t->results[pos++] = *segments[seg];
 		segments[seg]++;
 		
-		if (*segments[seg] >= *segments[priorities_6[state][1]])
+		if (*segments[seg] >= *segments[priorities_6[state][4]])
 			continue;
-		else if (*segments[seg] >= *segments[priorities_6[state][2]])
-			state = transitions_6[state][1];
 		else if (*segments[seg] >= *segments[priorities_6[state][3]])
-			state = transitions_6[state][2];
-		else if (*segments[seg] >= *segments[priorities_6[state][4]])
-			state = transitions_6[state][3];
-		else if (*segments[seg] >= *segments[priorities_6[state][5]])
 			state = transitions_6[state][4];
+		else if (*segments[seg] >= *segments[priorities_6[state][2]])
+			state = transitions_6[state][3];
+		else if (*segments[seg] >= *segments[priorities_6[state][1]])
+			state = transitions_6[state][2];
+		else if (*segments[seg] >= *segments[priorities_6[state][0]])
+			state = transitions_6[state][1];
 		else
-			state = transitions_6[state][5];
+			state = transitions_6[state][0];
 	}
 }
 
@@ -154,7 +154,7 @@ void merge_state_machine_lookup_table_asc_7(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_7[state][0];
+		size_t seg = priorities_7[state][6];
 
 		if (*segments[seg] == 0)
 			break;
@@ -162,20 +162,20 @@ void merge_state_machine_lookup_table_asc_7(struct test *t) {
 		t->results[pos++] = *segments[seg];
 		segments[seg]++;
 		
-		if (*segments[seg] >= *segments[priorities_7[state][1]])
+		if (*segments[seg] >= *segments[priorities_7[state][5]])
 			continue;
-		else if (*segments[seg] >= *segments[priorities_7[state][2]])
-			state = transitions_7[state][1];
-		else if (*segments[seg] >= *segments[priorities_7[state][3]])
-			state = transitions_7[state][2];
 		else if (*segments[seg] >= *segments[priorities_7[state][4]])
-			state = transitions_7[state][3];
-		else if (*segments[seg] >= *segments[priorities_7[state][5]])
-			state = transitions_7[state][4];
-		else if (*segments[seg] >= *segments[priorities_7[state][6]])
 			state = transitions_7[state][5];
+		else if (*segments[seg] >= *segments[priorities_7[state][3]])
+			state = transitions_7[state][4];
+		else if (*segments[seg] >= *segments[priorities_7[state][2]])
+			state = transitions_7[state][3];
+		else if (*segments[seg] >= *segments[priorities_7[state][1]])
+			state = transitions_7[state][2];
+		else if (*segments[seg] >= *segments[priorities_7[state][0]])
+			state = transitions_7[state][1];
 		else
-			state = transitions_7[state][6];
+			state = transitions_7[state][0];
 	}
 }
 
@@ -191,7 +191,7 @@ void merge_state_machine_lookup_table_asc_8(struct test *t) {
 	size_t pos = 0;
 	size_t state = 0;
 	for (;;) {
-		size_t seg = priorities_8[state][0];
+		size_t seg = priorities_8[state][7];
 
 		if (*segments[seg] == 0)
 			break;
@@ -199,22 +199,22 @@ void merge_state_machine_lookup_table_asc_8(struct test *t) {
 		t->results[pos++] = *segments[seg];
 		segments[seg]++;
 		
-		if (*segments[seg] >= *segments[priorities_8[state][1]])
+		if (*segments[seg] >= *segments[priorities_8[state][6]])
 			continue;
-		else if (*segments[seg] >= *segments[priorities_8[state][2]])
-			state = transitions_8[state][1];
-		else if (*segments[seg] >= *segments[priorities_8[state][3]])
-			state = transitions_8[state][2];
-		else if (*segments[seg] >= *segments[priorities_8[state][4]])
-			state = transitions_8[state][3];
 		else if (*segments[seg] >= *segments[priorities_8[state][5]])
-			state = transitions_8[state][4];
-		else if (*segments[seg] >= *segments[priorities_8[state][6]])
-			state = transitions_8[state][5];
-		else if (*segments[seg] >= *segments[priorities_8[state][7]])
 			state = transitions_8[state][6];
+		else if (*segments[seg] >= *segments[priorities_8[state][4]])
+			state = transitions_8[state][5];
+		else if (*segments[seg] >= *segments[priorities_8[state][3]])
+			state = transitions_8[state][4];
+		else if (*segments[seg] >= *segments[priorities_8[state][2]])
+			state = transitions_8[state][3];
+		else if (*segments[seg] >= *segments[priorities_8[state][1]])
+			state = transitions_8[state][2];
+		else if (*segments[seg] >= *segments[priorities_8[state][0]])
+			state = transitions_8[state][1];
 		else
-			state = transitions_8[state][7];
+			state = transitions_8[state][0];
 	}
 }
 

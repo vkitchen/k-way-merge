@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 #include <vector>
+#include <algorithm>
 
 char *a;
 int n;
@@ -35,16 +37,16 @@ void output_priorities(int index) {
 
 	printf("\t{ ");
 	for (int i = 0; i < n; i++)
-		printf("%d, ", index_of(a, n - i));
+		printf("%d, ", index_of(a, i + 1));
 		// printf("%d, ", a[i] - 1);
 	printf("}, // State %d\n", index);
 }
 
 void output_transitions(int index, std::vector<char *> *transitions) {
-	printf("\t{ %d, ", index);
+	printf("\t{ ");
 	for (int i = 0; i < n - 1; i++)
 		printf("%d, ", index_of_permutation((*transitions)[i]));
-	printf("}, // State %d\n", index);
+	printf("%d, }, // State %d\n", index, index);
 }
 
 
@@ -128,6 +130,7 @@ int main(int argc, char **argv) {
 	for (size_t i = 0; i < permutations.size(); i++) {
 		transitions.clear();
 		generate_transitions(&transitions, permutations[i]);
+		std::reverse(transitions.begin(), transitions.end());
 		output_transitions(i, &transitions);
 	}
 	puts("};");
