@@ -1,0 +1,81 @@
+Init: 162.299603
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 1.616077
+State Machine (Lookup Table Alternative) true  0.529685
+State Machine (Compiled) true  0.448122
+State Machine (Binary Search) false Starts with \0 0.000001
+State Machine (Lookup Table) true  0.563950
+State Machine (Lookup Table Ascending) true  0.543379
+Bubble Sort Fast true  0.496953
+State Machine (Binary Search Fast) false Starts with \0 0.000002
+Heap true  0.469256
+Insertion Sort Fast true  0.443764
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 4.446898
+State Machine (Lookup Table Alternative) true  0.756224
+State Machine (Compiled) true  0.677049
+State Machine (Binary Search) false Starts with \0 0.000002
+State Machine (Lookup Table) true  0.766434
+State Machine (Lookup Table Ascending) true  0.767079
+Bubble Sort Fast true  0.780912
+State Machine (Binary Search Fast) false Starts with \0 0.000001
+Heap true  0.808486
+Insertion Sort Fast true  0.680280
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 2.940476
+State Machine (Lookup Table Alternative) true  1.117757
+State Machine (Compiled) true  0.982242
+State Machine (Binary Search) false Starts with \0 0.000002
+State Machine (Lookup Table) true  1.177440
+State Machine (Lookup Table Ascending) true  1.140475
+Bubble Sort Fast true  1.098282
+State Machine (Binary Search Fast) false Starts with \0 0.000002
+Heap true  1.081082
+Insertion Sort Fast true  0.920994
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 4.998067
+State Machine (Lookup Table Alternative) true  1.474420
+State Machine (Compiled) true  1.474766
+State Machine (Binary Search) false Starts with \0 0.000001
+State Machine (Lookup Table) true  1.507959
+State Machine (Lookup Table Ascending) true  1.490092
+Bubble Sort Fast true  1.461252
+State Machine (Binary Search Fast) false Starts with \0 0.000001
+Heap true  1.507675
+Insertion Sort Fast true  1.175714
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 4.629153
+State Machine (Lookup Table Alternative) true  1.998066
+State Machine (Compiled) false Starts with \0 0.000005
+State Machine (Binary Search) false Starts with \0 0.000002
+State Machine (Lookup Table) true  2.011226
+State Machine (Lookup Table Ascending) true  2.016397
+Bubble Sort Fast true  1.862261
+State Machine (Binary Search Fast) false Starts with \0 0.000001
+Heap true  2.071289
+Insertion Sort Fast true  1.430229
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 5.964810
+State Machine (Lookup Table Alternative) true  3.587125
+State Machine (Compiled) false Starts with \0 0.000005
+State Machine (Binary Search) true  4.715847
+State Machine (Lookup Table) true  3.542538
+State Machine (Lookup Table Ascending) true  3.565659
+Bubble Sort Fast true  2.331597
+State Machine (Binary Search Fast) true  5.745790
+Heap true  2.348676
+Insertion Sort Fast true  1.750178
+
+n,Bubble Sort Fast,Insertion Sort Fast,Heap,State Machine (Compiled),State Machine (Lookup Table),State Machine (Lookup Table Alternative),State Machine (Lookup Table Ascending),State Machine (Binary Search),State Machine (Binary Search Fast)
+3,0.496953,0.443764,0.469256,0.448122,0.563950,0.529685,0.543379,0.000001,0.000002
+4,0.780912,0.680280,0.808486,0.677049,0.766434,0.756224,0.767079,0.000002,0.000001
+5,1.098282,0.920994,1.081082,0.982242,1.177440,1.117757,1.140475,0.000002,0.000002
+6,1.461252,1.175714,1.507675,1.474766,1.507959,1.474420,1.490092,0.000001,0.000001
+7,1.862261,1.430229,2.071289,0.000005,2.011226,1.998066,2.016397,0.000002,0.000001
+8,2.331597,1.750178,2.348676,0.000005,3.542538,3.587125,3.565659,4.715847,5.745790
