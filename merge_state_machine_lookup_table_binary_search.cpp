@@ -167,12 +167,12 @@ void merge_state_machine_lookup_table_binary_search_6(struct test *t) {
 }
 
 void merge_state_machine_lookup_table_binary_search_7(struct test *t) {
-	int *segments[8];
+	int *segments[7];
 
-	for (int i = 0; i < 8; i++)
+	for (int i = 0; i < 7; i++)
 		segments[i] = t->postings[i];
 
-	qsort(segments, 8, sizeof(int *), cmp_p);
+	qsort(segments, 7, sizeof(int *), cmp_p);
 
 	// process
 	size_t pos = 0;
