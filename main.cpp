@@ -61,7 +61,7 @@ const char *names[NO_TESTS] = {
 
 int order[NO_TESTS];
 
-double timings[16][NO_TESTS];
+double timings[ARRAY_COUNT+1][NO_TESTS];
 
 int main() {
 	for (int i = 0; i < NO_TESTS; i++)
