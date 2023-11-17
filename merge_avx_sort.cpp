@@ -35,6 +35,7 @@ static void sort_full() {
 }
 
 static void sort_partial() {
+#ifdef __AVX__
 	int i;
 	unsigned char x = segments[0];
 	for (i = 0; i < 15 && *postings[x] < *postings[segments[i+1]]; i++)
@@ -43,6 +44,7 @@ static void sort_partial() {
         __m128i reg = _mm_loadu_epi8(segments);
 	reg = _mm_shuffle_epi8(reg, masks[i]);
         _mm_storeu_epi8(segments, reg);
+#endif
 }
 
 void merge_avx_sort(struct test *t, int n) {

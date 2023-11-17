@@ -15,6 +15,7 @@
 #include "merge_double_bubble_sort.h"
 #include "merge_insertion_sort.h"
 #include "merge_insertion_sort_fast.h"
+#include "merge_insertion_sort_fast_discrete_n.h"
 #include "merge_insertion_sort_indexes.h"
 #include "merge_avx_sort.h"
 #include "merge_heap.h"
@@ -25,7 +26,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 11
+#define NO_TESTS 12
 
 void (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
@@ -35,6 +36,7 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_double_bubble_sort,
 //	merge_insertion_sort,
 	merge_insertion_sort_fast,
+	merge_insertion_sort_fast_discrete_n,
 	merge_insertion_sort_indexes,
 	merge_avx_sort,
 	merge_heap,
@@ -54,6 +56,7 @@ const char *names[NO_TESTS] = {
 //	"Double Bubble Sort",
 //	"Insertion Sort",
 	"Insertion Sort Fast",
+	"Insertion Sort Fast Discrete N",
 	"Insertion Sort Indexes",
 	"AVX Sort",
 	"Heap",
