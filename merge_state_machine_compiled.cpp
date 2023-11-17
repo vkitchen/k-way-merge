@@ -1,5 +1,7 @@
 #include <stdlib.h>
 
+#include <algorithm>
+
 #include "harness.h"
 
 static int cmp_p(const void *a, const void *b) {
@@ -12,7 +14,7 @@ bool merge_state_machine_compiled(struct test *t, int n) {
 	for (int i = 0; i < n && i < 8; i++)
 		segments[i] = t->postings[i];
 
-	qsort(segments, n, sizeof(int *), cmp_p);
+	qsort(segments, std::min(n, 8), sizeof(int *), cmp_p);
 
 	// process
 	size_t pos = 0;
