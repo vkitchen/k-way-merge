@@ -79,12 +79,17 @@ int main() {
 	for (int i = 0; i < NO_TESTS; i++)
 		order[i] = i;
 
-	srand(time(NULL));
+	if (SEED == 0)
+		srand(time(NULL));
+	else
+		srand(SEED);
+
 	std::random_shuffle(std::begin(order), std::end(order));
 
 	clock_t time_begin = clock();
 
-	struct test *t = harness_new(ARRAY_LENGTH, ARRAY_COUNT, SEED);
+	struct test *t = harness_new(ARRAY_LENGTH, ARRAY_COUNT);
+	harness_generate(t);
 
 	clock_t time_end = clock();
 

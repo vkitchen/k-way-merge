@@ -8,14 +8,13 @@ static int cmp(const void *a, const void *b) {
 	return *(int *)b - *(int *)a;
 }
 
-struct test *harness_new(size_t length, size_t count, unsigned int seed) {
-	size_t i, j;
+struct test *harness_new(size_t length, size_t count) {
+	size_t i;
 
 	struct test *t = (struct test *)malloc(sizeof(struct test));
 	t->postings = (int **)malloc(sizeof(int *) * count);
 	t->length = length;
 	t->count = count;
-	t->seed = seed;
 
 	/* Allocate */
 	for (i = 0; i < count; i++) {
@@ -28,16 +27,20 @@ struct test *harness_new(size_t length, size_t count, unsigned int seed) {
 	/* Fill */
 	memset(t->baseline, 0, sizeof(int) * (t->length * count + 1));
 
-	srand(seed);
-	for (i = 0; i < count; i++)
-		for (j = 0; j < length; j++)
+	return t;
+}
+
+void harness_generate(struct test *t) {
+	size_t i, j;
+
+	/* Fill */
+	for (i = 0; i < t->count; i++)
+		for (j = 0; j < t->length; j++)
 			t->postings[i][j] = (rand() % (INT_MAX - 1)) + 1;
 	
 	/* Sort */
-	for (i = 0; i < count; i++)
-		qsort(t->postings[i], length, sizeof(int), cmp);
-
-	return t;
+	for (i = 0; i < t->count; i++)
+		qsort(t->postings[i], t->length, sizeof(int), cmp);
 }
 
 void harness_reset(struct test *t) {
