@@ -79,10 +79,9 @@ int main() {
 	for (int i = 0; i < NO_TESTS; i++)
 		order[i] = i;
 
-	if (SEED == 0)
-		srand(time(NULL));
-	else
-		srand(SEED);
+	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
+	srand(seed);
+	printf("Seed: %d\n", seed);
 
 	std::random_shuffle(std::begin(order), std::end(order));
 
