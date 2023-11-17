@@ -1,12 +1,10 @@
-#include <stdlib.h>
 #include <string.h>
 #include <limits.h>
 
-#include "harness.h"
+#include <algorithm>
+#include <functional>
 
-static int cmp(const void *a, const void *b) {
-	return *(int *)b - *(int *)a;
-}
+#include "harness.h"
 
 struct test *harness_new(size_t length, size_t count) {
 	size_t i;
@@ -40,7 +38,7 @@ void harness_generate(struct test *t) {
 	
 	/* Sort */
 	for (i = 0; i < t->count; i++)
-		qsort(t->postings[i], t->length, sizeof(int), cmp);
+		std::sort(t->postings[i], &t->postings[i][t->length], std::greater<int>());
 }
 
 void harness_reset(struct test *t) {
