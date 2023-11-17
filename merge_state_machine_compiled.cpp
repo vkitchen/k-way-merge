@@ -7,9 +7,9 @@ static int cmp_p(const void *a, const void *b) {
 }
 
 bool merge_state_machine_compiled(struct test *t, int n) {
-	int **segments = (int **)malloc(sizeof(int *) * n);
+	int *segments[8];
 
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n && i < 8; i++)
 		segments[i] = t->postings[i];
 
 	qsort(segments, n, sizeof(int *), cmp_p);
@@ -27,13 +27,10 @@ bool merge_state_machine_compiled(struct test *t, int n) {
 	} else if (n == 7) {
 #include "state_machine_7.cpp"
 	} else {
-		free(segments);
 		return false;
 	}
 
 DONE: ;
-
-	free(segments);
 
 	return true;
 }
