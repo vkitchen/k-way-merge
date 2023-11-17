@@ -35,7 +35,7 @@ static void sort_full(int length) {
 }
 
 static void sort_partial(int length) {
-#ifdef __AVX__
+#ifdef __AVX512F__
 	int i;
 	unsigned char x = segments[0];
 	for (i = 0; i < length-1 && *postings[x] < *postings[segments[i+1]]; i++)
