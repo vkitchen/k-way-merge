@@ -26,7 +26,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 12
+#define NO_TESTS 7
 
 void (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
@@ -41,11 +41,11 @@ void (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_avx_sort,
 	merge_heap,
 	merge_state_machine_compiled,
-	merge_state_machine_lookup_table,
-	merge_state_machine_lookup_table_alt,
-	merge_state_machine_lookup_table_asc,
-	merge_state_machine_lookup_table_binary_search,
-	merge_state_machine_lookup_table_binary_search_fast,
+//	merge_state_machine_lookup_table,
+//	merge_state_machine_lookup_table_alt,
+//	merge_state_machine_lookup_table_asc,
+//	merge_state_machine_lookup_table_binary_search,
+//	merge_state_machine_lookup_table_binary_search_fast,
 };
 
 const char *names[NO_TESTS] = {
@@ -61,11 +61,11 @@ const char *names[NO_TESTS] = {
 	"AVX Sort",
 	"Heap",
 	"State Machine (Compiled)",
-	"State Machine (Lookup Table)",
-	"State Machine (Lookup Table Alternative)",
-	"State Machine (Lookup Table Ascending)",
-	"State Machine (Binary Search)",
-	"State Machine (Binary Search Fast)",
+//	"State Machine (Lookup Table)",
+//	"State Machine (Lookup Table Alternative)",
+//	"State Machine (Lookup Table Ascending)",
+//	"State Machine (Binary Search)",
+//	"State Machine (Binary Search Fast)",
 };
 
 int order[NO_TESTS];
