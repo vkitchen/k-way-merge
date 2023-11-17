@@ -21,7 +21,7 @@ static void sort_partial(int length) {
 	segments[i] = x;
 }
 
-void merge_insertion_sort_indexes(struct test *t, int n) {
+bool merge_insertion_sort_indexes(struct test *t, int n) {
 	for (int i = 0; i < n; i++)
 		postings[i] = t->postings[i];
 
@@ -37,4 +37,6 @@ void merge_insertion_sort_indexes(struct test *t, int n) {
 
 		sort_partial(n);
 	}
+
+	return true;
 }

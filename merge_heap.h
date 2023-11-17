@@ -1,3 +1,3 @@
 #pragma once
 
-void merge_heap(struct test *, int);
+bool merge_heap(struct test *, int);

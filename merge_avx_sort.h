@@ -1,3 +1,3 @@
 #pragma once
 
-void merge_avx_sort(struct test *, int);
+bool merge_avx_sort(struct test *, int);

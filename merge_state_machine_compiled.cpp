@@ -6,7 +6,7 @@ static int cmp_p(const void *a, const void *b) {
 	return **(int **)b - **(int **)a;
 }
 
-void merge_state_machine_compiled(struct test *t, int n) {
+bool merge_state_machine_compiled(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -26,9 +26,14 @@ void merge_state_machine_compiled(struct test *t, int n) {
 #include "state_machine_6.cpp"
 	} else if (n == 7) {
 #include "state_machine_7.cpp"
+	} else {
+		free(segments);
+		return false;
 	}
 
 DONE: ;
 
 	free(segments);
+
+	return true;
 }

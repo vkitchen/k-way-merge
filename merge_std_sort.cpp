@@ -4,7 +4,7 @@
 
 #include "harness.h"
 
-void merge_std_sort(struct test *t, int n) {
+bool merge_std_sort(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -24,4 +24,6 @@ void merge_std_sort(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }

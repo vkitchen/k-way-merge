@@ -218,7 +218,7 @@ void merge_state_machine_lookup_table_alt_8(struct test *t) {
 	}
 }
 
-void merge_state_machine_lookup_table_alt(struct test *t, int n) {
+bool merge_state_machine_lookup_table_alt(struct test *t, int n) {
 	if (n == 3)
 		merge_state_machine_lookup_table_alt_3(t);
 	else if (n == 4)
@@ -231,4 +231,6 @@ void merge_state_machine_lookup_table_alt(struct test *t, int n) {
 		merge_state_machine_lookup_table_alt_7(t);
 	else if (n == 8)
 		merge_state_machine_lookup_table_alt_8(t);
+
+	return true;
 }

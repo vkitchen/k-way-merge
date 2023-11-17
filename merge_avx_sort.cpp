@@ -47,7 +47,11 @@ static void sort_partial(int length) {
 #endif
 }
 
-void merge_avx_sort(struct test *t, int n) {
+bool merge_avx_sort(struct test *t, int n) {
+#ifndef __AVX512F__
+	return false;
+#endif
+
 	for (int i = 0; i < n; i++)
 		postings[i] = t->postings[i];
 
@@ -63,4 +67,6 @@ void merge_avx_sort(struct test *t, int n) {
 
 		sort_partial(n);
 	}
+
+	return true;
 }

@@ -10,7 +10,7 @@ static void sort(int **a, int length) {
 	}
 }
 
-void merge_insertion_sort(struct test *t, int n) {
+bool merge_insertion_sort(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -30,4 +30,6 @@ void merge_insertion_sort(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }

@@ -28,7 +28,7 @@
 
 #define NO_TESTS 7
 
-void (*functions[NO_TESTS]) (struct test *, int) = {
+bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
 //	merge_std_sort,
 //	merge_bubble_sort,
@@ -102,7 +102,7 @@ int main() {
 
 			time_begin = clock();
 
-			(*functions[alg])(t, n);
+			bool res = (*functions[alg])(t, n);
 
 			time_end = clock();
 
@@ -111,7 +111,7 @@ int main() {
 			double runtime = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
 			timings[n][alg] = runtime;
 
-			printf("%-40s %-8s %f    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, status);
+			printf("%-40s %-8s %f    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, res ? status : "unsupported");
 		}
 	}
 

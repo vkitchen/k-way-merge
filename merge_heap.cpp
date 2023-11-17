@@ -4,7 +4,7 @@
 
 typedef JASS::pointer_box<int> value_compare_pointer;
 
-void merge_heap(struct test *t, int n) {
+bool merge_heap(struct test *t, int n) {
 	value_compare_pointer *segments = (value_compare_pointer *)malloc(sizeof(value_compare_pointer) * n);
 
 	for (int i = 0; i < n; i++)
@@ -28,4 +28,6 @@ void merge_heap(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }

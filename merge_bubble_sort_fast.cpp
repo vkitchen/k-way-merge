@@ -22,7 +22,7 @@ static void sort_partial(int **a, int length) {
 	a[length - 1] = min;
 }
 
-void merge_bubble_sort_fast(struct test *t, int n) {
+bool merge_bubble_sort_fast(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -42,4 +42,6 @@ void merge_bubble_sort_fast(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }

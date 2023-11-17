@@ -1,3 +1,3 @@
 #pragma once
 
-void merge_double_bubble_sort(struct test *, int);
+bool merge_double_bubble_sort(struct test *, int);

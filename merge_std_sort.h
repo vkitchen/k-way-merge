@@ -1,3 +1,3 @@
 #pragma once
 
-void merge_std_sort(struct test *, int);
+bool merge_std_sort(struct test *, int);

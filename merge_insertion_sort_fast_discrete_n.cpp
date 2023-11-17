@@ -122,7 +122,7 @@ static void sort_partial_16(int **a) {
 	a[i] = x;
 }
 
-void merge_insertion_sort_fast_discrete_n(struct test *t, int n) {
+bool merge_insertion_sort_fast_discrete_n(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -262,4 +262,6 @@ void merge_insertion_sort_fast_discrete_n(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }

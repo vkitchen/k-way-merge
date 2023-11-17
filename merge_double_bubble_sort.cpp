@@ -21,7 +21,7 @@ static void sort(int **a, int length) {
 	}
 }
 
-void merge_double_bubble_sort(struct test *t, int n) {
+bool merge_double_bubble_sort(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
@@ -41,4 +41,6 @@ void merge_double_bubble_sort(struct test *t, int n) {
 	}
 
 	free(segments);
+
+	return true;
 }
