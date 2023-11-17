@@ -26,8 +26,6 @@ bool merge_state_machine_compiled(struct test *t, int n) {
 #include "state_machine_5.cpp"
 	} else if (n == 6) {
 #include "state_machine_6.cpp"
-	} else if (n == 7) {
-#include "state_machine_7.cpp"
 	} else {
 		return false;
 	}

@@ -29,15 +29,12 @@ OBJECTS = $(SRC:.cpp=.o)
 
 all: gen gen-lookup gen-lookup-asc main
 
-merge_state_machine_compiled.o: merge_state_machine_compiled.cpp
-	$(CXX) -Wall -Wextra -O1 -march=native -c $<
-
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) -c $<
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
-	for i in `seq 3 7`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
+	for i in `seq 3 6`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
 
 gen-lookup: gen_lookup.o
 	$(CXX) $(CFLAGS) -o $@ gen_lookup.o
@@ -51,4 +48,4 @@ main: main.o $(OBJECTS)
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state_machine_*.cpp gen.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
+	rm state_machine_*.cpp state_table_*.h gen.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
