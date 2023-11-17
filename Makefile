@@ -50,4 +50,4 @@ main: main.o $(OBJECTS)
 	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state_machine_*.cpp gen.o gen_lookup.o main.o $(OBJECTS)
+	rm state_machine_*.cpp gen.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
