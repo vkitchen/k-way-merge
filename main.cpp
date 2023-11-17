@@ -111,7 +111,7 @@ int main() {
 			double runtime = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
 			timings[n][alg] = runtime;
 
-			printf("%s %s %s %f\n", names[alg], status[0] == '\0' ? "true" : "false", status, runtime);
+			printf("%-40s %-8s %f    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, status);
 		}
 	}
 
