@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -O2 -g
+CFLAGS = -Wall -Wextra -O2 -march=native
 
 SRC = \
 	harness.cpp \
@@ -29,7 +29,7 @@ OBJECTS = $(SRC:.cpp=.o)
 all: gen gen-lookup gen-lookup-asc main
 
 merge_state_machine_compiled.o: merge_state_machine_compiled.cpp
-	$(CXX) -Wall -Wextra -O1 -g -c $<
+	$(CXX) -Wall -Wextra -O1 -march=native -c $<
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) -c $<
