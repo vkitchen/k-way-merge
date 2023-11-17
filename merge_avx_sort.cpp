@@ -24,9 +24,9 @@ static __m128i masks[16] = {
 	_mm_set_epi8(0, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1),
 };
 
-static void sort_full() {
+static void sort_full(int length) {
 	int i, j;
-	for (i = 1; i < 16; i++) {
+	for (i = 1; i < length; i++) {
 		unsigned char x = segments[i];
 		for (j = i - 1; j >= 0 && *postings[segments[j]] < *postings[x]; j--)
 			segments[j+1] = segments[j];
@@ -34,11 +34,11 @@ static void sort_full() {
 	}
 }
 
-static void sort_partial() {
+static void sort_partial(int length) {
 #ifdef __AVX__
 	int i;
 	unsigned char x = segments[0];
-	for (i = 0; i < 15 && *postings[x] < *postings[segments[i+1]]; i++)
+	for (i = 0; i < length-1 && *postings[x] < *postings[segments[i+1]]; i++)
 		;
 
         __m128i reg = _mm_loadu_epi8(segments);
@@ -48,13 +48,10 @@ static void sort_partial() {
 }
 
 void merge_avx_sort(struct test *t, int n) {
-	if (n != 16)
-		return;
-
-	for (int i = 0; i < 16; i++)
+	for (int i = 0; i < n; i++)
 		postings[i] = t->postings[i];
 
-	sort_full();
+	sort_full(n);
 
 	// process
 	size_t pos = 0;
@@ -64,6 +61,6 @@ void merge_avx_sort(struct test *t, int n) {
 
 		t->results[pos++] = *postings[segments[0]]++;
 
-		sort_partial();
+		sort_partial(n);
 	}
 }
