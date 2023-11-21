@@ -19,6 +19,7 @@
 #include "merge_insertion_sort_indexes.h"
 #include "merge_avx_sort.h"
 #include "merge_avx_sort_discrete_n.h"
+#include "merge_avx_sort_binary_search.h"
 #include "merge_heap.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
@@ -37,10 +38,11 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_double_bubble_sort,
 //	merge_insertion_sort,
 	merge_insertion_sort_fast,
-	merge_insertion_sort_fast_discrete_n,
+//	merge_insertion_sort_fast_discrete_n,
 	merge_insertion_sort_indexes,
 	merge_avx_sort,
 	merge_avx_sort_discrete_n,
+	merge_avx_sort_binary_search,
 	merge_heap,
 	merge_state_machine_compiled,
 //	merge_state_machine_lookup_table,
@@ -58,10 +60,11 @@ const char *names[NO_TESTS] = {
 //	"Double Bubble Sort",
 //	"Insertion Sort",
 	"Insertion Sort Fast",
-	"Insertion Sort Fast Discrete N",
+//	"Insertion Sort Fast Discrete N",
 	"Insertion Sort Indexes",
 	"AVX Sort",
 	"AVX Sort Discrete N",
+	"AVX Sort (Binary Search)",
 	"Heap",
 	"State Machine (Compiled)",
 //	"State Machine (Lookup Table)",
