@@ -38,7 +38,7 @@ static void sort_full(int length) {
 
 static void sort_partial(int length) {
 #ifdef __AVX512F__
-	unsigned char *pos = std::lower_bound(&segments[1], &segments[length], segments[0], [](int a, int b) { return *postings[a] > *postings[b]; });
+	unsigned char *pos = std::lower_bound(&segments[1], &segments[length], segments[0], [](unsigned char a, unsigned char b) { return *postings[a] > *postings[b]; });
 	int mask = pos - segments - 1;
 
         __m128i reg = _mm_loadu_epi8(segments);
