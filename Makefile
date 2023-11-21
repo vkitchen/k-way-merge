@@ -11,6 +11,7 @@ SRC = \
 	merge_insertion_sort_indexes.cpp \
 	merge_avx_sort.cpp \
 	merge_avx_sort_discrete_n.cpp \
+	merge_avx_sort_pointers.cpp \
 	merge_avx_sort_binary_search.cpp \
 	merge_bubble_sort.cpp \
 	merge_bubble_sort_fast.cpp \
