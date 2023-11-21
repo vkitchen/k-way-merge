@@ -5,6 +5,7 @@
 static int *postings[8];
 
 static __m512i masks[16] = {
+#ifdef __AVX512F__
 	_mm512_set_epi64(7, 6, 5, 4, 3, 2, 1, 0),
 	_mm512_set_epi64(7, 6, 5, 4, 3, 2, 0, 1),
 	_mm512_set_epi64(7, 6, 5, 4, 3, 0, 2, 1),
@@ -13,6 +14,7 @@ static __m512i masks[16] = {
 	_mm512_set_epi64(7, 6, 0, 5, 4, 3, 2, 1),
 	_mm512_set_epi64(7, 0, 6, 5, 4, 3, 2, 1),
 	_mm512_set_epi64(0, 7, 6, 5, 4, 3, 2, 1),
+#endif
 };
 
 static void sort_full(int **a, int length) {
