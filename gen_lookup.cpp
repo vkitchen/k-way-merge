@@ -1,7 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdint.h>
+
 #include <vector>
+
+uint32_t factorials[13] = { 1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800, 39916800, 479001600 };
 
 char *a;
 int n;
@@ -23,11 +27,18 @@ int index_of(char *haystack, int needle) {
 }
 
 int index_of_permutation(char *needle) {
-	size_t i;
-	for (i = 0; i < permutations.size(); i++)
-		if (strcmp(permutations[i], needle) == 0)
-			return i;
-	return -1;
+	int len = strlen(needle);
+	int res = 0;
+	for (int i = 0; i < len-1; i++) {
+		int a = len - needle[i];
+		for (int j = 0; j < i; j++)
+			if (needle[j] > needle[i])
+				a--;
+
+		int f = factorials[len-i-1];
+		res += a * f;
+	}
+	return res;
 }
 
 void output_priorities(int index) {
