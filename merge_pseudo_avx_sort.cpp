@@ -1,11 +1,9 @@
+#include <stdlib.h>
 #include <string.h>
 
 #include "harness.h"
 
-static int *postings[16];
-static unsigned char segments[16] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-
-static void sort_full(int length) {
+static void sort_full(int **postings, unsigned char *segments, int length) {
 	int i, j;
 	for (i = 1; i < length; i++) {
 		unsigned char x = segments[i];
@@ -15,7 +13,7 @@ static void sort_full(int length) {
 	}
 }
 
-static void sort_partial(int length) {
+static void sort_partial(int **postings, unsigned char *segments, int length) {
 	int i;
 	unsigned char x = segments[0];
 	for (i = 0; i < length-1 && *postings[x] < *postings[segments[i+1]]; i++)
@@ -26,10 +24,15 @@ static void sort_partial(int length) {
 }
 
 bool merge_pseudo_avx_sort(struct test *t, int n) {
-	for (int i = 0; i < n; i++)
-		postings[i] = t->postings[i];
+	int **postings = (int **)malloc(sizeof(int *) * n);
+	unsigned char *segments = (unsigned char *)malloc(n);
 
-	sort_full(n);
+	for (int i = 0; i < n; i++) {
+		postings[i] = t->postings[i];
+		segments[i] = i;
+	}
+
+	sort_full(postings, segments, n);
 
 	// process
 	size_t pos = 0;
@@ -39,8 +42,11 @@ bool merge_pseudo_avx_sort(struct test *t, int n) {
 
 		t->results[pos++] = *postings[segments[0]]++;
 
-		sort_partial(n);
+		sort_partial(postings, segments, n);
 	}
+
+	free(segments);
+	free(postings);
 
 	return true;
 }
