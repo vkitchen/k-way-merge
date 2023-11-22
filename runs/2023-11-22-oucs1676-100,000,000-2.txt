@@ -1,0 +1,186 @@
+Seed: 1700609274
+Init: 143.366294
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 10.137133
+AVX Sort (Pointers)                      true     2.859716    
+AVX Sort (Binary Search)                 true     2.730955    
+State Machine (Compiled)                 true     1.616239    
+Insertion Sort Fast                      true     1.813226    
+Insertion Sort Indexes                   true     2.362521    
+Heap                                     true     2.015113    
+AVX Sort Discrete N                      true     2.350861    
+AVX Sort                                 true     2.430056    
+Bubble Sort Fast                         true     2.010660    
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 20.398448
+AVX Sort (Pointers)                      true     4.141019    
+AVX Sort (Binary Search)                 true     4.739632    
+State Machine (Compiled)                 true     2.720168    
+Insertion Sort Fast                      true     2.689530    
+Insertion Sort Indexes                   true     3.782564    
+Heap                                     true     3.247381    
+AVX Sort Discrete N                      true     3.639803    
+AVX Sort                                 true     3.669201    
+Bubble Sort Fast                         true     3.088909    
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 14.659637
+AVX Sort (Pointers)                      true     5.407974    
+AVX Sort (Binary Search)                 true     6.319478    
+State Machine (Compiled)                 true     3.882621    
+Insertion Sort Fast                      true     3.619677    
+Insertion Sort Indexes                   true     5.278967    
+Heap                                     true     4.341307    
+AVX Sort Discrete N                      true     4.710121    
+AVX Sort                                 true     4.958124    
+Bubble Sort Fast                         true     4.392463    
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 28.519719
+AVX Sort (Pointers)                      true     6.658826    
+AVX Sort (Binary Search)                 true     8.347897    
+State Machine (Compiled)                 true     5.992513    
+Insertion Sort Fast                      true     4.605384    
+Insertion Sort Indexes                   true     6.863795    
+Heap                                     true     6.063741    
+AVX Sort Discrete N                      true     6.061248    
+AVX Sort                                 true     6.229681    
+Bubble Sort Fast                         true     5.714419    
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 23.725526
+AVX Sort (Pointers)                      true     8.046461    
+AVX Sort (Binary Search)                 true     10.627313    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     5.636365    
+Insertion Sort Indexes                   true     8.462529    
+Heap                                     true     7.784899    
+AVX Sort Discrete N                      true     7.307557    
+AVX Sort                                 true     7.535181    
+Bubble Sort Fast                         true     7.211196    
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 32.315775
+AVX Sort (Pointers)                      true     9.363517    
+AVX Sort (Binary Search)                 true     13.281606    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     6.603394    
+Insertion Sort Indexes                   true     10.084353    
+Heap                                     true     9.184027    
+AVX Sort Discrete N                      true     8.659594    
+AVX Sort                                 true     8.969235    
+Bubble Sort Fast                         true     8.754324    
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 31.835056
+AVX Sort (Pointers)                      false    0.000001    unsupported
+AVX Sort (Binary Search)                 true     15.274305    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     7.716060    
+Insertion Sort Indexes                   true     11.780348    
+Heap                                     true     10.516167    
+AVX Sort Discrete N                      true     10.092074    
+AVX Sort                                 true     10.448236    
+Bubble Sort Fast                         true     10.503252    
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 38.709939
+AVX Sort (Pointers)                      false    0.000001    unsupported
+AVX Sort (Binary Search)                 true     17.452223    
+State Machine (Compiled)                 false    0.000003    unsupported
+Insertion Sort Fast                      true     8.874502    
+Insertion Sort Indexes                   true     13.592629    
+Heap                                     true     12.467394    
+AVX Sort Discrete N                      true     11.364848    
+AVX Sort                                 true     11.912337    
+Bubble Sort Fast                         true     12.328126    
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 36.317338
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     19.829096    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     10.133487    
+Insertion Sort Indexes                   true     15.423012    
+Heap                                     true     14.280634    
+AVX Sort Discrete N                      true     12.798985    
+AVX Sort                                 true     13.446950    
+Bubble Sort Fast                         true     14.293759    
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 45.836807
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     22.459245    
+State Machine (Compiled)                 false    0.000003    unsupported
+Insertion Sort Fast                      true     11.346593    
+Insertion Sort Indexes                   true     17.377146    
+Heap                                     true     16.226546    
+AVX Sort Discrete N                      true     14.255945    
+AVX Sort                                 true     15.041184    
+Bubble Sort Fast                         true     16.117451    
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 43.700084
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     25.010426    
+State Machine (Compiled)                 false    0.000005    unsupported
+Insertion Sort Fast                      true     12.810774    
+Insertion Sort Indexes                   true     19.619062    
+Heap                                     true     18.132647    
+AVX Sort Discrete N                      true     15.893776    
+AVX Sort                                 true     16.677850    
+Bubble Sort Fast                         true     18.188396    
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 58.280878
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     27.750134    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     14.110913    
+Insertion Sort Indexes                   true     21.765923    
+Heap                                     true     20.641425    
+AVX Sort Discrete N                      true     17.443053    
+AVX Sort                                 true     18.171234    
+Bubble Sort Fast                         true     20.275728    
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 54.327290
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     30.727559    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     15.564524    
+Insertion Sort Indexes                   true     24.007772    
+Heap                                     true     23.184068    
+AVX Sort Discrete N                      true     18.980114    
+AVX Sort                                 true     19.983009    
+Bubble Sort Fast                         true     22.511364    
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 61.480913
+AVX Sort (Pointers)                      false    0.000002    unsupported
+AVX Sort (Binary Search)                 true     34.024268    
+State Machine (Compiled)                 false    0.000004    unsupported
+Insertion Sort Fast                      true     17.033000    
+Insertion Sort Indexes                   true     26.356097    
+Heap                                     true     24.725641    
+AVX Sort Discrete N                      true     20.582476    
+AVX Sort                                 true     21.749399    
+Bubble Sort Fast                         true     24.871002    
+
+n,Bubble Sort Fast,Insertion Sort Fast,Insertion Sort Indexes,AVX Sort,AVX Sort Discrete N,AVX Sort (Pointers),AVX Sort (Binary Search),Heap,State Machine (Compiled)
+3,2.010660,1.813226,2.362521,2.430056,2.350861,2.859716,2.730955,2.015113,1.616239
+4,3.088909,2.689530,3.782564,3.669201,3.639803,4.141019,4.739632,3.247381,2.720168
+5,4.392463,3.619677,5.278967,4.958124,4.710121,5.407974,6.319478,4.341307,3.882621
+6,5.714419,4.605384,6.863795,6.229681,6.061248,6.658826,8.347897,6.063741,5.992513
+7,7.211196,5.636365,8.462529,7.535181,7.307557,8.046461,10.627313,7.784899,0.000004
+8,8.754324,6.603394,10.084353,8.969235,8.659594,9.363517,13.281606,9.184027,0.000004
+9,10.503252,7.716060,11.780348,10.448236,10.092074,0.000001,15.274305,10.516167,0.000004
+10,12.328126,8.874502,13.592629,11.912337,11.364848,0.000001,17.452223,12.467394,0.000003
+11,14.293759,10.133487,15.423012,13.446950,12.798985,0.000002,19.829096,14.280634,0.000004
+12,16.117451,11.346593,17.377146,15.041184,14.255945,0.000002,22.459245,16.226546,0.000003
+13,18.188396,12.810774,19.619062,16.677850,15.893776,0.000002,25.010426,18.132647,0.000005
+14,20.275728,14.110913,21.765923,18.171234,17.443053,0.000002,27.750134,20.641425,0.000004
+15,22.511364,15.564524,24.007772,19.983009,18.980114,0.000002,30.727559,23.184068,0.000004
+16,24.871002,17.033000,26.356097,21.749399,20.582476,0.000002,34.024268,24.725641,0.000004
