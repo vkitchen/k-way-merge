@@ -21,6 +21,8 @@
 #include "merge_avx_sort_discrete_n.h"
 #include "merge_avx_sort_pointers.h"
 #include "merge_avx_sort_binary_search.h"
+#include "merge_pseudo_avx_sort.h"
+#include "merge_pseudo_avx_sort_binary_search.h"
 #include "merge_heap.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
@@ -29,7 +31,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 9
+#define NO_TESTS 11
 
 bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
@@ -45,6 +47,8 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_avx_sort_discrete_n,
 	merge_avx_sort_pointers,
 	merge_avx_sort_binary_search,
+	merge_pseudo_avx_sort,
+	merge_pseudo_avx_sort_binary_search,
 	merge_heap,
 	merge_state_machine_compiled,
 //	merge_state_machine_lookup_table,
@@ -68,6 +72,8 @@ const char *names[NO_TESTS] = {
 	"AVX Sort Discrete N",
 	"AVX Sort (Pointers)",
 	"AVX Sort (Binary Search)",
+	"Pseudo AVX Sort",
+	"Pseudo AVX Sort (Binary Search)",
 	"Heap",
 	"State Machine (Compiled)",
 //	"State Machine (Lookup Table)",
