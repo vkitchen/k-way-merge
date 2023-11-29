@@ -7,8 +7,6 @@ std::vector<int *> nums;
 std::vector<unsigned char> pointers;
 
 int main() {
-	clock_t time_begin, time_end;
-
 	for (int i = 0; i < 5; i++) {
 		int *mem = (int *)malloc(1024 * 1024 * 1024);
 		mem[0] = i;
@@ -18,23 +16,33 @@ int main() {
 
 
 	for (;;) {
-		time_begin = clock();
 		for (int i = 0; i < 100'000; i++)
-			for (size_t needle = 0; needle < nums.size(); needle++)
-				if (&(*std::find_if(pointers.begin(), pointers.end(), [needle](unsigned char a) { return (size_t)*nums[a] == needle; })) == NULL)
+			for (size_t needle = 0; needle < pointers.size(); needle++)
+				if (std::find_if(pointers.begin(), pointers.end(), [needle](unsigned char a) { return (size_t)*nums[a] == needle; }) == pointers.end())
 					puts("Not found");
-		time_end = clock();
 
-		double runtime_linear = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
-
-		time_begin = clock();
 		for (int i = 0; i < 100'000; i++)
-			for (size_t needle = 0; needle < nums.size(); needle++)
-				if (&(*std::lower_bound(pointers.begin(), pointers.end(), needle, [](int a, int b) { return *nums[a] < *nums[b]; })) == NULL)
+			for (size_t needle = 0; needle < pointers.size(); needle++)
+				if (std::lower_bound(pointers.begin(), pointers.end(), needle, [](int a, int needle) { return *nums[a] < *nums[needle]; }) == pointers.end())
 					puts("Not found");
-		time_end = clock();
 
-		double runtime_lower_bound = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
+		auto time_begin = std::chrono::steady_clock::now();
+		for (int i = 0; i < 100'000; i++)
+			for (size_t needle = 0; needle < pointers.size(); needle++)
+				if (std::find_if(pointers.begin(), pointers.end(), [needle](unsigned char a) { return (size_t)*nums[a] == needle; }) == pointers.end())
+					puts("Not found");
+		auto time_end = std::chrono::steady_clock::now();
+
+		auto runtime_linear = std::chrono::duration_cast<unit_t>(end - start).count();
+
+		auto time_begin = std::chrono::steady_clock::now();
+		for (int i = 0; i < 100'000; i++)
+			for (size_t needle = 0; needle < pointers.size(); needle++)
+				if (std::lower_bound(pointers.begin(), pointers.end(), needle, [](int a, int needle) { return *nums[a] < *nums[needle]; }) == pointers.end())
+					puts("Not found");
+		auto time_end = std::chrono::steady_clock::now();
+
+		auto runtime_lower_bound = std::chrono::duration_cast<unit_t>(end - start).count();
 
 		if (runtime_lower_bound < runtime_linear) {
 			printf("Swapped at %ld. Linear(s) %f. Lower Bound(s) %f\n", nums.size(), runtime_linear, runtime_lower_bound);
