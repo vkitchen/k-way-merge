@@ -1,6 +1,6 @@
 #include <algorithm>
+#include <chrono>
 #include <cstdio>
-#include <ctime>
 #include <vector>
 
 std::vector<int *> nums;
@@ -33,24 +33,24 @@ int main() {
 					puts("Not found");
 		auto time_end = std::chrono::steady_clock::now();
 
-		auto runtime_linear = std::chrono::duration_cast<unit_t>(end - start).count();
+		auto runtime_linear = std::chrono::duration_cast<std::chrono::microseconds>(time_end - time_begin).count();
 
-		auto time_begin = std::chrono::steady_clock::now();
+		time_begin = std::chrono::steady_clock::now();
 		for (int i = 0; i < 100'000; i++)
 			for (size_t needle = 0; needle < pointers.size(); needle++)
 				if (std::lower_bound(pointers.begin(), pointers.end(), needle, [](int a, int needle) { return *nums[a] < *nums[needle]; }) == pointers.end())
 					puts("Not found");
-		auto time_end = std::chrono::steady_clock::now();
+		time_end = std::chrono::steady_clock::now();
 
-		auto runtime_lower_bound = std::chrono::duration_cast<unit_t>(end - start).count();
+		auto runtime_lower_bound = std::chrono::duration_cast<std::chrono::microseconds>(time_end - time_begin).count();
 
 		if (runtime_lower_bound < runtime_linear) {
-			printf("Swapped at %ld. Linear(s) %f. Lower Bound(s) %f\n", nums.size(), runtime_linear, runtime_lower_bound);
+			printf("Swapped at %ld. Linear(s) %ld. Lower Bound(s) %ld\n", nums.size(), runtime_linear, runtime_lower_bound);
 			break;
 		}
 
 
-		printf("%ld %f %f\n", nums.size(), runtime_linear, runtime_lower_bound);
+		printf("%ld %ld %ld\n", nums.size(), runtime_linear, runtime_lower_bound);
 
 		int *mem = (int *)malloc(1024 * 1024 * 1024);
 		mem[0] = nums.size();
