@@ -20,7 +20,7 @@ int main() {
 	for (;;) {
 		time_begin = clock();
 		for (int i = 0; i < 100'000; i++)
-			for (size_t needle = 0; needle < nums.size(); needle++)
+			for (unsigned char needle = 0; needle < pointers.size(); needle++)
 				if (&(*std::find_if(pointers.begin(), pointers.end(), [needle](unsigned char a) { return (size_t)*nums[a] == needle; })) == NULL)
 					puts("Not found");
 		time_end = clock();
@@ -29,8 +29,8 @@ int main() {
 
 		time_begin = clock();
 		for (int i = 0; i < 100'000; i++)
-			for (size_t needle = 0; needle < nums.size(); needle++)
-				if (!std::binary_search(pointers.begin(), pointers.end(), needle, [](int a, int b) { return *nums[a] < *nums[b]; }))
+			for (unsigned char needle = 0; needle < pointers.size(); needle++)
+				if (!std::binary_search(pointers.begin(), pointers.end(), needle, [](unsigned char a, unsigned char b) { return *nums[a] < *nums[b]; }))
 					puts("Not found");
 		time_end = clock();
 
@@ -48,6 +48,9 @@ int main() {
 		mem[0] = nums.size();
 		nums.push_back(mem);
 		pointers.push_back(pointers.size());
+
+		if (pointers.size() == 200)
+			break;
 	}
 
 	return 0;
