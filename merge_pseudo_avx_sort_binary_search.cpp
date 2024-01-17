@@ -17,7 +17,7 @@ static void sort_full(int **postings, unsigned char *segments, int length) {
 
 static void sort_partial(int **postings, unsigned char *segments, int length) {
 	unsigned char x = segments[0];
-	unsigned char *pos = std::lower_bound(&segments[1], &segments[length], segments[0], [postings](unsigned char a, unsigned char b) { return *postings[a] > *postings[b]; });
+	unsigned char *pos = std::lower_bound(&segments[1], &segments[length], x, [postings](unsigned char a, unsigned char x) { return *postings[a] > *postings[x]; });
 	int i = pos - segments - 1;
 
 	memmove(&segments[0], &segments[1], i);
