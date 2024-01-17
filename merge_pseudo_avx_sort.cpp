@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include <algorithm>
+
 #include "harness.h"
 
 static void sort_full(int **postings, unsigned char *segments, int length) {
@@ -14,10 +16,16 @@ static void sort_full(int **postings, unsigned char *segments, int length) {
 }
 
 static void sort_partial(int **postings, unsigned char *segments, int length) {
-	int i;
 	unsigned char x = segments[0];
-	for (i = 0; i < length-1 && *postings[x] < *postings[segments[i+1]]; i++)
-		;
+
+	// Implementation 1
+	// int i;
+	// for (i = 0; i < length-1 && *postings[x] < *postings[segments[i+1]]; i++)
+	//	;
+
+	// Implementation 2
+	unsigned char *pos = std::find_if(&segments[1], &segments[length], [postings, x](unsigned char a) { return *postings[a] < *postings[x]; });
+	int i = pos - segments - 1;
 
 	memmove(&segments[0], &segments[1], i);
 	segments[i] = x;
