@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
 
 #include <algorithm>
 #include <array>
+#include <chrono>
 
 #include "config.h"
 #include "harness.h"
@@ -85,7 +85,7 @@ const char *names[NO_TESTS] = {
 
 int order[NO_TESTS];
 
-double timings[ARRAY_COUNT+1][NO_TESTS];
+long timings[ARRAY_COUNT+1][NO_TESTS];
 
 int main() {
 	for (int i = 0; i < NO_TESTS; i++)
@@ -97,40 +97,40 @@ int main() {
 
 	std::random_shuffle(std::begin(order), std::end(order));
 
-	clock_t time_begin = clock();
+	auto time_begin = std::chrono::steady_clock::now();
 
 	struct test *t = harness_new(ARRAY_LENGTH, ARRAY_COUNT);
 	harness_generate(t);
 
-	clock_t time_end = clock();
+	auto time_end = std::chrono::steady_clock::now();
 
-	printf("Init: %f\n", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+	printf("Init: %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("\n## MERGING %d LISTS ##\n", n);
 
-		time_begin = clock();
+		time_begin = std::chrono::steady_clock::now();
 		merge_baseline_copy_sort(t, n);
-		time_end = clock();
-		printf("Baseline (copy+sort) %f\n", (double)(time_end - time_begin) / CLOCKS_PER_SEC);
+		time_end = std::chrono::steady_clock::now();
+		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
 
 		for (int i = 0; i < NO_TESTS; i++) {
 			harness_reset(t);
 
 			int alg = order[i];
 
-			time_begin = clock();
+			time_begin = std::chrono::steady_clock::now();
 
 			bool res = (*functions[alg])(t, n);
 
-			time_end = clock();
+			time_end = std::chrono::steady_clock::now();
 
 			const char *status = harness_verify(t, ARRAY_LENGTH, n);
 
-			double runtime = (double)(time_end - time_begin) / CLOCKS_PER_SEC;
+			long runtime = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count();
 			timings[n][alg] = runtime;
 
-			printf("%-40s %-8s %f    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, res ? status : "unsupported");
+			printf("%-40s %-8s %ld    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, res ? status : "unsupported");
 		}
 	}
 
@@ -145,7 +145,7 @@ int main() {
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("%d", n);
 		for (int i = 0; i < NO_TESTS; i++)
-			printf(",%f", timings[n][i]);
+			printf(",%ld", timings[n][i]);
 		puts("");
 	}
 
