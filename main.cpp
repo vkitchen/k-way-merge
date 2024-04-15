@@ -1,9 +1,11 @@
+#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 
 #include <algorithm>
 #include <array>
 #include <chrono>
+#include <numeric>
 
 #include "config.h"
 #include "harness.h"
@@ -85,7 +87,8 @@ const char *names[NO_TESTS] = {
 
 int order[NO_TESTS];
 
-long timings[ARRAY_COUNT+1][NO_TESTS];
+long timings[ARRAY_COUNT+1][NO_TESTS][3];
+long iterations[ITER_COUNT];
 
 int main() {
 	for (int i = 0; i < NO_TESTS; i++)
@@ -119,18 +122,34 @@ int main() {
 
 			int alg = order[i];
 
-			time_begin = std::chrono::steady_clock::now();
+			bool res;
 
-			bool res = (*functions[alg])(t, n);
+			for (int j = 0; j < ITER_COUNT; j++) {
+				time_begin = std::chrono::steady_clock::now();
 
-			time_end = std::chrono::steady_clock::now();
+				res = (*functions[alg])(t, n);
+
+				time_end = std::chrono::steady_clock::now();
+				iterations[j] = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count();
+			}
 
 			const char *status = harness_verify(t, ARRAY_LENGTH, n);
 
-			long runtime = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count();
-			timings[n][alg] = runtime;
+			std::sort(&iterations[0], &iterations[ITER_COUNT]);
 
-			printf("%-40s %-8s %ld    %s\n", names[alg], status[0] == '\0' ? "true" : "false", runtime, res ? status : "unsupported");
+			double mean = std::accumulate(&iterations[0], &iterations[ITER_COUNT], 0.0) / ITER_COUNT;
+
+			double variance = std::accumulate(&iterations[0], &iterations[ITER_COUNT], 0.0, [mean](double acc, long val) {
+				return acc + (val - mean)*(val - mean) / (double)ITER_COUNT;
+			});
+
+			double sd = sqrt(variance);
+
+			timings[n][alg][0] = iterations[0];
+			timings[n][alg][1] = iterations[ITER_COUNT / 2];
+			timings[n][alg][2] = iterations[ITER_COUNT-1];
+
+			printf("%-40s %-8s %ld,%ld,%ld %.4f SD    %s\n", names[alg], status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
 		}
 	}
 
@@ -145,7 +164,25 @@ int main() {
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("%d", n);
 		for (int i = 0; i < NO_TESTS; i++)
-			printf(",%ld", timings[n][i]);
+			printf(",%ld", timings[n][i][1]);
+		puts("");
+	}
+
+	puts("");
+
+	printf("n");
+	for (int i = 0; i < NO_TESTS; i++)
+		printf(",%s (min),%s (med),%s (max)", names[i], names[i], names[i]);
+	puts("");
+
+
+	for (int n = 3; n <= ARRAY_COUNT; n++) {
+		printf("%d", n);
+		for (int i = 0; i < NO_TESTS; i++) {
+			printf(",%ld", timings[n][i][0]);
+			printf(",%ld", timings[n][i][1]);
+			printf(",%ld", timings[n][i][2]);
+		}
 		puts("");
 	}
 
