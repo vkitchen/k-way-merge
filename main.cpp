@@ -58,6 +58,18 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_state_machine_lookup_table_asc,
 //	merge_state_machine_lookup_table_binary_search,
 //	merge_state_machine_lookup_table_binary_search_fast,
+//	merge_insertion_sort_fast_O0,
+//	merge_insertion_sort_fast_O1,
+//	merge_insertion_sort_fast_O2,
+//	merge_insertion_sort_fast_O3,
+//	merge_heap_O0,
+//	merge_heap_O1,
+//	merge_heap_O2,
+//	merge_heap_O3,
+//	merge_state_machine_compiled_O0,
+//	merge_state_machine_compiled_O1,
+//	merge_state_machine_compiled_O2,
+//	merge_state_machine_compiled_O3,
 };
 
 const char *names[NO_TESTS] = {
@@ -83,6 +95,18 @@ const char *names[NO_TESTS] = {
 //	"State Machine (Lookup Table Ascending)",
 //	"State Machine (Binary Search)",
 //	"State Machine (Binary Search Fast)",
+//	"Insert (O0)",
+//	"Insert (O1)",
+//	"Insert (O2)",
+//	"Insert (O3)",
+//	"Heap (O0)",
+//	"Heap (O1)",
+//	"Heap (O2)",
+//	"Heap (O3)",
+//	"State Machine (O0)",
+//	"State Machine (O1)",
+//	"State Machine (O2)",
+//	"State Machine (O3)",
 };
 
 int order[NO_TESTS];

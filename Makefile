@@ -24,7 +24,19 @@ SRC = \
 	merge_state_machine_lookup_table_alt.cpp \
 	merge_state_machine_lookup_table_asc.cpp \
 	merge_state_machine_lookup_table_binary_search.cpp \
-	merge_state_machine_lookup_table_binary_search_fast.cpp
+	merge_state_machine_lookup_table_binary_search_fast.cpp \
+	merge_insertion_sort_fast_O0.cpp \
+	merge_insertion_sort_fast_O1.cpp \
+	merge_insertion_sort_fast_O2.cpp \
+	merge_insertion_sort_fast_O3.cpp \
+	merge_heap_O0.cpp \
+	merge_heap_O1.cpp \
+	merge_heap_O2.cpp \
+	merge_heap_O3.cpp \
+	merge_state_machine_compiled_O0.cpp \
+	merge_state_machine_compiled_O1.cpp \
+	merge_state_machine_compiled_O2.cpp \
+	merge_state_machine_compiled_O3.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -35,6 +47,42 @@ all: gen gen-lookup gen-lookup-asc main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) -c $<
+
+merge_insertion_sort_fast_O0.o: merge_insertion_sort_fast_O0.cpp
+	$(CXX) -Wall -Wextra -march=native -c $<
+
+merge_insertion_sort_fast_O1.o: merge_insertion_sort_fast_O1.cpp
+	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+
+merge_insertion_sort_fast_O2.o: merge_insertion_sort_fast_O2.cpp
+	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+
+merge_insertion_sort_fast_O3.o: merge_insertion_sort_fast_O3.cpp
+	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+
+merge_heap_O0.o: merge_heap_O0.cpp
+	$(CXX) -Wall -Wextra -march=native -c $<
+
+merge_heap_O1.o: merge_heap_O1.cpp
+	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+
+merge_heap_O2.o: merge_heap_O2.cpp
+	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+
+merge_heap_O3.o: merge_heap_O3.cpp
+	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+
+merge_state_machine_compiled_O0.o: merge_state_machine_compiled_O0.cpp
+	$(CXX) -Wall -Wextra -march=native -c $<
+
+merge_state_machine_compiled_O1.o: merge_state_machine_compiled_O1.cpp
+	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+
+merge_state_machine_compiled_O2.o: merge_state_machine_compiled_O2.cpp
+	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+
+merge_state_machine_compiled_O3.o: merge_state_machine_compiled_O3.cpp
+	$(CXX) -Wall -Wextra -O3 -march=native -c $<
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
@@ -49,7 +97,7 @@ gen-lookup-asc: gen_lookup_asc.o
 	for i in `seq 3 8`; do ./gen-lookup-asc "$$i" > "state_table_asc_$$i.h"; done
 
 main: main.o $(OBJECTS)
-	$(CXX) $(CFLAGS) -o $@ main.o $(OBJECTS)
+	$(CXX) -o $@ main.o $(OBJECTS)
 
 clean:
 	rm state_machine_*.cpp state_table_*.h gen.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
