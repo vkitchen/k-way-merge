@@ -96,7 +96,10 @@ int main() {
 
 	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
 	srand(seed);
-	printf("Seed: %d\n", seed);
+	printf("ARRAY_LENGTH %d\n", ARRAY_LENGTH);
+	printf("ARRAY_COUNT %d\n", ARRAY_COUNT);
+	printf("ITER_COUNT %d\n", ITER_COUNT);
+	printf("SEED %d\n", seed);
 
 	std::random_shuffle(std::begin(order), std::end(order));
 
@@ -107,6 +110,7 @@ int main() {
 
 	auto time_end = std::chrono::steady_clock::now();
 
+	puts("");
 	printf("Init: %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
