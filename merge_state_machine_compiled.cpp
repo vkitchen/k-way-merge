@@ -2,6 +2,7 @@
 
 #include <algorithm>
 
+#include "config.h"
 #include "harness.h"
 
 static int cmp_p(const void *a, const void *b) {
@@ -26,6 +27,10 @@ bool merge_state_machine_compiled(struct test *t, int n) {
 #include "state_machine_5.cpp"
 	} else if (n == 6) {
 #include "state_machine_6.cpp"
+#ifdef STATE7
+	} else if (n == 7) {
+#include "state_machine_7.cpp"
+#endif
 	} else {
 		return false;
 	}

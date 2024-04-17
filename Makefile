@@ -86,7 +86,7 @@ merge_state_machine_compiled_O3.o: merge_state_machine_compiled_O3.cpp
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
-	for i in `seq 3 6`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
+	for i in `seq 3 7`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
 
 gen-lookup: gen_lookup.o
 	$(CXX) $(CFLAGS) -o $@ gen_lookup.o
