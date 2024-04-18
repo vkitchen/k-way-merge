@@ -62,14 +62,20 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_insertion_sort_fast_O1,
 //	merge_insertion_sort_fast_O2,
 //	merge_insertion_sort_fast_O3,
+//	merge_insertion_sort_fast_Os,
+//	merge_insertion_sort_fast_Oz,
 //	merge_heap_O0,
 //	merge_heap_O1,
 //	merge_heap_O2,
 //	merge_heap_O3,
+//	merge_heap_Os,
+//	merge_heap_Oz,
 //	merge_state_machine_compiled_O0,
 //	merge_state_machine_compiled_O1,
 //	merge_state_machine_compiled_O2,
 //	merge_state_machine_compiled_O3,
+//	merge_state_machine_compiled_Os,
+//	merge_state_machine_compiled_Oz,
 };
 
 const char *names[NO_TESTS] = {
@@ -99,14 +105,20 @@ const char *names[NO_TESTS] = {
 //	"Insert (O1)",
 //	"Insert (O2)",
 //	"Insert (O3)",
+//	"Insert (Os)",
+//	"Insert (Oz)",
 //	"Heap (O0)",
 //	"Heap (O1)",
 //	"Heap (O2)",
 //	"Heap (O3)",
+//	"Heap (Os)",
+//	"Heap (Oz)",
 //	"State Machine (O0)",
 //	"State Machine (O1)",
 //	"State Machine (O2)",
 //	"State Machine (O3)",
+//	"State Machine (Os)",
+//	"State Machine (Oz)",
 };
 
 int order[NO_TESTS];
