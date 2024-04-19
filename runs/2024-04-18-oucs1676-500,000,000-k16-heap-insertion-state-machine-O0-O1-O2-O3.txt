@@ -1,0 +1,248 @@
+ARRAY_LENGTH 500000000
+ARRAY_COUNT 16
+ITER_COUNT 11
+SEED 1713384123
+
+Init: 764315
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 44192
+Heap (O1)                                true     13374,13381,13401 7.8519 SD    
+Insert (O2)                              true     9399,9414,9429 8.5435 SD    
+Insert (O3)                              true     9277,9323,9348 20.8128 SD    
+Heap (O0)                                true     37111,37146,37154 14.4222 SD    
+State Machine (O1)                       true     10187,10189,10196 2.4155 SD    
+State Machine (O2)                       true     8636,8637,8639 0.9360 SD    
+State Machine (O0)                       true     10506,10508,10512 1.5535 SD    
+State Machine (O3)                       true     8590,8592,8596 2.0124 SD    
+Heap (O3)                                true     10694,10715,10781 22.5605 SD    
+Heap (O2)                                true     10721,10741,10776 16.6758 SD    
+Insert (O0)                              true     19423,19445,19496 19.8048 SD    
+Insert (O1)                              true     10851,10853,10857 1.9582 SD    
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 115068
+Heap (O1)                                true     21995,22014,22030 11.1392 SD    
+Insert (O2)                              true     14104,14108,14112 2.2709 SD    
+Insert (O3)                              true     14040,14084,14127 27.1388 SD    
+Heap (O0)                                true     56767,56784,56796 10.1745 SD    
+State Machine (O1)                       true     15912,15914,15916 0.9621 SD    
+State Machine (O2)                       true     13885,13887,13889 1.0679 SD    
+State Machine (O0)                       true     16863,16865,16871 2.5390 SD    
+State Machine (O3)                       true     14138,14140,14145 1.8763 SD    
+Heap (O3)                                true     17398,17410,17416 5.4651 SD    
+Heap (O2)                                true     17503,17505,17511 2.7783 SD    
+Insert (O0)                              true     30037,30119,30218 56.0389 SD    
+Insert (O1)                              true     16331,16335,16338 1.8136 SD    
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 97930
+Heap (O1)                                true     30934,30943,30953 5.5103 SD    
+Insert (O2)                              true     18751,18753,18757 1.6211 SD    
+Insert (O3)                              true     18995,19071,19166 47.0895 SD    
+Heap (O0)                                true     77683,77705,77733 15.8250 SD    
+State Machine (O1)                       true     21630,21633,21637 2.1742 SD    
+State Machine (O2)                       true     20094,20097,20099 1.4827 SD    
+State Machine (O0)                       true     23688,23690,23694 2.0165 SD    
+State Machine (O3)                       true     20113,20114,20124 3.2270 SD    
+Heap (O3)                                true     24182,24216,24228 13.0612 SD    
+Heap (O2)                                true     24131,24140,24154 7.2625 SD    
+Insert (O0)                              true     41271,41382,41490 73.9440 SD    
+Insert (O1)                              true     22032,22044,22055 6.4731 SD    
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 134863
+Heap (O1)                                true     42380,42390,42395 5.0288 SD    
+Insert (O2)                              true     23451,23456,23464 3.4378 SD    
+Insert (O3)                              true     23837,23942,23982 39.7191 SD    
+Heap (O0)                                true     101201,101276,101499 105.6245 SD    
+State Machine (O1)                       true     30783,30786,30792 2.5357 SD    
+State Machine (O2)                       true     29296,29299,29309 3.4760 SD    
+State Machine (O0)                       true     37620,37622,37627 2.3845 SD    
+State Machine (O3)                       true     29334,29338,29340 1.7721 SD    
+Heap (O3)                                true     32539,32550,32563 6.4437 SD    
+Heap (O2)                                true     32610,32613,32617 1.8273 SD    
+Insert (O0)                              true     53313,53425,53550 56.7599 SD    
+Insert (O1)                              true     27688,27709,27735 14.5312 SD    
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 120675
+Heap (O1)                                true     54222,54229,54237 4.5545 SD    
+Insert (O2)                              true     28461,28463,28471 2.5745 SD    
+Insert (O3)                              true     29277,29350,29414 43.0746 SD    
+Heap (O0)                                true     127344,127421,127486 44.2254 SD    
+State Machine (O1)                       true     46208,46214,46226 4.3995 SD    
+State Machine (O2)                       true     45417,45419,45429 3.3966 SD    
+State Machine (O0)                       true     75158,75165,75174 5.3335 SD    
+State Machine (O3)                       true     45544,45547,45554 3.3526 SD    
+Heap (O3)                                true     41765,41767,41773 2.9986 SD    
+Heap (O2)                                true     41630,41640,41647 5.8663 SD    
+Insert (O0)                              true     66602,66673,66741 41.8314 SD    
+Insert (O1)                              true     33374,33403,33461 27.1497 SD    
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 173722
+Heap (O1)                                true     62757,62772,62792 12.3168 SD    
+Insert (O2)                              true     33465,33470,33473 2.7574 SD    
+Insert (O3)                              true     34759,34873,34971 61.6664 SD    
+Heap (O0)                                true     149141,149165,149195 16.4261 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     48350,48356,48360 3.0451 SD    
+Heap (O2)                                true     48519,48532,48539 5.8621 SD    
+Insert (O0)                              true     80856,80905,81029 52.5866 SD    
+Insert (O1)                              true     38554,38590,38613 19.1872 SD    
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 158255
+Heap (O1)                                true     73684,73692,73704 5.7897 SD    
+Insert (O2)                              true     38575,38579,38628 14.5528 SD    
+Insert (O3)                              true     40539,40704,40822 68.1248 SD    
+Heap (O0)                                true     173746,173860,174146 134.9474 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     56502,56505,56510 2.2890 SD    
+Heap (O2)                                true     56268,56307,56401 48.2839 SD    
+Insert (O0)                              true     96356,96424,96576 53.4456 SD    
+Insert (O1)                              true     44427,44469,44555 35.8590 SD    
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 196304
+Heap (O1)                                true     86356,86397,86423 19.8873 SD    
+Insert (O2)                              true     44712,44713,44719 2.1780 SD    
+Insert (O3)                              true     45707,45858,45952 64.7418 SD    
+Heap (O0)                                true     199846,199866,199931 26.7495 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     65926,65930,65942 4.6337 SD    
+Heap (O2)                                true     66581,66583,66589 2.8920 SD    
+Insert (O0)                              true     113143,113228,113322 45.9059 SD    
+Insert (O1)                              true     50161,50224,50830 194.5384 SD    
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 189134
+Heap (O1)                                true     100437,100452,100470 9.5951 SD    
+Insert (O2)                              true     50111,50116,50120 2.3531 SD    
+Insert (O3)                              true     52128,52223,52290 48.4412 SD    
+Heap (O0)                                true     229150,229217,229432 87.4179 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     76161,76163,76169 2.5259 SD    
+Heap (O2)                                true     75973,76001,76016 14.1515 SD    
+Insert (O0)                              true     130815,130884,130964 43.7417 SD    
+Insert (O1)                              true     55920,55986,56170 64.5911 SD    
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 239273
+Heap (O1)                                true     110820,110828,110842 5.8536 SD    
+Insert (O2)                              true     55249,55253,55256 1.8273 SD    
+Insert (O3)                              true     58155,58280,58348 53.9148 SD    
+Heap (O0)                                true     254707,254769,254840 35.6836 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     84927,84930,84944 4.5690 SD    
+Heap (O2)                                true     84848,84858,84878 8.1383 SD    
+Insert (O0)                              true     149645,149668,149832 59.9625 SD    
+Insert (O1)                              true     62383,62490,62596 58.8497 SD    
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 226695
+Heap (O1)                                true     123998,124005,124030 8.6349 SD    
+Insert (O2)                              true     63408,63416,63420 3.5021 SD    
+Insert (O3)                              true     65015,65417,65467 121.0230 SD    
+Heap (O0)                                true     282649,282979,283489 283.0514 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     94383,94394,94406 5.5148 SD    
+Heap (O2)                                true     94118,94174,94200 25.3165 SD    
+Insert (O0)                              true     169812,169824,169839 9.5424 SD    
+Insert (O1)                              true     69522,69606,69680 44.6120 SD    
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 292024
+Heap (O1)                                true     138449,138487,138521 21.5721 SD    
+Insert (O2)                              true     70257,70261,70267 3.0882 SD    
+Insert (O3)                              true     71004,71189,71397 117.7883 SD    
+Heap (O0)                                true     311702,311750,311811 31.7154 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     105834,105839,105848 3.8203 SD    
+Heap (O2)                                true     106072,106077,106115 11.3407 SD    
+Insert (O0)                              true     190796,190818,190858 16.3004 SD    
+Insert (O1)                              true     78285,78362,78422 37.4550 SD    
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 276713
+Heap (O1)                                true     152592,152617,152665 20.5949 SD    
+Insert (O2)                              true     75548,75552,75558 2.9317 SD    
+Insert (O3)                              true     77507,77712,77821 88.7510 SD    
+Heap (O0)                                true     344540,344804,345665 273.4012 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     117546,117556,117681 36.8629 SD    
+Heap (O2)                                true     117143,117166,117207 18.0472 SD    
+Insert (O0)                              true     213373,213398,213447 19.8140 SD    
+Insert (O1)                              true     83123,83298,83497 102.4850 SD    
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 317462
+Heap (O1)                                true     161839,161857,161884 14.2342 SD    
+Insert (O2)                              true     82869,82878,82898 7.6331 SD    
+Insert (O3)                              true     83665,83779,83958 96.4840 SD    
+Heap (O0)                                true     368161,368256,368472 76.4958 SD    
+State Machine (O1)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O2)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O0)                       false    0,0,0 0.0000 SD    unsupported
+State Machine (O3)                       false    0,0,0 0.0000 SD    unsupported
+Heap (O3)                                true     125138,125151,125169 7.9002 SD    
+Heap (O2)                                true     125152,125169,125177 7.9752 SD    
+Insert (O0)                              true     236766,236790,236863 32.9858 SD    
+Insert (O1)                              true     90034,90072,90134 29.6403 SD    
+
+n,Insert (O0),Insert (O1),Insert (O2),Insert (O3),Heap (O0),Heap (O1),Heap (O2),Heap (O3),State Machine (O0),State Machine (O1),State Machine (O2),State Machine (O3)
+3,19445,10853,9414,9323,37146,13381,10741,10715,10508,10189,8637,8592
+4,30119,16335,14108,14084,56784,22014,17505,17410,16865,15914,13887,14140
+5,41382,22044,18753,19071,77705,30943,24140,24216,23690,21633,20097,20114
+6,53425,27709,23456,23942,101276,42390,32613,32550,37622,30786,29299,29338
+7,66673,33403,28463,29350,127421,54229,41640,41767,75165,46214,45419,45547
+8,80905,38590,33470,34873,149165,62772,48532,48356,0,0,0,0
+9,96424,44469,38579,40704,173860,73692,56307,56505,0,0,0,0
+10,113228,50224,44713,45858,199866,86397,66583,65930,0,0,0,0
+11,130884,55986,50116,52223,229217,100452,76001,76163,0,0,0,0
+12,149668,62490,55253,58280,254769,110828,84858,84930,0,0,0,0
+13,169824,69606,63416,65417,282979,124005,94174,94394,0,0,0,0
+14,190818,78362,70261,71189,311750,138487,106077,105839,0,0,0,0
+15,213398,83298,75552,77712,344804,152617,117166,117556,0,0,0,0
+16,236790,90072,82878,83779,368256,161857,125169,125151,0,0,0,0
+
+n,Insert (O0) (min),Insert (O0) (med),Insert (O0) (max),Insert (O1) (min),Insert (O1) (med),Insert (O1) (max),Insert (O2) (min),Insert (O2) (med),Insert (O2) (max),Insert (O3) (min),Insert (O3) (med),Insert (O3) (max),Heap (O0) (min),Heap (O0) (med),Heap (O0) (max),Heap (O1) (min),Heap (O1) (med),Heap (O1) (max),Heap (O2) (min),Heap (O2) (med),Heap (O2) (max),Heap (O3) (min),Heap (O3) (med),Heap (O3) (max),State Machine (O0) (min),State Machine (O0) (med),State Machine (O0) (max),State Machine (O1) (min),State Machine (O1) (med),State Machine (O1) (max),State Machine (O2) (min),State Machine (O2) (med),State Machine (O2) (max),State Machine (O3) (min),State Machine (O3) (med),State Machine (O3) (max)
+3,19423,19445,19496,10851,10853,10857,9399,9414,9429,9277,9323,9348,37111,37146,37154,13374,13381,13401,10721,10741,10776,10694,10715,10781,10506,10508,10512,10187,10189,10196,8636,8637,8639,8590,8592,8596
+4,30037,30119,30218,16331,16335,16338,14104,14108,14112,14040,14084,14127,56767,56784,56796,21995,22014,22030,17503,17505,17511,17398,17410,17416,16863,16865,16871,15912,15914,15916,13885,13887,13889,14138,14140,14145
+5,41271,41382,41490,22032,22044,22055,18751,18753,18757,18995,19071,19166,77683,77705,77733,30934,30943,30953,24131,24140,24154,24182,24216,24228,23688,23690,23694,21630,21633,21637,20094,20097,20099,20113,20114,20124
+6,53313,53425,53550,27688,27709,27735,23451,23456,23464,23837,23942,23982,101201,101276,101499,42380,42390,42395,32610,32613,32617,32539,32550,32563,37620,37622,37627,30783,30786,30792,29296,29299,29309,29334,29338,29340
+7,66602,66673,66741,33374,33403,33461,28461,28463,28471,29277,29350,29414,127344,127421,127486,54222,54229,54237,41630,41640,41647,41765,41767,41773,75158,75165,75174,46208,46214,46226,45417,45419,45429,45544,45547,45554
+8,80856,80905,81029,38554,38590,38613,33465,33470,33473,34759,34873,34971,149141,149165,149195,62757,62772,62792,48519,48532,48539,48350,48356,48360,0,0,0,0,0,0,0,0,0,0,0,0
+9,96356,96424,96576,44427,44469,44555,38575,38579,38628,40539,40704,40822,173746,173860,174146,73684,73692,73704,56268,56307,56401,56502,56505,56510,0,0,0,0,0,0,0,0,0,0,0,0
+10,113143,113228,113322,50161,50224,50830,44712,44713,44719,45707,45858,45952,199846,199866,199931,86356,86397,86423,66581,66583,66589,65926,65930,65942,0,0,0,0,0,0,0,0,0,0,0,0
+11,130815,130884,130964,55920,55986,56170,50111,50116,50120,52128,52223,52290,229150,229217,229432,100437,100452,100470,75973,76001,76016,76161,76163,76169,0,0,0,0,0,0,0,0,0,0,0,0
+12,149645,149668,149832,62383,62490,62596,55249,55253,55256,58155,58280,58348,254707,254769,254840,110820,110828,110842,84848,84858,84878,84927,84930,84944,0,0,0,0,0,0,0,0,0,0,0,0
+13,169812,169824,169839,69522,69606,69680,63408,63416,63420,65015,65417,65467,282649,282979,283489,123998,124005,124030,94118,94174,94200,94383,94394,94406,0,0,0,0,0,0,0,0,0,0,0,0
+14,190796,190818,190858,78285,78362,78422,70257,70261,70267,71004,71189,71397,311702,311750,311811,138449,138487,138521,106072,106077,106115,105834,105839,105848,0,0,0,0,0,0,0,0,0,0,0,0
+15,213373,213398,213447,83123,83298,83497,75548,75552,75558,77507,77712,77821,344540,344804,345665,152592,152617,152665,117143,117166,117207,117546,117556,117681,0,0,0,0,0,0,0,0,0,0,0,0
+16,236766,236790,236863,90034,90072,90134,82869,82878,82898,83665,83779,83958,368161,368256,368472,161839,161857,161884,125152,125169,125177,125138,125151,125169,0,0,0,0,0,0,0,0,0,0,0,0
