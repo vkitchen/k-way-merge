@@ -29,14 +29,20 @@ SRC = \
 	merge_insertion_sort_fast_O1.cpp \
 	merge_insertion_sort_fast_O2.cpp \
 	merge_insertion_sort_fast_O3.cpp \
+	merge_insertion_sort_fast_Os.cpp \
+	merge_insertion_sort_fast_Oz.cpp \
 	merge_heap_O0.cpp \
 	merge_heap_O1.cpp \
 	merge_heap_O2.cpp \
 	merge_heap_O3.cpp \
+	merge_heap_Os.cpp \
+	merge_heap_Oz.cpp \
 	merge_state_machine_compiled_O0.cpp \
 	merge_state_machine_compiled_O1.cpp \
 	merge_state_machine_compiled_O2.cpp \
-	merge_state_machine_compiled_O3.cpp
+	merge_state_machine_compiled_O3.cpp \
+	merge_state_machine_compiled_Os.cpp \
+	merge_state_machine_compiled_Oz.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -60,6 +66,12 @@ merge_insertion_sort_fast_O2.o: merge_insertion_sort_fast_O2.cpp
 merge_insertion_sort_fast_O3.o: merge_insertion_sort_fast_O3.cpp
 	$(CXX) -Wall -Wextra -O3 -march=native -c $<
 
+merge_insertion_sort_fast_Os.o: merge_insertion_sort_fast_Os.cpp
+	$(CXX) -Wall -Wextra -Os -march=native -c $<
+
+merge_insertion_sort_fast_Oz.o: merge_insertion_sort_fast_Oz.cpp
+	$(CXX) -Wall -Wextra -Oz -march=native -c $<
+
 merge_heap_O0.o: merge_heap_O0.cpp
 	$(CXX) -Wall -Wextra -march=native -c $<
 
@@ -72,6 +84,12 @@ merge_heap_O2.o: merge_heap_O2.cpp
 merge_heap_O3.o: merge_heap_O3.cpp
 	$(CXX) -Wall -Wextra -O3 -march=native -c $<
 
+merge_heap_Os.o: merge_heap_Os.cpp
+	$(CXX) -Wall -Wextra -Os -march=native -c $<
+
+merge_heap_Oz.o: merge_heap_Oz.cpp
+	$(CXX) -Wall -Wextra -Oz -march=native -c $<
+
 merge_state_machine_compiled_O0.o: merge_state_machine_compiled_O0.cpp
 	$(CXX) -Wall -Wextra -march=native -c $<
 
@@ -83,6 +101,12 @@ merge_state_machine_compiled_O2.o: merge_state_machine_compiled_O2.cpp
 
 merge_state_machine_compiled_O3.o: merge_state_machine_compiled_O3.cpp
 	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+
+merge_state_machine_compiled_Os.o: merge_state_machine_compiled_Os.cpp
+	$(CXX) -Wall -Wextra -Os -march=native -c $<
+
+merge_state_machine_compiled_Oz.o: merge_state_machine_compiled_Oz.cpp
+	$(CXX) -Wall -Wextra -Oz -march=native -c $<
 
 gen: gen.o
 	$(CXX) $(CFLAGS) -o $@ gen.o
