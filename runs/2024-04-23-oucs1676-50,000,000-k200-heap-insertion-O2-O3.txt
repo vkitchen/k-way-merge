@@ -1,0 +1,1792 @@
+ARRAY_LENGTH 50000000
+ARRAY_COUNT 200
+ITER_COUNT 11
+SEED 1713836982
+
+Init: 868015
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 3973
+Insert (O3)                              true     1026,1031,1036 3.0261 SD    
+Heap (O3)                                true     927,928,930 0.8624 SD    
+Heap (O2)                                true     933,934,938 1.3361 SD    
+Insert (O2)                              true     902,903,906 1.0757 SD    
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 10324
+Insert (O3)                              true     1577,1577,1579 0.6556 SD    
+Heap (O3)                                true     1516,1517,1518 0.6428 SD    
+Heap (O2)                                true     1517,1517,1518 0.4810 SD    
+Insert (O2)                              true     1366,1369,1373 2.3284 SD    
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 8472
+Insert (O3)                              true     2169,2169,2172 0.8814 SD    
+Heap (O3)                                true     2106,2106,2107 0.4454 SD    
+Heap (O2)                                true     2112,2113,2114 0.7158 SD    
+Insert (O2)                              true     1841,1844,1853 3.8462 SD    
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 10597
+Insert (O3)                              true     2808,2809,2810 0.5750 SD    
+Heap (O3)                                true     2915,2917,2920 1.1923 SD    
+Heap (O2)                                true     2921,2922,2926 1.2984 SD    
+Insert (O2)                              true     2325,2332,2339 3.9876 SD    
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 10452
+Insert (O3)                              true     3479,3479,3480 0.4454 SD    
+Heap (O3)                                true     3816,3817,3820 1.1571 SD    
+Heap (O2)                                true     3872,3874,3891 6.2852 SD    
+Insert (O2)                              true     2848,2851,2858 3.1413 SD    
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 15442
+Insert (O3)                              true     4189,4190,4192 0.8624 SD    
+Heap (O3)                                true     4537,4540,4544 1.9582 SD    
+Heap (O2)                                true     4572,4573,4574 0.8332 SD    
+Insert (O2)                              true     3361,3372,3384 6.4449 SD    
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 16253
+Insert (O3)                              true     4938,4939,4940 0.7158 SD    
+Heap (O3)                                true     5319,5319,5321 0.6556 SD    
+Heap (O2)                                true     5416,5419,5421 1.2856 SD    
+Insert (O2)                              true     3918,3925,3942 7.8023 SD    
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 18035
+Insert (O3)                              true     5742,5743,5745 0.9000 SD    
+Heap (O3)                                true     6282,6284,6287 1.4316 SD    
+Heap (O2)                                true     6308,6309,6314 1.6109 SD    
+Insert (O2)                              true     4477,4482,4488 3.1360 SD    
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 18378
+Insert (O3)                              true     6584,6586,6587 1.0285 SD    
+Heap (O3)                                true     7336,7339,7343 2.1047 SD    
+Heap (O2)                                true     7383,7384,7389 1.6959 SD    
+Insert (O2)                              true     5032,5040,5046 4.2231 SD    
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 21211
+Insert (O3)                              true     7479,7480,7483 1.2984 SD    
+Heap (O3)                                true     8212,8213,8216 1.3727 SD    
+Heap (O2)                                true     8336,8338,8343 1.9242 SD    
+Insert (O2)                              true     5653,5654,5659 2.3070 SD    
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 20861
+Insert (O3)                              true     8506,8507,8509 0.7925 SD    
+Heap (O3)                                true     9265,9270,9280 4.4610 SD    
+Heap (O2)                                true     9356,9357,9359 1.0523 SD    
+Insert (O2)                              true     6364,6370,6379 4.8122 SD    
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 25456
+Insert (O3)                              true     9466,9468,9472 1.9199 SD    
+Heap (O3)                                true     10447,10450,10453 1.6713 SD    
+Heap (O2)                                true     10488,10491,10494 1.6959 SD    
+Insert (O2)                              true     7007,7012,7017 3.1069 SD    
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 25680
+Insert (O3)                              true     10508,10509,10511 1.0285 SD    
+Heap (O3)                                true     11665,11668,11673 2.3671 SD    
+Heap (O2)                                true     11770,11772,11774 1.0757 SD    
+Insert (O2)                              true     7698,7707,7714 5.2570 SD    
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 29856
+Insert (O3)                              true     11599,11601,11603 1.3787 SD    
+Heap (O3)                                true     12512,12516,12519 1.7581 SD    
+Heap (O2)                                true     12622,12626,12632 2.6442 SD    
+Insert (O2)                              true     8388,8392,8396 2.6096 SD    
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 28535
+Insert (O3)                              true     12696,12706,12722 7.2145 SD    
+Heap (O3)                                true     13534,13538,13543 2.6722 SD    
+Heap (O2)                                true     13639,13641,13644 1.7487 SD    
+Insert (O2)                              true     9097,9102,9113 4.9776 SD    
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 35309
+Insert (O3)                              true     13862,13875,13891 7.1536 SD    
+Heap (O3)                                true     14675,14681,14723 12.7668 SD    
+Heap (O2)                                true     14788,14795,14805 4.5400 SD    
+Insert (O2)                              true     9822,9840,9860 9.7650 SD    
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 32144
+Insert (O3)                              true     15071,15086,15101 7.7257 SD    
+Heap (O3)                                true     15889,15909,15929 10.7396 SD    
+Heap (O2)                                true     16004,16018,16066 16.6242 SD    
+Insert (O2)                              true     10570,10590,10624 18.5757 SD    
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 37303
+Insert (O3)                              true     16315,16318,16319 1.5535 SD    
+Heap (O3)                                true     17009,17043,17068 16.9725 SD    
+Heap (O2)                                true     17151,17168,17179 8.1291 SD    
+Insert (O2)                              true     11383,11408,11431 15.5638 SD    
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 36093
+Insert (O3)                              true     17630,17638,17644 4.7098 SD    
+Heap (O3)                                true     18115,18161,18198 24.5619 SD    
+Heap (O2)                                true     18222,18262,18285 17.8724 SD    
+Insert (O2)                              true     12200,12230,12262 18.4847 SD    
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 41393
+Insert (O3)                              true     18952,18957,18962 2.9062 SD    
+Heap (O3)                                true     19512,19553,19577 17.3324 SD    
+Heap (O2)                                true     19627,19655,19668 12.1158 SD    
+Insert (O2)                              true     13058,13067,13080 6.4846 SD    
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 40001
+Insert (O3)                              true     20353,20358,20360 2.0041 SD    
+Heap (O3)                                true     20895,20918,20945 16.2445 SD    
+Heap (O2)                                true     21027,21049,21058 11.0641 SD    
+Insert (O2)                              true     13909,13927,13935 8.6321 SD    
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 48326
+Insert (O3)                              true     21786,21788,21796 2.6660 SD    
+Heap (O3)                                true     22025,22039,22045 5.8522 SD    
+Heap (O2)                                true     22160,22177,22186 7.5831 SD    
+Insert (O2)                              true     14824,14827,14833 2.5937 SD    
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 43892
+Insert (O3)                              true     23283,23285,23289 1.7721 SD    
+Heap (O3)                                true     23343,23353,23360 5.5013 SD    
+Heap (O2)                                true     23439,23446,23453 4.2504 SD    
+Insert (O2)                              true     15719,15724,15727 2.2709 SD    
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 49522
+Insert (O3)                              true     24797,24798,24801 1.1499 SD    
+Heap (O3)                                true     24721,24727,24732 3.5115 SD    
+Heap (O2)                                true     24797,24799,24803 1.9199 SD    
+Insert (O2)                              true     16649,16653,16657 2.5519 SD    
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 47667
+Insert (O3)                              true     26353,26356,26361 2.0611 SD    
+Heap (O3)                                true     26047,26053,26063 4.2949 SD    
+Heap (O2)                                true     26083,26086,26094 3.3673 SD    
+Insert (O2)                              true     17577,17580,17582 1.5048 SD    
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 55042
+Insert (O3)                              true     27973,27976,27982 2.3531 SD    
+Heap (O3)                                true     27380,27384,27392 3.7746 SD    
+Heap (O2)                                true     27473,27475,27492 5.0420 SD    
+Insert (O2)                              true     18561,18565,18568 1.9113 SD    
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 53633
+Insert (O3)                              true     29642,29646,29694 14.2272 SD    
+Heap (O3)                                true     28620,28624,28630 2.8604 SD    
+Heap (O2)                                true     28724,28728,28735 3.3869 SD    
+Insert (O2)                              true     19544,19547,19551 1.8763 SD    
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 59073
+Insert (O3)                              true     31392,31394,31400 2.5873 SD    
+Heap (O3)                                true     30203,30212,30215 3.5279 SD    
+Heap (O2)                                true     30308,30310,30314 1.5851 SD    
+Insert (O2)                              true     20599,20602,20605 2.0369 SD    
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 56934
+Insert (O3)                              true     33460,33467,33471 3.0261 SD    
+Heap (O3)                                true     31591,31595,31606 4.2660 SD    
+Heap (O2)                                true     31761,31768,31771 3.1935 SD    
+Insert (O2)                              true     21919,21923,21930 2.6379 SD    
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 62752
+Insert (O3)                              true     35415,35428,35441 7.0687 SD    
+Heap (O3)                                true     32692,32698,32709 4.7168 SD    
+Heap (O2)                                true     32836,32840,32872 9.8106 SD    
+Insert (O2)                              true     23096,23099,23105 2.5519 SD    
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 61146
+Insert (O3)                              true     38606,38671,38736 42.3285 SD    
+Heap (O3)                                true     33733,33739,33748 4.1739 SD    
+Heap (O2)                                true     33875,33880,33886 3.3129 SD    
+Insert (O2)                              true     24527,24551,24611 26.4553 SD    
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 65773
+Insert (O3)                              true     44799,44855,44933 40.7486 SD    
+Heap (O3)                                true     35318,35320,35332 3.9101 SD    
+Heap (O2)                                true     35447,35452,35458 3.6927 SD    
+Insert (O2)                              true     29057,29233,29365 103.3089 SD    
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 65534
+Insert (O3)                              true     47880,47894,47908 8.0433 SD    
+Heap (O3)                                true     36694,36705,36714 6.4244 SD    
+Heap (O2)                                true     36820,36834,36841 5.9669 SD    
+Insert (O2)                              true     33939,34007,34033 27.0637 SD    
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 70452
+Insert (O3)                              true     50099,50104,50113 3.5791 SD    
+Heap (O3)                                true     38750,38816,38986 72.3867 SD    
+Heap (O2)                                true     38834,38905,39013 51.4940 SD    
+Insert (O2)                              true     35563,35583,35591 7.2157 SD    
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 67776
+Insert (O3)                              true     52302,52306,52312 3.1149 SD    
+Heap (O3)                                true     44167,44309,44450 84.5257 SD    
+Heap (O2)                                true     44169,44296,44466 76.0993 SD    
+Insert (O2)                              true     36994,36998,37005 3.6204 SD    
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 74080
+Insert (O3)                              true     54507,54513,54517 2.4529 SD    
+Heap (O3)                                true     46614,46626,46638 7.6017 SD    
+Heap (O2)                                true     46624,46655,46683 14.4096 SD    
+Insert (O2)                              true     38376,38379,38387 3.8804 SD    
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 73501
+Insert (O3)                              true     56800,56803,56810 2.8748 SD    
+Heap (O3)                                true     48272,48281,48290 4.6194 SD    
+Heap (O2)                                true     48292,48300,48315 6.8731 SD    
+Insert (O2)                              true     39834,39837,39843 2.7991 SD    
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 79312
+Insert (O3)                              true     59147,59151,59158 3.7173 SD    
+Heap (O3)                                true     49803,49813,49822 5.3149 SD    
+Heap (O2)                                true     49873,49878,49889 4.6176 SD    
+Insert (O2)                              true     41323,41327,41335 3.4926 SD    
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 77845
+Insert (O3)                              true     61531,61534,61550 5.3844 SD    
+Heap (O3)                                true     51381,51388,51401 6.3141 SD    
+Heap (O2)                                true     51356,51365,51377 5.1394 SD    
+Insert (O2)                              true     42832,42837,42852 5.3567 SD    
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 83949
+Insert (O3)                              true     63963,63967,63970 2.2890 SD    
+Heap (O3)                                true     53267,53276,53278 3.9876 SD    
+Heap (O2)                                true     53195,53201,53210 4.1141 SD    
+Insert (O2)                              true     44373,44376,44390 4.8685 SD    
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 80700
+Insert (O3)                              true     66446,66452,66457 3.3402 SD    
+Heap (O3)                                true     54832,54839,54849 5.8224 SD    
+Heap (O2)                                true     54789,54797,54800 2.8372 SD    
+Insert (O2)                              true     45931,45933,45939 2.4052 SD    
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 87326
+Insert (O3)                              true     68956,68961,68968 3.6950 SD    
+Heap (O3)                                true     56770,56781,56788 4.7343 SD    
+Heap (O2)                                true     56677,56683,56794 32.1600 SD    
+Insert (O2)                              true     47506,47509,47514 2.5226 SD    
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 87087
+Insert (O3)                              true     71528,71531,71538 3.7128 SD    
+Heap (O3)                                true     58323,58333,58340 5.0107 SD    
+Heap (O2)                                true     58257,58259,58265 2.3284 SD    
+Insert (O2)                              true     49109,49114,49127 5.4651 SD    
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 91955
+Insert (O3)                              true     74146,74149,74165 4.9593 SD    
+Heap (O3)                                true     60261,60268,60288 8.8505 SD    
+Heap (O2)                                true     60199,60201,60211 3.8484 SD    
+Insert (O2)                              true     50744,50748,50753 2.6411 SD    
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 90849
+Insert (O3)                              true     76821,76828,76834 4.0554 SD    
+Heap (O3)                                true     62033,62039,62046 3.8911 SD    
+Heap (O2)                                true     61957,61961,61966 3.2550 SD    
+Insert (O2)                              true     52415,52417,52430 4.4313 SD    
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 99978
+Insert (O3)                              true     79518,79527,79535 4.8855 SD    
+Heap (O3)                                true     63479,63483,63491 3.1909 SD    
+Heap (O2)                                true     63488,63495,63500 3.9626 SD    
+Insert (O2)                              true     54085,54090,54101 4.2172 SD    
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 93840
+Insert (O3)                              true     82286,82289,82293 2.5226 SD    
+Heap (O3)                                true     65041,65049,65079 10.7565 SD    
+Heap (O2)                                true     65017,65027,65035 4.8396 SD    
+Insert (O2)                              true     55805,55810,55817 3.6545 SD    
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 99660
+Insert (O3)                              true     85101,85109,85117 4.3084 SD    
+Heap (O3)                                true     67128,67137,67148 5.9000 SD    
+Heap (O2)                                true     67110,67117,67127 4.8515 SD    
+Insert (O2)                              true     57556,57561,57569 4.0960 SD    
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 98987
+Insert (O3)                              true     87960,87970,87985 6.9425 SD    
+Heap (O3)                                true     68987,68990,69003 5.1184 SD    
+Heap (O2)                                true     68944,68949,68957 4.0676 SD    
+Insert (O2)                              true     59331,59335,59343 3.6454 SD    
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 109620
+Insert (O3)                              true     90882,90887,90898 5.1842 SD    
+Heap (O3)                                true     71059,71062,71081 5.7366 SD    
+Heap (O2)                                true     71009,71014,71023 4.3542 SD    
+Insert (O2)                              true     61132,61138,61151 4.6781 SD    
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 102000
+Insert (O3)                              true     93826,93838,93845 5.7381 SD    
+Heap (O3)                                true     72914,72923,72939 7.4512 SD    
+Heap (O2)                                true     72718,72728,72735 5.2962 SD    
+Insert (O2)                              true     62940,62942,62965 6.7051 SD    
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 110285
+Insert (O3)                              true     96840,96851,96864 6.3389 SD    
+Heap (O3)                                true     74835,74840,74848 3.8203 SD    
+Heap (O2)                                true     74615,74623,74639 6.9294 SD    
+Insert (O2)                              true     64801,64805,64814 4.3237 SD    
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 108020
+Insert (O3)                              true     99874,99880,99888 4.7255 SD    
+Heap (O3)                                true     76822,76836,76895 18.1964 SD    
+Heap (O2)                                true     76642,76652,76666 6.7665 SD    
+Insert (O2)                              true     66648,66653,66661 3.9543 SD    
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 115682
+Insert (O3)                              true     103143,103153,103163 5.4908 SD    
+Heap (O3)                                true     79049,79057,79071 6.2205 SD    
+Heap (O2)                                true     78813,78822,78838 7.0722 SD    
+Insert (O2)                              true     68789,68794,68804 4.1361 SD    
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 111113
+Insert (O3)                              true     106294,106306,106313 5.1055 SD    
+Heap (O3)                                true     80794,80799,80810 4.8105 SD    
+Heap (O2)                                true     80536,80544,80556 5.4908 SD    
+Insert (O2)                              true     70729,70739,70746 5.0239 SD    
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 121553
+Insert (O3)                              true     109328,109335,109347 6.1470 SD    
+Heap (O3)                                true     82524,82538,82820 92.8972 SD    
+Heap (O2)                                true     82308,82319,82434 33.7102 SD    
+Insert (O2)                              true     72391,72397,72402 3.2878 SD    
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 116681
+Insert (O3)                              true     112555,112560,112571 4.5400 SD    
+Heap (O3)                                true     84578,84596,84611 8.9489 SD    
+Heap (O2)                                true     84294,84306,84339 11.1437 SD    
+Insert (O2)                              true     74345,74349,74353 2.5873 SD    
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 124249
+Insert (O3)                              true     115851,115860,115863 4.0083 SD    
+Heap (O3)                                true     86397,86405,86428 10.3205 SD    
+Heap (O2)                                true     86107,86113,86202 25.7733 SD    
+Insert (O2)                              true     76344,76350,76356 3.2878 SD    
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 120185
+Insert (O3)                              true     119184,119192,119204 5.4742 SD    
+Heap (O3)                                true     88331,88342,88350 5.4287 SD    
+Heap (O2)                                true     88007,88012,88020 3.6250 SD    
+Insert (O2)                              true     78371,78376,78380 2.3531 SD    
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 128318
+Insert (O3)                              true     122554,122563,122568 4.3863 SD    
+Heap (O3)                                true     90377,90392,90399 7.0100 SD    
+Heap (O2)                                true     90079,90088,90092 3.7284 SD    
+Insert (O2)                              true     80387,80395,80404 4.7638 SD    
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 123436
+Insert (O3)                              true     125946,125954,125960 4.4201 SD    
+Heap (O3)                                true     92242,92251,92258 3.7195 SD    
+Heap (O2)                                true     91898,91903,91914 4.6176 SD    
+Insert (O2)                              true     82457,82460,82468 4.0021 SD    
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 132533
+Insert (O3)                              true     129441,129452,129462 6.0943 SD    
+Heap (O3)                                true     93653,93658,93676 7.4145 SD    
+Heap (O2)                                true     93484,93494,93499 4.3084 SD    
+Insert (O2)                              true     84572,84578,84593 6.0193 SD    
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 128517
+Insert (O3)                              true     132956,132968,132981 5.9696 SD    
+Heap (O3)                                true     95316,95320,95325 2.6379 SD    
+Heap (O2)                                true     94989,95003,95007 5.5313 SD    
+Insert (O2)                              true     86698,86701,86723 7.0242 SD    
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 136935
+Insert (O3)                              true     136538,136546,136558 5.9391 SD    
+Heap (O3)                                true     97157,97163,97171 4.4480 SD    
+Heap (O2)                                true     96900,96908,96918 5.4953 SD    
+Insert (O2)                              true     88848,88858,88893 11.7072 SD    
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 133478
+Insert (O3)                              true     140128,140141,140145 5.1006 SD    
+Heap (O3)                                true     98910,98921,98935 6.7933 SD    
+Heap (O2)                                true     98605,98619,98625 6.5480 SD    
+Insert (O2)                              true     90998,91005,91010 4.0062 SD    
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 141342
+Insert (O3)                              true     143783,143789,143803 5.5596 SD    
+Heap (O3)                                true     100609,100620,100628 5.4333 SD    
+Heap (O2)                                true     100421,100433,100458 9.7828 SD    
+Insert (O2)                              true     93199,93206,93223 6.6445 SD    
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 139284
+Insert (O3)                              true     147474,147480,147488 4.3693 SD    
+Heap (O3)                                true     102377,102394,102398 7.0077 SD    
+Heap (O2)                                true     102046,102052,102079 9.6089 SD    
+Insert (O2)                              true     95388,95393,95402 3.9793 SD    
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 145760
+Insert (O3)                              true     151214,151223,151231 5.2759 SD    
+Heap (O3)                                true     104579,104583,104596 5.7740 SD    
+Heap (O2)                                true     104299,104307,104321 5.7179 SD    
+Insert (O2)                              true     97648,97656,97664 4.7690 SD    
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 140901
+Insert (O3)                              true     155016,155024,155059 11.0573 SD    
+Heap (O3)                                true     106262,106270,106291 7.1835 SD    
+Heap (O2)                                true     105980,105993,106000 5.8691 SD    
+Insert (O2)                              true     99931,99938,99949 4.4182 SD    
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 155003
+Insert (O3)                              true     159016,159021,159049 9.5736 SD    
+Heap (O3)                                true     108116,108125,108244 36.6552 SD    
+Heap (O2)                                true     107982,107996,108010 8.5426 SD    
+Insert (O2)                              true     102515,102522,102526 3.2601 SD    
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 148239
+Insert (O3)                              true     162878,162888,162906 8.4021 SD    
+Heap (O3)                                true     109862,109876,109887 7.5131 SD    
+Heap (O2)                                true     109687,109700,109709 7.1200 SD    
+Insert (O2)                              true     104815,104821,104830 4.5600 SD    
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 157701
+Insert (O3)                              true     166621,166627,166653 9.9486 SD    
+Heap (O3)                                true     111852,111860,111871 6.0807 SD    
+Heap (O2)                                true     111739,111745,111757 5.4621 SD    
+Insert (O2)                              true     106824,106832,106838 4.7725 SD    
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 149851
+Insert (O3)                              true     170665,170676,170689 6.3999 SD    
+Heap (O3)                                true     113528,113537,113549 6.4257 SD    
+Heap (O2)                                true     113393,113407,113418 7.9232 SD    
+Insert (O2)                              true     109280,109285,109294 3.8932 SD    
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 160742
+Insert (O3)                              true     174583,174597,174604 5.4818 SD    
+Heap (O3)                                true     115623,115629,115642 6.3363 SD    
+Heap (O2)                                true     115513,115517,115548 9.5164 SD    
+Insert (O2)                              true     111800,111804,111811 3.7527 SD    
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 155286
+Insert (O3)                              true     178595,178601,178617 6.0000 SD    
+Heap (O3)                                true     117247,117256,117261 3.8398 SD    
+Heap (O2)                                true     117130,117143,117155 6.4437 SD    
+Insert (O2)                              true     114242,114247,114257 3.9626 SD    
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 164074
+Insert (O3)                              true     182655,182668,182681 6.4922 SD    
+Heap (O3)                                true     119646,119652,119675 7.7630 SD    
+Heap (O2)                                true     119545,119551,119561 4.5144 SD    
+Insert (O2)                              true     116669,116674,116680 3.4450 SD    
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 160211
+Insert (O3)                              true     186786,186791,186804 5.4454 SD    
+Heap (O3)                                true     121630,121641,121649 5.2223 SD    
+Heap (O2)                                true     121492,121496,121504 4.0960 SD    
+Insert (O2)                              true     119106,119112,119124 4.8990 SD    
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 170045
+Insert (O3)                              true     190952,190965,191043 24.0458 SD    
+Heap (O3)                                true     123306,123352,123367 23.7960 SD    
+Heap (O2)                                true     123265,123274,123286 6.3428 SD    
+Insert (O2)                              true     121556,121564,121601 11.7867 SD    
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 163824
+Insert (O3)                              true     195153,195171,195190 9.7353 SD    
+Heap (O3)                                true     125258,125272,125286 7.6450 SD    
+Heap (O2)                                true     125183,125197,125206 7.2340 SD    
+Insert (O2)                              true     124017,124024,124061 11.7093 SD    
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 174129
+Insert (O3)                              true     199485,199495,199504 6.8635 SD    
+Heap (O3)                                true     127463,127470,127480 4.1080 SD    
+Heap (O2)                                true     127356,127368,127372 4.1421 SD    
+Insert (O2)                              true     126625,126631,126641 5.2821 SD    
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 167785
+Insert (O3)                              true     203805,203811,203823 6.3102 SD    
+Heap (O3)                                true     129427,129433,129553 34.7016 SD    
+Heap (O2)                                true     129387,129391,129400 3.9855 SD    
+Insert (O2)                              true     129136,129144,129153 4.4387 SD    
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 180723
+Insert (O3)                              true     208473,208478,208487 3.9270 SD    
+Heap (O3)                                true     131524,131560,131572 11.9011 SD    
+Heap (O2)                                true     131536,131540,131568 8.7830 SD    
+Insert (O2)                              true     132472,132479,132494 5.6217 SD    
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 174035
+Insert (O3)                              true     212894,212898,212928 9.5571 SD    
+Heap (O3)                                true     133533,133552,133566 9.4903 SD    
+Heap (O2)                                true     133546,133557,133585 9.6492 SD    
+Insert (O2)                              true     135181,135190,135202 5.7338 SD    
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 183832
+Insert (O3)                              true     216952,216961,216968 5.1570 SD    
+Heap (O3)                                true     135647,135711,135728 33.7433 SD    
+Heap (O2)                                true     135714,135725,135728 4.8888 SD    
+Insert (O2)                              true     136791,136802,136812 5.9433 SD    
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 177618
+Insert (O3)                              true     221436,221455,221484 12.3496 SD    
+Heap (O3)                                true     138032,138043,138070 9.3650 SD    
+Heap (O2)                                true     138046,138060,138070 6.1214 SD    
+Insert (O2)                              true     139409,139418,139427 5.1055 SD    
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 187467
+Insert (O3)                              true     225959,225968,226025 17.2856 SD    
+Heap (O3)                                true     140008,140017,140035 7.4279 SD    
+Heap (O2)                                true     140080,140100,140352 85.3064 SD    
+Insert (O2)                              true     142006,142022,142034 7.3372 SD    
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 180133
+Insert (O3)                              true     230531,230547,230551 7.3777 SD    
+Heap (O3)                                true     142001,142030,142047 13.7799 SD    
+Heap (O2)                                true     141992,142007,142022 7.2465 SD    
+Insert (O2)                              true     144657,144665,144685 8.0464 SD    
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 192944
+Insert (O3)                              true     235158,235186,235202 12.3469 SD    
+Heap (O3)                                true     144326,144344,144356 8.2181 SD    
+Heap (O2)                                true     144316,144323,144334 4.3769 SD    
+Insert (O2)                              true     146751,146761,146769 5.4621 SD    
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 185715
+Insert (O3)                              true     239612,239627,239636 6.7322 SD    
+Heap (O3)                                true     146599,146615,146635 10.6025 SD    
+Heap (O2)                                true     146571,146575,146586 5.3598 SD    
+Insert (O2)                              true     149446,149461,149474 8.0031 SD    
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 195684
+Insert (O3)                              true     244324,244333,244342 5.4667 SD    
+Heap (O3)                                true     148832,148970,148995 57.4171 SD    
+Heap (O2)                                true     148824,148834,148847 6.4577 SD    
+Insert (O2)                              true     152176,152184,152197 5.9544 SD    
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 190244
+Insert (O3)                              true     249098,249109,249145 13.7840 SD    
+Heap (O3)                                true     151160,151178,151196 9.8568 SD    
+Heap (O2)                                true     151018,151026,151036 5.1249 SD    
+Insert (O2)                              true     154923,154937,154954 8.5648 SD    
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 204665
+Insert (O3)                              true     254274,254283,254293 5.5611 SD    
+Heap (O3)                                true     153553,153566,153581 8.5744 SD    
+Heap (O2)                                true     153433,153434,153543 31.2476 SD    
+Insert (O2)                              true     158137,158158,158259 32.0691 SD    
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 193210
+Insert (O3)                              true     259067,259096,259108 11.7572 SD    
+Heap (O3)                                true     155740,155752,155760 6.2390 SD    
+Heap (O2)                                true     155569,155579,155610 10.5642 SD    
+Insert (O2)                              true     161022,161037,161054 9.0782 SD    
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 205033
+Insert (O3)                              true     264232,264244,264273 10.4312 SD    
+Heap (O3)                                true     157713,157723,157736 6.3219 SD    
+Heap (O2)                                true     157596,157609,157617 5.8536 SD    
+Insert (O2)                              true     164409,164423,164443 10.9823 SD    
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 198075
+Insert (O3)                              true     269185,269192,269210 7.2500 SD    
+Heap (O3)                                true     159731,159739,159758 8.1474 SD    
+Heap (O2)                                true     159624,159632,159644 5.1233 SD    
+Insert (O2)                              true     167293,167300,167309 5.4742 SD    
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 215777
+Insert (O3)                              true     273908,273918,273946 11.7509 SD    
+Heap (O3)                                true     161412,161420,161435 5.8902 SD    
+Heap (O2)                                true     161210,161216,161233 6.9461 SD    
+Insert (O2)                              true     169548,169552,169563 5.2444 SD    
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 204939
+Insert (O3)                              true     278925,278934,278965 12.0062 SD    
+Heap (O3)                                true     163422,163439,163462 11.1392 SD    
+Heap (O2)                                true     163238,163245,163250 4.0186 SD    
+Insert (O2)                              true     172407,172417,172425 5.4409 SD    
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 214522
+Insert (O3)                              true     283935,283945,283960 7.9117 SD    
+Heap (O3)                                true     165366,165381,165393 6.9603 SD    
+Heap (O2)                                true     165179,165188,165229 12.9072 SD    
+Insert (O2)                              true     175257,175266,175277 5.2931 SD    
+
+## MERGING 101 LISTS ##
+Baseline (copy+sort) 210134
+Insert (O3)                              true     289025,289045,289059 9.1363 SD    
+Heap (O3)                                true     167496,167510,167517 7.5372 SD    
+Heap (O2)                                true     167341,167349,167358 4.1441 SD    
+Insert (O2)                              true     178136,178146,178167 10.6809 SD    
+
+## MERGING 102 LISTS ##
+Baseline (copy+sort) 219111
+Insert (O3)                              true     294169,294188,294204 9.4703 SD    
+Heap (O3)                                true     169780,169788,169798 6.0658 SD    
+Heap (O2)                                true     169536,169540,169552 5.4485 SD    
+Insert (O2)                              true     181051,181065,181079 8.0576 SD    
+
+## MERGING 103 LISTS ##
+Baseline (copy+sort) 213477
+Insert (O3)                              true     299393,299402,299417 7.9117 SD    
+Heap (O3)                                true     171979,171987,172014 11.0849 SD    
+Heap (O2)                                true     171802,171812,171818 4.5545 SD    
+Insert (O2)                              true     184001,184015,184025 7.4078 SD    
+
+## MERGING 104 LISTS ##
+Baseline (copy+sort) 223973
+Insert (O3)                              true     304733,304743,304871 37.1363 SD    
+Heap (O3)                                true     173840,173850,173863 6.1470 SD    
+Heap (O2)                                true     173711,173718,173770 16.1158 SD    
+Insert (O2)                              true     187193,187201,187211 5.2476 SD    
+
+## MERGING 105 LISTS ##
+Baseline (copy+sort) 222386
+Insert (O3)                              true     310023,310037,310047 7.0629 SD    
+Heap (O3)                                true     175947,175956,175964 4.3084 SD    
+Heap (O2)                                true     175750,175759,175774 6.0658 SD    
+Insert (O2)                              true     190196,190202,190213 4.5144 SD    
+
+## MERGING 106 LISTS ##
+Baseline (copy+sort) 226935
+Insert (O3)                              true     315596,315606,315635 11.0454 SD    
+Heap (O3)                                true     178316,178328,178340 6.7872 SD    
+Heap (O2)                                true     178134,178148,178159 7.0897 SD    
+Insert (O2)                              true     193865,193872,193882 4.8872 SD    
+
+## MERGING 107 LISTS ##
+Baseline (copy+sort) 225137
+Insert (O3)                              true     320974,320997,321005 8.7839 SD    
+Heap (O3)                                true     180603,180610,180660 14.9501 SD    
+Heap (O2)                                true     180349,180355,180365 4.3561 SD    
+Insert (O2)                              true     196929,196939,196945 5.3320 SD    
+
+## MERGING 108 LISTS ##
+Baseline (copy+sort) 233370
+Insert (O3)                              true     326094,326109,326124 7.6374 SD    
+Heap (O3)                                true     182371,182380,182393 6.2205 SD    
+Heap (O2)                                true     182062,182070,182075 3.4973 SD    
+Insert (O2)                              true     199152,199172,199187 10.6352 SD    
+
+## MERGING 109 LISTS ##
+Baseline (copy+sort) 227991
+Insert (O3)                              true     331527,331550,331562 10.9484 SD    
+Heap (O3)                                true     184599,184611,184618 6.2734 SD    
+Heap (O2)                                true     184255,184263,184289 8.6598 SD    
+Insert (O2)                              true     202246,202269,202288 11.8175 SD    
+
+## MERGING 110 LISTS ##
+Baseline (copy+sort) 239757
+Insert (O3)                              true     336994,337009,337020 8.4970 SD    
+Heap (O3)                                true     187307,187315,187324 5.5492 SD    
+Heap (O2)                                true     186844,186853,186862 5.5670 SD    
+Insert (O2)                              true     205312,205324,205337 6.6507 SD    
+
+## MERGING 111 LISTS ##
+Baseline (copy+sort) 228492
+Insert (O3)                              true     342538,342551,342585 14.5806 SD    
+Heap (O3)                                true     189780,189791,189808 7.0886 SD    
+Heap (O2)                                true     189297,189306,189316 4.6675 SD    
+Insert (O2)                              true     208448,208461,208482 8.0689 SD    
+
+## MERGING 112 LISTS ##
+Baseline (copy+sort) 242624
+Insert (O3)                              true     348154,348180,348195 10.7565 SD    
+Heap (O3)                                true     191760,191768,191824 16.9184 SD    
+Heap (O2)                                true     191267,191274,191284 6.0357 SD    
+Insert (O2)                              true     211628,211645,211656 7.7938 SD    
+
+## MERGING 113 LISTS ##
+Baseline (copy+sort) 236588
+Insert (O3)                              true     353792,353825,353854 17.8992 SD    
+Heap (O3)                                true     193986,194001,194013 7.4279 SD    
+Heap (O2)                                true     193532,193546,193570 11.4690 SD    
+Insert (O2)                              true     214820,214832,214844 7.7906 SD    
+
+## MERGING 114 LISTS ##
+Baseline (copy+sort) 247523
+Insert (O3)                              true     359893,359902,359929 12.2062 SD    
+Heap (O3)                                true     196345,196355,196378 9.5925 SD    
+Heap (O2)                                true     195871,195881,195900 8.9581 SD    
+Insert (O2)                              true     218488,218493,218511 7.3485 SD    
+
+## MERGING 115 LISTS ##
+Baseline (copy+sort) 242154
+Insert (O3)                              true     365708,365738,365754 11.7923 SD    
+Heap (O3)                                true     198497,198511,198536 9.7650 SD    
+Heap (O2)                                true     198041,198054,198154 30.5081 SD    
+Insert (O2)                              true     221891,221900,221917 7.3530 SD    
+
+## MERGING 116 LISTS ##
+Baseline (copy+sort) 252227
+Insert (O3)                              true     371043,371058,371071 9.9162 SD    
+Heap (O3)                                true     200283,200296,200308 6.8261 SD    
+Heap (O2)                                true     199838,199843,199859 6.3597 SD    
+Insert (O2)                              true     224560,224571,224586 8.0484 SD    
+
+## MERGING 117 LISTS ##
+Baseline (copy+sort) 248940
+Insert (O3)                              true     376870,376874,376940 22.3976 SD    
+Heap (O3)                                true     202518,202527,202534 4.9560 SD    
+Heap (O2)                                true     202079,202091,202100 5.9558 SD    
+Insert (O2)                              true     227855,227862,227876 6.0603 SD    
+
+## MERGING 118 LISTS ##
+Baseline (copy+sort) 261750
+Insert (O3)                              true     382696,382714,382738 12.4668 SD    
+Heap (O3)                                true     205126,205138,205164 10.8742 SD    
+Heap (O2)                                true     204741,204745,204754 4.0554 SD    
+Insert (O2)                              true     231108,231127,231164 16.9559 SD    
+
+## MERGING 119 LISTS ##
+Baseline (copy+sort) 246904
+Insert (O3)                              true     388597,388611,388698 26.3200 SD    
+Heap (O3)                                true     207572,207582,207595 7.4999 SD    
+Heap (O2)                                true     207091,207101,207115 5.8536 SD    
+Insert (O2)                              true     234441,234462,234481 10.4991 SD    
+
+## MERGING 120 LISTS ##
+Baseline (copy+sort) 261159
+Insert (O3)                              true     394557,394579,394599 11.0566 SD    
+Heap (O3)                                true     209561,209569,209578 5.3905 SD    
+Heap (O2)                                true     209048,209057,209066 4.4070 SD    
+Insert (O2)                              true     237792,237810,237834 11.0439 SD    
+
+## MERGING 121 LISTS ##
+Baseline (copy+sort) 250280
+Insert (O3)                              true     400566,400583,400604 10.8331 SD    
+Heap (O3)                                true     211808,211819,211829 6.0726 SD    
+Heap (O2)                                true     211141,211161,211185 12.6445 SD    
+Insert (O2)                              true     241174,241187,241303 34.7732 SD    
+
+## MERGING 122 LISTS ##
+Baseline (copy+sort) 266853
+Insert (O3)                              true     406766,406805,406818 14.8591 SD    
+Heap (O3)                                true     214420,214432,214450 8.3131 SD    
+Heap (O2)                                true     213758,213767,213780 7.4268 SD    
+Insert (O2)                              true     244956,244963,245012 14.8146 SD    
+
+## MERGING 123 LISTS ##
+Baseline (copy+sort) 255604
+Insert (O3)                              true     412884,412899,412927 11.4423 SD    
+Heap (O3)                                true     216751,216761,216768 5.3829 SD    
+Heap (O2)                                true     216058,216077,216089 9.2370 SD    
+Insert (O2)                              true     248387,248401,248431 14.6027 SD    
+
+## MERGING 124 LISTS ##
+Baseline (copy+sort) 270287
+Insert (O3)                              true     419309,419338,419362 17.5349 SD    
+Heap (O3)                                true     219710,219721,219746 10.7557 SD    
+Heap (O2)                                true     218996,219007,219016 7.4379 SD    
+Insert (O2)                              true     252537,252549,252559 6.9210 SD    
+
+## MERGING 125 LISTS ##
+Baseline (copy+sort) 263901
+Insert (O3)                              true     425474,425500,425545 19.7497 SD    
+Heap (O3)                                true     222007,222018,222028 6.1617 SD    
+Heap (O2)                                true     221215,221222,221244 9.8610 SD    
+Insert (O2)                              true     256045,256054,256068 6.4257 SD    
+
+## MERGING 126 LISTS ##
+Baseline (copy+sort) 276803
+Insert (O3)                              true     431232,431240,431277 14.2921 SD    
+Heap (O3)                                true     223985,224003,224019 8.7943 SD    
+Heap (O2)                                true     223188,223201,223208 5.3613 SD    
+Insert (O2)                              true     258388,258399,258452 17.8145 SD    
+
+## MERGING 127 LISTS ##
+Baseline (copy+sort) 265330
+Insert (O3)                              true     437478,437488,437593 31.1560 SD    
+Heap (O3)                                true     226517,226528,226553 9.4432 SD    
+Heap (O2)                                true     225683,225692,225706 6.2787 SD    
+Insert (O2)                              true     261896,261909,261915 5.8635 SD    
+
+## MERGING 128 LISTS ##
+Baseline (copy+sort) 279196
+Insert (O3)                              true     443789,443814,443827 12.1682 SD    
+Heap (O3)                                true     228002,228013,228028 7.0336 SD    
+Heap (O2)                                true     227302,227310,227333 8.1697 SD    
+Insert (O2)                              true     265438,265448,265458 6.7860 SD    
+
+## MERGING 129 LISTS ##
+Baseline (copy+sort) 269817
+Insert (O3)                              true     450147,450167,450221 20.0697 SD    
+Heap (O3)                                true     230051,230062,230070 4.7360 SD    
+Heap (O2)                                true     229223,229235,229251 8.7726 SD    
+Insert (O2)                              true     269000,269015,269543 152.2104 SD    
+
+## MERGING 130 LISTS ##
+Baseline (copy+sort) 285161
+Insert (O3)                              true     456784,456796,456816 9.3852 SD    
+Heap (O3)                                true     232033,232042,232062 8.2942 SD    
+Heap (O2)                                true     231282,231297,231311 9.6046 SD    
+Insert (O2)                              true     273077,273091,273130 13.5476 SD    
+
+## MERGING 131 LISTS ##
+Baseline (copy+sort) 274566
+Insert (O3)                              true     463246,463263,463281 11.8329 SD    
+Heap (O3)                                true     234153,234161,234174 7.0124 SD    
+Heap (O2)                                true     233354,233367,233383 8.8635 SD    
+Insert (O2)                              true     276704,276708,276745 11.0296 SD    
+
+## MERGING 132 LISTS ##
+Baseline (copy+sort) 287757
+Insert (O3)                              true     469742,469756,469773 9.8836 SD    
+Heap (O3)                                true     236075,236089,236098 6.0425 SD    
+Heap (O2)                                true     235291,235304,235320 8.2502 SD    
+Insert (O2)                              true     280336,280344,280360 8.0576 SD    
+
+## MERGING 133 LISTS ##
+Baseline (copy+sort) 285703
+Insert (O3)                              true     476274,476297,476349 23.0250 SD    
+Heap (O3)                                true     238288,238294,238318 8.4296 SD    
+Heap (O2)                                true     237526,237533,237549 7.5919 SD    
+Insert (O2)                              true     283994,284003,284021 8.4726 SD    
+
+## MERGING 134 LISTS ##
+Baseline (copy+sort) 298393
+Insert (O3)                              true     482865,482875,482893 9.0197 SD    
+Heap (O3)                                true     240511,240526,240549 10.0124 SD    
+Heap (O2)                                true     239756,239783,239802 12.0007 SD    
+Insert (O2)                              true     287663,287692,287836 45.1270 SD    
+
+## MERGING 135 LISTS ##
+Baseline (copy+sort) 283078
+Insert (O3)                              true     489472,489494,489572 29.2515 SD    
+Heap (O3)                                true     242942,242970,242982 11.0894 SD    
+Heap (O2)                                true     242056,242067,242079 5.6802 SD    
+Insert (O2)                              true     291379,291400,291471 26.4887 SD    
+
+## MERGING 136 LISTS ##
+Baseline (copy+sort) 299885
+Insert (O3)                              true     496165,496211,496224 20.1912 SD    
+Heap (O3)                                true     244749,244764,244784 9.7548 SD    
+Heap (O2)                                true     243860,243879,243894 10.1648 SD    
+Insert (O2)                              true     295126,295136,295150 6.8139 SD    
+
+## MERGING 137 LISTS ##
+Baseline (copy+sort) 289477
+Insert (O3)                              true     502892,502913,502920 10.6282 SD    
+Heap (O3)                                true     246972,246985,246995 6.0371 SD    
+Heap (O2)                                true     245890,245901,245921 9.3940 SD    
+Insert (O2)                              true     298859,298880,298895 10.7627 SD    
+
+## MERGING 138 LISTS ##
+Baseline (copy+sort) 302130
+Insert (O3)                              true     509632,509644,509659 8.1139 SD    
+Heap (O3)                                true     248962,248970,248983 6.3973 SD    
+Heap (O2)                                true     248065,248081,248093 8.2942 SD    
+Insert (O2)                              true     302628,302645,302650 6.4501 SD    
+
+## MERGING 139 LISTS ##
+Baseline (copy+sort) 294250
+Insert (O3)                              true     516428,516450,516463 9.8610 SD    
+Heap (O3)                                true     251277,251285,251305 9.3172 SD    
+Heap (O2)                                true     250156,250171,250200 11.0738 SD    
+Insert (O2)                              true     306423,306430,306442 5.8846 SD    
+
+## MERGING 140 LISTS ##
+Baseline (copy+sort) 316725
+Insert (O3)                              true     523246,523270,523362 29.7018 SD    
+Heap (O3)                                true     253150,253161,253277 33.6216 SD    
+Heap (O2)                                true     252122,252146,252157 10.8300 SD    
+Insert (O2)                              true     310211,310234,310263 14.4525 SD    
+
+## MERGING 141 LISTS ##
+Baseline (copy+sort) 298320
+Insert (O3)                              true     530163,530177,530209 12.2035 SD    
+Heap (O3)                                true     255397,255413,255423 6.7285 SD    
+Heap (O2)                                true     254140,254155,254176 10.0938 SD    
+Insert (O2)                              true     314078,314096,314116 9.8266 SD    
+
+## MERGING 142 LISTS ##
+Baseline (copy+sort) 313640
+Insert (O3)                              true     537076,537096,537672 165.4343 SD    
+Heap (O3)                                true     257812,257828,257875 15.6744 SD    
+Heap (O2)                                true     256657,256677,256688 8.9276 SD    
+Insert (O2)                              true     317946,317956,317982 9.8207 SD    
+
+## MERGING 143 LISTS ##
+Baseline (copy+sort) 301246
+Insert (O3)                              true     544066,544082,544100 10.2159 SD    
+Heap (O3)                                true     260166,260174,260182 4.7881 SD    
+Heap (O2)                                true     258721,258730,258779 16.8268 SD    
+Insert (O2)                              true     321841,321848,321863 6.5290 SD    
+
+## MERGING 144 LISTS ##
+Baseline (copy+sort) 317676
+Insert (O3)                              true     551092,551102,551148 17.8955 SD    
+Heap (O3)                                true     261992,262007,262035 10.6724 SD    
+Heap (O2)                                true     260764,260779,260794 8.8018 SD    
+Insert (O2)                              true     325731,325757,325763 10.5093 SD    
+
+## MERGING 145 LISTS ##
+Baseline (copy+sort) 311409
+Insert (O3)                              true     558117,558152,558193 21.7023 SD    
+Heap (O3)                                true     264309,264317,264367 15.3343 SD    
+Heap (O2)                                true     262940,262948,262958 5.7410 SD    
+Insert (O2)                              true     329668,329689,329704 11.3458 SD    
+
+## MERGING 146 LISTS ##
+Baseline (copy+sort) 321904
+Insert (O3)                              true     565229,565259,565326 26.2446 SD    
+Heap (O3)                                true     266353,266360,266378 6.9389 SD    
+Heap (O2)                                true     265209,265229,265244 10.4470 SD    
+Insert (O2)                              true     333638,333652,333770 35.0928 SD    
+
+## MERGING 147 LISTS ##
+Baseline (copy+sort) 309856
+Insert (O3)                              true     572403,572443,572455 15.3763 SD    
+Heap (O3)                                true     268625,268636,268654 8.6273 SD    
+Heap (O2)                                true     267418,267440,267451 8.3883 SD    
+Insert (O2)                              true     337598,337616,337639 10.7219 SD    
+
+## MERGING 148 LISTS ##
+Baseline (copy+sort) 327209
+Insert (O3)                              true     579593,579631,579672 26.9284 SD    
+Heap (O3)                                true     270554,270570,270589 10.1924 SD    
+Heap (O2)                                true     269455,269474,269500 14.1252 SD    
+Insert (O2)                              true     341595,341605,341635 11.3334 SD    
+
+## MERGING 149 LISTS ##
+Baseline (copy+sort) 317997
+Insert (O3)                              true     586851,586873,586898 13.6479 SD    
+Heap (O3)                                true     272864,272871,272878 5.0714 SD    
+Heap (O2)                                true     271572,271583,271599 9.0955 SD    
+Insert (O2)                              true     345605,345636,345645 11.4610 SD    
+
+## MERGING 150 LISTS ##
+Baseline (copy+sort) 337070
+Insert (O3)                              true     594129,594151,594179 14.0601 SD    
+Heap (O3)                                true     275207,275218,275242 9.5424 SD    
+Heap (O2)                                true     274178,274189,274233 14.3071 SD    
+Insert (O2)                              true     349645,349658,349688 12.3275 SD    
+
+## MERGING 151 LISTS ##
+Baseline (copy+sort) 324100
+Insert (O3)                              true     601428,601456,601492 17.8237 SD    
+Heap (O3)                                true     277709,277722,277739 9.3234 SD    
+Heap (O2)                                true     276386,276424,276470 22.8809 SD    
+Insert (O2)                              true     353714,353718,353759 12.1811 SD    
+
+## MERGING 152 LISTS ##
+Baseline (copy+sort) 338865
+Insert (O3)                              true     608783,608815,608829 15.1505 SD    
+Heap (O3)                                true     279538,279550,279604 17.3938 SD    
+Heap (O2)                                true     278436,278454,278569 34.5839 SD    
+Insert (O2)                              true     357419,357445,357479 16.0103 SD    
+
+## MERGING 153 LISTS ##
+Baseline (copy+sort) 327643
+Insert (O3)                              true     616340,616381,616405 17.6598 SD    
+Heap (O3)                                true     281969,281980,281993 6.5087 SD    
+Heap (O2)                                true     280617,280628,280642 7.0629 SD    
+Insert (O2)                              true     361660,361672,361684 5.6904 SD    
+
+## MERGING 154 LISTS ##
+Baseline (copy+sort) 341877
+Insert (O3)                              true     623915,623934,624000 22.3540 SD    
+Heap (O3)                                true     284267,284285,284306 10.0478 SD    
+Heap (O2)                                true     283215,283223,283231 4.8804 SD    
+Insert (O2)                              true     365924,365947,365966 12.8944 SD    
+
+## MERGING 155 LISTS ##
+Baseline (copy+sort) 328437
+Insert (O3)                              true     631480,631513,631538 18.0202 SD    
+Heap (O3)                                true     286665,286691,286716 14.0712 SD    
+Heap (O2)                                true     285440,285451,285477 10.0569 SD    
+Insert (O2)                              true     370248,370264,370289 10.8651 SD    
+
+## MERGING 156 LISTS ##
+Baseline (copy+sort) 350787
+Insert (O3)                              true     639113,639132,639253 38.2679 SD    
+Heap (O3)                                true     288911,288932,288961 14.1830 SD    
+Heap (O2)                                true     287834,287849,287875 12.2501 SD    
+Insert (O2)                              true     374502,374519,374535 9.3940 SD    
+
+## MERGING 157 LISTS ##
+Baseline (copy+sort) 335960
+Insert (O3)                              true     646694,646729,646743 15.3704 SD    
+Heap (O3)                                true     291326,291348,291363 11.6236 SD    
+Heap (O2)                                true     289933,289954,289992 14.4474 SD    
+Insert (O2)                              true     378775,378791,378829 16.1486 SD    
+
+## MERGING 158 LISTS ##
+Baseline (copy+sort) 351880
+Insert (O3)                              true     654362,654382,654402 13.7119 SD    
+Heap (O3)                                true     293931,293952,293979 12.4230 SD    
+Heap (O2)                                true     292750,292772,292785 10.4130 SD    
+Insert (O2)                              true     383051,383065,383126 21.9432 SD    
+
+## MERGING 159 LISTS ##
+Baseline (copy+sort) 344033
+Insert (O3)                              true     662048,662107,662138 29.0747 SD    
+Heap (O3)                                true     296358,296384,296402 12.1315 SD    
+Heap (O2)                                true     294695,294720,294735 10.3581 SD    
+Insert (O2)                              true     387366,387384,387415 13.5671 SD    
+
+## MERGING 160 LISTS ##
+Baseline (copy+sort) 353913
+Insert (O3)                              true     669769,669794,669816 11.4242 SD    
+Heap (O3)                                true     298164,298198,298219 15.4380 SD    
+Heap (O2)                                true     296737,296750,296764 7.9440 SD    
+Insert (O2)                              true     391628,391652,391686 18.1750 SD    
+
+## MERGING 161 LISTS ##
+Baseline (copy+sort) 341613
+Insert (O3)                              true     677532,677554,677678 52.3832 SD    
+Heap (O3)                                true     300454,300467,300514 17.0938 SD    
+Heap (O2)                                true     298946,298959,298987 12.7195 SD    
+Insert (O2)                              true     395979,395997,396040 21.0854 SD    
+
+## MERGING 162 LISTS ##
+Baseline (copy+sort) 362095
+Insert (O3)                              true     685380,685425,685500 39.1600 SD    
+Heap (O3)                                true     302425,302469,302496 21.7518 SD    
+Heap (O2)                                true     301020,301051,301063 11.0543 SD    
+Insert (O2)                              true     400334,400343,400363 9.2834 SD    
+
+## MERGING 163 LISTS ##
+Baseline (copy+sort) 350108
+Insert (O3)                              true     693215,693264,693301 24.8370 SD    
+Heap (O3)                                true     304709,304744,304775 19.4286 SD    
+Heap (O2)                                true     303208,303228,303233 8.2382 SD    
+Insert (O2)                              true     404763,404792,404808 13.9509 SD    
+
+## MERGING 164 LISTS ##
+Baseline (copy+sort) 369570
+Insert (O3)                              true     701117,701165,701178 19.9155 SD    
+Heap (O3)                                true     306745,306754,306777 9.6937 SD    
+Heap (O2)                                true     305357,305380,305412 13.8194 SD    
+Insert (O2)                              true     409193,409216,409246 14.7956 SD    
+
+## MERGING 165 LISTS ##
+Baseline (copy+sort) 358076
+Insert (O3)                              true     709076,709154,709255 42.7599 SD    
+Heap (O3)                                true     309073,309083,309107 9.9461 SD    
+Heap (O2)                                true     307572,307591,307626 14.6997 SD    
+Insert (O2)                              true     413688,413725,413818 32.6030 SD    
+
+## MERGING 166 LISTS ##
+Baseline (copy+sort) 365962
+Insert (O3)                              true     717085,717136,717164 21.0230 SD    
+Heap (O3)                                true     311207,311249,311266 15.7133 SD    
+Heap (O2)                                true     309862,309897,309910 13.3991 SD    
+Insert (O2)                              true     418173,418188,418204 9.8702 SD    
+
+## MERGING 167 LISTS ##
+Baseline (copy+sort) 355836
+Insert (O3)                              true     725127,725156,725713 160.8359 SD    
+Heap (O3)                                true     313784,313828,313848 21.8435 SD    
+Heap (O2)                                true     312322,312347,312357 11.0326 SD    
+Insert (O2)                              true     422598,422629,422663 17.4266 SD    
+
+## MERGING 168 LISTS ##
+Baseline (copy+sort) 375923
+Insert (O3)                              true     733212,733235,733274 18.0875 SD    
+Heap (O3)                                true     315812,315826,315847 11.1637 SD    
+Heap (O2)                                true     314455,314466,314500 15.1826 SD    
+Insert (O2)                              true     427062,427088,427107 13.4386 SD    
+
+## MERGING 169 LISTS ##
+Baseline (copy+sort) 366381
+Insert (O3)                              true     741294,741339,741383 24.3962 SD    
+Heap (O3)                                true     318142,318157,318200 15.2066 SD    
+Heap (O2)                                true     316683,316697,316724 11.4927 SD    
+Insert (O2)                              true     431555,431574,431600 12.3235 SD    
+
+## MERGING 170 LISTS ##
+Baseline (copy+sort) 376408
+Insert (O3)                              true     749492,749579,749683 43.2351 SD    
+Heap (O3)                                true     320200,320218,320230 11.4841 SD    
+Heap (O2)                                true     318810,318827,318925 30.3898 SD    
+Insert (O2)                              true     436094,436110,436128 11.0191 SD    
+
+## MERGING 171 LISTS ##
+Baseline (copy+sort) 365913
+Insert (O3)                              true     757703,757741,757882 45.4520 SD    
+Heap (O3)                                true     322697,322719,322735 12.2872 SD    
+Heap (O2)                                true     321147,321172,321197 12.2501 SD    
+Insert (O2)                              true     440667,440690,440760 26.0086 SD    
+
+## MERGING 172 LISTS ##
+Baseline (copy+sort) 385112
+Insert (O3)                              true     765959,766007,766046 25.5453 SD    
+Heap (O3)                                true     324800,324810,324827 9.3331 SD    
+Heap (O2)                                true     323345,323377,323395 16.4211 SD    
+Insert (O2)                              true     445295,445316,445343 15.4765 SD    
+
+## MERGING 173 LISTS ##
+Baseline (copy+sort) 369131
+Insert (O3)                              true     774253,774294,774320 23.2044 SD    
+Heap (O3)                                true     327304,327323,327348 13.2284 SD    
+Heap (O2)                                true     325826,325842,325916 22.6708 SD    
+Insert (O2)                              true     449941,449958,449981 12.4250 SD    
+
+## MERGING 174 LISTS ##
+Baseline (copy+sort) 386515
+Insert (O3)                              true     782581,782638,782670 23.7848 SD    
+Heap (O3)                                true     330166,330190,330243 21.2307 SD    
+Heap (O2)                                true     328727,328763,328871 34.5839 SD    
+Insert (O2)                              true     454625,454660,454707 21.5744 SD    
+
+## MERGING 175 LISTS ##
+Baseline (copy+sort) 380325
+Insert (O3)                              true     791007,791026,791768 212.7725 SD    
+Heap (O3)                                true     332819,332827,332868 13.6339 SD    
+Heap (O2)                                true     331092,331117,331140 13.5164 SD    
+Insert (O2)                              true     459326,459368,459400 23.2432 SD    
+
+## MERGING 176 LISTS ##
+Baseline (copy+sort) 391979
+Insert (O3)                              true     799397,799464,799500 31.0286 SD    
+Heap (O3)                                true     334686,334704,334744 19.6250 SD    
+Heap (O2)                                true     333142,333166,333196 17.1310 SD    
+Insert (O2)                              true     464018,464044,464065 13.3584 SD    
+
+## MERGING 177 LISTS ##
+Baseline (copy+sort) 380635
+Insert (O3)                              true     807915,807963,808011 27.0637 SD    
+Heap (O3)                                true     337120,337146,337237 28.9984 SD    
+Heap (O2)                                true     335498,335524,335548 13.4373 SD    
+Insert (O2)                              true     468700,468711,468726 7.8751 SD    
+
+## MERGING 178 LISTS ##
+Baseline (copy+sort) 395503
+Insert (O3)                              true     816456,816487,816551 27.9516 SD    
+Heap (O3)                                true     339223,339236,339262 10.6624 SD    
+Heap (O2)                                true     337794,337814,337918 31.6854 SD    
+Insert (O2)                              true     473367,473390,473406 12.7765 SD    
+
+## MERGING 179 LISTS ##
+Baseline (copy+sort) 383504
+Insert (O3)                              true     824930,825001,825073 36.2920 SD    
+Heap (O3)                                true     341599,341612,341646 11.8175 SD    
+Heap (O2)                                true     340072,340080,340091 6.3023 SD    
+Insert (O2)                              true     478116,478132,478159 11.8035 SD    
+
+## MERGING 180 LISTS ##
+Baseline (copy+sort) 403679
+Insert (O3)                              true     833542,833634,833665 32.8337 SD    
+Heap (O3)                                true     343661,343691,343724 16.4176 SD    
+Heap (O2)                                true     342256,342270,342289 10.2142 SD    
+Insert (O2)                              true     482916,482927,482958 13.3131 SD    
+
+## MERGING 181 LISTS ##
+Baseline (copy+sort) 395255
+Insert (O3)                              true     842261,842283,842344 22.2280 SD    
+Heap (O3)                                true     346152,346183,346204 14.7715 SD    
+Heap (O2)                                true     344625,344654,344668 11.6577 SD    
+Insert (O2)                              true     487747,487778,487865 29.0707 SD    
+
+## MERGING 182 LISTS ##
+Baseline (copy+sort) 406518
+Insert (O3)                              true     850985,851029,851152 43.7376 SD    
+Heap (O3)                                true     348684,348701,348738 16.9174 SD    
+Heap (O2)                                true     347438,347461,347478 11.5480 SD    
+Insert (O2)                              true     492597,492628,492686 24.8699 SD    
+
+## MERGING 183 LISTS ##
+Baseline (copy+sort) 395463
+Insert (O3)                              true     859665,859673,859743 21.3673 SD    
+Heap (O3)                                true     351382,351403,351432 16.1655 SD    
+Heap (O2)                                true     349822,349848,349861 10.4802 SD    
+Insert (O2)                              true     497471,497503,497550 22.4260 SD    
+
+## MERGING 184 LISTS ##
+Baseline (copy+sort) 411946
+Insert (O3)                              true     868475,868530,868548 22.0263 SD    
+Heap (O3)                                true     353477,353496,353529 12.9366 SD    
+Heap (O2)                                true     352190,352211,352234 11.9261 SD    
+Insert (O2)                              true     502403,502427,502495 23.1331 SD    
+
+## MERGING 185 LISTS ##
+Baseline (copy+sort) 399507
+Insert (O3)                              true     877349,877376,877491 37.0307 SD    
+Heap (O3)                                true     355981,355999,356048 18.1007 SD    
+Heap (O2)                                true     354490,354503,354528 10.8063 SD    
+Insert (O2)                              true     507258,507291,507356 26.1075 SD    
+
+## MERGING 186 LISTS ##
+Baseline (copy+sort) 416009
+Insert (O3)                              true     886247,886282,886318 16.0072 SD    
+Heap (O3)                                true     358467,358484,358496 9.2388 SD    
+Heap (O2)                                true     357358,357371,357406 16.3379 SD    
+Insert (O2)                              true     512199,512219,512252 16.6956 SD    
+
+## MERGING 187 LISTS ##
+Baseline (copy+sort) 405452
+Insert (O3)                              true     895108,895164,895209 25.6138 SD    
+Heap (O3)                                true     361093,361121,361137 14.5381 SD    
+Heap (O2)                                true     359731,359777,359789 16.6704 SD    
+Insert (O2)                              true     517071,517132,517291 55.8771 SD    
+
+## MERGING 188 LISTS ##
+Baseline (copy+sort) 417136
+Insert (O3)                              true     904073,904120,904146 21.4264 SD    
+Heap (O3)                                true     363418,363438,363470 14.4228 SD    
+Heap (O2)                                true     362289,362305,362331 10.8040 SD    
+Insert (O2)                              true     522032,522057,522086 14.9307 SD    
+
+## MERGING 189 LISTS ##
+Baseline (copy+sort) 407304
+Insert (O3)                              true     913096,913122,913176 21.3646 SD    
+Heap (O3)                                true     366008,366032,366064 16.9301 SD    
+Heap (O2)                                true     364494,364517,364537 11.5637 SD    
+Insert (O2)                              true     527023,527055,527089 20.6314 SD    
+
+## MERGING 190 LISTS ##
+Baseline (copy+sort) 424924
+Insert (O3)                              true     922179,922219,922313 36.6105 SD    
+Heap (O3)                                true     368726,368763,368840 28.6613 SD    
+Heap (O2)                                true     367476,367512,367523 12.7409 SD    
+Insert (O2)                              true     532043,532067,532131 22.8784 SD    
+
+## MERGING 191 LISTS ##
+Baseline (copy+sort) 413590
+Insert (O3)                              true     931209,931254,931285 18.9165 SD    
+Heap (O3)                                true     371575,371612,371641 19.7547 SD    
+Heap (O2)                                true     369828,369844,369883 15.7443 SD    
+Insert (O2)                              true     537123,537153,537179 16.2191 SD    
+
+## MERGING 192 LISTS ##
+Baseline (copy+sort) 432727
+Insert (O3)                              true     940348,940379,940408 18.6259 SD    
+Heap (O3)                                true     373210,373231,373361 39.0696 SD    
+Heap (O2)                                true     371664,371687,371705 12.4973 SD    
+Insert (O2)                              true     542218,542257,542341 36.3814 SD    
+
+## MERGING 193 LISTS ##
+Baseline (copy+sort) 417807
+Insert (O3)                              true     949547,949609,950122 152.3617 SD    
+Heap (O3)                                true     375721,375744,375785 17.7266 SD    
+Heap (O2)                                true     374123,374142,374176 17.2483 SD    
+Insert (O2)                              true     547348,547365,547392 12.8050 SD    
+
+## MERGING 194 LISTS ##
+Baseline (copy+sort) 434421
+Insert (O3)                              true     958742,958793,958823 26.2030 SD    
+Heap (O3)                                true     377686,377700,377725 13.7384 SD    
+Heap (O2)                                true     376412,376416,376426 4.7308 SD    
+Insert (O2)                              true     552404,552427,552477 21.7214 SD    
+
+## MERGING 195 LISTS ##
+Baseline (copy+sort) 421114
+Insert (O3)                              true     968000,968038,968066 18.3357 SD    
+Heap (O3)                                true     380337,380355,380395 15.2451 SD    
+Heap (O2)                                true     378818,378838,378873 14.5545 SD    
+Insert (O2)                              true     557477,557526,557670 49.3567 SD    
+
+## MERGING 196 LISTS ##
+Baseline (copy+sort) 436685
+Insert (O3)                              true     977293,977356,977387 29.1343 SD    
+Heap (O3)                                true     382226,382258,382277 13.9628 SD    
+Heap (O2)                                true     380744,380768,380786 13.1589 SD    
+Insert (O2)                              true     562665,562719,562763 25.1702 SD    
+
+## MERGING 197 LISTS ##
+Baseline (copy+sort) 424326
+Insert (O3)                              true     986667,986752,986797 38.0307 SD    
+Heap (O3)                                true     384760,384805,384831 20.8477 SD    
+Heap (O2)                                true     383216,383246,383280 19.2611 SD    
+Insert (O2)                              true     567821,567870,567984 44.5132 SD    
+
+## MERGING 198 LISTS ##
+Baseline (copy+sort) 443572
+Insert (O3)                              true     996113,996178,996236 33.7085 SD    
+Heap (O3)                                true     386917,386951,386984 16.7732 SD    
+Heap (O2)                                true     385384,385420,385461 21.4183 SD    
+Insert (O2)                              true     573049,573108,573139 27.7352 SD    
+
+## MERGING 199 LISTS ##
+Baseline (copy+sort) 433142
+Insert (O3)                              true     1005558,1005575,1005665 31.4480 SD    
+Heap (O3)                                true     389656,389694,389824 42.7922 SD    
+Heap (O2)                                true     387987,388009,388048 16.7238 SD    
+Insert (O2)                              true     578285,578354,578398 35.4641 SD    
+
+## MERGING 200 LISTS ##
+Baseline (copy+sort) 451885
+Insert (O3)                              true     1015112,1015178,1015628 142.5139 SD    
+Heap (O3)                                true     391437,391462,391508 19.6654 SD    
+Heap (O2)                                true     389963,389988,390021 17.1011 SD    
+Insert (O2)                              true     583568,583615,583679 37.8140 SD    
+
+n,Insert (O2),Insert (O3),Heap (O2),Heap (O3)
+3,903,1031,934,928
+4,1369,1577,1517,1517
+5,1844,2169,2113,2106
+6,2332,2809,2922,2917
+7,2851,3479,3874,3817
+8,3372,4190,4573,4540
+9,3925,4939,5419,5319
+10,4482,5743,6309,6284
+11,5040,6586,7384,7339
+12,5654,7480,8338,8213
+13,6370,8507,9357,9270
+14,7012,9468,10491,10450
+15,7707,10509,11772,11668
+16,8392,11601,12626,12516
+17,9102,12706,13641,13538
+18,9840,13875,14795,14681
+19,10590,15086,16018,15909
+20,11408,16318,17168,17043
+21,12230,17638,18262,18161
+22,13067,18957,19655,19553
+23,13927,20358,21049,20918
+24,14827,21788,22177,22039
+25,15724,23285,23446,23353
+26,16653,24798,24799,24727
+27,17580,26356,26086,26053
+28,18565,27976,27475,27384
+29,19547,29646,28728,28624
+30,20602,31394,30310,30212
+31,21923,33467,31768,31595
+32,23099,35428,32840,32698
+33,24551,38671,33880,33739
+34,29233,44855,35452,35320
+35,34007,47894,36834,36705
+36,35583,50104,38905,38816
+37,36998,52306,44296,44309
+38,38379,54513,46655,46626
+39,39837,56803,48300,48281
+40,41327,59151,49878,49813
+41,42837,61534,51365,51388
+42,44376,63967,53201,53276
+43,45933,66452,54797,54839
+44,47509,68961,56683,56781
+45,49114,71531,58259,58333
+46,50748,74149,60201,60268
+47,52417,76828,61961,62039
+48,54090,79527,63495,63483
+49,55810,82289,65027,65049
+50,57561,85109,67117,67137
+51,59335,87970,68949,68990
+52,61138,90887,71014,71062
+53,62942,93838,72728,72923
+54,64805,96851,74623,74840
+55,66653,99880,76652,76836
+56,68794,103153,78822,79057
+57,70739,106306,80544,80799
+58,72397,109335,82319,82538
+59,74349,112560,84306,84596
+60,76350,115860,86113,86405
+61,78376,119192,88012,88342
+62,80395,122563,90088,90392
+63,82460,125954,91903,92251
+64,84578,129452,93494,93658
+65,86701,132968,95003,95320
+66,88858,136546,96908,97163
+67,91005,140141,98619,98921
+68,93206,143789,100433,100620
+69,95393,147480,102052,102394
+70,97656,151223,104307,104583
+71,99938,155024,105993,106270
+72,102522,159021,107996,108125
+73,104821,162888,109700,109876
+74,106832,166627,111745,111860
+75,109285,170676,113407,113537
+76,111804,174597,115517,115629
+77,114247,178601,117143,117256
+78,116674,182668,119551,119652
+79,119112,186791,121496,121641
+80,121564,190965,123274,123352
+81,124024,195171,125197,125272
+82,126631,199495,127368,127470
+83,129144,203811,129391,129433
+84,132479,208478,131540,131560
+85,135190,212898,133557,133552
+86,136802,216961,135725,135711
+87,139418,221455,138060,138043
+88,142022,225968,140100,140017
+89,144665,230547,142007,142030
+90,146761,235186,144323,144344
+91,149461,239627,146575,146615
+92,152184,244333,148834,148970
+93,154937,249109,151026,151178
+94,158158,254283,153434,153566
+95,161037,259096,155579,155752
+96,164423,264244,157609,157723
+97,167300,269192,159632,159739
+98,169552,273918,161216,161420
+99,172417,278934,163245,163439
+100,175266,283945,165188,165381
+101,178146,289045,167349,167510
+102,181065,294188,169540,169788
+103,184015,299402,171812,171987
+104,187201,304743,173718,173850
+105,190202,310037,175759,175956
+106,193872,315606,178148,178328
+107,196939,320997,180355,180610
+108,199172,326109,182070,182380
+109,202269,331550,184263,184611
+110,205324,337009,186853,187315
+111,208461,342551,189306,189791
+112,211645,348180,191274,191768
+113,214832,353825,193546,194001
+114,218493,359902,195881,196355
+115,221900,365738,198054,198511
+116,224571,371058,199843,200296
+117,227862,376874,202091,202527
+118,231127,382714,204745,205138
+119,234462,388611,207101,207582
+120,237810,394579,209057,209569
+121,241187,400583,211161,211819
+122,244963,406805,213767,214432
+123,248401,412899,216077,216761
+124,252549,419338,219007,219721
+125,256054,425500,221222,222018
+126,258399,431240,223201,224003
+127,261909,437488,225692,226528
+128,265448,443814,227310,228013
+129,269015,450167,229235,230062
+130,273091,456796,231297,232042
+131,276708,463263,233367,234161
+132,280344,469756,235304,236089
+133,284003,476297,237533,238294
+134,287692,482875,239783,240526
+135,291400,489494,242067,242970
+136,295136,496211,243879,244764
+137,298880,502913,245901,246985
+138,302645,509644,248081,248970
+139,306430,516450,250171,251285
+140,310234,523270,252146,253161
+141,314096,530177,254155,255413
+142,317956,537096,256677,257828
+143,321848,544082,258730,260174
+144,325757,551102,260779,262007
+145,329689,558152,262948,264317
+146,333652,565259,265229,266360
+147,337616,572443,267440,268636
+148,341605,579631,269474,270570
+149,345636,586873,271583,272871
+150,349658,594151,274189,275218
+151,353718,601456,276424,277722
+152,357445,608815,278454,279550
+153,361672,616381,280628,281980
+154,365947,623934,283223,284285
+155,370264,631513,285451,286691
+156,374519,639132,287849,288932
+157,378791,646729,289954,291348
+158,383065,654382,292772,293952
+159,387384,662107,294720,296384
+160,391652,669794,296750,298198
+161,395997,677554,298959,300467
+162,400343,685425,301051,302469
+163,404792,693264,303228,304744
+164,409216,701165,305380,306754
+165,413725,709154,307591,309083
+166,418188,717136,309897,311249
+167,422629,725156,312347,313828
+168,427088,733235,314466,315826
+169,431574,741339,316697,318157
+170,436110,749579,318827,320218
+171,440690,757741,321172,322719
+172,445316,766007,323377,324810
+173,449958,774294,325842,327323
+174,454660,782638,328763,330190
+175,459368,791026,331117,332827
+176,464044,799464,333166,334704
+177,468711,807963,335524,337146
+178,473390,816487,337814,339236
+179,478132,825001,340080,341612
+180,482927,833634,342270,343691
+181,487778,842283,344654,346183
+182,492628,851029,347461,348701
+183,497503,859673,349848,351403
+184,502427,868530,352211,353496
+185,507291,877376,354503,355999
+186,512219,886282,357371,358484
+187,517132,895164,359777,361121
+188,522057,904120,362305,363438
+189,527055,913122,364517,366032
+190,532067,922219,367512,368763
+191,537153,931254,369844,371612
+192,542257,940379,371687,373231
+193,547365,949609,374142,375744
+194,552427,958793,376416,377700
+195,557526,968038,378838,380355
+196,562719,977356,380768,382258
+197,567870,986752,383246,384805
+198,573108,996178,385420,386951
+199,578354,1005575,388009,389694
+200,583615,1015178,389988,391462
+
+n,Insert (O2) (min),Insert (O2) (med),Insert (O2) (max),Insert (O3) (min),Insert (O3) (med),Insert (O3) (max),Heap (O2) (min),Heap (O2) (med),Heap (O2) (max),Heap (O3) (min),Heap (O3) (med),Heap (O3) (max)
+3,902,903,906,1026,1031,1036,933,934,938,927,928,930
+4,1366,1369,1373,1577,1577,1579,1517,1517,1518,1516,1517,1518
+5,1841,1844,1853,2169,2169,2172,2112,2113,2114,2106,2106,2107
+6,2325,2332,2339,2808,2809,2810,2921,2922,2926,2915,2917,2920
+7,2848,2851,2858,3479,3479,3480,3872,3874,3891,3816,3817,3820
+8,3361,3372,3384,4189,4190,4192,4572,4573,4574,4537,4540,4544
+9,3918,3925,3942,4938,4939,4940,5416,5419,5421,5319,5319,5321
+10,4477,4482,4488,5742,5743,5745,6308,6309,6314,6282,6284,6287
+11,5032,5040,5046,6584,6586,6587,7383,7384,7389,7336,7339,7343
+12,5653,5654,5659,7479,7480,7483,8336,8338,8343,8212,8213,8216
+13,6364,6370,6379,8506,8507,8509,9356,9357,9359,9265,9270,9280
+14,7007,7012,7017,9466,9468,9472,10488,10491,10494,10447,10450,10453
+15,7698,7707,7714,10508,10509,10511,11770,11772,11774,11665,11668,11673
+16,8388,8392,8396,11599,11601,11603,12622,12626,12632,12512,12516,12519
+17,9097,9102,9113,12696,12706,12722,13639,13641,13644,13534,13538,13543
+18,9822,9840,9860,13862,13875,13891,14788,14795,14805,14675,14681,14723
+19,10570,10590,10624,15071,15086,15101,16004,16018,16066,15889,15909,15929
+20,11383,11408,11431,16315,16318,16319,17151,17168,17179,17009,17043,17068
+21,12200,12230,12262,17630,17638,17644,18222,18262,18285,18115,18161,18198
+22,13058,13067,13080,18952,18957,18962,19627,19655,19668,19512,19553,19577
+23,13909,13927,13935,20353,20358,20360,21027,21049,21058,20895,20918,20945
+24,14824,14827,14833,21786,21788,21796,22160,22177,22186,22025,22039,22045
+25,15719,15724,15727,23283,23285,23289,23439,23446,23453,23343,23353,23360
+26,16649,16653,16657,24797,24798,24801,24797,24799,24803,24721,24727,24732
+27,17577,17580,17582,26353,26356,26361,26083,26086,26094,26047,26053,26063
+28,18561,18565,18568,27973,27976,27982,27473,27475,27492,27380,27384,27392
+29,19544,19547,19551,29642,29646,29694,28724,28728,28735,28620,28624,28630
+30,20599,20602,20605,31392,31394,31400,30308,30310,30314,30203,30212,30215
+31,21919,21923,21930,33460,33467,33471,31761,31768,31771,31591,31595,31606
+32,23096,23099,23105,35415,35428,35441,32836,32840,32872,32692,32698,32709
+33,24527,24551,24611,38606,38671,38736,33875,33880,33886,33733,33739,33748
+34,29057,29233,29365,44799,44855,44933,35447,35452,35458,35318,35320,35332
+35,33939,34007,34033,47880,47894,47908,36820,36834,36841,36694,36705,36714
+36,35563,35583,35591,50099,50104,50113,38834,38905,39013,38750,38816,38986
+37,36994,36998,37005,52302,52306,52312,44169,44296,44466,44167,44309,44450
+38,38376,38379,38387,54507,54513,54517,46624,46655,46683,46614,46626,46638
+39,39834,39837,39843,56800,56803,56810,48292,48300,48315,48272,48281,48290
+40,41323,41327,41335,59147,59151,59158,49873,49878,49889,49803,49813,49822
+41,42832,42837,42852,61531,61534,61550,51356,51365,51377,51381,51388,51401
+42,44373,44376,44390,63963,63967,63970,53195,53201,53210,53267,53276,53278
+43,45931,45933,45939,66446,66452,66457,54789,54797,54800,54832,54839,54849
+44,47506,47509,47514,68956,68961,68968,56677,56683,56794,56770,56781,56788
+45,49109,49114,49127,71528,71531,71538,58257,58259,58265,58323,58333,58340
+46,50744,50748,50753,74146,74149,74165,60199,60201,60211,60261,60268,60288
+47,52415,52417,52430,76821,76828,76834,61957,61961,61966,62033,62039,62046
+48,54085,54090,54101,79518,79527,79535,63488,63495,63500,63479,63483,63491
+49,55805,55810,55817,82286,82289,82293,65017,65027,65035,65041,65049,65079
+50,57556,57561,57569,85101,85109,85117,67110,67117,67127,67128,67137,67148
+51,59331,59335,59343,87960,87970,87985,68944,68949,68957,68987,68990,69003
+52,61132,61138,61151,90882,90887,90898,71009,71014,71023,71059,71062,71081
+53,62940,62942,62965,93826,93838,93845,72718,72728,72735,72914,72923,72939
+54,64801,64805,64814,96840,96851,96864,74615,74623,74639,74835,74840,74848
+55,66648,66653,66661,99874,99880,99888,76642,76652,76666,76822,76836,76895
+56,68789,68794,68804,103143,103153,103163,78813,78822,78838,79049,79057,79071
+57,70729,70739,70746,106294,106306,106313,80536,80544,80556,80794,80799,80810
+58,72391,72397,72402,109328,109335,109347,82308,82319,82434,82524,82538,82820
+59,74345,74349,74353,112555,112560,112571,84294,84306,84339,84578,84596,84611
+60,76344,76350,76356,115851,115860,115863,86107,86113,86202,86397,86405,86428
+61,78371,78376,78380,119184,119192,119204,88007,88012,88020,88331,88342,88350
+62,80387,80395,80404,122554,122563,122568,90079,90088,90092,90377,90392,90399
+63,82457,82460,82468,125946,125954,125960,91898,91903,91914,92242,92251,92258
+64,84572,84578,84593,129441,129452,129462,93484,93494,93499,93653,93658,93676
+65,86698,86701,86723,132956,132968,132981,94989,95003,95007,95316,95320,95325
+66,88848,88858,88893,136538,136546,136558,96900,96908,96918,97157,97163,97171
+67,90998,91005,91010,140128,140141,140145,98605,98619,98625,98910,98921,98935
+68,93199,93206,93223,143783,143789,143803,100421,100433,100458,100609,100620,100628
+69,95388,95393,95402,147474,147480,147488,102046,102052,102079,102377,102394,102398
+70,97648,97656,97664,151214,151223,151231,104299,104307,104321,104579,104583,104596
+71,99931,99938,99949,155016,155024,155059,105980,105993,106000,106262,106270,106291
+72,102515,102522,102526,159016,159021,159049,107982,107996,108010,108116,108125,108244
+73,104815,104821,104830,162878,162888,162906,109687,109700,109709,109862,109876,109887
+74,106824,106832,106838,166621,166627,166653,111739,111745,111757,111852,111860,111871
+75,109280,109285,109294,170665,170676,170689,113393,113407,113418,113528,113537,113549
+76,111800,111804,111811,174583,174597,174604,115513,115517,115548,115623,115629,115642
+77,114242,114247,114257,178595,178601,178617,117130,117143,117155,117247,117256,117261
+78,116669,116674,116680,182655,182668,182681,119545,119551,119561,119646,119652,119675
+79,119106,119112,119124,186786,186791,186804,121492,121496,121504,121630,121641,121649
+80,121556,121564,121601,190952,190965,191043,123265,123274,123286,123306,123352,123367
+81,124017,124024,124061,195153,195171,195190,125183,125197,125206,125258,125272,125286
+82,126625,126631,126641,199485,199495,199504,127356,127368,127372,127463,127470,127480
+83,129136,129144,129153,203805,203811,203823,129387,129391,129400,129427,129433,129553
+84,132472,132479,132494,208473,208478,208487,131536,131540,131568,131524,131560,131572
+85,135181,135190,135202,212894,212898,212928,133546,133557,133585,133533,133552,133566
+86,136791,136802,136812,216952,216961,216968,135714,135725,135728,135647,135711,135728
+87,139409,139418,139427,221436,221455,221484,138046,138060,138070,138032,138043,138070
+88,142006,142022,142034,225959,225968,226025,140080,140100,140352,140008,140017,140035
+89,144657,144665,144685,230531,230547,230551,141992,142007,142022,142001,142030,142047
+90,146751,146761,146769,235158,235186,235202,144316,144323,144334,144326,144344,144356
+91,149446,149461,149474,239612,239627,239636,146571,146575,146586,146599,146615,146635
+92,152176,152184,152197,244324,244333,244342,148824,148834,148847,148832,148970,148995
+93,154923,154937,154954,249098,249109,249145,151018,151026,151036,151160,151178,151196
+94,158137,158158,158259,254274,254283,254293,153433,153434,153543,153553,153566,153581
+95,161022,161037,161054,259067,259096,259108,155569,155579,155610,155740,155752,155760
+96,164409,164423,164443,264232,264244,264273,157596,157609,157617,157713,157723,157736
+97,167293,167300,167309,269185,269192,269210,159624,159632,159644,159731,159739,159758
+98,169548,169552,169563,273908,273918,273946,161210,161216,161233,161412,161420,161435
+99,172407,172417,172425,278925,278934,278965,163238,163245,163250,163422,163439,163462
+100,175257,175266,175277,283935,283945,283960,165179,165188,165229,165366,165381,165393
+101,178136,178146,178167,289025,289045,289059,167341,167349,167358,167496,167510,167517
+102,181051,181065,181079,294169,294188,294204,169536,169540,169552,169780,169788,169798
+103,184001,184015,184025,299393,299402,299417,171802,171812,171818,171979,171987,172014
+104,187193,187201,187211,304733,304743,304871,173711,173718,173770,173840,173850,173863
+105,190196,190202,190213,310023,310037,310047,175750,175759,175774,175947,175956,175964
+106,193865,193872,193882,315596,315606,315635,178134,178148,178159,178316,178328,178340
+107,196929,196939,196945,320974,320997,321005,180349,180355,180365,180603,180610,180660
+108,199152,199172,199187,326094,326109,326124,182062,182070,182075,182371,182380,182393
+109,202246,202269,202288,331527,331550,331562,184255,184263,184289,184599,184611,184618
+110,205312,205324,205337,336994,337009,337020,186844,186853,186862,187307,187315,187324
+111,208448,208461,208482,342538,342551,342585,189297,189306,189316,189780,189791,189808
+112,211628,211645,211656,348154,348180,348195,191267,191274,191284,191760,191768,191824
+113,214820,214832,214844,353792,353825,353854,193532,193546,193570,193986,194001,194013
+114,218488,218493,218511,359893,359902,359929,195871,195881,195900,196345,196355,196378
+115,221891,221900,221917,365708,365738,365754,198041,198054,198154,198497,198511,198536
+116,224560,224571,224586,371043,371058,371071,199838,199843,199859,200283,200296,200308
+117,227855,227862,227876,376870,376874,376940,202079,202091,202100,202518,202527,202534
+118,231108,231127,231164,382696,382714,382738,204741,204745,204754,205126,205138,205164
+119,234441,234462,234481,388597,388611,388698,207091,207101,207115,207572,207582,207595
+120,237792,237810,237834,394557,394579,394599,209048,209057,209066,209561,209569,209578
+121,241174,241187,241303,400566,400583,400604,211141,211161,211185,211808,211819,211829
+122,244956,244963,245012,406766,406805,406818,213758,213767,213780,214420,214432,214450
+123,248387,248401,248431,412884,412899,412927,216058,216077,216089,216751,216761,216768
+124,252537,252549,252559,419309,419338,419362,218996,219007,219016,219710,219721,219746
+125,256045,256054,256068,425474,425500,425545,221215,221222,221244,222007,222018,222028
+126,258388,258399,258452,431232,431240,431277,223188,223201,223208,223985,224003,224019
+127,261896,261909,261915,437478,437488,437593,225683,225692,225706,226517,226528,226553
+128,265438,265448,265458,443789,443814,443827,227302,227310,227333,228002,228013,228028
+129,269000,269015,269543,450147,450167,450221,229223,229235,229251,230051,230062,230070
+130,273077,273091,273130,456784,456796,456816,231282,231297,231311,232033,232042,232062
+131,276704,276708,276745,463246,463263,463281,233354,233367,233383,234153,234161,234174
+132,280336,280344,280360,469742,469756,469773,235291,235304,235320,236075,236089,236098
+133,283994,284003,284021,476274,476297,476349,237526,237533,237549,238288,238294,238318
+134,287663,287692,287836,482865,482875,482893,239756,239783,239802,240511,240526,240549
+135,291379,291400,291471,489472,489494,489572,242056,242067,242079,242942,242970,242982
+136,295126,295136,295150,496165,496211,496224,243860,243879,243894,244749,244764,244784
+137,298859,298880,298895,502892,502913,502920,245890,245901,245921,246972,246985,246995
+138,302628,302645,302650,509632,509644,509659,248065,248081,248093,248962,248970,248983
+139,306423,306430,306442,516428,516450,516463,250156,250171,250200,251277,251285,251305
+140,310211,310234,310263,523246,523270,523362,252122,252146,252157,253150,253161,253277
+141,314078,314096,314116,530163,530177,530209,254140,254155,254176,255397,255413,255423
+142,317946,317956,317982,537076,537096,537672,256657,256677,256688,257812,257828,257875
+143,321841,321848,321863,544066,544082,544100,258721,258730,258779,260166,260174,260182
+144,325731,325757,325763,551092,551102,551148,260764,260779,260794,261992,262007,262035
+145,329668,329689,329704,558117,558152,558193,262940,262948,262958,264309,264317,264367
+146,333638,333652,333770,565229,565259,565326,265209,265229,265244,266353,266360,266378
+147,337598,337616,337639,572403,572443,572455,267418,267440,267451,268625,268636,268654
+148,341595,341605,341635,579593,579631,579672,269455,269474,269500,270554,270570,270589
+149,345605,345636,345645,586851,586873,586898,271572,271583,271599,272864,272871,272878
+150,349645,349658,349688,594129,594151,594179,274178,274189,274233,275207,275218,275242
+151,353714,353718,353759,601428,601456,601492,276386,276424,276470,277709,277722,277739
+152,357419,357445,357479,608783,608815,608829,278436,278454,278569,279538,279550,279604
+153,361660,361672,361684,616340,616381,616405,280617,280628,280642,281969,281980,281993
+154,365924,365947,365966,623915,623934,624000,283215,283223,283231,284267,284285,284306
+155,370248,370264,370289,631480,631513,631538,285440,285451,285477,286665,286691,286716
+156,374502,374519,374535,639113,639132,639253,287834,287849,287875,288911,288932,288961
+157,378775,378791,378829,646694,646729,646743,289933,289954,289992,291326,291348,291363
+158,383051,383065,383126,654362,654382,654402,292750,292772,292785,293931,293952,293979
+159,387366,387384,387415,662048,662107,662138,294695,294720,294735,296358,296384,296402
+160,391628,391652,391686,669769,669794,669816,296737,296750,296764,298164,298198,298219
+161,395979,395997,396040,677532,677554,677678,298946,298959,298987,300454,300467,300514
+162,400334,400343,400363,685380,685425,685500,301020,301051,301063,302425,302469,302496
+163,404763,404792,404808,693215,693264,693301,303208,303228,303233,304709,304744,304775
+164,409193,409216,409246,701117,701165,701178,305357,305380,305412,306745,306754,306777
+165,413688,413725,413818,709076,709154,709255,307572,307591,307626,309073,309083,309107
+166,418173,418188,418204,717085,717136,717164,309862,309897,309910,311207,311249,311266
+167,422598,422629,422663,725127,725156,725713,312322,312347,312357,313784,313828,313848
+168,427062,427088,427107,733212,733235,733274,314455,314466,314500,315812,315826,315847
+169,431555,431574,431600,741294,741339,741383,316683,316697,316724,318142,318157,318200
+170,436094,436110,436128,749492,749579,749683,318810,318827,318925,320200,320218,320230
+171,440667,440690,440760,757703,757741,757882,321147,321172,321197,322697,322719,322735
+172,445295,445316,445343,765959,766007,766046,323345,323377,323395,324800,324810,324827
+173,449941,449958,449981,774253,774294,774320,325826,325842,325916,327304,327323,327348
+174,454625,454660,454707,782581,782638,782670,328727,328763,328871,330166,330190,330243
+175,459326,459368,459400,791007,791026,791768,331092,331117,331140,332819,332827,332868
+176,464018,464044,464065,799397,799464,799500,333142,333166,333196,334686,334704,334744
+177,468700,468711,468726,807915,807963,808011,335498,335524,335548,337120,337146,337237
+178,473367,473390,473406,816456,816487,816551,337794,337814,337918,339223,339236,339262
+179,478116,478132,478159,824930,825001,825073,340072,340080,340091,341599,341612,341646
+180,482916,482927,482958,833542,833634,833665,342256,342270,342289,343661,343691,343724
+181,487747,487778,487865,842261,842283,842344,344625,344654,344668,346152,346183,346204
+182,492597,492628,492686,850985,851029,851152,347438,347461,347478,348684,348701,348738
+183,497471,497503,497550,859665,859673,859743,349822,349848,349861,351382,351403,351432
+184,502403,502427,502495,868475,868530,868548,352190,352211,352234,353477,353496,353529
+185,507258,507291,507356,877349,877376,877491,354490,354503,354528,355981,355999,356048
+186,512199,512219,512252,886247,886282,886318,357358,357371,357406,358467,358484,358496
+187,517071,517132,517291,895108,895164,895209,359731,359777,359789,361093,361121,361137
+188,522032,522057,522086,904073,904120,904146,362289,362305,362331,363418,363438,363470
+189,527023,527055,527089,913096,913122,913176,364494,364517,364537,366008,366032,366064
+190,532043,532067,532131,922179,922219,922313,367476,367512,367523,368726,368763,368840
+191,537123,537153,537179,931209,931254,931285,369828,369844,369883,371575,371612,371641
+192,542218,542257,542341,940348,940379,940408,371664,371687,371705,373210,373231,373361
+193,547348,547365,547392,949547,949609,950122,374123,374142,374176,375721,375744,375785
+194,552404,552427,552477,958742,958793,958823,376412,376416,376426,377686,377700,377725
+195,557477,557526,557670,968000,968038,968066,378818,378838,378873,380337,380355,380395
+196,562665,562719,562763,977293,977356,977387,380744,380768,380786,382226,382258,382277
+197,567821,567870,567984,986667,986752,986797,383216,383246,383280,384760,384805,384831
+198,573049,573108,573139,996113,996178,996236,385384,385420,385461,386917,386951,386984
+199,578285,578354,578398,1005558,1005575,1005665,387987,388009,388048,389656,389694,389824
+200,583568,583615,583679,1015112,1015178,1015628,389963,389988,390021,391437,391462,391508
