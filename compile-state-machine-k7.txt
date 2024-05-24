@@ -1,0 +1,73 @@
+g++ -Wall -Wextra -O2 -march=native -c gen.cpp
+g++ -Wall -Wextra -O2 -march=native -o gen gen.o
+for i in `seq 3 7`; do ./gen "$i" > "state_machine_$i.cpp"; done
+g++ -Wall -Wextra -O2 -march=native -c gen_lookup.cpp
+g++ -Wall -Wextra -O2 -march=native -o gen-lookup gen_lookup.o
+for i in `seq 3 8`; do ./gen-lookup "$i" > "state_table_$i.h"; done
+g++ -Wall -Wextra -O2 -march=native -c gen_lookup_asc.cpp
+g++ -Wall -Wextra -O2 -march=native -o gen-lookup-asc gen_lookup_asc.o
+for i in `seq 3 8`; do ./gen-lookup-asc "$i" > "state_table_asc_$i.h"; done
+g++ -Wall -Wextra -O2 -march=native -c main.cpp
+g++ -Wall -Wextra -O2 -march=native -c harness.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_baseline_copy_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_quick_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_std_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_insertion_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_insertion_sort_fast.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_insertion_sort_fast_discrete_n.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_insertion_sort_indexes.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_avx_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_avx_sort_discrete_n.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_avx_sort_pointers.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_avx_sort_binary_search.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_pseudo_avx_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_pseudo_avx_sort_binary_search.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_bubble_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_bubble_sort_fast.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_double_bubble_sort.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_heap.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_compiled.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_lookup_table.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_lookup_table_alt.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_lookup_table_asc.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_lookup_table_binary_search.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_lookup_table_binary_search_fast.cpp
+g++ -Wall -Wextra -march=native -c merge_insertion_sort_fast_O0.cpp
+g++ -Wall -Wextra -O1 -march=native -c merge_insertion_sort_fast_O1.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_insertion_sort_fast_O2.cpp
+g++ -Wall -Wextra -O3 -march=native -c merge_insertion_sort_fast_O3.cpp
+g++ -Wall -Wextra -Os -march=native -c merge_insertion_sort_fast_Os.cpp
+g++ -Wall -Wextra -Oz -march=native -c merge_insertion_sort_fast_Oz.cpp
+g++ -Wall -Wextra -march=native -c merge_heap_O0.cpp
+g++ -Wall -Wextra -O1 -march=native -c merge_heap_O1.cpp
+g++ -Wall -Wextra -O2 -march=native -c merge_heap_O2.cpp
+g++ -Wall -Wextra -O3 -march=native -c merge_heap_O3.cpp
+g++ -Wall -Wextra -Os -march=native -c merge_heap_Os.cpp
+g++ -Wall -Wextra -Oz -march=native -c merge_heap_Oz.cpp
+g++ --version
+g++ (Ubuntu 12.3.0-1ubuntu1~22.04) 12.3.0
+Copyright (C) 2022 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+time g++ -Wall -Wextra -march=native -c merge_state_machine_compiled_O0.cpp
+15.21user 0.31system 0:15.53elapsed 99%CPU (0avgtext+0avgdata 764044maxresident)k
+0inputs+15904outputs (0major+243859minor)pagefaults 0swaps
+time g++ -Wall -Wextra -O1 -march=native -c merge_state_machine_compiled_O1.cpp
+75.27user 0.33system 1:15.61elapsed 99%CPU (0avgtext+0avgdata 707036maxresident)k
+0inputs+7864outputs (0major+295777minor)pagefaults 0swaps
+time g++ -Wall -Wextra -O2 -march=native -c merge_state_machine_compiled_O2.cpp
+7426.20user 15.67system 2:04:02elapsed 99%CPU (0avgtext+0avgdata 16670404maxresident)k
+0inputs+7216outputs (0major+5410354minor)pagefaults 0swaps
+time g++ -Wall -Wextra -O3 -march=native -c merge_state_machine_compiled_O3.cpp
+7429.99user 15.69system 2:04:06elapsed 99%CPU (0avgtext+0avgdata 16669828maxresident)k
+0inputs+7224outputs (0major+5402215minor)pagefaults 0swaps
+time g++ -Wall -Wextra -Os -march=native -c merge_state_machine_compiled_Os.cpp
+7340.71user 15.58system 2:02:36elapsed 99%CPU (0avgtext+0avgdata 16670056maxresident)k
+0inputs+7376outputs (0major+5402728minor)pagefaults 0swaps
+time g++ -Wall -Wextra -Oz -march=native -c merge_state_machine_compiled_Oz.cpp
+7402.42user 16.09system 2:03:38elapsed 99%CPU (0avgtext+0avgdata 16670056maxresident)k
+0inputs+7376outputs (0major+5386152minor)pagefaults 0swaps
+g++ -o main main.o harness.o merge_baseline_copy_sort.o merge_quick_sort.o merge_std_sort.o merge_insertion_sort.o merge_insertion_sort_fast.o merge_insertion_sort_fast_discrete_n.o merge_insertion_sort_indexes.o merge_avx_sort.o merge_avx_sort_discrete_n.o merge_avx_sort_pointers.o merge_avx_sort_binary_search.o merge_pseudo_avx_sort.o merge_pseudo_avx_sort_binary_search.o merge_bubble_sort.o merge_bubble_sort_fast.o merg
+e_double_bubble_sort.o merge_heap.o merge_state_machine_compiled.o merge_state_machine_lookup_table.o merge_state_machine_lookup_table_alt.o merge_state_machine_lookup_table_asc.o merge_state_machine_lookup_table_binary_search.o merge_state_machine_lookup_table_binary_search_fast.o merge_insertion_sort_fast_O0.o merge_insertion_sort_fast_O1.o merge_insertion_sort_fast_O2.o merge_insertion_sort_fast_O3.o merge_insertion_sor
+t_fast_Os.o merge_insertion_sort_fast_Oz.o merge_heap_O0.o merge_heap_O1.o merge_heap_O2.o merge_heap_O3.o merge_heap_Os.o merge_heap_Oz.o merge_state_machine_compiled_O0.o merge_state_machine_compiled_O1.o merge_state_machine_compiled_O2.o merge_state_machine_compiled_O3.o merge_state_machine_compiled_Os.o merge_state_machine_compiled_Oz.o
