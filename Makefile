@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -O2 -march=native
+CFLAGS = -Wall -Wextra -Wno-unused-parameter -O2 -march=native
 
 SRC = \
 	harness.cpp \
