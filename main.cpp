@@ -6,6 +6,7 @@
 #include <array>
 #include <chrono>
 #include <numeric>
+#include <random>
 
 #include "config.h"
 #include "harness.h"
@@ -138,7 +139,8 @@ int main() {
 	printf("ITER_COUNT %d\n", ITER_COUNT);
 	printf("SEED %d\n", seed);
 
-	std::random_shuffle(std::begin(order), std::end(order));
+	std::mt19937 mt(seed);
+	std::shuffle(std::begin(order), std::end(order), mt);
 
 	auto time_begin = std::chrono::steady_clock::now();
 
