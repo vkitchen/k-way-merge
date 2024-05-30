@@ -132,6 +132,7 @@ int main() {
 
 	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
 	srand(seed);
+	printf("COMPILER_VERSION %s\n", __VERSION__);
 	printf("ARRAY_LENGTH %d\n", ARRAY_LENGTH);
 	printf("ARRAY_COUNT %d\n", ARRAY_COUNT);
 	printf("ITER_COUNT %d\n", ITER_COUNT);
