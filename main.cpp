@@ -27,6 +27,8 @@
 #include "merge_pseudo_avx_sort.h"
 #include "merge_pseudo_avx_sort_binary_search.h"
 #include "merge_heap.h"
+#include "merge_heap_stl.h"
+#include "merge_heap_stl_naive.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
@@ -34,26 +36,28 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 11
+#define NO_TESTS 3
 
 bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
 //	merge_std_sort,
 //	merge_bubble_sort,
-	merge_bubble_sort_fast,
+//	merge_bubble_sort_fast,
 //	merge_double_bubble_sort,
 //	merge_insertion_sort,
-	merge_insertion_sort_fast,
+//	merge_insertion_sort_fast,
 //	merge_insertion_sort_fast_discrete_n,
-	merge_insertion_sort_indexes,
-	merge_avx_sort,
-	merge_avx_sort_discrete_n,
-	merge_avx_sort_pointers,
-	merge_avx_sort_binary_search,
-	merge_pseudo_avx_sort,
-	merge_pseudo_avx_sort_binary_search,
+//	merge_insertion_sort_indexes,
+//	merge_avx_sort,
+//	merge_avx_sort_discrete_n,
+//	merge_avx_sort_pointers,
+//	merge_avx_sort_binary_search,
+//	merge_pseudo_avx_sort,
+//	merge_pseudo_avx_sort_binary_search,
 	merge_heap,
-	merge_state_machine_compiled,
+	merge_heap_stl,
+	merge_heap_stl_naive,
+//	merge_state_machine_compiled,
 //	merge_state_machine_lookup_table,
 //	merge_state_machine_lookup_table_alt,
 //	merge_state_machine_lookup_table_asc,
@@ -83,20 +87,22 @@ const char *names[NO_TESTS] = {
 //	"Quick Sort",
 //	"Std Sort",
 //	"Bubble Sort",
-	"Bubble Sort Fast",
+//	"Bubble Sort Fast",
 //	"Double Bubble Sort",
 //	"Insertion Sort",
-	"Insertion Sort Fast",
+//	"Insertion Sort Fast",
 //	"Insertion Sort Fast Discrete N",
-	"Insertion Sort Indexes",
-	"AVX Sort",
-	"AVX Sort Discrete N",
-	"AVX Sort (Pointers)",
-	"AVX Sort (Binary Search)",
-	"Pseudo AVX Sort",
-	"Pseudo AVX Sort (Binary Search)",
+//	"Insertion Sort Indexes",
+//	"AVX Sort",
+//	"AVX Sort Discrete N",
+//	"AVX Sort (Pointers)",
+//	"AVX Sort (Binary Search)",
+//	"Pseudo AVX Sort",
+//	"Pseudo AVX Sort (Binary Search)",
 	"Heap",
-	"State Machine (Compiled)",
+	"Heap (STL)",
+	"Heap (STL, naive)",
+//	"State Machine (Compiled)",
 //	"State Machine (Lookup Table)",
 //	"State Machine (Lookup Table Alternative)",
 //	"State Machine (Lookup Table Ascending)",

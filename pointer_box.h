@@ -79,7 +79,7 @@ namespace JASS
 			*/
 			bool operator<(const pointer_box<TYPE> to) const
 				{
-				return *element > *to.element;
+				return *element < *to.element;
 				}
 
 			/*
@@ -93,7 +93,7 @@ namespace JASS
 			*/
 			bool operator<=(const pointer_box<TYPE> to) const
 				{
-				return *element >= *to.element;
+				return *element <= *to.element;
 				}
 
 			/*
@@ -106,6 +106,123 @@ namespace JASS
 				@return true or false.
 			*/
 			bool operator>(const pointer_box<TYPE> to) const
+				{
+				return *element > *to.element;
+				}
+
+
+
+			/*
+				POINTER_BOX::POINTER()
+				----------------------
+			*/
+			/*!
+				@brief Return the pointer this box holds.
+				@return The boxed pointer
+			*/
+			TYPE *pointer() const
+				{
+				return element;
+				}
+			
+			/*
+				POINTER_BOX::OPERATOR->()
+				-------------------------
+			*/
+			/*!
+				@brief Pointer to member operator.
+				@return A pointer to the object
+			*/
+			TYPE *operator->() const
+				{
+				return element;
+				}
+
+			/*
+				POINTER_BOX::OPERATOR*()
+				------------------------
+			*/
+			/*!
+				@brief Value of operator.
+				@return A reference to the value stored in the object
+			*/
+			TYPE &operator*() const
+				{
+				return *element;
+				}
+		};
+
+	template <typename TYPE>
+	class pointer_box_inver
+		{
+		private:
+			TYPE *element;				///< We actually store a reference to the object rather than a pointer, but they're the same size.
+			
+		public:
+			/*
+				POINTER_BOX::POINTER_BOX()
+				--------------------------
+			*/
+			/*!
+				@brief Constructor
+			*/
+			pointer_box_inver()
+				{
+				/* Nothing */
+				}
+
+			/*
+				POINTER_BOX::POINTER_BOX()
+				--------------------------
+			*/
+			/*!
+				@brief Constructor
+				@param to [in] The object we are being a pointer to.
+			*/
+			pointer_box_inver(TYPE *to) :
+				element(to)
+				{
+				/* Nothing */
+				}
+
+			/*
+				POINTER_BOX::OPERATOR<()
+				------------------------
+			*/
+			/*!
+				@brief Compare for less than.
+				@param to [in] The object we are comparing to.
+				@return true or false.
+			*/
+			bool operator<(const pointer_box_inver<TYPE> to) const
+				{
+				return *element > *to.element;
+				}
+
+			/*
+				POINTER_BOX::OPERATOR<=()
+				-------------------------
+			*/
+			/*!
+				@brief Compare for less than or equal to.
+				@param to [in] The object we are Compareing to.
+				@return true or false.
+			*/
+			bool operator<=(const pointer_box_inver<TYPE> to) const
+				{
+				return *element >= *to.element;
+				}
+
+			/*
+				POINTER_BOX::OPERATOR>()
+				-------------------------
+			*/
+			/*!
+				@brief Compare for greater than.
+				@param to [in] The object we are Compareing to.
+				@return true or false.
+			*/
+			bool operator>(const pointer_box_inver<TYPE> to) const
 				{
 				return *element < *to.element;
 				}
