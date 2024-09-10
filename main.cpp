@@ -28,6 +28,7 @@
 #include "merge_pseudo_avx_sort_binary_search.h"
 #include "merge_heap.h"
 #include "merge_heap_stl.h"
+#include "merge_heap_stl_opt.h"
 #include "merge_heap_stl_naive.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
@@ -36,7 +37,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 3
+#define NO_TESTS 4
 
 bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_quick_sort,
@@ -56,6 +57,7 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 //	merge_pseudo_avx_sort_binary_search,
 	merge_heap,
 	merge_heap_stl,
+	merge_heap_stl_opt,
 	merge_heap_stl_naive,
 //	merge_state_machine_compiled,
 //	merge_state_machine_lookup_table,
@@ -101,6 +103,7 @@ const char *names[NO_TESTS] = {
 //	"Pseudo AVX Sort (Binary Search)",
 	"Heap",
 	"Heap (STL)",
+	"Heap (STL, opt)",
 	"Heap (STL, naive)",
 //	"State Machine (Compiled)",
 //	"State Machine (Lookup Table)",
