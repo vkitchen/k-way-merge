@@ -14,6 +14,8 @@ bool merge_heap_stl(struct test *t, int n) {
 	
 	std::make_heap(segments.begin(), segments.end());
 
+	segments.push_back(0);
+
 	// process
 	size_t pos = 0;
 	for (;;) {
@@ -23,9 +25,8 @@ bool merge_heap_stl(struct test *t, int n) {
 		t->results[pos++] = *segments[0];
 
 		/* Avoid double siftdown https://stackoverflow.com/questions/29662820/how-to-change-max-element-in-a-heap-in-c-standard-library */
-		segments.push_back(segments[0].pointer() + 1);
+		segments.back() = segments[0].pointer() + 1;
 		std::pop_heap(segments.begin(), segments.end());
-		segments.pop_back();
 	}
 
 	return true;

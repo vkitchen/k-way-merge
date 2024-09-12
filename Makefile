@@ -20,7 +20,6 @@ SRC = \
 	merge_double_bubble_sort.cpp \
 	merge_heap.cpp \
 	merge_heap_stl.cpp \
-	merge_heap_stl_opt.cpp \
 	merge_heap_stl_naive.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_lookup_table.cpp \
