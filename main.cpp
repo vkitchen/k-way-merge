@@ -29,6 +29,7 @@
 #include "merge_heap.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
+#include "merge_tournament.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
@@ -57,6 +58,7 @@ bool (*functions[NO_TESTS]) (struct test *, int) = {
 	merge_heap,
 	merge_heap_stl,
 	merge_heap_stl_naive,
+//	merge_tournament,
 //	merge_state_machine_compiled,
 //	merge_state_machine_lookup_table,
 //	merge_state_machine_lookup_table_alt,
@@ -101,7 +103,8 @@ const char *names[NO_TESTS] = {
 //	"Pseudo AVX Sort (Binary Search)",
 	"Heap",
 	"Heap (STL)",
-	"Heap (STL, naive)",
+	"Heap (STL naive)",
+//	"Tournament Tree",
 //	"State Machine (Compiled)",
 //	"State Machine (Lookup Table)",
 //	"State Machine (Lookup Table Alternative)",
