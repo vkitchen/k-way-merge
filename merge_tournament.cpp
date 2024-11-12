@@ -2,18 +2,18 @@
 
 #include "harness.h"
 
-size_t parent(size_t i) {
+static size_t parent(size_t i) {
 	return i / 2;
 }
 
 // returns [winner, loser]
-std::pair<int, int> play_game(std::vector<std::pair<int *, int>> &tree, int x, int y) {
+static std::pair<int, int> play_game(std::vector<std::pair<int *, int>> &tree, int x, int y) {
 	if (*tree[x].first > *tree[y].first)
 		return std::make_pair(x, y);
 	return std::make_pair(y, x);
 }
 
-void initialise(int **a, int n, std::vector<std::pair<int *, int>> &tree) {
+static void initialise(int **a, int n, std::vector<std::pair<int *, int>> &tree) {
 	std::vector<int> winners(n * 2);
 
 	// Copy array into tree
@@ -32,7 +32,7 @@ void initialise(int **a, int n, std::vector<std::pair<int *, int>> &tree) {
 	tree[0] = std::make_pair(tree[winners[1]].first, winners[1]);
 }
 
-void replay_games(std::vector<std::pair<int *, int>> &tree, int pos) {
+static void replay_games(std::vector<std::pair<int *, int>> &tree, int pos) {
 	int p = parent(pos);
 	while (p != 0) {
 		// does parent still point to the loser?

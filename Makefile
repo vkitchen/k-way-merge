@@ -22,6 +22,7 @@ SRC = \
 	merge_heap_stl.cpp \
 	merge_heap_stl_naive.cpp \
 	merge_tournament.cpp \
+	merge_tournament_2.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_lookup_table.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
