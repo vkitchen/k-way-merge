@@ -138,6 +138,8 @@ int main() {
 		merge_baseline->merge(t, n);
 		time_end = std::chrono::steady_clock::now();
 		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
+		puts("Name                                   | Success | Min,Med,Max | Standard Deviation | Error Msg");
+		puts("-----------------------------------------------------------------------------------------------");
 
 		for (int i = 0; i < NO_TESTS; i++) {
 			harness_reset(t);
@@ -171,7 +173,7 @@ int main() {
 			timings[n][alg][1] = iterations[ITER_COUNT / 2];
 			timings[n][alg][2] = iterations[ITER_COUNT-1];
 
-			printf("%-40s %-8s %ld,%ld,%ld %.4f SD    %s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
+			printf("%-40s %-9s %ld,%ld,%ld %.4f SD    %s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
 		}
 	}
 
