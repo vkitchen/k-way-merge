@@ -1,7 +1,8 @@
 #include <vector>
-#include <iostream>
 
 #include "harness.h"
+
+#include "merge_tournament_2.h"
 
 static size_t parent(size_t i) {
 	return i / 2;
@@ -51,7 +52,7 @@ static void replay_games(std::vector<std::pair<int, int>> &tree, int pos) {
 	tree[0] = winner;
 }
 
-bool merge_tournament_2(struct test *t, int n) {
+bool MergeTournament2::merge(struct test *t, int n) {
 	std::vector<int *> segments(t->postings, t->postings + n);
 	std::vector<std::pair<int, int>> tree(n * 2); // (val, pos)
 

@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_bubble_sort(struct test *, int);
+#include "merge.h"
+
+class MergeBubbleSort : public Merge {
+	public:
+		MergeBubbleSort() {
+			name = "Bubble Sort";
+		}
+		bool merge(struct test *t, int n) override;
+};

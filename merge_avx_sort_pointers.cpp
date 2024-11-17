@@ -2,6 +2,8 @@
 
 #include "harness.h"
 
+#include "merge_avx_sort_pointers.h"
+
 static int *postings[8];
 
 #ifdef __AVX512F__
@@ -40,7 +42,7 @@ static void sort_partial(int length) {
 #endif
 }
 
-bool merge_avx_sort_pointers(struct test *t, int n) {
+bool MergeAvxSortPointers::merge(struct test *t, int n) {
 #ifndef __AVX512F__
 	return false;
 #endif

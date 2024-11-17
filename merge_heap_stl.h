@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_heap_stl(struct test *, int);
+#include "merge.h"
+
+class MergeHeapStl : public Merge {
+	public:
+		MergeHeapStl() {
+			name = "Heap (STL)";
+		}
+		bool merge(struct test *t, int n) override;
+};

@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_insertion_sort(struct test *, int);
+#include "merge.h"
+
+class MergeInsertionSort : public Merge {
+	public:
+		MergeInsertionSort() {
+			name = "Insertion Sort";
+		}
+		bool merge(struct test *t, int n) override;
+};

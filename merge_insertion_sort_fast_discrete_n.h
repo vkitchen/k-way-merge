@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_insertion_sort_fast_discrete_n(struct test *, int);
+#include "merge.h"
+
+class MergeInsertionSortFastDiscreteN : public Merge {
+	public:
+		MergeInsertionSortFastDiscreteN() {
+			name = "Insertion Sort Fast Discrete N";
+		}
+		bool merge(struct test *t, int n) override;
+};

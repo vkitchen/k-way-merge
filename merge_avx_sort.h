@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_avx_sort(struct test *, int);
+#include "merge.h"
+
+class MergeAvxSort : public Merge {
+	public:
+		MergeAvxSort() {
+			name = "AVX Sort";
+		}
+		bool merge(struct test *t, int n) override;
+};

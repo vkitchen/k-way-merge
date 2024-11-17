@@ -2,9 +2,11 @@
 #include "heap.h"
 #include "pointer_box.h"
 
+#include "merge_heap.h"
+
 typedef JASS::pointer_box_inver<int> value_compare_pointer;
 
-bool merge_heap_O0(struct test *t, int n) {
+bool MergeHeapO0::merge(struct test *t, int n) {
 	value_compare_pointer *segments = (value_compare_pointer *)malloc(sizeof(value_compare_pointer) * n);
 
 	for (int i = 0; i < n; i++)

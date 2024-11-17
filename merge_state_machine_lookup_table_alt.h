@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_state_machine_lookup_table_alt(struct test *, int);
+#include "merge.h"
+
+class MergeStateMachineLookupTableAlt : public Merge {
+	public:
+		MergeStateMachineLookupTableAlt() {
+			name = "State Machine (Lookup Table Alternative)";
+		}
+		bool merge(struct test *t, int n) override;
+};

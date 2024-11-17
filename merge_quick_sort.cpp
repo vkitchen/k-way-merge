@@ -2,11 +2,13 @@
 
 #include "harness.h"
 
+#include "merge_quick_sort.h"
+
 static int cmp_p(const void *a, const void *b) {
 	return **(int **)b - **(int **)a;
 }
 
-bool merge_quick_sort(struct test *t, int n) {
+bool MergeQuickSort::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

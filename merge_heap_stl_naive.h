@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_heap_stl_naive(struct test *, int);
+#include "merge.h"
+
+class MergeHeapStlNaive : public Merge {
+	public:
+		MergeHeapStlNaive() {
+			name = "Heap (STL Naive)";
+		}
+		bool merge(struct test *t, int n) override;
+};

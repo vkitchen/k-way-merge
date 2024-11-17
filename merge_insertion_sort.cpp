@@ -1,5 +1,7 @@
 #include "harness.h"
 
+#include "merge_insertion_sort.h"
+
 static void sort(int **a, int length) {
 	int i, j;
 	for (i = 1; i < length; i++) {
@@ -10,7 +12,7 @@ static void sort(int **a, int length) {
 	}
 }
 
-bool merge_insertion_sort(struct test *t, int n) {
+bool MergeInsertionSort::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

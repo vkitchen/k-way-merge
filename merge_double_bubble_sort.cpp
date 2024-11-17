@@ -2,6 +2,8 @@
 
 #include "harness.h"
 
+#include "merge_double_bubble_sort.h"
+
 static void sort(int **a, int length) {
 	for (size_t i = length; i > 1; i -= 2) {
 		int *x = a[0];
@@ -21,7 +23,7 @@ static void sort(int **a, int length) {
 	}
 }
 
-bool merge_double_bubble_sort(struct test *t, int n) {
+bool MergeDoubleBubbleSort::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

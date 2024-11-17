@@ -10,6 +10,7 @@
 
 #include "config.h"
 #include "harness.h"
+
 #include "merge_baseline_copy_sort.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
@@ -38,100 +39,66 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 3
+#define NO_TESTS 45
 
-bool (*functions[NO_TESTS]) (struct test *, int) = {
-//	merge_quick_sort,
-//	merge_std_sort,
-//	merge_bubble_sort,
-//	merge_bubble_sort_fast,
-//	merge_double_bubble_sort,
-//	merge_insertion_sort,
-//	merge_insertion_sort_fast,
-//	merge_insertion_sort_fast_discrete_n,
-//	merge_insertion_sort_indexes,
-//	merge_avx_sort,
-//	merge_avx_sort_discrete_n,
-//	merge_avx_sort_pointers,
-//	merge_avx_sort_binary_search,
-//	merge_pseudo_avx_sort,
-//	merge_pseudo_avx_sort_binary_search,
-	merge_heap,
-//	merge_heap_stl,
-//	merge_heap_stl_naive,
-	merge_tournament,
-	merge_tournament_2,
-//	merge_state_machine_compiled,
-//	merge_state_machine_lookup_table,
-//	merge_state_machine_lookup_table_alt,
-//	merge_state_machine_lookup_table_asc,
-//	merge_state_machine_lookup_table_binary_search,
-//	merge_state_machine_lookup_table_binary_search_fast,
-//	merge_insertion_sort_fast_O0,
-//	merge_insertion_sort_fast_O1,
-//	merge_insertion_sort_fast_O2,
-//	merge_insertion_sort_fast_O3,
-//	merge_insertion_sort_fast_Os,
-//	merge_insertion_sort_fast_Oz,
-//	merge_heap_O0,
-//	merge_heap_O1,
-//	merge_heap_O2,
-//	merge_heap_O3,
-//	merge_heap_Os,
-//	merge_heap_Oz,
-//	merge_state_machine_compiled_O0,
-//	merge_state_machine_compiled_O1,
-//	merge_state_machine_compiled_O2,
-//	merge_state_machine_compiled_O3,
-//	merge_state_machine_compiled_Os,
-//	merge_state_machine_compiled_Oz,
-};
+Merge *merge_baseline = new MergeBaselineCopySort;
 
-const char *names[NO_TESTS] = {
-//	"Quick Sort",
-//	"Std Sort",
-//	"Bubble Sort",
-//	"Bubble Sort Fast",
-//	"Double Bubble Sort",
-//	"Insertion Sort",
-//	"Insertion Sort Fast",
-//	"Insertion Sort Fast Discrete N",
-//	"Insertion Sort Indexes",
-//	"AVX Sort",
-//	"AVX Sort Discrete N",
-//	"AVX Sort (Pointers)",
-//	"AVX Sort (Binary Search)",
-//	"Pseudo AVX Sort",
-//	"Pseudo AVX Sort (Binary Search)",
-	"Heap",
-//	"Heap (STL)",
-//	"Heap (STL naive)",
-	"Tournament Tree",
-	"Tournament Tree 2",
-//	"State Machine (Compiled)",
-//	"State Machine (Lookup Table)",
-//	"State Machine (Lookup Table Alternative)",
-//	"State Machine (Lookup Table Ascending)",
-//	"State Machine (Binary Search)",
-//	"State Machine (Binary Search Fast)",
-//	"Insert (O0)",
-//	"Insert (O1)",
-//	"Insert (O2)",
-//	"Insert (O3)",
-//	"Insert (Os)",
-//	"Insert (Oz)",
-//	"Heap (O0)",
-//	"Heap (O1)",
-//	"Heap (O2)",
-//	"Heap (O3)",
-//	"Heap (Os)",
-//	"Heap (Oz)",
-//	"State Machine (O0)",
-//	"State Machine (O1)",
-//	"State Machine (O2)",
-//	"State Machine (O3)",
-//	"State Machine (Os)",
-//	"State Machine (Oz)",
+Merge *functions[NO_TESTS] = {
+	merge_baseline,
+
+	new MergeQuickSort,
+	new MergeStdSort,
+
+	new MergeBubbleSort,
+	new MergeBubbleSortFast,
+	new MergeDoubleBubbleSort,
+
+	new MergeInsertionSort,
+	new MergeInsertionSortFast,
+	new MergeInsertionSortFastDiscreteN,
+	new MergeInsertionSortIndexes,
+
+	new MergeAvxSort,
+	new MergeAvxSortDiscreteN,
+	new MergeAvxSortPointers,
+	new MergeAvxSortBinarySearch,
+	new MergePseudoAvxSort,
+	new MergePseudoAvxSortBinarySearch,
+
+	new MergeHeap(),
+	new MergeHeapStl(),
+	new MergeHeapStlNaive,
+
+	new MergeTournament(),
+	new MergeTournament2(),
+
+	new MergeStateMachineCompiled,
+	new MergeStateMachineLookupTable,
+	new MergeStateMachineLookupTableAlt,
+	new MergeStateMachineLookupTableAsc,
+	new MergeStateMachineLookupTableBinarySearch,
+	new MergeStateMachineLookupTableBinarySearchFast,
+
+	new MergeInsertionSortFastO0,
+	new MergeInsertionSortFastO1,
+	new MergeInsertionSortFastO2,
+	new MergeInsertionSortFastO3,
+	new MergeInsertionSortFastOs,
+	new MergeInsertionSortFastOz,
+
+	new MergeHeapO0,
+	new MergeHeapO1,
+	new MergeHeapO2,
+	new MergeHeapO3,
+	new MergeHeapOs,
+	new MergeHeapOz,
+
+	new MergeStateMachineCompiledO0,
+	new MergeStateMachineCompiledO1,
+	new MergeStateMachineCompiledO2,
+	new MergeStateMachineCompiledO3,
+	new MergeStateMachineCompiledOs,
+	new MergeStateMachineCompiledOz,
 };
 
 int order[NO_TESTS];
@@ -168,7 +135,7 @@ int main() {
 		printf("\n## MERGING %d LISTS ##\n", n);
 
 		time_begin = std::chrono::steady_clock::now();
-		merge_baseline_copy_sort(t, n);
+		merge_baseline->merge(t, n);
 		time_end = std::chrono::steady_clock::now();
 		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
 
@@ -182,7 +149,7 @@ int main() {
 			for (int j = 0; j < ITER_COUNT; j++) {
 				time_begin = std::chrono::steady_clock::now();
 
-				res = (*functions[alg])(t, n);
+				res = functions[alg]->merge(t, n);
 
 				time_end = std::chrono::steady_clock::now();
 				iterations[j] = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count();
@@ -204,7 +171,7 @@ int main() {
 			timings[n][alg][1] = iterations[ITER_COUNT / 2];
 			timings[n][alg][2] = iterations[ITER_COUNT-1];
 
-			printf("%-40s %-8s %ld,%ld,%ld %.4f SD    %s\n", names[alg], status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
+			printf("%-40s %-8s %ld,%ld,%ld %.4f SD    %s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
 		}
 	}
 
@@ -212,7 +179,7 @@ int main() {
 
 	printf("n");
 	for (int i = 0; i < NO_TESTS; i++)
-		printf(",%s", names[i]);
+		printf(",%s", functions[i]->name.c_str());
 	puts("");
 
 
@@ -227,7 +194,7 @@ int main() {
 
 	printf("n");
 	for (int i = 0; i < NO_TESTS; i++)
-		printf(",%s (min),%s (med),%s (max)", names[i], names[i], names[i]);
+		printf(",%s (min),%s (med),%s (max)", functions[i]->name.c_str(), functions[i]->name.c_str(), functions[i]->name.c_str());
 	puts("");
 
 

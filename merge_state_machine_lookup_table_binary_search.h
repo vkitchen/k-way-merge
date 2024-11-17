@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_state_machine_lookup_table_binary_search(struct test *, int);
+#include "merge.h"
+
+class MergeStateMachineLookupTableBinarySearch : public Merge {
+	public:
+		MergeStateMachineLookupTableBinarySearch() {
+			name = "State Machine (Binary Search)";
+		}
+		bool merge(struct test *t, int n) override;
+};

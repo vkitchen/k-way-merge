@@ -10,6 +10,8 @@
 #include "state_table_7.h"
 #include "state_table_8.h"
 
+#include "merge_state_machine_lookup_table_alt.h"
+
 static int cmp_p(const void *a, const void *b) {
 	return **(int **)b - **(int **)a;
 }
@@ -218,7 +220,7 @@ void merge_state_machine_lookup_table_alt_8(struct test *t) {
 	}
 }
 
-bool merge_state_machine_lookup_table_alt(struct test *t, int n) {
+bool MergeStateMachineLookupTableAlt::merge(struct test *t, int n) {
 	if (n == 3)
 		merge_state_machine_lookup_table_alt_3(t);
 	else if (n == 4)

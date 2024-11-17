@@ -1,5 +1,7 @@
 #include "harness.h"
 
+#include "merge_bubble_sort.h"
+
 static void sort(int **a, int length) {
 	for (int i = length; i > 1; i--) {
 		int *min = a[0];
@@ -12,7 +14,7 @@ static void sort(int **a, int length) {
 	}
 }
 
-bool merge_bubble_sort(struct test *t, int n) {
+bool MergeBubbleSort::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

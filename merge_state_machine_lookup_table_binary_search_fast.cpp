@@ -10,6 +10,8 @@
 #include "state_table_asc_7.h"
 #include "state_table_asc_8.h"
 
+#include "merge_state_machine_lookup_table_binary_search_fast.h"
+
 static int cmp_p(const void *a, const void *b) {
 	return **(int **)a - **(int **)b;
 }
@@ -202,7 +204,7 @@ void merge_state_machine_lookup_table_binary_search_fast_8(struct test *t) {
 	}
 }
 
-bool merge_state_machine_lookup_table_binary_search_fast(struct test *t, int n) {
+bool MergeStateMachineLookupTableBinarySearchFast::merge(struct test *t, int n) {
 	if (n == 3)
 		merge_state_machine_lookup_table_binary_search_fast_3(t);
 	else if (n == 4)

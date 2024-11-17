@@ -4,6 +4,8 @@
 
 #include "harness.h"
 
+#include "merge_avx_sort_binary_search.h"
+
 static int *postings[16];
 static unsigned char segments[16] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
@@ -47,7 +49,7 @@ static void sort_partial(int length) {
 #endif
 }
 
-bool merge_avx_sort_binary_search(struct test *t, int n) {
+bool MergeAvxSortBinarySearch::merge(struct test *t, int n) {
 #ifndef __AVX512F__
 	return false;
 #endif

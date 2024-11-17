@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_avx_sort_binary_search(struct test *, int);
+#include "merge.h"
+
+class MergeAvxSortBinarySearch : public Merge {
+	public:
+		MergeAvxSortBinarySearch() {
+			name = "AVX Sort Binary Search";
+		}
+		bool merge(struct test *t, int n) override;
+};

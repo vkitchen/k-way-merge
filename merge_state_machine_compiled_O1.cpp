@@ -5,11 +5,13 @@
 #include "config.h"
 #include "harness.h"
 
+#include "merge_state_machine_compiled.h"
+
 static int cmp_p(const void *a, const void *b) {
 	return **(int **)b - **(int **)a;
 }
 
-bool merge_state_machine_compiled_O1(struct test *t, int n) {
+bool MergeStateMachineCompiledO1::merge(struct test *t, int n) {
 	int *segments[8];
 
 	for (int i = 0; i < n && i < 8; i++)

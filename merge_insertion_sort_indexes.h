@@ -1,3 +1,11 @@
 #pragma once
 
-bool merge_insertion_sort_indexes(struct test *, int);
+#include "merge.h"
+
+class MergeInsertionSortIndexes : public Merge {
+	public:
+		MergeInsertionSortIndexes() {
+			name = "Insertion Sort Indexes";
+		}
+		bool merge(struct test *t, int n) override;
+};

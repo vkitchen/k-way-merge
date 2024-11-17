@@ -2,6 +2,8 @@
 
 #include "harness.h"
 
+#include "merge_avx_sort_discrete_n.h"
+
 static int *postings[16];
 static unsigned char segments[16] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
 
@@ -216,7 +218,7 @@ static void sort_partial_16() {
 #endif
 }
 
-bool merge_avx_sort_discrete_n(struct test *t, int n) {
+bool MergeAvxSortDiscreteN::merge(struct test *t, int n) {
 #ifndef __AVX512F__
 	return false;
 #endif

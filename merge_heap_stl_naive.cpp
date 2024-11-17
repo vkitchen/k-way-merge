@@ -4,9 +4,11 @@
 #include "harness.h"
 #include "pointer_box.h"
 
+#include "merge_heap_stl_naive.h"
+
 typedef JASS::pointer_box<int> value_compare_pointer;
 
-bool merge_heap_stl_naive(struct test *t, int n) {
+bool MergeHeapStlNaive::merge(struct test *t, int n) {
 	std::vector<value_compare_pointer> segments;
 
 	for (int i = 0; i < n; i++)

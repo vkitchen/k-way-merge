@@ -5,6 +5,8 @@
 
 #include "harness.h"
 
+#include "merge_pseudo_avx_sort_binary_search.h"
+
 static void sort_full(int **postings, unsigned char *segments, int length) {
 	int i, j;
 	for (i = 1; i < length; i++) {
@@ -24,7 +26,7 @@ static void sort_partial(int **postings, unsigned char *segments, int length) {
 	segments[i] = x;
 }
 
-bool merge_pseudo_avx_sort_binary_search(struct test *t, int n) {
+bool MergePseudoAvxSortBinarySearch::merge(struct test *t, int n) {
 	int **postings = (int **)malloc(sizeof(int *) * n);
 	unsigned char *segments = (unsigned char *)malloc(n);
 
