@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 #include <algorithm>
 #include <array>
@@ -41,10 +42,8 @@
 
 #define NO_TESTS 45
 
-Merge *merge_baseline = new MergeBaselineCopySort;
-
 Merge *functions[NO_TESTS] = {
-	merge_baseline,
+	new MergeBaselineCopySort,
 
 	new MergeQuickSort,
 	new MergeStdSort,
@@ -104,6 +103,7 @@ Merge *functions[NO_TESTS] = {
 int order[NO_TESTS];
 
 long timings[ARRAY_COUNT+1][NO_TESTS][3];
+long inits[ITER_COUNT];
 long iterations[ITER_COUNT];
 
 int main() {
@@ -135,20 +135,29 @@ int main() {
 		printf("\n## MERGING %d LISTS ##\n", n);
 
 		time_begin = std::chrono::steady_clock::now();
-		merge_baseline->merge(t, n);
+		merge_baseline_copy_sort(t, n);
 		time_end = std::chrono::steady_clock::now();
 		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
-		puts("Name                                   | Success | Min,Med,Max | Standard Deviation | Error Msg");
-		puts("-----------------------------------------------------------------------------------------------");
+		puts("Name                                     | Success | Init   | Min, Med, Max   | Standard Deviation | Error Msg");
+		puts("--------------------------------------------------------------------------------------------------------------");
 
 		for (int i = 0; i < NO_TESTS; i++) {
 			harness_reset(t);
 
 			int alg = order[i];
 
-			bool res;
+			bool init_res, res;
 
 			for (int j = 0; j < ITER_COUNT; j++) {
+				/* init */
+				time_begin = std::chrono::steady_clock::now();
+
+				init_res = functions[alg]->init(t, n);
+
+				time_end = std::chrono::steady_clock::now();
+				inits[j] = std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count();
+
+				/* run */
 				time_begin = std::chrono::steady_clock::now();
 
 				res = functions[alg]->merge(t, n);
@@ -173,7 +182,27 @@ int main() {
 			timings[n][alg][1] = iterations[ITER_COUNT / 2];
 			timings[n][alg][2] = iterations[ITER_COUNT-1];
 
-			printf("%-40s %-9s %ld,%ld,%ld %.4f SD    %s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1], sd, res ? status : "unsupported");
+			char init_buffer[8] = "?";
+			if (init_res) {
+				double init_mean = std::accumulate(&inits[0], &inits[ITER_COUNT], 0.0) / ITER_COUNT;
+				sprintf(init_buffer, "%.4f", init_mean);
+			}
+			char time_buffer[32] = "?";
+			char sd_buffer[32] = "?";
+			if (res) {
+				sprintf(time_buffer, "%ld,%ld,%ld", iterations[0], iterations[ITER_COUNT/2], iterations[ITER_COUNT-1]);
+				sprintf(sd_buffer, "%.4f", sd);
+			}
+			char status_buffer[64] = "";
+			if (res) {
+				if (strlen(status) > 0) {
+					strcpy(status_buffer, " ");
+					strcpy(&status_buffer[1], status);
+				}
+			} else {
+				strcpy(status_buffer, " Unsupported");
+			}
+			printf("%-40s | %-7s | %6s | %15s | %18s |%s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer);
 		}
 	}
 

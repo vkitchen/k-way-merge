@@ -257,6 +257,8 @@ bool MergeStateMachineLookupTableBinarySearch::merge(struct test *t, int n) {
 		merge_state_machine_lookup_table_binary_search_7(t);
 	else if (n == 8)
 		merge_state_machine_lookup_table_binary_search_8(t);
+	else
+		return false;
 
 	return true;
 }

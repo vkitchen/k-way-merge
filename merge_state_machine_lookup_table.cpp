@@ -254,6 +254,8 @@ bool MergeStateMachineLookupTable::merge(struct test *t, int n) {
 		merge_state_machine_lookup_table_7(t);
 	else if (n == 8)
 		merge_state_machine_lookup_table_8(t);
+	else
+		return false;
 
 	return true;
 }
