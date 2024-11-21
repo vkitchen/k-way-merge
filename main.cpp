@@ -29,6 +29,7 @@
 #include "merge_pseudo_avx_sort.h"
 #include "merge_pseudo_avx_sort_binary_search.h"
 #include "merge_heap.h"
+#include "merge_heap_separate_init.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
 #include "merge_tournament.h"
@@ -40,64 +41,65 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 45
+#define NO_TESTS 4
 
 Merge *functions[NO_TESTS] = {
-	new MergeBaselineCopySort,
-
-	new MergeQuickSort,
-	new MergeStdSort,
-
-	new MergeBubbleSort,
-	new MergeBubbleSortFast,
-	new MergeDoubleBubbleSort,
-
-	new MergeInsertionSort,
-	new MergeInsertionSortFast,
-	new MergeInsertionSortFastDiscreteN,
-	new MergeInsertionSortIndexes,
-
-	new MergeAvxSort,
-	new MergeAvxSortDiscreteN,
-	new MergeAvxSortPointers,
-	new MergeAvxSortBinarySearch,
-	new MergePseudoAvxSort,
-	new MergePseudoAvxSortBinarySearch,
-
+//	new MergeBaselineCopySort,
+//
+//	new MergeQuickSort,
+//	new MergeStdSort,
+//
+//	new MergeBubbleSort,
+//	new MergeBubbleSortFast,
+//	new MergeDoubleBubbleSort,
+//
+//	new MergeInsertionSort,
+//	new MergeInsertionSortFast,
+//	new MergeInsertionSortFastDiscreteN,
+//	new MergeInsertionSortIndexes,
+//
+//	new MergeAvxSort,
+//	new MergeAvxSortDiscreteN,
+//	new MergeAvxSortPointers,
+//	new MergeAvxSortBinarySearch,
+//	new MergePseudoAvxSort,
+//	new MergePseudoAvxSortBinarySearch,
+//
 	new MergeHeap(),
-	new MergeHeapStl(),
-	new MergeHeapStlNaive,
-
-	new MergeTournament(),
-	new MergeTournament2(),
-
-	new MergeStateMachineCompiled,
-	new MergeStateMachineLookupTable,
-	new MergeStateMachineLookupTableAlt,
-	new MergeStateMachineLookupTableAsc,
-	new MergeStateMachineLookupTableBinarySearch,
-	new MergeStateMachineLookupTableBinarySearchFast,
-
-	new MergeInsertionSortFastO0,
-	new MergeInsertionSortFastO1,
-	new MergeInsertionSortFastO2,
-	new MergeInsertionSortFastO3,
-	new MergeInsertionSortFastOs,
-	new MergeInsertionSortFastOz,
-
-	new MergeHeapO0,
-	new MergeHeapO1,
+	new MergeHeapSeparateInit(),
+//	new MergeHeapStl(),
+//	new MergeHeapStlNaive,
+//
+//	new MergeTournament(),
+//	new MergeTournament2(),
+//
+//	new MergeStateMachineCompiled,
+//	new MergeStateMachineLookupTable,
+//	new MergeStateMachineLookupTableAlt,
+//	new MergeStateMachineLookupTableAsc,
+//	new MergeStateMachineLookupTableBinarySearch,
+//	new MergeStateMachineLookupTableBinarySearchFast,
+//
+//	new MergeInsertionSortFastO0,
+//	new MergeInsertionSortFastO1,
+//	new MergeInsertionSortFastO2,
+//	new MergeInsertionSortFastO3,
+//	new MergeInsertionSortFastOs,
+//	new MergeInsertionSortFastOz,
+//
+//	new MergeHeapO0,
+//	new MergeHeapO1,
 	new MergeHeapO2,
 	new MergeHeapO3,
-	new MergeHeapOs,
-	new MergeHeapOz,
-
-	new MergeStateMachineCompiledO0,
-	new MergeStateMachineCompiledO1,
-	new MergeStateMachineCompiledO2,
-	new MergeStateMachineCompiledO3,
-	new MergeStateMachineCompiledOs,
-	new MergeStateMachineCompiledOz,
+//	new MergeHeapOs,
+//	new MergeHeapOz,
+//
+//	new MergeStateMachineCompiledO0,
+//	new MergeStateMachineCompiledO1,
+//	new MergeStateMachineCompiledO2,
+//	new MergeStateMachineCompiledO3,
+//	new MergeStateMachineCompiledOs,
+//	new MergeStateMachineCompiledOz,
 };
 
 int order[NO_TESTS];
@@ -185,7 +187,7 @@ int main() {
 			char init_buffer[8] = "?";
 			if (init_res) {
 				double init_mean = std::accumulate(&inits[0], &inits[ITER_COUNT], 0.0) / ITER_COUNT;
-				sprintf(init_buffer, "%.4f", init_mean);
+				sprintf(init_buffer, "%.0f", init_mean);
 			}
 			char time_buffer[32] = "?";
 			char sd_buffer[32] = "?";
