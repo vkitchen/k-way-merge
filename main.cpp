@@ -34,6 +34,7 @@
 #include "merge_heap_stl_naive.h"
 #include "merge_tournament.h"
 #include "merge_tournament_2.h"
+#include "merge_tournament_2_separate_init.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
@@ -41,7 +42,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 4
+#define NO_TESTS 6
 
 Merge *functions[NO_TESTS] = {
 //	new MergeBaselineCopySort,
@@ -71,7 +72,8 @@ Merge *functions[NO_TESTS] = {
 //	new MergeHeapStlNaive,
 //
 //	new MergeTournament(),
-//	new MergeTournament2(),
+	new MergeTournament2(),
+	new MergeTournament2SeparateInit(),
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineLookupTable,
@@ -140,8 +142,8 @@ int main() {
 		merge_baseline_copy_sort(t, n);
 		time_end = std::chrono::steady_clock::now();
 		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
-		puts("Name                                     | Success | Init   | Min, Med, Max   | Standard Deviation | Error Msg");
-		puts("--------------------------------------------------------------------------------------------------------------");
+		puts("Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg");
+		puts("----------------------------------------------------------------------------------------------------------------");
 
 		for (int i = 0; i < NO_TESTS; i++) {
 			harness_reset(t);
@@ -204,7 +206,7 @@ int main() {
 			} else {
 				strcpy(status_buffer, " Unsupported");
 			}
-			printf("%-40s | %-7s | %6s | %15s | %18s |%s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer);
+			printf("%-40s | %-7s | %6s | %17s | %18s |%s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer);
 		}
 	}
 
