@@ -42,9 +42,7 @@
 #include "merge_state_machine_lookup_table_binary_search.h"
 #include "merge_state_machine_lookup_table_binary_search_fast.h"
 
-#define NO_TESTS 6
-
-Merge *functions[NO_TESTS] = {
+Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
 //	new MergeQuickSort,
@@ -104,14 +102,16 @@ Merge *functions[NO_TESTS] = {
 //	new MergeStateMachineCompiledOz,
 };
 
-int order[NO_TESTS];
+const size_t num_tests = sizeof(functions) / sizeof(Merge *);
 
-long timings[ARRAY_COUNT+1][NO_TESTS][3];
+int order[num_tests];
+
+long timings[ARRAY_COUNT+1][num_tests][3];
 long inits[ITER_COUNT];
 long iterations[ITER_COUNT];
 
 int main() {
-	for (int i = 0; i < NO_TESTS; i++)
+	for (size_t i = 0; i < num_tests; i++)
 		order[i] = i;
 
 	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
@@ -120,6 +120,7 @@ int main() {
 	printf("ARRAY_LENGTH %d\n", ARRAY_LENGTH);
 	printf("ARRAY_COUNT %d\n", ARRAY_COUNT);
 	printf("ITER_COUNT %d\n", ITER_COUNT);
+	printf("NUM_TESTS %zd\n", num_tests);
 	printf("SEED %d\n", seed);
 
 	std::mt19937 mt(seed);
@@ -145,7 +146,7 @@ int main() {
 		puts("Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg");
 		puts("----------------------------------------------------------------------------------------------------------------");
 
-		for (int i = 0; i < NO_TESTS; i++) {
+		for (size_t i = 0; i < num_tests; i++) {
 			harness_reset(t);
 
 			int alg = order[i];
@@ -213,14 +214,14 @@ int main() {
 	puts("");
 
 	printf("n");
-	for (int i = 0; i < NO_TESTS; i++)
+	for (size_t i = 0; i < num_tests; i++)
 		printf(",%s", functions[i]->name.c_str());
 	puts("");
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("%d", n);
-		for (int i = 0; i < NO_TESTS; i++)
+		for (size_t i = 0; i < num_tests; i++)
 			printf(",%ld", timings[n][i][1]);
 		puts("");
 	}
@@ -228,14 +229,14 @@ int main() {
 	puts("");
 
 	printf("n");
-	for (int i = 0; i < NO_TESTS; i++)
+	for (size_t i = 0; i < num_tests; i++)
 		printf(",%s (min),%s (med),%s (max)", functions[i]->name.c_str(), functions[i]->name.c_str(), functions[i]->name.c_str());
 	puts("");
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
 		printf("%d", n);
-		for (int i = 0; i < NO_TESTS; i++) {
+		for (size_t i = 0; i < num_tests; i++) {
 			printf(",%ld", timings[n][i][0]);
 			printf(",%ld", timings[n][i][1]);
 			printf(",%ld", timings[n][i][2]);
