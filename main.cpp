@@ -13,6 +13,7 @@
 #include "harness.h"
 
 #include "merge_baseline_copy_sort.h"
+#include "merge_find.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
@@ -45,6 +46,8 @@
 Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
+	new MergeFind,
+//
 //	new MergeQuickSort,
 //	new MergeStdSort,
 //
@@ -53,7 +56,7 @@ Merge *functions[] = {
 //	new MergeDoubleBubbleSort,
 //
 //	new MergeInsertionSort,
-//	new MergeInsertionSortFast,
+	new MergeInsertionSortFast,
 //	new MergeInsertionSortFastDiscreteN,
 //	new MergeInsertionSortIndexes,
 //
@@ -65,13 +68,13 @@ Merge *functions[] = {
 //	new MergePseudoAvxSortBinarySearch,
 //
 	new MergeHeap(),
-	new MergeHeapSeparateInit(),
+//	new MergeHeapSeparateInit(),
 //	new MergeHeapStl(),
 //	new MergeHeapStlNaive,
 //
 //	new MergeTournament(),
 	new MergeTournament2(),
-	new MergeTournament2SeparateInit(),
+//	new MergeTournament2SeparateInit(),
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineLookupTable,
@@ -89,8 +92,8 @@ Merge *functions[] = {
 //
 //	new MergeHeapO0,
 //	new MergeHeapO1,
-	new MergeHeapO2,
-	new MergeHeapO3,
+//	new MergeHeapO2,
+//	new MergeHeapO3,
 //	new MergeHeapOs,
 //	new MergeHeapOz,
 //

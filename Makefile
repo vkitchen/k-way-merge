@@ -3,6 +3,7 @@ CFLAGS = -Wall -Wextra -Wno-unused-parameter -O2 -march=native
 SRC = \
 	harness.cpp \
 	merge_baseline_copy_sort.cpp \
+	merge_find.cpp \
 	merge_quick_sort.cpp \
 	merge_std_sort.cpp \
 	merge_insertion_sort.cpp \
