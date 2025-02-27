@@ -14,6 +14,8 @@
 
 #include "merge_baseline_copy_sort.h"
 #include "merge_find.h"
+#include "merge_find_cache.h"
+#include "merge_find_cache_simd.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
@@ -47,6 +49,8 @@ Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
 	new MergeFind,
+	new MergeFindCache,
+	new MergeFindCacheSimd,
 //
 //	new MergeQuickSort,
 //	new MergeStdSort,
