@@ -1,0 +1,1482 @@
+COMPILER_VERSION 14.2.1 20241007 [revision 4af44f2cf7d281f3e4f3957efce10e8b2ccb2ad3]
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 1
+NUM_TESTS 8
+SEED 1740686850
+
+Init: 5386
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 44
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          16,16,16 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |          23,23,23 |             0.0000 |
+Find (Cache)                             | true    |      ? |          18,18,18 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |          13,13,13 |             0.0000 |
+Find                                     | true    |      ? |          17,17,17 |             0.0000 |
+Heap                                     | true    |      ? |          18,18,18 |             0.0000 |
+Heap (STL)                               | true    |      ? |          22,22,22 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          40,40,40 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 104
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          26,26,26 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |          39,39,39 |             0.0000 |
+Find (Cache)                             | true    |      ? |          26,26,26 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |          20,20,20 |             0.0000 |
+Find                                     | true    |      ? |          28,28,28 |             0.0000 |
+Heap                                     | true    |      ? |          28,28,28 |             0.0000 |
+Heap (STL)                               | true    |      ? |          37,37,37 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          56,56,56 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 84
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          35,35,35 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |          55,55,55 |             0.0000 |
+Find (Cache)                             | true    |      ? |          35,35,35 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |          30,30,30 |             0.0000 |
+Find                                     | true    |      ? |          39,39,39 |             0.0000 |
+Heap                                     | true    |      ? |          38,38,38 |             0.0000 |
+Heap (STL)                               | true    |      ? |          53,53,53 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          70,70,70 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 125
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          46,46,46 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |          67,67,67 |             0.0000 |
+Find (Cache)                             | true    |      ? |          45,45,45 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |          53,53,53 |             0.0000 |
+Heap                                     | true    |      ? |          53,53,53 |             0.0000 |
+Heap (STL)                               | true    |      ? |          73,73,73 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          87,87,87 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 126
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          56,56,56 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |          89,89,89 |             0.0000 |
+Find (Cache)                             | true    |      ? |          58,58,58 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |          65,65,65 |             0.0000 |
+Heap                                     | true    |      ? |          72,72,72 |             0.0000 |
+Heap (STL)                               | true    |      ? |          93,93,93 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       104,104,104 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 170
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          69,69,69 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       105,105,105 |             0.0000 |
+Find (Cache)                             | true    |      ? |          72,72,72 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |          82,82,82 |             0.0000 |
+Heap                                     | true    |      ? |          82,82,82 |             0.0000 |
+Heap (STL)                               | true    |      ? |       107,107,107 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       119,119,119 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 192
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          80,80,80 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       128,128,128 |             0.0000 |
+Find (Cache)                             | true    |      ? |          97,97,97 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       104,104,104 |             0.0000 |
+Heap                                     | true    |      ? |          93,93,93 |             0.0000 |
+Heap (STL)                               | true    |      ? |       132,132,132 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       129,129,129 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 210
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |          92,92,92 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       149,149,149 |             0.0000 |
+Find (Cache)                             | true    |      ? |       115,115,115 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       130,130,130 |             0.0000 |
+Heap                                     | true    |      ? |       108,108,108 |             0.0000 |
+Heap (STL)                               | true    |      ? |       149,149,149 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       143,143,143 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       104,104,104 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       168,168,168 |             0.0000 |
+Find (Cache)                             | true    |      ? |       137,137,137 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       162,162,162 |             0.0000 |
+Heap                                     | true    |      ? |       130,130,130 |             0.0000 |
+Heap (STL)                               | true    |      ? |       174,174,174 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       156,156,156 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       114,114,114 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       179,179,179 |             0.0000 |
+Find (Cache)                             | true    |      ? |       165,165,165 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       188,188,188 |             0.0000 |
+Heap                                     | true    |      ? |       146,146,146 |             0.0000 |
+Heap (STL)                               | true    |      ? |       200,200,200 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       176,176,176 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 269
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       127,127,127 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       207,207,207 |             0.0000 |
+Find (Cache)                             | true    |      ? |       187,187,187 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       216,216,216 |             0.0000 |
+Heap                                     | true    |      ? |       168,168,168 |             0.0000 |
+Heap (STL)                               | true    |      ? |       226,226,226 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       187,187,187 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 296
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       139,139,139 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       224,224,224 |             0.0000 |
+Find (Cache)                             | true    |      ? |       208,208,208 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       243,243,243 |             0.0000 |
+Heap                                     | true    |      ? |       189,189,189 |             0.0000 |
+Heap (STL)                               | true    |      ? |       256,256,256 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       205,205,205 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 306
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       150,150,150 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       242,242,242 |             0.0000 |
+Find (Cache)                             | true    |      ? |       240,240,240 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       273,273,273 |             0.0000 |
+Heap                                     | true    |      ? |       215,215,215 |             0.0000 |
+Heap (STL)                               | true    |      ? |       278,278,278 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       221,221,221 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 349
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       164,164,164 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       258,258,258 |             0.0000 |
+Find (Cache)                             | true    |      ? |       272,272,272 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       309,309,309 |             0.0000 |
+Heap                                     | true    |      ? |       227,227,227 |             0.0000 |
+Heap (STL)                               | true    |      ? |       298,298,298 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       239,239,239 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 364
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       181,181,181 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       290,290,290 |             0.0000 |
+Find (Cache)                             | true    |      ? |       305,305,305 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       361,361,361 |             0.0000 |
+Heap                                     | true    |      ? |       242,242,242 |             0.0000 |
+Heap (STL)                               | true    |      ? |       318,318,318 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       257,257,257 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 409
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       198,198,198 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       317,317,317 |             0.0000 |
+Find (Cache)                             | true    |      ? |       360,360,360 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       419,419,419 |             0.0000 |
+Heap                                     | true    |      ? |       259,259,259 |             0.0000 |
+Heap (STL)                               | true    |      ? |       349,349,349 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       267,267,267 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 402
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       215,215,215 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       345,345,345 |             0.0000 |
+Find (Cache)                             | true    |      ? |       386,386,386 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       444,444,444 |             0.0000 |
+Heap                                     | true    |      ? |       279,279,279 |             0.0000 |
+Heap (STL)                               | true    |      ? |       371,371,371 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       281,281,281 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 455
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       234,234,234 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       369,369,369 |             0.0000 |
+Find (Cache)                             | true    |      ? |       415,415,415 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       492,492,492 |             0.0000 |
+Heap                                     | true    |      ? |       297,297,297 |             0.0000 |
+Heap (STL)                               | true    |      ? |       397,397,397 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       301,301,301 |             0.0000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 461
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       252,252,252 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       394,394,394 |             0.0000 |
+Find (Cache)                             | true    |      ? |       471,471,471 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       528,528,528 |             0.0000 |
+Heap                                     | true    |      ? |       319,319,319 |             0.0000 |
+Heap (STL)                               | true    |      ? |       422,422,422 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       313,313,313 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 503
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       271,271,271 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       413,413,413 |             0.0000 |
+Find (Cache)                             | true    |      ? |       517,517,517 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       563,563,563 |             0.0000 |
+Heap                                     | true    |      ? |       342,342,342 |             0.0000 |
+Heap (STL)                               | true    |      ? |       458,458,458 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       334,334,334 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 519
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       292,292,292 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       431,431,431 |             0.0000 |
+Find (Cache)                             | true    |      ? |       551,551,551 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       607,607,607 |             0.0000 |
+Heap                                     | true    |      ? |       372,372,372 |             0.0000 |
+Heap (STL)                               | true    |      ? |       488,488,488 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       347,347,347 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 566
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       309,309,309 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       441,441,441 |             0.0000 |
+Find (Cache)                             | true    |      ? |       579,579,579 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       637,637,637 |             0.0000 |
+Heap                                     | true    |      ? |       387,387,387 |             0.0000 |
+Heap (STL)                               | true    |      ? |       514,514,514 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       364,364,364 |             0.0000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       330,330,330 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       473,473,473 |             0.0000 |
+Find (Cache)                             | true    |      ? |       618,618,618 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       682,682,682 |             0.0000 |
+Heap                                     | true    |      ? |       411,411,411 |             0.0000 |
+Heap (STL)                               | true    |      ? |       551,551,551 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       387,387,387 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 616
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       348,348,348 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       497,497,497 |             0.0000 |
+Find (Cache)                             | true    |      ? |       652,652,652 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       714,714,714 |             0.0000 |
+Heap                                     | true    |      ? |       434,434,434 |             0.0000 |
+Heap (STL)                               | true    |      ? |       570,570,570 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       401,401,401 |             0.0000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 609
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       370,370,370 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       519,519,519 |             0.0000 |
+Find (Cache)                             | true    |      ? |       688,688,688 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       757,757,757 |             0.0000 |
+Heap                                     | true    |      ? |       461,461,461 |             0.0000 |
+Heap (STL)                               | true    |      ? |       599,599,599 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       409,409,409 |             0.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 690
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       390,390,390 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       538,538,538 |             0.0000 |
+Find (Cache)                             | true    |      ? |       725,725,725 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       795,795,795 |             0.0000 |
+Heap                                     | true    |      ? |       488,488,488 |             0.0000 |
+Heap (STL)                               | true    |      ? |       632,632,632 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       449,449,449 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 679
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       414,414,414 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       558,558,558 |             0.0000 |
+Find (Cache)                             | true    |      ? |       763,763,763 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       837,837,837 |             0.0000 |
+Heap                                     | true    |      ? |       516,516,516 |             0.0000 |
+Heap (STL)                               | true    |      ? |       652,652,652 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       463,463,463 |             0.0000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 726
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       425,425,425 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       577,577,577 |             0.0000 |
+Find (Cache)                             | true    |      ? |       808,808,808 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       881,881,881 |             0.0000 |
+Heap                                     | true    |      ? |       546,546,546 |             0.0000 |
+Heap (STL)                               | true    |      ? |       703,703,703 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       461,461,461 |             0.0000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 716
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       447,447,447 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       599,599,599 |             0.0000 |
+Find (Cache)                             | true    |      ? |       848,848,848 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       924,924,924 |             0.0000 |
+Heap                                     | true    |      ? |       579,579,579 |             0.0000 |
+Heap (STL)                               | true    |      ? |       730,730,730 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       533,533,533 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 778
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       470,470,470 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       617,617,617 |             0.0000 |
+Find (Cache)                             | true    |      ? |       895,895,895 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |       966,966,966 |             0.0000 |
+Heap                                     | true    |      ? |       592,592,592 |             0.0000 |
+Heap (STL)                               | true    |      ? |       751,751,751 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       495,495,495 |             0.0000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 791
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       492,492,492 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       651,651,651 |             0.0000 |
+Find (Cache)                             | true    |      ? |       935,935,935 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1030,1030,1030 |             0.0000 |
+Heap                                     | true    |      ? |       605,605,605 |             0.0000 |
+Heap (STL)                               | true    |      ? |       765,765,765 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       517,517,517 |             0.0000 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 828
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       510,510,510 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       683,683,683 |             0.0000 |
+Find (Cache)                             | true    |      ? |       994,994,994 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1106,1106,1106 |             0.0000 |
+Heap                                     | true    |      ? |       625,625,625 |             0.0000 |
+Heap (STL)                               | true    |      ? |       804,804,804 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       533,533,533 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 822
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       531,531,531 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       717,717,717 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1045,1045,1045 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1160,1160,1160 |             0.0000 |
+Heap                                     | true    |      ? |       646,646,646 |             0.0000 |
+Heap (STL)                               | true    |      ? |       848,848,848 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       554,554,554 |             0.0000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 910
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       558,558,558 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       748,748,748 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1093,1093,1093 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1227,1227,1227 |             0.0000 |
+Heap                                     | true    |      ? |       669,669,669 |             0.0000 |
+Heap (STL)                               | true    |      ? |       864,864,864 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       563,563,563 |             0.0000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 886
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       579,579,579 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       781,781,781 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1167,1167,1167 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1281,1281,1281 |             0.0000 |
+Heap                                     | true    |      ? |       688,688,688 |             0.0000 |
+Heap (STL)                               | true    |      ? |       918,918,918 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       589,589,589 |             0.0000 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 942
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       598,598,598 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       814,814,814 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1224,1224,1224 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1334,1334,1334 |             0.0000 |
+Heap                                     | true    |      ? |       716,716,716 |             0.0000 |
+Heap (STL)                               | true    |      ? |       932,932,932 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       603,603,603 |             0.0000 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 931
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       619,619,619 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       839,839,839 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1271,1271,1271 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1387,1387,1387 |             0.0000 |
+Heap                                     | true    |      ? |       744,744,744 |             0.0000 |
+Heap (STL)                               | true    |      ? |       956,956,956 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       624,624,624 |             0.0000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1012
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       645,645,645 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       868,868,868 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1324,1324,1324 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1444,1444,1444 |             0.0000 |
+Heap                                     | true    |      ? |       763,763,763 |             0.0000 |
+Heap (STL)                               | true    |      ? |       995,995,995 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       644,644,644 |             0.0000 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 993
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       671,671,671 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       904,904,904 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1379,1379,1379 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1494,1494,1494 |             0.0000 |
+Heap                                     | true    |      ? |       784,784,784 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1038,1038,1038 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       667,667,667 |             0.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1051
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       687,687,687 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       932,932,932 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1424,1424,1424 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1556,1556,1556 |             0.0000 |
+Heap                                     | true    |      ? |       814,814,814 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1054,1054,1054 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       695,695,695 |             0.0000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1045
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       711,711,711 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       957,957,957 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1482,1482,1482 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1616,1616,1616 |             0.0000 |
+Heap                                     | true    |      ? |       851,851,851 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1097,1097,1097 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       687,687,687 |             0.0000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1264
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       737,737,737 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |       981,981,981 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1539,1539,1539 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1662,1662,1662 |             0.0000 |
+Heap                                     | true    |      ? |       871,871,871 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1120,1120,1120 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       712,712,712 |             0.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1133
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       759,759,759 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1002,1002,1002 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1583,1583,1583 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1724,1724,1724 |             0.0000 |
+Heap                                     | true    |      ? |       900,900,900 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1133,1133,1133 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       725,725,725 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1174
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       784,784,784 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1023,1023,1023 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1650,1650,1650 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1813,1813,1813 |             0.0000 |
+Heap                                     | true    |      ? |       940,940,940 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1201,1201,1201 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       742,742,742 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1182
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       821,821,821 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1050,1050,1050 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1705,1705,1705 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1863,1863,1863 |             0.0000 |
+Heap                                     | true    |      ? |       969,969,969 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1216,1216,1216 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       767,767,767 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1236
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       847,847,847 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1070,1070,1070 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1756,1756,1756 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    1986,1986,1986 |             0.0000 |
+Heap                                     | true    |      ? |       993,993,993 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1271,1271,1271 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       787,787,787 |             0.0000 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       860,860,860 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1093,1093,1093 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1809,1809,1809 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2003,2003,2003 |             0.0000 |
+Heap                                     | true    |      ? |    1019,1019,1019 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1303,1303,1303 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       815,815,815 |             0.0000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1280
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       888,888,888 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1121,1121,1121 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1855,1855,1855 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2069,2069,2069 |             0.0000 |
+Heap                                     | true    |      ? |    1054,1054,1054 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1340,1340,1340 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       837,837,837 |             0.0000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1284
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       927,927,927 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1158,1158,1158 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1926,1926,1926 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2135,2135,2135 |             0.0000 |
+Heap                                     | true    |      ? |    1084,1084,1084 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1342,1342,1342 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       853,853,853 |             0.0000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1361
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       938,938,938 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1177,1177,1177 |             0.0000 |
+Find (Cache)                             | true    |      ? |    1978,1978,1978 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2194,2194,2194 |             0.0000 |
+Heap                                     | true    |      ? |    1107,1107,1107 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1402,1402,1402 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       866,866,866 |             0.0000 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1343
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |       970,970,970 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1217,1217,1217 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2055,2055,2055 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2260,2260,2260 |             0.0000 |
+Heap                                     | true    |      ? |    1144,1144,1144 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1470,1470,1470 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       900,900,900 |             0.0000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1415
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1002,1002,1002 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1237,1237,1237 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2114,2114,2114 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2375,2375,2375 |             0.0000 |
+Heap                                     | true    |      ? |    1175,1175,1175 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1482,1482,1482 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       908,908,908 |             0.0000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1395
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1020,1020,1020 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1263,1263,1263 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2160,2160,2160 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2383,2383,2383 |             0.0000 |
+Heap                                     | true    |      ? |    1219,1219,1219 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1545,1545,1545 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       926,926,926 |             0.0000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1470
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1034,1034,1034 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1277,1277,1277 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2207,2207,2207 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2436,2436,2436 |             0.0000 |
+Heap                                     | true    |      ? |    1244,1244,1244 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1547,1547,1547 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       963,963,963 |             0.0000 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1460
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1065,1065,1065 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1299,1299,1299 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2292,2292,2292 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2523,2523,2523 |             0.0000 |
+Heap                                     | true    |      ? |    1274,1274,1274 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1606,1606,1606 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       994,994,994 |             0.0000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1536
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1069,1069,1069 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1372,1372,1372 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2353,2353,2353 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2597,2597,2597 |             0.0000 |
+Heap                                     | true    |      ? |    1319,1319,1319 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1620,1620,1620 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1006,1006,1006 |             0.0000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1548
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1124,1124,1124 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1358,1358,1358 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2401,2401,2401 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2669,2669,2669 |             0.0000 |
+Heap                                     | true    |      ? |    1359,1359,1359 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1624,1624,1624 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1014,1014,1014 |             0.0000 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1611
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1143,1143,1143 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1381,1381,1381 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2488,2488,2488 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2770,2770,2770 |             0.0000 |
+Heap                                     | true    |      ? |    1405,1405,1405 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1698,1698,1698 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1066,1066,1066 |             0.0000 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1583
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1180,1180,1180 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1415,1415,1415 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2591,2591,2591 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2843,2843,2843 |             0.0000 |
+Heap                                     | true    |      ? |    1437,1437,1437 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1754,1754,1754 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1065,1065,1065 |             0.0000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1677
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1202,1202,1202 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1435,1435,1435 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2606,2606,2606 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2899,2899,2899 |             0.0000 |
+Heap                                     | true    |      ? |    1471,1471,1471 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1783,1783,1783 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1071,1071,1071 |             0.0000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1695
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1223,1223,1223 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1453,1453,1453 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2648,2648,2648 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    2965,2965,2965 |             0.0000 |
+Heap                                     | true    |      ? |    1521,1521,1521 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1838,1838,1838 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1098,1098,1098 |             0.0000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1738
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1248,1248,1248 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1481,1481,1481 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2801,2801,2801 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3058,3058,3058 |             0.0000 |
+Heap                                     | true    |      ? |    1534,1534,1534 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1857,1857,1857 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1116,1116,1116 |             0.0000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1743
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1275,1275,1275 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1527,1527,1527 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2830,2830,2830 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3146,3146,3146 |             0.0000 |
+Heap                                     | true    |      ? |    1554,1554,1554 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1963,1963,1963 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1178,1178,1178 |             0.0000 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1856
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1293,1293,1293 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1565,1565,1565 |             0.0000 |
+Find (Cache)                             | true    |      ? |    2895,2895,2895 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3221,3221,3221 |             0.0000 |
+Heap                                     | true    |      ? |    1577,1577,1577 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1919,1919,1919 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1208,1208,1208 |             0.0000 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1780
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1314,1314,1314 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1603,1603,1603 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3022,3022,3022 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3299,3299,3299 |             0.0000 |
+Heap                                     | true    |      ? |    1603,1603,1603 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1920,1920,1920 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1210,1210,1210 |             0.0000 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1862
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1340,1340,1340 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1641,1641,1641 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3041,3041,3041 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3403,3403,3403 |             0.0000 |
+Heap                                     | true    |      ? |    1631,1631,1631 |             0.0000 |
+Heap (STL)                               | true    |      ? |    1985,1985,1985 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1247,1247,1247 |             0.0000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1367,1367,1367 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1678,1678,1678 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3106,3106,3106 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3478,3478,3478 |             0.0000 |
+Heap                                     | true    |      ? |    1656,1656,1656 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2012,2012,2012 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1246,1246,1246 |             0.0000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 2003
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1404,1404,1404 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1716,1716,1716 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3205,3205,3205 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3551,3551,3551 |             0.0000 |
+Heap                                     | true    |      ? |    1684,1684,1684 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2064,2064,2064 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1266,1266,1266 |             0.0000 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1901
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1413,1413,1413 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1750,1750,1750 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3307,3307,3307 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3632,3632,3632 |             0.0000 |
+Heap                                     | true    |      ? |    1710,1710,1710 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2054,2054,2054 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1287,1287,1287 |             0.0000 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 2012
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1454,1454,1454 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1784,1784,1784 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3331,3331,3331 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3745,3745,3745 |             0.0000 |
+Heap                                     | true    |      ? |    1722,1722,1722 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2107,2107,2107 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1305,1305,1305 |             0.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1969
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1483,1483,1483 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1813,1813,1813 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3384,3384,3384 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3766,3766,3766 |             0.0000 |
+Heap                                     | true    |      ? |    1736,1736,1736 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2187,2187,2187 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1336,1336,1336 |             0.0000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 2061
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1497,1497,1497 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1853,1853,1853 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3470,3470,3470 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3859,3859,3859 |             0.0000 |
+Heap                                     | true    |      ? |    1777,1777,1777 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2184,2184,2184 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1358,1358,1358 |             0.0000 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 2019
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1522,1522,1522 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1884,1884,1884 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3510,3510,3510 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    3944,3944,3944 |             0.0000 |
+Heap                                     | true    |      ? |    1814,1814,1814 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2186,2186,2186 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1400,1400,1400 |             0.0000 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2106
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1567,1567,1567 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1931,1931,1931 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3614,3614,3614 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4027,4027,4027 |             0.0000 |
+Heap                                     | true    |      ? |    1845,1845,1845 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2260,2260,2260 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1384,1384,1384 |             0.0000 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 2071
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1577,1577,1577 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1950,1950,1950 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3662,3662,3662 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4148,4148,4148 |             0.0000 |
+Heap                                     | true    |      ? |    1854,1854,1854 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2235,2235,2235 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1429,1429,1429 |             0.0000 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2176
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1625,1625,1625 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    1990,1990,1990 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3725,3725,3725 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4233,4233,4233 |             0.0000 |
+Heap                                     | true    |      ? |    1883,1883,1883 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2301,2301,2301 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1422,1422,1422 |             0.0000 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2186
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1663,1663,1663 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2034,2034,2034 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3824,3824,3824 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4281,4281,4281 |             0.0000 |
+Heap                                     | true    |      ? |    1940,1940,1940 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2402,2402,2402 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1451,1451,1451 |             0.0000 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2221
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1687,1687,1687 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2061,2061,2061 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3912,3912,3912 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4397,4397,4397 |             0.0000 |
+Heap                                     | true    |      ? |    1964,1964,1964 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2406,2406,2406 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1499,1499,1499 |             0.0000 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2192
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1741,1741,1741 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2111,2111,2111 |             0.0000 |
+Find (Cache)                             | true    |      ? |    3967,3967,3967 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4507,4507,4507 |             0.0000 |
+Heap                                     | true    |      ? |    1997,1997,1997 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2427,2427,2427 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1510,1510,1510 |             0.0000 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2303
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1799,1799,1799 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2140,2140,2140 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4048,4048,4048 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4618,4618,4618 |             0.0000 |
+Heap                                     | true    |      ? |    2060,2060,2060 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2515,2515,2515 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1560,1560,1560 |             0.0000 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2357
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1839,1839,1839 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2182,2182,2182 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4192,4192,4192 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4775,4775,4775 |             0.0000 |
+Heap                                     | true    |      ? |    2121,2121,2121 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2544,2544,2544 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1620,1620,1620 |             0.0000 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2354
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1884,1884,1884 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2199,2199,2199 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4183,4183,4183 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4777,4777,4777 |             0.0000 |
+Heap                                     | true    |      ? |    2147,2147,2147 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2644,2644,2644 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1568,1568,1568 |             0.0000 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2292
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    1947,1947,1947 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2235,2235,2235 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4260,4260,4260 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    4925,4925,4925 |             0.0000 |
+Heap                                     | true    |      ? |    2199,2199,2199 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2674,2674,2674 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1616,1616,1616 |             0.0000 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2436
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2013,2013,2013 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2268,2268,2268 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4401,4401,4401 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5111,5111,5111 |             0.0000 |
+Heap                                     | true    |      ? |    2283,2283,2283 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2782,2782,2782 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1618,1618,1618 |             0.0000 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2365
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2073,2073,2073 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2289,2289,2289 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4459,4459,4459 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5261,5261,5261 |             0.0000 |
+Heap                                     | true    |      ? |    2328,2328,2328 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2711,2711,2711 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1641,1641,1641 |             0.0000 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2463
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2127,2127,2127 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2318,2318,2318 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4503,4503,4503 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5288,5288,5288 |             0.0000 |
+Heap                                     | true    |      ? |    2359,2359,2359 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2787,2787,2787 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1696,1696,1696 |             0.0000 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2417
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2157,2157,2157 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2349,2349,2349 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4590,4590,4590 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5393,5393,5393 |             0.0000 |
+Heap                                     | true    |      ? |    2392,2392,2392 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2903,2903,2903 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1763,1763,1763 |             0.0000 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2496
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2195,2195,2195 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2376,2376,2376 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4737,4737,4737 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5481,5481,5481 |             0.0000 |
+Heap                                     | true    |      ? |    2428,2428,2428 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2891,2891,2891 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1763,1763,1763 |             0.0000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2467
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2235,2235,2235 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2398,2398,2398 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4817,4817,4817 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5582,5582,5582 |             0.0000 |
+Heap                                     | true    |      ? |    2475,2475,2475 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2871,2871,2871 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1758,1758,1758 |             0.0000 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2573
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2259,2259,2259 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2417,2417,2417 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4833,4833,4833 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5668,5668,5668 |             0.0000 |
+Heap                                     | true    |      ? |    2518,2518,2518 |             0.0000 |
+Heap (STL)                               | true    |      ? |    2963,2963,2963 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1802,1802,1802 |             0.0000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2537
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2298,2298,2298 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2448,2448,2448 |             0.0000 |
+Find (Cache)                             | true    |      ? |    4926,4926,4926 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5774,5774,5774 |             0.0000 |
+Heap                                     | true    |      ? |    2553,2553,2553 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3093,3093,3093 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1790,1790,1790 |             0.0000 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2641
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2330,2330,2330 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2472,2472,2472 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5011,5011,5011 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5868,5868,5868 |             0.0000 |
+Heap                                     | true    |      ? |    2592,2592,2592 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3040,3040,3040 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1816,1816,1816 |             0.0000 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2605
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2362,2362,2362 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2499,2499,2499 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5097,5097,5097 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    5969,5969,5969 |             0.0000 |
+Heap                                     | true    |      ? |    2640,2640,2640 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3057,3057,3057 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1838,1838,1838 |             0.0000 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2686
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2398,2398,2398 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2522,2522,2522 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5186,5186,5186 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    6075,6075,6075 |             0.0000 |
+Heap                                     | true    |      ? |    2667,2667,2667 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3117,3117,3117 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1858,1858,1858 |             0.0000 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2656
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2437,2437,2437 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2564,2564,2564 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5277,5277,5277 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    6155,6155,6155 |             0.0000 |
+Heap                                     | true    |      ? |    2695,2695,2695 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3213,3213,3213 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1912,1912,1912 |             0.0000 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2766
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2474,2474,2474 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2596,2596,2596 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5370,5370,5370 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    6281,6281,6281 |             0.0000 |
+Heap                                     | true    |      ? |    2734,2734,2734 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3212,3212,3212 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1919,1919,1919 |             0.0000 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2718
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2512,2512,2512 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2633,2633,2633 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5498,5498,5498 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    6383,6383,6383 |             0.0000 |
+Heap                                     | true    |      ? |    2766,2766,2766 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3185,3185,3185 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1968,1968,1968 |             0.0000 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2824
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insertion Sort Fast                      | true    |      ? |    2555,2555,2555 |             0.0000 |
+Tournament Tree 2                        | true    |      ? |    2664,2664,2664 |             0.0000 |
+Find (Cache)                             | true    |      ? |    5553,5553,5553 |             0.0000 |
+State Machine (Compiled)                 | false   |      ? |                 ? |                  ? | Unsupported
+Find                                     | true    |      ? |    6467,6467,6467 |             0.0000 |
+Heap                                     | true    |      ? |    2797,2797,2797 |             0.0000 |
+Heap (STL)                               | true    |      ? |    3278,3278,3278 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |    1962,1962,1962 |             0.0000 |
+
+n,Find,Find (Cache),Find (Cache SIMD),Insertion Sort Fast,Heap,Heap (STL),Tournament Tree 2,State Machine (Compiled)
+3,17,18,40,16,18,22,23,13
+4,28,26,56,26,28,37,39,20
+5,39,35,70,35,38,53,55,30
+6,53,45,87,46,53,73,67,0
+7,65,58,104,56,72,93,89,0
+8,82,72,119,69,82,107,105,0
+9,104,97,129,80,93,132,128,0
+10,130,115,143,92,108,149,149,0
+11,162,137,156,104,130,174,168,0
+12,188,165,176,114,146,200,179,0
+13,216,187,187,127,168,226,207,0
+14,243,208,205,139,189,256,224,0
+15,273,240,221,150,215,278,242,0
+16,309,272,239,164,227,298,258,0
+17,361,305,257,181,242,318,290,0
+18,419,360,267,198,259,349,317,0
+19,444,386,281,215,279,371,345,0
+20,492,415,301,234,297,397,369,0
+21,528,471,313,252,319,422,394,0
+22,563,517,334,271,342,458,413,0
+23,607,551,347,292,372,488,431,0
+24,637,579,364,309,387,514,441,0
+25,682,618,387,330,411,551,473,0
+26,714,652,401,348,434,570,497,0
+27,757,688,409,370,461,599,519,0
+28,795,725,449,390,488,632,538,0
+29,837,763,463,414,516,652,558,0
+30,881,808,461,425,546,703,577,0
+31,924,848,533,447,579,730,599,0
+32,966,895,495,470,592,751,617,0
+33,1030,935,517,492,605,765,651,0
+34,1106,994,533,510,625,804,683,0
+35,1160,1045,554,531,646,848,717,0
+36,1227,1093,563,558,669,864,748,0
+37,1281,1167,589,579,688,918,781,0
+38,1334,1224,603,598,716,932,814,0
+39,1387,1271,624,619,744,956,839,0
+40,1444,1324,644,645,763,995,868,0
+41,1494,1379,667,671,784,1038,904,0
+42,1556,1424,695,687,814,1054,932,0
+43,1616,1482,687,711,851,1097,957,0
+44,1662,1539,712,737,871,1120,981,0
+45,1724,1583,725,759,900,1133,1002,0
+46,1813,1650,742,784,940,1201,1023,0
+47,1863,1705,767,821,969,1216,1050,0
+48,1986,1756,787,847,993,1271,1070,0
+49,2003,1809,815,860,1019,1303,1093,0
+50,2069,1855,837,888,1054,1340,1121,0
+51,2135,1926,853,927,1084,1342,1158,0
+52,2194,1978,866,938,1107,1402,1177,0
+53,2260,2055,900,970,1144,1470,1217,0
+54,2375,2114,908,1002,1175,1482,1237,0
+55,2383,2160,926,1020,1219,1545,1263,0
+56,2436,2207,963,1034,1244,1547,1277,0
+57,2523,2292,994,1065,1274,1606,1299,0
+58,2597,2353,1006,1069,1319,1620,1372,0
+59,2669,2401,1014,1124,1359,1624,1358,0
+60,2770,2488,1066,1143,1405,1698,1381,0
+61,2843,2591,1065,1180,1437,1754,1415,0
+62,2899,2606,1071,1202,1471,1783,1435,0
+63,2965,2648,1098,1223,1521,1838,1453,0
+64,3058,2801,1116,1248,1534,1857,1481,0
+65,3146,2830,1178,1275,1554,1963,1527,0
+66,3221,2895,1208,1293,1577,1919,1565,0
+67,3299,3022,1210,1314,1603,1920,1603,0
+68,3403,3041,1247,1340,1631,1985,1641,0
+69,3478,3106,1246,1367,1656,2012,1678,0
+70,3551,3205,1266,1404,1684,2064,1716,0
+71,3632,3307,1287,1413,1710,2054,1750,0
+72,3745,3331,1305,1454,1722,2107,1784,0
+73,3766,3384,1336,1483,1736,2187,1813,0
+74,3859,3470,1358,1497,1777,2184,1853,0
+75,3944,3510,1400,1522,1814,2186,1884,0
+76,4027,3614,1384,1567,1845,2260,1931,0
+77,4148,3662,1429,1577,1854,2235,1950,0
+78,4233,3725,1422,1625,1883,2301,1990,0
+79,4281,3824,1451,1663,1940,2402,2034,0
+80,4397,3912,1499,1687,1964,2406,2061,0
+81,4507,3967,1510,1741,1997,2427,2111,0
+82,4618,4048,1560,1799,2060,2515,2140,0
+83,4775,4192,1620,1839,2121,2544,2182,0
+84,4777,4183,1568,1884,2147,2644,2199,0
+85,4925,4260,1616,1947,2199,2674,2235,0
+86,5111,4401,1618,2013,2283,2782,2268,0
+87,5261,4459,1641,2073,2328,2711,2289,0
+88,5288,4503,1696,2127,2359,2787,2318,0
+89,5393,4590,1763,2157,2392,2903,2349,0
+90,5481,4737,1763,2195,2428,2891,2376,0
+91,5582,4817,1758,2235,2475,2871,2398,0
+92,5668,4833,1802,2259,2518,2963,2417,0
+93,5774,4926,1790,2298,2553,3093,2448,0
+94,5868,5011,1816,2330,2592,3040,2472,0
+95,5969,5097,1838,2362,2640,3057,2499,0
+96,6075,5186,1858,2398,2667,3117,2522,0
+97,6155,5277,1912,2437,2695,3213,2564,0
+98,6281,5370,1919,2474,2734,3212,2596,0
+99,6383,5498,1968,2512,2766,3185,2633,0
+100,6467,5553,1962,2555,2797,3278,2664,0
+
+n,Find (min),Find (med),Find (max),Find (Cache) (min),Find (Cache) (med),Find (Cache) (max),Find (Cache SIMD) (min),Find (Cache SIMD) (med),Find (Cache SIMD) (max),Insertion Sort Fast (min),Insertion Sort Fast (med),Insertion Sort Fast (max),Heap (min),Heap (med),Heap (max),Heap (STL) (min),Heap (STL) (med),Heap (STL) (max),Tournament Tree 2 (min),Tournament Tree 2 (med),Tournament Tree 2 (max),State Machine (Compiled) (min),State Machine (Compiled) (med),State Machine (Compiled) (max)
+3,17,17,17,18,18,18,40,40,40,16,16,16,18,18,18,22,22,22,23,23,23,13,13,13
+4,28,28,28,26,26,26,56,56,56,26,26,26,28,28,28,37,37,37,39,39,39,20,20,20
+5,39,39,39,35,35,35,70,70,70,35,35,35,38,38,38,53,53,53,55,55,55,30,30,30
+6,53,53,53,45,45,45,87,87,87,46,46,46,53,53,53,73,73,73,67,67,67,0,0,0
+7,65,65,65,58,58,58,104,104,104,56,56,56,72,72,72,93,93,93,89,89,89,0,0,0
+8,82,82,82,72,72,72,119,119,119,69,69,69,82,82,82,107,107,107,105,105,105,0,0,0
+9,104,104,104,97,97,97,129,129,129,80,80,80,93,93,93,132,132,132,128,128,128,0,0,0
+10,130,130,130,115,115,115,143,143,143,92,92,92,108,108,108,149,149,149,149,149,149,0,0,0
+11,162,162,162,137,137,137,156,156,156,104,104,104,130,130,130,174,174,174,168,168,168,0,0,0
+12,188,188,188,165,165,165,176,176,176,114,114,114,146,146,146,200,200,200,179,179,179,0,0,0
+13,216,216,216,187,187,187,187,187,187,127,127,127,168,168,168,226,226,226,207,207,207,0,0,0
+14,243,243,243,208,208,208,205,205,205,139,139,139,189,189,189,256,256,256,224,224,224,0,0,0
+15,273,273,273,240,240,240,221,221,221,150,150,150,215,215,215,278,278,278,242,242,242,0,0,0
+16,309,309,309,272,272,272,239,239,239,164,164,164,227,227,227,298,298,298,258,258,258,0,0,0
+17,361,361,361,305,305,305,257,257,257,181,181,181,242,242,242,318,318,318,290,290,290,0,0,0
+18,419,419,419,360,360,360,267,267,267,198,198,198,259,259,259,349,349,349,317,317,317,0,0,0
+19,444,444,444,386,386,386,281,281,281,215,215,215,279,279,279,371,371,371,345,345,345,0,0,0
+20,492,492,492,415,415,415,301,301,301,234,234,234,297,297,297,397,397,397,369,369,369,0,0,0
+21,528,528,528,471,471,471,313,313,313,252,252,252,319,319,319,422,422,422,394,394,394,0,0,0
+22,563,563,563,517,517,517,334,334,334,271,271,271,342,342,342,458,458,458,413,413,413,0,0,0
+23,607,607,607,551,551,551,347,347,347,292,292,292,372,372,372,488,488,488,431,431,431,0,0,0
+24,637,637,637,579,579,579,364,364,364,309,309,309,387,387,387,514,514,514,441,441,441,0,0,0
+25,682,682,682,618,618,618,387,387,387,330,330,330,411,411,411,551,551,551,473,473,473,0,0,0
+26,714,714,714,652,652,652,401,401,401,348,348,348,434,434,434,570,570,570,497,497,497,0,0,0
+27,757,757,757,688,688,688,409,409,409,370,370,370,461,461,461,599,599,599,519,519,519,0,0,0
+28,795,795,795,725,725,725,449,449,449,390,390,390,488,488,488,632,632,632,538,538,538,0,0,0
+29,837,837,837,763,763,763,463,463,463,414,414,414,516,516,516,652,652,652,558,558,558,0,0,0
+30,881,881,881,808,808,808,461,461,461,425,425,425,546,546,546,703,703,703,577,577,577,0,0,0
+31,924,924,924,848,848,848,533,533,533,447,447,447,579,579,579,730,730,730,599,599,599,0,0,0
+32,966,966,966,895,895,895,495,495,495,470,470,470,592,592,592,751,751,751,617,617,617,0,0,0
+33,1030,1030,1030,935,935,935,517,517,517,492,492,492,605,605,605,765,765,765,651,651,651,0,0,0
+34,1106,1106,1106,994,994,994,533,533,533,510,510,510,625,625,625,804,804,804,683,683,683,0,0,0
+35,1160,1160,1160,1045,1045,1045,554,554,554,531,531,531,646,646,646,848,848,848,717,717,717,0,0,0
+36,1227,1227,1227,1093,1093,1093,563,563,563,558,558,558,669,669,669,864,864,864,748,748,748,0,0,0
+37,1281,1281,1281,1167,1167,1167,589,589,589,579,579,579,688,688,688,918,918,918,781,781,781,0,0,0
+38,1334,1334,1334,1224,1224,1224,603,603,603,598,598,598,716,716,716,932,932,932,814,814,814,0,0,0
+39,1387,1387,1387,1271,1271,1271,624,624,624,619,619,619,744,744,744,956,956,956,839,839,839,0,0,0
+40,1444,1444,1444,1324,1324,1324,644,644,644,645,645,645,763,763,763,995,995,995,868,868,868,0,0,0
+41,1494,1494,1494,1379,1379,1379,667,667,667,671,671,671,784,784,784,1038,1038,1038,904,904,904,0,0,0
+42,1556,1556,1556,1424,1424,1424,695,695,695,687,687,687,814,814,814,1054,1054,1054,932,932,932,0,0,0
+43,1616,1616,1616,1482,1482,1482,687,687,687,711,711,711,851,851,851,1097,1097,1097,957,957,957,0,0,0
+44,1662,1662,1662,1539,1539,1539,712,712,712,737,737,737,871,871,871,1120,1120,1120,981,981,981,0,0,0
+45,1724,1724,1724,1583,1583,1583,725,725,725,759,759,759,900,900,900,1133,1133,1133,1002,1002,1002,0,0,0
+46,1813,1813,1813,1650,1650,1650,742,742,742,784,784,784,940,940,940,1201,1201,1201,1023,1023,1023,0,0,0
+47,1863,1863,1863,1705,1705,1705,767,767,767,821,821,821,969,969,969,1216,1216,1216,1050,1050,1050,0,0,0
+48,1986,1986,1986,1756,1756,1756,787,787,787,847,847,847,993,993,993,1271,1271,1271,1070,1070,1070,0,0,0
+49,2003,2003,2003,1809,1809,1809,815,815,815,860,860,860,1019,1019,1019,1303,1303,1303,1093,1093,1093,0,0,0
+50,2069,2069,2069,1855,1855,1855,837,837,837,888,888,888,1054,1054,1054,1340,1340,1340,1121,1121,1121,0,0,0
+51,2135,2135,2135,1926,1926,1926,853,853,853,927,927,927,1084,1084,1084,1342,1342,1342,1158,1158,1158,0,0,0
+52,2194,2194,2194,1978,1978,1978,866,866,866,938,938,938,1107,1107,1107,1402,1402,1402,1177,1177,1177,0,0,0
+53,2260,2260,2260,2055,2055,2055,900,900,900,970,970,970,1144,1144,1144,1470,1470,1470,1217,1217,1217,0,0,0
+54,2375,2375,2375,2114,2114,2114,908,908,908,1002,1002,1002,1175,1175,1175,1482,1482,1482,1237,1237,1237,0,0,0
+55,2383,2383,2383,2160,2160,2160,926,926,926,1020,1020,1020,1219,1219,1219,1545,1545,1545,1263,1263,1263,0,0,0
+56,2436,2436,2436,2207,2207,2207,963,963,963,1034,1034,1034,1244,1244,1244,1547,1547,1547,1277,1277,1277,0,0,0
+57,2523,2523,2523,2292,2292,2292,994,994,994,1065,1065,1065,1274,1274,1274,1606,1606,1606,1299,1299,1299,0,0,0
+58,2597,2597,2597,2353,2353,2353,1006,1006,1006,1069,1069,1069,1319,1319,1319,1620,1620,1620,1372,1372,1372,0,0,0
+59,2669,2669,2669,2401,2401,2401,1014,1014,1014,1124,1124,1124,1359,1359,1359,1624,1624,1624,1358,1358,1358,0,0,0
+60,2770,2770,2770,2488,2488,2488,1066,1066,1066,1143,1143,1143,1405,1405,1405,1698,1698,1698,1381,1381,1381,0,0,0
+61,2843,2843,2843,2591,2591,2591,1065,1065,1065,1180,1180,1180,1437,1437,1437,1754,1754,1754,1415,1415,1415,0,0,0
+62,2899,2899,2899,2606,2606,2606,1071,1071,1071,1202,1202,1202,1471,1471,1471,1783,1783,1783,1435,1435,1435,0,0,0
+63,2965,2965,2965,2648,2648,2648,1098,1098,1098,1223,1223,1223,1521,1521,1521,1838,1838,1838,1453,1453,1453,0,0,0
+64,3058,3058,3058,2801,2801,2801,1116,1116,1116,1248,1248,1248,1534,1534,1534,1857,1857,1857,1481,1481,1481,0,0,0
+65,3146,3146,3146,2830,2830,2830,1178,1178,1178,1275,1275,1275,1554,1554,1554,1963,1963,1963,1527,1527,1527,0,0,0
+66,3221,3221,3221,2895,2895,2895,1208,1208,1208,1293,1293,1293,1577,1577,1577,1919,1919,1919,1565,1565,1565,0,0,0
+67,3299,3299,3299,3022,3022,3022,1210,1210,1210,1314,1314,1314,1603,1603,1603,1920,1920,1920,1603,1603,1603,0,0,0
+68,3403,3403,3403,3041,3041,3041,1247,1247,1247,1340,1340,1340,1631,1631,1631,1985,1985,1985,1641,1641,1641,0,0,0
+69,3478,3478,3478,3106,3106,3106,1246,1246,1246,1367,1367,1367,1656,1656,1656,2012,2012,2012,1678,1678,1678,0,0,0
+70,3551,3551,3551,3205,3205,3205,1266,1266,1266,1404,1404,1404,1684,1684,1684,2064,2064,2064,1716,1716,1716,0,0,0
+71,3632,3632,3632,3307,3307,3307,1287,1287,1287,1413,1413,1413,1710,1710,1710,2054,2054,2054,1750,1750,1750,0,0,0
+72,3745,3745,3745,3331,3331,3331,1305,1305,1305,1454,1454,1454,1722,1722,1722,2107,2107,2107,1784,1784,1784,0,0,0
+73,3766,3766,3766,3384,3384,3384,1336,1336,1336,1483,1483,1483,1736,1736,1736,2187,2187,2187,1813,1813,1813,0,0,0
+74,3859,3859,3859,3470,3470,3470,1358,1358,1358,1497,1497,1497,1777,1777,1777,2184,2184,2184,1853,1853,1853,0,0,0
+75,3944,3944,3944,3510,3510,3510,1400,1400,1400,1522,1522,1522,1814,1814,1814,2186,2186,2186,1884,1884,1884,0,0,0
+76,4027,4027,4027,3614,3614,3614,1384,1384,1384,1567,1567,1567,1845,1845,1845,2260,2260,2260,1931,1931,1931,0,0,0
+77,4148,4148,4148,3662,3662,3662,1429,1429,1429,1577,1577,1577,1854,1854,1854,2235,2235,2235,1950,1950,1950,0,0,0
+78,4233,4233,4233,3725,3725,3725,1422,1422,1422,1625,1625,1625,1883,1883,1883,2301,2301,2301,1990,1990,1990,0,0,0
+79,4281,4281,4281,3824,3824,3824,1451,1451,1451,1663,1663,1663,1940,1940,1940,2402,2402,2402,2034,2034,2034,0,0,0
+80,4397,4397,4397,3912,3912,3912,1499,1499,1499,1687,1687,1687,1964,1964,1964,2406,2406,2406,2061,2061,2061,0,0,0
+81,4507,4507,4507,3967,3967,3967,1510,1510,1510,1741,1741,1741,1997,1997,1997,2427,2427,2427,2111,2111,2111,0,0,0
+82,4618,4618,4618,4048,4048,4048,1560,1560,1560,1799,1799,1799,2060,2060,2060,2515,2515,2515,2140,2140,2140,0,0,0
+83,4775,4775,4775,4192,4192,4192,1620,1620,1620,1839,1839,1839,2121,2121,2121,2544,2544,2544,2182,2182,2182,0,0,0
+84,4777,4777,4777,4183,4183,4183,1568,1568,1568,1884,1884,1884,2147,2147,2147,2644,2644,2644,2199,2199,2199,0,0,0
+85,4925,4925,4925,4260,4260,4260,1616,1616,1616,1947,1947,1947,2199,2199,2199,2674,2674,2674,2235,2235,2235,0,0,0
+86,5111,5111,5111,4401,4401,4401,1618,1618,1618,2013,2013,2013,2283,2283,2283,2782,2782,2782,2268,2268,2268,0,0,0
+87,5261,5261,5261,4459,4459,4459,1641,1641,1641,2073,2073,2073,2328,2328,2328,2711,2711,2711,2289,2289,2289,0,0,0
+88,5288,5288,5288,4503,4503,4503,1696,1696,1696,2127,2127,2127,2359,2359,2359,2787,2787,2787,2318,2318,2318,0,0,0
+89,5393,5393,5393,4590,4590,4590,1763,1763,1763,2157,2157,2157,2392,2392,2392,2903,2903,2903,2349,2349,2349,0,0,0
+90,5481,5481,5481,4737,4737,4737,1763,1763,1763,2195,2195,2195,2428,2428,2428,2891,2891,2891,2376,2376,2376,0,0,0
+91,5582,5582,5582,4817,4817,4817,1758,1758,1758,2235,2235,2235,2475,2475,2475,2871,2871,2871,2398,2398,2398,0,0,0
+92,5668,5668,5668,4833,4833,4833,1802,1802,1802,2259,2259,2259,2518,2518,2518,2963,2963,2963,2417,2417,2417,0,0,0
+93,5774,5774,5774,4926,4926,4926,1790,1790,1790,2298,2298,2298,2553,2553,2553,3093,3093,3093,2448,2448,2448,0,0,0
+94,5868,5868,5868,5011,5011,5011,1816,1816,1816,2330,2330,2330,2592,2592,2592,3040,3040,3040,2472,2472,2472,0,0,0
+95,5969,5969,5969,5097,5097,5097,1838,1838,1838,2362,2362,2362,2640,2640,2640,3057,3057,3057,2499,2499,2499,0,0,0
+96,6075,6075,6075,5186,5186,5186,1858,1858,1858,2398,2398,2398,2667,2667,2667,3117,3117,3117,2522,2522,2522,0,0,0
+97,6155,6155,6155,5277,5277,5277,1912,1912,1912,2437,2437,2437,2695,2695,2695,3213,3213,3213,2564,2564,2564,0,0,0
+98,6281,6281,6281,5370,5370,5370,1919,1919,1919,2474,2474,2474,2734,2734,2734,3212,3212,3212,2596,2596,2596,0,0,0
+99,6383,6383,6383,5498,5498,5498,1968,1968,1968,2512,2512,2512,2766,2766,2766,3185,3185,3185,2633,2633,2633,0,0,0
+100,6467,6467,6467,5553,5553,5553,1962,1962,1962,2555,2555,2555,2797,2797,2797,3278,3278,3278,2664,2664,2664,0,0,0
