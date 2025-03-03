@@ -1,4 +1,5 @@
-CFLAGS = -Wall -Wextra -Wno-unused-parameter -O2 -march=native
+CFLAGS = -Wall -Wextra -march=native
+OPT = -O2
 
 SRC = \
 	harness.cpp \
@@ -56,77 +57,77 @@ SRC = \
 OBJECTS = $(SRC:.cpp=.o)
 
 .cpp.o:
-	$(CXX) $(CFLAGS) -c $<
+	$(CXX) $(CFLAGS) $(OPT) -c $<
 
 all: gen gen-lookup gen-lookup-asc main
 
 main.o: main.cpp config.h
-	$(CXX) $(CFLAGS) -c $<
+	$(CXX) $(CFLAGS) $(OPT) -c $<
 
 merge_insert_O0.o: merge_insert_O0.cpp
-	$(CXX) -Wall -Wextra -march=native -c $<
+	$(CXX) $(CFLAGS) -c $<
 
 merge_insert_O1.o: merge_insert_O1.cpp
-	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+	$(CXX) $(CFLAGS) -O1 -c $<
 
 merge_insert_O2.o: merge_insert_O2.cpp
-	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+	$(CXX) $(CFLAGS) -O2 -c $<
 
 merge_insert_O3.o: merge_insert_O3.cpp
-	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+	$(CXX) $(CFLAGS) -O3 -c $<
 
 merge_insert_Os.o: merge_insert_Os.cpp
-	$(CXX) -Wall -Wextra -Os -march=native -c $<
+	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_insert_Oz.o: merge_insert_Oz.cpp
-	$(CXX) -Wall -Wextra -Oz -march=native -c $<
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_heap_O0.o: merge_heap_O0.cpp
-	$(CXX) -Wall -Wextra -march=native -c $<
+	$(CXX) $(CFLAGS) -c $<
 
 merge_heap_O1.o: merge_heap_O1.cpp
-	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+	$(CXX) $(CFLAGS) -O1 -c $<
 
 merge_heap_O2.o: merge_heap_O2.cpp
-	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+	$(CXX) $(CFLAGS) -O2 -c $<
 
 merge_heap_O3.o: merge_heap_O3.cpp
-	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+	$(CXX) $(CFLAGS) -O3 -c $<
 
 merge_heap_Os.o: merge_heap_Os.cpp
-	$(CXX) -Wall -Wextra -Os -march=native -c $<
+	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_heap_Oz.o: merge_heap_Oz.cpp
-	$(CXX) -Wall -Wextra -Oz -march=native -c $<
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_state_machine_compiled_O0.o: merge_state_machine_compiled_O0.cpp
-	$(CXX) -Wall -Wextra -march=native -c $<
+	$(CXX) $(CFLAGS) -c $<
 
 merge_state_machine_compiled_O1.o: merge_state_machine_compiled_O1.cpp
-	$(CXX) -Wall -Wextra -O1 -march=native -c $<
+	$(CXX) $(CFLAGS) -O1 -c $<
 
 merge_state_machine_compiled_O2.o: merge_state_machine_compiled_O2.cpp
-	$(CXX) -Wall -Wextra -O2 -march=native -c $<
+	$(CXX) $(CFLAGS) -O2 -c $<
 
 merge_state_machine_compiled_O3.o: merge_state_machine_compiled_O3.cpp
-	$(CXX) -Wall -Wextra -O3 -march=native -c $<
+	$(CXX) $(CFLAGS) -O3 -c $<
 
 merge_state_machine_compiled_Os.o: merge_state_machine_compiled_Os.cpp
-	$(CXX) -Wall -Wextra -Os -march=native -c $<
+	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_state_machine_compiled_Oz.o: merge_state_machine_compiled_Oz.cpp
-	$(CXX) -Wall -Wextra -Oz -march=native -c $<
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 gen: gen.o
-	$(CXX) $(CFLAGS) -o $@ gen.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen.o
 	for i in `seq 3 7`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
 
 gen-lookup: gen_lookup.o
-	$(CXX) $(CFLAGS) -o $@ gen_lookup.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_lookup.o
 	for i in `seq 3 8`; do ./gen-lookup "$$i" > "state_table_$$i.h"; done
 
 gen-lookup-asc: gen_lookup_asc.o
-	$(CXX) $(CFLAGS) -o $@ gen_lookup_asc.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_lookup_asc.o
 	for i in `seq 3 8`; do ./gen-lookup-asc "$$i" > "state_table_asc_$$i.h"; done
 
 main: main.o $(OBJECTS)
