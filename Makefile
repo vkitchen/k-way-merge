@@ -9,8 +9,8 @@ SRC = \
 	merge_quick_sort.cpp \
 	merge_std_sort.cpp \
 	merge_insertion_sort.cpp \
-	merge_insertion_sort_fast.cpp \
-	merge_insertion_sort_fast_discrete_n.cpp \
+	merge_insert.cpp \
+	merge_insert_discrete_n.cpp \
 	merge_insertion_sort_indexes.cpp \
 	merge_avx_sort.cpp \
 	merge_avx_sort_discrete_n.cpp \
@@ -34,12 +34,12 @@ SRC = \
 	merge_state_machine_lookup_table_asc.cpp \
 	merge_state_machine_lookup_table_binary_search.cpp \
 	merge_state_machine_lookup_table_binary_search_fast.cpp \
-	merge_insertion_sort_fast_O0.cpp \
-	merge_insertion_sort_fast_O1.cpp \
-	merge_insertion_sort_fast_O2.cpp \
-	merge_insertion_sort_fast_O3.cpp \
-	merge_insertion_sort_fast_Os.cpp \
-	merge_insertion_sort_fast_Oz.cpp \
+	merge_insert_O0.cpp \
+	merge_insert_O1.cpp \
+	merge_insert_O2.cpp \
+	merge_insert_O3.cpp \
+	merge_insert_Os.cpp \
+	merge_insert_Oz.cpp \
 	merge_heap_O0.cpp \
 	merge_heap_O1.cpp \
 	merge_heap_O2.cpp \
@@ -63,22 +63,22 @@ all: gen gen-lookup gen-lookup-asc main
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) -c $<
 
-merge_insertion_sort_fast_O0.o: merge_insertion_sort_fast_O0.cpp
+merge_insert_O0.o: merge_insert_O0.cpp
 	$(CXX) -Wall -Wextra -march=native -c $<
 
-merge_insertion_sort_fast_O1.o: merge_insertion_sort_fast_O1.cpp
+merge_insert_O1.o: merge_insert_O1.cpp
 	$(CXX) -Wall -Wextra -O1 -march=native -c $<
 
-merge_insertion_sort_fast_O2.o: merge_insertion_sort_fast_O2.cpp
+merge_insert_O2.o: merge_insert_O2.cpp
 	$(CXX) -Wall -Wextra -O2 -march=native -c $<
 
-merge_insertion_sort_fast_O3.o: merge_insertion_sort_fast_O3.cpp
+merge_insert_O3.o: merge_insert_O3.cpp
 	$(CXX) -Wall -Wextra -O3 -march=native -c $<
 
-merge_insertion_sort_fast_Os.o: merge_insertion_sort_fast_Os.cpp
+merge_insert_Os.o: merge_insert_Os.cpp
 	$(CXX) -Wall -Wextra -Os -march=native -c $<
 
-merge_insertion_sort_fast_Oz.o: merge_insertion_sort_fast_Oz.cpp
+merge_insert_Oz.o: merge_insert_Oz.cpp
 	$(CXX) -Wall -Wextra -Oz -march=native -c $<
 
 merge_heap_O0.o: merge_heap_O0.cpp

@@ -2,57 +2,57 @@
 
 #include "merge.h"
 
-class MergeInsertionSortFast : public Merge {
+class MergeInsert : public Merge {
 	public:
-		MergeInsertionSortFast() {
-			name = "Insertion Sort Fast";
+		MergeInsert() {
+			name = "Insert";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastO0 : public Merge {
+class MergeInsertO0 : public Merge {
 	public:
-		MergeInsertionSortFastO0() {
+		MergeInsertO0() {
 			name = "Insert (O0)";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastO1 : public Merge {
+class MergeInsertO1 : public Merge {
 	public:
-		MergeInsertionSortFastO1() {
+		MergeInsertO1() {
 			name = "Insert (O1)";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastO2 : public Merge {
+class MergeInsertO2 : public Merge {
 	public:
-		MergeInsertionSortFastO2() {
+		MergeInsertO2() {
 			name = "Insert (O2)";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastO3 : public Merge {
+class MergeInsertO3 : public Merge {
 	public:
-		MergeInsertionSortFastO3() {
+		MergeInsertO3() {
 			name = "Insert (O3)";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastOs : public Merge {
+class MergeInsertOs : public Merge {
 	public:
-		MergeInsertionSortFastOs() {
+		MergeInsertOs() {
 			name = "Insert (Os)";
 		}
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertionSortFastOz : public Merge {
+class MergeInsertOz : public Merge {
 	public:
-		MergeInsertionSortFastOz() {
+		MergeInsertOz() {
 			name = "Insert (Oz)";
 		}
 		bool merge(struct test *t, int n) override;

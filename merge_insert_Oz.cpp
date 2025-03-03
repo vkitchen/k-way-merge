@@ -1,6 +1,6 @@
 #include "harness.h"
 
-#include "merge_insertion_sort_fast.h"
+#include "merge_insert.h"
 
 static void sort_full(int **a, int length) {
 	int i, j;
@@ -20,7 +20,7 @@ static void sort_partial(int **a, int length) {
 	a[i] = x;
 }
 
-bool MergeInsertionSortFastOs::merge(struct test *t, int n) {
+bool MergeInsertOz::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

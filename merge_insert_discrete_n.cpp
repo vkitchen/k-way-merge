@@ -1,6 +1,6 @@
 #include "harness.h"
 
-#include "merge_insertion_sort_fast_discrete_n.h"
+#include "merge_insert_discrete_n.h"
 
 static void sort_full(int **a, int length) {
 	int i, j;
@@ -124,7 +124,7 @@ static void sort_partial_16(int **a) {
 	a[i] = x;
 }
 
-bool MergeInsertionSortFastDiscreteN::merge(struct test *t, int n) {
+bool MergeInsertDiscreteN::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)

@@ -22,8 +22,8 @@
 #include "merge_bubble_sort_fast.h"
 #include "merge_double_bubble_sort.h"
 #include "merge_insertion_sort.h"
-#include "merge_insertion_sort_fast.h"
-#include "merge_insertion_sort_fast_discrete_n.h"
+#include "merge_insert.h"
+#include "merge_insert_discrete_n.h"
 #include "merge_insertion_sort_indexes.h"
 #include "merge_avx_sort.h"
 #include "merge_avx_sort_discrete_n.h"
@@ -60,8 +60,8 @@ Merge *functions[] = {
 //	new MergeDoubleBubbleSort,
 //
 //	new MergeInsertionSort,
-	new MergeInsertionSortFast,
-//	new MergeInsertionSortFastDiscreteN,
+	new MergeInsert,
+//	new MergeInsertDiscreteN,
 //	new MergeInsertionSortIndexes,
 //
 //	new MergeAvxSort,
@@ -87,12 +87,12 @@ Merge *functions[] = {
 //	new MergeStateMachineLookupTableBinarySearch,
 //	new MergeStateMachineLookupTableBinarySearchFast,
 //
-//	new MergeInsertionSortFastO0,
-//	new MergeInsertionSortFastO1,
-//	new MergeInsertionSortFastO2,
-//	new MergeInsertionSortFastO3,
-//	new MergeInsertionSortFastOs,
-//	new MergeInsertionSortFastOz,
+//	new MergeInsertO0,
+//	new MergeInsertO1,
+//	new MergeInsertO2,
+//	new MergeInsertO3,
+//	new MergeInsertOs,
+//	new MergeInsertOz,
 //
 //	new MergeHeapO0,
 //	new MergeHeapO1,
