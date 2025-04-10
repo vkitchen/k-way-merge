@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Wextra -march=native
-OPT = -O2
+OPT = -O3
 
 SRC = \
 	harness.cpp \
