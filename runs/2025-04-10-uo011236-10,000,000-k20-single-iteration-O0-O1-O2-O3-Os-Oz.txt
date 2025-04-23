@@ -1,0 +1,786 @@
+COMPILER_VERSION 14.2.1 20250220 [revision 9ffecde121af883b60bbe60d00425036bc873048]
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 20
+ITER_COUNT 1
+NUM_TESTS 36
+SEED 1744259640
+
+Init: 13363
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 682
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       209,209,209 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       136,136,136 |             0.0000 |
+Insert (O1)                              | true    |      ? |       205,205,205 |             0.0000 |
+Heap (Os)                                | true    |      ? |       205,205,205 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       187,187,187 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       213,213,213 |             0.0000 |
+Find (O3)                                | true    |      ? |       392,392,392 |             0.0000 |
+Heap (O3)                                | true    |      ? |       201,201,201 |             0.0000 |
+Insert (O3)                              | true    |      ? |       184,184,184 |             0.0000 |
+Find (Oz)                                | true    |      ? |       481,481,481 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       173,173,173 |             0.0000 |
+Heap (O2)                                | true    |      ? |       209,209,209 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       190,190,190 |             0.0000 |
+Find (O1)                                | true    |      ? |       441,441,441 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       264,264,264 |             0.0000 |
+Heap (O1)                                | true    |      ? |       224,224,224 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       260,260,260 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       184,184,184 |             0.0000 |
+State Machine (O2)                       | true    |      ? |       148,148,148 |             0.0000 |
+Find (Os)                                | true    |      ? |       486,486,486 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       144,144,144 |             0.0000 |
+Insert (Os)                              | true    |      ? |       182,182,182 |             0.0000 |
+Find (O2)                                | true    |      ? |       450,450,450 |             0.0000 |
+Find (O0)                                | true    |      ? |       824,824,824 |             0.0000 |
+Insert (O2)                              | true    |      ? |       187,187,187 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       255,255,255 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       262,262,262 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       160,160,160 |             0.0000 |
+Insert Cache (O0)                        | true    |      ? |       340,340,340 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       183,183,183 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       141,141,141 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       183,183,183 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       186,186,186 |             0.0000 |
+Insert (O0)                              | true    |      ? |       325,325,325 |             0.0000 |
+Heap (O0)                                | true    |      ? |       511,511,511 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |       702,702,702 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1297
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       347,347,347 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       219,219,219 |             0.0000 |
+Insert (O1)                              | true    |      ? |       312,312,312 |             0.0000 |
+Heap (Os)                                | true    |      ? |       322,322,322 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       274,274,274 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       334,334,334 |             0.0000 |
+Find (O3)                                | true    |      ? |       579,579,579 |             0.0000 |
+Heap (O3)                                | true    |      ? |       309,309,309 |             0.0000 |
+Insert (O3)                              | true    |      ? |       271,271,271 |             0.0000 |
+Find (Oz)                                | true    |      ? |       656,656,656 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       277,277,277 |             0.0000 |
+Heap (O2)                                | true    |      ? |       312,312,312 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       275,275,275 |             0.0000 |
+Find (O1)                                | true    |      ? |       629,629,629 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       444,444,444 |             0.0000 |
+Heap (O1)                                | true    |      ? |       352,352,352 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       421,421,421 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       276,276,276 |             0.0000 |
+State Machine (O2)                       | true    |      ? |       232,232,232 |             0.0000 |
+Find (Os)                                | true    |      ? |       657,657,657 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       229,229,229 |             0.0000 |
+Insert (Os)                              | true    |      ? |       273,273,273 |             0.0000 |
+Find (O2)                                | true    |      ? |       632,632,632 |             0.0000 |
+Find (O0)                                | true    |      ? |    1099,1099,1099 |             0.0000 |
+Insert (O2)                              | true    |      ? |       276,276,276 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       419,419,419 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       441,441,441 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       262,262,262 |             0.0000 |
+Insert Cache (O0)                        | true    |      ? |       528,528,528 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       278,278,278 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       230,230,230 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       275,275,275 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       280,280,280 |             0.0000 |
+Insert (O0)                              | true    |      ? |       501,501,501 |             0.0000 |
+Heap (O0)                                | true    |      ? |       738,738,738 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    1106,1106,1106 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       519,519,519 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       338,338,338 |             0.0000 |
+Insert (O1)                              | true    |      ? |       425,425,425 |             0.0000 |
+Heap (Os)                                | true    |      ? |       430,430,430 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       376,376,376 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       472,472,472 |             0.0000 |
+Find (O3)                                | true    |      ? |       727,727,727 |             0.0000 |
+Heap (O3)                                | true    |      ? |       428,428,428 |             0.0000 |
+Insert (O3)                              | true    |      ? |       368,368,368 |             0.0000 |
+Find (Oz)                                | true    |      ? |       829,829,829 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       441,441,441 |             0.0000 |
+Heap (O2)                                | true    |      ? |       432,432,432 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       362,362,362 |             0.0000 |
+Find (O1)                                | true    |      ? |       810,810,810 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       642,642,642 |             0.0000 |
+Heap (O1)                                | true    |      ? |       479,479,479 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       610,610,610 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       365,365,365 |             0.0000 |
+State Machine (O2)                       | true    |      ? |       344,344,344 |             0.0000 |
+Find (Os)                                | true    |      ? |       836,836,836 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       329,329,329 |             0.0000 |
+Insert (Os)                              | true    |      ? |       361,361,361 |             0.0000 |
+Find (O2)                                | true    |      ? |       800,800,800 |             0.0000 |
+Find (O0)                                | true    |      ? |    1372,1372,1372 |             0.0000 |
+Insert (O2)                              | true    |      ? |       400,400,400 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       613,613,613 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       616,616,616 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       368,368,368 |             0.0000 |
+Insert Cache (O0)                        | true    |      ? |       746,746,746 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       377,377,377 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       330,330,330 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       374,374,374 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       373,373,373 |             0.0000 |
+Insert (O0)                              | true    |      ? |       727,727,727 |             0.0000 |
+Heap (O0)                                | true    |      ? |    1011,1011,1011 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    1537,1537,1537 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 2033
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       606,606,606 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |       538,538,538 |             0.0000 |
+Heap (Os)                                | true    |      ? |       622,622,622 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       472,472,472 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       677,677,677 |             0.0000 |
+Find (O3)                                | true    |      ? |       891,891,891 |             0.0000 |
+Heap (O3)                                | true    |      ? |       625,625,625 |             0.0000 |
+Insert (O3)                              | true    |      ? |       481,481,481 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1027,1027,1027 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |       605,605,605 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       469,469,469 |             0.0000 |
+Find (O1)                                | true    |      ? |       974,974,974 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       825,825,825 |             0.0000 |
+Heap (O1)                                | true    |      ? |       695,695,695 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       724,724,724 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       463,463,463 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1042,1042,1042 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |       464,464,464 |             0.0000 |
+Find (O2)                                | true    |      ? |       990,990,990 |             0.0000 |
+Find (O0)                                | true    |      ? |    1667,1667,1667 |             0.0000 |
+Insert (O2)                              | true    |      ? |       533,533,533 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       728,728,728 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       780,780,780 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |       992,992,992 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       432,432,432 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       435,435,435 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       459,459,459 |             0.0000 |
+Insert (O0)                              | true    |      ? |       945,945,945 |             0.0000 |
+Heap (O0)                                | true    |      ? |    1348,1348,1348 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    1882,1882,1882 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 1854
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       847,847,847 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |       719,719,719 |             0.0000 |
+Heap (Os)                                | true    |      ? |       807,807,807 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       558,558,558 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       855,855,855 |             0.0000 |
+Find (O3)                                | true    |      ? |    1020,1020,1020 |             0.0000 |
+Heap (O3)                                | true    |      ? |       793,793,793 |             0.0000 |
+Insert (O3)                              | true    |      ? |       617,617,617 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1225,1225,1225 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |       804,804,804 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       579,579,579 |             0.0000 |
+Find (O1)                                | true    |      ? |    1150,1150,1150 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    1066,1066,1066 |             0.0000 |
+Heap (O1)                                | true    |      ? |       908,908,908 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       953,953,953 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       551,551,551 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1177,1177,1177 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |       551,551,551 |             0.0000 |
+Find (O2)                                | true    |      ? |    1131,1131,1131 |             0.0000 |
+Find (O0)                                | true    |      ? |    1943,1943,1943 |             0.0000 |
+Insert (O2)                              | true    |      ? |       639,639,639 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       955,955,955 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       999,999,999 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    1210,1210,1210 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       534,534,534 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       537,537,537 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       558,558,558 |             0.0000 |
+Insert (O0)                              | true    |      ? |    1170,1170,1170 |             0.0000 |
+Heap (O0)                                | true    |      ? |    1727,1727,1727 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    2387,2387,2387 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2032
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |       955,955,955 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |       807,807,807 |             0.0000 |
+Heap (Os)                                | true    |      ? |       931,931,931 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       661,661,661 |             0.0000 |
+Heap (Oz)                                | true    |      ? |       985,985,985 |             0.0000 |
+Find (O3)                                | true    |      ? |    1223,1223,1223 |             0.0000 |
+Heap (O3)                                | true    |      ? |       900,900,900 |             0.0000 |
+Insert (O3)                              | true    |      ? |       731,731,731 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1456,1456,1456 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |       917,917,917 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       693,693,693 |             0.0000 |
+Find (O1)                                | true    |      ? |    1375,1375,1375 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    1220,1220,1220 |             0.0000 |
+Heap (O1)                                | true    |      ? |    1056,1056,1056 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    1113,1113,1113 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       648,648,648 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1377,1377,1377 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |       658,658,658 |             0.0000 |
+Find (O2)                                | true    |      ? |    1417,1417,1417 |             0.0000 |
+Find (O0)                                | true    |      ? |    2284,2284,2284 |             0.0000 |
+Insert (O2)                              | true    |      ? |       770,770,770 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    1104,1104,1104 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    1154,1154,1154 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    1478,1478,1478 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       631,631,631 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       637,637,637 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       658,658,658 |             0.0000 |
+Insert (O0)                              | true    |      ? |    1422,1422,1422 |             0.0000 |
+Heap (O0)                                | true    |      ? |    2027,2027,2027 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    2809,2809,2809 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2054
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    1216,1216,1216 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |       904,904,904 |             0.0000 |
+Heap (Os)                                | true    |      ? |    1060,1060,1060 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       770,770,770 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    1132,1132,1132 |             0.0000 |
+Find (O3)                                | true    |      ? |    1433,1433,1433 |             0.0000 |
+Heap (O3)                                | true    |      ? |    1033,1033,1033 |             0.0000 |
+Insert (O3)                              | true    |      ? |       875,875,875 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1545,1545,1545 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    1042,1042,1042 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       809,809,809 |             0.0000 |
+Find (O1)                                | true    |      ? |    1501,1501,1501 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    1544,1544,1544 |             0.0000 |
+Heap (O1)                                | true    |      ? |    1205,1205,1205 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    1384,1384,1384 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       760,760,760 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1572,1572,1572 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |       778,778,778 |             0.0000 |
+Find (O2)                                | true    |      ? |    1556,1556,1556 |             0.0000 |
+Find (O0)                                | true    |      ? |    3122,3122,3122 |             0.0000 |
+Insert (O2)                              | true    |      ? |       893,893,893 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    1365,1365,1365 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    1435,1435,1435 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    1797,1797,1797 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       755,755,755 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       757,757,757 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       772,772,772 |             0.0000 |
+Insert (O0)                              | true    |      ? |    1698,1698,1698 |             0.0000 |
+Heap (O0)                                | true    |      ? |    2308,2308,2308 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    3356,3356,3356 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2679
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    1426,1426,1426 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1069,1069,1069 |             0.0000 |
+Heap (Os)                                | true    |      ? |    1250,1250,1250 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       879,879,879 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    1329,1329,1329 |             0.0000 |
+Find (O3)                                | true    |      ? |    1577,1577,1577 |             0.0000 |
+Heap (O3)                                | true    |      ? |    1209,1209,1209 |             0.0000 |
+Insert (O3)                              | true    |      ? |       994,994,994 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1691,1691,1691 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    1224,1224,1224 |             0.0000 |
+Insert (Oz)                              | true    |      ? |       929,929,929 |             0.0000 |
+Find (O1)                                | true    |      ? |    1674,1674,1674 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    1809,1809,1809 |             0.0000 |
+Heap (O1)                                | true    |      ? |    1442,1442,1442 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    1610,1610,1610 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       870,870,870 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1731,1731,1731 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |       897,897,897 |             0.0000 |
+Find (O2)                                | true    |      ? |    1721,1721,1721 |             0.0000 |
+Find (O0)                                | true    |      ? |    3495,3495,3495 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1013,1013,1013 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    1602,1602,1602 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    1659,1659,1659 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    2108,2108,2108 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       868,868,868 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       873,873,873 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       882,882,882 |             0.0000 |
+Insert (O0)                              | true    |      ? |    1970,1970,1970 |             0.0000 |
+Heap (O0)                                | true    |      ? |    2704,2704,2704 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    3906,3906,3906 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2638
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    1624,1624,1624 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1202,1202,1202 |             0.0000 |
+Heap (Os)                                | true    |      ? |    1507,1507,1507 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       994,994,994 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    1571,1571,1571 |             0.0000 |
+Find (O3)                                | true    |      ? |    1768,1768,1768 |             0.0000 |
+Heap (O3)                                | true    |      ? |    1420,1420,1420 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1129,1129,1129 |             0.0000 |
+Find (Oz)                                | true    |      ? |    1893,1893,1893 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    1429,1429,1429 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1071,1071,1071 |             0.0000 |
+Find (O1)                                | true    |      ? |    1852,1852,1852 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    2046,2046,2046 |             0.0000 |
+Heap (O1)                                | true    |      ? |    1710,1710,1710 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    1821,1821,1821 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       991,991,991 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    1903,1903,1903 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1029,1029,1029 |             0.0000 |
+Find (O2)                                | true    |      ? |    1908,1908,1908 |             0.0000 |
+Find (O0)                                | true    |      ? |    3871,3871,3871 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1152,1152,1152 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    1819,1819,1819 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    1867,1867,1867 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    2441,2441,2441 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       989,989,989 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |       996,996,996 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1002,1002,1002 |             0.0000 |
+Insert (O0)                              | true    |      ? |    2299,2299,2299 |             0.0000 |
+Heap (O0)                                | true    |      ? |    3147,3147,3147 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    4444,4444,4444 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 3183
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    1728,1728,1728 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1317,1317,1317 |             0.0000 |
+Heap (Os)                                | true    |      ? |    1665,1665,1665 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1109,1109,1109 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    1759,1759,1759 |             0.0000 |
+Find (O3)                                | true    |      ? |    1919,1919,1919 |             0.0000 |
+Heap (O3)                                | true    |      ? |    1620,1620,1620 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1274,1274,1274 |             0.0000 |
+Find (Oz)                                | true    |      ? |    2077,2077,2077 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    1637,1637,1637 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1191,1191,1191 |             0.0000 |
+Find (O1)                                | true    |      ? |    2025,2025,2025 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    2221,2221,2221 |             0.0000 |
+Heap (O1)                                | true    |      ? |    1924,1924,1924 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    1948,1948,1948 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1104,1104,1104 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    2084,2084,2084 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1159,1159,1159 |             0.0000 |
+Find (O2)                                | true    |      ? |    2086,2086,2086 |             0.0000 |
+Find (O0)                                | true    |      ? |    4246,4246,4246 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1270,1270,1270 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    1960,1960,1960 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    1996,1996,1996 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    2767,2767,2767 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1109,1109,1109 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1096,1096,1096 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1117,1117,1117 |             0.0000 |
+Insert (O0)                              | true    |      ? |    2586,2586,2586 |             0.0000 |
+Heap (O0)                                | true    |      ? |    3537,3537,3537 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    4915,4915,4915 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 3115
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    1996,1996,1996 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1480,1480,1480 |             0.0000 |
+Heap (Os)                                | true    |      ? |    1914,1914,1914 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1243,1243,1243 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    1989,1989,1989 |             0.0000 |
+Find (O3)                                | true    |      ? |    2066,2066,2066 |             0.0000 |
+Heap (O3)                                | true    |      ? |    1845,1845,1845 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1465,1465,1465 |             0.0000 |
+Find (Oz)                                | true    |      ? |    2252,2252,2252 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    1857,1857,1857 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1320,1320,1320 |             0.0000 |
+Find (O1)                                | true    |      ? |    2207,2207,2207 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    2489,2489,2489 |             0.0000 |
+Heap (O1)                                | true    |      ? |    2202,2202,2202 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    2246,2246,2246 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1220,1220,1220 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    2268,2268,2268 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1298,1298,1298 |             0.0000 |
+Find (O2)                                | true    |      ? |    2285,2285,2285 |             0.0000 |
+Find (O0)                                | true    |      ? |    4621,4621,4621 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1446,1446,1446 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    2215,2215,2215 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2350,2350 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    3146,3146,3146 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1229,1229,1229 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1234,1234,1234 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1237,1237,1237 |             0.0000 |
+Insert (O0)                              | true    |      ? |    2903,2903,2903 |             0.0000 |
+Heap (O0)                                | true    |      ? |    3997,3997,3997 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    5399,5399,5399 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 3652
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    2147,2147,2147 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1651,1651,1651 |             0.0000 |
+Heap (Os)                                | true    |      ? |    2157,2157,2157 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1369,1369,1369 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    2262,2262,2262 |             0.0000 |
+Find (O3)                                | true    |      ? |    2249,2249,2249 |             0.0000 |
+Heap (O3)                                | true    |      ? |    2093,2093,2093 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1557,1557,1557 |             0.0000 |
+Find (Oz)                                | true    |      ? |    2493,2493,2493 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    2103,2103,2103 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1462,1462,1462 |             0.0000 |
+Find (O1)                                | true    |      ? |    2400,2400,2400 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    2703,2703,2703 |             0.0000 |
+Heap (O1)                                | true    |      ? |    2504,2504,2504 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    2392,2392,2392 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1357,1357,1357 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    2455,2455,2455 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1416,1416,1416 |             0.0000 |
+Find (O2)                                | true    |      ? |    2473,2473,2473 |             0.0000 |
+Find (O0)                                | true    |      ? |    4975,4975,4975 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1633,1633,1633 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    2392,2392,2392 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2543,2543,2543 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    3489,3489,3489 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1359,1359,1359 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1352,1352,1352 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1380,1380,1380 |             0.0000 |
+Insert (O0)                              | true    |      ? |    3217,3217,3217 |             0.0000 |
+Heap (O0)                                | true    |      ? |    4451,4451,4451 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    5888,5888,5888 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 3761
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    2299,2299,2299 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1812,1812,1812 |             0.0000 |
+Heap (Os)                                | true    |      ? |    2437,2437,2437 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1511,1511,1511 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    2569,2569,2569 |             0.0000 |
+Find (O3)                                | true    |      ? |    2405,2405,2405 |             0.0000 |
+Heap (O3)                                | true    |      ? |    2373,2373,2373 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1690,1690,1690 |             0.0000 |
+Find (Oz)                                | true    |      ? |    2656,2656,2656 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    2417,2417,2417 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1599,1599,1599 |             0.0000 |
+Find (O1)                                | true    |      ? |    2587,2587,2587 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    2920,2920,2920 |             0.0000 |
+Heap (O1)                                | true    |      ? |    2817,2817,2817 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    2606,2606,2606 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1487,1487,1487 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    2647,2647,2647 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1568,1568,1568 |             0.0000 |
+Find (O2)                                | true    |      ? |    2692,2692,2692 |             0.0000 |
+Find (O0)                                | true    |      ? |    5376,5376,5376 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1807,1807,1807 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    2603,2603,2603 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2709,2709,2709 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    3894,3894,3894 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1494,1494,1494 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1499,1499,1499 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1517,1517,1517 |             0.0000 |
+Insert (O0)                              | true    |      ? |    3562,3562,3562 |             0.0000 |
+Heap (O0)                                | true    |      ? |    4983,4983,4983 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    6344,6344,6344 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 4305
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    2462,2462,2462 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    1967,1967,1967 |             0.0000 |
+Heap (Os)                                | true    |      ? |    2549,2549,2549 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1632,1632,1632 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    2728,2728,2728 |             0.0000 |
+Find (O3)                                | true    |      ? |    2602,2602,2602 |             0.0000 |
+Heap (O3)                                | true    |      ? |    2503,2503,2503 |             0.0000 |
+Insert (O3)                              | true    |      ? |    1810,1810,1810 |             0.0000 |
+Find (Oz)                                | true    |      ? |    2846,2846,2846 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    2546,2546,2546 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1755,1755,1755 |             0.0000 |
+Find (O1)                                | true    |      ? |    2765,2765,2765 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    3105,3105,3105 |             0.0000 |
+Heap (O1)                                | true    |      ? |    2937,2937,2937 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    2801,2801,2801 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1618,1618,1618 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    2846,2846,2846 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1683,1683,1683 |             0.0000 |
+Find (O2)                                | true    |      ? |    2947,2947,2947 |             0.0000 |
+Find (O0)                                | true    |      ? |    5813,5813,5813 |             0.0000 |
+Insert (O2)                              | true    |      ? |    1982,1982,1982 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    2755,2755,2755 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2879,2879,2879 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    4315,4315,4315 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1616,1616,1616 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1611,1611,1611 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1656,1656,1656 |             0.0000 |
+Insert (O0)                              | true    |      ? |    3934,3934,3934 |             0.0000 |
+Heap (O0)                                | true    |      ? |    5325,5325,5325 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    6817,6817,6817 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 4354
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    2761,2761,2761 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    2123,2123,2123 |             0.0000 |
+Heap (Os)                                | true    |      ? |    2745,2745,2745 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1764,1764,1764 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    2879,2879,2879 |             0.0000 |
+Find (O3)                                | true    |      ? |    2797,2797,2797 |             0.0000 |
+Heap (O3)                                | true    |      ? |    2651,2651,2651 |             0.0000 |
+Insert (O3)                              | true    |      ? |    2006,2006,2006 |             0.0000 |
+Find (Oz)                                | true    |      ? |    3077,3077,3077 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    2693,2693,2693 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    1935,1935,1935 |             0.0000 |
+Find (O1)                                | true    |      ? |    3186,3186,3186 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    3453,3453,3453 |             0.0000 |
+Heap (O1)                                | true    |      ? |    3132,3132,3132 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    3125,3125,3125 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1758,1758,1758 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    3052,3052,3052 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1830,1830,1830 |             0.0000 |
+Find (O2)                                | true    |      ? |    2979,2979,2979 |             0.0000 |
+Find (O0)                                | true    |      ? |    6947,6947,6947 |             0.0000 |
+Insert (O2)                              | true    |      ? |    2173,2173,2173 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    3085,3085,3085 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    3235,3235,3235 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    4736,4736,4736 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1745,1745,1745 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1745,1745,1745 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1777,1777,1777 |             0.0000 |
+Insert (O0)                              | true    |      ? |    4335,4335,4335 |             0.0000 |
+Heap (O0)                                | true    |      ? |    5715,5715,5715 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    7459,7459,7459 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 5276
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    3060,3060,3060 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    2277,2277,2277 |             0.0000 |
+Heap (Os)                                | true    |      ? |    2923,2923,2923 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    1914,1914,1914 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    3106,3106,3106 |             0.0000 |
+Find (O3)                                | true    |      ? |    2941,2941,2941 |             0.0000 |
+Heap (O3)                                | true    |      ? |    2842,2842,2842 |             0.0000 |
+Insert (O3)                              | true    |      ? |    2226,2226,2226 |             0.0000 |
+Find (Oz)                                | true    |      ? |    3254,3254,3254 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    2896,2896,2896 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    2120,2120,2120 |             0.0000 |
+Find (O1)                                | true    |      ? |    3327,3327,3327 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    3815,3815,3815 |             0.0000 |
+Heap (O1)                                | true    |      ? |    3353,3353,3353 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    3435,3435,3435 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    1902,1902,1902 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    3207,3207,3207 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    1972,1972,1972 |             0.0000 |
+Find (O2)                                | true    |      ? |    3138,3138,3138 |             0.0000 |
+Find (O0)                                | true    |      ? |    7341,7341,7341 |             0.0000 |
+Insert (O2)                              | true    |      ? |    2349,2349,2349 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    3425,3425,3425 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    3570,3570,3570 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    5216,5216,5216 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1855,1855,1855 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    1866,1866,1866 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1909,1909,1909 |             0.0000 |
+Insert (O0)                              | true    |      ? |    4677,4677,4677 |             0.0000 |
+Heap (O0)                                | true    |      ? |    6157,6157,6157 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    8126,8126,8126 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 4925
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    3338,3338,3338 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    2466,2466,2466 |             0.0000 |
+Heap (Os)                                | true    |      ? |    3170,3170,3170 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    2056,2056,2056 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    3339,3339,3339 |             0.0000 |
+Find (O3)                                | true    |      ? |    3116,3116,3116 |             0.0000 |
+Heap (O3)                                | true    |      ? |    3084,3084,3084 |             0.0000 |
+Insert (O3)                              | true    |      ? |    2412,2412,2412 |             0.0000 |
+Find (Oz)                                | true    |      ? |    3431,3431,3431 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    3137,3137,3137 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    2301,2301,2301 |             0.0000 |
+Find (O1)                                | true    |      ? |    3532,3532,3532 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    4134,4134,4134 |             0.0000 |
+Heap (O1)                                | true    |      ? |    3625,3625,3625 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    3795,3795,3795 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    2034,2034,2034 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    3406,3406,3406 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    2131,2131,2131 |             0.0000 |
+Find (O2)                                | true    |      ? |    3293,3293,3293 |             0.0000 |
+Find (O0)                                | true    |      ? |    7740,7740,7740 |             0.0000 |
+Insert (O2)                              | true    |      ? |    2556,2556,2556 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    3771,3771,3771 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    3905,3905,3905 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    5703,5703,5703 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    1996,1996,1996 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    2020,2020,2020 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    2057,2057,2057 |             0.0000 |
+Insert (O0)                              | true    |      ? |    5090,5090,5090 |             0.0000 |
+Heap (O0)                                | true    |      ? |    6630,6630,6630 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    8737,8737,8737 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 5709
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree (O1)                     | true    |      ? |    3584,3584,3584 |             0.0000 |
+State Machine (O3)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (O1)                              | true    |      ? |    2631,2631,2631 |             0.0000 |
+Heap (Os)                                | true    |      ? |    3364,3364,3364 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |    2207,2207,2207 |             0.0000 |
+Heap (Oz)                                | true    |      ? |    3533,3533,3533 |             0.0000 |
+Find (O3)                                | true    |      ? |    3284,3284,3284 |             0.0000 |
+Heap (O3)                                | true    |      ? |    3258,3258,3258 |             0.0000 |
+Insert (O3)                              | true    |      ? |    2622,2622,2622 |             0.0000 |
+Find (Oz)                                | true    |      ? |    3604,3604,3604 |             0.0000 |
+State Machine (O0)                       | false   |      ? |                 ? |                  ? | Unsupported
+Heap (O2)                                | true    |      ? |    3344,3344,3344 |             0.0000 |
+Insert (Oz)                              | true    |      ? |    2473,2473,2473 |             0.0000 |
+Find (O1)                                | true    |      ? |    3718,3718,3718 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |    4412,4412,4412 |             0.0000 |
+Heap (O1)                                | true    |      ? |    3852,3852,3852 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |    3986,3986,3986 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |    2208,2208,2208 |             0.0000 |
+State Machine (O2)                       | false   |      ? |                 ? |                  ? | Unsupported
+Find (Os)                                | true    |      ? |    3583,3583,3583 |             0.0000 |
+State Machine (Oz)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert (Os)                              | true    |      ? |    2291,2291,2291 |             0.0000 |
+Find (O2)                                | true    |      ? |    3455,3455,3455 |             0.0000 |
+Find (O0)                                | true    |      ? |    8163,8163,8163 |             0.0000 |
+Insert (O2)                              | true    |      ? |    2740,2740,2740 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |    3991,3991,3991 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    4157,4157,4157 |             0.0000 |
+State Machine (O1)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (O0)                        | true    |      ? |    6140,6140,6140 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |    2163,2163,2163 |             0.0000 |
+State Machine (Os)                       | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Os)                        | true    |      ? |    2157,2157,2157 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    2205,2205,2205 |             0.0000 |
+Insert (O0)                              | true    |      ? |    5463,5463,5463 |             0.0000 |
+Heap (O0)                                | true    |      ? |    7054,7054,7054 |             0.0000 |
+Tournament Tree (O0)                     | true    |      ? |    9338,9338,9338 |             0.0000 |
+
+n,Find (O0),Find (O1),Find (O2),Find (O3),Find (Os),Find (Oz),Insert (O0),Insert (O1),Insert (O2),Insert (O3),Insert (Os),Insert (Oz),Insert Cache (O0),Insert Cache (O1),Insert Cache (O2),Insert Cache (O3),Insert Cache (Os),Insert Cache (Oz),Heap (O0),Heap (O1),Heap (O2),Heap (O3),Heap (Os),Heap (Oz),Tournament Tree (O0),Tournament Tree (O1),Tournament Tree (O2),Tournament Tree (O3),Tournament Tree (Os),Tournament Tree (Oz),State Machine (O0),State Machine (O1),State Machine (O2),State Machine (O3),State Machine (Os),State Machine (Oz)
+3,824,441,450,392,486,481,325,205,187,184,182,190,340,184,187,186,183,183,511,224,209,201,205,213,702,209,262,264,260,255,173,160,148,136,141,144
+4,1099,629,632,579,657,656,501,312,276,271,273,275,528,276,274,280,275,278,738,352,312,309,322,334,1106,347,441,444,421,419,277,262,232,219,230,229
+5,1372,810,800,727,836,829,727,425,400,368,361,362,746,365,376,373,374,377,1011,479,432,428,430,472,1537,519,616,642,610,613,441,368,344,338,330,329
+6,1667,974,990,891,1042,1027,945,538,533,481,464,469,992,463,472,459,435,432,1348,695,605,625,622,677,1882,606,780,825,724,728,0,0,0,0,0,0
+7,1943,1150,1131,1020,1177,1225,1170,719,639,617,551,579,1210,551,558,558,537,534,1727,908,804,793,807,855,2387,847,999,1066,953,955,0,0,0,0,0,0
+8,2284,1375,1417,1223,1377,1456,1422,807,770,731,658,693,1478,648,661,658,637,631,2027,1056,917,900,931,985,2809,955,1154,1220,1113,1104,0,0,0,0,0,0
+9,3122,1501,1556,1433,1572,1545,1698,904,893,875,778,809,1797,760,770,772,757,755,2308,1205,1042,1033,1060,1132,3356,1216,1435,1544,1384,1365,0,0,0,0,0,0
+10,3495,1674,1721,1577,1731,1691,1970,1069,1013,994,897,929,2108,870,879,882,873,868,2704,1442,1224,1209,1250,1329,3906,1426,1659,1809,1610,1602,0,0,0,0,0,0
+11,3871,1852,1908,1768,1903,1893,2299,1202,1152,1129,1029,1071,2441,991,994,1002,996,989,3147,1710,1429,1420,1507,1571,4444,1624,1867,2046,1821,1819,0,0,0,0,0,0
+12,4246,2025,2086,1919,2084,2077,2586,1317,1270,1274,1159,1191,2767,1104,1109,1117,1096,1109,3537,1924,1637,1620,1665,1759,4915,1728,1996,2221,1948,1960,0,0,0,0,0,0
+13,4621,2207,2285,2066,2268,2252,2903,1480,1446,1465,1298,1320,3146,1220,1243,1237,1234,1229,3997,2202,1857,1845,1914,1989,5399,1996,2350,2489,2246,2215,0,0,0,0,0,0
+14,4975,2400,2473,2249,2455,2493,3217,1651,1633,1557,1416,1462,3489,1357,1369,1380,1352,1359,4451,2504,2103,2093,2157,2262,5888,2147,2543,2703,2392,2392,0,0,0,0,0,0
+15,5376,2587,2692,2405,2647,2656,3562,1812,1807,1690,1568,1599,3894,1487,1511,1517,1499,1494,4983,2817,2417,2373,2437,2569,6344,2299,2709,2920,2606,2603,0,0,0,0,0,0
+16,5813,2765,2947,2602,2846,2846,3934,1967,1982,1810,1683,1755,4315,1618,1632,1656,1611,1616,5325,2937,2546,2503,2549,2728,6817,2462,2879,3105,2801,2755,0,0,0,0,0,0
+17,6947,3186,2979,2797,3052,3077,4335,2123,2173,2006,1830,1935,4736,1758,1764,1777,1745,1745,5715,3132,2693,2651,2745,2879,7459,2761,3235,3453,3125,3085,0,0,0,0,0,0
+18,7341,3327,3138,2941,3207,3254,4677,2277,2349,2226,1972,2120,5216,1902,1914,1909,1866,1855,6157,3353,2896,2842,2923,3106,8126,3060,3570,3815,3435,3425,0,0,0,0,0,0
+19,7740,3532,3293,3116,3406,3431,5090,2466,2556,2412,2131,2301,5703,2034,2056,2057,2020,1996,6630,3625,3137,3084,3170,3339,8737,3338,3905,4134,3795,3771,0,0,0,0,0,0
+20,8163,3718,3455,3284,3583,3604,5463,2631,2740,2622,2291,2473,6140,2208,2207,2205,2157,2163,7054,3852,3344,3258,3364,3533,9338,3584,4157,4412,3986,3991,0,0,0,0,0,0
+
+n,Find (O0) (min),Find (O0) (med),Find (O0) (max),Find (O1) (min),Find (O1) (med),Find (O1) (max),Find (O2) (min),Find (O2) (med),Find (O2) (max),Find (O3) (min),Find (O3) (med),Find (O3) (max),Find (Os) (min),Find (Os) (med),Find (Os) (max),Find (Oz) (min),Find (Oz) (med),Find (Oz) (max),Insert (O0) (min),Insert (O0) (med),Insert (O0) (max),Insert (O1) (min),Insert (O1) (med),Insert (O1) (max),Insert (O2) (min),Insert (O2) (med),Insert (O2) (max),Insert (O3) (min),Insert (O3) (med),Insert (O3) (max),Insert (Os) (min),Insert (Os) (med),Insert (Os) (max),Insert (Oz) (min),Insert (Oz) (med),Insert (Oz) (max),Insert Cache (O0) (min),Insert Cache (O0) (med),Insert Cache (O0) (max),Insert Cache (O1) (min),Insert Cache (O1) (med),Insert Cache (O1) (max),Insert Cache (O2) (min),Insert Cache (O2) (med),Insert Cache (O2) (max),Insert Cache (O3) (min),Insert Cache (O3) (med),Insert Cache (O3) (max),Insert Cache (Os) (min),Insert Cache (Os) (med),Insert Cache (Os) (max),Insert Cache (Oz) (min),Insert Cache (Oz) (med),Insert Cache (Oz) (max),Heap (O0) (min),Heap (O0) (med),Heap (O0) (max),Heap (O1) (min),Heap (O1) (med),Heap (O1) (max),Heap (O2) (min),Heap (O2) (med),Heap (O2) (max),Heap (O3) (min),Heap (O3) (med),Heap (O3) (max),Heap (Os) (min),Heap (Os) (med),Heap (Os) (max),Heap (Oz) (min),Heap (Oz) (med),Heap (Oz) (max),Tournament Tree (O0) (min),Tournament Tree (O0) (med),Tournament Tree (O0) (max),Tournament Tree (O1) (min),Tournament Tree (O1) (med),Tournament Tree (O1) (max),Tournament Tree (O2) (min),Tournament Tree (O2) (med),Tournament Tree (O2) (max),Tournament Tree (O3) (min),Tournament Tree (O3) (med),Tournament Tree (O3) (max),Tournament Tree (Os) (min),Tournament Tree (Os) (med),Tournament Tree (Os) (max),Tournament Tree (Oz) (min),Tournament Tree (Oz) (med),Tournament Tree (Oz) (max),State Machine (O0) (min),State Machine (O0) (med),State Machine (O0) (max),State Machine (O1) (min),State Machine (O1) (med),State Machine (O1) (max),State Machine (O2) (min),State Machine (O2) (med),State Machine (O2) (max),State Machine (O3) (min),State Machine (O3) (med),State Machine (O3) (max),State Machine (Os) (min),State Machine (Os) (med),State Machine (Os) (max),State Machine (Oz) (min),State Machine (Oz) (med),State Machine (Oz) (max)
+3,824,824,824,441,441,441,450,450,450,392,392,392,486,486,486,481,481,481,325,325,325,205,205,205,187,187,187,184,184,184,182,182,182,190,190,190,340,340,340,184,184,184,187,187,187,186,186,186,183,183,183,183,183,183,511,511,511,224,224,224,209,209,209,201,201,201,205,205,205,213,213,213,702,702,702,209,209,209,262,262,262,264,264,264,260,260,260,255,255,255,173,173,173,160,160,160,148,148,148,136,136,136,141,141,141,144,144,144
+4,1099,1099,1099,629,629,629,632,632,632,579,579,579,657,657,657,656,656,656,501,501,501,312,312,312,276,276,276,271,271,271,273,273,273,275,275,275,528,528,528,276,276,276,274,274,274,280,280,280,275,275,275,278,278,278,738,738,738,352,352,352,312,312,312,309,309,309,322,322,322,334,334,334,1106,1106,1106,347,347,347,441,441,441,444,444,444,421,421,421,419,419,419,277,277,277,262,262,262,232,232,232,219,219,219,230,230,230,229,229,229
+5,1372,1372,1372,810,810,810,800,800,800,727,727,727,836,836,836,829,829,829,727,727,727,425,425,425,400,400,400,368,368,368,361,361,361,362,362,362,746,746,746,365,365,365,376,376,376,373,373,373,374,374,374,377,377,377,1011,1011,1011,479,479,479,432,432,432,428,428,428,430,430,430,472,472,472,1537,1537,1537,519,519,519,616,616,616,642,642,642,610,610,610,613,613,613,441,441,441,368,368,368,344,344,344,338,338,338,330,330,330,329,329,329
+6,1667,1667,1667,974,974,974,990,990,990,891,891,891,1042,1042,1042,1027,1027,1027,945,945,945,538,538,538,533,533,533,481,481,481,464,464,464,469,469,469,992,992,992,463,463,463,472,472,472,459,459,459,435,435,435,432,432,432,1348,1348,1348,695,695,695,605,605,605,625,625,625,622,622,622,677,677,677,1882,1882,1882,606,606,606,780,780,780,825,825,825,724,724,724,728,728,728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7,1943,1943,1943,1150,1150,1150,1131,1131,1131,1020,1020,1020,1177,1177,1177,1225,1225,1225,1170,1170,1170,719,719,719,639,639,639,617,617,617,551,551,551,579,579,579,1210,1210,1210,551,551,551,558,558,558,558,558,558,537,537,537,534,534,534,1727,1727,1727,908,908,908,804,804,804,793,793,793,807,807,807,855,855,855,2387,2387,2387,847,847,847,999,999,999,1066,1066,1066,953,953,953,955,955,955,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,2284,2284,2284,1375,1375,1375,1417,1417,1417,1223,1223,1223,1377,1377,1377,1456,1456,1456,1422,1422,1422,807,807,807,770,770,770,731,731,731,658,658,658,693,693,693,1478,1478,1478,648,648,648,661,661,661,658,658,658,637,637,637,631,631,631,2027,2027,2027,1056,1056,1056,917,917,917,900,900,900,931,931,931,985,985,985,2809,2809,2809,955,955,955,1154,1154,1154,1220,1220,1220,1113,1113,1113,1104,1104,1104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9,3122,3122,3122,1501,1501,1501,1556,1556,1556,1433,1433,1433,1572,1572,1572,1545,1545,1545,1698,1698,1698,904,904,904,893,893,893,875,875,875,778,778,778,809,809,809,1797,1797,1797,760,760,760,770,770,770,772,772,772,757,757,757,755,755,755,2308,2308,2308,1205,1205,1205,1042,1042,1042,1033,1033,1033,1060,1060,1060,1132,1132,1132,3356,3356,3356,1216,1216,1216,1435,1435,1435,1544,1544,1544,1384,1384,1384,1365,1365,1365,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10,3495,3495,3495,1674,1674,1674,1721,1721,1721,1577,1577,1577,1731,1731,1731,1691,1691,1691,1970,1970,1970,1069,1069,1069,1013,1013,1013,994,994,994,897,897,897,929,929,929,2108,2108,2108,870,870,870,879,879,879,882,882,882,873,873,873,868,868,868,2704,2704,2704,1442,1442,1442,1224,1224,1224,1209,1209,1209,1250,1250,1250,1329,1329,1329,3906,3906,3906,1426,1426,1426,1659,1659,1659,1809,1809,1809,1610,1610,1610,1602,1602,1602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11,3871,3871,3871,1852,1852,1852,1908,1908,1908,1768,1768,1768,1903,1903,1903,1893,1893,1893,2299,2299,2299,1202,1202,1202,1152,1152,1152,1129,1129,1129,1029,1029,1029,1071,1071,1071,2441,2441,2441,991,991,991,994,994,994,1002,1002,1002,996,996,996,989,989,989,3147,3147,3147,1710,1710,1710,1429,1429,1429,1420,1420,1420,1507,1507,1507,1571,1571,1571,4444,4444,4444,1624,1624,1624,1867,1867,1867,2046,2046,2046,1821,1821,1821,1819,1819,1819,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+12,4246,4246,4246,2025,2025,2025,2086,2086,2086,1919,1919,1919,2084,2084,2084,2077,2077,2077,2586,2586,2586,1317,1317,1317,1270,1270,1270,1274,1274,1274,1159,1159,1159,1191,1191,1191,2767,2767,2767,1104,1104,1104,1109,1109,1109,1117,1117,1117,1096,1096,1096,1109,1109,1109,3537,3537,3537,1924,1924,1924,1637,1637,1637,1620,1620,1620,1665,1665,1665,1759,1759,1759,4915,4915,4915,1728,1728,1728,1996,1996,1996,2221,2221,2221,1948,1948,1948,1960,1960,1960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,4621,4621,4621,2207,2207,2207,2285,2285,2285,2066,2066,2066,2268,2268,2268,2252,2252,2252,2903,2903,2903,1480,1480,1480,1446,1446,1446,1465,1465,1465,1298,1298,1298,1320,1320,1320,3146,3146,3146,1220,1220,1220,1243,1243,1243,1237,1237,1237,1234,1234,1234,1229,1229,1229,3997,3997,3997,2202,2202,2202,1857,1857,1857,1845,1845,1845,1914,1914,1914,1989,1989,1989,5399,5399,5399,1996,1996,1996,2350,2350,2350,2489,2489,2489,2246,2246,2246,2215,2215,2215,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,4975,4975,4975,2400,2400,2400,2473,2473,2473,2249,2249,2249,2455,2455,2455,2493,2493,2493,3217,3217,3217,1651,1651,1651,1633,1633,1633,1557,1557,1557,1416,1416,1416,1462,1462,1462,3489,3489,3489,1357,1357,1357,1369,1369,1369,1380,1380,1380,1352,1352,1352,1359,1359,1359,4451,4451,4451,2504,2504,2504,2103,2103,2103,2093,2093,2093,2157,2157,2157,2262,2262,2262,5888,5888,5888,2147,2147,2147,2543,2543,2543,2703,2703,2703,2392,2392,2392,2392,2392,2392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+15,5376,5376,5376,2587,2587,2587,2692,2692,2692,2405,2405,2405,2647,2647,2647,2656,2656,2656,3562,3562,3562,1812,1812,1812,1807,1807,1807,1690,1690,1690,1568,1568,1568,1599,1599,1599,3894,3894,3894,1487,1487,1487,1511,1511,1511,1517,1517,1517,1499,1499,1499,1494,1494,1494,4983,4983,4983,2817,2817,2817,2417,2417,2417,2373,2373,2373,2437,2437,2437,2569,2569,2569,6344,6344,6344,2299,2299,2299,2709,2709,2709,2920,2920,2920,2606,2606,2606,2603,2603,2603,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,5813,5813,5813,2765,2765,2765,2947,2947,2947,2602,2602,2602,2846,2846,2846,2846,2846,2846,3934,3934,3934,1967,1967,1967,1982,1982,1982,1810,1810,1810,1683,1683,1683,1755,1755,1755,4315,4315,4315,1618,1618,1618,1632,1632,1632,1656,1656,1656,1611,1611,1611,1616,1616,1616,5325,5325,5325,2937,2937,2937,2546,2546,2546,2503,2503,2503,2549,2549,2549,2728,2728,2728,6817,6817,6817,2462,2462,2462,2879,2879,2879,3105,3105,3105,2801,2801,2801,2755,2755,2755,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+17,6947,6947,6947,3186,3186,3186,2979,2979,2979,2797,2797,2797,3052,3052,3052,3077,3077,3077,4335,4335,4335,2123,2123,2123,2173,2173,2173,2006,2006,2006,1830,1830,1830,1935,1935,1935,4736,4736,4736,1758,1758,1758,1764,1764,1764,1777,1777,1777,1745,1745,1745,1745,1745,1745,5715,5715,5715,3132,3132,3132,2693,2693,2693,2651,2651,2651,2745,2745,2745,2879,2879,2879,7459,7459,7459,2761,2761,2761,3235,3235,3235,3453,3453,3453,3125,3125,3125,3085,3085,3085,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,7341,7341,7341,3327,3327,3327,3138,3138,3138,2941,2941,2941,3207,3207,3207,3254,3254,3254,4677,4677,4677,2277,2277,2277,2349,2349,2349,2226,2226,2226,1972,1972,1972,2120,2120,2120,5216,5216,5216,1902,1902,1902,1914,1914,1914,1909,1909,1909,1866,1866,1866,1855,1855,1855,6157,6157,6157,3353,3353,3353,2896,2896,2896,2842,2842,2842,2923,2923,2923,3106,3106,3106,8126,8126,8126,3060,3060,3060,3570,3570,3570,3815,3815,3815,3435,3435,3435,3425,3425,3425,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+19,7740,7740,7740,3532,3532,3532,3293,3293,3293,3116,3116,3116,3406,3406,3406,3431,3431,3431,5090,5090,5090,2466,2466,2466,2556,2556,2556,2412,2412,2412,2131,2131,2131,2301,2301,2301,5703,5703,5703,2034,2034,2034,2056,2056,2056,2057,2057,2057,2020,2020,2020,1996,1996,1996,6630,6630,6630,3625,3625,3625,3137,3137,3137,3084,3084,3084,3170,3170,3170,3339,3339,3339,8737,8737,8737,3338,3338,3338,3905,3905,3905,4134,4134,4134,3795,3795,3795,3771,3771,3771,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,8163,8163,8163,3718,3718,3718,3455,3455,3455,3284,3284,3284,3583,3583,3583,3604,3604,3604,5463,5463,5463,2631,2631,2631,2740,2740,2740,2622,2622,2622,2291,2291,2291,2473,2473,2473,6140,6140,6140,2208,2208,2208,2207,2207,2207,2205,2205,2205,2157,2157,2157,2163,2163,2163,7054,7054,7054,3852,3852,3852,3344,3344,3344,3258,3258,3258,3364,3364,3364,3533,3533,3533,9338,9338,9338,3584,3584,3584,4157,4157,4157,4412,4412,4412,3986,3986,3986,3991,3991,3991,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
