@@ -37,8 +37,8 @@
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
 #include "merge_tournament.h"
-#include "merge_tournament_2.h"
-#include "merge_tournament_2_separate_init.h"
+#include "merge_tournament_cache.h"
+#include "merge_tournament_cache_separate_init.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
@@ -49,9 +49,9 @@
 Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
-	new MergeFind,
-	new MergeFindCache,
-	new MergeFindCacheSimd,
+//	new MergeFind,
+//	new MergeFindCache,
+//	new MergeFindCacheSimd,
 //
 //	new MergeQuickSort,
 //	new MergeStdSort,
@@ -61,8 +61,8 @@ Merge *functions[] = {
 //	new MergeDoubleBubbleSort,
 //
 //	new MergeInsertionSort,
-	new MergeInsert,
-	new MergeInsertCache,
+//	new MergeInsert,
+//	new MergeInsertCache,
 //	new MergeInsertDiscreteN,
 //	new MergeInsertionSortIndexes,
 //
@@ -73,14 +73,14 @@ Merge *functions[] = {
 //	new MergePseudoAvxSort,
 //	new MergePseudoAvxSortBinarySearch,
 //
-	new MergeHeap(),
+//	new MergeHeap(),
 //	new MergeHeapSeparateInit(),
 //	new MergeHeapStl(),
 //	new MergeHeapStlNaive,
 //
 //	new MergeTournament(),
-	new MergeTournament2(),
-//	new MergeTournament2SeparateInit(),
+//	new MergeTournamentCache(),
+//	new MergeTournamentCacheSeparateInit(),
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineLookupTable,
@@ -89,26 +89,47 @@ Merge *functions[] = {
 //	new MergeStateMachineLookupTableBinarySearch,
 //	new MergeStateMachineLookupTableBinarySearchFast,
 //
-//	new MergeInsertO0,
-//	new MergeInsertO1,
-//	new MergeInsertO2,
-//	new MergeInsertO3,
-//	new MergeInsertOs,
-//	new MergeInsertOz,
-//
-//	new MergeHeapO0,
-//	new MergeHeapO1,
-//	new MergeHeapO2,
-//	new MergeHeapO3,
-//	new MergeHeapOs,
-//	new MergeHeapOz,
-//
-//	new MergeStateMachineCompiledO0,
-//	new MergeStateMachineCompiledO1,
-//	new MergeStateMachineCompiledO2,
-//	new MergeStateMachineCompiledO3,
-//	new MergeStateMachineCompiledOs,
-//	new MergeStateMachineCompiledOz,
+	new MergeFindCacheSimdO0,
+	new MergeFindCacheSimdO1,
+	new MergeFindCacheSimdO2,
+	new MergeFindCacheSimdO3,
+	new MergeFindCacheSimdOs,
+	new MergeFindCacheSimdOz,
+
+	new MergeInsertO0,
+	new MergeInsertO1,
+	new MergeInsertO2,
+	new MergeInsertO3,
+	new MergeInsertOs,
+	new MergeInsertOz,
+
+	new MergeInsertCacheO0,
+	new MergeInsertCacheO1,
+	new MergeInsertCacheO2,
+	new MergeInsertCacheO3,
+	new MergeInsertCacheOs,
+	new MergeInsertCacheOz,
+
+	new MergeHeapO0,
+	new MergeHeapO1,
+	new MergeHeapO2,
+	new MergeHeapO3,
+	new MergeHeapOs,
+	new MergeHeapOz,
+
+	new MergeTournamentCacheO0(),
+	new MergeTournamentCacheO1(),
+	new MergeTournamentCacheO2(),
+	new MergeTournamentCacheO3(),
+	new MergeTournamentCacheOs(),
+	new MergeTournamentCacheOz(),
+
+	new MergeStateMachineCompiledO0,
+	new MergeStateMachineCompiledO1,
+	new MergeStateMachineCompiledO2,
+	new MergeStateMachineCompiledO3,
+	new MergeStateMachineCompiledOs,
+	new MergeStateMachineCompiledOz,
 };
 
 const size_t num_tests = sizeof(functions) / sizeof(Merge *);

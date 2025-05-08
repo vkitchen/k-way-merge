@@ -2,14 +2,14 @@
 
 #include "merge.h"
 
-class MergeTournament2SeparateInit : public Merge {
+class MergeTournamentCacheSeparateInit : public Merge {
 	private:
 		std::vector<int *> segments;
 		std::vector<std::pair<int, int>> tree;
 
 	public:
-		MergeTournament2SeparateInit() {
-			name = "Tournament Tree 2 (Init)";
+		MergeTournamentCacheSeparateInit() {
+			name = "Tournament Tree Cache (Init)";
 		}
 		bool init(struct test *, int) override;
 		bool merge(struct test *t, int n) override;

@@ -50,7 +50,7 @@ static size_t max_index_avx2(int32_t* array, size_t size) {
 	return maxindex;
 }
 
-bool MergeFindCacheSimd::merge(struct test *t, int n) {
+bool MergeFindCacheSimdOz::merge(struct test *t, int n) {
 	int rounded = (int)ceil((double)n / 8) * 8;
 
 	int **segments = (int **)malloc(sizeof(int *) * n);

@@ -2,7 +2,7 @@
 
 #include "harness.h"
 
-#include "merge_tournament_2_separate_init.h"
+#include "merge_tournament_cache.h"
 
 static size_t parent(size_t i) {
 	return i / 2;
@@ -13,6 +13,23 @@ static std::pair<int, int> play_game(std::vector<std::pair<int, int>> &tree, int
 	if (tree[x].first > tree[y].first)
 		return std::make_pair(x, y);
 	return std::make_pair(y, x);
+}
+
+static void initialise(std::vector<int *> &segments, std::vector<std::pair<int, int>> &tree) {
+	std::vector<int> winners(tree.size());
+
+	// Copy array into tree
+	for (size_t i = tree.size() / 2; i < tree.size(); i++)
+		winners[i] = i;
+
+	for (size_t i = tree.size() - 2; i > 0; i -= 2) {
+		auto [winner, loser] = play_game(tree, winners[i], winners[i+1]);
+		size_t p = parent(i);
+		winners[p] = winner;
+		tree[p] = std::make_pair(tree[loser].first, tree[loser].second);
+	}
+
+	tree[0] = std::make_pair(tree[winners[1]].first, tree[winners[1]].second);
 }
 
 static void replay_games(std::vector<std::pair<int, int>> &tree, int pos) {
@@ -35,32 +52,15 @@ static void replay_games(std::vector<std::pair<int, int>> &tree, int pos) {
 	tree[0] = winner;
 }
 
-bool MergeTournament2SeparateInit::init(struct test *t, int n) {
-	segments = std::vector<int *>(t->postings, t->postings + n);
-	tree = std::vector<std::pair<int, int>>(n * 2); // (val, pos)
+bool MergeTournamentCacheO1::merge(struct test *t, int n) {
+	std::vector<int *> segments(t->postings, t->postings + n);
+	std::vector<std::pair<int, int>> tree(n * 2); // (val, pos)
 
 	for (int i = 0; i < n; i++) 
 		tree[n+i] = std::make_pair(*t->postings[i], i);
 
-	std::vector<int> winners(tree.size());
+	initialise(segments, tree);
 
-	// Copy array into tree
-	for (size_t i = tree.size() / 2; i < tree.size(); i++)
-		winners[i] = i;
-
-	for (size_t i = tree.size() - 2; i > 0; i -= 2) {
-		auto [winner, loser] = play_game(tree, winners[i], winners[i+1]);
-		size_t p = parent(i);
-		winners[p] = winner;
-		tree[p] = std::make_pair(tree[loser].first, tree[loser].second);
-	}
-
-	tree[0] = std::make_pair(tree[winners[1]].first, tree[winners[1]].second);
-
-	return true;
-}
-
-bool MergeTournament2SeparateInit::merge(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {

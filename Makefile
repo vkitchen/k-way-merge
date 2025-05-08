@@ -28,26 +28,44 @@ SRC = \
 	merge_heap_stl.cpp \
 	merge_heap_stl_naive.cpp \
 	merge_tournament.cpp \
-	merge_tournament_2.cpp \
-	merge_tournament_2_separate_init.cpp \
+	merge_tournament_cache.cpp \
+	merge_tournament_cache_separate_init.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_lookup_table.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
 	merge_state_machine_lookup_table_asc.cpp \
 	merge_state_machine_lookup_table_binary_search.cpp \
 	merge_state_machine_lookup_table_binary_search_fast.cpp \
+	merge_find_cache_simd_O0.cpp \
+	merge_find_cache_simd_O1.cpp \
+	merge_find_cache_simd_O2.cpp \
+	merge_find_cache_simd_O3.cpp \
+	merge_find_cache_simd_Os.cpp \
+	merge_find_cache_simd_Oz.cpp \
 	merge_insert_O0.cpp \
 	merge_insert_O1.cpp \
 	merge_insert_O2.cpp \
 	merge_insert_O3.cpp \
 	merge_insert_Os.cpp \
 	merge_insert_Oz.cpp \
+	merge_insert_cache_O0.cpp \
+	merge_insert_cache_O1.cpp \
+	merge_insert_cache_O2.cpp \
+	merge_insert_cache_O3.cpp \
+	merge_insert_cache_Os.cpp \
+	merge_insert_cache_Oz.cpp \
 	merge_heap_O0.cpp \
 	merge_heap_O1.cpp \
 	merge_heap_O2.cpp \
 	merge_heap_O3.cpp \
 	merge_heap_Os.cpp \
 	merge_heap_Oz.cpp \
+	merge_tournament_cache_O0.cpp \
+	merge_tournament_cache_O1.cpp \
+	merge_tournament_cache_O2.cpp \
+	merge_tournament_cache_O3.cpp \
+	merge_tournament_cache_Os.cpp \
+	merge_tournament_cache_Oz.cpp \
 	merge_state_machine_compiled_O0.cpp \
 	merge_state_machine_compiled_O1.cpp \
 	merge_state_machine_compiled_O2.cpp \
@@ -64,6 +82,24 @@ all: gen gen-lookup gen-lookup-asc main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
+
+merge_find_cache_simd_O0.o: merge_find_cache_simd_O0.cpp
+	$(CXX) $(CFLAGS) -c $<
+
+merge_find_cache_simd_O1.o: merge_find_cache_simd_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_find_cache_simd_O2.o: merge_find_cache_simd_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_find_cache_simd_O3.o: merge_find_cache_simd_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_find_cache_simd_Os.o: merge_find_cache_simd_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_find_cache_simd_Oz.o: merge_find_cache_simd_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_insert_O0.o: merge_insert_O0.cpp
 	$(CXX) $(CFLAGS) -c $<
@@ -83,6 +119,24 @@ merge_insert_Os.o: merge_insert_Os.cpp
 merge_insert_Oz.o: merge_insert_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
+merge_insert_cache_O0.o: merge_insert_cache_O0.cpp
+	$(CXX) $(CFLAGS) -c $<
+
+merge_insert_cache_O1.o: merge_insert_cache_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_insert_cache_O2.o: merge_insert_cache_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_insert_cache_O3.o: merge_insert_cache_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_insert_cache_Os.o: merge_insert_cache_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_insert_cache_Oz.o: merge_insert_cache_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
 merge_heap_O0.o: merge_heap_O0.cpp
 	$(CXX) $(CFLAGS) -c $<
 
@@ -99,6 +153,24 @@ merge_heap_Os.o: merge_heap_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_heap_Oz.o: merge_heap_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_tournament_cache_O0.o: merge_tournament_cache_O0.cpp
+	$(CXX) $(CFLAGS) -c $<
+
+merge_tournament_cache_O1.o: merge_tournament_cache_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_tournament_cache_O2.o: merge_tournament_cache_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_tournament_cache_O3.o: merge_tournament_cache_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_tournament_cache_Os.o: merge_tournament_cache_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_tournament_cache_Oz.o: merge_tournament_cache_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_state_machine_compiled_O0.o: merge_state_machine_compiled_O0.cpp
