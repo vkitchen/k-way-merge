@@ -1,0 +1,64 @@
+COMPILER_VERSION 14.2.1 20250220 [revision 9ffecde121af883b60bbe60d00425036bc873048]
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 6
+ITER_COUNT 1
+NUM_TESTS 6
+SEED 1750301480
+
+Init: 3538
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 456
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (O2)                       | true    |      ? |       127,127,127 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       151,151,151 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       132,132,132 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       132,132,132 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       128,128,128 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       137,137,137 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 976
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (O2)                       | true    |      ? |       199,199,199 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       239,239,239 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       207,207,207 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       206,206,206 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       201,201,201 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       223,223,223 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1044
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (O2)                       | true    |      ? |       314,314,314 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       388,388,388 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       299,299,299 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       295,295,295 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       315,315,315 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       323,323,323 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1605
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (O2)                       | true    |      ? |       579,579,579 |             0.0000 |
+State Machine (O0)                       | true    |      ? |       710,710,710 |             0.0000 |
+State Machine (Os)                       | true    |      ? |       551,551,551 |             0.0000 |
+State Machine (Oz)                       | true    |      ? |       552,552,552 |             0.0000 |
+State Machine (O3)                       | true    |      ? |       576,576,576 |             0.0000 |
+State Machine (O1)                       | true    |      ? |       610,610,610 |             0.0000 |
+
+n,State Machine (O0),State Machine (O1),State Machine (O2),State Machine (O3),State Machine (Os),State Machine (Oz)
+3,151,137,127,128,132,132
+4,239,223,199,201,207,206
+5,388,323,314,315,299,295
+6,710,610,579,576,551,552
+
+n,State Machine (O0) (min),State Machine (O0) (med),State Machine (O0) (max),State Machine (O1) (min),State Machine (O1) (med),State Machine (O1) (max),State Machine (O2) (min),State Machine (O2) (med),State Machine (O2) (max),State Machine (O3) (min),State Machine (O3) (med),State Machine (O3) (max),State Machine (Os) (min),State Machine (Os) (med),State Machine (Os) (max),State Machine (Oz) (min),State Machine (Oz) (med),State Machine (Oz) (max)
+3,151,151,151,137,137,137,127,127,127,128,128,128,132,132,132,132,132,132
+4,239,239,239,223,223,223,199,199,199,201,201,201,207,207,207,206,206,206
+5,388,388,388,323,323,323,314,314,314,315,315,315,299,299,299,295,295,295
+6,710,710,710,610,610,610,579,579,579,576,576,576,551,551,551,552,552,552
