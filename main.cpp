@@ -33,6 +33,7 @@
 #include "merge_pseudo_avx_sort.h"
 #include "merge_pseudo_avx_sort_binary_search.h"
 #include "merge_heap.h"
+#include "merge_heap_cache.h"
 #include "merge_heap_separate_init.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
@@ -74,6 +75,7 @@ Merge *functions[] = {
 //	new MergePseudoAvxSortBinarySearch,
 //
 //	new MergeHeap(),
+//	new MergeHeapCache(),
 //	new MergeHeapSeparateInit(),
 //	new MergeHeapStl(),
 //	new MergeHeapStlNaive,
@@ -89,47 +91,54 @@ Merge *functions[] = {
 //	new MergeStateMachineLookupTableBinarySearch,
 //	new MergeStateMachineLookupTableBinarySearchFast,
 //
-	new MergeFindCacheSimdO0,
+//	new MergeFindCacheSimdO0,
 	new MergeFindCacheSimdO1,
 	new MergeFindCacheSimdO2,
 	new MergeFindCacheSimdO3,
 	new MergeFindCacheSimdOs,
 	new MergeFindCacheSimdOz,
-
-	new MergeInsertO0,
-	new MergeInsertO1,
-	new MergeInsertO2,
-	new MergeInsertO3,
-	new MergeInsertOs,
-	new MergeInsertOz,
-
-	new MergeInsertCacheO0,
-	new MergeInsertCacheO1,
-	new MergeInsertCacheO2,
-	new MergeInsertCacheO3,
-	new MergeInsertCacheOs,
-	new MergeInsertCacheOz,
-
-	new MergeHeapO0,
-	new MergeHeapO1,
-	new MergeHeapO2,
-	new MergeHeapO3,
-	new MergeHeapOs,
-	new MergeHeapOz,
-
-	new MergeTournamentCacheO0(),
+//
+//	new MergeInsertO0,
+//	new MergeInsertO1,
+//	new MergeInsertO2,
+//	new MergeInsertO3,
+//	new MergeInsertOs,
+//	new MergeInsertOz,
+//
+//	new MergeInsertCacheO0,
+//	new MergeInsertCacheO1,
+//	new MergeInsertCacheO2,
+//	new MergeInsertCacheO3,
+//	new MergeInsertCacheOs,
+//	new MergeInsertCacheOz,
+//
+//	new MergeHeapO0,
+//	new MergeHeapO1,
+//	new MergeHeapO2,
+//	new MergeHeapO3,
+//	new MergeHeapOs,
+//	new MergeHeapOz,
+//
+//	new MergeHeapCacheO0,
+	new MergeHeapCacheO1,
+	new MergeHeapCacheO2,
+	new MergeHeapCacheO3,
+	new MergeHeapCacheOs,
+	new MergeHeapCacheOz,
+//
+//	new MergeTournamentCacheO0(),
 	new MergeTournamentCacheO1(),
 	new MergeTournamentCacheO2(),
 	new MergeTournamentCacheO3(),
 	new MergeTournamentCacheOs(),
 	new MergeTournamentCacheOz(),
-
-	new MergeStateMachineCompiledO0,
-	new MergeStateMachineCompiledO1,
-	new MergeStateMachineCompiledO2,
-	new MergeStateMachineCompiledO3,
-	new MergeStateMachineCompiledOs,
-	new MergeStateMachineCompiledOz,
+//
+//	new MergeStateMachineCompiledO0,
+//	new MergeStateMachineCompiledO1,
+//	new MergeStateMachineCompiledO2,
+//	new MergeStateMachineCompiledO3,
+//	new MergeStateMachineCompiledOs,
+//	new MergeStateMachineCompiledOz,
 };
 
 const size_t num_tests = sizeof(functions) / sizeof(Merge *);

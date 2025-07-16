@@ -24,6 +24,7 @@ SRC = \
 	merge_bubble_sort_fast.cpp \
 	merge_double_bubble_sort.cpp \
 	merge_heap.cpp \
+	merge_heap_cache.cpp \
 	merge_heap_separate_init.cpp \
 	merge_heap_stl.cpp \
 	merge_heap_stl_naive.cpp \
@@ -60,6 +61,12 @@ SRC = \
 	merge_heap_O3.cpp \
 	merge_heap_Os.cpp \
 	merge_heap_Oz.cpp \
+	merge_heap_cache_O0.cpp \
+	merge_heap_cache_O1.cpp \
+	merge_heap_cache_O2.cpp \
+	merge_heap_cache_O3.cpp \
+	merge_heap_cache_Os.cpp \
+	merge_heap_cache_Oz.cpp \
 	merge_tournament_cache_O0.cpp \
 	merge_tournament_cache_O1.cpp \
 	merge_tournament_cache_O2.cpp \
@@ -153,6 +160,24 @@ merge_heap_Os.o: merge_heap_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_heap_Oz.o: merge_heap_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_heap_cache_O0.o: merge_heap_cache_O0.cpp
+	$(CXX) $(CFLAGS) -c $<
+
+merge_heap_cache_O1.o: merge_heap_cache_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_heap_cache_O2.o: merge_heap_cache_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_heap_cache_O3.o: merge_heap_cache_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_heap_cache_Os.o: merge_heap_cache_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_heap_cache_Oz.o: merge_heap_cache_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_tournament_cache_O0.o: merge_tournament_cache_O0.cpp
