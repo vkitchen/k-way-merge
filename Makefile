@@ -32,6 +32,7 @@ SRC = \
 	merge_tournament_cache.cpp \
 	merge_tournament_cache_separate_init.cpp \
 	merge_state_machine_compiled.cpp \
+	merge_state_machine_compiled_cache.cpp \
 	merge_state_machine_lookup_table.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
 	merge_state_machine_lookup_table_asc.cpp \
@@ -85,7 +86,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-lookup gen-lookup-asc main
+all: gen gen-cache gen-lookup gen-lookup-asc main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -220,6 +221,10 @@ gen: gen.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen.o
 	for i in `seq 3 7`; do ./gen "$$i" > "state_machine_$$i.cpp"; done
 
+gen-cache: gen_cache.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_cache.o
+	for i in `seq 3 7`; do ./gen-cache "$$i" > "state_machine_cache_$$i.cpp"; done
+
 gen-lookup: gen_lookup.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_lookup.o
 	for i in `seq 3 8`; do ./gen-lookup "$$i" > "state_table_$$i.h"; done
@@ -232,4 +237,4 @@ main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state_machine_*.cpp state_table_*.h gen.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
+	rm state_machine_*.cpp state_table_*.h gen.o gen_cache.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)

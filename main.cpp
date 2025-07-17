@@ -41,6 +41,7 @@
 #include "merge_tournament_cache.h"
 #include "merge_tournament_cache_separate_init.h"
 #include "merge_state_machine_compiled.h"
+#include "merge_state_machine_compiled_cache.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
 #include "merge_state_machine_lookup_table_asc.h"
@@ -84,7 +85,8 @@ Merge *functions[] = {
 //	new MergeTournamentCache(),
 //	new MergeTournamentCacheSeparateInit(),
 //
-//	new MergeStateMachineCompiled,
+	new MergeStateMachineCompiled,
+	new MergeStateMachineCompiledCache,
 //	new MergeStateMachineLookupTable,
 //	new MergeStateMachineLookupTableAlt,
 //	new MergeStateMachineLookupTableAsc,
@@ -92,11 +94,11 @@ Merge *functions[] = {
 //	new MergeStateMachineLookupTableBinarySearchFast,
 //
 //	new MergeFindCacheSimdO0,
-	new MergeFindCacheSimdO1,
-	new MergeFindCacheSimdO2,
-	new MergeFindCacheSimdO3,
-	new MergeFindCacheSimdOs,
-	new MergeFindCacheSimdOz,
+//	new MergeFindCacheSimdO1,
+//	new MergeFindCacheSimdO2,
+//	new MergeFindCacheSimdO3,
+//	new MergeFindCacheSimdOs,
+//	new MergeFindCacheSimdOz,
 //
 //	new MergeInsertO0,
 //	new MergeInsertO1,
@@ -120,18 +122,18 @@ Merge *functions[] = {
 //	new MergeHeapOz,
 //
 //	new MergeHeapCacheO0,
-	new MergeHeapCacheO1,
-	new MergeHeapCacheO2,
-	new MergeHeapCacheO3,
-	new MergeHeapCacheOs,
-	new MergeHeapCacheOz,
+//	new MergeHeapCacheO1,
+//	new MergeHeapCacheO2,
+//	new MergeHeapCacheO3,
+//	new MergeHeapCacheOs,
+//	new MergeHeapCacheOz,
 //
 //	new MergeTournamentCacheO0(),
-	new MergeTournamentCacheO1(),
-	new MergeTournamentCacheO2(),
-	new MergeTournamentCacheO3(),
-	new MergeTournamentCacheOs(),
-	new MergeTournamentCacheOz(),
+//	new MergeTournamentCacheO1(),
+//	new MergeTournamentCacheO2(),
+//	new MergeTournamentCacheO3(),
+//	new MergeTournamentCacheOs(),
+//	new MergeTournamentCacheOz(),
 //
 //	new MergeStateMachineCompiledO0,
 //	new MergeStateMachineCompiledO1,
