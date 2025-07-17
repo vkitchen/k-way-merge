@@ -42,6 +42,7 @@
 #include "merge_tournament_cache_separate_init.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
+#include "merge_state_machine_compiled_cache_simd.h"
 #include "merge_state_machine_lookup_table.h"
 #include "merge_state_machine_lookup_table_alt.h"
 #include "merge_state_machine_lookup_table_asc.h"
@@ -87,6 +88,7 @@ Merge *functions[] = {
 //
 	new MergeStateMachineCompiled,
 	new MergeStateMachineCompiledCache,
+	new MergeStateMachineCompiledCacheSimd,
 //	new MergeStateMachineLookupTable,
 //	new MergeStateMachineLookupTableAlt,
 //	new MergeStateMachineLookupTableAsc,
