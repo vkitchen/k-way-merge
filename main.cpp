@@ -24,6 +24,7 @@
 #include "merge_insertion_sort.h"
 #include "merge_insert.h"
 #include "merge_insert_cache.h"
+#include "merge_insert_cache_pair.h"
 #include "merge_insert_discrete_n.h"
 #include "merge_insertion_sort_indexes.h"
 #include "merge_avx_sort.h"
@@ -63,8 +64,9 @@ Merge *functions[] = {
 //	new MergeDoubleBubbleSort,
 //
 //	new MergeInsertionSort,
-//	new MergeInsert,
-//	new MergeInsertCache,
+	new MergeInsert,
+	new MergeInsertCache,
+	new MergeInsertCachePair,
 //	new MergeInsertDiscreteN,
 //	new MergeInsertionSortIndexes,
 //
@@ -85,8 +87,8 @@ Merge *functions[] = {
 //	new MergeTournamentCache(),
 //	new MergeTournamentCacheSeparateInit(),
 //
-	new MergeStateMachineCompiled,
-	new MergeStateMachineCompiledCache,
+//	new MergeStateMachineCompiled,
+//	new MergeStateMachineCompiledCache,
 //	new MergeStateMachineLookupTable,
 //	new MergeStateMachineLookupTableAlt,
 //	new MergeStateMachineLookupTableAsc,
@@ -141,6 +143,13 @@ Merge *functions[] = {
 //	new MergeStateMachineCompiledO3,
 //	new MergeStateMachineCompiledOs,
 //	new MergeStateMachineCompiledOz,
+//
+//	new MergeStateMachineCompiledCacheO0,
+//	new MergeStateMachineCompiledCacheO1,
+//	new MergeStateMachineCompiledCacheO2,
+//	new MergeStateMachineCompiledCacheO3,
+//	new MergeStateMachineCompiledCacheOs,
+//	new MergeStateMachineCompiledCacheOz,
 };
 
 const size_t num_tests = sizeof(functions) / sizeof(Merge *);

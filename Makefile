@@ -12,6 +12,7 @@ SRC = \
 	merge_insertion_sort.cpp \
 	merge_insert.cpp \
 	merge_insert_cache.cpp \
+	merge_insert_cache_pair.cpp \
 	merge_insert_discrete_n.cpp \
 	merge_insertion_sort_indexes.cpp \
 	merge_avx_sort.cpp \
