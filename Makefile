@@ -6,6 +6,9 @@ SRC = \
 	merge_baseline_copy_sort.cpp \
 	merge_find.cpp \
 	merge_find_cache.cpp \
+	merge_find_cache_3.cpp \
+	merge_find_cache_unrolled.cpp \
+	merge_find_cache_unrolled_alt.cpp \
 	merge_find_cache_simd.cpp \
 	merge_quick_sort.cpp \
 	merge_std_sort.cpp \

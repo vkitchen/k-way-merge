@@ -15,6 +15,9 @@
 #include "merge_baseline_copy_sort.h"
 #include "merge_find.h"
 #include "merge_find_cache.h"
+#include "merge_find_cache_3.h"
+#include "merge_find_cache_unrolled.h"
+#include "merge_find_cache_unrolled_alt.h"
 #include "merge_find_cache_simd.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
@@ -52,9 +55,12 @@
 Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
-//	new MergeFind,
-//	new MergeFindCache,
-//	new MergeFindCacheSimd,
+	new MergeFind,
+	new MergeFindCache,
+//	new MergeFindCache3,
+	new MergeFindCacheUnrolled,
+	new MergeFindCacheUnrolledAlt,
+	new MergeFindCacheSimd,
 //
 //	new MergeQuickSort,
 //	new MergeStdSort,
@@ -64,9 +70,9 @@ Merge *functions[] = {
 //	new MergeDoubleBubbleSort,
 //
 //	new MergeInsertionSort,
-	new MergeInsert,
-	new MergeInsertCache,
-	new MergeInsertCachePair,
+//	new MergeInsert,
+//	new MergeInsertCache,
+//	new MergeInsertCachePair,
 //	new MergeInsertDiscreteN,
 //	new MergeInsertionSortIndexes,
 //
@@ -87,8 +93,8 @@ Merge *functions[] = {
 //	new MergeTournamentCache(),
 //	new MergeTournamentCacheSeparateInit(),
 //
-//	new MergeStateMachineCompiled,
-//	new MergeStateMachineCompiledCache,
+	new MergeStateMachineCompiled,
+	new MergeStateMachineCompiledCache,
 //	new MergeStateMachineLookupTable,
 //	new MergeStateMachineLookupTableAlt,
 //	new MergeStateMachineLookupTableAsc,
