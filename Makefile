@@ -43,6 +43,12 @@ SRC = \
 	merge_state_machine_lookup_table_asc.cpp \
 	merge_state_machine_lookup_table_binary_search.cpp \
 	merge_state_machine_lookup_table_binary_search_fast.cpp \
+	merge_find_cache_unrolled_O0.cpp \
+	merge_find_cache_unrolled_O1.cpp \
+	merge_find_cache_unrolled_O2.cpp \
+	merge_find_cache_unrolled_O3.cpp \
+	merge_find_cache_unrolled_Os.cpp \
+	merge_find_cache_unrolled_Oz.cpp \
 	merge_find_cache_simd_O0.cpp \
 	merge_find_cache_simd_O1.cpp \
 	merge_find_cache_simd_O2.cpp \
