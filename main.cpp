@@ -18,6 +18,7 @@
 #include "merge_find_cache_3.h"
 #include "merge_find_cache_unrolled.h"
 #include "merge_find_cache_unrolled_alt.h"
+#include "merge_find_cache_unrolled_simd.h"
 #include "merge_find_cache_simd.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
@@ -55,11 +56,12 @@
 Merge *functions[] = {
 //	new MergeBaselineCopySort,
 //
-	new MergeFind,
+//	new MergeFind,
 	new MergeFindCache,
 //	new MergeFindCache3,
 	new MergeFindCacheUnrolled,
-	new MergeFindCacheUnrolledAlt,
+//	new MergeFindCacheUnrolledAlt,
+	new MergeFindCacheUnrolledSimd,
 	new MergeFindCacheSimd,
 //
 //	new MergeQuickSort,
