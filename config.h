@@ -6,3 +6,4 @@
 #define STATE6
 // #define STATE7
 #define SEED 0
+#define ORDERED_TESTS

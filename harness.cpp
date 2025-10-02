@@ -41,6 +41,25 @@ void harness_generate(struct test *t) {
 		std::sort(t->postings[i], &t->postings[i][t->length], std::greater<int>());
 }
 
+void harness_generate_ordered(struct test *t) {
+	size_t i, j;
+
+	/* Fill temporary buffer */
+	for (i = 0; i < t->count * t->length; i++)
+		t->results[i] = (rand() % (INT_MAX - 1)) + 1;
+
+	/* Sort */
+	std::sort(t->results, &t->results[t->count * t->length], std::greater<int>());
+
+	/* Fill from buffer */
+	for (i = 0; i < t->count; i++)
+		for (j = 0; j < t->length; j++)
+			t->postings[i][j] = t->results[i*t->length + j];
+
+	/* Empty temporary buffer */
+	memset(t->results, 0, sizeof(int) * (t->length * t->count + 1));
+}
+
 void harness_reset(struct test *t) {
 	memset(t->results, 0, sizeof(int) * (t->length * t->count + 1));
 }

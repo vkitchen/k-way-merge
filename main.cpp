@@ -186,6 +186,11 @@ int main() {
 	printf("ARRAY_COUNT %d\n", ARRAY_COUNT);
 	printf("ITER_COUNT %d\n", ITER_COUNT);
 	printf("NUM_TESTS %zd\n", num_tests);
+#ifdef ORDERED_TESTS
+	puts("TEST_TYPE ordered");
+#else
+	puts("TEST_TYPE random");
+#endif
 	printf("SEED %d\n", seed);
 
 	std::mt19937 mt(seed);
@@ -194,7 +199,12 @@ int main() {
 	auto time_begin = std::chrono::steady_clock::now();
 
 	struct test *t = harness_new(ARRAY_LENGTH, ARRAY_COUNT);
+
+#ifdef ORDERED_TESTS
+	harness_generate_ordered(t);
+#else
 	harness_generate(t);
+#endif
 
 	auto time_end = std::chrono::steady_clock::now();
 
