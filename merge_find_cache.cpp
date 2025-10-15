@@ -23,8 +23,8 @@ bool MergeFindCache::merge(struct test *t, int n) {
 		if (cache[best] == 0)
 			break;
 
-		t->results[pos++] = *segments[best]++;
-		cache[best] = segments[best][0];
+		t->results[pos++] = cache[best];
+		cache[best] = *++segments[best];
 	}
 
 	free(cache);
