@@ -104,7 +104,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-lookup gen-lookup-asc main
+all: gen gen-cache gen-lookup gen-lookup-asc gen-find gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -268,6 +268,18 @@ gen-lookup: gen_lookup.o
 gen-lookup-asc: gen_lookup_asc.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_lookup_asc.o
 	for i in `seq 3 8`; do ./gen-lookup-asc "$$i" > "state_table_asc_$$i.h"; done
+
+.PHONY: gen-find
+gen-find:
+	- rm find_unrolled.cpp
+	for i in `seq 3 50`; do ./gen_find.rb "$$i" >> find_unrolled.cpp; done
+	./gen_find_switch.rb 50 >> find_unrolled.cpp
+
+.PHONY: gen-find-best
+gen-find-best:
+	- rm find_unrolled_best.cpp
+	for i in `seq 3 50`; do ./gen_find_best.rb "$$i" >> find_unrolled_best.cpp; done
+	./gen_find_switch.rb 50 >> find_unrolled_best.cpp
 
 main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
