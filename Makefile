@@ -271,15 +271,11 @@ gen-lookup-asc: gen_lookup_asc.o
 
 .PHONY: gen-find
 gen-find:
-	- rm find_unrolled.cpp
-	for i in `seq 3 50`; do ./gen_find.rb "$$i" >> find_unrolled.cpp; done
-	./gen_find_switch.rb 50 >> find_unrolled.cpp
+	./gen_find.rb 200 > find_unrolled.cpp
 
 .PHONY: gen-find-best
 gen-find-best:
-	- rm find_unrolled_best.cpp
-	for i in `seq 3 50`; do ./gen_find_best.rb "$$i" >> find_unrolled_best.cpp; done
-	./gen_find_switch.rb 50 >> find_unrolled_best.cpp
+	./gen_find_best.rb 200 > find_unrolled_best.cpp
 
 main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
