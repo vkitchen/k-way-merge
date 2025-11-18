@@ -271,11 +271,11 @@ gen-lookup-asc: gen_lookup_asc.o
 
 .PHONY: gen-find
 gen-find:
-	./gen_find.rb 200 > find_unrolled.cpp
+	./gen_find.rb 50 > find_unrolled.cpp
 
 .PHONY: gen-find-best
 gen-find-best:
-	./gen_find_best.rb 200 > find_unrolled_best.cpp
+	./gen_find_best.rb 50 > find_unrolled_best.cpp
 
 main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
