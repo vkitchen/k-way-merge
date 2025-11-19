@@ -1,0 +1,895 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 1
+NUM_TESTS 2
+TEST_TYPE random
+SEED 1763511158
+
+Init: 5415
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 49
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          40,40,40 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          17,17,17 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 88
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          55,55,55 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          25,25,25 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 89
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          71,71,71 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          33,33,33 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          86,86,86 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          43,43,43 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 125
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       102,102,102 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          53,53,53 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 161
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       124,124,124 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          65,65,65 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 172
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       137,137,137 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       151,151,151 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          88,88,88 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 218
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       169,169,169 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       100,100,100 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       185,185,185 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       110,110,110 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 270
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       201,201,201 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       137,137,137 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 308
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       218,218,218 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       155,155,155 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 322
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       237,237,237 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       177,177,177 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 369
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       259,259,259 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       196,196,196 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 361
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       256,256,256 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       217,217,217 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       273,273,273 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       238,238,238 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 425
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       287,287,287 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       257,257,257 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 463
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       303,303,303 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       270,270,270 |             0.0000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 483
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       319,319,319 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       289,289,289 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 525
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       336,336,336 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       307,307,307 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 524
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       351,351,351 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       327,327,327 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 571
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       367,367,367 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       343,343,343 |             0.0000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 574
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       377,377,377 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       363,363,363 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 637
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       389,389,389 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       385,385,385 |             0.0000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 626
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       405,405,405 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       371,371,371 |             0.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 686
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       418,418,418 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       392,392,392 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       435,435,435 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       412,412,412 |             0.0000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 742
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       452,452,452 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       435,435,435 |             0.0000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 735
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       464,464,464 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       454,454,454 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 816
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       487,487,487 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       470,470,470 |             0.0000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 796
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       515,515,515 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       488,488,488 |             0.0000 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 851
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       526,526,526 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       502,502,502 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       546,546,546 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       542,542,542 |             0.0000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 898
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       557,557,557 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       557,557,557 |             0.0000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 909
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       574,574,574 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       577,577,577 |             0.0000 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 958
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       590,590,590 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       595,595,595 |             0.0000 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 946
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       608,608,608 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       616,616,616 |             0.0000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1012
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       626,626,626 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       635,635,635 |             0.0000 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1029
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       644,644,644 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       654,654,654 |             0.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1091
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       656,656,656 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       675,675,675 |             0.0000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1070
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       676,676,676 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       735,735,735 |             0.0000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1157
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       693,693,693 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       702,702,702 |             0.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1129
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       704,704,704 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       719,719,719 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1202
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       731,731,731 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       738,738,738 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1183
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       745,745,745 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       762,762,762 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       765,765,765 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       766,766,766 |             0.0000 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1260
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       821,821,821 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       792,792,792 |             0.0000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1321
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       837,837,837 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       820,820,820 |             0.0000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1310
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       853,853,853 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       846,846,846 |             0.0000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1376
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       871,871,871 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       876,876,876 |             0.0000 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1391
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       886,886,886 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       900,900,900 |             0.0000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1448
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       904,904,904 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       902,902,902 |             0.0000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1414
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       926,926,926 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       921,921,921 |             0.0000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1505
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       946,946,946 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       942,942,942 |             0.0000 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1528
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       969,969,969 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       957,957,957 |             0.0000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1595
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       979,979,979 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       982,982,982 |             0.0000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1531
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       995,995,995 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       995,995,995 |             0.0000 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1628
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1012,1012,1012 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1027,1027,1027 |             0.0000 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1630
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1030,1030,1030 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1043,1043,1043 |             0.0000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1685
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1065,1065,1065 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1069,1069,1069 |             0.0000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1655
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1067,1067,1067 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1091,1091,1091 |             0.0000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1722
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1087,1087,1087 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1105,1105,1105 |             0.0000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1130,1130,1130 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1121,1121,1121 |             0.0000 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1825
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1147,1147,1147 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1139,1139,1139 |             0.0000 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1778
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1161,1161,1161 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1159,1159,1159 |             0.0000 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1842
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1176,1176,1176 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1168,1168,1168 |             0.0000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1865
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1197,1197,1197 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1192,1192,1192 |             0.0000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1906
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1213,1213,1213 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1212,1212,1212 |             0.0000 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1884
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1231,1231,1231 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1237,1237,1237 |             0.0000 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1993
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1255,1255,1255 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1260,1260,1260 |             0.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1991
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1299,1299,1299 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1289,1289,1289 |             0.0000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 2057
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1308,1308,1308 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1305,1305,1305 |             0.0000 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 2066
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1328,1328,1328 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1394,1394,1394 |             0.0000 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1334,1334,1334 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1350,1350,1350 |             0.0000 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 2107
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1352,1352,1352 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1371,1371,1371 |             0.0000 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2193
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1390,1390,1390 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1409,1409,1409 |             0.0000 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2171
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1408,1408,1408 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1424,1424,1424 |             0.0000 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2232
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1410,1410,1410 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1431,1431,1431 |             0.0000 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2193
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1519,1519,1519 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1452,1452,1452 |             0.0000 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2287
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1534,1534,1534 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1478,1478,1478 |             0.0000 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1546,1546,1546 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1482,1482,1482 |             0.0000 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2352
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1568,1568,1568 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1525,1525,1525 |             0.0000 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1587,1587,1587 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1547,1547,1547 |             0.0000 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2470
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1631,1631,1631 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1557,1557,1557 |             0.0000 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2399
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1623,1623,1623 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1572,1572,1572 |             0.0000 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2481
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1653,1653,1653 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1608,1608,1608 |             0.0000 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2462
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1629,1629,1629 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1619,1619,1619 |             0.0000 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2668
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1674,1674,1674 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1678,1678,1678 |             0.0000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2582
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1670,1670,1670 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1797,1797,1797 |             0.0000 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2689
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1684,1684,1684 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1707,1707,1707 |             0.0000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2580
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1704,1704,1704 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1785,1785,1785 |             0.0000 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2662
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1710,1710,1710 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1744,1744,1744 |             0.0000 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2649
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1736,1736,1736 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1769,1769,1769 |             0.0000 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2751
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1757,1757,1757 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1779,1779,1779 |             0.0000 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2718
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1848,1848,1848 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1830,1830,1830 |             0.0000 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2798
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1857,1857,1857 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1836,1836,1836 |             0.0000 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2757
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1882,1882,1882 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1846,1846,1846 |             0.0000 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1893,1893,1893 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |    1872,1872,1872 |             0.0000 |
+
+n,Find SIMD (O2),Insert Cache (O3)
+3,40,17
+4,55,25
+5,71,33
+6,86,43
+7,102,53
+8,124,65
+9,137,75
+10,151,88
+11,169,100
+12,185,110
+13,201,137
+14,218,155
+15,237,177
+16,259,196
+17,256,217
+18,273,238
+19,287,257
+20,303,270
+21,319,289
+22,336,307
+23,351,327
+24,367,343
+25,377,363
+26,389,385
+27,405,371
+28,418,392
+29,435,412
+30,452,435
+31,464,454
+32,487,470
+33,515,488
+34,526,502
+35,546,542
+36,557,557
+37,574,577
+38,590,595
+39,608,616
+40,626,635
+41,644,654
+42,656,675
+43,676,735
+44,693,702
+45,704,719
+46,731,738
+47,745,762
+48,765,766
+49,821,792
+50,837,820
+51,853,846
+52,871,876
+53,886,900
+54,904,902
+55,926,921
+56,946,942
+57,969,957
+58,979,982
+59,995,995
+60,1012,1027
+61,1030,1043
+62,1065,1069
+63,1067,1091
+64,1087,1105
+65,1130,1121
+66,1147,1139
+67,1161,1159
+68,1176,1168
+69,1197,1192
+70,1213,1212
+71,1231,1237
+72,1255,1260
+73,1299,1289
+74,1308,1305
+75,1328,1394
+76,1334,1350
+77,1352,1371
+78,1390,1409
+79,1408,1424
+80,1410,1431
+81,1519,1452
+82,1534,1478
+83,1546,1482
+84,1568,1525
+85,1587,1547
+86,1631,1557
+87,1623,1572
+88,1653,1608
+89,1629,1619
+90,1674,1678
+91,1670,1797
+92,1684,1707
+93,1704,1785
+94,1710,1744
+95,1736,1769
+96,1757,1779
+97,1848,1830
+98,1857,1836
+99,1882,1846
+100,1893,1872
+
+n,Find SIMD (O2) (min),Find SIMD (O2) (med),Find SIMD (O2) (max),Insert Cache (O3) (min),Insert Cache (O3) (med),Insert Cache (O3) (max)
+3,40,40,40,17,17,17
+4,55,55,55,25,25,25
+5,71,71,71,33,33,33
+6,86,86,86,43,43,43
+7,102,102,102,53,53,53
+8,124,124,124,65,65,65
+9,137,137,137,75,75,75
+10,151,151,151,88,88,88
+11,169,169,169,100,100,100
+12,185,185,185,110,110,110
+13,201,201,201,137,137,137
+14,218,218,218,155,155,155
+15,237,237,237,177,177,177
+16,259,259,259,196,196,196
+17,256,256,256,217,217,217
+18,273,273,273,238,238,238
+19,287,287,287,257,257,257
+20,303,303,303,270,270,270
+21,319,319,319,289,289,289
+22,336,336,336,307,307,307
+23,351,351,351,327,327,327
+24,367,367,367,343,343,343
+25,377,377,377,363,363,363
+26,389,389,389,385,385,385
+27,405,405,405,371,371,371
+28,418,418,418,392,392,392
+29,435,435,435,412,412,412
+30,452,452,452,435,435,435
+31,464,464,464,454,454,454
+32,487,487,487,470,470,470
+33,515,515,515,488,488,488
+34,526,526,526,502,502,502
+35,546,546,546,542,542,542
+36,557,557,557,557,557,557
+37,574,574,574,577,577,577
+38,590,590,590,595,595,595
+39,608,608,608,616,616,616
+40,626,626,626,635,635,635
+41,644,644,644,654,654,654
+42,656,656,656,675,675,675
+43,676,676,676,735,735,735
+44,693,693,693,702,702,702
+45,704,704,704,719,719,719
+46,731,731,731,738,738,738
+47,745,745,745,762,762,762
+48,765,765,765,766,766,766
+49,821,821,821,792,792,792
+50,837,837,837,820,820,820
+51,853,853,853,846,846,846
+52,871,871,871,876,876,876
+53,886,886,886,900,900,900
+54,904,904,904,902,902,902
+55,926,926,926,921,921,921
+56,946,946,946,942,942,942
+57,969,969,969,957,957,957
+58,979,979,979,982,982,982
+59,995,995,995,995,995,995
+60,1012,1012,1012,1027,1027,1027
+61,1030,1030,1030,1043,1043,1043
+62,1065,1065,1065,1069,1069,1069
+63,1067,1067,1067,1091,1091,1091
+64,1087,1087,1087,1105,1105,1105
+65,1130,1130,1130,1121,1121,1121
+66,1147,1147,1147,1139,1139,1139
+67,1161,1161,1161,1159,1159,1159
+68,1176,1176,1176,1168,1168,1168
+69,1197,1197,1197,1192,1192,1192
+70,1213,1213,1213,1212,1212,1212
+71,1231,1231,1231,1237,1237,1237
+72,1255,1255,1255,1260,1260,1260
+73,1299,1299,1299,1289,1289,1289
+74,1308,1308,1308,1305,1305,1305
+75,1328,1328,1328,1394,1394,1394
+76,1334,1334,1334,1350,1350,1350
+77,1352,1352,1352,1371,1371,1371
+78,1390,1390,1390,1409,1409,1409
+79,1408,1408,1408,1424,1424,1424
+80,1410,1410,1410,1431,1431,1431
+81,1519,1519,1519,1452,1452,1452
+82,1534,1534,1534,1478,1478,1478
+83,1546,1546,1546,1482,1482,1482
+84,1568,1568,1568,1525,1525,1525
+85,1587,1587,1587,1547,1547,1547
+86,1631,1631,1631,1557,1557,1557
+87,1623,1623,1623,1572,1572,1572
+88,1653,1653,1653,1608,1608,1608
+89,1629,1629,1629,1619,1619,1619
+90,1674,1674,1674,1678,1678,1678
+91,1670,1670,1670,1797,1797,1797
+92,1684,1684,1684,1707,1707,1707
+93,1704,1704,1704,1785,1785,1785
+94,1710,1710,1710,1744,1744,1744
+95,1736,1736,1736,1769,1769,1769
+96,1757,1757,1757,1779,1779,1779
+97,1848,1848,1848,1830,1830,1830
+98,1857,1857,1857,1836,1836,1836
+99,1882,1882,1882,1846,1846,1846
+100,1893,1893,1893,1872,1872,1872
