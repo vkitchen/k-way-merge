@@ -1,0 +1,35 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 4
+ITER_COUNT 1
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1764128955
+
+Init: 2431
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 522
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Binary Search Cache        | false   |      ? |                 ? |                  ? | Unsupported
+State Machine Binary Search              | false   |      ? |                 ? |                  ? | Unsupported
+State Machine Cache                      | true    |      ? |       115,115,115 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |       122,122,122 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1275
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Binary Search Cache        | true    |      ? |       213,213,213 |             0.0000 |
+State Machine Binary Search              | true    |      ? |       230,230,230 |             0.0000 |
+State Machine Cache                      | true    |      ? |       178,178,178 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |       194,194,194 |             0.0000 |
+
+n,State Machine (Compiled),State Machine Cache,State Machine Binary Search,State Machine Binary Search Cache
+3,122,115,0,0
+4,194,178,230,213
+
+n,State Machine (Compiled) (min),State Machine (Compiled) (med),State Machine (Compiled) (max),State Machine Cache (min),State Machine Cache (med),State Machine Cache (max),State Machine Binary Search (min),State Machine Binary Search (med),State Machine Binary Search (max),State Machine Binary Search Cache (min),State Machine Binary Search Cache (med),State Machine Binary Search Cache (max)
+3,122,122,122,115,115,115,0,0,0,0,0,0
+4,194,194,194,178,178,178,230,230,230,213,213,213

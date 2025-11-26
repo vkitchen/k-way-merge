@@ -39,6 +39,8 @@ SRC = \
 	merge_tournament_cache_separate_init.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_compiled_cache.cpp \
+	merge_state_machine_compiled_binary_search.cpp \
+	merge_state_machine_compiled_binary_search_cache.cpp \
 	merge_state_machine_lookup_table.cpp \
 	merge_state_machine_lookup_table_alt.cpp \
 	merge_state_machine_lookup_table_asc.cpp \
@@ -104,7 +106,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-lookup gen-lookup-asc gen-find gen-find-best main
+all: gen gen-cache gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -260,6 +262,14 @@ gen: gen.o
 gen-cache: gen_cache.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_cache.o
 	for i in `seq 3 7`; do ./gen-cache "$$i" > "state_machine_cache_$$i.cpp"; done
+
+gen-binary-search-4: gen_binary_search_4.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_binary_search_4.o
+	./gen-binary-search-4 > "state_machine_binary_search_4.cpp"
+
+gen-binary-search-cache-4: gen_binary_search_cache_4.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_binary_search_cache_4.o
+	./gen-binary-search-cache-4 > "state_machine_binary_search_cache_4.cpp"
 
 gen-lookup: gen_lookup.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_lookup.o
