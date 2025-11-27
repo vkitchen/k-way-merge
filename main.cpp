@@ -183,23 +183,41 @@ long timings[ARRAY_COUNT+1][num_tests][3];
 long inits[ITER_COUNT];
 long iterations[ITER_COUNT];
 
-int main() {
+unsigned int seed;
+
+void print_info(std::ostream &out) {
+	out << "COMPILER_VERSION " << __VERSION__ << std::endl;
+	out << "ARRAY_LENGTH " << ARRAY_LENGTH << std::endl;
+	out << "ARRAY_COUNT " << ARRAY_COUNT << std::endl;
+	out << "ITER_COUNT " << ITER_COUNT << std::endl;
+	out << "NUM_TESTS " << num_tests << std::endl;
+#ifdef ORDERED_TESTS
+	out << "TEST_TYPE ordered" << std::endl;
+#else
+	out << "TEST_TYPE random" << std::endl;
+#endif
+	out << "SEED " << seed << std::endl;
+}
+
+int main(int argc, char **argv) {
+	if (argc != 2) {
+		std::cerr << "Usage: main [outfile]" << std::endl;
+		return 1;
+	}
+
+	std::string outfile(argv[1]);
+	std::ofstream outtxt(outfile + ".txt");
+	std::ofstream outdat(outfile + ".dat");
+	std::ofstream outdat3(outfile + ".dat3");
+
 	for (size_t i = 0; i < num_tests; i++)
 		order[i] = i;
 
-	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
+	seed = (SEED == 0) ? time(NULL) : SEED;
 	srand(seed);
-	std::cout << "COMPILER_VERSION " << __VERSION__ << std::endl;
-	std::cout << "ARRAY_LENGTH " << ARRAY_LENGTH << std::endl;
-	std::cout << "ARRAY_COUNT " << ARRAY_COUNT << std::endl;
-	std::cout << "ITER_COUNT " << ITER_COUNT << std::endl;
-	std::cout << "NUM_TESTS " << num_tests << std::endl;
-#ifdef ORDERED_TESTS
-	std::cout << "TEST_TYPE ordered" << std::endl;
-#else
-	std::cout << "TEST_TYPE random" << std::endl;
-#endif
-	std::cout << "SEED " << seed << std::endl;
+
+	print_info(std::cout);
+	print_info(outtxt);
 
 	std::mt19937 mt(seed);
 	std::shuffle(std::begin(order), std::end(order), mt);
@@ -217,17 +235,21 @@ int main() {
 	auto time_end = std::chrono::steady_clock::now();
 
 	std::cout << std::endl;
-	std::cout << "Init: " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
+	std::cout << "Init: " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl << std::endl;
+
+	outtxt << std::endl;
+	outtxt << "Init: " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		std::cout << std::endl << "## MERGING " << n << " LISTS ##" << std::endl;
+		std::cout << "Merging " << n << " lists" << std::endl;
+		outtxt << std::endl << "## MERGING " << n << " LISTS ##" << std::endl;
 
 		time_begin = std::chrono::steady_clock::now();
 		merge_baseline_copy_sort(t, n);
 		time_end = std::chrono::steady_clock::now();
-		std::cout << "Baseline (copy+sort) " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
-		std::cout << "Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg" << std::endl;
-		std::cout << "----------------------------------------------------------------------------------------------------------------" << std::endl;
+		outtxt << "Baseline (copy+sort) " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
+		outtxt << "Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg" << std::endl;
+		outtxt << "----------------------------------------------------------------------------------------------------------------" << std::endl;
 
 		for (size_t i = 0; i < num_tests; i++) {
 			harness_reset(t);
@@ -290,39 +312,35 @@ int main() {
 			} else {
 				strcpy(status_buffer, " Unsupported");
 			}
-			std::cout << std::format("{:<40} | {:<7} | {:>6} | {:>17} | {:>18} |{}", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer) << std::endl;
+			outtxt << std::format("{:<40} | {:<7} | {:>6} | {:>17} | {:>18} |{}", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer) << std::endl;
 		}
 	}
 
-	std::cout << std::endl;
-
-	std::cout << 'n';
+	outdat << 'n';
 	for (size_t i = 0; i < num_tests; i++)
-		std::cout << ',' << functions[i]->name.c_str();
-	std::cout << std::endl;
+		outdat << ',' << functions[i]->name.c_str();
+	outdat << std::endl;
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		std::cout << n;
+		outdat << n;
 		for (size_t i = 0; i < num_tests; i++)
-			std::cout << ',' << timings[n][i][1];
-		std::cout << std::endl;
+			outdat << ',' << timings[n][i][1];
+		outdat << std::endl;
 	}
 
-	std::cout << std::endl;
-
-	std::cout << 'n';
+	outdat3 << 'n';
 	for (size_t i = 0; i < num_tests; i++)
-		std::cout << ',' << functions[i]->name << "(min)," << functions[i]->name << "(med)," << functions[i]->name << "(max)";
-	std::cout << std::endl;
+		outdat3 << ',' << functions[i]->name << "(min)," << functions[i]->name << "(med)," << functions[i]->name << "(max)";
+	outdat3 << std::endl;
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		std::cout << n;
+		outdat3 << n;
 		for (size_t i = 0; i < num_tests; i++) {
-			std::cout << ',' << timings[n][i][0] << ',' << timings[n][i][1] << ',' << timings[n][i][2];
+			outdat3 << ',' << timings[n][i][0] << ',' << timings[n][i][1] << ',' << timings[n][i][2];
 		}
-		std::cout << std::endl;
+		outdat3 << std::endl;
 	}
 
 	return 0;
