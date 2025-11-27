@@ -1,11 +1,13 @@
 #include <math.h>
 #include <stdlib.h>
-#include <stdio.h>
 #include <string.h>
 
 #include <algorithm>
 #include <array>
 #include <chrono>
+#include <format>
+#include <fstream>
+#include <iostream>
 #include <numeric>
 #include <random>
 
@@ -187,17 +189,17 @@ int main() {
 
 	unsigned int seed = (SEED == 0) ? time(NULL) : SEED;
 	srand(seed);
-	printf("COMPILER_VERSION %s\n", __VERSION__);
-	printf("ARRAY_LENGTH %d\n", ARRAY_LENGTH);
-	printf("ARRAY_COUNT %d\n", ARRAY_COUNT);
-	printf("ITER_COUNT %d\n", ITER_COUNT);
-	printf("NUM_TESTS %zd\n", num_tests);
+	std::cout << "COMPILER_VERSION " << __VERSION__ << std::endl;
+	std::cout << "ARRAY_LENGTH " << ARRAY_LENGTH << std::endl;
+	std::cout << "ARRAY_COUNT " << ARRAY_COUNT << std::endl;
+	std::cout << "ITER_COUNT " << ITER_COUNT << std::endl;
+	std::cout << "NUM_TESTS " << num_tests << std::endl;
 #ifdef ORDERED_TESTS
-	puts("TEST_TYPE ordered");
+	std::cout << "TEST_TYPE ordered" << std::endl;
 #else
-	puts("TEST_TYPE random");
+	std::cout << "TEST_TYPE random" << std::endl;
 #endif
-	printf("SEED %d\n", seed);
+	std::cout << "SEED " << seed << std::endl;
 
 	std::mt19937 mt(seed);
 	std::shuffle(std::begin(order), std::end(order), mt);
@@ -214,18 +216,18 @@ int main() {
 
 	auto time_end = std::chrono::steady_clock::now();
 
-	puts("");
-	printf("Init: %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
+	std::cout << std::endl;
+	std::cout << "Init: " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		printf("\n## MERGING %d LISTS ##\n", n);
+		std::cout << std::endl << "## MERGING " << n << " LISTS ##" << std::endl;
 
 		time_begin = std::chrono::steady_clock::now();
 		merge_baseline_copy_sort(t, n);
 		time_end = std::chrono::steady_clock::now();
-		printf("Baseline (copy+sort) %ld\n", std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count());
-		puts("Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg");
-		puts("----------------------------------------------------------------------------------------------------------------");
+		std::cout << "Baseline (copy+sort) " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
+		std::cout << "Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg" << std::endl;
+		std::cout << "----------------------------------------------------------------------------------------------------------------" << std::endl;
 
 		for (size_t i = 0; i < num_tests; i++) {
 			harness_reset(t);
@@ -288,41 +290,39 @@ int main() {
 			} else {
 				strcpy(status_buffer, " Unsupported");
 			}
-			printf("%-40s | %-7s | %6s | %17s | %18s |%s\n", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer);
+			std::cout << std::format("{:<40} | {:<7} | {:>6} | {:>17} | {:>18} |{}", functions[alg]->name.c_str(), status[0] == '\0' ? "true" : "false", init_buffer, time_buffer, sd_buffer, status_buffer) << std::endl;
 		}
 	}
 
-	puts("");
+	std::cout << std::endl;
 
-	printf("n");
+	std::cout << 'n';
 	for (size_t i = 0; i < num_tests; i++)
-		printf(",%s", functions[i]->name.c_str());
-	puts("");
+		std::cout << ',' << functions[i]->name.c_str();
+	std::cout << std::endl;
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		printf("%d", n);
+		std::cout << n;
 		for (size_t i = 0; i < num_tests; i++)
-			printf(",%ld", timings[n][i][1]);
-		puts("");
+			std::cout << ',' << timings[n][i][1];
+		std::cout << std::endl;
 	}
 
-	puts("");
+	std::cout << std::endl;
 
-	printf("n");
+	std::cout << 'n';
 	for (size_t i = 0; i < num_tests; i++)
-		printf(",%s (min),%s (med),%s (max)", functions[i]->name.c_str(), functions[i]->name.c_str(), functions[i]->name.c_str());
-	puts("");
+		std::cout << ',' << functions[i]->name << "(min)," << functions[i]->name << "(med)," << functions[i]->name << "(max)";
+	std::cout << std::endl;
 
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
-		printf("%d", n);
+		std::cout << n;
 		for (size_t i = 0; i < num_tests; i++) {
-			printf(",%ld", timings[n][i][0]);
-			printf(",%ld", timings[n][i][1]);
-			printf(",%ld", timings[n][i][2]);
+			std::cout << ',' << timings[n][i][0] << ',' << timings[n][i][1] << ',' << timings[n][i][2];
 		}
-		puts("");
+		std::cout << std::endl;
 	}
 
 	return 0;
