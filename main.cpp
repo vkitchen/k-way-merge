@@ -197,6 +197,7 @@ void print_info(std::ostream &out) {
 	out << "TEST_TYPE random" << std::endl;
 #endif
 	out << "SEED " << seed << std::endl;
+	out << "MEMORY " << (double)ARRAY_LENGTH * ARRAY_COUNT * 2 * 32 / 8 / 1024 / 1024 / 1024 << " GiB" << std::endl;
 }
 
 int main(int argc, char **argv) {
