@@ -1,0 +1,892 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 100000
+ARRAY_COUNT 100
+ITER_COUNT 3
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1764477786
+MEMORY 0.0745058 GiB
+
+Init: 482
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 4
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |             4,4,4 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |             3,3,3 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             5,5,5 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |             4,4,4 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 6
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |             6,6,6 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |             4,4,4 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             6,6,6 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |             5,5,5 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 7
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |             7,7,8 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |             5,5,5 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             8,8,8 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |             6,6,6 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 10
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |             9,9,9 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |             7,7,7 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          10,10,10 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |             7,7,8 |             0.4714 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 12
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          11,11,11 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |             8,8,8 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          11,11,11 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |             9,9,9 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 14
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          12,12,13 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          10,10,10 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          13,13,13 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          10,10,10 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 17
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          14,14,14 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          11,11,11 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          15,15,15 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          12,12,12 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 19
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          16,16,16 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          12,12,12 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          16,16,17 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          13,13,14 |             0.4714 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 21
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          17,17,17 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          13,13,13 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          18,18,18 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          15,15,15 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 23
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          19,19,19 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          15,15,15 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          20,20,20 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          16,16,16 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 25
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          20,21,21 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          15,15,16 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          22,22,22 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          17,17,17 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 28
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          22,22,22 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          17,17,17 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          23,24,24 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          18,18,19 |             0.4714 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 29
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          24,24,24 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          18,18,18 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          25,26,26 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          20,20,20 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 33
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          26,26,26 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          20,20,20 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          27,27,27 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          22,22,22 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 35
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          28,28,28 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          21,22,22 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          29,29,29 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          24,24,24 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 39
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          29,30,30 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          23,23,23 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          31,31,31 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          25,25,25 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 39
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          31,31,31 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          24,24,24 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          33,33,33 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          27,27,27 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 43
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          33,33,33 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          25,25,25 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          35,35,35 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          28,28,28 |             0.0000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 44
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          35,35,35 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          26,26,26 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          37,37,37 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          29,29,29 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 49
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          36,36,36 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          28,28,28 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          38,38,38 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          30,31,31 |             0.4714 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 50
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          38,38,38 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          29,29,29 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          40,40,40 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          32,32,32 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 54
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          39,39,39 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          30,30,30 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          42,42,42 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          33,34,34 |             0.4714 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 55
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          43,43,47 |             1.8856 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          33,33,33 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          45,45,45 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          36,36,36 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 60
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          44,44,44 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          34,34,34 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          46,46,46 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          37,37,37 |             0.0000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 60
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          46,46,46 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          35,36,36 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          48,48,48 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          39,39,39 |             0.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 65
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          48,48,48 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          37,37,37 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          50,50,50 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          41,41,41 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 65
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          50,50,50 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          38,38,38 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          52,52,52 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          42,42,42 |             0.0000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 70
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          51,51,51 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          39,39,39 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          54,54,54 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          44,44,44 |             0.0000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 70
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          53,53,53 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          40,40,41 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          56,56,56 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          45,45,45 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 76
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          55,55,55 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          42,42,42 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          57,57,57 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          47,47,47 |             0.0000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 76
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          57,57,57 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          44,44,44 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          60,60,60 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          48,49,49 |             0.4714 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 81
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          58,58,58 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          45,45,45 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          61,61,61 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          50,50,50 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 81
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          60,60,60 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          46,46,47 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          63,63,63 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          51,51,51 |             0.0000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 85
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          62,62,62 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          48,48,48 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          65,65,65 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          53,53,53 |             0.0000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 86
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          63,63,63 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          49,49,49 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          67,67,67 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          54,54,54 |             0.0000 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 93
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          65,65,65 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          50,50,50 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          69,69,69 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          55,56,56 |             0.4714 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 92
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          67,67,67 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          51,51,52 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          71,71,73 |             0.9428 |
+Find (Cache SIMD Improved)               | true    |      ? |          57,57,57 |             0.0000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 98
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          68,69,69 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          53,53,53 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          72,72,72 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          58,58,59 |             0.4714 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 98
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          73,73,73 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          56,56,57 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          76,76,77 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          62,62,62 |             0.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          74,74,74 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          57,57,58 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          78,78,78 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          63,64,64 |             0.4714 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 103
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          76,76,76 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          59,59,59 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          80,80,80 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          65,65,65 |             0.0000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 108
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          78,78,78 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          60,61,61 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          82,82,82 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          66,66,67 |             0.4714 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 109
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          79,80,80 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          61,61,62 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          84,84,84 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          68,68,68 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 115
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          81,81,82 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          63,63,63 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          86,86,86 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          69,69,69 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 115
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          83,83,83 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          64,64,65 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          88,88,88 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          71,71,71 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 120
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          84,84,85 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          65,66,66 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          89,90,90 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          72,73,73 |             0.4714 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 120
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          87,87,87 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          68,68,69 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          92,92,93 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 126
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          89,89,89 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          70,70,70 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          94,94,94 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          76,76,77 |             0.4714 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 124
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          90,91,91 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          71,71,71 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          95,96,96 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |          78,78,78 |             0.0000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 130
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          92,92,92 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          72,73,73 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          98,98,98 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          80,80,80 |             0.0000 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 129
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          94,94,94 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          73,73,74 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       100,100,100 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          81,81,81 |             0.0000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 135
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          95,96,96 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          74,74,74 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       102,102,102 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          82,82,82 |             0.0000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          97,97,97 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          76,76,77 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       104,104,104 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          84,84,84 |             0.0000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |          99,99,99 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          77,78,78 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       106,106,106 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          86,86,86 |             0.0000 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 141
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       103,103,103 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          83,83,83 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       112,112,112 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          91,91,91 |             0.0000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 146
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       105,105,105 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          84,84,84 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       114,114,114 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          92,92,93 |             0.4714 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 148
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       107,107,107 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          85,86,86 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       116,116,116 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          94,94,94 |             0.0000 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       109,109,109 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          87,87,87 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       118,118,118 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          96,96,96 |             0.0000 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       110,110,110 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          88,88,88 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       120,120,120 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          97,97,97 |             0.0000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 162
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       112,112,113 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          90,90,90 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       122,122,122 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |          99,99,99 |             0.0000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       114,114,114 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          91,91,91 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       124,124,125 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       100,100,101 |             0.4714 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       115,115,116 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          92,92,93 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       126,126,126 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       102,102,102 |             0.0000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 165
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       119,119,119 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          95,95,96 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       130,130,130 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       104,104,105 |             0.4714 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 173
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       121,121,121 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          96,97,97 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       132,132,132 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       105,106,106 |             0.4714 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 171
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       122,122,123 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          98,98,98 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       134,134,134 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       107,108,109 |             0.8165 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 177
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       124,124,124 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |          99,99,99 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       136,136,136 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       108,109,109 |             0.4714 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 177
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       126,126,126 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       100,100,101 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       138,138,138 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       110,110,110 |             0.0000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 185
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       127,127,128 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       101,102,103 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       140,140,140 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       112,112,112 |             0.0000 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 183
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       129,129,130 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       103,103,103 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       142,142,142 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       113,113,114 |             0.4714 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 189
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       131,131,131 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       105,105,105 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       144,144,144 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       115,115,115 |             0.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 189
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       137,137,138 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       111,111,111 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       149,149,149 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       121,121,121 |             0.0000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 196
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       140,140,140 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       113,113,114 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       152,152,153 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       122,123,124 |             0.8165 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 197
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       141,143,143 |             0.9428 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       114,115,116 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       154,155,156 |             0.8165 |
+Find (Cache SIMD Improved)               | true    |      ? |       126,126,128 |             0.9428 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       144,144,144 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       116,116,116 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       155,155,156 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       127,127,127 |             0.0000 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       146,146,165 |             8.9567 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       117,118,122 |             2.1602 |
+Find (Cache SIMD)                        | true    |      ? |       158,158,158 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       127,127,128 |             0.4714 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       146,147,147 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       118,118,118 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       158,158,159 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       129,129,130 |             0.4714 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       148,148,148 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       120,120,120 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       159,161,161 |             0.9428 |
+Find (Cache SIMD Improved)               | true    |      ? |       130,131,131 |             0.4714 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       151,151,151 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       121,121,122 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       164,164,165 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       133,133,134 |             0.4714 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       154,154,155 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       124,125,125 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       167,168,168 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       136,137,137 |             0.4714 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 222
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       156,156,156 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       125,126,126 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       169,170,170 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       138,138,138 |             0.0000 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       156,156,157 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       127,127,127 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       171,171,171 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       139,139,139 |             0.0000 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 224
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       159,159,159 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       128,129,129 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       173,173,174 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       141,141,141 |             0.0000 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 223
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       160,160,161 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       129,130,130 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       175,175,175 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       142,142,142 |             0.0000 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 230
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       163,163,163 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       131,131,131 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       177,177,179 |             0.9428 |
+Find (Cache SIMD Improved)               | true    |      ? |       145,145,145 |             0.0000 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 232
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       164,165,165 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       132,132,133 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       178,179,180 |             0.8165 |
+Find (Cache SIMD Improved)               | true    |      ? |       146,146,146 |             0.0000 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 240
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       166,166,167 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       134,134,134 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       181,181,182 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       146,147,147 |             0.4714 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 237
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       177,178,178 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       143,143,144 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       192,192,192 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       157,157,157 |             0.0000 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       179,179,179 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       145,145,145 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       193,194,194 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       158,159,159 |             0.4714 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 242
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       181,181,181 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       146,147,147 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       195,195,196 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       160,160,160 |             0.0000 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 255
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       182,183,183 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       147,148,148 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       197,198,199 |             0.8165 |
+Find (Cache SIMD Improved)               | true    |      ? |       161,161,162 |             0.4714 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 248
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       184,185,185 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       149,149,149 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       200,201,201 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       163,163,163 |             0.0000 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       186,187,187 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       151,151,151 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       203,203,203 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       164,165,165 |             0.4714 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       188,189,189 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       152,152,152 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       204,205,205 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       166,167,167 |             0.4714 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 265
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       190,191,191 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       154,154,154 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       207,207,208 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       168,168,169 |             0.4714 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 262
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       192,193,193 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       155,155,155 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       209,210,211 |             0.8165 |
+Find (Cache SIMD Improved)               | true    |      ? |       169,169,169 |             0.0000 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 270
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       194,194,194 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       156,156,156 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       212,212,213 |             0.4714 |
+Find (Cache SIMD Improved)               | true    |      ? |       170,171,171 |             0.4714 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 266
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       196,196,196 |             0.0000 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       158,158,158 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       213,215,215 |             0.9428 |
+Find (Cache SIMD Improved)               | true    |      ? |       172,172,172 |             0.0000 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 277
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Inlined)                | true    |      ? |       197,198,198 |             0.4714 |
+Find (Cache SIMD Improved 3)             | true    |      ? |       160,160,160 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       216,216,216 |             0.0000 |
+Find (Cache SIMD Improved)               | true    |      ? |       174,174,175 |             0.4714 |
