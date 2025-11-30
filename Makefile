@@ -291,4 +291,4 @@ main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state_machine_*.cpp state_table_*.h gen.o gen_cache.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
+	rm state_machine_*.cpp state_table_*.h gen.o gen_cache.o gen_binary_search_4.o gen_binary_search_cache_4.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
