@@ -1,0 +1,1810 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 3
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1764388932
+MEMORY 0.745058 GiB
+
+Init: 0
+
+## MERGING 1 LISTS ##
+Baseline (copy+sort) 2603
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2478,2478,2535 |            26.8701 |
+Tournament Tree (O2)                     | true    |      ? |    1733,1734,1737 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2154,2154,2156 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    2519,2521,2575 |            25.9401 |
+
+## MERGING 2 LISTS ##
+Baseline (copy+sort) 2767
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2514,2514,2550 |            16.9706 |
+Tournament Tree (O2)                     | true    |      ? |    1967,1972,1973 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2245,2245,2246 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2641,2642,2696 |            25.6948 |
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 2810
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2526,2526,2526 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2066,2079,2102 |            14.8847 |
+Heap Cache (O2)                          | true    |      ? |    2279,2279,2280 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2528,2529,2529 |             0.4714 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 2850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2531,2533,2542 |             4.7842 |
+Tournament Tree (O2)                     | true    |      ? |    2135,2136,2136 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |    2294,2295,2296 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    2427,2428,2429 |             0.8165 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 2869
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2534,2534,2536 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2189,2192,2192 |             1.4142 |
+Heap Cache (O2)                          | true    |      ? |    2300,2304,2352 |            23.6267 |
+Find SIMD (O2)                           | true    |      ? |    2350,2351,2352 |             0.8165 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 2878
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2536,2536,2537 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2225,2225,2226 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |    2306,2308,2362 |            25.9401 |
+Find SIMD (O2)                           | true    |      ? |    2285,2287,2291 |             2.4944 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 2859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2537,2539,2597 |            27.8248 |
+Tournament Tree (O2)                     | true    |      ? |    2247,2251,2251 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2308,2309,2311 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    2237,2238,2301 |            29.9370 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2855
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2538,2539,2587 |            22.8668 |
+Tournament Tree (O2)                     | true    |      ? |    2262,2264,2268 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2310,2311,2313 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    2204,2204,2250 |            21.6846 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2540,2541,2593 |            24.7521 |
+Tournament Tree (O2)                     | true    |      ? |    2277,2282,2283 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2311,2312,2312 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2171,2171,2174 |             1.4142 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2540,2540,2542 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2290,2292,2355 |            30.1809 |
+Heap Cache (O2)                          | true    |      ? |    2314,2314,2315 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2147,2148,2152 |             2.1602 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2856
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2540,2541,2543 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2297,2302,2302 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2316,2317,2350 |            15.7973 |
+Find SIMD (O2)                           | true    |      ? |    2126,2126,2127 |             0.4714 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 2842
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2541,2542,2543 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2306,2308,2310 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2313,2315,2377 |            29.7097 |
+Find SIMD (O2)                           | true    |      ? |    2106,2108,2109 |             1.2472 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 2914
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2541,2541,2542 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2311,2314,2316 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2316,2318,2370 |            24.9978 |
+Find SIMD (O2)                           | true    |      ? |    2093,2093,2094 |             0.4714 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 2886
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2541,2541,2601 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2317,2320,2323 |             2.4495 |
+Heap Cache (O2)                          | true    |      ? |    2316,2317,2319 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    2083,2085,2133 |            23.1132 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 2835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2542,2542,2602 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2319,2328,2330 |             4.7842 |
+Heap Cache (O2)                          | true    |      ? |    2316,2316,2317 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2067,2069,2115 |            22.1711 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2542,2543,2597 |            25.6948 |
+Tournament Tree (O2)                     | true    |      ? |    2322,2325,2328 |             2.4495 |
+Heap Cache (O2)                          | true    |      ? |    2318,2318,2320 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    2058,2058,2118 |            28.2843 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 2846
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2542,2542,2542 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2327,2331,2388 |            27.8608 |
+Heap Cache (O2)                          | true    |      ? |    2317,2319,2319 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    2047,2048,2051 |             1.6997 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 2890
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2542,2543,2546 |             1.6997 |
+Tournament Tree (O2)                     | true    |      ? |    2329,2330,2382 |            24.7521 |
+Heap Cache (O2)                          | true    |      ? |    2318,2318,2319 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    2039,2040,2041 |             0.8165 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 2846
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2542,2543,2545 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2333,2342,2390 |            25.0200 |
+Heap Cache (O2)                          | true    |      ? |    2318,2318,2318 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    2028,2028,2031 |             1.4142 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 2887
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2543,2545 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2337,2345,2346 |             4.0277 |
+Heap Cache (O2)                          | true    |      ? |    2319,2319,2374 |            25.9272 |
+Find SIMD (O2)                           | true    |      ? |    2024,2024,2025 |             0.4714 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 2918
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2543,2543 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2337,2339,2341 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2319,2323,2380 |            27.8608 |
+Find SIMD (O2)                           | true    |      ? |    2016,2018,2020 |             1.6330 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2554,2604 |            26.5456 |
+Tournament Tree (O2)                     | true    |      ? |    2336,2342,2343 |             3.0912 |
+Heap Cache (O2)                          | true    |      ? |    2317,2319,2326 |             3.8586 |
+Find SIMD (O2)                           | true    |      ? |    2009,2010,2012 |             1.2472 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 2887
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2545,2561 |             8.0554 |
+Tournament Tree (O2)                     | true    |      ? |    2338,2343,2344 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2318,2321,2321 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    2000,2003,2068 |            31.3723 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 2867
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2547,2597 |            24.5674 |
+Tournament Tree (O2)                     | true    |      ? |    2340,2343,2344 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2318,2319,2321 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1999,2002,2004 |             2.0548 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 2931
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2543,2544 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2340,2343,2408 |            31.3723 |
+Heap Cache (O2)                          | true    |      ? |    2319,2319,2320 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1996,1998,2001 |             2.0548 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 2861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2543,2545 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2343,2347,2400 |            25.9786 |
+Heap Cache (O2)                          | true    |      ? |    2318,2320,2320 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1992,1994,1995 |             1.2472 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 2845
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2544 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2343,2345,2346 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2377 |            26.6375 |
+Find SIMD (O2)                           | true    |      ? |    1988,1993,1996 |             3.2998 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 2845
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2543,2604 |            28.7557 |
+Tournament Tree (O2)                     | true    |      ? |    2342,2346,2351 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2318,2319,2380 |            28.9943 |
+Find SIMD (O2)                           | true    |      ? |    1984,1984,1984 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 2840
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2547 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2342,2345,2362 |             8.8066 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2321 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1980,1983,1983 |             1.4142 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 2851
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2546 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2346,2346,2351 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2370 |            23.8094 |
+Find SIMD (O2)                           | true    |      ? |    1981,1982,1982 |             0.4714 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 2919
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2543,2544,2544 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2347,2350,2352 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2318,2328,2382 |            28.1109 |
+Find SIMD (O2)                           | true    |      ? |    1975,1976,1986 |             4.9666 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 2826
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2604 |            28.0515 |
+Tournament Tree (O2)                     | true    |      ? |    2351,2352,2353 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2319,2319,2320 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1972,1973,2018 |            21.4528 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 2901
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2598 |            25.4558 |
+Tournament Tree (O2)                     | true    |      ? |    2347,2350,2355 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2322,2324,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1969,1970,1973 |             1.6997 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2544 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2353,2409 |            26.6375 |
+Heap Cache (O2)                          | true    |      ? |    2319,2321,2321 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1966,1967,1968 |             0.8165 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 2832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2546 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2354,2407 |            25.9786 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2321 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1965,1966,1968 |             1.2472 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 2895
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2549 |             2.1602 |
+Tournament Tree (O2)                     | true    |      ? |    2348,2353,2353 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2319,2322,2379 |            27.6043 |
+Find SIMD (O2)                           | true    |      ? |    1962,1965,1970 |             3.2998 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 2992
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2350,2351 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |    2318,2321,2380 |            28.5463 |
+Find SIMD (O2)                           | true    |      ? |    1956,1961,1962 |             2.6247 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 2850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2604 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2353,2356,2356 |             1.4142 |
+Heap Cache (O2)                          | true    |      ? |    2318,2319,2322 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1960,1962,2021 |            28.2961 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 2843
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2600 |            26.3987 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2354,2358 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2326 |             2.1602 |
+Find SIMD (O2)                           | true    |      ? |    1958,1962,2015 |            25.9786 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2356,2411 |            26.1661 |
+Heap Cache (O2)                          | true    |      ? |    2321,2321,2324 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1958,1958,1971 |             6.1283 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 2878
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2356,2410 |            26.4491 |
+Heap Cache (O2)                          | true    |      ? |    2318,2319,2322 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1954,1955,1955 |             0.4714 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2547 |             1.4142 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2352,2356 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2356 |            16.2686 |
+Find SIMD (O2)                           | true    |      ? |    1950,1954,1959 |             3.6818 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 2891
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2351,2353,2358 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2322 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1947,1952,2011 |            29.0631 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 2841
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2354,2356,2357 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2323 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1946,1948,2003 |            26.4113 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2546,2596 |            23.8094 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2357,2359 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2321,2323,2323 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1947,1947,1949 |             0.9428 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 2836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2346,2358,2409 |            27.3130 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2320 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1945,1945,1948 |             1.4142 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 2925
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2546 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2356,2357,2407 |            23.8094 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2321 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1942,1944,1946 |             1.6330 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 2836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2356,2357 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2320,2323,2377 |            26.1916 |
+Find SIMD (O2)                           | true    |      ? |    1946,1947,1949 |             1.2472 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 2871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2546,2547 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2349,2351,2356 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2321,2321,2371 |            23.5702 |
+Find SIMD (O2)                           | true    |      ? |    1943,1943,1944 |             0.4714 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 2877
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2354,2358 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2322,2322,2322 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    1941,1942,1999 |            27.1088 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 2826
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2546,2597 |            24.2808 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2357,2357 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2320,2322,2326 |             2.4944 |
+Find SIMD (O2)                           | true    |      ? |    1938,1942,1996 |            26.4491 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 2852
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2546 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2355,2406 |            24.7790 |
+Heap Cache (O2)                          | true    |      ? |    2322,2322,2322 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    1936,1936,1938 |             0.9428 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 2843
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2546 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2355,2409 |            26.1916 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1936,1937,1939 |             1.2472 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 2857
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2549 |             2.1602 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2357,2358 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2381 |            27.5802 |
+Find SIMD (O2)                           | true    |      ? |    1937,1937,1939 |             0.9428 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 2903
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2546 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2351,2356 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2320,2322,2374 |            24.9978 |
+Find SIMD (O2)                           | true    |      ? |    1933,1933,1934 |             0.4714 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 2821
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2606 |            28.7557 |
+Tournament Tree (O2)                     | true    |      ? |    2345,2357,2358 |             5.9067 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2325 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1934,1936,1989 |            25.4689 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 2841
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2599 |            25.6948 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2351,2356 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2324 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1931,1934,1989 |            26.6625 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 2845
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2353,2356,2404 |            23.3666 |
+Heap Cache (O2)                          | true    |      ? |    2320,2322,2322 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1930,1933,1935 |             2.0548 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 2919
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2546 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2355,2404 |            23.8374 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1932,1935,1936 |             1.6997 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 2893
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2546 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2354,2356,2360 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2322 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1930,1930,1933 |             1.4142 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 2844
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2544,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2351,2355,2355 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2379 |            28.0515 |
+Find SIMD (O2)                           | true    |      ? |    1930,1932,1932 |             0.9428 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 2884
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2545 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2354,2358 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2376 |            25.6948 |
+Find SIMD (O2)                           | true    |      ? |    1928,1928,1931 |             1.4142 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 2860
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2605 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2354,2358,2360 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2319,2320,2321 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1929,1930,1990 |            28.5229 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2589 |            20.9815 |
+Tournament Tree (O2)                     | true    |      ? |    2354,2355,2358 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1922,1925,1928 |             2.4495 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 2875
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2546,2547,2548 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2350,2354,2408 |            26.4491 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2323 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1925,1925,1926 |             0.4714 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 2839
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2544,2545,2546 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2349,2358,2419 |            31.0948 |
+Heap Cache (O2)                          | true    |      ? |    2321,2321,2325 |             1.8856 |
+Find SIMD (O2)                           | true    |      ? |    1927,1927,1929 |             0.9428 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 2820
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2545 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2358,2360 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2320,2324,2383 |            28.8020 |
+Find SIMD (O2)                           | true    |      ? |    1922,1924,1937 |             6.6500 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2545 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2354,2355,2360 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2319,2321,2382 |            29.2385 |
+Find SIMD (O2)                           | true    |      ? |    1922,1923,1924 |             0.8165 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 2850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2598 |            24.9844 |
+Tournament Tree (O2)                     | true    |      ? |    2351,2356,2356 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2321 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1925,1926,1975 |            23.3381 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 2859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2594 |            23.0988 |
+Tournament Tree (O2)                     | true    |      ? |    2356,2360,2360 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2321,2323,2323 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1923,1923,1924 |             0.4714 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 2844
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2545,2547 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2351,2355,2415 |            29.2727 |
+Heap Cache (O2)                          | true    |      ? |    2320,2322,2322 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1921,1923,1926 |             2.0548 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 2881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2546,2546 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2356,2360,2360 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2320,2321,2326 |             2.6247 |
+Find SIMD (O2)                           | true    |      ? |    1925,1926,1927 |             0.8165 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 2823
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2546,2556 |             4.9666 |
+Tournament Tree (O2)                     | true    |      ? |    2352,2356,2361 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2380 |            27.1088 |
+Find SIMD (O2)                           | true    |      ? |    1920,1921,1924 |             1.6997 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 2934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2547,2547 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2360,2361 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2383 |            27.8248 |
+Find SIMD (O2)                           | true    |      ? |    1924,1925,1927 |             1.2472 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 2831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2545,2546,2606 |            28.5229 |
+Tournament Tree (O2)                     | true    |      ? |    2355,2358,2364 |             3.7417 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1922,1922,1939 |             8.0139 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2808
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2546,2546,2606 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2358,2369,2370 |             5.4365 |
+Heap Cache (O2)                          | true    |      ? |    2321,2321,2321 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    1926,1931,1931 |             2.3570 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 2881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2547,2547,2551 |             1.8856 |
+Tournament Tree (O2)                     | true    |      ? |    2368,2368,2425 |            26.8701 |
+Heap Cache (O2)                          | true    |      ? |    2322,2322,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1930,1933,1937 |             2.8674 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2830
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2549,2549,2549 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2376,2376,2410 |            16.0278 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1946,1949,1950 |             1.6997 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2818
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2550,2550,2551 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2375,2381,2434 |            26.5121 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1954,1956,1958 |             1.6330 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2844
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2382,2389 |             4.9216 |
+Heap Cache (O2)                          | true    |      ? |    2323,2327,2383 |            27.3902 |
+Find SIMD (O2)                           | true    |      ? |    1954,1954,1960 |             2.8284 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2926
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2557,2562 |             4.4969 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2386,2386 |             0.9428 |
+Heap Cache (O2)                          | true    |      ? |    2321,2324,2387 |            30.4302 |
+Find SIMD (O2)                           | true    |      ? |    1958,1959,1959 |             0.4714 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2556,2611 |            27.1825 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2382,2385 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1955,1957,2007 |            24.0555 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2607 |            26.3987 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2380,2382 |             0.9428 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1956,1958,2008 |            24.0555 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2825
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2562 |             5.1854 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2388,2436 |            23.6267 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2328 |             2.0548 |
+Find SIMD (O2)                           | true    |      ? |    1954,1955,1956 |             0.8165 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2885
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2554 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2379,2428 |            23.5844 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2326 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1953,1956,1960 |             2.8674 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2852
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2562 |             4.9666 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2384,2392 |             5.3541 |
+Heap Cache (O2)                          | true    |      ? |    2325,2325,2385 |            28.2843 |
+Find SIMD (O2)                           | true    |      ? |    1953,1955,1957 |             1.6330 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2954
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2387,2387 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2379 |            26.6375 |
+Find SIMD (O2)                           | true    |      ? |    1943,1953,1953 |             4.7140 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2890
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2381,2384 |             2.8674 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1953,1958,2016 |            28.5929 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2607 |            25.9401 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2383,2386 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1953,1955,2004 |            23.5844 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2830
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2589 |            17.9134 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2381,2384 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2321,2323,2357 |            16.5193 |
+Find SIMD (O2)                           | true    |      ? |    1950,1952,1956 |             2.4944 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2382,2384 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2380 |            26.6375 |
+Find SIMD (O2)                           | true    |      ? |    1949,1950,1951 |             0.8165 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2935
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2390,2391 |             4.4969 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2378 |            25.6948 |
+Find SIMD (O2)                           | true    |      ? |    1949,1950,1951 |             0.8165 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2814
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2608 |            26.6375 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2383,2386 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2327 |             2.6247 |
+Find SIMD (O2)                           | true    |      ? |    1950,1954,2007 |            25.9786 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2827
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2385,2439 |            25.9401 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2328 |             1.8856 |
+Find SIMD (O2)                           | true    |      ? |    1947,1950,1953 |             2.4495 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2812
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2386,2432 |            22.1711 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1949,1949,1949 |             0.0000 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2893
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2386,2445 |            30.1588 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1943,1944,1946 |             1.2472 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2834
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2385,2387 |             3.8586 |
+Heap Cache (O2)                          | true    |      ? |    2323,2327,2376 |            24.0970 |
+Find SIMD (O2)                           | true    |      ? |    1950,1950,1951 |             0.4714 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2877
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2386,2388 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1948,1949,2010 |            28.9943 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2607 |            26.1661 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2388,2388 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1947,1949,2004 |            26.4113 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2605 |            25.4558 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2383,2384 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2323 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1947,1947,1948 |             0.4714 |
+
+## MERGING 101 LISTS ##
+Baseline (copy+sort) 2868
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2387,2440 |            25.9786 |
+Heap Cache (O2)                          | true    |      ? |    2325,2326,2327 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1945,1948,1952 |             2.8674 |
+
+## MERGING 102 LISTS ##
+Baseline (copy+sort) 2933
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2387,2453 |            32.6190 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2324 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1945,1947,1948 |             1.2472 |
+
+## MERGING 103 LISTS ##
+Baseline (copy+sort) 2859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2385,2440 |            27.7248 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2325 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1947,1948,1948 |             0.4714 |
+
+## MERGING 104 LISTS ##
+Baseline (copy+sort) 2834
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2385,2386 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2361 |            17.2111 |
+Find SIMD (O2)                           | true    |      ? |    1945,1947,1951 |             2.4944 |
+
+## MERGING 105 LISTS ##
+Baseline (copy+sort) 2890
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2388,2390 |             4.3205 |
+Heap Cache (O2)                          | true    |      ? |    2324,2326,2383 |            27.3537 |
+Find SIMD (O2)                           | true    |      ? |    1941,1943,1944 |             1.2472 |
+
+## MERGING 106 LISTS ##
+Baseline (copy+sort) 2860
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2605 |            25.4558 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2392,2413 |            13.2749 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1948,1949,1951 |             1.2472 |
+
+## MERGING 107 LISTS ##
+Baseline (copy+sort) 2883
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2383,2422 |            19.6695 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2325 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1944,1945,1945 |             0.4714 |
+
+## MERGING 108 LISTS ##
+Baseline (copy+sort) 2876
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2385,2386,2387 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2382 |            27.3415 |
+Find SIMD (O2)                           | true    |      ? |    1941,1942,1943 |             0.8165 |
+
+## MERGING 109 LISTS ##
+Baseline (copy+sort) 2877
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2385,2392 |             3.8586 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2382 |            27.5802 |
+Find SIMD (O2)                           | true    |      ? |    1943,1944,1945 |             0.8165 |
+
+## MERGING 110 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2553,2582 |            13.9124 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2384,2387 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1943,1947,1998 |            25.0377 |
+
+## MERGING 111 LISTS ##
+Baseline (copy+sort) 2840
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2609 |            27.3415 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2383,2388 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2326 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1944,1945,1994 |            23.3381 |
+
+## MERGING 112 LISTS ##
+Baseline (copy+sort) 2830
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2606 |            25.6948 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2387,2390 |             5.0990 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1936,1943,2003 |            30.0703 |
+
+## MERGING 113 LISTS ##
+Baseline (copy+sort) 2871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2608 |            26.6375 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2385,2387 |             3.8586 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1943,1944,1944 |             0.4714 |
+
+## MERGING 114 LISTS ##
+Baseline (copy+sort) 2868
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2376,2383,2434 |            25.8500 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2326 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1943,1945,1948 |             2.0548 |
+
+## MERGING 115 LISTS ##
+Baseline (copy+sort) 2815
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2553 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2382,2423 |            20.3361 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1942,1944,1947 |             2.0548 |
+
+## MERGING 116 LISTS ##
+Baseline (copy+sort) 2846
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2384,2388 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2323,2326,2373 |            22.8959 |
+Find SIMD (O2)                           | true    |      ? |    1944,1945,1946 |             0.8165 |
+
+## MERGING 117 LISTS ##
+Baseline (copy+sort) 2871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2605 |            25.4558 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2387,2390 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2324,2326,2328 |             1.6330 |
+Find SIMD (O2)                           | true    |      ? |    1938,1941,1948 |             4.1899 |
+
+## MERGING 118 LISTS ##
+Baseline (copy+sort) 2860
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2610 |            27.5802 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2384,2388 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2327 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1941,1946,1997 |            25.3026 |
+
+## MERGING 119 LISTS ##
+Baseline (copy+sort) 2832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2610 |            27.5802 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2387,2387 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2330 |             2.8284 |
+Find SIMD (O2)                           | true    |      ? |    1941,1943,1945 |             1.6330 |
+
+## MERGING 120 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2388,2389,2433 |            20.9815 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1941,1942,1943 |             0.8165 |
+
+## MERGING 121 LISTS ##
+Baseline (copy+sort) 2831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2385,2445 |            29.0172 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2326 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1942,1943,1944 |             0.8165 |
+
+## MERGING 122 LISTS ##
+Baseline (copy+sort) 2805
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2385,2390,2446 |            27.6526 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2323 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1942,1946,1949 |             2.8674 |
+
+## MERGING 123 LISTS ##
+Baseline (copy+sort) 2863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2385,2387 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2379 |            26.1661 |
+Find SIMD (O2)                           | true    |      ? |    1940,1941,1945 |             2.1602 |
+
+## MERGING 124 LISTS ##
+Baseline (copy+sort) 2971
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2383,2388 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2325,2326,2372 |            21.9241 |
+Find SIMD (O2)                           | true    |      ? |    1942,1943,1943 |             0.4714 |
+
+## MERGING 125 LISTS ##
+Baseline (copy+sort) 2824
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2606 |            25.6948 |
+Tournament Tree (O2)                     | true    |      ? |    2376,2381,2382 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1942,1944,1996 |            24.9978 |
+
+## MERGING 126 LISTS ##
+Baseline (copy+sort) 2865
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2594 |            20.0389 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2381,2383 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1938,1939,1994 |            26.1661 |
+
+## MERGING 127 LISTS ##
+Baseline (copy+sort) 2858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2383,2427 |            20.9815 |
+Heap Cache (O2)                          | true    |      ? |    2322,2325,2325 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1941,1947,1956 |             6.1644 |
+
+## MERGING 128 LISTS ##
+Baseline (copy+sort) 2832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2381,2441 |            29.0172 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1939,1941,1947 |             3.3993 |
+
+## MERGING 129 LISTS ##
+Baseline (copy+sort) 2865
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2388,2449 |            30.0037 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1945,1945,1945 |             0.0000 |
+
+## MERGING 130 LISTS ##
+Baseline (copy+sort) 2823
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2387,2391 |             4.5461 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2384 |            28.5229 |
+Find SIMD (O2)                           | true    |      ? |    1935,1940,1941 |             2.6247 |
+
+## MERGING 131 LISTS ##
+Baseline (copy+sort) 2900
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2562 |             5.1854 |
+Tournament Tree (O2)                     | true    |      ? |    2385,2386,2388 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2324,2326,2360 |            16.5193 |
+Find SIMD (O2)                           | true    |      ? |    1944,1945,1947 |             1.2472 |
+
+## MERGING 132 LISTS ##
+Baseline (copy+sort) 2816
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2607 |            25.9272 |
+Tournament Tree (O2)                     | true    |      ? |    2372,2374,2381 |             3.8586 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2325 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1938,1947,1998 |            26.4197 |
+
+## MERGING 133 LISTS ##
+Baseline (copy+sort) 2900
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2611 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2383,2387 |             4.1096 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1943,1943,1945 |             0.9428 |
+
+## MERGING 134 LISTS ##
+Baseline (copy+sort) 2822
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2386,2415 |            14.7045 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1937,1937,1941 |             1.8856 |
+
+## MERGING 135 LISTS ##
+Baseline (copy+sort) 2875
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2385,2386,2445 |            28.0515 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1942,1943,1944 |             0.8165 |
+
+## MERGING 136 LISTS ##
+Baseline (copy+sort) 2829
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2384,2386 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2324,2326,2383 |            27.3537 |
+Find SIMD (O2)                           | true    |      ? |    1940,1942,1943 |             1.2472 |
+
+## MERGING 137 LISTS ##
+Baseline (copy+sort) 2881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2388,2389 |             4.0277 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2377 |            25.6948 |
+Find SIMD (O2)                           | true    |      ? |    1937,1937,1940 |             1.4142 |
+
+## MERGING 138 LISTS ##
+Baseline (copy+sort) 2871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2385,2388 |             3.7417 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2347 |            12.0277 |
+Find SIMD (O2)                           | true    |      ? |    1940,1940,1941 |             0.4714 |
+
+## MERGING 139 LISTS ##
+Baseline (copy+sort) 2853
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2612 |            28.2961 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2381,2389 |             4.3205 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2328 |             2.0548 |
+Find SIMD (O2)                           | true    |      ? |    1938,1941,1999 |            28.0753 |
+
+## MERGING 140 LISTS ##
+Baseline (copy+sort) 2849
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2607 |            26.1661 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2383,2388 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2326 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1939,1941,1944 |             2.0548 |
+
+## MERGING 141 LISTS ##
+Baseline (copy+sort) 2831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2386,2435 |            25.4864 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1940,1942,1944 |             1.6330 |
+
+## MERGING 142 LISTS ##
+Baseline (copy+sort) 2828
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2384,2385 |             3.0912 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2384 |            28.7557 |
+Find SIMD (O2)                           | true    |      ? |    1939,1939,1942 |             1.4142 |
+
+## MERGING 143 LISTS ##
+Baseline (copy+sort) 2870
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2552 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2384,2387 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2322,2324,2383 |            28.2961 |
+Find SIMD (O2)                           | true    |      ? |    1937,1940,1942 |             2.0548 |
+
+## MERGING 144 LISTS ##
+Baseline (copy+sort) 2905
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2374,2387,2390 |             6.9442 |
+Heap Cache (O2)                          | true    |      ? |    2321,2322,2323 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1935,1937,1994 |            27.3537 |
+
+## MERGING 145 LISTS ##
+Baseline (copy+sort) 2845
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2611 |            28.0515 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2389,2394 |             7.1336 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2328 |             2.1602 |
+Find SIMD (O2)                           | true    |      ? |    1938,1940,1980 |            19.3448 |
+
+## MERGING 146 LISTS ##
+Baseline (copy+sort) 2846
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2384,2441 |            27.1088 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2326 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1935,1937,1938 |             1.2472 |
+
+## MERGING 147 LISTS ##
+Baseline (copy+sort) 2835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2387,2435 |            23.3666 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2326 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1935,1941,1942 |             3.0912 |
+
+## MERGING 148 LISTS ##
+Baseline (copy+sort) 2837
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2382,2386 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2381 |            27.1088 |
+Find SIMD (O2)                           | true    |      ? |    1939,1940,1941 |             0.8165 |
+
+## MERGING 149 LISTS ##
+Baseline (copy+sort) 2935
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2385,2388 |             3.7417 |
+Heap Cache (O2)                          | true    |      ? |    2323,2331,2381 |            25.6645 |
+Find SIMD (O2)                           | true    |      ? |    1939,1942,1942 |             1.4142 |
+
+## MERGING 150 LISTS ##
+Baseline (copy+sort) 2824
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2611 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2382,2387 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2325 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1938,1940,1999 |            28.2961 |
+
+## MERGING 151 LISTS ##
+Baseline (copy+sort) 2941
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2611 |            28.0515 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2385,2389 |             3.2660 |
+Heap Cache (O2)                          | true    |      ? |    2325,2325,2329 |             1.8856 |
+Find SIMD (O2)                           | true    |      ? |    1940,1959,1975 |            14.3062 |
+
+## MERGING 152 LISTS ##
+Baseline (copy+sort) 2826
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2612 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2374,2378,2386 |             4.9889 |
+Heap Cache (O2)                          | true    |      ? |    2325,2325,2326 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1937,1941,1942 |             2.1602 |
+
+## MERGING 153 LISTS ##
+Baseline (copy+sort) 2858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2390,2441 |            27.0103 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2324 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    1937,1938,1940 |             1.2472 |
+
+## MERGING 154 LISTS ##
+Baseline (copy+sort) 2858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2554 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2382,2385 |             2.0548 |
+Heap Cache (O2)                          | true    |      ? |    2322,2324,2378 |            25.9401 |
+Find SIMD (O2)                           | true    |      ? |    1937,1940,1953 |             6.9442 |
+
+## MERGING 155 LISTS ##
+Baseline (copy+sort) 2847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2553 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2376,2381,2387 |             4.4969 |
+Heap Cache (O2)                          | true    |      ? |    2323,2326,2360 |            16.7796 |
+Find SIMD (O2)                           | true    |      ? |    1933,1935,1937 |             1.6330 |
+
+## MERGING 156 LISTS ##
+Baseline (copy+sort) 2850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2612 |            28.2961 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2381,2383 |             1.6330 |
+Heap Cache (O2)                          | true    |      ? |    2322,2324,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1940,1942,1990 |            23.1132 |
+
+## MERGING 157 LISTS ##
+Baseline (copy+sort) 2851
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2601 |            23.1132 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2385,2388 |             4.6428 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2327 |             1.6330 |
+Find SIMD (O2)                           | true    |      ? |    1935,1937,1938 |             1.2472 |
+
+## MERGING 158 LISTS ##
+Baseline (copy+sort) 2823
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2380,2441 |            28.7557 |
+Heap Cache (O2)                          | true    |      ? |    2322,2325,2326 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1935,1936,1937 |             0.8165 |
+
+## MERGING 159 LISTS ##
+Baseline (copy+sort) 2828
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2386,2388,2436 |            23.1132 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1936,1938,1939 |             1.2472 |
+
+## MERGING 160 LISTS ##
+Baseline (copy+sort) 2849
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2555 |             1.6997 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2383,2384 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |    2325,2325,2381 |            26.3987 |
+Find SIMD (O2)                           | true    |      ? |    1939,1940,1943 |             1.6997 |
+
+## MERGING 161 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2385,2390 |             4.4969 |
+Heap Cache (O2)                          | true    |      ? |    2322,2324,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1936,1936,1993 |            26.8701 |
+
+## MERGING 162 LISTS ##
+Baseline (copy+sort) 2851
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2553,2612 |            28.2961 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2384,2386 |             3.3993 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2326 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1936,1941,1996 |            27.1825 |
+
+## MERGING 163 LISTS ##
+Baseline (copy+sort) 2881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2553,2608 |            26.1661 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2382,2387 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1936,1936,1937 |             0.4714 |
+
+## MERGING 164 LISTS ##
+Baseline (copy+sort) 2844
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2554 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2382,2437 |            26.9196 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1934,1935,1938 |             1.6997 |
+
+## MERGING 165 LISTS ##
+Baseline (copy+sort) 2839
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2381,2384 |             2.4495 |
+Heap Cache (O2)                          | true    |      ? |    2324,2326,2378 |            24.9978 |
+Find SIMD (O2)                           | true    |      ? |    1936,1936,1938 |             0.9428 |
+
+## MERGING 166 LISTS ##
+Baseline (copy+sort) 2882
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2383,2386 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2364 |            18.6250 |
+Find SIMD (O2)                           | true    |      ? |    1937,1938,1938 |             0.4714 |
+
+## MERGING 167 LISTS ##
+Baseline (copy+sort) 2861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2604 |            24.9844 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2381,2385 |             2.4944 |
+Heap Cache (O2)                          | true    |      ? |    2321,2323,2324 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1933,1938,1992 |            26.7125 |
+
+## MERGING 168 LISTS ##
+Baseline (copy+sort) 2848
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2607 |            26.1661 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2384,2386 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |    2322,2325,2325 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1933,1938,1984 |            22.9541 |
+
+## MERGING 169 LISTS ##
+Baseline (copy+sort) 2858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2387,2389,2432 |            20.7579 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1937,1938,1942 |             2.1602 |
+
+## MERGING 170 LISTS ##
+Baseline (copy+sort) 2854
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2386,2449 |            30.4302 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2324 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1934,1934,1940 |             2.8284 |
+
+## MERGING 171 LISTS ##
+Baseline (copy+sort) 2853
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2553,2557 |             2.1602 |
+Tournament Tree (O2)                     | true    |      ? |    2386,2387,2390 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2385 |            28.9943 |
+Find SIMD (O2)                           | true    |      ? |    1936,1940,1942 |             2.4944 |
+
+## MERGING 172 LISTS ##
+Baseline (copy+sort) 2948
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2556 |             2.1602 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2382,2386 |             3.6818 |
+Heap Cache (O2)                          | true    |      ? |    2322,2326,2381 |            26.9196 |
+Find SIMD (O2)                           | true    |      ? |    1932,1936,1948 |             6.7987 |
+
+## MERGING 173 LISTS ##
+Baseline (copy+sort) 2819
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2592 |            19.0962 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2384,2384 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1924,1929,1996 |            32.8261 |
+
+## MERGING 174 LISTS ##
+Baseline (copy+sort) 2844
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2556,2601 |            22.2161 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2382,2390 |             4.6428 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2326 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1935,1935,1995 |            28.2843 |
+
+## MERGING 175 LISTS ##
+Baseline (copy+sort) 2861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2553 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2385,2422 |            18.1904 |
+Heap Cache (O2)                          | true    |      ? |    2325,2326,2327 |             0.8165 |
+Find SIMD (O2)                           | true    |      ? |    1935,1938,1939 |             1.6997 |
+
+## MERGING 176 LISTS ##
+Baseline (copy+sort) 2827
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2389,2443 |            26.9815 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2323 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |    1935,1936,1936 |             0.4714 |
+
+## MERGING 177 LISTS ##
+Baseline (copy+sort) 2851
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2552 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2382,2440 |            28.5929 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1931,1931,1932 |             0.4714 |
+
+## MERGING 178 LISTS ##
+Baseline (copy+sort) 2858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2553 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2383,2384 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2384 |            28.2843 |
+Find SIMD (O2)                           | true    |      ? |    1933,1933,1935 |             0.9428 |
+
+## MERGING 179 LISTS ##
+Baseline (copy+sort) 2828
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2375,2382,2383 |             3.5590 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2383 |            28.2843 |
+Find SIMD (O2)                           | true    |      ? |    1934,1934,1935 |             0.4714 |
+
+## MERGING 180 LISTS ##
+Baseline (copy+sort) 2832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2609 |            27.3415 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2382,2383 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2322,2322,2323 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1932,1934,1986 |            24.9978 |
+
+## MERGING 181 LISTS ##
+Baseline (copy+sort) 2849
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2614 |            29.4656 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2380,2383 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2327 |             1.6997 |
+Find SIMD (O2)                           | true    |      ? |    1933,1935,1938 |             2.0548 |
+
+## MERGING 182 LISTS ##
+Baseline (copy+sort) 2923
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2389,2436 |            23.6972 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1933,1934,1936 |             1.2472 |
+
+## MERGING 183 LISTS ##
+Baseline (copy+sort) 2839
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2554 |             1.4142 |
+Tournament Tree (O2)                     | true    |      ? |    2375,2387,2437 |            26.8494 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1932,1932,1935 |             1.4142 |
+
+## MERGING 184 LISTS ##
+Baseline (copy+sort) 2836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2384,2385,2447 |            29.4656 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2324 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1926,1928,1933 |             2.9439 |
+
+## MERGING 185 LISTS ##
+Baseline (copy+sort) 2842
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2554 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2378,2383,2383 |             2.3570 |
+Heap Cache (O2)                          | true    |      ? |    2324,2327,2375 |            23.3666 |
+Find SIMD (O2)                           | true    |      ? |    1931,1932,1932 |             0.4714 |
+
+## MERGING 186 LISTS ##
+Baseline (copy+sort) 2911
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2551 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2383,2387 |             1.8856 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2384 |            28.2843 |
+Find SIMD (O2)                           | true    |      ? |    1931,1933,1934 |             1.2472 |
+
+## MERGING 187 LISTS ##
+Baseline (copy+sort) 2860
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2612 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2391,2393 |             4.3205 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2329 |             3.0912 |
+Find SIMD (O2)                           | true    |      ? |    1932,1936,1994 |            28.3314 |
+
+## MERGING 188 LISTS ##
+Baseline (copy+sort) 2820
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2606 |            25.6948 |
+Tournament Tree (O2)                     | true    |      ? |    2375,2383,2438 |            28.0040 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1935,1935,1936 |             0.4714 |
+
+## MERGING 189 LISTS ##
+Baseline (copy+sort) 2852
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2555 |             1.6997 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2380,2385 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2324,2324,2339 |             7.0711 |
+Find SIMD (O2)                           | true    |      ? |    1934,1935,1935 |             0.4714 |
+
+## MERGING 190 LISTS ##
+Baseline (copy+sort) 2835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2552 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2377,2380,2388 |             4.6428 |
+Heap Cache (O2)                          | true    |      ? |    2326,2328,2364 |            17.4611 |
+Find SIMD (O2)                           | true    |      ? |    1929,1934,1935 |             2.6247 |
+
+## MERGING 191 LISTS ##
+Baseline (copy+sort) 2830
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2607 |            26.1661 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2384,2384 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |    2322,2325,2325 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1934,1935,1994 |            28.0515 |
+
+## MERGING 192 LISTS ##
+Baseline (copy+sort) 2842
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2554 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2386,2386 |             1.4142 |
+Heap Cache (O2)                          | true    |      ? |    2323,2324,2326 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1929,1930,1986 |            26.6375 |
+
+## MERGING 193 LISTS ##
+Baseline (copy+sort) 2843
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2609 |            27.1088 |
+Tournament Tree (O2)                     | true    |      ? |    2385,2389,2393 |             3.2660 |
+Heap Cache (O2)                          | true    |      ? |    2323,2325,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1929,1932,1937 |             3.2998 |
+
+## MERGING 194 LISTS ##
+Baseline (copy+sort) 2833
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2553 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |    2372,2385,2434 |            26.6958 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1926,1928,1928 |             0.9428 |
+
+## MERGING 195 LISTS ##
+Baseline (copy+sort) 2857
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2553 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |    2379,2390,2399 |             8.1786 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1928,1931,1935 |             2.8674 |
+
+## MERGING 196 LISTS ##
+Baseline (copy+sort) 2830
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2553 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2381,2386 |             2.6247 |
+Heap Cache (O2)                          | true    |      ? |    2325,2326,2378 |            24.7521 |
+Find SIMD (O2)                           | true    |      ? |    1929,1929,1935 |             2.8284 |
+
+## MERGING 197 LISTS ##
+Baseline (copy+sort) 2891
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2552,2552,2552 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |    2380,2386,2388 |             3.3993 |
+Heap Cache (O2)                          | true    |      ? |    2326,2327,2384 |            27.1088 |
+Find SIMD (O2)                           | true    |      ? |    1932,1934,1939 |             2.9439 |
+
+## MERGING 198 LISTS ##
+Baseline (copy+sort) 2849
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2607 |            26.3987 |
+Tournament Tree (O2)                     | true    |      ? |    2381,2382,2384 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |    2324,2325,2325 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |    1933,1936,1990 |            26.1916 |
+
+## MERGING 199 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2551,2611 |            28.2843 |
+Tournament Tree (O2)                     | true    |      ? |    2382,2383,2387 |             2.1602 |
+Heap Cache (O2)                          | true    |      ? |    2323,2323,2325 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |    1932,1932,1933 |             0.4714 |
+
+## MERGING 200 LISTS ##
+Baseline (copy+sort) 2838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2551,2552,2554 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |    2383,2385,2443 |            27.8248 |
+Heap Cache (O2)                          | true    |      ? |    2322,2323,2325 |             1.2472 |
+Find SIMD (O2)                           | true    |      ? |    1929,1929,1930 |             0.4714 |
