@@ -37,6 +37,9 @@ bool MergeFindCacheSimd::merge(struct test *t, int n) {
 
 			const __m256i values = _mm256_loadu_si256((__m256i*)(cache + i));
 			const __m256i gt = _mm256_cmpgt_epi32(values, maxvalues);
+			// faster on skylake
+			// maxindices = _mm256_or_si256(_mm256_and_si256(gt, indices), _mm256_andnot_si256(gt, maxindices));
+			// faster on raptor lake
 			maxindices = _mm256_blendv_epi8(maxindices, indices, gt);
 			maxvalues = _mm256_max_epi32(values, maxvalues);
 		}
