@@ -1,0 +1,116 @@
+#include "harness.h"
+
+#include "merge_find_cache_simd_unrolled.h"
+
+#include <cstdlib>
+#include <cstdint>
+#include <cassert>
+#include <cmath>
+#include <cstring>
+
+#include <algorithm>
+#include <iostream>
+#include <immintrin.h>
+
+bool MergeFindCacheSimdUnrolled::merge(struct test *t, int n) {
+	size_t rounded = (size_t)ceil((double)n / 8) * 8;
+	size_t unwound = rounded / 32 * 32;
+
+	int **segments = (int **)malloc(sizeof(int *) * n);
+	int *cache = (int *)std::aligned_alloc(32, sizeof(int) * rounded);
+	memset(cache, 0, sizeof(int) * rounded);
+
+	for (int i = 0; i < n; i++) {
+		segments[i] = t->postings[i];
+		cache[i] = *t->postings[i];
+	}
+
+	// process
+	size_t pos = 0;
+	for (;;) {
+		// http://0x80.pl/notesen/2018-10-03-simd-index-of-min.html
+		// https://github.com/WojciechMula/toys/tree/master/simd-min-index
+		const __m256i increment = _mm256_set1_epi32(8);
+		__m256i indices = _mm256_setr_epi32(0, 1, 2, 3, 4, 5, 6, 7);
+		__m256i maxindices = _mm256_set1_epi32(0);
+		__m256i maxvalues = _mm256_set1_epi32(0);
+
+		size_t i = 0;
+		for (; i < unwound; i += 32) {
+			const __m256i values0 = _mm256_load_si256((__m256i*)(cache + i + 0*8));
+			const __m256i values1 = _mm256_load_si256((__m256i*)(cache + i + 1*8));
+			const __m256i values2 = _mm256_load_si256((__m256i*)(cache + i + 2*8));
+			const __m256i values3 = _mm256_load_si256((__m256i*)(cache + i + 3*8));
+
+			maxindices = _mm256_blendv_epi8(maxindices, indices, _mm256_cmpgt_epi32(values0, maxvalues));
+			maxvalues = _mm256_max_epi32(values0, maxvalues);
+			indices = _mm256_add_epi32(indices, increment);
+
+			maxindices = _mm256_blendv_epi8(maxindices, indices, _mm256_cmpgt_epi32(values1, maxvalues));
+			maxvalues = _mm256_max_epi32(values1, maxvalues);
+			indices = _mm256_add_epi32(indices, increment);
+
+			maxindices = _mm256_blendv_epi8(maxindices, indices, _mm256_cmpgt_epi32(values2, maxvalues));
+			maxvalues = _mm256_max_epi32(values2, maxvalues);
+			indices = _mm256_add_epi32(indices, increment);
+
+			maxindices = _mm256_blendv_epi8(maxindices, indices, _mm256_cmpgt_epi32(values3, maxvalues));
+			maxvalues = _mm256_max_epi32(values3, maxvalues);
+			indices = _mm256_add_epi32(indices, increment);
+		}
+
+		for (; i < rounded; i += 8) {
+			const __m256i values = _mm256_load_si256((__m256i*)(cache + i));
+			const __m256i gt = _mm256_cmpgt_epi32(values, maxvalues);
+			// faster on skylake
+			// maxindices = _mm256_or_si256(_mm256_and_si256(gt, indices), _mm256_andnot_si256(gt, maxindices));
+			// faster on raptor lake
+			maxindices = _mm256_blendv_epi8(maxindices, indices, gt);
+			maxvalues = _mm256_max_epi32(values, maxvalues);
+			indices = _mm256_add_epi32(indices, increment);
+		}
+
+		// fold one last time
+		__m128i maxindices1 = _mm256_extracti128_si256(maxindices, 0);
+		__m128i maxindices2 = _mm256_extracti128_si256(maxindices, 1);
+		__m128i maxvalues1 = _mm256_extracti128_si256(maxvalues, 0);
+		__m128i maxvalues2 = _mm256_extracti128_si256(maxvalues, 1);
+
+		const __m128i gt = _mm_cmpgt_epi32(maxvalues2, maxvalues1);
+		maxindices1 = _mm_blendv_epi8(maxindices1, maxindices2, gt);
+		maxvalues1 = _mm_max_epi32(maxvalues2, maxvalues1);
+
+		// extract and find max
+		int32_t values_array[4];
+		uint32_t indices_array[4];
+
+		_mm_storeu_si128((__m128i*)values_array, maxvalues1);
+		_mm_storeu_si128((__m128i*)indices_array, maxindices1);
+
+		if (values_array[0] == 0 && values_array[1] == 0 && values_array[2] == 0 && values_array[3] == 0)
+			break;
+
+		if (values_array[0] >= values_array[1] && values_array[0] >= values_array[2] && values_array[0] >= values_array[3]) {
+			size_t maxindex = indices_array[0];
+			t->results[pos++] = values_array[0];
+			cache[maxindex] = *++segments[maxindex];
+		} else if (values_array[1] >= values_array[0] && values_array[1] >= values_array[2] && values_array[1] >= values_array[3]) {
+			size_t maxindex = indices_array[1];
+			t->results[pos++] = values_array[1];
+			cache[maxindex] = *++segments[maxindex];
+		} else if (values_array[2] >= values_array[0] && values_array[2] >= values_array[1] && values_array[2] >= values_array[3]) {
+			size_t maxindex = indices_array[2];
+			t->results[pos++] = values_array[2];
+			cache[maxindex] = *++segments[maxindex];
+		} else {
+			size_t maxindex = indices_array[3];
+			t->results[pos++] = values_array[3];
+			cache[maxindex] = *++segments[maxindex];
+		}
+	}
+
+	std::free(cache);
+	free(segments);
+
+	return true;
+}

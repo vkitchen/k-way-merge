@@ -23,6 +23,7 @@
 #include "merge_find_cache_unrolled_best.h"
 #include "merge_find_cache_unrolled_simd.h"
 #include "merge_find_cache_simd.h"
+#include "merge_find_cache_simd_unrolled.h"
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
@@ -69,6 +70,7 @@ Merge *functions[] = {
 //	new MergeFindCacheUnrolledBest,
 //	new MergeFindCacheUnrolledSimd,
 //	new MergeFindCacheSimd,
+//	new MergeFindCacheSimdUnrolled,
 //
 //	new MergeQuickSort,
 //	new MergeStdSort,

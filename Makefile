@@ -12,6 +12,7 @@ SRC = \
 	merge_find_cache_unrolled_best.cpp \
 	merge_find_cache_unrolled_simd.cpp \
 	merge_find_cache_simd.cpp \
+	merge_find_cache_simd_unrolled.cpp \
 	merge_quick_sort.cpp \
 	merge_std_sort.cpp \
 	merge_insertion_sort.cpp \
