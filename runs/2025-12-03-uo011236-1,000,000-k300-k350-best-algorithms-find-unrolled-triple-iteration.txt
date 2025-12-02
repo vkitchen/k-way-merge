@@ -1,0 +1,469 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 350
+ITER_COUNT 3
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1764711835
+MEMORY 2.6077 GiB
+
+Init: 18856
+
+## MERGING 300 LISTS ##
+Baseline (copy+sort) 9617
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8527,8573,8599 |            29.7695 |
+Heap Cache (O3)                          | true    |      ? |    9022,9028,9050 |            12.0370 |
+Find SIMD (O3)                           | true    |      ? |    9523,9540,9545 |             9.4163 |
+Tournament Tree (O3)                     | true    |      ? |    9043,9050,9160 |            53.5807 |
+
+## MERGING 301 LISTS ##
+Baseline (copy+sort) 9550
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8644,8691,8875 |            99.6806 |
+Heap Cache (O3)                          | true    |      ? |    9123,9164,9182 |            24.6892 |
+Find SIMD (O3)                           | true    |      ? |    9572,9602,9613 |            17.3269 |
+Tournament Tree (O3)                     | true    |      ? |    9121,9128,9133 |             4.9216 |
+
+## MERGING 302 LISTS ##
+Baseline (copy+sort) 9598
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8663,8681,8710 |            19.3620 |
+Heap Cache (O3)                          | true    |      ? |    9151,9156,9182 |            13.5892 |
+Find SIMD (O3)                           | true    |      ? | 10123,10140,10141 |             8.2597 |
+Tournament Tree (O3)                     | true    |      ? |    9187,9189,9243 |            25.9401 |
+
+## MERGING 303 LISTS ##
+Baseline (copy+sort) 9578
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8593,8661,8695 |            42.4055 |
+Heap Cache (O3)                          | true    |      ? |    9059,9126,9142 |            35.9537 |
+Find SIMD (O3)                           | true    |      ? | 10086,10087,10104 |             8.2597 |
+Tournament Tree (O3)                     | true    |      ? |    9112,9123,9147 |            14.6135 |
+
+## MERGING 304 LISTS ##
+Baseline (copy+sort) 9696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8607,8619,8631 |             9.7980 |
+Heap Cache (O3)                          | true    |      ? |    9101,9106,9161 |            27.1825 |
+Find SIMD (O3)                           | true    |      ? |    9597,9603,9609 |             4.8990 |
+Tournament Tree (O3)                     | true    |      ? |    9143,9168,9203 |            24.6080 |
+
+## MERGING 305 LISTS ##
+Baseline (copy+sort) 9463
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8810,8820,8857 |            20.2155 |
+Heap Cache (O3)                          | true    |      ? |    9124,9128,9194 |            32.0971 |
+Find SIMD (O3)                           | true    |      ? |    9746,9757,9771 |            10.2307 |
+Tournament Tree (O3)                     | true    |      ? |    9191,9198,9259 |            30.5396 |
+
+## MERGING 306 LISTS ##
+Baseline (copy+sort) 9748
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8853,8880,8893 |            16.6600 |
+Heap Cache (O3)                          | true    |      ? |    9179,9184,9247 |            30.9444 |
+Find SIMD (O3)                           | true    |      ? | 10282,10288,10341 |            26.5121 |
+Tournament Tree (O3)                     | true    |      ? |    9240,9291,9314 |            30.9228 |
+
+## MERGING 307 LISTS ##
+Baseline (copy+sort) 9586
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8866,8872,8928 |            27.9205 |
+Heap Cache (O3)                          | true    |      ? |    9220,9236,9243 |             9.6264 |
+Find SIMD (O3)                           | true    |      ? | 10322,10328,10380 |            26.0427 |
+Tournament Tree (O3)                     | true    |      ? |    9281,9319,9333 |            21.9697 |
+
+## MERGING 308 LISTS ##
+Baseline (copy+sort) 9831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8895,8903,8939 |            19.1369 |
+Heap Cache (O3)                          | true    |      ? |    9250,9253,9267 |             7.4087 |
+Find SIMD (O3)                           | true    |      ? |    9864,9868,9923 |            26.9196 |
+Tournament Tree (O3)                     | true    |      ? |    9332,9332,9353 |             9.8995 |
+
+## MERGING 309 LISTS ##
+Baseline (copy+sort) 9747
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8933,8934,8945 |             5.4365 |
+Heap Cache (O3)                          | true    |      ? |    9267,9273,9282 |             6.1644 |
+Find SIMD (O3)                           | true    |      ? |    9894,9900,9931 |            16.2138 |
+Tournament Tree (O3)                     | true    |      ? |    9345,9361,9397 |            21.7460 |
+
+## MERGING 310 LISTS ##
+Baseline (copy+sort) 9858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8998,9019,9034 |            14.7648 |
+Heap Cache (O3)                          | true    |      ? |    9307,9333,9374 |            27.5802 |
+Find SIMD (O3)                           | true    |      ? | 10453,10457,10502 |            22.2161 |
+Tournament Tree (O3)                     | true    |      ? |    9402,9410,9419 |             6.9442 |
+
+## MERGING 311 LISTS ##
+Baseline (copy+sort) 9683
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    8995,8996,9001 |             2.6247 |
+Heap Cache (O3)                          | true    |      ? |    9350,9355,9363 |             5.3541 |
+Find SIMD (O3)                           | true    |      ? | 10483,10492,10566 |            37.1872 |
+Tournament Tree (O3)                     | true    |      ? |    9449,9452,9488 |            17.7200 |
+
+## MERGING 312 LISTS ##
+Baseline (copy+sort) 9889
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9038,9039,9051 |             5.9067 |
+Heap Cache (O3)                          | true    |      ? |    9400,9418,9424 |            10.1980 |
+Find SIMD (O3)                           | true    |      ? |   9985,9989,10002 |             7.2572 |
+Tournament Tree (O3)                     | true    |      ? |    9486,9501,9525 |            16.0624 |
+
+## MERGING 313 LISTS ##
+Baseline (copy+sort) 9791
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9062,9066,9119 |            25.9786 |
+Heap Cache (O3)                          | true    |      ? |    9445,9482,9492 |            20.2155 |
+Find SIMD (O3)                           | true    |      ? | 10172,10183,10232 |            26.0811 |
+Tournament Tree (O3)                     | true    |      ? |    9523,9545,9593 |            29.2271 |
+
+## MERGING 314 LISTS ##
+Baseline (copy+sort) 10098
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9080,9085,9099 |             8.0416 |
+Heap Cache (O3)                          | true    |      ? |    9484,9485,9523 |            18.1537 |
+Find SIMD (O3)                           | true    |      ? | 10704,10717,10773 |            29.9370 |
+Tournament Tree (O3)                     | true    |      ? |    9576,9590,9640 |            27.4712 |
+
+## MERGING 315 LISTS ##
+Baseline (copy+sort) 9957
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9123,9147,9173 |            20.4179 |
+Heap Cache (O3)                          | true    |      ? |    9515,9516,9550 |            16.2686 |
+Find SIMD (O3)                           | true    |      ? | 10732,10732,10818 |            40.5408 |
+Tournament Tree (O3)                     | true    |      ? |    9626,9629,9671 |            20.5426 |
+
+## MERGING 316 LISTS ##
+Baseline (copy+sort) 10026
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9142,9153,9216 |            32.6020 |
+Heap Cache (O3)                          | true    |      ? |    9558,9564,9621 |            28.3901 |
+Find SIMD (O3)                           | true    |      ? | 10275,10280,10291 |             6.6833 |
+Tournament Tree (O3)                     | true    |      ? |    9667,9686,9690 |            10.0333 |
+
+## MERGING 317 LISTS ##
+Baseline (copy+sort) 9910
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9180,9202,9211 |            13.0213 |
+Heap Cache (O3)                          | true    |      ? |    9590,9596,9652 |            27.9205 |
+Find SIMD (O3)                           | true    |      ? | 10296,10316,10340 |            17.9877 |
+Tournament Tree (O3)                     | true    |      ? |    9707,9755,9770 |            26.8701 |
+
+## MERGING 318 LISTS ##
+Baseline (copy+sort) 10033
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9196,9201,9258 |            28.1227 |
+Heap Cache (O3)                          | true    |      ? |    9638,9653,9689 |            21.4009 |
+Find SIMD (O3)                           | true    |      ? | 10868,10869,10918 |            23.3381 |
+Tournament Tree (O3)                     | true    |      ? |    9751,9755,9783 |            14.2361 |
+
+## MERGING 319 LISTS ##
+Baseline (copy+sort) 10029
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9236,9244,9255 |             7.7889 |
+Heap Cache (O3)                          | true    |      ? |    9669,9678,9739 |            31.0948 |
+Find SIMD (O3)                           | true    |      ? | 10909,10915,10951 |            18.5472 |
+Tournament Tree (O3)                     | true    |      ? |    9769,9786,9788 |             8.5245 |
+
+## MERGING 320 LISTS ##
+Baseline (copy+sort) 10255
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9274,9286,9348 |            32.4277 |
+Heap Cache (O3)                          | true    |      ? |    9716,9717,9766 |            23.3381 |
+Find SIMD (O3)                           | true    |      ? | 10396,10438,10447 |            22.2261 |
+Tournament Tree (O3)                     | true    |      ? |    9819,9822,9889 |            32.3144 |
+
+## MERGING 321 LISTS ##
+Baseline (copy+sort) 10129
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9567,9573,9592 |            10.6562 |
+Heap Cache (O3)                          | true    |      ? |    9729,9732,9797 |            31.3723 |
+Find SIMD (O3)                           | true    |      ? | 10578,10612,10635 |            23.4141 |
+Tournament Tree (O3)                     | true    |      ? |    9856,9866,9921 |            28.5774 |
+
+## MERGING 322 LISTS ##
+Baseline (copy+sort) 10191
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9609,9613,9658 |            22.2161 |
+Heap Cache (O3)                          | true    |      ? |    9766,9801,9806 |            17.7951 |
+Find SIMD (O3)                           | true    |      ? | 11138,11139,11194 |            26.1661 |
+Tournament Tree (O3)                     | true    |      ? |    9901,9957,9971 |            30.2435 |
+
+## MERGING 323 LISTS ##
+Baseline (copy+sort) 10184
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9627,9635,9670 |            18.6726 |
+Heap Cache (O3)                          | true    |      ? |    9803,9810,9820 |             6.9761 |
+Find SIMD (O3)                           | true    |      ? | 11164,11178,11233 |            29.7807 |
+Tournament Tree (O3)                     | true    |      ? |    9940,9989,9989 |            23.0988 |
+
+## MERGING 324 LISTS ##
+Baseline (copy+sort) 10260
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9659,9661,9723 |            29.7097 |
+Heap Cache (O3)                          | true    |      ? |    9839,9883,9906 |            27.7969 |
+Find SIMD (O3)                           | true    |      ? | 10684,10692,10719 |            14.9741 |
+Tournament Tree (O3)                     | true    |      ? |   9995,9998,10018 |            10.2089 |
+
+## MERGING 325 LISTS ##
+Baseline (copy+sort) 10216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9696,9706,9749 |            22.9928 |
+Heap Cache (O3)                          | true    |      ? |    9862,9899,9912 |            21.1818 |
+Find SIMD (O3)                           | true    |      ? | 10703,10726,10767 |            26.4701 |
+Tournament Tree (O3)                     | true    |      ? | 10025,10046,10074 |            20.0721 |
+
+## MERGING 326 LISTS ##
+Baseline (copy+sort) 10398
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9726,9749,9758 |            13.4743 |
+Heap Cache (O3)                          | true    |      ? |    9924,9976,9979 |            25.2499 |
+Find SIMD (O3)                           | true    |      ? | 11304,11318,11348 |            18.3545 |
+Tournament Tree (O3)                     | true    |      ? | 10044,10052,10115 |            31.7525 |
+
+## MERGING 327 LISTS ##
+Baseline (copy+sort) 10300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9750,9757,9776 |            10.9848 |
+Heap Cache (O3)                          | true    |      ? |   9954,9973,10007 |            21.9241 |
+Find SIMD (O3)                           | true    |      ? | 11336,11341,11376 |            17.7951 |
+Tournament Tree (O3)                     | true    |      ? | 10072,10104,10114 |            17.9134 |
+
+## MERGING 328 LISTS ##
+Baseline (copy+sort) 10461
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? |    9783,9785,9843 |            27.8248 |
+Heap Cache (O3)                          | true    |      ? |  9985,10020,10085 |            41.4327 |
+Find SIMD (O3)                           | true    |      ? | 10803,10810,10841 |            16.5126 |
+Tournament Tree (O3)                     | true    |      ? | 10136,10140,10211 |            34.4513 |
+
+## MERGING 329 LISTS ##
+Baseline (copy+sort) 10359
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10055,10057,10146 |            42.4343 |
+Heap Cache (O3)                          | true    |      ? | 10010,10023,10070 |            25.7725 |
+Find SIMD (O3)                           | true    |      ? | 10986,11039,11059 |            30.8004 |
+Tournament Tree (O3)                     | true    |      ? | 10151,10162,10586 |           202.5180 |
+
+## MERGING 330 LISTS ##
+Baseline (copy+sort) 10536
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10083,10083,10112 |            13.6707 |
+Heap Cache (O3)                          | true    |      ? | 10071,10112,10119 |            21.1713 |
+Find SIMD (O3)                           | true    |      ? | 11549,11574,11626 |            32.0728 |
+Tournament Tree (O3)                     | true    |      ? | 10208,10217,10252 |            18.9795 |
+
+## MERGING 331 LISTS ##
+Baseline (copy+sort) 10429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10106,10112,10160 |            24.1661 |
+Heap Cache (O3)                          | true    |      ? | 10102,10130,10147 |            18.5532 |
+Find SIMD (O3)                           | true    |      ? | 11594,11601,11660 |            29.6011 |
+Tournament Tree (O3)                     | true    |      ? | 10228,10278,10302 |            30.8257 |
+
+## MERGING 332 LISTS ##
+Baseline (copy+sort) 10668
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10130,10143,10154 |             9.8093 |
+Heap Cache (O3)                          | true    |      ? | 10137,10141,10180 |            19.3964 |
+Find SIMD (O3)                           | true    |      ? | 11095,11151,11156 |            27.6526 |
+Tournament Tree (O3)                     | true    |      ? | 10284,10292,10303 |             7.7889 |
+
+## MERGING 333 LISTS ##
+Baseline (copy+sort) 10439
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10154,10186,10195 |            17.5942 |
+Heap Cache (O3)                          | true    |      ? | 10167,10199,10215 |            19.9555 |
+Find SIMD (O3)                           | true    |      ? | 11095,11103,11150 |            24.2625 |
+Tournament Tree (O3)                     | true    |      ? | 10328,10337,10364 |            15.2971 |
+
+## MERGING 334 LISTS ##
+Baseline (copy+sort) 10688
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10176,10202,10230 |            22.0504 |
+Heap Cache (O3)                          | true    |      ? | 10216,10263,10274 |            25.1529 |
+Find SIMD (O3)                           | true    |      ? | 11735,11760,11782 |            19.2007 |
+Tournament Tree (O3)                     | true    |      ? | 10380,10398,10422 |            17.2047 |
+
+## MERGING 335 LISTS ##
+Baseline (copy+sort) 10538
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10209,10250,10280 |            29.1014 |
+Heap Cache (O3)                          | true    |      ? | 10259,10266,10310 |            22.5733 |
+Find SIMD (O3)                           | true    |      ? | 11774,11821,11836 |            26.4113 |
+Tournament Tree (O3)                     | true    |      ? | 10433,10448,10472 |            16.0624 |
+
+## MERGING 336 LISTS ##
+Baseline (copy+sort) 10848
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10250,10259,10321 |            31.5630 |
+Heap Cache (O3)                          | true    |      ? | 10292,10297,10359 |            30.4740 |
+Find SIMD (O3)                           | true    |      ? | 11243,11263,11300 |            23.6126 |
+Tournament Tree (O3)                     | true    |      ? | 10455,10461,10493 |            16.6800 |
+
+## MERGING 337 LISTS ##
+Baseline (copy+sort) 10787
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10558,10562,10624 |            30.2141 |
+Heap Cache (O3)                          | true    |      ? | 10332,10354,10366 |            14.0791 |
+Find SIMD (O3)                           | true    |      ? | 11437,11448,11502 |            28.4058 |
+Tournament Tree (O3)                     | true    |      ? | 10507,10528,10559 |            21.3594 |
+
+## MERGING 338 LISTS ##
+Baseline (copy+sort) 10821
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10583,10607,10667 |            35.3270 |
+Heap Cache (O3)                          | true    |      ? | 10375,10420,10440 |            27.1825 |
+Find SIMD (O3)                           | true    |      ? | 12024,12050,12092 |            28.0159 |
+Tournament Tree (O3)                     | true    |      ? | 10531,10578,10585 |            23.9768 |
+
+## MERGING 339 LISTS ##
+Baseline (copy+sort) 10713
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10617,10630,10678 |            26.2340 |
+Heap Cache (O3)                          | true    |      ? | 10404,10413,10464 |            26.4197 |
+Find SIMD (O3)                           | true    |      ? | 12077,12124,12138 |            26.0896 |
+Tournament Tree (O3)                     | true    |      ? | 10578,10578,10590 |             5.6569 |
+
+## MERGING 340 LISTS ##
+Baseline (copy+sort) 11021
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10653,10677,10715 |            25.5256 |
+Heap Cache (O3)                          | true    |      ? | 10438,10442,10497 |            26.9196 |
+Find SIMD (O3)                           | true    |      ? | 11535,11542,11595 |            26.7872 |
+Tournament Tree (O3)                     | true    |      ? | 10607,10613,10659 |            23.2283 |
+
+## MERGING 341 LISTS ##
+Baseline (copy+sort) 10819
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10696,10704,10783 |            39.2626 |
+Heap Cache (O3)                          | true    |      ? | 10476,10532,10535 |            27.1334 |
+Find SIMD (O3)                           | true    |      ? | 11576,11589,11648 |            31.3298 |
+Tournament Tree (O3)                     | true    |      ? | 10627,10688,10699 |            31.6684 |
+
+## MERGING 342 LISTS ##
+Baseline (copy+sort) 10929
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10745,10748,10764 |             8.3400 |
+Heap Cache (O3)                          | true    |      ? | 10528,10538,10551 |             9.4163 |
+Find SIMD (O3)                           | true    |      ? | 12199,12254,12260 |            27.4510 |
+Tournament Tree (O3)                     | true    |      ? | 10657,10675,10687 |            12.3288 |
+
+## MERGING 343 LISTS ##
+Baseline (copy+sort) 10805
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10767,10769,10785 |             8.0554 |
+Heap Cache (O3)                          | true    |      ? | 10576,10584,10628 |            22.8619 |
+Find SIMD (O3)                           | true    |      ? | 12217,12261,12314 |            39.6569 |
+Tournament Tree (O3)                     | true    |      ? | 10717,10723,10743 |            11.1156 |
+
+## MERGING 344 LISTS ##
+Baseline (copy+sort) 11015
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10790,10813,10878 |            37.2648 |
+Heap Cache (O3)                          | true    |      ? | 10616,10631,10671 |            23.2140 |
+Find SIMD (O3)                           | true    |      ? | 11776,11810,11845 |            28.1701 |
+Tournament Tree (O3)                     | true    |      ? | 10796,10831,10909 |            47.2323 |
+
+## MERGING 345 LISTS ##
+Baseline (copy+sort) 10909
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10836,10955,10961 |            57.5635 |
+Heap Cache (O3)                          | true    |      ? | 10660,10707,10924 |           114.9850 |
+Find SIMD (O3)                           | true    |      ? | 11897,11937,11952 |            23.2140 |
+Tournament Tree (O3)                     | true    |      ? | 10842,10873,10978 |            58.1970 |
+
+## MERGING 346 LISTS ##
+Baseline (copy+sort) 11236
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10811,10966,10997 |            81.3647 |
+Heap Cache (O3)                          | true    |      ? | 10690,10713,10717 |            11.8977 |
+Find SIMD (O3)                           | true    |      ? | 12454,12499,12523 |            28.6007 |
+Tournament Tree (O3)                     | true    |      ? | 10789,10795,10835 |            20.4179 |
+
+## MERGING 347 LISTS ##
+Baseline (copy+sort) 10966
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10748,10773,10855 |            45.7019 |
+Heap Cache (O3)                          | true    |      ? | 10717,10772,10790 |            31.0519 |
+Find SIMD (O3)                           | true    |      ? | 12484,12487,12528 |            20.0721 |
+Tournament Tree (O3)                     | true    |      ? | 10830,10842,10876 |            19.4822 |
+
+## MERGING 348 LISTS ##
+Baseline (copy+sort) 11213
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10774,10787,10810 |            14.8847 |
+Heap Cache (O3)                          | true    |      ? | 10784,10788,10831 |            21.2760 |
+Find SIMD (O3)                           | true    |      ? | 11971,12015,12026 |            23.7627 |
+Tournament Tree (O3)                     | true    |      ? | 10848,10867,10909 |            25.4864 |
+
+## MERGING 349 LISTS ##
+Baseline (copy+sort) 10927
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10808,10846,10872 |            26.2805 |
+Heap Cache (O3)                          | true    |      ? | 10795,10802,10853 |            25.8500 |
+Find SIMD (O3)                           | true    |      ? | 11983,11987,12026 |            19.3964 |
+Tournament Tree (O3)                     | true    |      ? | 10879,10894,10941 |            26.4113 |
+
+## MERGING 350 LISTS ##
+Baseline (copy+sort) 11261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache SIMD Unrolled)               | true    |      ? | 10841,10852,10906 |            28.4058 |
+Heap Cache (O3)                          | true    |      ? | 10854,10857,10914 |            27.6043 |
+Find SIMD (O3)                           | true    |      ? | 12624,12661,12703 |            32.2731 |
+Tournament Tree (O3)                     | true    |      ? | 10907,10959,10968 |            26.8866 |
