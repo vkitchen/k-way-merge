@@ -1,0 +1,892 @@
+COMPILER_VERSION 15.1.1 20250528
+ARRAY_LENGTH 100000
+ARRAY_COUNT 100
+ITER_COUNT 3
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1764723315
+MEMORY 0.0745058 GiB
+
+Init: 474
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 4
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             2,2,2 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             3,3,3 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             1,1,1 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             1,1,1 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 7
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             2,2,3 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |             4,4,5 |             0.4714 |
+Insert (Cache)                           | true    |      ? |             2,2,2 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             2,2,2 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 8
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             3,3,3 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             5,5,5 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             3,3,3 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             4,4,4 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 10
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             5,5,5 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |             6,6,7 |             0.4714 |
+Insert (Cache)                           | true    |      ? |             4,4,4 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             5,5,5 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 11
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             6,6,7 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |             8,8,8 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             5,5,5 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             6,7,7 |             0.4714 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 14
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             7,7,8 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |             9,9,9 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             6,6,6 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |             8,8,8 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 15
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |             8,8,9 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          11,11,11 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             7,7,7 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          10,10,10 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 19
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          10,10,10 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          12,12,13 |             0.4714 |
+Insert (Cache)                           | true    |      ? |             8,9,9 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          12,12,12 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 20
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          12,12,12 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          13,13,13 |             0.0000 |
+Insert (Cache)                           | true    |      ? |             9,9,9 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          13,13,13 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 22
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          13,13,14 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          14,14,14 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          10,10,11 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          14,14,14 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 24
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          15,15,15 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          15,15,15 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          11,11,12 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          17,17,17 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 27
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          17,17,18 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          16,17,17 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          12,13,13 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          18,18,18 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 29
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          20,20,20 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          18,18,18 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          13,14,14 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          20,20,20 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 32
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          21,21,21 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          19,19,19 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          15,15,15 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          21,21,21 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 33
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          22,22,22 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          21,21,21 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          17,17,17 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          24,24,24 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 38
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          24,24,24 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          22,22,22 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          19,19,19 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          26,26,26 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 38
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          26,26,26 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          24,24,24 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          21,21,21 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          29,29,29 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 41
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          27,27,28 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          25,25,25 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          23,23,23 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          31,31,31 |             0.0000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 43
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          29,29,30 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          26,26,26 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          25,25,25 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          33,33,33 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 46
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          32,32,32 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          27,27,27 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          27,28,28 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          34,34,34 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 47
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          34,34,34 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          29,29,29 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          29,29,30 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          35,35,35 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 51
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          36,36,36 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          30,30,30 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          30,30,30 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          36,36,36 |             0.0000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 52
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          38,38,38 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          32,32,32 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          32,32,33 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          40,40,40 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 56
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          40,40,40 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          33,33,33 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          34,34,34 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          42,42,42 |             0.0000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 58
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          43,43,43 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          35,35,35 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          36,37,37 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          44,44,45 |             0.4714 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 62
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          45,45,45 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          36,36,36 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          38,38,38 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          46,46,46 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 62
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          47,48,48 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          37,37,37 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          40,40,40 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          47,47,48 |             0.4714 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 66
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          50,50,50 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          38,38,38 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          42,42,42 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          49,49,49 |             0.0000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 69
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          53,53,53 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          39,40,40 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          44,45,45 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          51,51,52 |             0.4714 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 72
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          55,55,55 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          41,41,41 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          45,45,46 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          53,53,53 |             0.0000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 74
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          56,56,56 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          43,43,43 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          47,47,48 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          55,55,56 |             0.4714 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 77
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          58,58,58 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          44,44,44 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          49,49,50 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          59,59,59 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 78
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          60,60,60 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          46,46,46 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          52,52,52 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          61,61,62 |             0.4714 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 82
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          62,62,62 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          47,47,47 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          53,54,54 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          64,64,65 |             0.4714 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 83
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          64,64,64 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          48,48,48 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          55,55,58 |             1.4142 |
+Tournament Tree (Cache)                  | true    |      ? |          67,68,68 |             0.4714 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 88
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          66,66,67 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          49,49,50 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          57,57,57 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          70,70,71 |             0.4714 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 89
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          69,69,69 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          50,51,51 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          59,59,60 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          73,73,73 |             0.0000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 93
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          71,71,71 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          52,52,53 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          61,61,61 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 94
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          72,73,73 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          56,56,56 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          63,63,63 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          78,78,78 |             0.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 99
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          75,75,75 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          57,57,58 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          65,65,65 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          81,81,81 |             0.0000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 99
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          78,78,78 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          58,59,59 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          69,69,69 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          83,83,84 |             0.4714 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          80,80,80 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          60,60,60 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          70,70,71 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          86,86,86 |             0.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          83,83,83 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          61,61,61 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          72,72,72 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          88,88,88 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 110
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          86,86,87 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          62,62,62 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          73,74,74 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |          90,90,90 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 110
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          88,89,89 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          64,64,64 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          80,80,80 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          92,92,92 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          91,91,91 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          65,65,65 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          78,78,78 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          94,94,94 |             0.0000 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          93,93,93 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          68,68,68 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          80,80,80 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |          97,97,97 |             0.0000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 121
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          95,95,96 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          69,69,70 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          82,82,84 |             0.9428 |
+Tournament Tree (Cache)                  | true    |      ? |          99,99,99 |             0.0000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 121
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |          97,98,98 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          71,71,71 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          84,84,84 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       102,102,102 |             0.0000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 125
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       101,101,101 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          72,73,73 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          85,85,85 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       104,104,104 |             0.0000 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 127
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       103,103,103 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          73,74,74 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          87,87,87 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       106,106,106 |             0.0000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 132
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       106,106,106 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          74,75,75 |             0.4714 |
+Insert (Cache)                           | true    |      ? |          89,89,89 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       108,108,109 |             0.4714 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 133
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       109,109,109 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          76,76,76 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          91,92,92 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       110,110,110 |             0.0000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 137
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       112,112,112 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          78,78,78 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          93,93,93 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       112,112,113 |             0.4714 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 138
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       114,114,115 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          81,81,81 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          94,95,95 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       114,114,115 |             0.4714 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 144
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       117,117,118 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          82,82,82 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          97,97,97 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       116,117,117 |             0.4714 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       120,121,121 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          83,83,83 |             0.0000 |
+Insert (Cache)                           | true    |      ? |          99,99,99 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       118,118,119 |             0.4714 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 149
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       123,124,124 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          85,85,86 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       102,102,102 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       120,121,122 |             0.8165 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 148
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       126,126,126 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          86,86,86 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       103,104,104 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       122,122,123 |             0.4714 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       130,130,130 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          87,87,87 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       106,106,106 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       124,124,125 |             0.4714 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 156
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       133,134,134 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          89,89,89 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       108,108,108 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       127,127,127 |             0.0000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 161
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       134,135,135 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          90,90,90 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       108,109,109 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       129,129,129 |             0.0000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 161
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       137,137,137 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          94,94,94 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       111,111,111 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       132,132,132 |             0.0000 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       139,139,139 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          95,96,96 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       113,113,114 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       134,137,137 |             1.4142 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 167
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       141,141,142 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          96,97,97 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       118,118,118 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       139,139,141 |             0.9428 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 173
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       143,143,144 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          98,98,98 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       117,117,118 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       144,144,144 |             0.0000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 172
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       145,145,145 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       100,100,100 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       120,120,120 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       146,146,147 |             0.4714 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 178
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       148,148,148 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       101,101,101 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       122,122,123 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       149,150,151 |             0.8165 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 177
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       150,151,152 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       103,103,103 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       124,124,125 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       155,156,156 |             0.4714 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 184
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       152,153,153 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       103,104,104 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       125,125,125 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       158,158,159 |             0.4714 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 183
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       154,154,155 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       109,109,109 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       127,127,128 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       162,162,162 |             0.0000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 191
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       157,157,158 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       111,111,111 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       129,130,130 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       166,166,168 |             0.9428 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 190
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       160,160,160 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       112,112,113 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       131,131,131 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       169,170,171 |             0.8165 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 197
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       162,162,162 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       114,115,116 |             0.8165 |
+Insert (Cache)                           | true    |      ? |       135,135,135 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       174,175,175 |             0.4714 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 200
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       166,167,168 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       116,117,117 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       136,137,137 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       175,175,175 |             0.0000 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 202
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       167,167,168 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       116,116,117 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       138,138,139 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       177,178,178 |             0.4714 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 199
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       169,169,170 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       117,117,117 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       139,139,139 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       180,180,181 |             0.4714 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       172,172,172 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       118,119,119 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       150,150,151 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       183,183,184 |             0.4714 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       174,174,174 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       126,126,126 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       152,152,152 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       186,186,187 |             0.4714 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 212
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       176,177,177 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       127,127,128 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       145,145,145 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       189,190,190 |             0.4714 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 210
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       180,180,180 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       129,129,129 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       148,148,148 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       192,192,193 |             0.4714 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       182,183,183 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       130,130,130 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       148,148,149 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       194,195,195 |             0.4714 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       185,185,185 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       131,131,132 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       150,150,151 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       197,200,201 |             1.6997 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 230
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       191,192,193 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       135,136,136 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       156,156,156 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       203,203,204 |             0.4714 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 228
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       195,195,195 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       137,137,137 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       158,159,159 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       204,205,205 |             0.4714 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 234
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       196,197,197 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       138,138,138 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       161,162,162 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       207,207,208 |             0.4714 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 237
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       199,199,199 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       139,139,139 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       164,164,164 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       210,211,211 |             0.4714 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 240
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       203,204,204 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       140,141,141 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       165,165,165 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       212,212,213 |             0.4714 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 239
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       205,206,206 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       141,142,143 |             0.8165 |
+Insert (Cache)                           | true    |      ? |       168,168,169 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       215,215,215 |             0.0000 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 245
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       209,210,210 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       144,144,144 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       171,171,171 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       217,217,218 |             0.4714 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       212,213,213 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       144,145,145 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       173,173,174 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       219,219,220 |             0.4714 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       215,215,216 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       146,146,146 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       176,176,176 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       222,223,223 |             0.4714 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 250
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       219,219,219 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       148,148,149 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       178,178,179 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       224,224,227 |             1.4142 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       220,221,221 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       149,149,150 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       178,179,179 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       227,228,228 |             0.4714 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       223,223,223 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       156,156,156 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       182,182,182 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       230,231,233 |             1.2472 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 264
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       227,227,228 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       157,157,158 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       184,185,185 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       232,233,233 |             0.4714 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       228,229,229 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       158,158,158 |             0.0000 |
+Insert (Cache)                           | true    |      ? |       187,188,188 |             0.4714 |
+Tournament Tree (Cache)                  | true    |      ? |       234,234,235 |             0.4714 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 268
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (Cache)                             | true    |      ? |       231,232,233 |             0.8165 |
+Find (Cache SIMD)                        | true    |      ? |       159,160,160 |             0.4714 |
+Insert (Cache)                           | true    |      ? |       190,190,190 |             0.0000 |
+Tournament Tree (Cache)                  | true    |      ? |       237,237,238 |             0.4714 |
