@@ -8,12 +8,13 @@
 #include <cstring>
 
 #include <algorithm>
+#include <iostream>
 #include <immintrin.h>
 
 bool MergeFindCacheSimd::merge(struct test *t, int n) {
 	size_t rounded = (size_t)ceil((double)n / 8) * 8;
 
-	int **segments = (int **)malloc(sizeof(int *) * n);
+	int **segments = (int **)malloc(sizeof(int *) * rounded);
 	int *cache = (int *)malloc(sizeof(int) * rounded);
 	memset(cache, 0, sizeof(int) * rounded);
 
