@@ -1,0 +1,658 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 20
+ITER_COUNT 3
+NUM_TESTS 31
+TEST_TYPE random
+SEED 1784096440
+MEMORY 0.149012 GiB
+
+Init: 480
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 71
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          18,18,19 |             0.4714 |
+State Machine Cache (O2)                 | true    |      ? |          16,16,16 |             0.0000 |
+Heap Cache (O3)                          | true    |      ? |          24,24,24 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |          41,41,41 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |          19,19,19 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |          25,26,26 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |          19,20,20 |             0.4714 |
+Find Unrolled (O1)                       | true    |      ? |          19,19,19 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          19,19,19 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |          40,40,40 |             0.0000 |
+State Machine Cache (O3)                 | true    |      ? |          16,16,16 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |          19,19,19 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |          19,19,19 |             0.0000 |
+State Machine Cache (Os)                 | true    |      ? |          15,15,15 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |          67,67,68 |             0.4714 |
+Insert Cache (O1)                        | true    |      ? |          20,20,20 |             0.0000 |
+State Machine Cache (O1)                 | true    |      ? |          16,16,16 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          33,33,33 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |          41,41,41 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |          34,34,35 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |          33,33,34 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |          19,19,19 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          22,22,22 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          40,40,40 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |          34,35,35 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |          35,35,35 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          18,18,18 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |          67,67,70 |             1.4142 |
+Find SIMD (Oz)                           | true    |      ? |          40,40,40 |             0.0000 |
+State Machine Cache (Oz)                 | true    |      ? |          16,16,16 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |          67,67,68 |             0.4714 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 106
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          27,27,27 |             0.0000 |
+State Machine Cache (O2)                 | true    |      ? |          24,24,25 |             0.4714 |
+Heap Cache (O3)                          | true    |      ? |          40,40,40 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |          58,58,58 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |          31,31,31 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |          41,41,42 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |          32,32,32 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |          31,31,31 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          28,28,28 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |          57,57,57 |             0.0000 |
+State Machine Cache (O3)                 | true    |      ? |          25,25,25 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |          27,27,27 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |          32,32,32 |             0.0000 |
+State Machine Cache (Os)                 | true    |      ? |          25,25,25 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |       105,105,106 |             0.4714 |
+Insert Cache (O1)                        | true    |      ? |          30,30,30 |             0.0000 |
+State Machine Cache (O1)                 | true    |      ? |          25,26,26 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |          52,52,52 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |          58,58,59 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |          54,55,55 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |          53,53,53 |             0.0000 |
+Find Unrolled (O3)                       | true    |      ? |          31,31,31 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          33,33,34 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |          55,56,56 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |          54,54,55 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |          54,54,54 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          28,28,28 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |       105,105,106 |             0.4714 |
+Find SIMD (Oz)                           | true    |      ? |          57,57,57 |             0.0000 |
+State Machine Cache (Oz)                 | true    |      ? |          25,25,25 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       104,105,105 |             0.4714 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 114
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          37,38,38 |             0.4714 |
+State Machine Cache (O2)                 | true    |      ? |          36,36,36 |             0.0000 |
+Heap Cache (O3)                          | true    |      ? |          55,55,55 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |          75,75,75 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |          42,43,43 |             0.4714 |
+Heap Cache (O1)                          | true    |      ? |          56,56,56 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |          45,45,45 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |          45,45,45 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          38,39,39 |             0.4714 |
+Find SIMD (O3)                           | true    |      ? |          73,73,74 |             0.4714 |
+State Machine Cache (O3)                 | true    |      ? |          36,36,36 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |          37,37,37 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |          43,43,43 |             0.0000 |
+State Machine Cache (Os)                 | true    |      ? |          36,36,36 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |       151,153,154 |             1.2472 |
+Insert Cache (O1)                        | true    |      ? |          41,41,41 |             0.0000 |
+State Machine Cache (O1)                 | true    |      ? |          36,36,36 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          73,73,73 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |          74,74,75 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |          76,76,76 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |          79,79,79 |             0.0000 |
+Find Unrolled (O3)                       | true    |      ? |          45,45,46 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |          46,46,46 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          71,72,72 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |          77,77,77 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |          77,77,77 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          38,38,38 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |       156,158,161 |             2.0548 |
+Find SIMD (Oz)                           | true    |      ? |          73,73,73 |             0.0000 |
+State Machine Cache (Oz)                 | true    |      ? |          35,35,36 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       112,112,113 |             0.4714 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 155
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          48,48,49 |             0.4714 |
+State Machine Cache (O2)                 | true    |      ? |          52,52,52 |             0.0000 |
+Heap Cache (O3)                          | true    |      ? |          76,76,76 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |          89,89,90 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |          58,58,58 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |          77,77,77 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |          59,59,59 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |          59,59,60 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |          49,49,49 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |          88,88,88 |             0.0000 |
+State Machine Cache (O3)                 | true    |      ? |          52,52,53 |             0.4714 |
+Insert Cache (Oz)                        | true    |      ? |          47,47,47 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |          58,58,59 |             0.4714 |
+State Machine Cache (Os)                 | true    |      ? |          52,52,52 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |       197,199,202 |             2.0548 |
+Insert Cache (O1)                        | true    |      ? |          52,52,52 |             0.0000 |
+State Machine Cache (O1)                 | true    |      ? |          52,53,53 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |          89,89,89 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |          90,90,91 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |          96,96,97 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       105,105,105 |             0.0000 |
+Find Unrolled (O3)                       | true    |      ? |          59,59,59 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          63,63,63 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          86,86,86 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |          99,99,99 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |        99,100,100 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |          49,50,50 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       196,198,199 |             1.2472 |
+Find SIMD (Oz)                           | true    |      ? |          88,88,88 |             0.0000 |
+State Machine Cache (Oz)                 | true    |      ? |          52,52,53 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       151,152,152 |             0.4714 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 164
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          58,58,59 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |          92,92,92 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |       102,103,103 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |          78,78,78 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |          99,99,99 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |          77,77,78 |             0.4714 |
+Find Unrolled (O1)                       | true    |      ? |          78,78,79 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |          59,60,60 |             0.4714 |
+Find SIMD (O3)                           | true    |      ? |       101,101,102 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |          58,58,58 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |          77,77,77 |             0.0000 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       259,260,261 |             0.8165 |
+Insert Cache (O1)                        | true    |      ? |          63,63,63 |             0.0000 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       114,115,115 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       103,103,103 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       122,123,123 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       133,134,134 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |          77,77,79 |             0.9428 |
+Heap Cache (O2)                          | true    |      ? |          80,80,80 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          99,99,99 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |       123,124,124 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       124,124,128 |             1.8856 |
+Insert Cache (O3)                        | true    |      ? |          59,59,60 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       258,258,259 |             0.4714 |
+Find SIMD (Oz)                           | true    |      ? |       101,101,101 |             0.0000 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       160,160,161 |             0.4714 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 202
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          69,70,70 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       117,117,117 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |       120,120,120 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |       114,114,114 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |       116,116,117 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       114,115,115 |             0.4714 |
+Find Unrolled (O1)                       | true    |      ? |       115,115,116 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |          71,71,71 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       118,118,118 |             0.0000 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |          70,70,71 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       114,115,116 |             0.8165 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       307,313,323 |             6.5997 |
+Insert Cache (O1)                        | true    |      ? |          75,75,76 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       133,133,134 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       119,120,120 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |       142,142,142 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       160,162,162 |             0.9428 |
+Find Unrolled (O3)                       | true    |      ? |       114,114,115 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |          94,94,95 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       115,116,116 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       143,143,144 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       144,144,144 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          71,72,72 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       303,305,308 |             2.0548 |
+Find SIMD (Oz)                           | true    |      ? |       117,117,118 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       200,201,201 |             0.4714 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 210
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          83,83,83 |             0.0000 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       138,138,138 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |       140,140,140 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |       149,150,150 |             0.4714 |
+Heap Cache (O1)                          | true    |      ? |       134,134,134 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |       148,148,148 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |       147,148,149 |             0.8165 |
+Insert Cache (O2)                        | true    |      ? |          83,83,83 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       138,139,139 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |          81,82,82 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       149,149,150 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       361,362,365 |             1.6997 |
+Insert Cache (O1)                        | true    |      ? |          88,88,88 |             0.0000 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       164,164,165 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       142,142,142 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       177,178,178 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       199,199,200 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |       148,148,151 |             1.4142 |
+Heap Cache (O2)                          | true    |      ? |       108,109,109 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       136,137,138 |             0.8165 |
+Tournament Tree (O1)                     | true    |      ? |       178,178,178 |             0.0000 |
+Tournament Tree (O2)                     | true    |      ? |       178,179,179 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |          85,85,85 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |       364,367,369 |             2.0548 |
+Find SIMD (Oz)                           | true    |      ? |       138,138,139 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       207,208,208 |             0.4714 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          94,95,95 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       168,168,169 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       157,157,158 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       200,200,202 |             0.9428 |
+Heap Cache (O1)                          | true    |      ? |       158,158,161 |             1.4142 |
+Find Unrolled (Oz)                       | true    |      ? |       191,191,195 |             1.8856 |
+Find Unrolled (O1)                       | true    |      ? |       190,192,192 |             0.9428 |
+Insert Cache (O2)                        | true    |      ? |          95,95,98 |             1.4142 |
+Find SIMD (O3)                           | true    |      ? |       156,156,156 |             0.0000 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |          94,94,94 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |       201,201,201 |             0.0000 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       422,424,443 |             9.4634 |
+Insert Cache (O1)                        | true    |      ? |       102,102,103 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       194,194,194 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |       159,159,161 |             0.9428 |
+Tournament Tree (O3)                     | true    |      ? |       210,210,210 |             0.0000 |
+Tournament Tree (Oz)                     | true    |      ? |       228,229,229 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |       189,189,189 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |       128,129,129 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       154,154,155 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       207,208,208 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       210,210,210 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          98,98,98 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |       419,421,422 |             1.2472 |
+Find SIMD (Oz)                           | true    |      ? |       156,157,158 |             0.8165 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       249,249,249 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       107,107,107 |             0.0000 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       181,182,182 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       170,170,170 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |       259,259,259 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |       183,183,184 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       257,257,257 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |       257,258,262 |             2.1602 |
+Insert Cache (O2)                        | true    |      ? |       108,108,109 |             0.4714 |
+Find SIMD (O3)                           | true    |      ? |       169,169,170 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       107,108,124 |             7.7889 |
+Find Unrolled (O2)                       | true    |      ? |       258,258,259 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       495,498,501 |             2.4495 |
+Insert Cache (O1)                        | true    |      ? |       114,115,115 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       219,220,220 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       173,173,173 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       236,237,238 |             0.8165 |
+Tournament Tree (Oz)                     | true    |      ? |       258,258,259 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |       257,257,258 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       148,148,148 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |       167,168,168 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       234,235,236 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |       237,237,237 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       110,110,111 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       488,494,496 |             3.3993 |
+Find SIMD (Oz)                           | true    |      ? |       170,171,171 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       254,254,258 |             1.8856 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 306
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       120,120,120 |             0.0000 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       211,211,212 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       187,188,188 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       315,317,319 |             1.6330 |
+Heap Cache (O1)                          | true    |      ? |       208,208,210 |             0.9428 |
+Find Unrolled (Oz)                       | true    |      ? |       294,296,298 |             1.6330 |
+Find Unrolled (O1)                       | true    |      ? |       296,297,305 |             4.0277 |
+Insert Cache (O2)                        | true    |      ? |       121,122,124 |             1.2472 |
+Find SIMD (O3)                           | true    |      ? |       186,186,187 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       122,122,123 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       314,314,315 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       554,558,579 |            10.9646 |
+Insert Cache (O1)                        | true    |      ? |       128,129,129 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       239,239,243 |             1.8856 |
+Find SIMD (O2)                           | true    |      ? |       191,191,191 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       254,254,255 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       282,283,284 |             0.8165 |
+Find Unrolled (O3)                       | true    |      ? |       296,296,303 |             3.2998 |
+Heap Cache (O2)                          | true    |      ? |       167,167,167 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |       184,184,185 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       252,253,253 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       255,255,256 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       124,124,125 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       549,549,553 |             1.8856 |
+Find SIMD (Oz)                           | true    |      ? |       187,187,187 |             0.0000 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       301,302,302 |             0.4714 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 303
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       135,135,135 |             0.0000 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       224,224,229 |             2.3570 |
+Find SIMD (O1)                           | true    |      ? |       204,206,206 |             0.9428 |
+Find Unrolled (Os)                       | true    |      ? |       344,344,345 |             0.4714 |
+Heap Cache (O1)                          | true    |      ? |       231,231,232 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       355,356,357 |             0.8165 |
+Find Unrolled (O1)                       | true    |      ? |       356,356,358 |             0.9428 |
+Insert Cache (O2)                        | true    |      ? |       134,135,139 |             2.1602 |
+Find SIMD (O3)                           | true    |      ? |       203,203,204 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       141,141,144 |             1.4142 |
+Find Unrolled (O2)                       | true    |      ? |       344,344,345 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       623,625,626 |             1.2472 |
+Insert Cache (O1)                        | true    |      ? |       142,142,143 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       263,263,264 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       208,208,208 |             0.0000 |
+Tournament Tree (O3)                     | true    |      ? |       291,293,294 |             1.2472 |
+Tournament Tree (Oz)                     | true    |      ? |       319,320,323 |             1.6997 |
+Find Unrolled (O3)                       | true    |      ? |       354,355,357 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |       187,188,188 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       200,201,202 |             0.8165 |
+Tournament Tree (O1)                     | true    |      ? |       289,289,290 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       290,291,293 |             1.2472 |
+Insert Cache (O3)                        | true    |      ? |       137,137,137 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |       616,617,620 |             1.6997 |
+Find SIMD (Oz)                           | true    |      ? |       203,203,205 |             0.9428 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       300,301,310 |             4.4969 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 352
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       152,152,152 |             0.0000 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       256,257,257 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       223,224,224 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       412,412,418 |             2.8284 |
+Heap Cache (O1)                          | true    |      ? |       261,262,262 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       416,417,418 |             0.8165 |
+Find Unrolled (O1)                       | true    |      ? |       413,413,413 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |       155,155,155 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       221,222,222 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       155,156,156 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       415,417,418 |             1.2472 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       691,693,704 |             5.7155 |
+Insert Cache (O1)                        | true    |      ? |       161,161,162 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       284,284,285 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       227,227,228 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |       314,315,315 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       353,354,361 |             3.5590 |
+Find Unrolled (O3)                       | true    |      ? |       416,417,419 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |       211,211,212 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       220,220,220 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |       312,313,315 |             1.2472 |
+Tournament Tree (O2)                     | true    |      ? |       314,315,317 |             1.2472 |
+Insert Cache (O3)                        | true    |      ? |       155,155,156 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       689,690,694 |             2.1602 |
+Find SIMD (Oz)                           | true    |      ? |       222,222,223 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       350,351,351 |             0.4714 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 353
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       168,169,169 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       275,275,275 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |       236,236,237 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       456,457,460 |             1.6997 |
+Heap Cache (O1)                          | true    |      ? |       289,289,290 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       457,457,457 |             0.0000 |
+Find Unrolled (O1)                       | true    |      ? |       458,458,459 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |       170,170,170 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       234,235,236 |             0.8165 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       172,173,174 |             0.8165 |
+Find Unrolled (O2)                       | true    |      ? |       459,459,460 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       773,773,778 |             2.3570 |
+Insert Cache (O1)                        | true    |      ? |       176,176,176 |             0.0000 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       305,306,306 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       240,241,242 |             0.8165 |
+Tournament Tree (O3)                     | true    |      ? |       336,337,337 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       380,380,381 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |       457,457,457 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |       232,233,233 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       233,234,234 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       337,338,339 |             0.8165 |
+Tournament Tree (O2)                     | true    |      ? |       340,340,340 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       169,170,170 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       772,774,807 |            16.0485 |
+Find SIMD (Oz)                           | true    |      ? |       236,237,238 |             0.8165 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       350,351,352 |             0.8165 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 405
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       184,185,186 |             0.8165 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       305,305,306 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       253,254,255 |             0.8165 |
+Find Unrolled (Os)                       | true    |      ? |       518,519,521 |             1.2472 |
+Heap Cache (O1)                          | true    |      ? |       310,311,312 |             0.8165 |
+Find Unrolled (Oz)                       | true    |      ? |       516,517,519 |             1.2472 |
+Find Unrolled (O1)                       | true    |      ? |       518,518,520 |             0.9428 |
+Insert Cache (O2)                        | true    |      ? |       186,186,188 |             0.9428 |
+Find SIMD (O3)                           | true    |      ? |       251,252,253 |             0.8165 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       190,191,191 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       515,517,529 |             6.1824 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       827,829,832 |             2.0548 |
+Insert Cache (O1)                        | true    |      ? |       192,193,193 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       326,326,327 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       258,260,260 |             0.9428 |
+Tournament Tree (O3)                     | true    |      ? |       357,358,359 |             0.8165 |
+Tournament Tree (Oz)                     | true    |      ? |       411,411,411 |             0.0000 |
+Find Unrolled (O3)                       | true    |      ? |       517,518,519 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       249,249,250 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       249,250,250 |             0.4714 |
+Tournament Tree (O1)                     | true    |      ? |       359,360,366 |             3.0912 |
+Tournament Tree (O2)                     | true    |      ? |       361,362,365 |             1.6997 |
+Insert Cache (O3)                        | true    |      ? |       185,185,186 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       827,827,828 |             0.4714 |
+Find SIMD (Oz)                           | true    |      ? |       252,252,252 |             0.0000 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       402,404,406 |             1.6330 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 400
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       199,199,200 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       332,332,332 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |       278,278,279 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       571,572,573 |             0.8165 |
+Heap Cache (O1)                          | true    |      ? |       328,328,328 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |       574,575,576 |             0.8165 |
+Find Unrolled (O1)                       | true    |      ? |       574,575,576 |             0.8165 |
+Insert Cache (O2)                        | true    |      ? |       201,202,204 |             1.2472 |
+Find SIMD (O3)                           | true    |      ? |       276,277,277 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       207,208,215 |             3.5590 |
+Find Unrolled (O2)                       | true    |      ? |       570,571,571 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |       897,901,901 |             1.8856 |
+Insert Cache (O1)                        | true    |      ? |       208,208,209 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       361,362,362 |             0.4714 |
+Find SIMD (O2)                           | true    |      ? |       284,284,286 |             0.9428 |
+Tournament Tree (O3)                     | true    |      ? |       405,405,407 |             0.9428 |
+Tournament Tree (Oz)                     | true    |      ? |       465,467,469 |             1.6330 |
+Find Unrolled (O3)                       | true    |      ? |       574,574,575 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       267,267,269 |             0.9428 |
+Find SIMD (Os)                           | true    |      ? |       275,275,275 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |       400,400,401 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       404,404,405 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       199,200,201 |             0.8165 |
+Heap Cache (Oz)                          | true    |      ? |       894,900,912 |             7.4833 |
+Find SIMD (Oz)                           | true    |      ? |       279,280,280 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       395,396,397 |             0.8165 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 449
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       216,216,217 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       366,366,367 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       296,297,298 |             0.8165 |
+Find Unrolled (Os)                       | true    |      ? |       628,628,630 |             0.9428 |
+Heap Cache (O1)                          | true    |      ? |       354,355,362 |             3.5590 |
+Find Unrolled (Oz)                       | true    |      ? |       631,632,633 |             0.8165 |
+Find Unrolled (O1)                       | true    |      ? |       628,630,631 |             1.2472 |
+Insert Cache (O2)                        | true    |      ? |       216,217,221 |             2.1602 |
+Find SIMD (O3)                           | true    |      ? |       294,294,295 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       223,225,230 |             2.9439 |
+Find Unrolled (O2)                       | true    |      ? |       630,631,632 |             0.8165 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |      974,985,1029 |            23.7627 |
+Insert Cache (O1)                        | true    |      ? |       224,225,225 |             0.4714 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       397,397,402 |             2.3570 |
+Find SIMD (O2)                           | true    |      ? |       305,305,306 |             0.4714 |
+Tournament Tree (O3)                     | true    |      ? |       451,451,456 |             2.3570 |
+Tournament Tree (Oz)                     | true    |      ? |       500,501,509 |             4.0277 |
+Find Unrolled (O3)                       | true    |      ? |       627,628,629 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       289,289,290 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       293,294,296 |             1.2472 |
+Tournament Tree (O1)                     | true    |      ? |       441,443,443 |             0.9428 |
+Tournament Tree (O2)                     | true    |      ? |       444,444,445 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       215,215,215 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |      972,975,1018 |            21.0132 |
+Find SIMD (Oz)                           | true    |      ? |       299,299,300 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       446,447,447 |             0.4714 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 449
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       231,232,232 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       396,396,397 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       310,311,311 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       694,695,697 |             1.2472 |
+Heap Cache (O1)                          | true    |      ? |       380,381,382 |             0.8165 |
+Find Unrolled (Oz)                       | true    |      ? |       689,689,690 |             0.4714 |
+Find Unrolled (O1)                       | true    |      ? |       689,692,695 |             2.4495 |
+Insert Cache (O2)                        | true    |      ? |       232,233,233 |             0.4714 |
+Find SIMD (O3)                           | true    |      ? |       308,309,309 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       241,241,242 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       696,697,702 |             2.6247 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |    1060,1065,1108 |            21.5458 |
+Insert Cache (O1)                        | true    |      ? |       242,242,244 |             0.9428 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       433,435,435 |             0.9428 |
+Find SIMD (O2)                           | true    |      ? |       317,318,319 |             0.8165 |
+Tournament Tree (O3)                     | true    |      ? |       491,491,493 |             0.9428 |
+Tournament Tree (Oz)                     | true    |      ? |       534,535,537 |             1.2472 |
+Find Unrolled (O3)                       | true    |      ? |       692,693,693 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       309,311,313 |             1.6330 |
+Find SIMD (Os)                           | true    |      ? |       308,308,308 |             0.0000 |
+Tournament Tree (O1)                     | true    |      ? |       483,483,487 |             1.8856 |
+Tournament Tree (O2)                     | true    |      ? |       482,483,483 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       232,232,232 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |    1055,1058,1062 |             2.8674 |
+Find SIMD (Oz)                           | true    |      ? |       313,313,314 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       447,448,454 |             3.0912 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 505
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       246,247,247 |             0.4714 |
+State Machine Cache (O2)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (O3)                          | true    |      ? |       431,431,432 |             0.4714 |
+Find SIMD (O1)                           | true    |      ? |       326,327,328 |             0.8165 |
+Find Unrolled (Os)                       | true    |      ? |       740,745,751 |             4.4969 |
+Heap Cache (O1)                          | true    |      ? |       410,411,411 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       745,745,747 |             0.9428 |
+Find Unrolled (O1)                       | true    |      ? |       744,744,745 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |       247,248,248 |             0.4714 |
+Find SIMD (O3)                           | true    |      ? |       325,325,326 |             0.4714 |
+State Machine Cache (O3)                 | false   |      ? |                 ? |                  ? | Unsupported
+Insert Cache (Oz)                        | true    |      ? |       261,262,262 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       735,735,736 |             0.4714 |
+State Machine Cache (Os)                 | false   |      ? |                 ? |                  ? | Unsupported
+Heap Cache (Os)                          | true    |      ? |    1125,1126,1128 |             1.2472 |
+Insert Cache (O1)                        | true    |      ? |       258,258,260 |             0.9428 |
+State Machine Cache (O1)                 | false   |      ? |                 ? |                  ? | Unsupported
+Tournament Tree (Os)                     | true    |      ? |       464,464,467 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |       334,334,336 |             0.9428 |
+Tournament Tree (O3)                     | true    |      ? |       529,529,530 |             0.4714 |
+Tournament Tree (Oz)                     | true    |      ? |       561,561,563 |             0.9428 |
+Find Unrolled (O3)                       | true    |      ? |       746,747,750 |             1.6997 |
+Heap Cache (O2)                          | true    |      ? |       336,336,337 |             0.4714 |
+Find SIMD (Os)                           | true    |      ? |       323,325,325 |             0.9428 |
+Tournament Tree (O1)                     | true    |      ? |       519,519,520 |             0.4714 |
+Tournament Tree (O2)                     | true    |      ? |       519,519,523 |             1.8856 |
+Insert Cache (O3)                        | true    |      ? |       248,248,248 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |    1134,1137,1140 |             2.4495 |
+Find SIMD (Oz)                           | true    |      ? |       331,331,332 |             0.4714 |
+State Machine Cache (Oz)                 | false   |      ? |                 ? |                  ? | Unsupported
+Baseline (copy+sort)                     | true    |      0 |       502,503,503 |             0.4714 |
