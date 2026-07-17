@@ -1,0 +1,50 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 3
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784256471
+MEMORY 4.47035 GiB
+
+Init: 16155
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8068
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert (O3)                              | true    |      ? |    1873,1876,1879 |             2.4495 |
+Insert (Oz)                              | true    |      ? |    2158,2161,2162 |             1.6997 |
+Insert (Os)                              | true    |      ? |    2099,2103,2110 |             4.5461 |
+Insert (O1)                              | true    |      ? |    1943,1950,1963 |             8.2865 |
+Insert (O2)                              | true    |      ? |    2113,2126,2131 |             7.5865 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert (O3)                              | true    |      ? |    2869,2872,2877 |             3.2998 |
+Insert (Oz)                              | true    |      ? |    3306,3313,3330 |            10.0775 |
+Insert (Os)                              | true    |      ? |    3144,3150,3170 |            11.1156 |
+Insert (O1)                              | true    |      ? |    2922,2930,2933 |             4.6428 |
+Insert (O2)                              | true    |      ? |    3185,3205,3213 |            11.7757 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert (O3)                              | true    |      ? |    3864,3866,3879 |             6.6500 |
+Insert (Oz)                              | true    |      ? |    4521,4521,4529 |             3.7712 |
+Insert (Os)                              | true    |      ? |    4211,4223,4225 |             6.1824 |
+Insert (O1)                              | true    |      ? |    3922,3927,3934 |             4.9216 |
+Insert (O2)                              | true    |      ? |    4307,4320,4338 |            12.7105 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18516
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert (O3)                              | true    |      ? |    4849,4863,4882 |            13.5236 |
+Insert (Oz)                              | true    |      ? |    5767,5778,5778 |             5.1854 |
+Insert (Os)                              | true    |      ? |    5281,5304,5322 |            16.7796 |
+Insert (O1)                              | true    |      ? |    4923,4930,4931 |             3.5590 |
+Insert (O2)                              | true    |      ? |    5447,5448,5451 |             1.6997 |
