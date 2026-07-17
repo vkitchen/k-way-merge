@@ -1,0 +1,82 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 10
+ITER_COUNT 3
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1784253794
+MEMORY 0.0745058 GiB
+
+Init: 237
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 70
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |          19,19,19 |             0.0000 |
+Find (Cache)                             | true    |      ? |          21,21,21 |             0.0000 |
+Find                                     | true    |      ? |          25,25,25 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          40,40,40 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |          30,30,31 |             0.4714 |
+Find (Cache)                             | true    |      ? |          34,34,34 |             0.0000 |
+Find                                     | true    |      ? |          39,39,39 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          56,56,56 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 114
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |          45,45,45 |             0.0000 |
+Find (Cache)                             | true    |      ? |          50,50,50 |             0.0000 |
+Find                                     | true    |      ? |          62,62,62 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |          71,72,72 |             0.4714 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |          61,61,62 |             0.4714 |
+Find (Cache)                             | true    |      ? |          68,68,68 |             0.0000 |
+Find                                     | true    |      ? |          85,86,86 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |          87,87,87 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 162
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |          85,85,85 |             0.0000 |
+Find (Cache)                             | true    |      ? |          84,85,85 |             0.4714 |
+Find                                     | true    |      ? |       110,110,110 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |         99,99,100 |             0.4714 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |       112,113,114 |             0.8165 |
+Find (Cache)                             | true    |      ? |       101,101,107 |             2.8284 |
+Find                                     | true    |      ? |       138,138,138 |             0.0000 |
+Find (Cache SIMD)                        | true    |      ? |       116,117,118 |             0.8165 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |       151,152,152 |             0.4714 |
+Find (Cache)                             | true    |      ? |       130,130,130 |             0.0000 |
+Find                                     | true    |      ? |       227,228,228 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       137,137,137 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |       201,201,205 |             1.8856 |
+Find (Cache)                             | true    |      ? |       158,158,158 |             0.0000 |
+Find                                     | true    |      ? |       270,271,271 |             0.4714 |
+Find (Cache SIMD)                        | true    |      ? |       154,154,155 |             0.4714 |
