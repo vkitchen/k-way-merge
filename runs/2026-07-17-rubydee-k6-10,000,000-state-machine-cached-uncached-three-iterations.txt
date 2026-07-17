@@ -1,0 +1,38 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 6
+ITER_COUNT 3
+NUM_TESTS 2
+TEST_TYPE random
+SEED 1784254583
+MEMORY 0.447035 GiB
+
+Init: 1591
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 776
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache                      | true    |      ? |       148,148,148 |             0.0000 |
+State Machine (Compiled)                 | true    |      ? |       156,156,156 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1182
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache                      | true    |      ? |       251,252,254 |             1.2472 |
+State Machine (Compiled)                 | true    |      ? |       257,257,258 |             0.4714 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1270
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache                      | true    |      ? |       354,354,357 |             1.4142 |
+State Machine (Compiled)                 | true    |      ? |       377,377,379 |             0.9428 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1709
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache                      | true    |      ? |       509,511,512 |             1.2472 |
+State Machine (Compiled)                 | true    |      ? |       650,652,652 |             0.9428 |
