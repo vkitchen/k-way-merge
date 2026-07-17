@@ -1,0 +1,290 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 30
+ITER_COUNT 3
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784262846
+MEMORY 0.223517 GiB
+
+Init: 714
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 70
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          40,40,40 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          33,33,33 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          24,24,24 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |          66,67,67 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |          18,18,18 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          56,56,56 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          52,52,52 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          36,36,38 |             0.9428 |
+Baseline (copy+sort)                     | true    |      0 |       102,102,103 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |          27,27,27 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 115
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          71,71,71 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          73,73,73 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          51,51,51 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       112,112,112 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          37,38,38 |             0.4714 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          87,87,87 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |          90,90,90 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          68,69,69 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       151,151,152 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |          49,49,50 |             0.4714 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 163
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |        99,100,100 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       114,114,114 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |          90,90,90 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       159,159,160 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |          59,59,59 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 203
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       115,115,115 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       131,131,132 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       104,104,104 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       201,201,201 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          70,70,70 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 208
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       136,136,136 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       164,164,164 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |       120,121,121 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       204,206,206 |             0.9428 |
+Insert Cache (Os)                        | true    |      ? |          81,81,82 |             0.4714 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       153,154,156 |             1.2472 |
+Tournament Tree (Os)                     | true    |      ? |       192,193,193 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       140,140,140 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       244,245,245 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |          94,94,94 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       167,167,167 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       217,217,217 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |       163,164,164 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       253,253,255 |             0.9428 |
+Insert Cache (Os)                        | true    |      ? |       108,108,110 |             0.9428 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 299
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       183,183,184 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       235,236,237 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       182,183,183 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       296,296,298 |             0.9428 |
+Insert Cache (Os)                        | true    |      ? |       120,121,121 |             0.4714 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 301
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       200,200,201 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       259,260,261 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       205,205,205 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       298,299,299 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       134,134,136 |             0.9428 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 349
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       218,218,219 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       281,281,282 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       231,231,231 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       348,349,350 |             0.8165 |
+Insert Cache (Os)                        | true    |      ? |       151,151,151 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 352
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       231,232,233 |             0.8165 |
+Tournament Tree (Os)                     | true    |      ? |       301,302,303 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       264,264,265 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       349,349,350 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       165,165,166 |             0.4714 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 401
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       248,248,248 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       320,320,321 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       280,280,282 |             0.9428 |
+Baseline (copy+sort)                     | true    |      0 |       399,402,406 |             2.8674 |
+Insert Cache (Os)                        | true    |      ? |       180,180,181 |             0.4714 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 398
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       271,271,271 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       357,357,358 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       295,295,299 |             1.8856 |
+Baseline (copy+sort)                     | true    |      0 |       395,395,395 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       196,198,201 |             2.0548 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 445
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       288,289,289 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       393,393,393 |             0.0000 |
+Heap Cache (O2)                          | true    |      ? |       317,318,322 |             2.1602 |
+Baseline (copy+sort)                     | true    |      0 |       443,443,449 |             2.8284 |
+Insert Cache (Os)                        | true    |      ? |       210,210,210 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 443
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       302,302,304 |             0.9428 |
+Tournament Tree (Os)                     | true    |      ? |       427,427,428 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       338,338,339 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       441,441,441 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       226,227,227 |             0.4714 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 498
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       318,318,320 |             0.9428 |
+Tournament Tree (Os)                     | true    |      ? |       461,461,464 |             1.4142 |
+Heap Cache (O2)                          | true    |      ? |       360,360,361 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       490,491,491 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       244,244,246 |             0.9428 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 496
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       335,335,336 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       495,497,497 |             0.9428 |
+Heap Cache (O2)                          | true    |      ? |       389,390,390 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       491,492,493 |             0.8165 |
+Insert Cache (Os)                        | true    |      ? |       260,261,262 |             0.8165 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 542
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       354,356,356 |             0.9428 |
+Tournament Tree (Os)                     | true    |      ? |       528,528,529 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       420,420,421 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       538,539,543 |             2.1602 |
+Insert Cache (Os)                        | true    |      ? |       278,278,284 |             2.8284 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 541
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       369,369,369 |             0.0000 |
+Tournament Tree (Os)                     | true    |      ? |       558,559,560 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       454,454,454 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       537,537,538 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       295,295,296 |             0.4714 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 593
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       384,385,385 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       590,591,591 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       477,478,481 |             1.6997 |
+Baseline (copy+sort)                     | true    |      0 |       590,591,591 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       313,313,313 |             0.0000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 587
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       416,419,419 |             1.4142 |
+Tournament Tree (Os)                     | true    |      ? |       622,623,623 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       495,495,495 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       586,588,589 |             1.2472 |
+Insert Cache (Os)                        | true    |      ? |       332,332,339 |             3.2998 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 644
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       435,435,437 |             0.9428 |
+Tournament Tree (Os)                     | true    |      ? |       654,655,657 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |       525,527,529 |             1.6330 |
+Baseline (copy+sort)                     | true    |      0 |       639,640,644 |             2.1602 |
+Insert Cache (Os)                        | true    |      ? |       352,353,354 |             0.8165 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 638
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       451,451,452 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       682,683,684 |             0.8165 |
+Heap Cache (O2)                          | true    |      ? |       563,563,563 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |       636,637,640 |             1.6997 |
+Insert Cache (Os)                        | true    |      ? |       373,383,396 |             9.4163 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       467,467,468 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       708,709,711 |             1.2472 |
+Heap Cache (O2)                          | true    |      ? |       592,593,595 |             1.2472 |
+Baseline (copy+sort)                     | true    |      0 |       692,692,696 |             1.8856 |
+Insert Cache (Os)                        | true    |      ? |       393,394,414 |             9.6724 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 691
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       484,486,487 |             1.2472 |
+Tournament Tree (Os)                     | true    |      ? |       743,743,744 |             0.4714 |
+Heap Cache (O2)                          | true    |      ? |       619,621,626 |             2.9439 |
+Baseline (copy+sort)                     | true    |      0 |       686,687,687 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       412,414,414 |             0.9428 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 745
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       502,503,503 |             0.4714 |
+Tournament Tree (Os)                     | true    |      ? |       770,771,775 |             2.1602 |
+Heap Cache (O2)                          | true    |      ? |       658,658,659 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       741,742,743 |             0.8165 |
+Insert Cache (Os)                        | true    |      ? |       435,436,437 |             0.8165 |
