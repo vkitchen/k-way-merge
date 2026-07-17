@@ -1,0 +1,38 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 3
+NUM_TESTS 2
+TEST_TYPE random
+SEED 1784262013
+MEMORY 4.47035 GiB
+
+Init: 16223
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8223
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |    1948,1949,1957 |             4.0277 |
+Find (Cache)                             | true    |      ? |    2160,2161,2165 |             2.1602 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 13376
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |    3063,3067,3071 |             3.2660 |
+Find (Cache)                             | true    |      ? |    3425,3436,3438 |             5.7155 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13030
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |    4538,4542,4544 |             2.4944 |
+Find (Cache)                             | true    |      ? |    5051,5056,5060 |             3.6818 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18420
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find (Cache Unrolled)                    | true    |      ? |    6257,6263,6266 |             3.7417 |
+Find (Cache)                             | true    |      ? |    6773,6789,6922 |            66.7882 |

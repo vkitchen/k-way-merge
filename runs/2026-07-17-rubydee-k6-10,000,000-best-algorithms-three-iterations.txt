@@ -1,0 +1,134 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 6
+ITER_COUNT 3
+NUM_TESTS 26
+TEST_TYPE random
+SEED 1784263394
+MEMORY 0.447035 GiB
+
+Init: 1521
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 750
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O1)                       | true    |      ? |       195,196,196 |             0.4714 |
+Heap Cache (Oz)                          | true    |      ? |       663,665,670 |             2.9439 |
+State Machine Cache (O2)                 | true    |      ? |       161,161,162 |             0.4714 |
+Insert (Os)                              | true    |      ? |       184,185,185 |             0.4714 |
+Heap Cache (O3)                          | true    |      ? |       240,241,241 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       196,196,197 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       183,184,185 |             0.8165 |
+Insert Cache (Oz)                        | true    |      ? |       187,188,192 |             2.1602 |
+Insert Cache (O1)                        | true    |      ? |       200,200,201 |             0.4714 |
+Insert (O1)                              | true    |      ? |       210,211,212 |             0.8165 |
+Heap Cache (O1)                          | true    |      ? |       255,256,257 |             0.8165 |
+Insert (O3)                              | true    |      ? |       187,187,187 |             0.0000 |
+Find Unrolled (Oz)                       | true    |      ? |       196,196,197 |             0.4714 |
+State Machine Cache (O1)                 | true    |      ? |       159,159,160 |             0.4714 |
+Baseline (copy+sort)                     | true    |      0 |       718,722,734 |             6.7987 |
+State Machine Cache (Os)                 | true    |      ? |       157,157,157 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       184,184,184 |             0.0000 |
+State Machine Cache (Oz)                 | true    |      ? |       160,161,161 |             0.4714 |
+Insert (O2)                              | true    |      ? |       211,212,212 |             0.4714 |
+Find Unrolled (O3)                       | true    |      ? |       196,196,196 |             0.0000 |
+State Machine Cache (O3)                 | true    |      ? |       161,162,162 |             0.4714 |
+Insert Cache (O2)                        | true    |      ? |       191,191,191 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |       662,664,669 |             2.9439 |
+Heap Cache (O2)                          | true    |      ? |       218,218,219 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       195,195,196 |             0.4714 |
+Insert (Oz)                              | true    |      ? |       192,192,192 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1210
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O1)                       | true    |      ? |       319,319,321 |             0.9428 |
+Heap Cache (Oz)                          | true    |      ? |    1033,1042,1066 |            13.9284 |
+State Machine Cache (O2)                 | true    |      ? |       247,248,249 |             0.8165 |
+Insert (Os)                              | true    |      ? |       284,284,285 |             0.4714 |
+Heap Cache (O3)                          | true    |      ? |       401,401,401 |             0.0000 |
+Find Unrolled (Os)                       | true    |      ? |       311,312,312 |             0.4714 |
+Insert Cache (O3)                        | true    |      ? |       277,278,278 |             0.4714 |
+Insert Cache (Oz)                        | true    |      ? |       272,273,273 |             0.4714 |
+Insert Cache (O1)                        | true    |      ? |       297,297,297 |             0.0000 |
+Insert (O1)                              | true    |      ? |       317,317,317 |             0.0000 |
+Heap Cache (O1)                          | true    |      ? |       415,415,418 |             1.4142 |
+Insert (O3)                              | true    |      ? |       288,288,289 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       313,314,316 |             1.2472 |
+State Machine Cache (O1)                 | true    |      ? |       252,252,252 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |    1182,1183,1184 |             0.8165 |
+State Machine Cache (Os)                 | true    |      ? |       249,250,250 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       274,274,275 |             0.4714 |
+State Machine Cache (Oz)                 | true    |      ? |       249,250,250 |             0.4714 |
+Insert (O2)                              | true    |      ? |       315,315,315 |             0.0000 |
+Find Unrolled (O3)                       | true    |      ? |       312,312,313 |             0.4714 |
+State Machine Cache (O3)                 | true    |      ? |       247,248,249 |             0.8165 |
+Insert Cache (O2)                        | true    |      ? |       284,284,284 |             0.0000 |
+Heap Cache (Os)                          | true    |      ? |    1030,1037,1058 |            11.8977 |
+Heap Cache (O2)                          | true    |      ? |       335,335,336 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       310,311,311 |             0.4714 |
+Insert (Oz)                              | true    |      ? |       292,292,294 |             0.9428 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1228
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O1)                       | true    |      ? |       447,447,447 |             0.0000 |
+Heap Cache (Oz)                          | true    |      ? |    1488,1493,1497 |             3.6818 |
+State Machine Cache (O2)                 | true    |      ? |       351,352,355 |             1.6997 |
+Insert (Os)                              | true    |      ? |       385,385,386 |             0.4714 |
+Heap Cache (O3)                          | true    |      ? |       543,544,547 |             1.6997 |
+Find Unrolled (Os)                       | true    |      ? |       422,423,424 |             0.8165 |
+Insert Cache (O3)                        | true    |      ? |       373,374,376 |             1.2472 |
+Insert Cache (Oz)                        | true    |      ? |       362,362,362 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       397,397,399 |             0.9428 |
+Insert (O1)                              | true    |      ? |       430,430,431 |             0.4714 |
+Heap Cache (O1)                          | true    |      ? |       550,551,554 |             1.6997 |
+Insert (O3)                              | true    |      ? |       389,389,390 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |       446,448,449 |             1.2472 |
+State Machine Cache (O1)                 | true    |      ? |       352,354,354 |             0.9428 |
+Baseline (copy+sort)                     | true    |      0 |    1218,1219,1224 |             2.6247 |
+State Machine Cache (Os)                 | true    |      ? |       350,351,354 |             1.6997 |
+Insert Cache (Os)                        | true    |      ? |       365,366,366 |             0.4714 |
+State Machine Cache (Oz)                 | true    |      ? |       352,352,353 |             0.4714 |
+Insert (O2)                              | true    |      ? |       422,425,425 |             1.4142 |
+Find Unrolled (O3)                       | true    |      ? |       445,445,449 |             1.8856 |
+State Machine Cache (O3)                 | true    |      ? |       350,351,352 |             0.8165 |
+Insert Cache (O2)                        | true    |      ? |       379,380,382 |             1.2472 |
+Heap Cache (Os)                          | true    |      ? |    1484,1496,1498 |             6.1824 |
+Heap Cache (O2)                          | true    |      ? |       451,451,452 |             0.4714 |
+Find Unrolled (O2)                       | true    |      ? |       422,423,423 |             0.4714 |
+Insert (Oz)                              | true    |      ? |       394,395,398 |             1.6997 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1678
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O1)                       | true    |      ? |       584,585,587 |             1.2472 |
+Heap Cache (Oz)                          | true    |      ? |    1949,1958,1959 |             4.4969 |
+State Machine Cache (O2)                 | true    |      ? |       509,511,513 |             1.6330 |
+Insert (Os)                              | true    |      ? |       482,484,484 |             0.9428 |
+Heap Cache (O3)                          | true    |      ? |       751,751,752 |             0.4714 |
+Find Unrolled (Os)                       | true    |      ? |       578,578,580 |             0.9428 |
+Insert Cache (O3)                        | true    |      ? |       474,475,481 |             3.0912 |
+Insert Cache (Oz)                        | true    |      ? |       457,462,462 |             2.3570 |
+Insert Cache (O1)                        | true    |      ? |       507,507,509 |             0.9428 |
+Insert (O1)                              | true    |      ? |       544,545,545 |             0.4714 |
+Heap Cache (O1)                          | true    |      ? |       759,762,762 |             1.4142 |
+Insert (O3)                              | true    |      ? |       496,498,508 |             5.2493 |
+Find Unrolled (Oz)                       | true    |      ? |       593,593,596 |             1.4142 |
+State Machine Cache (O1)                 | true    |      ? |       505,506,507 |             0.8165 |
+Baseline (copy+sort)                     | true    |      0 |    1664,1665,1673 |             4.0277 |
+State Machine Cache (Os)                 | true    |      ? |       509,509,510 |             0.4714 |
+Insert Cache (Os)                        | true    |      ? |       466,466,467 |             0.4714 |
+State Machine Cache (Oz)                 | true    |      ? |       509,510,514 |             2.1602 |
+Insert (O2)                              | true    |      ? |       533,534,535 |             0.8165 |
+Find Unrolled (O3)                       | true    |      ? |       581,582,584 |             1.2472 |
+State Machine Cache (O3)                 | true    |      ? |       509,509,513 |             1.8856 |
+Insert Cache (O2)                        | true    |      ? |       478,479,480 |             0.8165 |
+Heap Cache (Os)                          | true    |      ? |    1947,1949,1957 |             4.3205 |
+Heap Cache (O2)                          | true    |      ? |       620,620,620 |             0.0000 |
+Find Unrolled (O2)                       | true    |      ? |       576,577,577 |             0.4714 |
+Insert (Oz)                              | true    |      ? |       499,500,503 |             1.6997 |

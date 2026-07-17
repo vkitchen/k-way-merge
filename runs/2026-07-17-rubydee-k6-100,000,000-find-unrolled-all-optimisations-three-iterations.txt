@@ -1,0 +1,50 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 3
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784260191
+MEMORY 4.47035 GiB
+
+Init: 16189
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8098
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O3)                       | true    |      ? |    1952,1953,1953 |             0.4714 |
+Find Unrolled (Oz)                       | true    |      ? |    1958,1960,1962 |             1.6330 |
+Find Unrolled (O2)                       | true    |      ? |    1946,1946,1950 |             1.8856 |
+Find Unrolled (O1)                       | true    |      ? |    1950,1951,1954 |             1.6997 |
+Find Unrolled (Os)                       | true    |      ? |    1946,1950,1952 |             2.4944 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 13136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O3)                       | true    |      ? |    3103,3105,3108 |             2.0548 |
+Find Unrolled (Oz)                       | true    |      ? |    3075,3077,3081 |             2.4944 |
+Find Unrolled (O2)                       | true    |      ? |    3052,3053,3060 |             3.5590 |
+Find Unrolled (O1)                       | true    |      ? |    3049,3059,3059 |             4.7140 |
+Find Unrolled (Os)                       | true    |      ? |    3088,3088,3174 |            40.5408 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13197
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O3)                       | true    |      ? |    4625,4630,4635 |             4.0825 |
+Find Unrolled (Oz)                       | true    |      ? |    4613,4616,4618 |             2.0548 |
+Find Unrolled (O2)                       | true    |      ? |    4547,4548,4549 |             0.8165 |
+Find Unrolled (O1)                       | true    |      ? |    4638,4640,4640 |             0.9428 |
+Find Unrolled (Os)                       | true    |      ? |    4572,4572,4580 |             3.7712 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18058
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Unrolled (O3)                       | true    |      ? |    5995,6000,6013 |             7.5865 |
+Find Unrolled (Oz)                       | true    |      ? |    6004,6016,6024 |             8.2192 |
+Find Unrolled (O2)                       | true    |      ? |    6237,6238,6242 |             2.1602 |
+Find Unrolled (O1)                       | true    |      ? |    5939,5940,5944 |             2.1602 |
+Find Unrolled (Os)                       | true    |      ? |    6302,6311,6393 |            40.9417 |
