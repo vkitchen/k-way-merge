@@ -4,6 +4,12 @@ OPT = -O3
 SRC = \
 	harness.cpp \
 	merge_baseline_copy_sort.cpp \
+	merge_baseline_copy_sort_O0.cpp \
+	merge_baseline_copy_sort_O1.cpp \
+	merge_baseline_copy_sort_O2.cpp \
+	merge_baseline_copy_sort_O3.cpp \
+	merge_baseline_copy_sort_Os.cpp \
+	merge_baseline_copy_sort_Oz.cpp \
 	merge_find.cpp \
 	merge_find_cache.cpp \
 	merge_find_cache_3.cpp \

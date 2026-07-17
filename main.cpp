@@ -113,6 +113,13 @@ Merge *functions[] = {
 //	new MergeStateMachineLookupTableBinarySearch,
 //	new MergeStateMachineLookupTableBinarySearchFast,
 //
+//	new MergeBaselineCopySortO0,
+//	new MergeBaselineCopySortO1,
+//	new MergeBaselineCopySortO2,
+//	new MergeBaselineCopySortO3,
+//	new MergeBaselineCopySortOs,
+//	new MergeBaselineCopySortOz,
+//
 //	new MergeFindCacheUnrolledO0,
 //	new MergeFindCacheUnrolledO1,
 //	new MergeFindCacheUnrolledO2,
