@@ -5,7 +5,7 @@
 class MergeInsertCache : public Merge {
 	public:
 		MergeInsertCache() {
-			name = "Insert (Cache)";
+			name = "Insert Cache";
 		}
 		bool merge(struct test *t, int n) override;
 };
