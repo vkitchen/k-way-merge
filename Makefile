@@ -114,7 +114,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-best main
+all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -270,6 +270,10 @@ gen: gen.o
 gen-cache: gen_cache.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_cache.o
 	for i in `seq 3 7`; do ./gen-cache "$$i" > "state_machine_cache_$$i.cpp"; done
+
+gen-var: gen_var.o
+	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_var.o
+	for i in `seq 3 7`; do ./gen-var "$$i" > "state_machine_var_$$i.cpp"; done
 
 gen-binary-search-4: gen_binary_search_4.o
 	$(CXX) $(CFLAGS) $(OPT) -o $@ gen_binary_search_4.o
