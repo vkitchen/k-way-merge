@@ -46,6 +46,7 @@ SRC = \
 	merge_tournament_cache_separate_init.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_compiled_cache.cpp \
+	merge_state_machine_compiled_var.cpp \
 	merge_state_machine_compiled_binary_search.cpp \
 	merge_state_machine_compiled_binary_search_cache.cpp \
 	merge_state_machine_lookup_table.cpp \

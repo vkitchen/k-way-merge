@@ -51,6 +51,7 @@
 #include "merge_tournament_cache_separate_init.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
+#include "merge_state_machine_compiled_var.h"
 #include "merge_state_machine_compiled_binary_search.h"
 #include "merge_state_machine_compiled_binary_search_cache.h"
 #include "merge_state_machine_lookup_table.h"
@@ -104,7 +105,8 @@ Merge *functions[] = {
 //	new MergeTournamentCacheSeparateInit(),
 //
 //	new MergeStateMachineCompiled,
-//	new MergeStateMachineCompiledCache,
+	new MergeStateMachineCompiledCache,
+	new MergeStateMachineCompiledVar,
 //	new MergeStateMachineCompiledBinarySearch,
 //	new MergeStateMachineCompiledBinarySearchCache,
 //	new MergeStateMachineLookupTable,
