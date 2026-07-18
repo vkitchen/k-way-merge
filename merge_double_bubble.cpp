@@ -2,7 +2,7 @@
 
 #include "harness.h"
 
-#include "merge_bubble.h"
+#include "merge_double_bubble.h"
 
 static void sort_full(int **a, int length) {
 	for (int i = length; i > 1; i--) {
@@ -17,16 +17,23 @@ static void sort_full(int **a, int length) {
 }
 
 static void sort_partial(int **a, int length) {
-	int *min = a[0];
-	for (int j = 1; j < length; j++) {
-		int *y = a[j];
-		a[j - 1] = (*min >= *y ? min : y);
-		min = (*min >= *y ? y : min);
+	int *x = a[0];
+	int *y = a[1];
+	if (*y > *x) std::swap(x, y);
+	for (size_t j = 2; j < length; j++) {
+		int *z = a[j];
+		bool is_smaller = *z > *y;
+		int *w = is_smaller ? z : y;
+		y = is_smaller ? y : z;
+		is_smaller = *z > *x;
+		a[j - 2] = is_smaller ? z : x;
+		x = is_smaller ? x : w;
 	}
-	a[length - 1] = min;
+	a[length - 2] = x;
+	a[length - 1] = y;
 }
 
-bool MergeBubble::merge(struct test *t, int n) {
+bool MergeDoubleBubble::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
