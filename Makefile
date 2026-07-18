@@ -107,7 +107,13 @@ SRC = \
 	merge_state_machine_compiled_cache_O2.cpp \
 	merge_state_machine_compiled_cache_O3.cpp \
 	merge_state_machine_compiled_cache_Os.cpp \
-	merge_state_machine_compiled_cache_Oz.cpp
+	merge_state_machine_compiled_cache_Oz.cpp \
+	merge_state_machine_compiled_var_O0.cpp \
+	merge_state_machine_compiled_var_O1.cpp \
+	merge_state_machine_compiled_var_O2.cpp \
+	merge_state_machine_compiled_var_O3.cpp \
+	merge_state_machine_compiled_var_Os.cpp \
+	merge_state_machine_compiled_var_Oz.cpp
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -261,6 +267,24 @@ merge_state_machine_compiled_cache_Os.o: merge_state_machine_compiled_cache_Os.c
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_state_machine_compiled_cache_Oz.o: merge_state_machine_compiled_cache_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_state_machine_compiled_var_O0.o: merge_state_machine_compiled_var_O0.cpp
+	$(CXX) $(CFLAGS) -c $<
+
+merge_state_machine_compiled_var_O1.o: merge_state_machine_compiled_var_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_state_machine_compiled_var_O2.o: merge_state_machine_compiled_var_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_state_machine_compiled_var_O3.o: merge_state_machine_compiled_var_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_state_machine_compiled_var_Os.o: merge_state_machine_compiled_var_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_state_machine_compiled_var_Oz.o: merge_state_machine_compiled_var_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 gen: gen.o

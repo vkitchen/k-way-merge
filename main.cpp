@@ -184,6 +184,13 @@ Merge *functions[] = {
 //	new MergeStateMachineCompiledCacheO3,
 //	new MergeStateMachineCompiledCacheOs,
 //	new MergeStateMachineCompiledCacheOz,
+//
+//	new MergeStateMachineCompiledVarO0,
+//	new MergeStateMachineCompiledVarO1,
+//	new MergeStateMachineCompiledVarO2,
+//	new MergeStateMachineCompiledVarO3,
+//	new MergeStateMachineCompiledVarOs,
+//	new MergeStateMachineCompiledVarOz,
 };
 
 const size_t num_tests = sizeof(functions) / sizeof(Merge *);
