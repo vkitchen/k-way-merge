@@ -14,6 +14,7 @@ SRC = \
 	merge_find_cache.cpp \
 	merge_find_cache_3.cpp \
 	merge_find_cache_unrolled.cpp \
+	merge_find_var.cpp \
 	merge_find_cache_unrolled_alt.cpp \
 	merge_find_cache_unrolled_best.cpp \
 	merge_find_cache_unrolled_simd.cpp \
@@ -122,7 +123,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-best main
+all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-var gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -320,6 +321,10 @@ gen-lookup-asc: gen_lookup_asc.o
 .PHONY: gen-find
 gen-find:
 	./gen_find.rb 50 > find_unrolled.cpp
+
+.PHONY: gen-find-var
+gen-find-var:
+	./gen_find_var.rb 30 > find_unrolled_var.cpp
 
 .PHONY: gen-find-best
 gen-find-best:
