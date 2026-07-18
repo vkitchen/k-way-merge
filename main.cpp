@@ -27,8 +27,8 @@
 #include "merge_quick_sort.h"
 #include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
-#include "merge_bubble_sort_fast.h"
 #include "merge_double_bubble_sort.h"
+#include "merge_bubble.h"
 #include "merge_insertion_sort.h"
 #include "merge_insert.h"
 #include "merge_insert_cache.h"
@@ -77,8 +77,8 @@ Merge *functions[] = {
 //	new MergeStdSort,
 //
 //	new MergeBubbleSort,
-//	new MergeBubbleSortFast,
 //	new MergeDoubleBubbleSort,
+//	new MergeBubble,
 //
 //	new MergeInsertionSort,
 //	new MergeInsert,

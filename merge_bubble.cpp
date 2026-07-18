@@ -1,6 +1,6 @@
 #include "harness.h"
 
-#include "merge_bubble_sort_fast.h"
+#include "merge_bubble.h"
 
 static void sort_full(int **a, int length) {
 	for (int i = length; i > 1; i--) {
@@ -24,7 +24,7 @@ static void sort_partial(int **a, int length) {
 	a[length - 1] = min;
 }
 
-bool MergeBubbleSortFast::merge(struct test *t, int n) {
+bool MergeBubble::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
