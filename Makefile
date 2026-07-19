@@ -12,9 +12,10 @@ SRC = \
 	merge_baseline_copy_sort_Oz.cpp \
 	merge_find.cpp \
 	merge_find_cache.cpp \
-	merge_find_cache_3.cpp \
 	merge_find_multiway_cache.cpp \
 	merge_find_multiway_var.cpp \
+	merge_find_branchless_cache.cpp \
+	merge_find_cache_3.cpp \
 	merge_find_cache_unrolled_alt.cpp \
 	merge_find_cache_unrolled_best.cpp \
 	merge_find_cache_unrolled_simd.cpp \

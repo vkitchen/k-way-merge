@@ -5,7 +5,7 @@
 class MergeFindCache : public Merge {
 	public:
 		MergeFindCache() {
-			name = "Find (Cache)";
+			name = "Find Cache";
 		}
 		bool merge(struct test *t, int n) override;
 };
