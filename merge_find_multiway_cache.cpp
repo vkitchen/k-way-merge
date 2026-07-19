@@ -1,10 +1,10 @@
 #include "harness.h"
 
-#include "merge_find_cache_unrolled.h"
+#include "merge_find_multiway_cache.h"
 
-#include "find_unrolled.cpp"
+#include "find_multiway_cache.cpp"
 
-bool MergeFindCacheUnrolledO1::merge(struct test *t, int n) {
+bool MergeFindMultiwayCache::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	int *cache = (int *)malloc(sizeof(int) * n);
 

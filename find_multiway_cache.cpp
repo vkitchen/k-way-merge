@@ -1,1289 +1,1639 @@
 static void merge_3(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_4(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_5(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_6(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_7(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_8(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_9(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_10(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_11(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_12(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_13(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_14(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_15(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_16(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_17(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_18(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_19(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_20(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_21(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_22(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_23(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_24(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_25(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_26(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0 && cache[25] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24] && cache[0] >= cache[25]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24] && cache[1] >= cache[25]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24] && cache[2] >= cache[25]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24] && cache[3] >= cache[25]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24] && cache[4] >= cache[25]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24] && cache[5] >= cache[25]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24] && cache[6] >= cache[25]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24] && cache[7] >= cache[25]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24] && cache[8] >= cache[25]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24] && cache[9] >= cache[25]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24] && cache[10] >= cache[25]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24] && cache[11] >= cache[25]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24] && cache[12] >= cache[25]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24] && cache[13] >= cache[25]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24] && cache[14] >= cache[25]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24] && cache[15] >= cache[25]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24] && cache[16] >= cache[25]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24] && cache[17] >= cache[25]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24] && cache[18] >= cache[25]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24] && cache[19] >= cache[25]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24] && cache[20] >= cache[25]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24] && cache[21] >= cache[25]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24] && cache[22] >= cache[25]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24] && cache[23] >= cache[25]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else if (cache[24] >= cache[0] && cache[24] >= cache[1] && cache[24] >= cache[2] && cache[24] >= cache[3] && cache[24] >= cache[4] && cache[24] >= cache[5] && cache[24] >= cache[6] && cache[24] >= cache[7] && cache[24] >= cache[8] && cache[24] >= cache[9] && cache[24] >= cache[10] && cache[24] >= cache[11] && cache[24] >= cache[12] && cache[24] >= cache[13] && cache[24] >= cache[14] && cache[24] >= cache[15] && cache[24] >= cache[16] && cache[24] >= cache[17] && cache[24] >= cache[18] && cache[24] >= cache[19] && cache[24] >= cache[20] && cache[24] >= cache[21] && cache[24] >= cache[22] && cache[24] >= cache[23] && cache[24] >= cache[25]) {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		} else {
-			best = 25;
+			t->results[pos++] = cache[25];
+			cache[25] = *++segments[25];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_27(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0 && cache[25] == 0 && cache[26] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24] && cache[0] >= cache[25] && cache[0] >= cache[26]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24] && cache[1] >= cache[25] && cache[1] >= cache[26]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24] && cache[2] >= cache[25] && cache[2] >= cache[26]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24] && cache[3] >= cache[25] && cache[3] >= cache[26]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24] && cache[4] >= cache[25] && cache[4] >= cache[26]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24] && cache[5] >= cache[25] && cache[5] >= cache[26]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24] && cache[6] >= cache[25] && cache[6] >= cache[26]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24] && cache[7] >= cache[25] && cache[7] >= cache[26]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24] && cache[8] >= cache[25] && cache[8] >= cache[26]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24] && cache[9] >= cache[25] && cache[9] >= cache[26]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24] && cache[10] >= cache[25] && cache[10] >= cache[26]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24] && cache[11] >= cache[25] && cache[11] >= cache[26]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24] && cache[12] >= cache[25] && cache[12] >= cache[26]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24] && cache[13] >= cache[25] && cache[13] >= cache[26]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24] && cache[14] >= cache[25] && cache[14] >= cache[26]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24] && cache[15] >= cache[25] && cache[15] >= cache[26]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24] && cache[16] >= cache[25] && cache[16] >= cache[26]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24] && cache[17] >= cache[25] && cache[17] >= cache[26]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24] && cache[18] >= cache[25] && cache[18] >= cache[26]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24] && cache[19] >= cache[25] && cache[19] >= cache[26]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24] && cache[20] >= cache[25] && cache[20] >= cache[26]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24] && cache[21] >= cache[25] && cache[21] >= cache[26]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24] && cache[22] >= cache[25] && cache[22] >= cache[26]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24] && cache[23] >= cache[25] && cache[23] >= cache[26]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else if (cache[24] >= cache[0] && cache[24] >= cache[1] && cache[24] >= cache[2] && cache[24] >= cache[3] && cache[24] >= cache[4] && cache[24] >= cache[5] && cache[24] >= cache[6] && cache[24] >= cache[7] && cache[24] >= cache[8] && cache[24] >= cache[9] && cache[24] >= cache[10] && cache[24] >= cache[11] && cache[24] >= cache[12] && cache[24] >= cache[13] && cache[24] >= cache[14] && cache[24] >= cache[15] && cache[24] >= cache[16] && cache[24] >= cache[17] && cache[24] >= cache[18] && cache[24] >= cache[19] && cache[24] >= cache[20] && cache[24] >= cache[21] && cache[24] >= cache[22] && cache[24] >= cache[23] && cache[24] >= cache[25] && cache[24] >= cache[26]) {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		} else if (cache[25] >= cache[0] && cache[25] >= cache[1] && cache[25] >= cache[2] && cache[25] >= cache[3] && cache[25] >= cache[4] && cache[25] >= cache[5] && cache[25] >= cache[6] && cache[25] >= cache[7] && cache[25] >= cache[8] && cache[25] >= cache[9] && cache[25] >= cache[10] && cache[25] >= cache[11] && cache[25] >= cache[12] && cache[25] >= cache[13] && cache[25] >= cache[14] && cache[25] >= cache[15] && cache[25] >= cache[16] && cache[25] >= cache[17] && cache[25] >= cache[18] && cache[25] >= cache[19] && cache[25] >= cache[20] && cache[25] >= cache[21] && cache[25] >= cache[22] && cache[25] >= cache[23] && cache[25] >= cache[24] && cache[25] >= cache[26]) {
-			best = 25;
+			t->results[pos++] = cache[25];
+			cache[25] = *++segments[25];
 		} else {
-			best = 26;
+			t->results[pos++] = cache[26];
+			cache[26] = *++segments[26];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_28(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0 && cache[25] == 0 && cache[26] == 0 && cache[27] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24] && cache[0] >= cache[25] && cache[0] >= cache[26] && cache[0] >= cache[27]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24] && cache[1] >= cache[25] && cache[1] >= cache[26] && cache[1] >= cache[27]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24] && cache[2] >= cache[25] && cache[2] >= cache[26] && cache[2] >= cache[27]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24] && cache[3] >= cache[25] && cache[3] >= cache[26] && cache[3] >= cache[27]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24] && cache[4] >= cache[25] && cache[4] >= cache[26] && cache[4] >= cache[27]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24] && cache[5] >= cache[25] && cache[5] >= cache[26] && cache[5] >= cache[27]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24] && cache[6] >= cache[25] && cache[6] >= cache[26] && cache[6] >= cache[27]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24] && cache[7] >= cache[25] && cache[7] >= cache[26] && cache[7] >= cache[27]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24] && cache[8] >= cache[25] && cache[8] >= cache[26] && cache[8] >= cache[27]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24] && cache[9] >= cache[25] && cache[9] >= cache[26] && cache[9] >= cache[27]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24] && cache[10] >= cache[25] && cache[10] >= cache[26] && cache[10] >= cache[27]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24] && cache[11] >= cache[25] && cache[11] >= cache[26] && cache[11] >= cache[27]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24] && cache[12] >= cache[25] && cache[12] >= cache[26] && cache[12] >= cache[27]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24] && cache[13] >= cache[25] && cache[13] >= cache[26] && cache[13] >= cache[27]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24] && cache[14] >= cache[25] && cache[14] >= cache[26] && cache[14] >= cache[27]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24] && cache[15] >= cache[25] && cache[15] >= cache[26] && cache[15] >= cache[27]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24] && cache[16] >= cache[25] && cache[16] >= cache[26] && cache[16] >= cache[27]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24] && cache[17] >= cache[25] && cache[17] >= cache[26] && cache[17] >= cache[27]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24] && cache[18] >= cache[25] && cache[18] >= cache[26] && cache[18] >= cache[27]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24] && cache[19] >= cache[25] && cache[19] >= cache[26] && cache[19] >= cache[27]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24] && cache[20] >= cache[25] && cache[20] >= cache[26] && cache[20] >= cache[27]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24] && cache[21] >= cache[25] && cache[21] >= cache[26] && cache[21] >= cache[27]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24] && cache[22] >= cache[25] && cache[22] >= cache[26] && cache[22] >= cache[27]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24] && cache[23] >= cache[25] && cache[23] >= cache[26] && cache[23] >= cache[27]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else if (cache[24] >= cache[0] && cache[24] >= cache[1] && cache[24] >= cache[2] && cache[24] >= cache[3] && cache[24] >= cache[4] && cache[24] >= cache[5] && cache[24] >= cache[6] && cache[24] >= cache[7] && cache[24] >= cache[8] && cache[24] >= cache[9] && cache[24] >= cache[10] && cache[24] >= cache[11] && cache[24] >= cache[12] && cache[24] >= cache[13] && cache[24] >= cache[14] && cache[24] >= cache[15] && cache[24] >= cache[16] && cache[24] >= cache[17] && cache[24] >= cache[18] && cache[24] >= cache[19] && cache[24] >= cache[20] && cache[24] >= cache[21] && cache[24] >= cache[22] && cache[24] >= cache[23] && cache[24] >= cache[25] && cache[24] >= cache[26] && cache[24] >= cache[27]) {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		} else if (cache[25] >= cache[0] && cache[25] >= cache[1] && cache[25] >= cache[2] && cache[25] >= cache[3] && cache[25] >= cache[4] && cache[25] >= cache[5] && cache[25] >= cache[6] && cache[25] >= cache[7] && cache[25] >= cache[8] && cache[25] >= cache[9] && cache[25] >= cache[10] && cache[25] >= cache[11] && cache[25] >= cache[12] && cache[25] >= cache[13] && cache[25] >= cache[14] && cache[25] >= cache[15] && cache[25] >= cache[16] && cache[25] >= cache[17] && cache[25] >= cache[18] && cache[25] >= cache[19] && cache[25] >= cache[20] && cache[25] >= cache[21] && cache[25] >= cache[22] && cache[25] >= cache[23] && cache[25] >= cache[24] && cache[25] >= cache[26] && cache[25] >= cache[27]) {
-			best = 25;
+			t->results[pos++] = cache[25];
+			cache[25] = *++segments[25];
 		} else if (cache[26] >= cache[0] && cache[26] >= cache[1] && cache[26] >= cache[2] && cache[26] >= cache[3] && cache[26] >= cache[4] && cache[26] >= cache[5] && cache[26] >= cache[6] && cache[26] >= cache[7] && cache[26] >= cache[8] && cache[26] >= cache[9] && cache[26] >= cache[10] && cache[26] >= cache[11] && cache[26] >= cache[12] && cache[26] >= cache[13] && cache[26] >= cache[14] && cache[26] >= cache[15] && cache[26] >= cache[16] && cache[26] >= cache[17] && cache[26] >= cache[18] && cache[26] >= cache[19] && cache[26] >= cache[20] && cache[26] >= cache[21] && cache[26] >= cache[22] && cache[26] >= cache[23] && cache[26] >= cache[24] && cache[26] >= cache[25] && cache[26] >= cache[27]) {
-			best = 26;
+			t->results[pos++] = cache[26];
+			cache[26] = *++segments[26];
 		} else {
-			best = 27;
+			t->results[pos++] = cache[27];
+			cache[27] = *++segments[27];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_29(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0 && cache[25] == 0 && cache[26] == 0 && cache[27] == 0 && cache[28] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24] && cache[0] >= cache[25] && cache[0] >= cache[26] && cache[0] >= cache[27] && cache[0] >= cache[28]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24] && cache[1] >= cache[25] && cache[1] >= cache[26] && cache[1] >= cache[27] && cache[1] >= cache[28]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24] && cache[2] >= cache[25] && cache[2] >= cache[26] && cache[2] >= cache[27] && cache[2] >= cache[28]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24] && cache[3] >= cache[25] && cache[3] >= cache[26] && cache[3] >= cache[27] && cache[3] >= cache[28]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24] && cache[4] >= cache[25] && cache[4] >= cache[26] && cache[4] >= cache[27] && cache[4] >= cache[28]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24] && cache[5] >= cache[25] && cache[5] >= cache[26] && cache[5] >= cache[27] && cache[5] >= cache[28]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24] && cache[6] >= cache[25] && cache[6] >= cache[26] && cache[6] >= cache[27] && cache[6] >= cache[28]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24] && cache[7] >= cache[25] && cache[7] >= cache[26] && cache[7] >= cache[27] && cache[7] >= cache[28]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24] && cache[8] >= cache[25] && cache[8] >= cache[26] && cache[8] >= cache[27] && cache[8] >= cache[28]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24] && cache[9] >= cache[25] && cache[9] >= cache[26] && cache[9] >= cache[27] && cache[9] >= cache[28]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24] && cache[10] >= cache[25] && cache[10] >= cache[26] && cache[10] >= cache[27] && cache[10] >= cache[28]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24] && cache[11] >= cache[25] && cache[11] >= cache[26] && cache[11] >= cache[27] && cache[11] >= cache[28]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24] && cache[12] >= cache[25] && cache[12] >= cache[26] && cache[12] >= cache[27] && cache[12] >= cache[28]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24] && cache[13] >= cache[25] && cache[13] >= cache[26] && cache[13] >= cache[27] && cache[13] >= cache[28]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24] && cache[14] >= cache[25] && cache[14] >= cache[26] && cache[14] >= cache[27] && cache[14] >= cache[28]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24] && cache[15] >= cache[25] && cache[15] >= cache[26] && cache[15] >= cache[27] && cache[15] >= cache[28]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24] && cache[16] >= cache[25] && cache[16] >= cache[26] && cache[16] >= cache[27] && cache[16] >= cache[28]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24] && cache[17] >= cache[25] && cache[17] >= cache[26] && cache[17] >= cache[27] && cache[17] >= cache[28]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24] && cache[18] >= cache[25] && cache[18] >= cache[26] && cache[18] >= cache[27] && cache[18] >= cache[28]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24] && cache[19] >= cache[25] && cache[19] >= cache[26] && cache[19] >= cache[27] && cache[19] >= cache[28]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24] && cache[20] >= cache[25] && cache[20] >= cache[26] && cache[20] >= cache[27] && cache[20] >= cache[28]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24] && cache[21] >= cache[25] && cache[21] >= cache[26] && cache[21] >= cache[27] && cache[21] >= cache[28]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24] && cache[22] >= cache[25] && cache[22] >= cache[26] && cache[22] >= cache[27] && cache[22] >= cache[28]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24] && cache[23] >= cache[25] && cache[23] >= cache[26] && cache[23] >= cache[27] && cache[23] >= cache[28]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else if (cache[24] >= cache[0] && cache[24] >= cache[1] && cache[24] >= cache[2] && cache[24] >= cache[3] && cache[24] >= cache[4] && cache[24] >= cache[5] && cache[24] >= cache[6] && cache[24] >= cache[7] && cache[24] >= cache[8] && cache[24] >= cache[9] && cache[24] >= cache[10] && cache[24] >= cache[11] && cache[24] >= cache[12] && cache[24] >= cache[13] && cache[24] >= cache[14] && cache[24] >= cache[15] && cache[24] >= cache[16] && cache[24] >= cache[17] && cache[24] >= cache[18] && cache[24] >= cache[19] && cache[24] >= cache[20] && cache[24] >= cache[21] && cache[24] >= cache[22] && cache[24] >= cache[23] && cache[24] >= cache[25] && cache[24] >= cache[26] && cache[24] >= cache[27] && cache[24] >= cache[28]) {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		} else if (cache[25] >= cache[0] && cache[25] >= cache[1] && cache[25] >= cache[2] && cache[25] >= cache[3] && cache[25] >= cache[4] && cache[25] >= cache[5] && cache[25] >= cache[6] && cache[25] >= cache[7] && cache[25] >= cache[8] && cache[25] >= cache[9] && cache[25] >= cache[10] && cache[25] >= cache[11] && cache[25] >= cache[12] && cache[25] >= cache[13] && cache[25] >= cache[14] && cache[25] >= cache[15] && cache[25] >= cache[16] && cache[25] >= cache[17] && cache[25] >= cache[18] && cache[25] >= cache[19] && cache[25] >= cache[20] && cache[25] >= cache[21] && cache[25] >= cache[22] && cache[25] >= cache[23] && cache[25] >= cache[24] && cache[25] >= cache[26] && cache[25] >= cache[27] && cache[25] >= cache[28]) {
-			best = 25;
+			t->results[pos++] = cache[25];
+			cache[25] = *++segments[25];
 		} else if (cache[26] >= cache[0] && cache[26] >= cache[1] && cache[26] >= cache[2] && cache[26] >= cache[3] && cache[26] >= cache[4] && cache[26] >= cache[5] && cache[26] >= cache[6] && cache[26] >= cache[7] && cache[26] >= cache[8] && cache[26] >= cache[9] && cache[26] >= cache[10] && cache[26] >= cache[11] && cache[26] >= cache[12] && cache[26] >= cache[13] && cache[26] >= cache[14] && cache[26] >= cache[15] && cache[26] >= cache[16] && cache[26] >= cache[17] && cache[26] >= cache[18] && cache[26] >= cache[19] && cache[26] >= cache[20] && cache[26] >= cache[21] && cache[26] >= cache[22] && cache[26] >= cache[23] && cache[26] >= cache[24] && cache[26] >= cache[25] && cache[26] >= cache[27] && cache[26] >= cache[28]) {
-			best = 26;
+			t->results[pos++] = cache[26];
+			cache[26] = *++segments[26];
 		} else if (cache[27] >= cache[0] && cache[27] >= cache[1] && cache[27] >= cache[2] && cache[27] >= cache[3] && cache[27] >= cache[4] && cache[27] >= cache[5] && cache[27] >= cache[6] && cache[27] >= cache[7] && cache[27] >= cache[8] && cache[27] >= cache[9] && cache[27] >= cache[10] && cache[27] >= cache[11] && cache[27] >= cache[12] && cache[27] >= cache[13] && cache[27] >= cache[14] && cache[27] >= cache[15] && cache[27] >= cache[16] && cache[27] >= cache[17] && cache[27] >= cache[18] && cache[27] >= cache[19] && cache[27] >= cache[20] && cache[27] >= cache[21] && cache[27] >= cache[22] && cache[27] >= cache[23] && cache[27] >= cache[24] && cache[27] >= cache[25] && cache[27] >= cache[26] && cache[27] >= cache[28]) {
-			best = 27;
+			t->results[pos++] = cache[27];
+			cache[27] = *++segments[27];
 		} else {
-			best = 28;
+			t->results[pos++] = cache[28];
+			cache[28] = *++segments[28];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static void merge_30(struct test *t, int **segments, int *cache) {
 	size_t pos = 0;
-	size_t best;
 	for (;;) {
 		if (cache[0] == 0 && cache[1] == 0 && cache[2] == 0 && cache[3] == 0 && cache[4] == 0 && cache[5] == 0 && cache[6] == 0 && cache[7] == 0 && cache[8] == 0 && cache[9] == 0 && cache[10] == 0 && cache[11] == 0 && cache[12] == 0 && cache[13] == 0 && cache[14] == 0 && cache[15] == 0 && cache[16] == 0 && cache[17] == 0 && cache[18] == 0 && cache[19] == 0 && cache[20] == 0 && cache[21] == 0 && cache[22] == 0 && cache[23] == 0 && cache[24] == 0 && cache[25] == 0 && cache[26] == 0 && cache[27] == 0 && cache[28] == 0 && cache[29] == 0)
 			break;
 
 		if (cache[0] >= cache[1] && cache[0] >= cache[2] && cache[0] >= cache[3] && cache[0] >= cache[4] && cache[0] >= cache[5] && cache[0] >= cache[6] && cache[0] >= cache[7] && cache[0] >= cache[8] && cache[0] >= cache[9] && cache[0] >= cache[10] && cache[0] >= cache[11] && cache[0] >= cache[12] && cache[0] >= cache[13] && cache[0] >= cache[14] && cache[0] >= cache[15] && cache[0] >= cache[16] && cache[0] >= cache[17] && cache[0] >= cache[18] && cache[0] >= cache[19] && cache[0] >= cache[20] && cache[0] >= cache[21] && cache[0] >= cache[22] && cache[0] >= cache[23] && cache[0] >= cache[24] && cache[0] >= cache[25] && cache[0] >= cache[26] && cache[0] >= cache[27] && cache[0] >= cache[28] && cache[0] >= cache[29]) {
-			best = 0;
+			t->results[pos++] = cache[0];
+			cache[0] = *++segments[0];
 		} else if (cache[1] >= cache[0] && cache[1] >= cache[2] && cache[1] >= cache[3] && cache[1] >= cache[4] && cache[1] >= cache[5] && cache[1] >= cache[6] && cache[1] >= cache[7] && cache[1] >= cache[8] && cache[1] >= cache[9] && cache[1] >= cache[10] && cache[1] >= cache[11] && cache[1] >= cache[12] && cache[1] >= cache[13] && cache[1] >= cache[14] && cache[1] >= cache[15] && cache[1] >= cache[16] && cache[1] >= cache[17] && cache[1] >= cache[18] && cache[1] >= cache[19] && cache[1] >= cache[20] && cache[1] >= cache[21] && cache[1] >= cache[22] && cache[1] >= cache[23] && cache[1] >= cache[24] && cache[1] >= cache[25] && cache[1] >= cache[26] && cache[1] >= cache[27] && cache[1] >= cache[28] && cache[1] >= cache[29]) {
-			best = 1;
+			t->results[pos++] = cache[1];
+			cache[1] = *++segments[1];
 		} else if (cache[2] >= cache[0] && cache[2] >= cache[1] && cache[2] >= cache[3] && cache[2] >= cache[4] && cache[2] >= cache[5] && cache[2] >= cache[6] && cache[2] >= cache[7] && cache[2] >= cache[8] && cache[2] >= cache[9] && cache[2] >= cache[10] && cache[2] >= cache[11] && cache[2] >= cache[12] && cache[2] >= cache[13] && cache[2] >= cache[14] && cache[2] >= cache[15] && cache[2] >= cache[16] && cache[2] >= cache[17] && cache[2] >= cache[18] && cache[2] >= cache[19] && cache[2] >= cache[20] && cache[2] >= cache[21] && cache[2] >= cache[22] && cache[2] >= cache[23] && cache[2] >= cache[24] && cache[2] >= cache[25] && cache[2] >= cache[26] && cache[2] >= cache[27] && cache[2] >= cache[28] && cache[2] >= cache[29]) {
-			best = 2;
+			t->results[pos++] = cache[2];
+			cache[2] = *++segments[2];
 		} else if (cache[3] >= cache[0] && cache[3] >= cache[1] && cache[3] >= cache[2] && cache[3] >= cache[4] && cache[3] >= cache[5] && cache[3] >= cache[6] && cache[3] >= cache[7] && cache[3] >= cache[8] && cache[3] >= cache[9] && cache[3] >= cache[10] && cache[3] >= cache[11] && cache[3] >= cache[12] && cache[3] >= cache[13] && cache[3] >= cache[14] && cache[3] >= cache[15] && cache[3] >= cache[16] && cache[3] >= cache[17] && cache[3] >= cache[18] && cache[3] >= cache[19] && cache[3] >= cache[20] && cache[3] >= cache[21] && cache[3] >= cache[22] && cache[3] >= cache[23] && cache[3] >= cache[24] && cache[3] >= cache[25] && cache[3] >= cache[26] && cache[3] >= cache[27] && cache[3] >= cache[28] && cache[3] >= cache[29]) {
-			best = 3;
+			t->results[pos++] = cache[3];
+			cache[3] = *++segments[3];
 		} else if (cache[4] >= cache[0] && cache[4] >= cache[1] && cache[4] >= cache[2] && cache[4] >= cache[3] && cache[4] >= cache[5] && cache[4] >= cache[6] && cache[4] >= cache[7] && cache[4] >= cache[8] && cache[4] >= cache[9] && cache[4] >= cache[10] && cache[4] >= cache[11] && cache[4] >= cache[12] && cache[4] >= cache[13] && cache[4] >= cache[14] && cache[4] >= cache[15] && cache[4] >= cache[16] && cache[4] >= cache[17] && cache[4] >= cache[18] && cache[4] >= cache[19] && cache[4] >= cache[20] && cache[4] >= cache[21] && cache[4] >= cache[22] && cache[4] >= cache[23] && cache[4] >= cache[24] && cache[4] >= cache[25] && cache[4] >= cache[26] && cache[4] >= cache[27] && cache[4] >= cache[28] && cache[4] >= cache[29]) {
-			best = 4;
+			t->results[pos++] = cache[4];
+			cache[4] = *++segments[4];
 		} else if (cache[5] >= cache[0] && cache[5] >= cache[1] && cache[5] >= cache[2] && cache[5] >= cache[3] && cache[5] >= cache[4] && cache[5] >= cache[6] && cache[5] >= cache[7] && cache[5] >= cache[8] && cache[5] >= cache[9] && cache[5] >= cache[10] && cache[5] >= cache[11] && cache[5] >= cache[12] && cache[5] >= cache[13] && cache[5] >= cache[14] && cache[5] >= cache[15] && cache[5] >= cache[16] && cache[5] >= cache[17] && cache[5] >= cache[18] && cache[5] >= cache[19] && cache[5] >= cache[20] && cache[5] >= cache[21] && cache[5] >= cache[22] && cache[5] >= cache[23] && cache[5] >= cache[24] && cache[5] >= cache[25] && cache[5] >= cache[26] && cache[5] >= cache[27] && cache[5] >= cache[28] && cache[5] >= cache[29]) {
-			best = 5;
+			t->results[pos++] = cache[5];
+			cache[5] = *++segments[5];
 		} else if (cache[6] >= cache[0] && cache[6] >= cache[1] && cache[6] >= cache[2] && cache[6] >= cache[3] && cache[6] >= cache[4] && cache[6] >= cache[5] && cache[6] >= cache[7] && cache[6] >= cache[8] && cache[6] >= cache[9] && cache[6] >= cache[10] && cache[6] >= cache[11] && cache[6] >= cache[12] && cache[6] >= cache[13] && cache[6] >= cache[14] && cache[6] >= cache[15] && cache[6] >= cache[16] && cache[6] >= cache[17] && cache[6] >= cache[18] && cache[6] >= cache[19] && cache[6] >= cache[20] && cache[6] >= cache[21] && cache[6] >= cache[22] && cache[6] >= cache[23] && cache[6] >= cache[24] && cache[6] >= cache[25] && cache[6] >= cache[26] && cache[6] >= cache[27] && cache[6] >= cache[28] && cache[6] >= cache[29]) {
-			best = 6;
+			t->results[pos++] = cache[6];
+			cache[6] = *++segments[6];
 		} else if (cache[7] >= cache[0] && cache[7] >= cache[1] && cache[7] >= cache[2] && cache[7] >= cache[3] && cache[7] >= cache[4] && cache[7] >= cache[5] && cache[7] >= cache[6] && cache[7] >= cache[8] && cache[7] >= cache[9] && cache[7] >= cache[10] && cache[7] >= cache[11] && cache[7] >= cache[12] && cache[7] >= cache[13] && cache[7] >= cache[14] && cache[7] >= cache[15] && cache[7] >= cache[16] && cache[7] >= cache[17] && cache[7] >= cache[18] && cache[7] >= cache[19] && cache[7] >= cache[20] && cache[7] >= cache[21] && cache[7] >= cache[22] && cache[7] >= cache[23] && cache[7] >= cache[24] && cache[7] >= cache[25] && cache[7] >= cache[26] && cache[7] >= cache[27] && cache[7] >= cache[28] && cache[7] >= cache[29]) {
-			best = 7;
+			t->results[pos++] = cache[7];
+			cache[7] = *++segments[7];
 		} else if (cache[8] >= cache[0] && cache[8] >= cache[1] && cache[8] >= cache[2] && cache[8] >= cache[3] && cache[8] >= cache[4] && cache[8] >= cache[5] && cache[8] >= cache[6] && cache[8] >= cache[7] && cache[8] >= cache[9] && cache[8] >= cache[10] && cache[8] >= cache[11] && cache[8] >= cache[12] && cache[8] >= cache[13] && cache[8] >= cache[14] && cache[8] >= cache[15] && cache[8] >= cache[16] && cache[8] >= cache[17] && cache[8] >= cache[18] && cache[8] >= cache[19] && cache[8] >= cache[20] && cache[8] >= cache[21] && cache[8] >= cache[22] && cache[8] >= cache[23] && cache[8] >= cache[24] && cache[8] >= cache[25] && cache[8] >= cache[26] && cache[8] >= cache[27] && cache[8] >= cache[28] && cache[8] >= cache[29]) {
-			best = 8;
+			t->results[pos++] = cache[8];
+			cache[8] = *++segments[8];
 		} else if (cache[9] >= cache[0] && cache[9] >= cache[1] && cache[9] >= cache[2] && cache[9] >= cache[3] && cache[9] >= cache[4] && cache[9] >= cache[5] && cache[9] >= cache[6] && cache[9] >= cache[7] && cache[9] >= cache[8] && cache[9] >= cache[10] && cache[9] >= cache[11] && cache[9] >= cache[12] && cache[9] >= cache[13] && cache[9] >= cache[14] && cache[9] >= cache[15] && cache[9] >= cache[16] && cache[9] >= cache[17] && cache[9] >= cache[18] && cache[9] >= cache[19] && cache[9] >= cache[20] && cache[9] >= cache[21] && cache[9] >= cache[22] && cache[9] >= cache[23] && cache[9] >= cache[24] && cache[9] >= cache[25] && cache[9] >= cache[26] && cache[9] >= cache[27] && cache[9] >= cache[28] && cache[9] >= cache[29]) {
-			best = 9;
+			t->results[pos++] = cache[9];
+			cache[9] = *++segments[9];
 		} else if (cache[10] >= cache[0] && cache[10] >= cache[1] && cache[10] >= cache[2] && cache[10] >= cache[3] && cache[10] >= cache[4] && cache[10] >= cache[5] && cache[10] >= cache[6] && cache[10] >= cache[7] && cache[10] >= cache[8] && cache[10] >= cache[9] && cache[10] >= cache[11] && cache[10] >= cache[12] && cache[10] >= cache[13] && cache[10] >= cache[14] && cache[10] >= cache[15] && cache[10] >= cache[16] && cache[10] >= cache[17] && cache[10] >= cache[18] && cache[10] >= cache[19] && cache[10] >= cache[20] && cache[10] >= cache[21] && cache[10] >= cache[22] && cache[10] >= cache[23] && cache[10] >= cache[24] && cache[10] >= cache[25] && cache[10] >= cache[26] && cache[10] >= cache[27] && cache[10] >= cache[28] && cache[10] >= cache[29]) {
-			best = 10;
+			t->results[pos++] = cache[10];
+			cache[10] = *++segments[10];
 		} else if (cache[11] >= cache[0] && cache[11] >= cache[1] && cache[11] >= cache[2] && cache[11] >= cache[3] && cache[11] >= cache[4] && cache[11] >= cache[5] && cache[11] >= cache[6] && cache[11] >= cache[7] && cache[11] >= cache[8] && cache[11] >= cache[9] && cache[11] >= cache[10] && cache[11] >= cache[12] && cache[11] >= cache[13] && cache[11] >= cache[14] && cache[11] >= cache[15] && cache[11] >= cache[16] && cache[11] >= cache[17] && cache[11] >= cache[18] && cache[11] >= cache[19] && cache[11] >= cache[20] && cache[11] >= cache[21] && cache[11] >= cache[22] && cache[11] >= cache[23] && cache[11] >= cache[24] && cache[11] >= cache[25] && cache[11] >= cache[26] && cache[11] >= cache[27] && cache[11] >= cache[28] && cache[11] >= cache[29]) {
-			best = 11;
+			t->results[pos++] = cache[11];
+			cache[11] = *++segments[11];
 		} else if (cache[12] >= cache[0] && cache[12] >= cache[1] && cache[12] >= cache[2] && cache[12] >= cache[3] && cache[12] >= cache[4] && cache[12] >= cache[5] && cache[12] >= cache[6] && cache[12] >= cache[7] && cache[12] >= cache[8] && cache[12] >= cache[9] && cache[12] >= cache[10] && cache[12] >= cache[11] && cache[12] >= cache[13] && cache[12] >= cache[14] && cache[12] >= cache[15] && cache[12] >= cache[16] && cache[12] >= cache[17] && cache[12] >= cache[18] && cache[12] >= cache[19] && cache[12] >= cache[20] && cache[12] >= cache[21] && cache[12] >= cache[22] && cache[12] >= cache[23] && cache[12] >= cache[24] && cache[12] >= cache[25] && cache[12] >= cache[26] && cache[12] >= cache[27] && cache[12] >= cache[28] && cache[12] >= cache[29]) {
-			best = 12;
+			t->results[pos++] = cache[12];
+			cache[12] = *++segments[12];
 		} else if (cache[13] >= cache[0] && cache[13] >= cache[1] && cache[13] >= cache[2] && cache[13] >= cache[3] && cache[13] >= cache[4] && cache[13] >= cache[5] && cache[13] >= cache[6] && cache[13] >= cache[7] && cache[13] >= cache[8] && cache[13] >= cache[9] && cache[13] >= cache[10] && cache[13] >= cache[11] && cache[13] >= cache[12] && cache[13] >= cache[14] && cache[13] >= cache[15] && cache[13] >= cache[16] && cache[13] >= cache[17] && cache[13] >= cache[18] && cache[13] >= cache[19] && cache[13] >= cache[20] && cache[13] >= cache[21] && cache[13] >= cache[22] && cache[13] >= cache[23] && cache[13] >= cache[24] && cache[13] >= cache[25] && cache[13] >= cache[26] && cache[13] >= cache[27] && cache[13] >= cache[28] && cache[13] >= cache[29]) {
-			best = 13;
+			t->results[pos++] = cache[13];
+			cache[13] = *++segments[13];
 		} else if (cache[14] >= cache[0] && cache[14] >= cache[1] && cache[14] >= cache[2] && cache[14] >= cache[3] && cache[14] >= cache[4] && cache[14] >= cache[5] && cache[14] >= cache[6] && cache[14] >= cache[7] && cache[14] >= cache[8] && cache[14] >= cache[9] && cache[14] >= cache[10] && cache[14] >= cache[11] && cache[14] >= cache[12] && cache[14] >= cache[13] && cache[14] >= cache[15] && cache[14] >= cache[16] && cache[14] >= cache[17] && cache[14] >= cache[18] && cache[14] >= cache[19] && cache[14] >= cache[20] && cache[14] >= cache[21] && cache[14] >= cache[22] && cache[14] >= cache[23] && cache[14] >= cache[24] && cache[14] >= cache[25] && cache[14] >= cache[26] && cache[14] >= cache[27] && cache[14] >= cache[28] && cache[14] >= cache[29]) {
-			best = 14;
+			t->results[pos++] = cache[14];
+			cache[14] = *++segments[14];
 		} else if (cache[15] >= cache[0] && cache[15] >= cache[1] && cache[15] >= cache[2] && cache[15] >= cache[3] && cache[15] >= cache[4] && cache[15] >= cache[5] && cache[15] >= cache[6] && cache[15] >= cache[7] && cache[15] >= cache[8] && cache[15] >= cache[9] && cache[15] >= cache[10] && cache[15] >= cache[11] && cache[15] >= cache[12] && cache[15] >= cache[13] && cache[15] >= cache[14] && cache[15] >= cache[16] && cache[15] >= cache[17] && cache[15] >= cache[18] && cache[15] >= cache[19] && cache[15] >= cache[20] && cache[15] >= cache[21] && cache[15] >= cache[22] && cache[15] >= cache[23] && cache[15] >= cache[24] && cache[15] >= cache[25] && cache[15] >= cache[26] && cache[15] >= cache[27] && cache[15] >= cache[28] && cache[15] >= cache[29]) {
-			best = 15;
+			t->results[pos++] = cache[15];
+			cache[15] = *++segments[15];
 		} else if (cache[16] >= cache[0] && cache[16] >= cache[1] && cache[16] >= cache[2] && cache[16] >= cache[3] && cache[16] >= cache[4] && cache[16] >= cache[5] && cache[16] >= cache[6] && cache[16] >= cache[7] && cache[16] >= cache[8] && cache[16] >= cache[9] && cache[16] >= cache[10] && cache[16] >= cache[11] && cache[16] >= cache[12] && cache[16] >= cache[13] && cache[16] >= cache[14] && cache[16] >= cache[15] && cache[16] >= cache[17] && cache[16] >= cache[18] && cache[16] >= cache[19] && cache[16] >= cache[20] && cache[16] >= cache[21] && cache[16] >= cache[22] && cache[16] >= cache[23] && cache[16] >= cache[24] && cache[16] >= cache[25] && cache[16] >= cache[26] && cache[16] >= cache[27] && cache[16] >= cache[28] && cache[16] >= cache[29]) {
-			best = 16;
+			t->results[pos++] = cache[16];
+			cache[16] = *++segments[16];
 		} else if (cache[17] >= cache[0] && cache[17] >= cache[1] && cache[17] >= cache[2] && cache[17] >= cache[3] && cache[17] >= cache[4] && cache[17] >= cache[5] && cache[17] >= cache[6] && cache[17] >= cache[7] && cache[17] >= cache[8] && cache[17] >= cache[9] && cache[17] >= cache[10] && cache[17] >= cache[11] && cache[17] >= cache[12] && cache[17] >= cache[13] && cache[17] >= cache[14] && cache[17] >= cache[15] && cache[17] >= cache[16] && cache[17] >= cache[18] && cache[17] >= cache[19] && cache[17] >= cache[20] && cache[17] >= cache[21] && cache[17] >= cache[22] && cache[17] >= cache[23] && cache[17] >= cache[24] && cache[17] >= cache[25] && cache[17] >= cache[26] && cache[17] >= cache[27] && cache[17] >= cache[28] && cache[17] >= cache[29]) {
-			best = 17;
+			t->results[pos++] = cache[17];
+			cache[17] = *++segments[17];
 		} else if (cache[18] >= cache[0] && cache[18] >= cache[1] && cache[18] >= cache[2] && cache[18] >= cache[3] && cache[18] >= cache[4] && cache[18] >= cache[5] && cache[18] >= cache[6] && cache[18] >= cache[7] && cache[18] >= cache[8] && cache[18] >= cache[9] && cache[18] >= cache[10] && cache[18] >= cache[11] && cache[18] >= cache[12] && cache[18] >= cache[13] && cache[18] >= cache[14] && cache[18] >= cache[15] && cache[18] >= cache[16] && cache[18] >= cache[17] && cache[18] >= cache[19] && cache[18] >= cache[20] && cache[18] >= cache[21] && cache[18] >= cache[22] && cache[18] >= cache[23] && cache[18] >= cache[24] && cache[18] >= cache[25] && cache[18] >= cache[26] && cache[18] >= cache[27] && cache[18] >= cache[28] && cache[18] >= cache[29]) {
-			best = 18;
+			t->results[pos++] = cache[18];
+			cache[18] = *++segments[18];
 		} else if (cache[19] >= cache[0] && cache[19] >= cache[1] && cache[19] >= cache[2] && cache[19] >= cache[3] && cache[19] >= cache[4] && cache[19] >= cache[5] && cache[19] >= cache[6] && cache[19] >= cache[7] && cache[19] >= cache[8] && cache[19] >= cache[9] && cache[19] >= cache[10] && cache[19] >= cache[11] && cache[19] >= cache[12] && cache[19] >= cache[13] && cache[19] >= cache[14] && cache[19] >= cache[15] && cache[19] >= cache[16] && cache[19] >= cache[17] && cache[19] >= cache[18] && cache[19] >= cache[20] && cache[19] >= cache[21] && cache[19] >= cache[22] && cache[19] >= cache[23] && cache[19] >= cache[24] && cache[19] >= cache[25] && cache[19] >= cache[26] && cache[19] >= cache[27] && cache[19] >= cache[28] && cache[19] >= cache[29]) {
-			best = 19;
+			t->results[pos++] = cache[19];
+			cache[19] = *++segments[19];
 		} else if (cache[20] >= cache[0] && cache[20] >= cache[1] && cache[20] >= cache[2] && cache[20] >= cache[3] && cache[20] >= cache[4] && cache[20] >= cache[5] && cache[20] >= cache[6] && cache[20] >= cache[7] && cache[20] >= cache[8] && cache[20] >= cache[9] && cache[20] >= cache[10] && cache[20] >= cache[11] && cache[20] >= cache[12] && cache[20] >= cache[13] && cache[20] >= cache[14] && cache[20] >= cache[15] && cache[20] >= cache[16] && cache[20] >= cache[17] && cache[20] >= cache[18] && cache[20] >= cache[19] && cache[20] >= cache[21] && cache[20] >= cache[22] && cache[20] >= cache[23] && cache[20] >= cache[24] && cache[20] >= cache[25] && cache[20] >= cache[26] && cache[20] >= cache[27] && cache[20] >= cache[28] && cache[20] >= cache[29]) {
-			best = 20;
+			t->results[pos++] = cache[20];
+			cache[20] = *++segments[20];
 		} else if (cache[21] >= cache[0] && cache[21] >= cache[1] && cache[21] >= cache[2] && cache[21] >= cache[3] && cache[21] >= cache[4] && cache[21] >= cache[5] && cache[21] >= cache[6] && cache[21] >= cache[7] && cache[21] >= cache[8] && cache[21] >= cache[9] && cache[21] >= cache[10] && cache[21] >= cache[11] && cache[21] >= cache[12] && cache[21] >= cache[13] && cache[21] >= cache[14] && cache[21] >= cache[15] && cache[21] >= cache[16] && cache[21] >= cache[17] && cache[21] >= cache[18] && cache[21] >= cache[19] && cache[21] >= cache[20] && cache[21] >= cache[22] && cache[21] >= cache[23] && cache[21] >= cache[24] && cache[21] >= cache[25] && cache[21] >= cache[26] && cache[21] >= cache[27] && cache[21] >= cache[28] && cache[21] >= cache[29]) {
-			best = 21;
+			t->results[pos++] = cache[21];
+			cache[21] = *++segments[21];
 		} else if (cache[22] >= cache[0] && cache[22] >= cache[1] && cache[22] >= cache[2] && cache[22] >= cache[3] && cache[22] >= cache[4] && cache[22] >= cache[5] && cache[22] >= cache[6] && cache[22] >= cache[7] && cache[22] >= cache[8] && cache[22] >= cache[9] && cache[22] >= cache[10] && cache[22] >= cache[11] && cache[22] >= cache[12] && cache[22] >= cache[13] && cache[22] >= cache[14] && cache[22] >= cache[15] && cache[22] >= cache[16] && cache[22] >= cache[17] && cache[22] >= cache[18] && cache[22] >= cache[19] && cache[22] >= cache[20] && cache[22] >= cache[21] && cache[22] >= cache[23] && cache[22] >= cache[24] && cache[22] >= cache[25] && cache[22] >= cache[26] && cache[22] >= cache[27] && cache[22] >= cache[28] && cache[22] >= cache[29]) {
-			best = 22;
+			t->results[pos++] = cache[22];
+			cache[22] = *++segments[22];
 		} else if (cache[23] >= cache[0] && cache[23] >= cache[1] && cache[23] >= cache[2] && cache[23] >= cache[3] && cache[23] >= cache[4] && cache[23] >= cache[5] && cache[23] >= cache[6] && cache[23] >= cache[7] && cache[23] >= cache[8] && cache[23] >= cache[9] && cache[23] >= cache[10] && cache[23] >= cache[11] && cache[23] >= cache[12] && cache[23] >= cache[13] && cache[23] >= cache[14] && cache[23] >= cache[15] && cache[23] >= cache[16] && cache[23] >= cache[17] && cache[23] >= cache[18] && cache[23] >= cache[19] && cache[23] >= cache[20] && cache[23] >= cache[21] && cache[23] >= cache[22] && cache[23] >= cache[24] && cache[23] >= cache[25] && cache[23] >= cache[26] && cache[23] >= cache[27] && cache[23] >= cache[28] && cache[23] >= cache[29]) {
-			best = 23;
+			t->results[pos++] = cache[23];
+			cache[23] = *++segments[23];
 		} else if (cache[24] >= cache[0] && cache[24] >= cache[1] && cache[24] >= cache[2] && cache[24] >= cache[3] && cache[24] >= cache[4] && cache[24] >= cache[5] && cache[24] >= cache[6] && cache[24] >= cache[7] && cache[24] >= cache[8] && cache[24] >= cache[9] && cache[24] >= cache[10] && cache[24] >= cache[11] && cache[24] >= cache[12] && cache[24] >= cache[13] && cache[24] >= cache[14] && cache[24] >= cache[15] && cache[24] >= cache[16] && cache[24] >= cache[17] && cache[24] >= cache[18] && cache[24] >= cache[19] && cache[24] >= cache[20] && cache[24] >= cache[21] && cache[24] >= cache[22] && cache[24] >= cache[23] && cache[24] >= cache[25] && cache[24] >= cache[26] && cache[24] >= cache[27] && cache[24] >= cache[28] && cache[24] >= cache[29]) {
-			best = 24;
+			t->results[pos++] = cache[24];
+			cache[24] = *++segments[24];
 		} else if (cache[25] >= cache[0] && cache[25] >= cache[1] && cache[25] >= cache[2] && cache[25] >= cache[3] && cache[25] >= cache[4] && cache[25] >= cache[5] && cache[25] >= cache[6] && cache[25] >= cache[7] && cache[25] >= cache[8] && cache[25] >= cache[9] && cache[25] >= cache[10] && cache[25] >= cache[11] && cache[25] >= cache[12] && cache[25] >= cache[13] && cache[25] >= cache[14] && cache[25] >= cache[15] && cache[25] >= cache[16] && cache[25] >= cache[17] && cache[25] >= cache[18] && cache[25] >= cache[19] && cache[25] >= cache[20] && cache[25] >= cache[21] && cache[25] >= cache[22] && cache[25] >= cache[23] && cache[25] >= cache[24] && cache[25] >= cache[26] && cache[25] >= cache[27] && cache[25] >= cache[28] && cache[25] >= cache[29]) {
-			best = 25;
+			t->results[pos++] = cache[25];
+			cache[25] = *++segments[25];
 		} else if (cache[26] >= cache[0] && cache[26] >= cache[1] && cache[26] >= cache[2] && cache[26] >= cache[3] && cache[26] >= cache[4] && cache[26] >= cache[5] && cache[26] >= cache[6] && cache[26] >= cache[7] && cache[26] >= cache[8] && cache[26] >= cache[9] && cache[26] >= cache[10] && cache[26] >= cache[11] && cache[26] >= cache[12] && cache[26] >= cache[13] && cache[26] >= cache[14] && cache[26] >= cache[15] && cache[26] >= cache[16] && cache[26] >= cache[17] && cache[26] >= cache[18] && cache[26] >= cache[19] && cache[26] >= cache[20] && cache[26] >= cache[21] && cache[26] >= cache[22] && cache[26] >= cache[23] && cache[26] >= cache[24] && cache[26] >= cache[25] && cache[26] >= cache[27] && cache[26] >= cache[28] && cache[26] >= cache[29]) {
-			best = 26;
+			t->results[pos++] = cache[26];
+			cache[26] = *++segments[26];
 		} else if (cache[27] >= cache[0] && cache[27] >= cache[1] && cache[27] >= cache[2] && cache[27] >= cache[3] && cache[27] >= cache[4] && cache[27] >= cache[5] && cache[27] >= cache[6] && cache[27] >= cache[7] && cache[27] >= cache[8] && cache[27] >= cache[9] && cache[27] >= cache[10] && cache[27] >= cache[11] && cache[27] >= cache[12] && cache[27] >= cache[13] && cache[27] >= cache[14] && cache[27] >= cache[15] && cache[27] >= cache[16] && cache[27] >= cache[17] && cache[27] >= cache[18] && cache[27] >= cache[19] && cache[27] >= cache[20] && cache[27] >= cache[21] && cache[27] >= cache[22] && cache[27] >= cache[23] && cache[27] >= cache[24] && cache[27] >= cache[25] && cache[27] >= cache[26] && cache[27] >= cache[28] && cache[27] >= cache[29]) {
-			best = 27;
+			t->results[pos++] = cache[27];
+			cache[27] = *++segments[27];
 		} else if (cache[28] >= cache[0] && cache[28] >= cache[1] && cache[28] >= cache[2] && cache[28] >= cache[3] && cache[28] >= cache[4] && cache[28] >= cache[5] && cache[28] >= cache[6] && cache[28] >= cache[7] && cache[28] >= cache[8] && cache[28] >= cache[9] && cache[28] >= cache[10] && cache[28] >= cache[11] && cache[28] >= cache[12] && cache[28] >= cache[13] && cache[28] >= cache[14] && cache[28] >= cache[15] && cache[28] >= cache[16] && cache[28] >= cache[17] && cache[28] >= cache[18] && cache[28] >= cache[19] && cache[28] >= cache[20] && cache[28] >= cache[21] && cache[28] >= cache[22] && cache[28] >= cache[23] && cache[28] >= cache[24] && cache[28] >= cache[25] && cache[28] >= cache[26] && cache[28] >= cache[27] && cache[28] >= cache[29]) {
-			best = 28;
+			t->results[pos++] = cache[28];
+			cache[28] = *++segments[28];
 		} else {
-			best = 29;
+			t->results[pos++] = cache[29];
+			cache[29] = *++segments[29];
 		}
-
-		t->results[pos++] = cache[best];
-		cache[best] = *++segments[best];
 	}
 }
 static bool merge_k(struct test *t, int n, int **segments, int *cache) {

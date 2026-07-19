@@ -13,8 +13,8 @@ SRC = \
 	merge_find.cpp \
 	merge_find_cache.cpp \
 	merge_find_cache_3.cpp \
-	merge_find_cache_unrolled.cpp \
-	merge_find_var.cpp \
+	merge_find_multiway_cache.cpp \
+	merge_find_multiway_var.cpp \
 	merge_find_cache_unrolled_alt.cpp \
 	merge_find_cache_unrolled_best.cpp \
 	merge_find_cache_unrolled_simd.cpp \
@@ -123,7 +123,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find gen-find-var gen-find-best main
+all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find-multiway-cache gen-find-multiway-var gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -319,16 +319,16 @@ gen-lookup-asc: gen_lookup_asc.o
 	for i in `seq 3 8`; do ./gen-lookup-asc "$$i" > "state_table_asc_$$i.h"; done
 
 .PHONY: gen-find
-gen-find:
-	./gen_find.rb 50 > find_unrolled.cpp
+gen-find-multiway-cache:
+	./gen_find_multiway_cache.rb 30 > find_multiway_cache.cpp
 
 .PHONY: gen-find-var
-gen-find-var:
-	./gen_find_var.rb 30 > find_unrolled_var.cpp
+gen-find-multiway-var:
+	./gen_find_multiway_var.rb 30 > find_multiway_var.cpp
 
 .PHONY: gen-find-best
 gen-find-best:
-	./gen_find_best.rb 50 > find_unrolled_best.cpp
+	./gen_find_best.rb 30 > find_unrolled_best.cpp
 
 main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
