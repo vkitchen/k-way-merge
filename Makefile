@@ -37,8 +37,8 @@ SRC = \
 	merge_pseudo_avx_sort_binary_search.cpp \
 	merge_bubble_sort.cpp \
 	merge_double_bubble_sort.cpp \
-	merge_bubble.cpp \
-	merge_bubble_cache.cpp \
+	merge_bubble_branchless.cpp \
+	merge_bubble_branchless_cache.cpp \
 	merge_double_bubble.cpp \
 	merge_heap.cpp \
 	merge_heap_cache.cpp \

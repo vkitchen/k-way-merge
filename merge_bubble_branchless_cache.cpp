@@ -2,7 +2,7 @@
 
 #include "harness.h"
 
-#include "merge_bubble.h"
+#include "merge_bubble_branchless_cache.h"
 
 static void sort_full(int **a, int length) {
 	for (int i = length; i > 1; i--) {
@@ -16,23 +16,32 @@ static void sort_full(int **a, int length) {
 	}
 }
 
-static void sort_partial(int **a, int length) {
-	int *min = a[0];
+static void sort_partial(int **a, int *cache, int length) {
+	int min = cache[0];
+	int *x = a[0];
 	for (int j = 1; j < length; j++) {
+		int cmp = cache[j];
 		int *y = a[j];
-		a[j - 1] = (*min >= *y ? min : y);
-		min = (*min >= *y ? y : min);
+		cache[j - 1] = (min >= cmp ? min : cmp);
+		a[j - 1] = (min >= cmp ? x : y);
+		min = (min >= cmp ? cmp : min);
+		x = (min >= cmp ? y : x);
 	}
-	a[length - 1] = min;
+	cache[length - 1] = min;
+	a[length - 1] = x;
 }
 
-bool MergeBubble::merge(struct test *t, int n) {
+bool MergeBubbleBranchlessCache::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
+	int *cache = (int *)malloc(sizeof(int) * n);
 
 	for (int i = 0; i < n; i++)
 		segments[i] = t->postings[i];
 
 	sort_full(segments, n);
+
+	for (int i = 0; i < n; i++)
+		cache[i] = segments[i][0];
 
 	// process
 	size_t pos = 0;
@@ -41,8 +50,9 @@ bool MergeBubble::merge(struct test *t, int n) {
 			break;
 
 		t->results[pos++] = *segments[0]++;
+		cache[0] = segments[0][0];
 
-		sort_partial(segments, n);
+		sort_partial(segments, cache, n);
 	}
 
 	free(segments);
