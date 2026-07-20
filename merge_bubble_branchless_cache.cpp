@@ -46,11 +46,11 @@ bool MergeBubbleBranchlessCache::merge(struct test *t, int n) {
 	// process
 	size_t pos = 0;
 	for (;;) {
-		if (*segments[0] == 0)
+		if (cache[0] == 0)
 			break;
 
-		t->results[pos++] = *segments[0]++;
-		cache[0] = segments[0][0];
+		t->results[pos++] = cache[0];
+		cache[0] = *++segments[0];
 
 		sort_partial(segments, cache, n);
 	}

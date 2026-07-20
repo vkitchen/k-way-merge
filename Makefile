@@ -39,6 +39,8 @@ SRC = \
 	merge_double_bubble_sort.cpp \
 	merge_bubble_branchless.cpp \
 	merge_bubble_branchless_cache.cpp \
+	merge_bubble_branchless_unrolled.cpp \
+	merge_bubble_branchless_unrolled_cache.cpp \
 	merge_double_bubble.cpp \
 	merge_heap.cpp \
 	merge_heap_cache.cpp \
