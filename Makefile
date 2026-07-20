@@ -28,6 +28,7 @@ SRC = \
 	merge_insert_cache.cpp \
 	merge_insert_cache_pair.cpp \
 	merge_insert_discrete_n.cpp \
+	merge_insert_binary.cpp \
 	merge_insertion_sort_indexes.cpp \
 	merge_avx_sort.cpp \
 	merge_avx_sort_discrete_n.cpp \

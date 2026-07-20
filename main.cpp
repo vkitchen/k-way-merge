@@ -40,6 +40,7 @@
 #include "merge_insert_cache.h"
 #include "merge_insert_cache_pair.h"
 #include "merge_insert_discrete_n.h"
+#include "merge_insert_binary.h"
 #include "merge_insertion_sort_indexes.h"
 #include "merge_avx_sort.h"
 #include "merge_avx_sort_discrete_n.h"
@@ -100,6 +101,7 @@ Merge *functions[] = {
 //	new MergeInsertCache,
 //	new MergeInsertCachePair,
 //	new MergeInsertDiscreteN,
+//	new MergeInsertBinary,
 //	new MergeInsertionSortIndexes,
 //
 //	new MergeAvxSort,
