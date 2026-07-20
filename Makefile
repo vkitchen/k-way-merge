@@ -55,17 +55,6 @@ SRC = \
 	merge_state_machine_compiled_var.cpp \
 	merge_state_machine_compiled_binary_search.cpp \
 	merge_state_machine_compiled_binary_search_cache.cpp \
-	merge_state_machine_lookup_table.cpp \
-	merge_state_machine_lookup_table_alt.cpp \
-	merge_state_machine_lookup_table_asc.cpp \
-	merge_state_machine_lookup_table_binary_search.cpp \
-	merge_state_machine_lookup_table_binary_search_fast.cpp \
-	merge_find_cache_unrolled_O0.cpp \
-	merge_find_cache_unrolled_O1.cpp \
-	merge_find_cache_unrolled_O2.cpp \
-	merge_find_cache_unrolled_O3.cpp \
-	merge_find_cache_unrolled_Os.cpp \
-	merge_find_cache_unrolled_Oz.cpp \
 	merge_find_cache_simd_O0.cpp \
 	merge_find_cache_simd_O1.cpp \
 	merge_find_cache_simd_O2.cpp \
@@ -120,6 +109,11 @@ SRC = \
 	merge_state_machine_compiled_var_O3.cpp \
 	merge_state_machine_compiled_var_Os.cpp \
 	merge_state_machine_compiled_var_Oz.cpp
+#	merge_state_machine_lookup_table.cpp \
+#	merge_state_machine_lookup_table_alt.cpp \
+#	merge_state_machine_lookup_table_asc.cpp \
+#	merge_state_machine_lookup_table_binary_search.cpp \
+#	merge_state_machine_lookup_table_binary_search_fast.cpp \
 
 OBJECTS = $(SRC:.cpp=.o)
 
@@ -337,4 +331,4 @@ main: main.o $(OBJECTS)
 	$(CXX) -o $@ main.o $(OBJECTS)
 
 clean:
-	rm state_machine_*.cpp state_table_*.h gen.o gen_cache.o gen_binary_search_4.o gen_binary_search_cache_4.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
+	rm state_machine_*.cpp state_table_*.h gen.o gen_cache.o gen_var.o gen_binary_search_4.o gen_binary_search_cache_4.o gen_lookup.o gen_lookup_asc.o main.o $(OBJECTS)
