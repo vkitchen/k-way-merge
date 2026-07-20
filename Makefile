@@ -50,6 +50,7 @@ SRC = \
 	merge_tournament.cpp \
 	merge_tournament_cache.cpp \
 	merge_tournament_cache_separate_init.cpp \
+	merge_tournament_external.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_compiled_cache.cpp \
 	merge_state_machine_compiled_var.cpp \

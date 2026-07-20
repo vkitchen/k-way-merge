@@ -55,6 +55,7 @@
 #include "merge_tournament.h"
 #include "merge_tournament_cache.h"
 #include "merge_tournament_cache_separate_init.h"
+#include "merge_tournament_external.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
 #include "merge_state_machine_compiled_var.h"
@@ -112,9 +113,10 @@ Merge *functions[] = {
 //	new MergeHeapStl(),
 //	new MergeHeapStlNaive,
 //
-//	new MergeTournament(),
-//	new MergeTournamentCache(),
-//	new MergeTournamentCacheSeparateInit(),
+//	new MergeTournament,
+//	new MergeTournamentCache,
+//	new MergeTournamentCacheSeparateInit,
+//	new MergeTournamentExternal,
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineCompiledCache,
