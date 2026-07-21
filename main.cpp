@@ -259,7 +259,6 @@ int main(int argc, char **argv) {
 	print_info(outtxt);
 
 	std::mt19937 mt(seed);
-	std::shuffle(std::begin(order), std::end(order), mt);
 
 	auto time_begin = std::chrono::steady_clock::now();
 
@@ -280,6 +279,8 @@ int main(int argc, char **argv) {
 	outtxt << "Init: " << std::chrono::duration_cast<std::chrono::milliseconds>(time_end - time_begin).count() << std::endl;
 
 	for (int n = 3; n <= ARRAY_COUNT; n++) {
+		std::shuffle(std::begin(order), std::end(order), mt);
+
 		std::cout << "Merging " << n << " lists" << std::endl;
 		outtxt << std::endl << "## MERGING " << n << " LISTS ##" << std::endl;
 
