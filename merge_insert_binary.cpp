@@ -1,6 +1,5 @@
 // Monobound Binary Search from https://github.com/scandum/binary_search
 #include <cstring>
-#include <iostream>
 
 #include "harness.h"
 
