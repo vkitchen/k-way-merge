@@ -1,0 +1,42 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 3
+TEST_TYPE random
+SEED 1784643620
+MEMORY 4.47035 GiB
+
+Init: 15993
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 7976
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var                        | true    |      ? |    1576,1577,1577 |             0.4000 |
+State Machine (Compiled)                 | true    |      ? |    1563,1564,1566 |             0.9798 |
+State Machine Cache                      | true    |      ? |    1483,1484,1485 |             0.6325 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12596
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (Compiled)                 | true    |      ? |    2566,2566,2566 |             0.0000 |
+State Machine Cache                      | true    |      ? |    2511,2511,2512 |             0.4000 |
+State Machine Var                        | true    |      ? |    2384,2385,2386 |             0.6325 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 12948
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine (Compiled)                 | true    |      ? |    3731,3732,3733 |             0.7483 |
+State Machine Cache                      | true    |      ? |    3494,3494,3495 |             0.4899 |
+State Machine Var                        | true    |      ? |    3341,3342,3344 |             0.9798 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18352
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var                        | true    |      ? |    4852,4853,4854 |             0.6325 |
+State Machine (Compiled)                 | true    |      ? |    6348,6349,6351 |             1.0198 |
+State Machine Cache                      | true    |      ? |    5018,5019,5019 |             0.4000 |
