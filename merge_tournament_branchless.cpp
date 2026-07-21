@@ -1,4 +1,3 @@
-#include <cstdint>
 #include <vector>
 
 #include "harness.h"
@@ -10,64 +9,61 @@ static size_t parent(size_t i) {
 }
 
 // returns [winner, loser]
-static std::pair<int, int> play_game(int **a, int x, int y) {
-	if (*a[x] > *a[y])
+static std::pair<int, int> play_game(std::vector<std::pair<int *, int>> &tree, int x, int y) {
+	if (*tree[x].first > *tree[y].first)
 		return std::make_pair(x, y);
 	return std::make_pair(y, x);
 }
 
-static void initialise(int **a, int n, uint16_t *tree) {
-	std::vector<uint16_t> winners(n * 2);
+static void initialise(int **a, int n, std::vector<std::pair<int *, int>> &tree) {
+	std::vector<int> winners(n * 2);
 
 	// Copy array into tree
-	for (int i = 0; i < n; i++)
-		winners[n + i] = i;
-
-	for (int i = n - 1; i > 0; i--) {
-		auto [winner, loser] = play_game(a, winners[i*2], winners[i*2 + 1]);
-		winners[i] = winner;
-		tree[i] = loser;
+	for (int i = 0; i < n; i++) {
+		tree[i+n] = std::make_pair(a[i], i+n);
+		winners[i+n] = i+n;
 	}
 
-	tree[0] = winners[1];
+	for (size_t i = tree.size() - 2; i > 0; i -= 2) {
+		auto [winner, loser] = play_game(tree, winners[i], winners[i+1]);
+		size_t p = parent(i);
+		winners[p] = winner;
+		tree[p] = std::make_pair(tree[loser].first, loser);
+	}
+
+	tree[0] = std::make_pair(tree[winners[1]].first, winners[1]);
 }
 
-static void replay_games(int *cache, int n, uint16_t *tree, int pos) {
-	int p = parent(pos + n);
+static void replay_games(std::vector<std::pair<int *, int>> &tree, int pos) {
+	auto winner = tree[pos];
+	int p = parent(pos);
 	while (p != 0) {
-		int cmp = tree[p];
-		tree[p] = (cache[pos] < cache[cmp] ? pos : cmp);
-		pos = (cache[pos] < cache[cmp] ? cmp : pos);
+		auto cmp = tree[p];
+		tree[p] = (*winner.first < *cmp.first ? winner : cmp);
+		winner = (*winner.first < *cmp.first ? cmp : winner);
 		p = parent(p);
 	}
 	// pos is the new winner
-	tree[0] = pos;
+	tree[0] = winner;
 }
 
 bool MergeTournamentBranchless::merge(struct test *t, int n) {
-	int **segments = (int **)malloc(sizeof(int *) * n);
-	int *cache = (int *)malloc(sizeof(int) * n);
-	uint16_t *tree = (uint16_t *)malloc(sizeof(uint16_t) * n);
+	std::vector<std::pair<int *, int>> tree(n * 2);
 
-	for (int i = 0; i < n; i++) {
-		segments[i] = t->postings[i];
-		cache[i] = *t->postings[i];
-	}
-
-	initialise(segments, n, tree);
+	initialise(t->postings, n, tree);
 
 	// process
 	size_t pos = 0;
 	for (;;) {
-		int winner = tree[0];
-		if (cache[winner] == 0)
+		if (*tree[0].first == 0)
 			break;
 
-		t->results[pos++] = cache[winner];
-		segments[winner]++;
-		cache[winner] = *segments[winner];
+		t->results[pos++] = *tree[0].first;
 
-		replay_games(cache, n, tree, winner);
+		auto out = tree[0].second;
+		tree[out].first++;
+
+		replay_games(tree, tree[0].second);
 	}
 
 	return true;

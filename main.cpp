@@ -59,6 +59,9 @@
 #include "merge_tournament_external.h"
 #include "merge_tournament_external_cache.h"
 #include "merge_tournament_branchless.h"
+#include "merge_tournament_cache_branchless.h"
+#include "merge_tournament_external_branchless.h"
+#include "merge_tournament_external_cache_branchless.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
 #include "merge_state_machine_compiled_var.h"
@@ -111,18 +114,21 @@ Merge *functions[] = {
 //	new MergePseudoAvxSort,
 //	new MergePseudoAvxSortBinarySearch,
 //
-//	new MergeHeap(),
-//	new MergeHeapCache(),
-//	new MergeHeapSeparateInit(),
-//	new MergeHeapStl(),
+//	new MergeHeap,
+//	new MergeHeapCache,
+//	new MergeHeapSeparateInit,
+//	new MergeHeapStl,
 //	new MergeHeapStlNaive,
 //
-//	new MergeTournament,
-//	new MergeTournamentCache,
 //	new MergeTournamentCacheSeparateInit,
-//	new MergeTournamentExternal,
-//	new MergeTournamentExternalCache,
-//	new MergeTournamentBranchless,
+	new MergeTournament,
+	new MergeTournamentCache,
+	new MergeTournamentExternal,
+	new MergeTournamentExternalCache,
+	new MergeTournamentBranchless,
+	new MergeTournamentCacheBranchless,
+	new MergeTournamentExternalBranchless,
+	new MergeTournamentExternalCacheBranchless,
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineCompiledCache,
