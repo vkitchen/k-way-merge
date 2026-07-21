@@ -1,0 +1,62 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 8
+TEST_TYPE random
+SEED 1784669562
+MEMORY 4.47035 GiB
+
+Init: 16545
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8278
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Cache                      | true    |      ? |    1929,1936,1937 |             3.0332 |
+Find Pair                                | true    |      ? |    2626,2628,2630 |             1.3266 |
+Find Branchless Cache                    | true    |      ? |    1334,1334,1334 |             0.0000 |
+Find Branchless Cache Unrolled           | true    |      ? |    1387,1388,1388 |             0.4000 |
+Find                                     | true    |      ? |    2225,2230,2234 |             3.4293 |
+Find Multiway Var                        | true    |      ? |    1579,1580,1582 |             0.9798 |
+Find Cache                               | true    |      ? |    2191,2209,2221 |            10.9069 |
+Find Multiway                            | false   |      ? |    1612,1617,1622 |             3.5440 | Ascending values
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 13420
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    4294,4296,4297 |             1.1662 |
+Find Branchless Cache                    | true    |      ? |    1849,1849,1850 |             0.4899 |
+Find Cache                               | true    |      ? |    3569,3581,3596 |             9.1739 |
+Find Multiway Cache                      | true    |      ? |    3138,3139,3144 |             2.5768 |
+Find Branchless Cache Unrolled           | true    |      ? |    1939,1939,1939 |             0.0000 |
+Find Multiway                            | false   |      ? |    2744,2745,2745 |             0.4899 | Ascending values
+Find Multiway Var                        | true    |      ? |    2770,2770,2770 |             0.0000 |
+Find                                     | true    |      ? |    3571,3573,3577 |             2.0591 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13470
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Cache                      | true    |      ? |    4439,4439,4442 |             1.1662 |
+Find Pair                                | true    |      ? |    4507,4508,4510 |             1.0954 |
+Find Multiway Var                        | true    |      ? |    4259,4263,4265 |             2.5298 |
+Find Cache                               | true    |      ? |    5153,5153,5154 |             0.4899 |
+Find Multiway                            | false   |      ? |    4097,4098,4099 |             0.7483 | Ascending values
+Find                                     | true    |      ? |    6051,6051,6052 |             0.4000 |
+Find Branchless Cache                    | true    |      ? |    2509,2510,2511 |             0.7483 |
+Find Branchless Cache Unrolled           | true    |      ? |    2684,2685,2846 |            64.4031 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18648
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache                    | true    |      ? |    3165,3165,3166 |             0.4000 |
+Find Multiway Var                        | true    |      ? |    5718,5723,5816 |            37.5840 |
+Find Multiway Cache                      | true    |      ? |    5942,5944,5944 |             0.8000 |
+Find Cache                               | true    |      ? |    6607,6613,6630 |             9.2650 |
+Find                                     | true    |      ? |    8604,8610,8632 |            10.1587 |
+Find Pair                                | true    |      ? |    6189,6190,6192 |             0.9798 |
+Find Multiway                            | false   |      ? |    6044,6046,6047 |             1.1662 | Ascending values
+Find Branchless Cache Unrolled           | true    |      ? |    4329,4330,4493 |            65.4015 |
