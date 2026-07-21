@@ -1,4 +1,4 @@
-CFLAGS = -Wall -Wextra -march=native -std=c++20
+CFLAGS = -Wall -Wextra -march=native -std=c++23
 OPT = -O3
 
 SRC = \
