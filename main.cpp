@@ -17,9 +17,12 @@
 #include "merge_baseline_copy_sort.h"
 #include "merge_find.h"
 #include "merge_find_cache.h"
+#include "merge_find_pair.h"
+#include "merge_find_multiway.h"
 #include "merge_find_multiway_cache.h"
 #include "merge_find_multiway_var.h"
 #include "merge_find_branchless_cache.h"
+#include "merge_find_branchless_cache_unrolled.h"
 #include "merge_find_cache_3.h"
 #include "merge_find_cache_unrolled_alt.h"
 #include "merge_find_cache_unrolled_best.h"
@@ -78,9 +81,12 @@ Merge *functions[] = {
 //
 //	new MergeFind,
 //	new MergeFindCache,
+//	new MergeFindPair,
+//	new MergeFindMultiway,
 //	new MergeFindMultiwayCache,
 //	new MergeFindMultiwayVar,
 //	new MergeFindBranchlessCache,
+//	new MergeFindBranchlessCacheUnrolled,
 //	new MergeFindCache3,
 //	new MergeFindCacheUnrolledAlt,
 //	new MergeFindCacheUnrolledBest,
@@ -121,14 +127,14 @@ Merge *functions[] = {
 //	new MergeHeapStlNaive,
 //
 //	new MergeTournamentCacheSeparateInit,
-	new MergeTournament,
-	new MergeTournamentCache,
-	new MergeTournamentExternal,
-	new MergeTournamentExternalCache,
-	new MergeTournamentBranchless,
-	new MergeTournamentCacheBranchless,
-	new MergeTournamentExternalBranchless,
-	new MergeTournamentExternalCacheBranchless,
+//	new MergeTournament,
+//	new MergeTournamentCache,
+//	new MergeTournamentExternal,
+//	new MergeTournamentExternalCache,
+//	new MergeTournamentBranchless,
+//	new MergeTournamentCacheBranchless,
+//	new MergeTournamentExternalBranchless,
+//	new MergeTournamentExternalCacheBranchless,
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineCompiledCache,

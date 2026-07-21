@@ -12,9 +12,12 @@ SRC = \
 	merge_baseline_copy_sort_Oz.cpp \
 	merge_find.cpp \
 	merge_find_cache.cpp \
+	merge_find_pair.cpp \
+	merge_find_multiway.cpp \
 	merge_find_multiway_cache.cpp \
 	merge_find_multiway_var.cpp \
 	merge_find_branchless_cache.cpp \
+	merge_find_branchless_cache_unrolled.cpp \
 	merge_find_cache_3.cpp \
 	merge_find_cache_unrolled_alt.cpp \
 	merge_find_cache_unrolled_best.cpp \
@@ -127,7 +130,7 @@ OBJECTS = $(SRC:.cpp=.o)
 .cpp.o:
 	$(CXX) $(CFLAGS) $(OPT) -c $<
 
-all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find-multiway-cache gen-find-multiway-var gen-find-best main
+all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-lookup gen-lookup-asc gen-find-multiway gen-find-multiway-cache gen-find-multiway-var gen-find-best main
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
@@ -323,6 +326,10 @@ gen-lookup-asc: gen_lookup_asc.o
 	for i in `seq 3 8`; do ./gen-lookup-asc "$$i" > "state_table_asc_$$i.h"; done
 
 .PHONY: gen-find
+gen-find-multiway:
+	./gen_find_multiway.rb 30 > find_multiway.cpp
+
+.PHONY: gen-find-cache
 gen-find-multiway-cache:
 	./gen_find_multiway_cache.rb 30 > find_multiway_cache.cpp
 
