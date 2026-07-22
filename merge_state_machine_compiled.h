@@ -10,14 +10,6 @@ class MergeStateMachineCompiled : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeStateMachineCompiledO0 : public Merge {
-	public:
-		MergeStateMachineCompiledO0() {
-			name = "State Machine (O0)";
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeStateMachineCompiledO1 : public Merge {
 	public:
 		MergeStateMachineCompiledO1() {

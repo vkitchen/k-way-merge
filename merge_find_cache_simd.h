@@ -10,14 +10,6 @@ class MergeFindCacheSimd : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeFindCacheSimdO0 : public Merge {
-	public:
-		MergeFindCacheSimdO0() {
-			name = "Find SIMD (O0)";
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeFindCacheSimdO1 : public Merge {
 	public:
 		MergeFindCacheSimdO1() {

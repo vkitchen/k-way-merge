@@ -10,14 +10,6 @@ class MergeTournamentCache : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeTournamentCacheO0 : public Merge {
-	public:
-		MergeTournamentCacheO0() {
-			name = "Tournament Cache (O0)";
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeTournamentCacheO1 : public Merge {
 	public:
 		MergeTournamentCacheO1() {

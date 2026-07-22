@@ -15,17 +15,6 @@ class MergeBaselineCopySort : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeBaselineCopySortO0 : public Merge {
-	public:
-		MergeBaselineCopySortO0() {
-			name = "Baseline (O0)";
-		}
-		bool init(struct test *t, int n) override {
-			return true;
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeBaselineCopySortO1 : public Merge {
 	public:
 		MergeBaselineCopySortO1() {

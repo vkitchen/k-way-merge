@@ -10,14 +10,6 @@ class MergeHeapCache : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeHeapCacheO0 : public Merge {
-	public:
-		MergeHeapCacheO0() {
-			name = "Heap Cache (O0)";
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeHeapCacheO1 : public Merge {
 	public:
 		MergeHeapCacheO1() {

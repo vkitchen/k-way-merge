@@ -10,14 +10,6 @@ class MergeInsert : public Merge {
 		bool merge(struct test *t, int n) override;
 };
 
-class MergeInsertO0 : public Merge {
-	public:
-		MergeInsertO0() {
-			name = "Insert (O0)";
-		}
-		bool merge(struct test *t, int n) override;
-};
-
 class MergeInsertO1 : public Merge {
 	public:
 		MergeInsertO1() {
