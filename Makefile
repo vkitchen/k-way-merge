@@ -110,11 +110,6 @@ SRC = \
 	merge_tournament_cache_branchless_O3.cpp \
 	merge_tournament_cache_branchless_Os.cpp \
 	merge_tournament_cache_branchless_Oz.cpp \
-	merge_state_machine_compiled_O1.cpp \
-	merge_state_machine_compiled_O2.cpp \
-	merge_state_machine_compiled_O3.cpp \
-	merge_state_machine_compiled_Os.cpp \
-	merge_state_machine_compiled_Oz.cpp \
 	merge_state_machine_compiled_cache_O1.cpp \
 	merge_state_machine_compiled_cache_O2.cpp \
 	merge_state_machine_compiled_cache_O3.cpp \
@@ -274,21 +269,6 @@ merge_tournament_cache_branchless_Os.o: merge_tournament_cache_branchless_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_tournament_cache_branchless_Oz.o: merge_tournament_cache_branchless_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_state_machine_compiled_O1.o: merge_state_machine_compiled_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_state_machine_compiled_O2.o: merge_state_machine_compiled_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_state_machine_compiled_O3.o: merge_state_machine_compiled_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_state_machine_compiled_Os.o: merge_state_machine_compiled_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_state_machine_compiled_Oz.o: merge_state_machine_compiled_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_state_machine_compiled_cache_O1.o: merge_state_machine_compiled_cache_O1.cpp
