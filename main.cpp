@@ -33,6 +33,8 @@
 #include "merge_std_sort.h"
 #include "merge_bubble_sort.h"
 #include "merge_double_bubble_sort.h"
+#include "merge_bubble.h"
+#include "merge_bubble_cache.h"
 #include "merge_bubble_branchless.h"
 #include "merge_bubble_branchless_cache.h"
 #include "merge_bubble_branchless_unrolled.h"
@@ -99,6 +101,8 @@ Merge *functions[] = {
 //
 //	new MergeBubbleSort,
 //	new MergeDoubleBubbleSort,
+//	new MergeBubble,
+//	new MergeBubbleCache,
 //	new MergeBubbleBranchless,
 //	new MergeBubbleBranchlessCache,
 //	new MergeBubbleBranchlessUnrolled,
