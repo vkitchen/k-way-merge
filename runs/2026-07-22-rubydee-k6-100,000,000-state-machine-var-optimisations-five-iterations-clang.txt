@@ -1,0 +1,50 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784682634
+MEMORY 4.47035 GiB
+
+Init: 16126
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8091
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var (Oz)                   | true    |      ? |    1471,1473,1475 |             1.3266 |
+State Machine Var (O2)                   | true    |      ? |    1590,1593,1598 |             2.5768 |
+State Machine Var (O1)                   | true    |      ? |    1560,1561,1563 |             1.0198 |
+State Machine Var (O3)                   | true    |      ? |    1534,1535,1538 |             1.4697 |
+State Machine Var (Os)                   | true    |      ? |    1574,1577,1578 |             1.8330 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 13204
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var (O3)                   | true    |      ? |    2410,2417,2424 |             4.8415 |
+State Machine Var (O1)                   | true    |      ? |    2434,2437,2441 |             2.7276 |
+State Machine Var (Oz)                   | true    |      ? |    2405,2407,2411 |             2.5298 |
+State Machine Var (O2)                   | true    |      ? |    2403,2406,2410 |             2.2804 |
+State Machine Var (Os)                   | true    |      ? |    2344,2347,2350 |             1.9391 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13162
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var (O1)                   | true    |      ? |    3395,3401,3402 |             2.8983 |
+State Machine Var (Os)                   | true    |      ? |    3359,3360,3365 |             2.1354 |
+State Machine Var (O2)                   | true    |      ? |    3368,3373,3374 |             2.2450 |
+State Machine Var (Oz)                   | true    |      ? |    3373,3376,3381 |             2.7568 |
+State Machine Var (O3)                   | true    |      ? |    3369,3374,3381 |             4.0299 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18274
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var (Os)                   | true    |      ? |    4927,4932,4943 |             6.6151 |
+State Machine Var (O1)                   | true    |      ? |    4773,4777,4793 |             7.0880 |
+State Machine Var (Oz)                   | true    |      ? |    4893,4902,4911 |             5.9127 |
+State Machine Var (O3)                   | true    |      ? |    4905,4920,4926 |             7.4458 |
+State Machine Var (O2)                   | true    |      ? |    4900,4906,4912 |             4.7497 |
