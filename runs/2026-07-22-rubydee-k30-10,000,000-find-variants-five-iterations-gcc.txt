@@ -1,0 +1,374 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 30
+ITER_COUNT 5
+NUM_TESTS 8
+TEST_TYPE random
+SEED 1784702988
+MEMORY 2.23517 GiB
+
+Init: 7897
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 780
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway                            | false   |      ? |       173,173,174 |             0.4899 | Ascending values
+Find                                     | true    |      ? |       200,200,200 |             0.0000 |
+Find Multiway Cache                      | true    |      ? |       162,162,162 |             0.0000 |
+Find Pair                                | true    |      ? |       194,195,195 |             0.4899 |
+Find Branchless Cache                    | true    |      ? |       142,142,143 |             0.4000 |
+Find Multiway Var                        | true    |      ? |       167,167,167 |             0.0000 |
+Find Cache                               | true    |      ? |       195,196,196 |             0.4899 |
+Find SIMD                                | true    |      ? |       350,351,351 |             0.4000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1220
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |       301,302,302 |             0.4899 |
+Find Multiway Var                        | true    |      ? |       248,248,248 |             0.0000 |
+Find Branchless Cache                    | true    |      ? |       202,202,202 |             0.0000 |
+Find Multiway                            | false   |      ? |       271,272,272 |             0.4899 | Ascending values
+Find SIMD                                | true    |      ? |       484,485,486 |             0.7483 |
+Find Multiway Cache                      | true    |      ? |       276,277,278 |             0.7483 |
+Find Cache                               | true    |      ? |       300,300,301 |             0.4000 |
+Find                                     | true    |      ? |       315,315,316 |             0.4899 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Var                        | true    |      ? |       372,372,372 |             0.0000 |
+Find Multiway Cache                      | true    |      ? |       424,424,425 |             0.4899 |
+Find Cache                               | true    |      ? |       404,405,409 |             1.8547 |
+Find SIMD                                | true    |      ? |       581,581,581 |             0.0000 |
+Find Branchless Cache                    | true    |      ? |       267,267,267 |             0.0000 |
+Find Multiway                            | false   |      ? |       392,393,393 |             0.4899 | Ascending values
+Find                                     | true    |      ? |       451,451,457 |             2.3324 |
+Find Pair                                | true    |      ? |       413,416,418 |             2.0396 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1665
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |       534,535,536 |             0.7483 |
+Find                                     | true    |      ? |       592,593,594 |             0.7483 |
+Find Multiway Cache                      | true    |      ? |       604,604,607 |             1.2000 |
+Find Multiway Var                        | true    |      ? |       542,542,543 |             0.4899 |
+Find Branchless Cache                    | true    |      ? |       344,344,345 |             0.4000 |
+Find SIMD                                | true    |      ? |       695,697,698 |             1.0198 |
+Find Pair                                | true    |      ? |       530,532,532 |             0.8000 |
+Find Multiway                            | false   |      ? |       542,542,543 |             0.4000 | Ascending values
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 1776
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |       664,666,669 |             1.6000 |
+Find                                     | true    |      ? |       729,729,745 |             6.2482 |
+Find Multiway                            | false   |      ? |       753,754,755 |             0.8944 | Ascending values
+Find Multiway Cache                      | true    |      ? |       753,755,756 |             0.9798 |
+Find SIMD                                | true    |      ? |       839,840,840 |             0.4899 |
+Find Branchless Cache                    | true    |      ? |       433,433,434 |             0.4899 |
+Find Multiway Var                        | true    |      ? |       723,724,725 |             0.7483 |
+Find Cache                               | true    |      ? |       664,664,666 |             0.8000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2182
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |       842,843,844 |             0.6325 |
+Find                                     | true    |      ? |       980,983,986 |             2.3324 |
+Find Cache                               | true    |      ? |       835,837,838 |             0.9798 |
+Find Multiway Cache                      | true    |      ? |       857,858,858 |             0.4000 |
+Find Multiway Var                        | true    |      ? |       831,832,834 |             1.1662 |
+Find Branchless Cache                    | true    |      ? |       539,539,540 |             0.4899 |
+Find SIMD                                | true    |      ? |       976,977,980 |             1.4697 |
+Find Multiway                            | false   |      ? |       913,914,915 |             0.7483 | Ascending values
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2291
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |    1041,1041,1041 |             0.0000 |
+Find SIMD                                | true    |      ? |    1124,1127,1128 |             1.3565 |
+Find Multiway Var                        | true    |      ? |    1198,1198,1199 |             0.4899 |
+Find Pair                                | true    |      ? |    1104,1105,1107 |             1.1662 |
+Find Multiway Cache                      | true    |      ? |    1050,1050,1051 |             0.4000 |
+Find                                     | true    |      ? |    1283,1286,1297 |             4.8826 |
+Find Branchless Cache                    | true    |      ? |       654,655,656 |             0.7483 |
+Find Multiway                            | false   |      ? |    1105,1105,1106 |             0.4899 | Ascending values
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2725
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache                    | true    |      ? |       769,770,771 |             0.6325 |
+Find Cache                               | true    |      ? |    1378,1381,1388 |             3.4986 |
+Find Multiway                            | false   |      ? |    1480,1483,1489 |             3.3106 | Ascending values
+Find Multiway Var                        | true    |      ? |    1348,1349,1350 |             0.7483 |
+Find SIMD                                | true    |      ? |    1250,1251,1252 |             0.6325 |
+Find                                     | true    |      ? |    1681,1682,1683 |             0.7483 |
+Find Multiway Cache                      | true    |      ? |    1342,1343,1344 |             0.7483 |
+Find Pair                                | true    |      ? |    1530,1531,1532 |             0.7483 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2804
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache                    | true    |      ? |       901,902,903 |             0.7483 |
+Find Pair                                | true    |      ? |    1787,1787,1788 |             0.4899 |
+Find Cache                               | true    |      ? |    1688,1689,1691 |             1.0198 |
+Find Multiway Cache                      | true    |      ? |    1766,1766,1767 |             0.4000 |
+Find Multiway                            | false   |      ? |    1862,1863,1865 |             1.0198 | Ascending values
+Find                                     | true    |      ? |    1994,1995,1997 |             1.2000 |
+Find SIMD                                | true    |      ? |    1394,1396,1397 |             1.0198 |
+Find Multiway Var                        | true    |      ? |    1874,1874,1875 |             0.4899 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 3248
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache                    | true    |      ? |    1034,1035,1035 |             0.4000 |
+Find Pair                                | true    |      ? |    2062,2062,2065 |             1.1662 |
+Find SIMD                                | true    |      ? |    1540,1542,1543 |             1.1662 |
+Find Multiway Var                        | true    |      ? |    2249,2251,2251 |             0.8000 |
+Find Multiway Cache                      | true    |      ? |    2231,2231,2232 |             0.4000 |
+Find                                     | true    |      ? |    2489,2491,2495 |             2.1909 |
+Find Cache                               | true    |      ? |    2185,2185,2187 |             0.8000 |
+Find Multiway                            | false   |      ? |    2310,2311,2311 |             0.4000 | Ascending values
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 3320
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find                                     | true    |      ? |    2869,2870,2870 |             0.4899 |
+Find Multiway Cache                      | true    |      ? |    2571,2572,2573 |             0.7483 |
+Find Multiway                            | false   |      ? |    2765,2767,2769 |             1.3266 | Ascending values
+Find SIMD                                | true    |      ? |    1650,1650,1651 |             0.4000 |
+Find Cache                               | true    |      ? |    2491,2491,2492 |             0.4000 |
+Find Branchless Cache                    | true    |      ? |    1185,1186,1186 |             0.4899 |
+Find Pair                                | true    |      ? |    2575,2575,2575 |             0.0000 |
+Find Multiway Var                        | true    |      ? |    2791,2792,2794 |             1.0198 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 3772
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |    3027,3028,3054 |            10.6094 |
+Find SIMD                                | true    |      ? |    1777,1778,1779 |             0.7483 |
+Find Pair                                | true    |      ? |    2964,2972,2976 |             4.3174 |
+Find Multiway                            | false   |      ? |    3085,3086,3087 |             0.6325 | Ascending values
+Find Multiway Cache                      | true    |      ? |    3051,3052,3052 |             0.4899 |
+Find Multiway Var                        | true    |      ? |    3027,3027,3028 |             0.4899 |
+Find Branchless Cache                    | true    |      ? |    1356,1356,1358 |             0.8000 |
+Find                                     | true    |      ? |    3338,3339,3339 |             0.4899 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 3835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Cache                      | true    |      ? |    3489,3490,3504 |             5.8172 |
+Find Multiway Var                        | true    |      ? |    3558,3559,3560 |             0.7483 |
+Find Branchless Cache                    | true    |      ? |    1514,1515,1516 |             0.7483 |
+Find Cache                               | true    |      ? |    3374,3376,3377 |             1.1662 |
+Find Pair                                | true    |      ? |    3303,3304,3306 |             1.0954 |
+Find                                     | true    |      ? |    3721,3721,3723 |             0.8000 |
+Find Multiway                            | false   |      ? |    3702,3702,3704 |             0.8000 | Ascending values
+Find SIMD                                | true    |      ? |    1925,1926,1927 |             0.6325 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 4324
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    3650,3650,3654 |             1.5492 |
+Find                                     | true    |      ? |    4103,4104,4105 |             0.7483 |
+Find Branchless Cache                    | true    |      ? |    1688,1689,1689 |             0.4899 |
+Find Cache                               | true    |      ? |    3768,3769,3770 |             0.7483 |
+Find SIMD                                | true    |      ? |    2082,2082,2083 |             0.4000 |
+Find Multiway                            | false   |      ? |    4278,4279,4280 |             0.7483 | Ascending values
+Find Multiway Var                        | true    |      ? |    4199,4199,4201 |             0.8000 |
+Find Multiway Cache                      | true    |      ? |    3860,3861,3862 |             0.7483 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 4367
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find                                     | true    |      ? |    4528,4529,4531 |             1.0198 |
+Find Multiway Var                        | true    |      ? |    4617,4618,4626 |             3.2619 |
+Find Multiway Cache                      | true    |      ? |    4495,4497,4498 |             0.9798 |
+Find Multiway                            | false   |      ? |    4884,4887,4901 |             6.2097 | Ascending values
+Find Pair                                | true    |      ? |    3962,3963,3964 |             0.7483 |
+Find SIMD                                | true    |      ? |    2260,2260,2261 |             0.4000 |
+Find Cache                               | true    |      ? |    4079,4080,4083 |             1.6248 |
+Find Branchless Cache                    | true    |      ? |    1885,1887,1887 |             0.8000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 4880
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find                                     | true    |      ? |    4925,4926,4926 |             0.4000 |
+Find Pair                                | true    |      ? |    4300,4301,4304 |             1.4967 |
+Find Cache                               | true    |      ? |    4418,4418,4419 |             0.4000 |
+Find Multiway Cache                      | true    |      ? |    5021,5021,5021 |             0.0000 |
+Find Multiway Var                        | true    |      ? |    5210,5211,5212 |             0.7483 |
+Find Multiway                            | false   |      ? |    5182,5183,5184 |             0.6325 | Ascending values
+Find Branchless Cache                    | true    |      ? |    2081,2081,2082 |             0.4899 |
+Find SIMD                                | true    |      ? |    2390,2391,2397 |             2.5298 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 4901
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    4647,4648,4649 |             0.6325 |
+Find                                     | true    |      ? |    5326,5327,5329 |             1.1662 |
+Find Multiway                            | false   |      ? |    5715,5718,5719 |             1.3565 | Ascending values
+Find SIMD                                | true    |      ? |    2544,2546,2546 |             0.9798 |
+Find Cache                               | true    |      ? |    4722,4725,4738 |             5.7061 |
+Find Multiway Var                        | true    |      ? |    6003,6004,6006 |             0.9798 |
+Find Multiway Cache                      | true    |      ? |    5436,5437,5514 |            30.1556 |
+Find Branchless Cache                    | true    |      ? |    2291,2292,2316 |             9.6208 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 5387
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway                            | false   |      ? |    6478,6481,6508 |            11.0815 | Ascending values
+Find SIMD                                | true    |      ? |    2707,2708,2711 |             1.4967 |
+Find Pair                                | true    |      ? |    4997,4998,4999 |             0.8944 |
+Find Multiway Cache                      | true    |      ? |    6024,6024,6025 |             0.4899 |
+Find Cache                               | true    |      ? |    5089,5089,5091 |             0.8000 |
+Find                                     | true    |      ? |    5797,5799,5799 |             0.8000 |
+Find Multiway Var                        | true    |      ? |    6643,6645,6646 |             1.1662 |
+Find Branchless Cache                    | true    |      ? |    2513,2513,2514 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 5412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway                            | false   |      ? |    7129,7131,7132 |             1.0198 | Ascending values
+Find Cache                               | true    |      ? |    5445,5446,5448 |             1.1662 |
+Find Multiway Var                        | true    |      ? |    7057,7057,7060 |             1.2649 |
+Find                                     | true    |      ? |    6279,6280,6283 |             1.4697 |
+Find Multiway Cache                      | true    |      ? |    6431,6433,6434 |             1.0198 |
+Find Pair                                | true    |      ? |    5390,5392,5393 |             1.1662 |
+Find Branchless Cache                    | true    |      ? |    2744,2746,3113 |           180.2836 |
+Find SIMD                                | true    |      ? |    2831,2832,2833 |             0.6325 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 5910
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |    5845,5845,5847 |             0.8000 |
+Find                                     | true    |      ? |    6772,6773,6774 |             0.8944 |
+Find SIMD                                | true    |      ? |    2971,2971,2972 |             0.4899 |
+Find Branchless Cache                    | true    |      ? |    2980,2980,2981 |             0.4000 |
+Find Multiway                            | false   |      ? |    7673,7678,7679 |             2.1354 | Ascending values
+Find Multiway Var                        | true    |      ? |    7636,7639,7642 |             2.1354 |
+Find Multiway Cache                      | true    |      ? |    6773,6775,6775 |             0.8000 |
+Find Pair                                | true    |      ? |    5779,5780,5780 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 5951
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find                                     | true    |      ? |    7269,7271,7271 |             0.8000 |
+Find Cache                               | true    |      ? |    6213,6215,6221 |             2.8284 |
+Find Multiway                            | false   |      ? |    8213,8215,8216 |             1.0954 | Ascending values
+Find Branchless Cache                    | true    |      ? |    3233,3233,3234 |             0.4899 |
+Find Pair                                | true    |      ? |    6167,6167,6168 |             0.4899 |
+Find Multiway Var                        | true    |      ? |    8312,8314,8315 |             1.2000 |
+Find Multiway Cache                      | true    |      ? |    7675,7677,7678 |             1.2000 |
+Find SIMD                                | true    |      ? |    3125,3130,3131 |             2.6382 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 6469
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Cache                      | true    |      ? |    7848,7850,8005 |            62.1141 |
+Find Branchless Cache                    | true    |      ? |    3491,3491,3492 |             0.4899 |
+Find SIMD                                | true    |      ? |    3286,3290,3292 |             2.7129 |
+Find                                     | true    |      ? |    7730,7733,7735 |             1.7436 |
+Find Cache                               | true    |      ? |    6621,6622,6624 |             1.1662 |
+Find Multiway Var                        | true    |      ? |    9066,9067,9070 |             1.6248 |
+Find Multiway                            | false   |      ? |    8996,9001,9016 |             6.7112 | Ascending values
+Find Pair                                | true    |      ? |    6600,6600,6603 |             1.1662 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 6471
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |    7000,7002,7005 |             1.7205 |
+Find SIMD                                | true    |      ? |    3530,3531,3532 |             0.8944 |
+Find                                     | true    |      ? |    8246,8248,8249 |             1.1662 |
+Find Multiway Cache                      | true    |      ? |    8764,8765,8766 |             0.7483 |
+Find Branchless Cache                    | true    |      ? |    3773,3773,3775 |             0.9798 |
+Find Pair                                | true    |      ? |    7015,7016,7017 |             0.7483 |
+Find Multiway Var                        | true    |      ? |    9948,9950,9951 |             1.0954 |
+Find Multiway                            | false   |      ? |    9533,9533,9534 |             0.4899 | Ascending values
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 7003
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD                                | true    |      ? |    3673,3673,3675 |             0.8000 |
+Find Multiway Var                        | true    |      ? | 10645,10647,10658 |             4.8826 |
+Find                                     | true    |      ? |    8799,8801,8802 |             1.1662 |
+Find Multiway                            | false   |      ? | 10252,10258,10306 |            20.1157 | Ascending values
+Find Multiway Cache                      | true    |      ? |    9339,9340,9343 |             1.4697 |
+Find Pair                                | true    |      ? |    7455,7456,7458 |             1.0198 |
+Find Branchless Cache                    | true    |      ? |    4055,4057,4059 |             1.3266 |
+Find Cache                               | true    |      ? |    7454,7455,7459 |             1.7205 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 7008
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway Var                        | true    |      ? | 11516,11518,11519 |             1.0198 |
+Find Multiway Cache                      | true    |      ? | 10155,10156,10395 |            95.8010 |
+Find Branchless Cache                    | true    |      ? |    4355,4357,4359 |             1.4142 |
+Find Cache                               | true    |      ? |    7887,7888,7890 |             1.0198 |
+Find Pair                                | true    |      ? |    7789,7790,7792 |             1.0198 |
+Find                                     | true    |      ? |    9341,9342,9344 |             0.9798 |
+Find Multiway                            | false   |      ? | 10891,10892,10893 |             0.6325 | Ascending values
+Find SIMD                                | true    |      ? |    3839,3839,3840 |             0.4899 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 7550
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Multiway                            | false   |      ? | 11501,11503,11505 |             1.2649 | Ascending values
+Find Pair                                | true    |      ? |    8366,8368,8369 |             0.9798 |
+Find                                     | true    |      ? |    9903,9905,9951 |            18.7361 |
+Find Branchless Cache                    | true    |      ? |    4662,4663,4664 |             0.6325 |
+Find Multiway Cache                      | true    |      ? | 10871,10872,10877 |             2.1354 |
+Find Cache                               | true    |      ? |    8257,8258,8260 |             1.1662 |
+Find SIMD                                | true    |      ? |    4007,4008,4010 |             1.0954 |
+Find Multiway Var                        | true    |      ? | 12318,12321,12321 |             1.2649 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 7530
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD                                | true    |      ? |    4136,4137,4139 |             1.1662 |
+Find Branchless Cache                    | true    |      ? |    4977,4980,4982 |             1.8974 |
+Find Cache                               | true    |      ? |    8628,8632,8653 |             8.9129 |
+Find                                     | true    |      ? | 10469,10471,10472 |             1.0198 |
+Find Multiway Var                        | true    |      ? | 13178,13179,13182 |             1.4697 |
+Find Multiway                            | false   |      ? | 12066,12068,12094 |            10.6471 | Ascending values
+Find Multiway Cache                      | true    |      ? | 11403,11404,11419 |             6.0992 |
+Find Pair                                | true    |      ? |    8882,8883,8885 |             0.9798 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 8168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    9350,9351,9354 |             1.4697 |
+Find SIMD                                | true    |      ? |    4278,4280,4291 |             4.6904 |
+Find Multiway Var                        | true    |      ? | 15154,15156,15167 |             4.7074 |
+Find                                     | true    |      ? | 11257,11260,11261 |             1.3565 |
+Find Multiway                            | false   |      ? | 13040,13042,13045 |             1.9391 | Ascending values
+Find Cache                               | true    |      ? |    9184,9185,9190 |             2.2804 |
+Find Multiway Cache                      | true    |      ? | 11799,11801,11820 |             7.9850 |
+Find Branchless Cache                    | true    |      ? |    5298,5300,5301 |             0.9798 |
