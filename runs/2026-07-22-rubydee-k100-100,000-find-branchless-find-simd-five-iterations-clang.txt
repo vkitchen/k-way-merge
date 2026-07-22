@@ -1,0 +1,696 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 2
+TEST_TYPE random
+SEED 1784690762
+MEMORY 0.0745058 GiB
+
+Init: 233
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 7
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |             1,1,1 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |             3,4,4 |             0.4899 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 9
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |             1,1,2 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |             5,5,5 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 11
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |             7,7,7 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |             2,2,2 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 14
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |             8,8,8 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |             3,3,3 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 19
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          10,10,10 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |             4,4,4 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 19
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          11,11,11 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |             5,5,5 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 20
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          13,13,13 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |             6,6,7 |             0.4000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 24
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |             7,8,8 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |          15,15,15 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 25
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |             9,9,9 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          16,16,16 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 29
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          10,10,10 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          18,18,18 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 30
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          12,12,12 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          20,20,20 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 34
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          13,13,13 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          21,21,22 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 35
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          23,23,23 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          15,15,15 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 39
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          24,24,24 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          16,16,16 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 39
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          27,27,27 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          18,18,18 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 43
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          28,29,29 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |          20,20,20 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 44
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          30,30,30 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          22,22,22 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 48
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          24,24,24 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          31,32,32 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 49
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          26,26,26 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          33,33,34 |             0.4000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 53
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          35,35,35 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          28,28,29 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 53
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          36,37,37 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |          30,30,30 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 58
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          33,33,33 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          38,38,39 |             0.4000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 58
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          35,35,35 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          41,41,41 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 63
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          37,38,38 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          43,43,44 |             0.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 63
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          44,45,45 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |          40,40,40 |             0.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 68
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          46,46,47 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |          43,43,43 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 68
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          48,48,48 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          46,46,51 |             2.0000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 74
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          50,50,50 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          48,48,48 |             0.0000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          51,51,51 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          52,52,52 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 78
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          54,55,55 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |          53,53,53 |             0.0000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 77
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          58,58,58 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          56,56,57 |             0.4000 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 83
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          58,58,59 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |          61,61,61 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 82
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          71,71,72 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |          60,60,60 |             0.0000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 88
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          61,62,62 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 87
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          63,63,63 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          71,71,72 |             0.4000 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 92
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          65,65,65 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 92
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          78,79,79 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |          67,67,67 |             0.0000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 98
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          91,91,91 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          68,68,68 |             0.0000 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 97
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |          95,95,96 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          72,72,72 |             0.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 103
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          74,74,75 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |         99,99,100 |             0.4899 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 102
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          75,76,76 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       104,104,105 |             0.4000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 107
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          77,77,77 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       108,108,108 |             0.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 106
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          79,79,79 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       113,113,115 |             0.8000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       107,107,108 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          81,81,81 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 112
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       111,112,112 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |          83,83,83 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 118
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       116,116,116 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          84,84,85 |             0.4899 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       120,121,121 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          88,88,89 |             0.4000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 122
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          90,90,91 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       125,125,126 |             0.4000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 121
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          92,92,92 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       130,130,131 |             0.4000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 128
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          94,94,94 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       135,135,135 |             0.0000 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 126
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       139,140,140 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          95,96,96 |             0.4000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 132
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       145,145,145 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          98,98,98 |             0.0000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 131
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       150,150,150 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |        99,100,100 |             0.4000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 138
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       101,101,101 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       155,155,156 |             0.4000 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       160,161,161 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       106,106,106 |             0.0000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 144
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       108,108,108 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       166,166,167 |             0.4000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 141
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       109,109,110 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       171,171,172 |             0.4899 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 148
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       177,177,178 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       111,111,112 |             0.4000 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 146
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       182,182,184 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       113,113,114 |             0.4000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       188,188,189 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       115,115,116 |             0.4899 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 151
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       194,194,195 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       117,117,117 |             0.0000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 158
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       118,119,119 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       200,200,200 |             0.0000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 156
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       123,123,124 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       206,206,207 |             0.4000 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 163
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       125,126,126 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       212,213,213 |             0.4899 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       127,127,127 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       218,219,220 |             0.6325 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 170
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       129,129,129 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       224,225,225 |             0.4000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       131,131,131 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       231,231,232 |             0.4000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 174
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       133,133,133 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       238,238,239 |             0.4899 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 171
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       244,244,245 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       135,135,136 |             0.4000 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 179
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       136,137,137 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       251,251,251 |             0.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 175
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       142,142,143 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       257,258,258 |             0.4000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 183
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       144,144,144 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       264,265,265 |             0.4899 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 181
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       145,146,146 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       294,294,295 |             0.4000 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 189
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       303,303,304 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       147,147,148 |             0.4000 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 185
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       149,150,151 |             0.7483 |
+Find Branchless Cache (Os)               | true    |      ? |       311,312,312 |             0.4899 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 194
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       319,319,320 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       152,152,152 |             0.0000 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 191
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       326,327,328 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       154,154,155 |             0.4000 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       155,156,158 |             1.0954 |
+Find Branchless Cache (Os)               | true    |      ? |       334,335,336 |             0.7483 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 195
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       160,161,162 |             0.6325 |
+Find Branchless Cache (Os)               | true    |      ? |       343,344,344 |             0.4899 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 205
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       353,353,353 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |       162,162,163 |             0.4899 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       361,362,363 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       164,165,166 |             0.6325 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 211
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       370,370,371 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       166,167,168 |             0.7483 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 205
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       379,379,380 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       169,169,169 |             0.0000 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       387,387,388 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       171,171,172 |             0.4000 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 212
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       173,173,174 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       395,395,396 |             0.4899 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 219
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       174,175,176 |             0.6325 |
+Find Branchless Cache (Os)               | true    |      ? |       404,404,405 |             0.4899 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 215
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       180,180,182 |             0.8000 |
+Find Branchless Cache (Os)               | true    |      ? |       414,414,415 |             0.4899 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 225
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       182,183,183 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       422,422,424 |             0.8000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 220
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       397,398,399 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       184,185,185 |             0.4899 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 229
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       187,187,187 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       406,406,408 |             0.8000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 225
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       188,189,189 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       414,415,417 |             1.0198 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 236
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       191,191,192 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       424,424,425 |             0.4000 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 230
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       464,465,466 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       192,193,194 |             0.6325 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 240
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       195,195,195 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       475,475,486 |             4.2708 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 235
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       200,201,202 |             0.7483 |
+Find Branchless Cache (Os)               | true    |      ? |       484,486,486 |             0.8000 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 244
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       492,493,494 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       203,203,204 |             0.4000 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 244
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       205,205,208 |             1.1662 |
+Find Branchless Cache (Os)               | true    |      ? |       503,504,505 |             0.7483 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       207,207,208 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       512,512,517 |             1.9596 |
