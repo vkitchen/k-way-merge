@@ -177,6 +177,12 @@ Merge *functions[] = {
 //	new MergeInsertCacheOs,
 //	new MergeInsertCacheOz,
 //
+//	new MergeInsertCachePairO1,
+//	new MergeInsertCachePairO2,
+//	new MergeInsertCachePairO3,
+//	new MergeInsertCachePairOs,
+//	new MergeInsertCachePairOz,
+//
 //	new MergeHeapO1,
 //	new MergeHeapO2,
 //	new MergeHeapO3,
