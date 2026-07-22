@@ -65,6 +65,11 @@ SRC = \
 	merge_state_machine_compiled_var.cpp \
 	merge_state_machine_compiled_binary_search.cpp \
 	merge_state_machine_compiled_binary_search_cache.cpp \
+	merge_find_branchless_cache_O1.cpp \
+	merge_find_branchless_cache_O2.cpp \
+	merge_find_branchless_cache_O3.cpp \
+	merge_find_branchless_cache_Os.cpp \
+	merge_find_branchless_cache_Oz.cpp \
 	merge_find_cache_simd_O1.cpp \
 	merge_find_cache_simd_O2.cpp \
 	merge_find_cache_simd_O3.cpp \
@@ -135,6 +140,21 @@ all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-loo
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
+
+merge_find_branchless_cache_O1.o: merge_find_branchless_cache_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_find_branchless_cache_O2.o: merge_find_branchless_cache_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_find_branchless_cache_O3.o: merge_find_branchless_cache_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_find_branchless_cache_Os.o: merge_find_branchless_cache_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_find_branchless_cache_Oz.o: merge_find_branchless_cache_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_find_cache_simd_O1.o: merge_find_cache_simd_O1.cpp
 	$(CXX) $(CFLAGS) -O1 -c $<

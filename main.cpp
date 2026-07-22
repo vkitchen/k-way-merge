@@ -159,6 +159,12 @@ Merge *functions[] = {
 //	new MergeFindCacheUnrolledOs,
 //	new MergeFindCacheUnrolledOz,
 //
+//	new MergeFindBranchlessCacheO1,
+//	new MergeFindBranchlessCacheO2,
+//	new MergeFindBranchlessCacheO3,
+//	new MergeFindBranchlessCacheOs,
+//	new MergeFindBranchlessCacheOz,
+//
 //	new MergeFindCacheSimdO1,
 //	new MergeFindCacheSimdO2,
 //	new MergeFindCacheSimdO3,
