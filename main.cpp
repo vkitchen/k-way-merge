@@ -217,6 +217,12 @@ Merge *functions[] = {
 //	new MergeTournamentCacheBranchlessOs,
 //	new MergeTournamentCacheBranchlessOz,
 //
+//	new MergeTournamentExternalCacheBranchlessO1,
+//	new MergeTournamentExternalCacheBranchlessO2,
+//	new MergeTournamentExternalCacheBranchlessO3,
+//	new MergeTournamentExternalCacheBranchlessOs,
+//	new MergeTournamentExternalCacheBranchlessOz,
+//
 //	new MergeStateMachineCompiledCacheO1,
 //	new MergeStateMachineCompiledCacheO2,
 //	new MergeStateMachineCompiledCacheO3,
