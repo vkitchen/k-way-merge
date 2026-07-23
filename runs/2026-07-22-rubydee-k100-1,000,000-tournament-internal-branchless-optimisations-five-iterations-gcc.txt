@@ -1,0 +1,990 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784763485
+MEMORY 0.745058 GiB
+
+Init: 2506
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |          44,44,44 |             0.0000 |
+Tournament Cache Branchless (O1)         | true    |      ? |          35,35,35 |             0.0000 |
+Tournament Cache Branchless (Os)         | true    |      ? |          44,45,45 |             0.4899 |
+Tournament Cache Branchless (O3)         | true    |      ? |          24,24,25 |             0.4899 |
+Tournament Cache Branchless (O2)         | true    |      ? |          25,25,25 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 109
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |          43,43,44 |             0.4000 |
+Tournament Cache Branchless (O3)         | true    |      ? |          41,41,42 |             0.4000 |
+Tournament Cache Branchless (Os)         | true    |      ? |          68,68,71 |             1.1662 |
+Tournament Cache Branchless (Oz)         | true    |      ? |          68,68,69 |             0.4000 |
+Tournament Cache Branchless (O1)         | true    |      ? |          57,57,58 |             0.4000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 119
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |          95,95,95 |             0.0000 |
+Tournament Cache Branchless (O1)         | true    |      ? |          82,82,82 |             0.0000 |
+Tournament Cache Branchless (Os)         | true    |      ? |          94,94,94 |             0.0000 |
+Tournament Cache Branchless (O3)         | true    |      ? |          61,61,62 |             0.4000 |
+Tournament Cache Branchless (O2)         | true    |      ? |          62,62,63 |             0.4000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 156
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |          75,75,75 |             0.0000 |
+Tournament Cache Branchless (O2)         | true    |      ? |          78,78,79 |             0.4000 |
+Tournament Cache Branchless (Os)         | true    |      ? |       116,117,118 |             0.8944 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       117,117,118 |             0.4000 |
+Tournament Cache Branchless (O1)         | true    |      ? |       101,102,105 |             1.4967 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |       105,105,105 |             0.0000 |
+Tournament Cache Branchless (O1)         | true    |      ? |       132,133,137 |             1.8547 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       148,148,148 |             0.0000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       100,101,101 |             0.4899 |
+Tournament Cache Branchless (Os)         | true    |      ? |       145,146,147 |             0.8944 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       172,173,173 |             0.4899 |
+Tournament Cache Branchless (O1)         | true    |      ? |       154,154,163 |             3.6000 |
+Tournament Cache Branchless (Os)         | true    |      ? |       170,170,170 |             0.0000 |
+Tournament Cache Branchless (O2)         | true    |      ? |       123,123,123 |             0.0000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       117,117,117 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       145,145,145 |             0.0000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       211,211,214 |             1.2000 |
+Tournament Cache Branchless (Os)         | true    |      ? |       207,209,210 |             1.2000 |
+Tournament Cache Branchless (O1)         | true    |      ? |       190,191,192 |             0.7483 |
+Tournament Cache Branchless (O2)         | true    |      ? |       154,155,156 |             0.6325 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       246,247,248 |             0.7483 |
+Tournament Cache Branchless (O2)         | true    |      ? |       179,179,180 |             0.4000 |
+Tournament Cache Branchless (O1)         | true    |      ? |       222,223,226 |             1.3565 |
+Tournament Cache Branchless (O3)         | true    |      ? |       168,168,169 |             0.4899 |
+Tournament Cache Branchless (Os)         | true    |      ? |       244,244,244 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 267
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       279,280,282 |             1.0198 |
+Tournament Cache Branchless (O2)         | true    |      ? |       203,203,205 |             0.8000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       190,191,192 |             0.6325 |
+Tournament Cache Branchless (Os)         | true    |      ? |       276,277,278 |             0.6325 |
+Tournament Cache Branchless (O1)         | true    |      ? |       256,257,257 |             0.4899 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 304
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |       281,282,284 |             1.0954 |
+Tournament Cache Branchless (O3)         | true    |      ? |       204,205,205 |             0.4899 |
+Tournament Cache Branchless (Os)         | true    |      ? |       301,302,302 |             0.4899 |
+Tournament Cache Branchless (O2)         | true    |      ? |       218,220,220 |             0.8000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       306,306,309 |             1.1662 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 314
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |       256,257,261 |             1.8547 |
+Tournament Cache Branchless (Os)         | true    |      ? |       335,336,336 |             0.4899 |
+Tournament Cache Branchless (O1)         | true    |      ? |       314,317,323 |             3.1241 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       338,339,340 |             0.7483 |
+Tournament Cache Branchless (O3)         | true    |      ? |       241,241,243 |             0.8000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 361
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       367,367,372 |             1.9391 |
+Tournament Cache Branchless (O1)         | true    |      ? |       340,341,342 |             0.7483 |
+Tournament Cache Branchless (Os)         | true    |      ? |       363,363,364 |             0.4899 |
+Tournament Cache Branchless (O2)         | true    |      ? |       278,278,280 |             0.8000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       260,260,260 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 364
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |       368,368,380 |             4.6648 |
+Tournament Cache Branchless (O3)         | true    |      ? |       281,282,284 |             0.9798 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       397,399,404 |             2.4819 |
+Tournament Cache Branchless (Os)         | true    |      ? |       392,393,394 |             0.7483 |
+Tournament Cache Branchless (O2)         | true    |      ? |       302,302,302 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 411
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       425,428,435 |             3.4986 |
+Tournament Cache Branchless (Os)         | true    |      ? |       420,421,421 |             0.4899 |
+Tournament Cache Branchless (O3)         | true    |      ? |       301,301,307 |             2.3324 |
+Tournament Cache Branchless (O2)         | true    |      ? |       321,322,323 |             0.7483 |
+Tournament Cache Branchless (O1)         | true    |      ? |       393,394,394 |             0.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       470,470,471 |             0.4899 |
+Tournament Cache Branchless (O1)         | true    |      ? |       437,438,439 |             0.6325 |
+Tournament Cache Branchless (O2)         | true    |      ? |       361,362,363 |             0.6325 |
+Tournament Cache Branchless (Os)         | true    |      ? |       464,465,466 |             0.7483 |
+Tournament Cache Branchless (O3)         | true    |      ? |       335,336,339 |             1.4697 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 457
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       366,368,370 |             1.3266 |
+Tournament Cache Branchless (O2)         | true    |      ? |       399,399,405 |             2.4000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       515,516,516 |             0.4000 |
+Tournament Cache Branchless (Os)         | true    |      ? |       506,509,510 |             1.6248 |
+Tournament Cache Branchless (O1)         | true    |      ? |       480,481,482 |             0.6325 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 463
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |       436,437,442 |             2.1354 |
+Tournament Cache Branchless (Os)         | true    |      ? |       551,553,554 |             1.1662 |
+Tournament Cache Branchless (O3)         | true    |      ? |       400,400,402 |             0.8000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       558,559,562 |             1.3565 |
+Tournament Cache Branchless (O1)         | true    |      ? |       523,523,524 |             0.4899 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 506
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       600,602,607 |             2.3152 |
+Tournament Cache Branchless (O1)         | true    |      ? |       559,560,562 |             0.9798 |
+Tournament Cache Branchless (Os)         | true    |      ? |       592,592,592 |             0.0000 |
+Tournament Cache Branchless (O2)         | true    |      ? |       468,469,473 |             1.7436 |
+Tournament Cache Branchless (O3)         | true    |      ? |       428,428,430 |             0.8000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 512
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       644,645,646 |             0.6325 |
+Tournament Cache Branchless (O3)         | true    |      ? |       463,464,465 |             0.7483 |
+Tournament Cache Branchless (O2)         | true    |      ? |       504,505,508 |             1.4697 |
+Tournament Cache Branchless (O1)         | true    |      ? |       607,608,623 |             6.2161 |
+Tournament Cache Branchless (Os)         | true    |      ? |       635,636,638 |             1.3565 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |       640,640,645 |             2.0000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       488,489,492 |             1.4697 |
+Tournament Cache Branchless (Os)         | true    |      ? |       671,671,672 |             0.4899 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       680,681,685 |             1.9391 |
+Tournament Cache Branchless (O2)         | true    |      ? |       526,527,527 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |       547,553,555 |             2.8284 |
+Tournament Cache Branchless (O3)         | true    |      ? |       514,525,526 |             4.7582 |
+Tournament Cache Branchless (O1)         | true    |      ? |       668,668,672 |             1.6000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       713,714,717 |             1.3565 |
+Tournament Cache Branchless (Os)         | true    |      ? |       704,705,709 |             1.8547 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 610
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       527,528,528 |             0.4899 |
+Tournament Cache Branchless (O1)         | true    |      ? |       692,693,694 |             0.7483 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       742,744,746 |             1.3266 |
+Tournament Cache Branchless (Os)         | true    |      ? |       732,734,735 |             1.3565 |
+Tournament Cache Branchless (O2)         | true    |      ? |       567,569,570 |             1.0198 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 611
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |       769,770,774 |             1.9391 |
+Tournament Cache Branchless (O2)         | true    |      ? |       606,607,608 |             0.7483 |
+Tournament Cache Branchless (O3)         | true    |      ? |       562,563,564 |             0.6325 |
+Tournament Cache Branchless (O1)         | true    |      ? |       734,735,740 |             2.2804 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       778,779,781 |             1.0198 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 667
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       590,591,591 |             0.4899 |
+Tournament Cache Branchless (O1)         | true    |      ? |       770,771,773 |             1.0954 |
+Tournament Cache Branchless (Os)         | true    |      ? |       804,806,814 |             3.4409 |
+Tournament Cache Branchless (O2)         | true    |      ? |       638,641,642 |             1.3565 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       816,818,821 |             1.8547 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 660
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       614,616,618 |             1.6000 |
+Tournament Cache Branchless (Os)         | true    |      ? |       837,838,841 |             1.4967 |
+Tournament Cache Branchless (O2)         | true    |      ? |       667,668,673 |             2.1354 |
+Tournament Cache Branchless (O1)         | true    |      ? |       802,804,806 |             1.4967 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       849,851,853 |             1.4967 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 718
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |       882,885,887 |             2.0591 |
+Tournament Cache Branchless (O3)         | true    |      ? |       639,640,641 |             0.8944 |
+Tournament Cache Branchless (O2)         | true    |      ? |       693,695,696 |             1.3565 |
+Tournament Cache Branchless (Os)         | true    |      ? |       869,871,874 |             1.8547 |
+Tournament Cache Branchless (O1)         | true    |      ? |       832,834,856 |             9.0554 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 711
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       665,666,667 |             0.7483 |
+Tournament Cache Branchless (O1)         | true    |      ? |       864,866,869 |             1.6733 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       916,918,923 |             2.7857 |
+Tournament Cache Branchless (Os)         | true    |      ? |       905,907,913 |             3.0725 |
+Tournament Cache Branchless (O2)         | true    |      ? |       721,721,724 |             1.2649 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 762
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |       687,688,688 |             0.4000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       950,955,958 |             3.1369 |
+Tournament Cache Branchless (Os)         | true    |      ? |       937,938,943 |             2.6382 |
+Tournament Cache Branchless (O2)         | true    |      ? |       746,747,750 |             1.4967 |
+Tournament Cache Branchless (O1)         | true    |      ? |       899,899,923 |            11.7576 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 763
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |       775,777,782 |             2.4819 |
+Tournament Cache Branchless (O1)         | true    |      ? |       927,930,934 |             2.4495 |
+Tournament Cache Branchless (O3)         | true    |      ? |       713,714,718 |             1.8547 |
+Tournament Cache Branchless (Oz)         | true    |      ? |       986,990,992 |             2.0591 |
+Tournament Cache Branchless (Os)         | true    |      ? |       974,975,979 |             1.9391 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 813
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |       959,961,970 |             3.9192 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1017,1021,1026 |             2.9394 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1005,1006,1011 |             2.6382 |
+Tournament Cache Branchless (O2)         | true    |      ? |       801,804,807 |             2.1354 |
+Tournament Cache Branchless (O3)         | true    |      ? |       738,739,741 |             1.1662 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 822
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    1069,1071,1074 |             1.8547 |
+Tournament Cache Branchless (O3)         | true    |      ? |       776,778,779 |             1.2000 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1056,1058,1063 |             2.6533 |
+Tournament Cache Branchless (O2)         | true    |      ? |       842,843,846 |             1.6733 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1006,1009,1012 |             2.0591 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 869
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1056,1058,1059 |             1.0198 |
+Tournament Cache Branchless (O3)         | true    |      ? |       813,815,816 |             1.1662 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1108,1108,1110 |             0.9798 |
+Tournament Cache Branchless (O2)         | true    |      ? |       887,889,893 |             2.0591 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1120,1121,1123 |             1.0198 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    1168,1168,1172 |             1.7436 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1156,1157,1160 |             1.4697 |
+Tournament Cache Branchless (O2)         | true    |      ? |       932,933,935 |             1.1662 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1109,1111,1138 |            11.2357 |
+Tournament Cache Branchless (O3)         | true    |      ? |       853,855,856 |             1.0198 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 924
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    1203,1207,1209 |             1.9596 |
+Tournament Cache Branchless (O2)         | true    |      ? |       973,975,980 |             2.4819 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1156,1159,1162 |             2.0591 |
+Tournament Cache Branchless (O3)         | true    |      ? |       891,892,894 |             0.9798 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1222,1223,1227 |             1.8547 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 921
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1209,1209,1214 |             2.2271 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1017,1017,1019 |             0.9798 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1257,1260,1262 |             1.9391 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1274,1277,1279 |             1.6000 |
+Tournament Cache Branchless (O3)         | true    |      ? |       931,932,934 |             1.1662 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 970
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    1324,1326,1330 |             2.1909 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1306,1307,1309 |             1.3565 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1059,1059,1062 |             1.1662 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1257,1259,1260 |             0.9798 |
+Tournament Cache Branchless (O3)         | true    |      ? |       968,970,974 |             2.0591 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 966
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1305,1306,1307 |             0.6325 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1005,1007,1010 |             1.6733 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1372,1374,1376 |             1.6000 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1101,1102,1104 |             1.3565 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1353,1357,1358 |             2.0976 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1027
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1351,1354,1356 |             2.0396 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1039,1039,1040 |             0.4899 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1401,1404,1407 |             2.0000 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1139,1139,1140 |             0.4000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1417,1418,1422 |             1.9391 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1022
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    1181,1183,1186 |             1.6733 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1079,1080,1081 |             0.8944 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1399,1403,1436 |            14.0485 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1452,1456,1459 |             2.4819 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1476,1478,1479 |             1.3565 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1081
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1443,1447,1450 |             2.2450 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1221,1244,1267 |            19.3018 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1497,1501,1506 |             2.9394 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1516,1519,1523 |             2.5612 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1115,1115,1118 |             1.1662 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1076
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    1542,1544,1545 |             1.0954 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1280,1300,1305 |             9.2390 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1484,1487,1489 |             1.6248 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1149,1151,1153 |             1.3266 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1565,1568,1571 |             2.0000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1122
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    1287,1323,1332 |            16.9281 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1600,1602,1610 |             3.7736 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1577,1577,1579 |             0.8000 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1177,1177,1180 |             1.1662 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1526,1528,1534 |             3.2619 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1125
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    1320,1358,1361 |            15.4013 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1619,1620,1622 |             0.9798 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1203,1204,1208 |             1.9391 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1643,1648,1653 |             3.3106 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1567,1569,1570 |             1.3565 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1184
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    1658,1661,1666 |             2.6382 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1344,1346,1348 |             1.3266 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1231,1233,1237 |             2.0396 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1600,1601,1635 |            13.5794 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1681,1682,1684 |             1.1662 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1172
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1637,1641,1642 |             1.7205 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1716,1720,1721 |             1.7205 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1254,1256,1260 |             2.0591 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1372,1374,1383 |             3.8262 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1692,1698,1699 |             2.4980 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1231
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    1677,1683,1714 |            13.4996 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1280,1283,1287 |             2.3324 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1728,1731,1736 |             2.9257 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1399,1400,1403 |             1.4697 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1754,1756,1760 |             2.4980 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1232
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    1438,1441,1445 |             2.3152 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1318,1320,1330 |             4.8332 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1796,1800,1806 |             3.3705 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1771,1774,1780 |             3.3106 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1717,1720,1728 |             4.0299 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1283
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    1844,1845,1850 |             2.2804 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1816,1817,1822 |             2.4166 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1352,1353,1354 |             0.8944 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1758,1761,1764 |             2.0591 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1480,1483,1488 |             2.6382 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1273
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    1883,1883,1891 |             3.2000 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1856,1857,1861 |             2.1541 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1796,1800,1802 |             2.5298 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1513,1515,1522 |             3.0984 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1383,1384,1384 |             0.4899 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1356
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    1896,1899,1900 |             1.3565 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1837,1841,1841 |             1.7436 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1548,1553,1555 |             2.5612 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1924,1925,1926 |             0.6325 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1413,1415,1420 |             2.6533 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1333
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    1444,1446,1449 |             1.6733 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1582,1584,1589 |             2.4166 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1939,1941,1944 |             1.6733 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1876,1877,1881 |             1.8547 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    1964,1966,1967 |             1.0198 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1386
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    1472,1472,1477 |             1.9391 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1916,1917,1922 |             2.4000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2004,2011,2014 |             3.6111 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1615,1616,1622 |             2.8983 |
+Tournament Cache Branchless (Os)         | true    |      ? |    1980,1981,1984 |             1.3565 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1379
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    1657,1660,1664 |             2.4495 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2043,2053,2057 |             5.4259 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1952,1955,1963 |             4.0299 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2021,2022,2026 |             1.8547 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1503,1506,1508 |             2.0396 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1452
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2084,2088,2099 |             5.3442 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2057,2061,2065 |             2.8705 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1529,1530,1533 |             1.4967 |
+Tournament Cache Branchless (O1)         | true    |      ? |    1990,1992,1996 |             2.1909 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1675,1682,1685 |             3.4871 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    2097,2097,2104 |             3.0067 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1560,1562,1566 |             2.0591 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2124,2130,2137 |             4.1280 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1711,1717,1720 |             3.1369 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2029,2035,2044 |             4.9639 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1503
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    2143,2144,2147 |             1.4697 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2068,2069,2072 |             1.8330 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1589,1590,1598 |             3.3823 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2166,2168,2173 |             2.4819 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1747,1753,1756 |             3.6551 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1480
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2208,2212,2220 |             3.9192 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1783,1785,1788 |             1.9391 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2183,2186,2187 |             1.6248 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2106,2111,2112 |             2.1354 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1620,1625,1628 |             2.7857 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1555
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    2224,2227,2234 |             3.3106 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1811,1815,1821 |             3.4871 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2141,2143,2149 |             2.9933 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2249,2252,2263 |             4.8826 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1646,1649,1652 |             2.0591 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1524
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2291,2295,2296 |             1.8547 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2181,2184,2186 |             1.6248 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2263,2265,2268 |             1.8974 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1846,1850,1852 |             2.1909 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1679,1683,1686 |             2.4166 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1609
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2334,2335,2339 |             1.9391 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2303,2306,2311 |             2.6533 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1708,1711,1717 |             3.3823 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2217,2218,2222 |             1.8547 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1875,1876,1879 |             1.3565 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1588
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    2253,2254,2264 |             4.1665 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2342,2344,2348 |             2.3324 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1738,1740,1742 |             1.4967 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1915,1915,1919 |             1.5492 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2371,2372,2376 |             1.7889 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1665
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2405,2408,2411 |             2.2804 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2373,2377,2382 |             3.1875 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1769,1771,1776 |             2.4819 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2292,2294,2295 |             1.1662 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1941,1947,1948 |             2.7129 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1635
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    2346,2349,2350 |             1.6733 |
+Tournament Cache Branchless (O2)         | true    |      ? |    1996,1997,1998 |             0.8944 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2441,2444,2454 |             4.8580 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2468,2472,2477 |             2.9257 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1811,1815,1818 |             2.4495 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    2496,2504,2506 |             4.0200 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2405,2408,2411 |             2.1354 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2048,2050,2051 |             1.0198 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1855,1857,1863 |             2.9257 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2525,2532,2539 |             5.0040 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1690
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    2460,2467,2516 |            20.7596 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2093,2099,2099 |             2.4000 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2586,2586,2588 |             0.8000 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2552,2560,2568 |             5.7411 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1902,1905,1915 |             4.6303 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1771
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2645,2646,2651 |             2.8000 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1945,1947,1948 |             1.0198 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2147,2150,2153 |             2.1354 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2516,2520,2526 |             3.7947 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2609,2612,2619 |             3.6661 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1738
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2699,2704,2710 |             4.7159 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2193,2194,2203 |             3.8262 |
+Tournament Cache Branchless (O3)         | true    |      ? |    1984,1988,1991 |             2.5612 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2663,2670,2671 |             2.9933 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2572,2574,2582 |             3.5777 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1817
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    2246,2248,2251 |             1.8547 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2630,2632,2691 |            23.7200 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2728,2731,2743 |             5.4259 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2764,2766,2773 |             4.1473 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2029,2033,2039 |             3.6000 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1790
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2816,2821,2823 |             2.4819 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2295,2299,2304 |             3.6111 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2783,2789,2792 |             3.8781 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2076,2081,2083 |             2.6077 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2687,2687,2691 |             1.7436 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    2833,2839,2846 |             5.4037 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2870,2878,2883 |             4.7582 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2120,2122,2142 |             8.2073 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2744,2747,2753 |             3.0594 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2337,2341,2343 |             2.0396 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1853
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    2793,2798,2804 |             3.8262 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    2926,2932,2934 |             2.7129 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2893,2896,2900 |             2.2450 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2162,2166,2170 |             2.6533 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2388,2395,2445 |            20.4313 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    2992,2998,3005 |             4.4091 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2442,2443,2448 |             2.0976 |
+Tournament Cache Branchless (Os)         | true    |      ? |    2950,2955,2962 |             4.4452 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2206,2211,2219 |             4.2237 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2854,2857,2863 |             3.2000 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1899
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    3047,3053,3057 |             3.7202 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2487,2492,2494 |             2.9665 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3010,3012,3016 |             2.0591 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2250,2254,2256 |             2.0591 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2908,2910,2974 |            25.7651 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1963
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    3060,3062,3064 |             1.4142 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3102,3104,3108 |             2.7129 |
+Tournament Cache Branchless (O1)         | true    |      ? |    2958,2959,2966 |             2.9257 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2294,2295,2297 |             1.3565 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2531,2535,2536 |             1.8547 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1951
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    2340,2343,2344 |             1.3565 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2576,2584,2585 |             3.4293 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3163,3165,3171 |             2.6833 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3015,3017,3022 |             2.6077 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3125,3128,3136 |             3.7630 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2025
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    2625,2627,2632 |             2.7857 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2376,2380,2390 |             5.2383 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3222,3223,3230 |             3.0332 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3178,3180,3182 |             1.6000 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3065,3067,3070 |             1.7436 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2000
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    2423,2425,2429 |             2.1909 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3275,3276,3285 |             3.6551 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3113,3120,3179 |            25.0088 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3233,3234,3246 |             4.9234 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2675,2828,2839 |            62.0645 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2079
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    3167,3171,3184 |             5.8447 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2710,2713,2725 |             5.3141 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3333,3338,3349 |             5.2688 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2465,2468,2483 |             6.6030 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3289,3292,3299 |             3.7630 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2052
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    2512,2513,2519 |             3.0594 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3224,3231,3296 |            32.1397 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3353,3355,3372 |             7.1386 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3395,3407,3412 |             6.2290 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2766,2767,2770 |             1.6248 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2135
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    2811,2817,2820 |             3.3106 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3460,3464,3467 |             2.6833 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2557,2558,2562 |             2.3152 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3283,3292,3352 |            31.6038 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3421,3425,3428 |             2.3152 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2109
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    3470,3475,3479 |             2.8983 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2596,2596,2600 |             1.6000 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3332,3335,3338 |             2.4819 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3525,3531,3533 |             3.2619 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2867,3012,3020 |            60.5495 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2195
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    3580,3590,3601 |             6.8877 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2635,2640,2644 |             3.2619 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3532,3536,3538 |             2.0591 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3377,3391,3448 |            30.5745 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2908,2916,2919 |             3.6551 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    3644,3651,3656 |             4.4452 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3594,3596,3599 |             1.6000 |
+Tournament Cache Branchless (O2)         | true    |      ? |    2948,3087,3098 |            56.7401 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3427,3435,3444 |             5.5642 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2680,2680,2686 |             2.3324 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2231
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    3126,3131,3133 |             2.9665 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3478,3481,3485 |             2.2450 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2717,2719,2723 |             2.1541 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3702,3711,3720 |             5.9127 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3651,3660,3662 |             4.6733 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    3525,3527,3595 |            33.0878 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3763,3772,3785 |             7.1944 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3704,3711,3714 |             3.8158 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3042,3163,3173 |            54.6677 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2752,2756,2765 |             4.3543 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    3774,3783,3794 |             6.8877 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2789,2794,2795 |             2.1354 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3066,3071,3075 |             3.4409 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3565,3575,3576 |             4.6303 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3817,3824,3825 |             2.8705 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    3823,3832,3837 |             5.0040 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3243,3256,3259 |             5.7411 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3877,3880,3887 |             3.4059 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2824,2826,2830 |             2.0396 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3615,3627,3642 |             8.9353 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2368
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    3670,3675,3688 |             6.8411 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2859,2862,2865 |             2.4819 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3245,3284,3292 |            16.8594 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3946,3951,3952 |             2.4166 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3886,3889,3891 |             1.7205 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2324
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O3)         | true    |      ? |    2898,2906,2910 |             4.6303 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3226,3320,3336 |            40.3068 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3720,3723,3785 |            29.8597 |
+Tournament Cache Branchless (Os)         | true    |      ? |    3946,3949,3955 |             2.9665 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    3996,3999,4008 |             4.0299 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2397
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Os)         | true    |      ? |    4005,4006,4007 |             0.7483 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2927,2932,2937 |             3.5440 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3334,3360,3366 |            11.3208 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4060,4064,4110 |            19.0326 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3757,3761,3764 |             2.5612 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2368
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    3275,3278,3286 |             4.3174 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3792,3806,3812 |             6.7646 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4117,4120,4124 |             2.7276 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4054,4057,4057 |             1.2649 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2967,2968,2974 |             2.4980 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2486
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    4180,4183,4198 |             6.8877 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3435,3437,3439 |             1.6000 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4116,4119,4126 |             3.5440 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3836,3841,3921 |            32.5048 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2998,3007,3014 |             5.7480 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2446
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    3460,3480,3488 |             9.3295 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3029,3030,3037 |             3.0332 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4230,4232,4232 |             0.9798 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4164,4173,4174 |             3.7202 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3875,3878,3883 |             2.7857 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2499
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    3918,3924,3986 |            29.8905 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3502,3506,3516 |             5.7827 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4286,4291,4302 |             5.2383 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4226,4227,4235 |             3.6551 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3067,3068,3074 |             2.8705 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2470
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    3433,3556,3562 |            58.2773 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4284,4292,4292 |             3.1241 |
+Tournament Cache Branchless (O1)         | true    |      ? |    3966,3977,3985 |             7.2774 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4353,4354,4361 |             3.5440 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3103,3107,3110 |             3.1369 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2550
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O1)         | true    |      ? |    4022,4027,4031 |             3.3106 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3587,3610,3617 |            12.3126 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4348,4351,4357 |             3.0594 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3142,3146,3150 |             3.1623 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4410,4412,4421 |             4.1665 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2530
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (Oz)         | true    |      ? |    4471,4474,4483 |             4.5869 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3180,3182,3185 |             1.6733 |
+Tournament Cache Branchless (O1)         | true    |      ? |    4069,4076,4131 |            23.0009 |
+Tournament Cache Branchless (O2)         | true    |      ? |    3630,3654,3656 |            10.3150 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4405,4412,4416 |             4.0299 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2634
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless (O2)         | true    |      ? |    3675,3686,3692 |             5.7827 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3216,3219,3223 |             2.4495 |
+Tournament Cache Branchless (O1)         | true    |      ? |    4111,4118,4125 |             4.7074 |
+Tournament Cache Branchless (Oz)         | true    |      ? |    4523,4534,4543 |             7.1722 |
+Tournament Cache Branchless (Os)         | true    |      ? |    4463,4465,4472 |             3.3823 |
