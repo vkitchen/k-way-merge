@@ -92,6 +92,11 @@ SRC = \
 	merge_insert_cache_pair_O3.cpp \
 	merge_insert_cache_pair_Os.cpp \
 	merge_insert_cache_pair_Oz.cpp \
+	merge_bubble_branchless_pair_O1.cpp \
+	merge_bubble_branchless_pair_O2.cpp \
+	merge_bubble_branchless_pair_O3.cpp \
+	merge_bubble_branchless_pair_Os.cpp \
+	merge_bubble_branchless_pair_Oz.cpp \
 	merge_heap_O1.cpp \
 	merge_heap_O2.cpp \
 	merge_heap_O3.cpp \
@@ -216,6 +221,21 @@ merge_insert_cache_pair_Os.o: merge_insert_cache_pair_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_insert_cache_pair_Oz.o: merge_insert_cache_pair_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_bubble_branchless_pair_O1.o: merge_bubble_branchless_pair_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_bubble_branchless_pair_O2.o: merge_bubble_branchless_pair_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_bubble_branchless_pair_O3.o: merge_bubble_branchless_pair_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_bubble_branchless_pair_Os.o: merge_bubble_branchless_pair_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_bubble_branchless_pair_Oz.o: merge_bubble_branchless_pair_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_heap_O1.o: merge_heap_O1.cpp
