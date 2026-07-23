@@ -1,0 +1,990 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784774051
+MEMORY 0.745058 GiB
+
+Init: 2518
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 74
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          35,36,37 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |          36,36,38 |             0.8000 |
+Find SIMD (Oz)                           | true    |      ? |          36,36,36 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |          35,35,36 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |          39,39,39 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 110
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |          54,55,55 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |          49,49,50 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          51,51,52 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |          49,49,50 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |          55,55,55 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 119
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |          59,59,59 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |          61,61,61 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |          59,59,60 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |          65,65,65 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |          65,65,66 |             0.4899 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 155
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |          74,74,75 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |          80,80,81 |             0.4899 |
+Find SIMD (O3)                           | true    |      ? |          71,72,72 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |          71,72,73 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |          78,79,80 |             0.6325 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 167
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |          96,96,97 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |          92,92,93 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |          90,90,90 |             0.0000 |
+Find SIMD (O2)                           | true    |      ? |          87,87,88 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |          86,87,87 |             0.4000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 204
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       102,102,103 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |       114,115,116 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |       112,112,113 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       106,107,107 |             0.4899 |
+Find SIMD (O3)                           | true    |      ? |       102,102,103 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 218
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       123,123,123 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       116,116,117 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |       129,130,130 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       117,117,118 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |       128,129,129 |             0.4899 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 259
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       130,130,131 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       130,130,130 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |       136,136,138 |             0.8000 |
+Find SIMD (Oz)                           | true    |      ? |       142,142,144 |             0.8000 |
+Find SIMD (O1)                           | true    |      ? |       144,144,145 |             0.4899 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 265
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       162,162,163 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       146,146,148 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       154,154,156 |             0.8000 |
+Find SIMD (Oz)                           | true    |      ? |       157,157,158 |             0.4899 |
+Find SIMD (O3)                           | true    |      ? |       146,146,146 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       162,163,164 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |       177,177,178 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |       180,181,182 |             0.7483 |
+Find SIMD (O3)                           | true    |      ? |       162,162,163 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       171,171,171 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 316
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       184,184,184 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       174,175,176 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |       193,193,194 |             0.4000 |
+Find SIMD (O2)                           | true    |      ? |       174,174,175 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |       193,194,194 |             0.4899 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 352
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       187,188,190 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |       209,209,213 |             1.6000 |
+Find SIMD (O2)                           | true    |      ? |       189,189,190 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       197,198,198 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       206,206,207 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 363
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       204,205,206 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       215,216,217 |             0.7483 |
+Find SIMD (O3)                           | true    |      ? |       204,205,206 |             0.6325 |
+Find SIMD (O1)                           | true    |      ? |       227,228,228 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       220,221,222 |             0.7483 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 405
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       241,241,245 |             1.6000 |
+Find SIMD (O1)                           | true    |      ? |       245,245,246 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       232,232,233 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       220,220,222 |             0.8000 |
+Find SIMD (O3)                           | true    |      ? |       220,221,222 |             0.6325 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 414
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       252,253,254 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |       258,260,261 |             1.3565 |
+Find SIMD (O2)                           | true    |      ? |       241,241,242 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |       267,267,268 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       241,241,242 |             0.4000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 455
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       265,266,267 |             0.7483 |
+Find SIMD (O1)                           | true    |      ? |       282,283,285 |             1.0198 |
+Find SIMD (O2)                           | true    |      ? |       255,255,256 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       255,255,256 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |       272,273,274 |             0.6325 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 466
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       271,272,273 |             0.6325 |
+Find SIMD (O1)                           | true    |      ? |       301,302,302 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       283,284,285 |             0.7483 |
+Find SIMD (O2)                           | true    |      ? |       271,272,274 |             1.0954 |
+Find SIMD (Oz)                           | true    |      ? |       287,288,290 |             0.9798 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 507
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       288,289,290 |             0.8944 |
+Find SIMD (Oz)                           | true    |      ? |       308,309,310 |             0.7483 |
+Find SIMD (O1)                           | true    |      ? |       320,320,323 |             1.2649 |
+Find SIMD (O3)                           | true    |      ? |       287,288,288 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       301,302,303 |             0.7483 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 511
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       301,302,302 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       314,315,316 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |       323,323,324 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       301,301,302 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |       333,334,335 |             0.6325 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 558
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       314,316,316 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       328,328,331 |             1.1662 |
+Find SIMD (Oz)                           | true    |      ? |       337,338,341 |             1.4967 |
+Find SIMD (O1)                           | true    |      ? |       349,350,351 |             0.6325 |
+Find SIMD (O2)                           | true    |      ? |       315,316,317 |             0.6325 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 564
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       369,372,374 |             2.0396 |
+Find SIMD (O3)                           | true    |      ? |       331,332,335 |             1.3565 |
+Find SIMD (Os)                           | true    |      ? |       346,346,347 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |       352,353,355 |             1.0954 |
+Find SIMD (O2)                           | true    |      ? |       333,333,333 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 608
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       349,349,350 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |       388,389,392 |             1.4967 |
+Find SIMD (O3)                           | true    |      ? |       348,349,351 |             1.0198 |
+Find SIMD (Oz)                           | true    |      ? |       373,374,375 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       363,364,364 |             0.4899 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 615
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       372,372,373 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       399,400,405 |             2.0976 |
+Find SIMD (Os)                           | true    |      ? |       387,387,388 |             0.4000 |
+Find SIMD (O2)                           | true    |      ? |       371,372,373 |             0.7483 |
+Find SIMD (O1)                           | true    |      ? |       414,415,415 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 665
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       401,402,403 |             0.7483 |
+Find SIMD (O1)                           | true    |      ? |       430,431,432 |             0.8944 |
+Find SIMD (O2)                           | true    |      ? |       386,386,387 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       414,414,415 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       386,386,387 |             0.4899 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 667
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       429,430,431 |             0.6325 |
+Find SIMD (O2)                           | true    |      ? |       402,403,404 |             0.7483 |
+Find SIMD (O3)                           | true    |      ? |       402,403,403 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       419,419,420 |             0.4899 |
+Find SIMD (O1)                           | true    |      ? |       449,450,451 |             0.7483 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 717
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       469,470,474 |             1.8547 |
+Find SIMD (O2)                           | true    |      ? |       421,421,421 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       420,421,422 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |       451,451,453 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |       437,438,439 |             0.7483 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 714
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       485,485,487 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       451,451,454 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |       434,434,434 |             0.0000 |
+Find SIMD (Oz)                           | true    |      ? |       466,467,468 |             0.8944 |
+Find SIMD (O2)                           | true    |      ? |       434,434,436 |             0.9798 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 768
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       467,467,469 |             0.8000 |
+Find SIMD (O1)                           | true    |      ? |       501,502,502 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       482,482,484 |             0.8000 |
+Find SIMD (O3)                           | true    |      ? |       449,450,451 |             0.8944 |
+Find SIMD (O2)                           | true    |      ? |       448,449,451 |             1.2000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 765
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       497,497,499 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       484,485,487 |             1.1662 |
+Find SIMD (O1)                           | true    |      ? |       519,520,520 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       465,465,466 |             0.4000 |
+Find SIMD (O2)                           | true    |      ? |       465,466,467 |             0.8944 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 818
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       539,540,540 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       482,483,484 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |       517,517,520 |             1.2000 |
+Find SIMD (Os)                           | true    |      ? |       502,503,504 |             0.8944 |
+Find SIMD (O3)                           | true    |      ? |       482,483,483 |             0.4000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 821
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       508,510,511 |             1.1662 |
+Find SIMD (Oz)                           | true    |      ? |       543,544,550 |             2.7129 |
+Find SIMD (O3)                           | true    |      ? |       509,510,512 |             1.0954 |
+Find SIMD (O1)                           | true    |      ? |       569,570,571 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       526,526,530 |             1.5492 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       523,524,524 |             0.4000 |
+Find SIMD (O1)                           | true    |      ? |       584,586,587 |             1.0198 |
+Find SIMD (Oz)                           | true    |      ? |       559,559,561 |             0.8000 |
+Find SIMD (O3)                           | true    |      ? |       524,524,526 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |       540,541,543 |             1.0198 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 869
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       605,606,608 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |       575,576,578 |             1.0954 |
+Find SIMD (Os)                           | true    |      ? |       559,559,562 |             1.2649 |
+Find SIMD (O3)                           | true    |      ? |       540,541,542 |             0.7483 |
+Find SIMD (O2)                           | true    |      ? |       540,542,543 |             1.0198 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 923
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       597,597,601 |             1.6000 |
+Find SIMD (O1)                           | true    |      ? |       625,626,627 |             0.8944 |
+Find SIMD (O2)                           | true    |      ? |       559,560,562 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |       577,578,581 |             1.4967 |
+Find SIMD (O3)                           | true    |      ? |       558,558,560 |             0.8000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 918
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       611,612,616 |             1.7205 |
+Find SIMD (O2)                           | true    |      ? |       572,574,575 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |       572,573,574 |             0.8944 |
+Find SIMD (O1)                           | true    |      ? |       639,640,641 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       591,592,595 |             1.3565 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 974
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       606,607,610 |             1.3565 |
+Find SIMD (O3)                           | true    |      ? |       587,588,590 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |       627,628,630 |             1.0198 |
+Find SIMD (O2)                           | true    |      ? |       588,589,596 |             3.0067 |
+Find SIMD (O1)                           | true    |      ? |       656,657,659 |             1.1662 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 969
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       643,645,647 |             1.6000 |
+Find SIMD (O2)                           | true    |      ? |       605,607,607 |             0.8000 |
+Find SIMD (O1)                           | true    |      ? |       675,676,677 |             0.7483 |
+Find SIMD (O3)                           | true    |      ? |       605,606,607 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       625,627,628 |             1.0198 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1027
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       696,696,698 |             0.8000 |
+Find SIMD (Oz)                           | true    |      ? |       666,666,667 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       644,645,645 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       624,624,624 |             0.0000 |
+Find SIMD (O3)                           | true    |      ? |       622,624,625 |             1.1662 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1028
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       649,649,652 |             1.1662 |
+Find SIMD (O1)                           | true    |      ? |       726,727,728 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       677,678,679 |             0.6325 |
+Find SIMD (O2)                           | true    |      ? |       651,651,652 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       697,699,704 |             2.3324 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1073
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       692,694,695 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |       663,664,666 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |       743,745,747 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |       666,668,668 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |       715,716,717 |             0.7483 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1072
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       684,685,689 |             1.7205 |
+Find SIMD (Oz)                           | true    |      ? |       730,730,732 |             0.8000 |
+Find SIMD (O3)                           | true    |      ? |       682,684,686 |             1.6000 |
+Find SIMD (Os)                           | true    |      ? |       715,719,737 |             8.0598 |
+Find SIMD (O1)                           | true    |      ? |       763,765,767 |             1.2649 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       784,785,786 |             0.6325 |
+Find SIMD (O3)                           | true    |      ? |       700,701,702 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |       729,730,732 |             0.9798 |
+Find SIMD (O2)                           | true    |      ? |       702,703,703 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |       752,753,754 |             0.7483 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1131
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       799,800,801 |             0.7483 |
+Find SIMD (O2)                           | true    |      ? |       716,716,717 |             0.4000 |
+Find SIMD (Oz)                           | true    |      ? |       769,770,772 |             1.0198 |
+Find SIMD (Os)                           | true    |      ? |       745,745,747 |             0.8000 |
+Find SIMD (O3)                           | true    |      ? |       714,714,714 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1186
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       732,733,733 |             0.4899 |
+Find SIMD (O3)                           | true    |      ? |       730,731,732 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       761,763,764 |             1.1662 |
+Find SIMD (O1)                           | true    |      ? |       816,817,819 |             1.2000 |
+Find SIMD (Oz)                           | true    |      ? |       786,786,788 |             0.8000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1174
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       835,838,843 |             2.6533 |
+Find SIMD (O3)                           | true    |      ? |       748,749,751 |             1.1662 |
+Find SIMD (Os)                           | true    |      ? |       779,780,782 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |       802,803,806 |             1.4697 |
+Find SIMD (O2)                           | true    |      ? |       750,751,754 |             1.3565 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1238
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       858,859,859 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       825,826,827 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       800,801,803 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |       767,768,769 |             0.6325 |
+Find SIMD (O2)                           | true    |      ? |       768,769,771 |             1.0198 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1219
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       803,804,804 |             0.4899 |
+Find SIMD (O3)                           | true    |      ? |       800,800,802 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       838,839,842 |             1.3565 |
+Find SIMD (O1)                           | true    |      ? |       900,901,903 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |       861,864,864 |             1.1662 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1279
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |       920,921,921 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       857,859,861 |             1.3266 |
+Find SIMD (Oz)                           | true    |      ? |       877,880,881 |             1.4697 |
+Find SIMD (O3)                           | true    |      ? |       816,819,820 |             1.3565 |
+Find SIMD (O2)                           | true    |      ? |       819,821,821 |             0.8000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1278
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |       899,899,901 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |       877,878,881 |             1.6248 |
+Find SIMD (O1)                           | true    |      ? |       941,942,944 |             1.0198 |
+Find SIMD (O3)                           | true    |      ? |       836,836,837 |             0.4899 |
+Find SIMD (O2)                           | true    |      ? |       839,840,841 |             0.7483 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1339
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       858,859,859 |             0.4000 |
+Find SIMD (O3)                           | true    |      ? |       854,857,860 |             2.0000 |
+Find SIMD (Os)                           | true    |      ? |       896,897,900 |             1.4967 |
+Find SIMD (O1)                           | true    |      ? |       962,963,963 |             0.4899 |
+Find SIMD (Oz)                           | true    |      ? |       920,921,923 |             1.0198 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1329
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       912,914,915 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |       977,978,980 |             1.0954 |
+Find SIMD (O2)                           | true    |      ? |       871,872,874 |             0.9798 |
+Find SIMD (O3)                           | true    |      ? |       869,870,871 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |       934,937,938 |             1.4967 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1385
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |       885,888,889 |             1.3565 |
+Find SIMD (Oz)                           | true    |      ? |       951,953,954 |             1.1662 |
+Find SIMD (O2)                           | true    |      ? |       889,890,891 |             0.8944 |
+Find SIMD (Os)                           | true    |      ? |       929,930,932 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |     996,1000,1001 |             1.9391 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1383
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1017,1018,1020 |             1.0198 |
+Find SIMD (Os)                           | true    |      ? |       950,950,952 |             0.8000 |
+Find SIMD (O2)                           | true    |      ? |       908,910,912 |             1.3266 |
+Find SIMD (Oz)                           | true    |      ? |       970,971,975 |             1.8547 |
+Find SIMD (O3)                           | true    |      ? |       904,904,906 |             0.9798 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1437
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       970,970,972 |             0.8000 |
+Find SIMD (O1)                           | true    |      ? |    1038,1039,1040 |             0.7483 |
+Find SIMD (O3)                           | true    |      ? |       923,924,927 |             1.4697 |
+Find SIMD (O2)                           | true    |      ? |       927,929,933 |             2.4980 |
+Find SIMD (Oz)                           | true    |      ? |       994,996,998 |             1.4967 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1430
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1091,1092,1096 |             1.7205 |
+Find SIMD (Oz)                           | true    |      ? |    1040,1043,1045 |             1.6248 |
+Find SIMD (O2)                           | true    |      ? |       960,962,963 |             1.0198 |
+Find SIMD (Os)                           | true    |      ? |    1011,1013,1014 |             1.0198 |
+Find SIMD (O3)                           | true    |      ? |       962,963,965 |             1.1662 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1498
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1026,1029,1030 |             1.4967 |
+Find SIMD (O2)                           | true    |      ? |       977,979,980 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |    1110,1111,1114 |             1.6248 |
+Find SIMD (O3)                           | true    |      ? |       978,980,980 |             0.8000 |
+Find SIMD (Oz)                           | true    |      ? |    1060,1062,1066 |             2.0591 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1483
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |       995,997,998 |             1.0954 |
+Find SIMD (O1)                           | true    |      ? |    1130,1133,1137 |             2.5612 |
+Find SIMD (Os)                           | true    |      ? |    1050,1052,1057 |             2.3664 |
+Find SIMD (Oz)                           | true    |      ? |    1078,1080,1082 |             1.3266 |
+Find SIMD (O3)                           | true    |      ? |    1000,1001,1002 |             0.6325 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1546
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1017,1019,1022 |             1.6248 |
+Find SIMD (O3)                           | true    |      ? |    1019,1021,1023 |             1.3266 |
+Find SIMD (O1)                           | true    |      ? |    1153,1156,1158 |             1.6733 |
+Find SIMD (Oz)                           | true    |      ? |    1102,1104,1106 |             1.4142 |
+Find SIMD (Os)                           | true    |      ? |    1072,1073,1074 |             0.7483 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1539
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1171,1175,1176 |             1.9391 |
+Find SIMD (O3)                           | true    |      ? |    1033,1036,1039 |             2.1354 |
+Find SIMD (Oz)                           | true    |      ? |    1122,1124,1126 |             1.3266 |
+Find SIMD (Os)                           | true    |      ? |    1086,1089,1090 |             1.4697 |
+Find SIMD (O2)                           | true    |      ? |    1031,1033,1034 |             1.0198 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1591
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1049,1051,1051 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |    1104,1105,1107 |             1.0198 |
+Find SIMD (O3)                           | true    |      ? |    1050,1051,1053 |             1.0198 |
+Find SIMD (Oz)                           | true    |      ? |    1135,1139,1141 |             1.9596 |
+Find SIMD (O1)                           | true    |      ? |    1188,1191,1192 |             1.3565 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1581
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1123,1125,1129 |             1.9596 |
+Find SIMD (O1)                           | true    |      ? |    1211,1211,1213 |             0.9798 |
+Find SIMD (O2)                           | true    |      ? |    1068,1069,1073 |             1.7889 |
+Find SIMD (O3)                           | true    |      ? |    1069,1070,1071 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |    1156,1156,1160 |             1.6000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1653
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1232,1233,1234 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    1146,1146,1149 |             1.2000 |
+Find SIMD (O3)                           | true    |      ? |    1091,1092,1093 |             0.8944 |
+Find SIMD (O2)                           | true    |      ? |    1090,1091,1092 |             0.6325 |
+Find SIMD (Oz)                           | true    |      ? |    1180,1182,1184 |             1.3266 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1637
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1133,1133,1133 |             0.0000 |
+Find SIMD (O1)                           | true    |      ? |    1279,1280,1283 |             1.6248 |
+Find SIMD (O2)                           | true    |      ? |    1132,1132,1133 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    1188,1189,1192 |             1.4697 |
+Find SIMD (Oz)                           | true    |      ? |    1231,1232,1242 |             4.0497 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1714
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1205,1207,1213 |             2.8284 |
+Find SIMD (O2)                           | true    |      ? |    1150,1150,1153 |             1.2000 |
+Find SIMD (Oz)                           | true    |      ? |    1249,1251,1255 |             2.1909 |
+Find SIMD (O1)                           | true    |      ? |    1302,1305,1305 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |    1152,1153,1157 |             1.7436 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1693
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1227,1228,1230 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |    1269,1271,1275 |             2.3152 |
+Find SIMD (O1)                           | true    |      ? |    1322,1325,1327 |             1.8547 |
+Find SIMD (O2)                           | true    |      ? |    1168,1169,1172 |             1.4697 |
+Find SIMD (O3)                           | true    |      ? |    1170,1172,1173 |             1.1662 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1755
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    1292,1294,1301 |             3.1875 |
+Find SIMD (Os)                           | true    |      ? |    1248,1250,1255 |             2.5768 |
+Find SIMD (O1)                           | true    |      ? |    1345,1345,1348 |             1.1662 |
+Find SIMD (O2)                           | true    |      ? |    1187,1190,1195 |             2.6382 |
+Find SIMD (O3)                           | true    |      ? |    1186,1188,1189 |             1.0198 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1740
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1202,1203,1204 |             0.7483 |
+Find SIMD (Oz)                           | true    |      ? |    1308,1308,1309 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |    1262,1264,1267 |             2.0591 |
+Find SIMD (O1)                           | true    |      ? |    1359,1362,1365 |             2.1354 |
+Find SIMD (O3)                           | true    |      ? |    1203,1206,1207 |             1.6248 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1815
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1382,1383,1385 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |    1280,1281,1283 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |    1222,1224,1226 |             1.4967 |
+Find SIMD (Oz)                           | true    |      ? |    1327,1329,1330 |             1.2000 |
+Find SIMD (O2)                           | true    |      ? |    1221,1223,1225 |             1.2649 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1794
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1239,1241,1251 |             4.3359 |
+Find SIMD (Oz)                           | true    |      ? |    1345,1349,1351 |             2.3152 |
+Find SIMD (O1)                           | true    |      ? |    1401,1401,1402 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |    1301,1303,1307 |             2.1909 |
+Find SIMD (O3)                           | true    |      ? |    1239,1243,1244 |             1.7205 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1863
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    1366,1368,1376 |             3.5553 |
+Find SIMD (Os)                           | true    |      ? |    1318,1321,1331 |             4.4989 |
+Find SIMD (O2)                           | true    |      ? |    1255,1256,1261 |             2.6382 |
+Find SIMD (O3)                           | true    |      ? |    1256,1258,1261 |             1.8547 |
+Find SIMD (O1)                           | true    |      ? |    1420,1423,1427 |             2.2450 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1847
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1302,1303,1305 |             1.3565 |
+Find SIMD (O3)                           | true    |      ? |    1303,1306,1308 |             1.7205 |
+Find SIMD (Oz)                           | true    |      ? |    1418,1420,1421 |             1.1662 |
+Find SIMD (O1)                           | true    |      ? |    1461,1462,1465 |             1.4967 |
+Find SIMD (Os)                           | true    |      ? |    1362,1364,1366 |             1.6000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1923
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1322,1323,1324 |             0.8944 |
+Find SIMD (Os)                           | true    |      ? |    1377,1380,1380 |             1.1662 |
+Find SIMD (Oz)                           | true    |      ? |    1434,1435,1436 |             0.7483 |
+Find SIMD (O2)                           | true    |      ? |    1317,1317,1321 |             1.6000 |
+Find SIMD (O1)                           | true    |      ? |    1476,1477,1481 |             1.8547 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1897
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1334,1335,1338 |             1.3565 |
+Find SIMD (Os)                           | true    |      ? |    1397,1399,1400 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |    1453,1454,1461 |             3.0332 |
+Find SIMD (O3)                           | true    |      ? |    1339,1339,1344 |             1.9596 |
+Find SIMD (O1)                           | true    |      ? |    1497,1501,1503 |             1.9596 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2004
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1359,1360,1362 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |    1518,1519,1520 |             0.6325 |
+Find SIMD (O2)                           | true    |      ? |    1354,1358,1360 |             2.5298 |
+Find SIMD (Os)                           | true    |      ? |    1419,1422,1423 |             1.6248 |
+Find SIMD (Oz)                           | true    |      ? |    1477,1479,1485 |             2.8000 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1946
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1432,1434,1435 |             1.0198 |
+Find SIMD (O3)                           | true    |      ? |    1371,1372,1377 |             2.8000 |
+Find SIMD (O1)                           | true    |      ? |    1533,1534,1537 |             1.4967 |
+Find SIMD (O2)                           | true    |      ? |    1367,1369,1370 |             0.9798 |
+Find SIMD (Oz)                           | true    |      ? |    1491,1493,1495 |             1.4967 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2028
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1388,1389,1391 |             1.1662 |
+Find SIMD (Oz)                           | true    |      ? |    1509,1510,1512 |             1.2000 |
+Find SIMD (O2)                           | true    |      ? |    1384,1385,1386 |             0.8944 |
+Find SIMD (Os)                           | true    |      ? |    1450,1451,1454 |             1.3565 |
+Find SIMD (O1)                           | true    |      ? |    1553,1556,1556 |             1.2649 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2010
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1469,1470,1478 |             3.4293 |
+Find SIMD (O2)                           | true    |      ? |    1403,1405,1410 |             2.6533 |
+Find SIMD (O1)                           | true    |      ? |    1574,1576,1579 |             1.7205 |
+Find SIMD (Oz)                           | true    |      ? |    1530,1532,1534 |             1.3266 |
+Find SIMD (O3)                           | true    |      ? |    1407,1412,1413 |             2.1354 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2091
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1427,1429,1433 |             2.1541 |
+Find SIMD (Oz)                           | true    |      ? |    1552,1555,1557 |             1.8547 |
+Find SIMD (Os)                           | true    |      ? |    1492,1495,1497 |             1.6248 |
+Find SIMD (O2)                           | true    |      ? |    1421,1423,1424 |             0.9798 |
+Find SIMD (O1)                           | true    |      ? |    1594,1596,1603 |             3.0725 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2057
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1481,1483,1484 |             1.0198 |
+Find SIMD (O1)                           | true    |      ? |    1647,1647,1651 |             1.5492 |
+Find SIMD (Os)                           | true    |      ? |    1537,1541,1544 |             2.5612 |
+Find SIMD (Oz)                           | true    |      ? |    1601,1604,1606 |             1.7436 |
+Find SIMD (O2)                           | true    |      ? |    1469,1469,1479 |             3.9192 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2118
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1486,1487,1491 |             1.9391 |
+Find SIMD (Os)                           | true    |      ? |    1556,1557,1562 |             2.2450 |
+Find SIMD (Oz)                           | true    |      ? |    1620,1622,1628 |             2.8284 |
+Find SIMD (O3)                           | true    |      ? |    1499,1502,1503 |             1.3565 |
+Find SIMD (O1)                           | true    |      ? |    1665,1667,1670 |             2.0591 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2110
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    1640,1643,1648 |             3.0067 |
+Find SIMD (O1)                           | true    |      ? |    1690,1695,1696 |             2.5768 |
+Find SIMD (Os)                           | true    |      ? |    1576,1578,1581 |             1.7205 |
+Find SIMD (O3)                           | true    |      ? |    1519,1520,1527 |             3.0332 |
+Find SIMD (O2)                           | true    |      ? |    1507,1508,1514 |             2.6077 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2176
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1528,1529,1540 |             4.6217 |
+Find SIMD (Os)                           | true    |      ? |    1599,1602,1606 |             2.2450 |
+Find SIMD (O3)                           | true    |      ? |    1544,1545,1550 |             2.2450 |
+Find SIMD (O1)                           | true    |      ? |    1715,1716,1718 |             1.0198 |
+Find SIMD (Oz)                           | true    |      ? |    1663,1666,1675 |             4.1183 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    1731,1733,1744 |             4.7074 |
+Find SIMD (Os)                           | true    |      ? |    1619,1621,1627 |             2.9933 |
+Find SIMD (O2)                           | true    |      ? |    1544,1547,1550 |             2.2804 |
+Find SIMD (Oz)                           | true    |      ? |    1682,1685,1692 |             3.4059 |
+Find SIMD (O3)                           | true    |      ? |    1560,1561,1563 |             1.0954 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2233
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1563,1564,1570 |             2.5768 |
+Find SIMD (Os)                           | true    |      ? |    1635,1637,1640 |             1.7205 |
+Find SIMD (O1)                           | true    |      ? |    1750,1753,1755 |             1.6248 |
+Find SIMD (Oz)                           | true    |      ? |    1700,1705,1709 |             2.9394 |
+Find SIMD (O3)                           | true    |      ? |    1575,1577,1579 |             1.3266 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1598,1601,1604 |             2.2450 |
+Find SIMD (Oz)                           | true    |      ? |    1723,1727,1730 |             2.3152 |
+Find SIMD (O1)                           | true    |      ? |    1774,1776,1779 |             1.8330 |
+Find SIMD (Os)                           | true    |      ? |    1659,1662,1665 |             1.9391 |
+Find SIMD (O2)                           | true    |      ? |    1584,1588,1591 |             2.2450 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1623,1626,1628 |             1.7436 |
+Find SIMD (O2)                           | true    |      ? |    1606,1607,1609 |             1.0198 |
+Find SIMD (Os)                           | true    |      ? |    1683,1684,1687 |             1.8330 |
+Find SIMD (O1)                           | true    |      ? |    1795,1797,1802 |             2.4166 |
+Find SIMD (Oz)                           | true    |      ? |    1750,1757,1761 |             4.1665 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2273
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1738,1738,1740 |             0.8000 |
+Find SIMD (O2)                           | true    |      ? |    1660,1664,1668 |             3.2000 |
+Find SIMD (O1)                           | true    |      ? |    1858,1860,1871 |             4.5782 |
+Find SIMD (O3)                           | true    |      ? |    1683,1684,1685 |             0.8944 |
+Find SIMD (Oz)                           | true    |      ? |    1810,1812,1815 |             1.6248 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2342
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    1831,1832,1844 |             4.8744 |
+Find SIMD (Os)                           | true    |      ? |    1757,1759,1765 |             3.2496 |
+Find SIMD (O3)                           | true    |      ? |    1705,1707,1709 |             1.4142 |
+Find SIMD (O2)                           | true    |      ? |    1684,1687,1697 |             4.4989 |
+Find SIMD (O1)                           | true    |      ? |    1882,1884,1886 |             1.4142 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2316
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1723,1728,1731 |             2.6533 |
+Find SIMD (Oz)                           | true    |      ? |    1851,1853,1876 |             9.4319 |
+Find SIMD (Os)                           | true    |      ? |    1782,1784,1787 |             1.8330 |
+Find SIMD (O1)                           | true    |      ? |    1903,1908,1912 |             3.0332 |
+Find SIMD (O2)                           | true    |      ? |    1705,1709,1712 |             2.4166 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2401
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1806,1808,1812 |             2.1541 |
+Find SIMD (Oz)                           | true    |      ? |    1878,1885,1894 |             5.5714 |
+Find SIMD (O3)                           | true    |      ? |    1750,1751,1755 |             1.9391 |
+Find SIMD (O1)                           | true    |      ? |    1933,1934,1938 |             1.9391 |
+Find SIMD (O2)                           | true    |      ? |    1727,1730,1734 |             2.3152 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2373
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1767,1769,1773 |             2.1541 |
+Find SIMD (Os)                           | true    |      ? |    1823,1827,1828 |             1.9391 |
+Find SIMD (Oz)                           | true    |      ? |    1897,1898,1904 |             2.4819 |
+Find SIMD (O1)                           | true    |      ? |    1951,1952,1958 |             2.6382 |
+Find SIMD (O2)                           | true    |      ? |    1743,1748,1751 |             2.7857 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2465
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    1916,1918,1922 |             2.4980 |
+Find SIMD (O1)                           | true    |      ? |    1973,1976,1980 |             2.6382 |
+Find SIMD (O3)                           | true    |      ? |    1782,1791,1791 |             3.6000 |
+Find SIMD (Os)                           | true    |      ? |    1845,1847,1850 |             1.8547 |
+Find SIMD (O2)                           | true    |      ? |    1762,1770,1776 |             5.0438 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2426
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1866,1869,1871 |             1.7436 |
+Find SIMD (O2)                           | true    |      ? |    1785,1788,1789 |             1.3565 |
+Find SIMD (O3)                           | true    |      ? |    1807,1808,1809 |             0.8944 |
+Find SIMD (O1)                           | true    |      ? |    1993,1996,1996 |             1.1662 |
+Find SIMD (Oz)                           | true    |      ? |    1937,1940,1950 |             4.6217 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2518
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O2)                           | true    |      ? |    1806,1806,1809 |             1.1662 |
+Find SIMD (O3)                           | true    |      ? |    1824,1829,1837 |             4.2237 |
+Find SIMD (Oz)                           | true    |      ? |    1961,1962,1977 |             6.1774 |
+Find SIMD (Os)                           | true    |      ? |    1886,1888,1890 |             1.4142 |
+Find SIMD (O1)                           | true    |      ? |    2014,2017,2022 |             3.0594 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2477
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    2073,2074,2079 |             2.4166 |
+Find SIMD (Os)                           | true    |      ? |    1940,1943,1948 |             3.3823 |
+Find SIMD (O2)                           | true    |      ? |    1862,1863,1869 |             2.5298 |
+Find SIMD (Oz)                           | true    |      ? |    2014,2016,2030 |             5.9867 |
+Find SIMD (O3)                           | true    |      ? |    1886,1886,1891 |             1.9391 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2571
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O3)                           | true    |      ? |    1903,1905,1912 |             3.1623 |
+Find SIMD (Oz)                           | true    |      ? |    2038,2039,2040 |             0.7483 |
+Find SIMD (O1)                           | true    |      ? |    2095,2100,2103 |             2.6533 |
+Find SIMD (Os)                           | true    |      ? |    1959,1961,1966 |             2.4166 |
+Find SIMD (O2)                           | true    |      ? |    1883,1885,1885 |             0.8000 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2527
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Oz)                           | true    |      ? |    2057,2061,2062 |             2.0976 |
+Find SIMD (O2)                           | true    |      ? |    1904,1904,1909 |             1.9391 |
+Find SIMD (Os)                           | true    |      ? |    1981,1984,1986 |             1.7205 |
+Find SIMD (O3)                           | true    |      ? |    1926,1928,1936 |             3.4871 |
+Find SIMD (O1)                           | true    |      ? |    2119,2123,2125 |             2.2271 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2627
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (O1)                           | true    |      ? |    2144,2150,2155 |             3.9699 |
+Find SIMD (O3)                           | true    |      ? |    1951,1954,1959 |             2.8566 |
+Find SIMD (Oz)                           | true    |      ? |    2087,2094,2102 |             4.8332 |
+Find SIMD (O2)                           | true    |      ? |    1926,1929,1936 |             3.4871 |
+Find SIMD (Os)                           | true    |      ? |    2007,2010,2014 |             2.7276 |
