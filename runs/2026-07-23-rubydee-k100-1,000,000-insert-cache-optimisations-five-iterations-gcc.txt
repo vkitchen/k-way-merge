@@ -1,0 +1,990 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784787337
+MEMORY 0.745058 GiB
+
+Init: 2476
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 75
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |          21,21,21 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          18,18,18 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          18,18,18 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |          19,19,19 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |          18,18,19 |             0.4000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          27,27,28 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |          29,29,30 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |          31,31,32 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |          27,27,27 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          26,27,27 |             0.4899 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 118
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |          43,43,43 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          37,37,37 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |          39,39,40 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |          37,37,37 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          36,36,36 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |          47,47,47 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |          47,47,48 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |          50,50,50 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          57,57,57 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          47,47,48 |             0.4899 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |          57,57,58 |             0.4899 |
+Insert Cache (O3)                        | true    |      ? |          70,70,71 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |          62,62,62 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |          58,59,60 |             0.7483 |
+Insert Cache (Oz)                        | true    |      ? |          58,59,61 |             1.0198 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 204
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |          69,69,70 |             0.4899 |
+Insert Cache (Os)                        | true    |      ? |          70,70,71 |             0.4899 |
+Insert Cache (O1)                        | true    |      ? |          75,75,75 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |          84,85,85 |             0.4899 |
+Insert Cache (Oz)                        | true    |      ? |          70,71,71 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          82,82,83 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |       100,100,101 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |          83,83,83 |             0.0000 |
+Insert Cache (O2)                        | true    |      ? |          81,82,83 |             0.7483 |
+Insert Cache (O1)                        | true    |      ? |          86,87,87 |             0.4000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |          96,96,97 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |          96,96,99 |             1.1662 |
+Insert Cache (O3)                        | true    |      ? |       116,117,117 |             0.4899 |
+Insert Cache (O2)                        | true    |      ? |          94,95,95 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |       100,100,101 |             0.4000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 266
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |       110,110,110 |             0.0000 |
+Insert Cache (O3)                        | true    |      ? |       132,133,133 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |       114,114,114 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       110,110,111 |             0.4899 |
+Insert Cache (O2)                        | true    |      ? |       108,108,110 |             0.8000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 305
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       126,126,127 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |       150,150,151 |             0.4899 |
+Insert Cache (Oz)                        | true    |      ? |       126,126,127 |             0.4899 |
+Insert Cache (O1)                        | true    |      ? |       129,129,130 |             0.4899 |
+Insert Cache (O2)                        | true    |      ? |       122,123,124 |             0.7483 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 312
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       139,139,150 |             4.3174 |
+Insert Cache (Os)                        | true    |      ? |       144,144,145 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |       141,141,141 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       145,145,148 |             1.2000 |
+Insert Cache (O3)                        | true    |      ? |       168,168,170 |             0.8000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 353
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       164,164,165 |             0.4000 |
+Insert Cache (Os)                        | true    |      ? |       160,160,161 |             0.4899 |
+Insert Cache (O3)                        | true    |      ? |       186,186,186 |             0.0000 |
+Insert Cache (Oz)                        | true    |      ? |       156,156,157 |             0.4899 |
+Insert Cache (O2)                        | true    |      ? |       153,154,154 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 365
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       170,170,170 |             0.0000 |
+Insert Cache (Os)                        | true    |      ? |       178,178,179 |             0.4899 |
+Insert Cache (O3)                        | true    |      ? |       205,206,210 |             1.8547 |
+Insert Cache (O1)                        | true    |      ? |       180,181,181 |             0.4899 |
+Insert Cache (Oz)                        | true    |      ? |       172,173,173 |             0.4000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 407
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       186,186,187 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |       225,225,227 |             0.8000 |
+Insert Cache (Oz)                        | true    |      ? |       188,189,189 |             0.4000 |
+Insert Cache (O1)                        | true    |      ? |       198,199,201 |             0.9798 |
+Insert Cache (Os)                        | true    |      ? |       196,196,198 |             0.9798 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 415
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |       205,205,206 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |       249,280,281 |            15.2761 |
+Insert Cache (O2)                        | true    |      ? |       202,202,205 |             1.1662 |
+Insert Cache (Os)                        | true    |      ? |       214,214,216 |             0.8000 |
+Insert Cache (O1)                        | true    |      ? |       215,216,217 |             0.8944 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 468
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       231,232,237 |             2.2804 |
+Insert Cache (Oz)                        | true    |      ? |       221,222,222 |             0.4899 |
+Insert Cache (Os)                        | true    |      ? |       232,233,234 |             0.7483 |
+Insert Cache (O3)                        | true    |      ? |       276,277,305 |            13.6440 |
+Insert Cache (O2)                        | true    |      ? |       219,219,220 |             0.4899 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 466
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       250,251,251 |             0.4000 |
+Insert Cache (O3)                        | true    |      ? |       303,328,333 |            13.1909 |
+Insert Cache (Oz)                        | true    |      ? |       239,239,242 |             1.2649 |
+Insert Cache (O2)                        | true    |      ? |       237,238,238 |             0.4899 |
+Insert Cache (O1)                        | true    |      ? |       249,249,250 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 511
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       255,256,257 |             0.7483 |
+Insert Cache (O3)                        | true    |      ? |       330,347,351 |             9.5624 |
+Insert Cache (Os)                        | true    |      ? |       271,271,272 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |       258,258,262 |             1.6000 |
+Insert Cache (O1)                        | true    |      ? |       266,266,268 |             0.8000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 515
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       282,283,284 |             0.6325 |
+Insert Cache (O3)                        | true    |      ? |       356,358,362 |             2.0591 |
+Insert Cache (O2)                        | true    |      ? |       274,275,276 |             0.8944 |
+Insert Cache (Os)                        | true    |      ? |       290,291,292 |             0.7483 |
+Insert Cache (Oz)                        | true    |      ? |       275,276,276 |             0.4000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 563
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       301,302,306 |             1.7205 |
+Insert Cache (O3)                        | true    |      ? |       383,384,385 |             0.6325 |
+Insert Cache (Oz)                        | true    |      ? |       294,295,296 |             0.7483 |
+Insert Cache (O2)                        | true    |      ? |       294,294,298 |             1.5492 |
+Insert Cache (Os)                        | true    |      ? |       313,313,314 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 567
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       335,335,335 |             0.0000 |
+Insert Cache (O1)                        | true    |      ? |       320,321,322 |             0.6325 |
+Insert Cache (Oz)                        | true    |      ? |       312,313,316 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |       408,409,441 |            12.9058 |
+Insert Cache (O2)                        | true    |      ? |       313,314,316 |             0.9798 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 621
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       357,358,359 |             0.7483 |
+Insert Cache (O1)                        | true    |      ? |       341,341,342 |             0.4000 |
+Insert Cache (O2)                        | true    |      ? |       335,335,353 |             7.1106 |
+Insert Cache (Oz)                        | true    |      ? |       333,334,338 |             1.7205 |
+Insert Cache (O3)                        | true    |      ? |       428,429,429 |             0.4000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 614
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       381,381,384 |             1.1662 |
+Insert Cache (O1)                        | true    |      ? |       361,362,375 |             5.3141 |
+Insert Cache (O3)                        | true    |      ? |       457,459,486 |            13.8996 |
+Insert Cache (Oz)                        | true    |      ? |       354,355,367 |             4.9153 |
+Insert Cache (O2)                        | true    |      ? |       357,357,359 |             0.8000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 661
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |       487,512,531 |            16.7021 |
+Insert Cache (Oz)                        | true    |      ? |       374,375,379 |             1.8547 |
+Insert Cache (O1)                        | true    |      ? |       381,382,383 |             0.7483 |
+Insert Cache (Os)                        | true    |      ? |       405,406,407 |             0.7483 |
+Insert Cache (O2)                        | true    |      ? |       378,379,380 |             0.6325 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 666
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       402,404,410 |             2.8000 |
+Insert Cache (O1)                        | true    |      ? |       400,401,401 |             0.4000 |
+Insert Cache (Os)                        | true    |      ? |       431,431,455 |             9.3038 |
+Insert Cache (Oz)                        | true    |      ? |       397,398,400 |             1.0954 |
+Insert Cache (O3)                        | true    |      ? |       518,521,540 |            10.3460 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 714
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       457,457,459 |             0.8000 |
+Insert Cache (O3)                        | true    |      ? |       549,549,564 |             5.8515 |
+Insert Cache (Oz)                        | true    |      ? |       419,422,423 |             1.4697 |
+Insert Cache (O1)                        | true    |      ? |       428,428,468 |            15.6205 |
+Insert Cache (O2)                        | true    |      ? |       425,427,431 |             2.0396 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       444,446,446 |             0.8000 |
+Insert Cache (O3)                        | true    |      ? |       578,579,584 |             2.2271 |
+Insert Cache (Oz)                        | true    |      ? |       442,443,445 |             1.0198 |
+Insert Cache (O2)                        | true    |      ? |       449,449,450 |             0.4000 |
+Insert Cache (Os)                        | true    |      ? |       484,487,487 |             1.2649 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 767
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       511,512,514 |             1.1662 |
+Insert Cache (O2)                        | true    |      ? |       477,478,479 |             0.7483 |
+Insert Cache (O3)                        | true    |      ? |       608,609,688 |            31.3790 |
+Insert Cache (Oz)                        | true    |      ? |       470,472,474 |             1.4142 |
+Insert Cache (O1)                        | true    |      ? |       472,473,475 |             0.9798 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 765
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       542,544,572 |            12.1918 |
+Insert Cache (Oz)                        | true    |      ? |       495,495,500 |             1.9391 |
+Insert Cache (O1)                        | true    |      ? |       490,491,492 |             0.8944 |
+Insert Cache (O3)                        | true    |      ? |       634,636,637 |             1.1662 |
+Insert Cache (O2)                        | true    |      ? |       506,507,510 |             1.6248 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 837
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       531,532,535 |             1.4697 |
+Insert Cache (O1)                        | true    |      ? |       519,520,576 |            22.6044 |
+Insert Cache (Os)                        | true    |      ? |       572,573,574 |             0.7483 |
+Insert Cache (Oz)                        | true    |      ? |       520,521,525 |             1.7889 |
+Insert Cache (O3)                        | true    |      ? |       656,656,660 |             1.7436 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 817
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |       687,691,705 |             6.3372 |
+Insert Cache (O2)                        | true    |      ? |       557,558,560 |             1.1662 |
+Insert Cache (Oz)                        | true    |      ? |       545,548,575 |            11.2534 |
+Insert Cache (Os)                        | true    |      ? |       604,605,607 |             1.0198 |
+Insert Cache (O1)                        | true    |      ? |       545,545,546 |             0.4000 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 872
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       586,586,593 |             2.7276 |
+Insert Cache (Os)                        | true    |      ? |       634,634,635 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |       571,573,575 |             1.3266 |
+Insert Cache (O1)                        | true    |      ? |       567,569,571 |             1.4142 |
+Insert Cache (O3)                        | true    |      ? |       719,722,753 |            12.5443 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 867
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |       752,754,789 |            13.9800 |
+Insert Cache (O1)                        | true    |      ? |       591,592,593 |             0.8944 |
+Insert Cache (O2)                        | true    |      ? |       613,615,616 |             1.3565 |
+Insert Cache (Oz)                        | true    |      ? |       596,598,598 |             0.8000 |
+Insert Cache (Os)                        | true    |      ? |       661,663,666 |             1.7205 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 924
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       694,695,703 |             3.2619 |
+Insert Cache (Oz)                        | true    |      ? |       627,628,631 |             1.3565 |
+Insert Cache (O2)                        | true    |      ? |       641,642,643 |             0.6325 |
+Insert Cache (O1)                        | true    |      ? |       617,624,633 |             5.6356 |
+Insert Cache (O3)                        | true    |      ? |       785,786,793 |             3.0725 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 920
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |       817,817,819 |             0.8000 |
+Insert Cache (O1)                        | true    |      ? |       645,648,649 |             1.3565 |
+Insert Cache (Os)                        | true    |      ? |       728,729,750 |             8.6116 |
+Insert Cache (Oz)                        | true    |      ? |       655,656,693 |            14.7323 |
+Insert Cache (O2)                        | true    |      ? |       673,674,675 |             0.6325 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 980
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |       684,684,685 |             0.4899 |
+Insert Cache (O1)                        | true    |      ? |       672,676,676 |             1.6000 |
+Insert Cache (Os)                        | true    |      ? |       759,761,762 |             1.0198 |
+Insert Cache (O2)                        | true    |      ? |       702,707,709 |             2.6077 |
+Insert Cache (O3)                        | true    |      ? |       846,848,849 |             1.1662 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 967
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       698,699,702 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |       874,877,917 |            16.2037 |
+Insert Cache (O2)                        | true    |      ? |       734,735,739 |             1.9391 |
+Insert Cache (Os)                        | true    |      ? |       791,795,797 |             2.3152 |
+Insert Cache (Oz)                        | true    |      ? |       714,718,760 |            17.2557 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1029
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       727,730,743 |             5.7758 |
+Insert Cache (Os)                        | true    |      ? |       826,827,831 |             1.8547 |
+Insert Cache (O2)                        | true    |      ? |       765,766,769 |             1.6248 |
+Insert Cache (Oz)                        | true    |      ? |       742,743,748 |             2.1354 |
+Insert Cache (O3)                        | true    |      ? |       897,899,901 |             1.3266 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1024
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |       797,798,802 |             1.8547 |
+Insert Cache (O3)                        | true    |      ? |       928,930,936 |             2.6833 |
+Insert Cache (Oz)                        | true    |      ? |       772,774,776 |             1.6000 |
+Insert Cache (O1)                        | true    |      ? |       755,756,757 |             0.8944 |
+Insert Cache (Os)                        | true    |      ? |       860,862,867 |             3.0067 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1090
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       786,786,797 |             4.4542 |
+Insert Cache (O3)                        | true    |      ? |       964,968,972 |             2.8284 |
+Insert Cache (O2)                        | true    |      ? |       831,834,836 |             1.6000 |
+Insert Cache (Os)                        | true    |      ? |       898,900,911 |             4.6904 |
+Insert Cache (Oz)                        | true    |      ? |       804,805,806 |             0.8944 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1076
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |       933,934,936 |             1.0198 |
+Insert Cache (O3)                        | true    |      ? |     996,1002,1003 |             2.8983 |
+Insert Cache (Oz)                        | true    |      ? |       838,839,843 |             1.9391 |
+Insert Cache (O1)                        | true    |      ? |       813,815,818 |             1.8330 |
+Insert Cache (O2)                        | true    |      ? |       865,866,870 |             1.8547 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1129
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |       846,848,851 |             1.7205 |
+Insert Cache (Oz)                        | true    |      ? |       871,872,876 |             1.7205 |
+Insert Cache (O2)                        | true    |      ? |       900,901,902 |             0.7483 |
+Insert Cache (Os)                        | true    |      ? |       972,977,979 |             2.7857 |
+Insert Cache (O3)                        | true    |      ? |    1027,1033,1181 |            59.5261 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1127
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    1007,1011,1015 |             2.5612 |
+Insert Cache (O2)                        | true    |      ? |       932,934,943 |             3.8781 |
+Insert Cache (Oz)                        | true    |      ? |       902,904,906 |             1.4142 |
+Insert Cache (O3)                        | true    |      ? |    1057,1060,1074 |             6.2418 |
+Insert Cache (O1)                        | true    |      ? |       876,876,879 |             1.2649 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1191
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |       936,938,982 |            17.8281 |
+Insert Cache (O1)                        | true    |      ? |       911,912,973 |            24.3442 |
+Insert Cache (O2)                        | true    |      ? |       969,970,972 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |    1092,1093,1094 |             0.8944 |
+Insert Cache (Os)                        | true    |      ? |    1049,1049,1049 |             0.0000 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1171
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1006,1007,1010 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |    1122,1126,1151 |            12.8903 |
+Insert Cache (Oz)                        | true    |      ? |      970,974,1022 |            19.6367 |
+Insert Cache (O1)                        | true    |      ? |       939,942,944 |             2.0591 |
+Insert Cache (Os)                        | true    |      ? |    1087,1090,1092 |             2.0591 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1239
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    1128,1128,1129 |             0.4000 |
+Insert Cache (Oz)                        | true    |      ? |    1007,1007,1010 |             1.1662 |
+Insert Cache (O1)                        | true    |      ? |       971,977,980 |             3.4641 |
+Insert Cache (O3)                        | true    |      ? |    1148,1148,1160 |             4.6648 |
+Insert Cache (O2)                        | true    |      ? |    1046,1049,1096 |            19.2520 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1234
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1082,1085,1140 |            22.2585 |
+Insert Cache (Os)                        | true    |      ? |    1176,1177,1183 |             3.1241 |
+Insert Cache (Oz)                        | true    |      ? |    1044,1050,1055 |             3.5214 |
+Insert Cache (O1)                        | true    |      ? |    1007,1011,1014 |             2.4166 |
+Insert Cache (O3)                        | true    |      ? |    1174,1175,1207 |            12.6965 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1284
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    1041,1042,1044 |             1.0198 |
+Insert Cache (Os)                        | true    |      ? |    1209,1211,1214 |             1.6248 |
+Insert Cache (Oz)                        | true    |      ? |    1080,1083,1084 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |    1212,1214,1217 |             1.6000 |
+Insert Cache (O2)                        | true    |      ? |    1119,1122,1128 |             3.4986 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1274
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    1254,1257,1260 |             2.1354 |
+Insert Cache (O2)                        | true    |      ? |    1160,1162,1163 |             1.1662 |
+Insert Cache (O3)                        | true    |      ? |    1245,1248,1331 |            33.0297 |
+Insert Cache (Oz)                        | true    |      ? |    1115,1117,1120 |             1.7436 |
+Insert Cache (O1)                        | true    |      ? |    1075,1078,1142 |            26.1258 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1342
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    1281,1285,1288 |             2.5768 |
+Insert Cache (Os)                        | true    |      ? |    1302,1306,1309 |             2.6833 |
+Insert Cache (O2)                        | true    |      ? |    1201,1205,1209 |             2.7129 |
+Insert Cache (O1)                        | true    |      ? |    1110,1115,1123 |             4.4452 |
+Insert Cache (Oz)                        | true    |      ? |    1156,1159,1160 |             1.4697 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1334
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    1151,1151,1153 |             0.8000 |
+Insert Cache (O3)                        | true    |      ? |    1318,1320,1510 |            75.2712 |
+Insert Cache (O2)                        | true    |      ? |    1241,1246,1251 |             3.6111 |
+Insert Cache (Oz)                        | true    |      ? |    1196,1200,1203 |             2.2450 |
+Insert Cache (Os)                        | true    |      ? |    1345,1349,1354 |             3.1241 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1400
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    1345,1350,1367 |             8.1142 |
+Insert Cache (Oz)                        | true    |      ? |    1232,1235,1305 |            28.2319 |
+Insert Cache (O2)                        | true    |      ? |    1284,1286,1298 |             5.2154 |
+Insert Cache (Os)                        | true    |      ? |    1390,1392,1396 |             1.9596 |
+Insert Cache (O1)                        | true    |      ? |    1182,1185,1188 |             2.0000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1379
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1325,1329,1351 |             9.5791 |
+Insert Cache (Os)                        | true    |      ? |    1436,1441,1456 |             7.1722 |
+Insert Cache (O1)                        | true    |      ? |    1219,1221,1278 |            22.9207 |
+Insert Cache (Oz)                        | true    |      ? |    1272,1281,1337 |            23.9115 |
+Insert Cache (O3)                        | true    |      ? |    1374,1376,1382 |             2.7129 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1439
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    1398,1401,1417 |             6.9109 |
+Insert Cache (Oz)                        | true    |      ? |    1311,1314,1317 |             2.0000 |
+Insert Cache (Os)                        | true    |      ? |    1480,1483,1484 |             1.8330 |
+Insert Cache (O1)                        | true    |      ? |    1257,1260,1270 |             4.5343 |
+Insert Cache (O2)                        | true    |      ? |    1371,1373,1401 |            11.5239 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1435
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1415,1419,1445 |            11.1535 |
+Insert Cache (Os)                        | true    |      ? |    1528,1531,1543 |             5.3141 |
+Insert Cache (Oz)                        | true    |      ? |    1353,1354,1359 |             2.0976 |
+Insert Cache (O1)                        | true    |      ? |    1295,1299,1367 |            27.6724 |
+Insert Cache (O3)                        | true    |      ? |    1435,1447,1656 |           105.4981 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1495
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1393,1397,1402 |             2.9257 |
+Insert Cache (O1)                        | true    |      ? |    1331,1332,1344 |             4.7917 |
+Insert Cache (O3)                        | true    |      ? |    1467,1469,1477 |             3.4871 |
+Insert Cache (Os)                        | true    |      ? |    1578,1580,1598 |             7.4189 |
+Insert Cache (O2)                        | true    |      ? |    1453,1458,1465 |             4.0200 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1483
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1501,1504,1505 |             1.3565 |
+Insert Cache (O3)                        | true    |      ? |    1503,1507,1512 |             3.0332 |
+Insert Cache (O1)                        | true    |      ? |    1375,1376,1378 |             1.3565 |
+Insert Cache (Oz)                        | true    |      ? |    1440,1441,1483 |            16.4073 |
+Insert Cache (Os)                        | true    |      ? |    1625,1628,1634 |             3.0067 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1558
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    1539,1541,1546 |             2.6077 |
+Insert Cache (O1)                        | true    |      ? |    1411,1413,1484 |            28.4155 |
+Insert Cache (Oz)                        | true    |      ? |    1482,1485,1486 |             1.6248 |
+Insert Cache (O2)                        | true    |      ? |    1545,1549,1551 |             2.3152 |
+Insert Cache (Os)                        | true    |      ? |    1676,1679,1697 |             7.5525 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1528
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1525,1525,1530 |             2.2271 |
+Insert Cache (O3)                        | true    |      ? |    1574,1579,1808 |            92.2445 |
+Insert Cache (O1)                        | true    |      ? |    1454,1457,1459 |             1.7205 |
+Insert Cache (O2)                        | true    |      ? |    1593,1597,1604 |             3.8678 |
+Insert Cache (Os)                        | true    |      ? |    1723,1730,1736 |             4.8415 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1600
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1568,1571,1613 |            16.9068 |
+Insert Cache (O1)                        | true    |      ? |    1492,1495,1498 |             2.1354 |
+Insert Cache (O3)                        | true    |      ? |    1604,1605,1607 |             1.2000 |
+Insert Cache (Os)                        | true    |      ? |    1776,1778,1798 |             8.1731 |
+Insert Cache (O2)                        | true    |      ? |    1638,1644,1645 |             2.8983 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1588
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1612,1619,1657 |            15.9925 |
+Insert Cache (Os)                        | true    |      ? |    1830,1832,1851 |             7.7614 |
+Insert Cache (O2)                        | true    |      ? |    1688,1695,1727 |            13.9370 |
+Insert Cache (O3)                        | true    |      ? |    1636,1638,1876 |            95.3092 |
+Insert Cache (O1)                        | true    |      ? |    1531,1535,1608 |            29.6473 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1669
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    1576,1577,1580 |             1.6733 |
+Insert Cache (O2)                        | true    |      ? |    1736,1740,1744 |             2.8000 |
+Insert Cache (O3)                        | true    |      ? |    1660,1663,1676 |             5.8856 |
+Insert Cache (Os)                        | true    |      ? |    1882,1884,1898 |             5.7411 |
+Insert Cache (Oz)                        | true    |      ? |    1660,1663,1712 |            19.9439 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1641
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    1936,1941,1945 |             3.2619 |
+Insert Cache (O3)                        | true    |      ? |    1695,1700,1733 |            14.0627 |
+Insert Cache (O2)                        | true    |      ? |    1788,1793,1834 |            20.9093 |
+Insert Cache (Oz)                        | true    |      ? |    1704,1706,1712 |             2.8284 |
+Insert Cache (O1)                        | true    |      ? |    1620,1624,1631 |             4.5343 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1732
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1837,1842,1883 |            17.4768 |
+Insert Cache (O1)                        | true    |      ? |    1669,1671,1674 |             2.0396 |
+Insert Cache (O3)                        | true    |      ? |    1732,1736,1737 |             1.7205 |
+Insert Cache (Os)                        | true    |      ? |    1989,1992,1994 |             2.0591 |
+Insert Cache (Oz)                        | true    |      ? |    1754,1755,1759 |             1.7889 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1698
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1888,1889,1891 |             1.0954 |
+Insert Cache (O3)                        | true    |      ? |    1769,1773,1779 |             3.8987 |
+Insert Cache (Oz)                        | true    |      ? |    1800,1812,1855 |            23.2121 |
+Insert Cache (Os)                        | true    |      ? |    2046,2051,2055 |             2.9933 |
+Insert Cache (O1)                        | true    |      ? |    1710,1713,1725 |             5.1769 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1768
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    1934,1935,1940 |             2.2450 |
+Insert Cache (O1)                        | true    |      ? |    1746,1751,1760 |             4.5782 |
+Insert Cache (O3)                        | true    |      ? |    1802,1808,1810 |             2.7857 |
+Insert Cache (Oz)                        | true    |      ? |    1852,1854,1906 |            20.9418 |
+Insert Cache (Os)                        | true    |      ? |    2099,2115,2129 |            11.4822 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1752
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1896,1899,1902 |             2.1354 |
+Insert Cache (O3)                        | true    |      ? |    1839,1844,1891 |            22.7807 |
+Insert Cache (O1)                        | true    |      ? |    1790,1796,1801 |             3.8471 |
+Insert Cache (Os)                        | true    |      ? |    2153,2156,2157 |             1.4967 |
+Insert Cache (O2)                        | true    |      ? |    1985,1986,2036 |            19.8454 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1943,1960,2008 |            22.7649 |
+Insert Cache (O2)                        | true    |      ? |    2041,2044,2052 |             4.2426 |
+Insert Cache (O3)                        | true    |      ? |    1874,1930,1944 |            29.4320 |
+Insert Cache (Os)                        | true    |      ? |    2209,2214,2232 |             8.2801 |
+Insert Cache (O1)                        | true    |      ? |    1841,1844,1850 |             3.4641 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1799
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    1996,1998,2077 |            31.7150 |
+Insert Cache (Os)                        | true    |      ? |    2267,2274,2278 |             3.8678 |
+Insert Cache (O1)                        | true    |      ? |    1878,1890,1902 |             8.6116 |
+Insert Cache (O3)                        | true    |      ? |    1905,1905,1920 |             6.8877 |
+Insert Cache (O2)                        | true    |      ? |    2090,2096,2122 |            11.3137 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1872
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    1927,1933,1936 |             3.3106 |
+Insert Cache (Os)                        | true    |      ? |    2331,2337,2414 |            31.2576 |
+Insert Cache (O2)                        | true    |      ? |    2144,2151,2192 |            18.0732 |
+Insert Cache (O3)                        | true    |      ? |    1930,1936,2014 |            31.3177 |
+Insert Cache (Oz)                        | true    |      ? |    2040,2047,2052 |             3.8262 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1841
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2194,2196,2199 |             1.6248 |
+Insert Cache (Os)                        | true    |      ? |    2385,2388,2409 |            10.0519 |
+Insert Cache (O1)                        | true    |      ? |    1973,1978,1982 |             3.1241 |
+Insert Cache (Oz)                        | true    |      ? |    2087,2091,2095 |             2.6533 |
+Insert Cache (O3)                        | true    |      ? |    1963,1968,1972 |             3.4871 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1925
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    2140,2142,2147 |             2.6533 |
+Insert Cache (O3)                        | true    |      ? |    1998,2001,2169 |            67.2565 |
+Insert Cache (Os)                        | true    |      ? |    2440,2448,2455 |             4.9234 |
+Insert Cache (O1)                        | true    |      ? |    2029,2030,2038 |             3.3823 |
+Insert Cache (O2)                        | true    |      ? |    2252,2254,2310 |            22.2495 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1903
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    2193,2200,2209 |             5.7480 |
+Insert Cache (O2)                        | true    |      ? |    2301,2302,2308 |             3.0594 |
+Insert Cache (Os)                        | true    |      ? |    2503,2503,2534 |            12.1557 |
+Insert Cache (O1)                        | true    |      ? |    2066,2069,2133 |            25.8658 |
+Insert Cache (O3)                        | true    |      ? |    2034,2037,2038 |             1.3565 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1985
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    2243,2244,2251 |             3.0332 |
+Insert Cache (O2)                        | true    |      ? |    2355,2359,2360 |             2.3152 |
+Insert Cache (Os)                        | true    |      ? |    2562,2566,2595 |            12.1885 |
+Insert Cache (O1)                        | true    |      ? |    2115,2121,2126 |             3.5440 |
+Insert Cache (O3)                        | true    |      ? |    2070,2075,2097 |             9.5205 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1950
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2415,2421,2423 |             2.8284 |
+Insert Cache (Os)                        | true    |      ? |    2620,2627,2631 |             4.2237 |
+Insert Cache (O3)                        | true    |      ? |    2105,2110,2362 |           101.2454 |
+Insert Cache (O1)                        | true    |      ? |    2163,2167,2174 |             4.0299 |
+Insert Cache (Oz)                        | true    |      ? |    2290,2290,2371 |            32.0375 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2035
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    2215,2221,2326 |            42.8934 |
+Insert Cache (Oz)                        | true    |      ? |    2348,2349,2360 |             4.6648 |
+Insert Cache (O3)                        | true    |      ? |    2141,2146,2153 |             3.9294 |
+Insert Cache (Os)                        | true    |      ? |    2680,2687,2692 |             4.5782 |
+Insert Cache (O2)                        | true    |      ? |    2470,2474,2474 |             1.5492 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2000
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2524,2534,2586 |            22.4410 |
+Insert Cache (Os)                        | true    |      ? |    2745,2755,2761 |             5.4918 |
+Insert Cache (Oz)                        | true    |      ? |    2396,2401,2488 |            36.2469 |
+Insert Cache (O1)                        | true    |      ? |    2267,2272,2275 |             3.2000 |
+Insert Cache (O3)                        | true    |      ? |    2169,2177,2286 |            43.9336 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2073
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    2803,2807,2810 |             2.7276 |
+Insert Cache (O3)                        | true    |      ? |    2197,2201,2304 |            41.4082 |
+Insert Cache (Oz)                        | true    |      ? |    2450,2454,2460 |             4.2895 |
+Insert Cache (O2)                        | true    |      ? |    2577,2581,2587 |             3.5777 |
+Insert Cache (O1)                        | true    |      ? |    2314,2322,2325 |             4.0694 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2063
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    2871,2879,2899 |            12.3677 |
+Insert Cache (O2)                        | true    |      ? |    2640,2650,2655 |             5.1923 |
+Insert Cache (O1)                        | true    |      ? |    2367,2373,2476 |            41.9075 |
+Insert Cache (Oz)                        | true    |      ? |    2506,2510,2557 |            19.2562 |
+Insert Cache (O3)                        | true    |      ? |    2233,2235,2240 |             2.6533 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    2701,2707,2735 |            12.2049 |
+Insert Cache (Oz)                        | true    |      ? |    2563,2564,2570 |             2.5768 |
+Insert Cache (Os)                        | true    |      ? |    2937,2939,2947 |             4.4000 |
+Insert Cache (O3)                        | true    |      ? |    2268,2273,2276 |             2.7857 |
+Insert Cache (O1)                        | true    |      ? |    2417,2424,2474 |            20.9323 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2119
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    2312,2320,2419 |            40.9077 |
+Insert Cache (Oz)                        | true    |      ? |    2621,2630,2673 |            22.5885 |
+Insert Cache (Os)                        | true    |      ? |    3013,3017,3041 |            11.8929 |
+Insert Cache (O1)                        | true    |      ? |    2464,2471,2478 |             4.9558 |
+Insert Cache (O2)                        | true    |      ? |    2762,2767,2802 |            14.9746 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2195
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Os)                        | true    |      ? |    3071,3074,3096 |             9.1345 |
+Insert Cache (O2)                        | true    |      ? |    2824,2840,2878 |            19.8151 |
+Insert Cache (Oz)                        | true    |      ? |    2675,2681,2739 |            23.7150 |
+Insert Cache (O3)                        | true    |      ? |    2347,2354,2413 |            24.4835 |
+Insert Cache (O1)                        | true    |      ? |    2525,2532,2534 |             3.9699 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2173
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    2387,2390,2394 |             2.5768 |
+Insert Cache (Os)                        | true    |      ? |    3139,3143,3157 |             6.6212 |
+Insert Cache (O1)                        | true    |      ? |    2586,2591,2597 |             3.6332 |
+Insert Cache (O2)                        | true    |      ? |    2890,2891,2932 |            16.4122 |
+Insert Cache (Oz)                        | true    |      ? |    2737,2742,2751 |             5.0040 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    2422,2425,2446 |             8.6487 |
+Insert Cache (O1)                        | true    |      ? |    2632,2641,2644 |             4.4900 |
+Insert Cache (Os)                        | true    |      ? |    3209,3211,3230 |             7.9398 |
+Insert Cache (O2)                        | true    |      ? |    2953,2956,2958 |             1.6248 |
+Insert Cache (Oz)                        | true    |      ? |    2800,2803,2832 |            11.7541 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    2862,2865,2868 |             2.0591 |
+Insert Cache (O3)                        | true    |      ? |    2463,2464,2694 |            91.4448 |
+Insert Cache (O2)                        | true    |      ? |    3017,3022,3029 |             4.2237 |
+Insert Cache (Os)                        | true    |      ? |    3282,3287,3305 |             8.2801 |
+Insert Cache (O1)                        | true    |      ? |    2689,2699,2701 |             4.8332 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    3075,3083,3110 |            12.0233 |
+Insert Cache (Os)                        | true    |      ? |    3346,3350,3351 |             1.9391 |
+Insert Cache (O1)                        | true    |      ? |    2746,2762,2766 |             6.8819 |
+Insert Cache (Oz)                        | true    |      ? |    2917,2926,2937 |             6.6633 |
+Insert Cache (O3)                        | true    |      ? |    2483,2488,2499 |             5.4185 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    2518,2525,2537 |             6.3750 |
+Insert Cache (Oz)                        | true    |      ? |    2977,3041,3054 |            34.3826 |
+Insert Cache (O1)                        | true    |      ? |    2809,2814,2924 |            43.6605 |
+Insert Cache (O2)                        | true    |      ? |    3153,3157,3160 |             2.5612 |
+Insert Cache (Os)                        | true    |      ? |    3417,3423,3428 |             4.3081 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2349
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    2863,2871,2877 |             5.2915 |
+Insert Cache (Oz)                        | true    |      ? |    3034,3040,3108 |            27.9027 |
+Insert Cache (O2)                        | true    |      ? |    3214,3216,3219 |             1.7436 |
+Insert Cache (O3)                        | true    |      ? |    2563,2570,2574 |             3.9294 |
+Insert Cache (Os)                        | true    |      ? |    3487,3501,3514 |             9.6208 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2314
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O3)                        | true    |      ? |    2609,2617,2859 |            97.9518 |
+Insert Cache (O2)                        | true    |      ? |    3282,3289,3291 |             4.1473 |
+Insert Cache (Os)                        | true    |      ? |    3562,3565,3570 |             2.6533 |
+Insert Cache (Oz)                        | true    |      ? |    3111,3112,3118 |             2.7276 |
+Insert Cache (O1)                        | true    |      ? |    2922,2931,2936 |             5.2154 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2405
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    2970,2985,2993 |             8.4522 |
+Insert Cache (Os)                        | true    |      ? |    3628,3639,3642 |             4.7749 |
+Insert Cache (O3)                        | true    |      ? |    2645,2648,2997 |           139.8236 |
+Insert Cache (Oz)                        | true    |      ? |    3161,3166,3215 |            20.0659 |
+Insert Cache (O2)                        | true    |      ? |    3342,3344,3374 |            12.0233 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2373
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    3235,3242,3247 |             4.4452 |
+Insert Cache (O1)                        | true    |      ? |    3018,3023,3024 |             2.0976 |
+Insert Cache (Os)                        | true    |      ? |    3701,3704,3710 |             2.9665 |
+Insert Cache (O2)                        | true    |      ? |    3410,3412,3466 |            25.4998 |
+Insert Cache (O3)                        | true    |      ? |    2683,2689,2797 |            43.8616 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2450
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    3083,3092,3168 |            32.1086 |
+Insert Cache (O2)                        | true    |      ? |    3479,3489,3490 |             4.0200 |
+Insert Cache (Os)                        | true    |      ? |    3785,3786,3791 |             2.6382 |
+Insert Cache (O3)                        | true    |      ? |    2718,2725,2733 |             5.3814 |
+Insert Cache (Oz)                        | true    |      ? |    3294,3299,3303 |             3.6111 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    3553,3553,3572 |             7.3648 |
+Insert Cache (O1)                        | true    |      ? |    3154,3159,3165 |             3.6332 |
+Insert Cache (O3)                        | true    |      ? |    2758,2763,2767 |             2.8566 |
+Insert Cache (Os)                        | true    |      ? |    3860,3872,3884 |             9.0333 |
+Insert Cache (Oz)                        | true    |      ? |    3352,3357,3362 |             3.7202 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2498
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    3417,3423,3459 |            15.0413 |
+Insert Cache (O2)                        | true    |      ? |    3617,3619,3656 |            15.2263 |
+Insert Cache (O3)                        | true    |      ? |    2780,2784,2913 |            51.2523 |
+Insert Cache (Os)                        | true    |      ? |    3927,3938,3956 |             9.9479 |
+Insert Cache (O1)                        | true    |      ? |    3203,3208,3331 |            48.5757 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2483
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    3481,3488,3564 |            31.8346 |
+Insert Cache (Os)                        | true    |      ? |    4006,4011,4015 |             3.4293 |
+Insert Cache (O1)                        | true    |      ? |    3271,3276,3371 |            37.8661 |
+Insert Cache (O2)                        | true    |      ? |    3667,3704,3790 |            48.6728 |
+Insert Cache (O3)                        | true    |      ? |    2802,2804,2822 |             7.4673 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2539
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O1)                        | true    |      ? |    3302,3306,3308 |             1.9596 |
+Insert Cache (Oz)                        | true    |      ? |    3517,3521,3532 |             5.1147 |
+Insert Cache (O3)                        | true    |      ? |    2841,2843,3169 |           130.8031 |
+Insert Cache (Os)                        | true    |      ? |    4054,4057,4067 |             4.6476 |
+Insert Cache (O2)                        | true    |      ? |    3726,3730,3738 |             4.0792 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2504
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (O2)                        | true    |      ? |    3793,3810,3847 |            23.2843 |
+Insert Cache (O3)                        | true    |      ? |    2878,2880,2888 |             3.5777 |
+Insert Cache (O1)                        | true    |      ? |    3356,3363,3369 |             4.5343 |
+Insert Cache (Oz)                        | true    |      ? |    3579,3581,3583 |             1.4142 |
+Insert Cache (Os)                        | true    |      ? |    4124,4126,4129 |             1.6733 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2591
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache (Oz)                        | true    |      ? |    3639,3644,3649 |             3.2619 |
+Insert Cache (O3)                        | true    |      ? |    2913,2915,2937 |             8.9443 |
+Insert Cache (O1)                        | true    |      ? |    3416,3420,3424 |             2.8284 |
+Insert Cache (O2)                        | true    |      ? |    3864,3867,3868 |             1.4967 |
+Insert Cache (Os)                        | true    |      ? |    4202,4203,4207 |             1.7205 |
