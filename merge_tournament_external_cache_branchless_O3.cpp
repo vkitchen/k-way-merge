@@ -32,6 +32,7 @@ static void initialise(int **a, int n, uint16_t *tree) {
 	tree[0] = winners[1];
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void replay_games(int *cache, int n, uint16_t *tree, int pos) {
 	int p = parent(pos + n);
 	while (p != 0) {
