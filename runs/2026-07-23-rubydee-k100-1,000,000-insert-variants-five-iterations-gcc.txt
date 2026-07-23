@@ -1,0 +1,794 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 3
+TEST_TYPE random
+SEED 1784784747
+MEMORY 0.745058 GiB
+
+Init: 2477
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |          21,21,21 |             0.0000 |
+Insert                                   | true    |      ? |          18,18,19 |             0.4000 |
+Insert Cache Pair                        | true    |      ? |          19,19,19 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |          28,28,28 |             0.0000 |
+Insert Cache                             | true    |      ? |          31,31,31 |             0.0000 |
+Insert Cache Pair                        | true    |      ? |          29,29,29 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 118
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |          43,43,44 |             0.4000 |
+Insert Cache Pair                        | true    |      ? |          40,40,44 |             1.6000 |
+Insert                                   | true    |      ? |          38,38,38 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 155
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |          52,52,53 |             0.4000 |
+Insert                                   | true    |      ? |          48,49,49 |             0.4000 |
+Insert Cache                             | true    |      ? |          56,56,57 |             0.4899 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 167
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |          65,65,65 |             0.0000 |
+Insert                                   | true    |      ? |          61,61,61 |             0.0000 |
+Insert Cache                             | true    |      ? |          70,70,72 |             0.8000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 204
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |          73,74,74 |             0.4000 |
+Insert Cache                             | true    |      ? |          84,85,86 |             0.7483 |
+Insert Cache Pair                        | true    |      ? |          78,79,79 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       100,100,102 |             0.8000 |
+Insert Cache Pair                        | true    |      ? |          93,94,94 |             0.4899 |
+Insert                                   | true    |      ? |          87,87,87 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       116,116,117 |             0.4000 |
+Insert Cache Pair                        | true    |      ? |       108,108,108 |             0.0000 |
+Insert                                   | true    |      ? |       101,101,102 |             0.4899 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 265
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       116,116,117 |             0.4899 |
+Insert Cache Pair                        | true    |      ? |       123,124,126 |             1.0954 |
+Insert Cache                             | true    |      ? |       133,133,133 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 309
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       131,131,134 |             1.1662 |
+Insert Cache Pair                        | true    |      ? |       138,138,140 |             0.8000 |
+Insert Cache                             | true    |      ? |       150,150,151 |             0.4000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 314
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       149,149,150 |             0.4000 |
+Insert Cache Pair                        | true    |      ? |       157,158,158 |             0.4000 |
+Insert Cache                             | true    |      ? |       168,168,169 |             0.4899 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 357
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       186,187,187 |             0.4000 |
+Insert                                   | true    |      ? |       165,165,165 |             0.0000 |
+Insert Cache Pair                        | true    |      ? |       173,174,178 |             1.7436 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 365
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       206,206,212 |             2.4000 |
+Insert                                   | true    |      ? |       182,182,185 |             1.1662 |
+Insert Cache Pair                        | true    |      ? |       191,192,192 |             0.4899 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 408
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       199,200,209 |             3.7736 |
+Insert Cache                             | true    |      ? |       225,226,227 |             0.6325 |
+Insert Cache Pair                        | true    |      ? |       209,210,210 |             0.4899 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 414
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       249,281,287 |            16.4682 |
+Insert                                   | true    |      ? |       216,216,218 |             0.8000 |
+Insert Cache Pair                        | true    |      ? |       228,229,229 |             0.4899 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 457
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       276,278,306 |            13.9800 |
+Insert                                   | true    |      ? |       233,234,234 |             0.4899 |
+Insert Cache Pair                        | true    |      ? |       246,246,247 |             0.4899 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 464
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       264,265,269 |             1.7436 |
+Insert                                   | true    |      ? |       250,250,251 |             0.4000 |
+Insert Cache                             | true    |      ? |       302,303,331 |            13.4104 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 519
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       285,286,287 |             0.7483 |
+Insert                                   | true    |      ? |       269,269,269 |             0.0000 |
+Insert Cache                             | true    |      ? |       328,330,350 |             9.8387 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 517
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       306,306,308 |             0.8000 |
+Insert                                   | true    |      ? |       288,288,292 |             1.5492 |
+Insert Cache                             | true    |      ? |       356,356,358 |             0.8000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 568
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       328,328,331 |             1.1662 |
+Insert Cache                             | true    |      ? |       382,383,390 |             3.0332 |
+Insert                                   | true    |      ? |       307,307,308 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 562
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       327,328,328 |             0.4000 |
+Insert Cache Pair                        | true    |      ? |       350,351,352 |             0.6325 |
+Insert Cache                             | true    |      ? |       409,410,415 |             2.2450 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 614
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       429,430,434 |             1.8547 |
+Insert                                   | true    |      ? |       348,348,356 |             3.2000 |
+Insert Cache Pair                        | true    |      ? |       373,374,375 |             0.6325 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 613
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       456,457,491 |            15.8947 |
+Insert Cache Pair                        | true    |      ? |       399,399,400 |             0.4899 |
+Insert                                   | true    |      ? |       369,370,371 |             0.6325 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 664
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       486,514,522 |            14.8378 |
+Insert Cache Pair                        | true    |      ? |       423,424,424 |             0.4899 |
+Insert                                   | true    |      ? |       391,391,396 |             1.9391 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 663
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       448,448,449 |             0.4000 |
+Insert                                   | true    |      ? |       413,414,418 |             1.7205 |
+Insert Cache                             | true    |      ? |       517,518,567 |            19.5243 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 711
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       437,437,439 |             0.8000 |
+Insert Cache                             | true    |      ? |       547,548,560 |             5.7619 |
+Insert Cache Pair                        | true    |      ? |       474,475,480 |             2.0976 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 714
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       460,460,461 |             0.4899 |
+Insert Cache Pair                        | true    |      ? |       502,503,506 |             1.4697 |
+Insert Cache                             | true    |      ? |       578,578,581 |             1.1662 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 764
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       483,483,485 |             0.8000 |
+Insert Cache Pair                        | true    |      ? |       530,531,533 |             1.0198 |
+Insert Cache                             | true    |      ? |       606,607,641 |            13.6147 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 765
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       563,563,565 |             0.9798 |
+Insert Cache                             | true    |      ? |       635,636,638 |             1.0954 |
+Insert                                   | true    |      ? |       516,518,525 |             3.3106 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 817
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       655,656,700 |            17.4974 |
+Insert                                   | true    |      ? |       543,544,547 |             1.4967 |
+Insert Cache Pair                        | true    |      ? |       593,594,595 |             0.6325 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 816
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       686,686,688 |             0.9798 |
+Insert Cache Pair                        | true    |      ? |       622,622,623 |             0.4000 |
+Insert                                   | true    |      ? |       571,572,573 |             0.7483 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 870
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       720,726,905 |            73.2830 |
+Insert Cache Pair                        | true    |      ? |       652,653,653 |             0.4000 |
+Insert                                   | true    |      ? |       596,596,599 |             1.1662 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 868
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       684,685,691 |             2.6077 |
+Insert                                   | true    |      ? |       620,621,624 |             1.3565 |
+Insert Cache                             | true    |      ? |       750,752,756 |             2.2271 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 926
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       646,647,648 |             0.8944 |
+Insert Cache Pair                        | true    |      ? |       716,716,721 |             2.0000 |
+Insert Cache                             | true    |      ? |       782,784,794 |             4.2708 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 916
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       672,673,677 |             1.7889 |
+Insert Cache Pair                        | true    |      ? |       747,750,752 |             1.8974 |
+Insert Cache                             | true    |      ? |       815,815,816 |             0.4899 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 973
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |       782,783,787 |             1.7205 |
+Insert Cache                             | true    |      ? |       844,847,849 |             1.8547 |
+Insert                                   | true    |      ? |       700,701,707 |             2.6382 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 977
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |       872,873,874 |             0.7483 |
+Insert                                   | true    |      ? |       728,729,732 |             1.4697 |
+Insert Cache Pair                        | true    |      ? |       815,818,829 |             5.3442 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1055
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       754,756,763 |             3.0594 |
+Insert Cache                             | true    |      ? |       896,899,902 |             2.0591 |
+Insert Cache Pair                        | true    |      ? |       852,853,854 |             0.6325 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1025
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |      927,928,1069 |            56.3084 |
+Insert Cache Pair                        | true    |      ? |       888,889,891 |             1.1662 |
+Insert                                   | true    |      ? |       785,787,791 |             2.1541 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1083
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       814,815,816 |             0.7483 |
+Insert Cache                             | true    |      ? |       960,961,967 |             2.6382 |
+Insert Cache Pair                        | true    |      ? |       922,927,934 |             4.5782 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1071
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       843,845,846 |             0.9798 |
+Insert Cache Pair                        | true    |      ? |       961,962,964 |             1.0954 |
+Insert Cache                             | true    |      ? |      994,995,1035 |            16.0125 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1141
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    1025,1027,1031 |             2.0396 |
+Insert                                   | true    |      ? |       877,878,882 |             1.8547 |
+Insert Cache Pair                        | true    |      ? |    1000,1000,1005 |             2.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1123
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       906,908,908 |             0.9798 |
+Insert Cache Pair                        | true    |      ? |    1037,1037,1040 |             1.1662 |
+Insert Cache                             | true    |      ? |    1058,1060,1121 |            24.4573 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1188
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    1088,1091,1092 |             1.4697 |
+Insert Cache Pair                        | true    |      ? |    1077,1078,1090 |             4.8000 |
+Insert                                   | true    |      ? |       940,942,946 |             2.1541 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1178
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |       972,973,976 |             1.3565 |
+Insert Cache                             | true    |      ? |    1119,1121,1189 |            27.4182 |
+Insert Cache Pair                        | true    |      ? |    1119,1122,1123 |             1.4697 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1235
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    1142,1144,1145 |             1.0954 |
+Insert Cache Pair                        | true    |      ? |    1160,1161,1162 |             0.7483 |
+Insert                                   | true    |      ? |    1003,1004,1006 |             1.1662 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1225
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1039,1039,1040 |             0.4899 |
+Insert Cache Pair                        | true    |      ? |    1202,1204,1205 |             1.0198 |
+Insert Cache                             | true    |      ? |    1175,1177,1182 |             2.5768 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1292
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1073,1075,1080 |             2.6077 |
+Insert Cache                             | true    |      ? |    1210,1212,1363 |            59.1486 |
+Insert Cache Pair                        | true    |      ? |    1244,1249,1252 |             3.0332 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1277
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1109,1110,1112 |             1.0198 |
+Insert Cache Pair                        | true    |      ? |    1286,1289,1296 |             3.3705 |
+Insert Cache                             | true    |      ? |    1246,1249,1330 |            32.9387 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1349
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1142,1145,1148 |             2.2804 |
+Insert Cache                             | true    |      ? |    1279,1283,1286 |             2.4166 |
+Insert Cache Pair                        | true    |      ? |    1333,1334,1343 |             3.9799 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1332
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1381,1383,1385 |             1.3266 |
+Insert Cache                             | true    |      ? |    1313,1315,1316 |             1.0198 |
+Insert                                   | true    |      ? |    1183,1186,1189 |             2.3324 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1396
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1217,1219,1223 |             2.3324 |
+Insert Cache Pair                        | true    |      ? |    1426,1428,1431 |             1.6248 |
+Insert Cache                             | true    |      ? |    1341,1350,1520 |            69.4395 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1388
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    1372,1377,1381 |             2.8983 |
+Insert                                   | true    |      ? |    1253,1261,1273 |             7.2000 |
+Insert Cache Pair                        | true    |      ? |    1469,1470,1490 |             8.0747 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1450
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1523,1525,1530 |             2.6077 |
+Insert Cache                             | true    |      ? |    1398,1400,1402 |             1.6000 |
+Insert                                   | true    |      ? |    1292,1296,1305 |             4.2708 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1431
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1563,1564,1572 |             3.8678 |
+Insert Cache                             | true    |      ? |    1432,1435,1647 |            85.0153 |
+Insert                                   | true    |      ? |    1330,1335,1339 |             3.0594 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1512
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1616,1617,1619 |             0.9798 |
+Insert                                   | true    |      ? |    1368,1370,1372 |             1.4142 |
+Insert Cache                             | true    |      ? |    1466,1471,1690 |            88.4294 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1489
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1663,1670,1678 |             5.1769 |
+Insert                                   | true    |      ? |    1408,1410,1417 |             3.7417 |
+Insert Cache                             | true    |      ? |    1499,1502,1530 |            11.5758 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1542
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1446,1448,1458 |             4.4000 |
+Insert Cache                             | true    |      ? |    1536,1536,1568 |            12.3935 |
+Insert Cache Pair                        | true    |      ? |    1711,1712,1713 |             0.7483 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1531
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1486,1488,1490 |             1.6000 |
+Insert Cache Pair                        | true    |      ? |    1761,1766,1772 |             3.6000 |
+Insert Cache                             | true    |      ? |    1570,1581,1803 |           110.6139 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1604
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1529,1530,1531 |             0.8944 |
+Insert Cache                             | true    |      ? |    1605,1607,1838 |           113.2509 |
+Insert Cache Pair                        | true    |      ? |    1818,1821,1822 |             1.6248 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1593
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1865,1868,1871 |             2.0000 |
+Insert Cache                             | true    |      ? |    1633,1638,1639 |             2.4000 |
+Insert                                   | true    |      ? |    1567,1569,1576 |             3.0594 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1678
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1915,1918,1924 |             3.3106 |
+Insert Cache                             | true    |      ? |    1655,1657,1659 |             1.6000 |
+Insert                                   | true    |      ? |    1607,1611,1613 |             2.0396 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1643
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    1969,1971,1974 |             2.0591 |
+Insert                                   | true    |      ? |    1647,1652,1656 |             4.0299 |
+Insert Cache                             | true    |      ? |    1690,1694,1700 |             3.3466 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1709
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2029,2035,2038 |             3.0067 |
+Insert Cache                             | true    |      ? |    1727,1733,1735 |             2.7129 |
+Insert                                   | true    |      ? |    1698,1700,1708 |             3.6878 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1687
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2081,2085,2085 |             1.5492 |
+Insert Cache                             | true    |      ? |    1765,1766,1766 |             0.4000 |
+Insert                                   | true    |      ? |    1735,1738,1752 |             6.4187 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1782
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    1800,1804,2060 |           119.8693 |
+Insert                                   | true    |      ? |    1777,1781,1784 |             2.3152 |
+Insert Cache Pair                        | true    |      ? |    2136,2139,2143 |             2.4495 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1745
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2191,2196,2205 |             4.6733 |
+Insert Cache                             | true    |      ? |    1833,1837,1844 |             4.5343 |
+Insert                                   | true    |      ? |    1823,1826,1831 |             2.6533 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1822
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2248,2250,2255 |             2.6077 |
+Insert                                   | true    |      ? |    1864,1866,1875 |             3.8471 |
+Insert Cache                             | true    |      ? |    1865,1873,1935 |            26.2069 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1800
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1911,1913,1916 |             1.6248 |
+Insert Cache Pair                        | true    |      ? |    2306,2309,2311 |             1.8974 |
+Insert Cache                             | true    |      ? |    1897,1904,1921 |             8.6394 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1882
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1955,1957,1959 |             1.6000 |
+Insert Cache                             | true    |      ? |    1920,1925,1985 |            27.6507 |
+Insert Cache Pair                        | true    |      ? |    2363,2366,2370 |             2.4000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1843
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    1996,2000,2003 |             2.4000 |
+Insert Cache                             | true    |      ? |    1956,1958,2030 |            28.4084 |
+Insert Cache Pair                        | true    |      ? |    2421,2428,2432 |             3.9294 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1917
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2042,2051,2060 |             6.0332 |
+Insert Cache Pair                        | true    |      ? |    2477,2484,2486 |             3.1369 |
+Insert Cache                             | true    |      ? |    1992,1993,2059 |            26.4227 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1899
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2089,2096,2097 |             3.0725 |
+Insert Cache                             | true    |      ? |    2027,2029,2121 |            36.8217 |
+Insert Cache Pair                        | true    |      ? |    2538,2542,2545 |             2.3152 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1981
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2141,2143,2147 |             2.1541 |
+Insert Cache Pair                        | true    |      ? |    2599,2608,2610 |             3.9294 |
+Insert Cache                             | true    |      ? |    2065,2069,2311 |            95.6778 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1953
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2661,2664,2664 |             1.2649 |
+Insert Cache                             | true    |      ? |    2100,2105,2294 |            76.0174 |
+Insert                                   | true    |      ? |    2191,2193,2199 |             2.6833 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2036
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    2720,2725,2732 |             4.0694 |
+Insert Cache                             | true    |      ? |    2132,2137,2142 |             3.5440 |
+Insert                                   | true    |      ? |    2239,2240,2247 |             2.9257 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2000
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2279,2283,2285 |             2.3324 |
+Insert Cache                             | true    |      ? |    2165,2173,2191 |             9.0333 |
+Insert Cache Pair                        | true    |      ? |    2784,2790,2796 |             4.5607 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2094
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2335,2343,2350 |             4.7749 |
+Insert Cache Pair                        | true    |      ? |    2851,2857,2860 |             3.3823 |
+Insert Cache                             | true    |      ? |    2196,2205,2505 |           121.7745 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2065
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    2228,2230,2234 |             2.0591 |
+Insert Cache Pair                        | true    |      ? |    2913,2918,2931 |             5.9800 |
+Insert                                   | true    |      ? |    2392,2395,2397 |             1.7205 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2152
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    2265,2286,2579 |           117.9006 |
+Insert Cache Pair                        | true    |      ? |    2978,2979,2985 |             2.4980 |
+Insert                                   | true    |      ? |    2440,2443,2456 |             5.9532 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2133
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2489,2494,2495 |             2.0976 |
+Insert Cache                             | true    |      ? |    2300,2305,2379 |            30.2695 |
+Insert Cache Pair                        | true    |      ? |    3042,3044,3053 |             3.8262 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2203
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2538,2539,2552 |             5.2383 |
+Insert Cache                             | true    |      ? |    2338,2342,2405 |            25.9492 |
+Insert Cache Pair                        | true    |      ? |    3113,3115,3120 |             2.7857 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2590,2595,2602 |             4.2237 |
+Insert Cache Pair                        | true    |      ? |    3179,3183,3193 |             5.3814 |
+Insert Cache                             | true    |      ? |    2380,2386,2389 |             3.3106 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2248
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3248,3251,3262 |             4.8826 |
+Insert                                   | true    |      ? |    2645,2649,2669 |             8.8000 |
+Insert Cache                             | true    |      ? |    2419,2421,2484 |            25.2301 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2220
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2700,2704,2713 |             4.7582 |
+Insert Cache Pair                        | true    |      ? |    3321,3323,3338 |             6.7052 |
+Insert Cache                             | true    |      ? |    2453,2455,2476 |             8.7316 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2305
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    2480,2483,2545 |            24.5683 |
+Insert                                   | true    |      ? |    2751,2754,2757 |             1.9391 |
+Insert Cache Pair                        | true    |      ? |    3387,3391,3416 |            10.5376 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2269
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    2803,2808,2820 |             6.5909 |
+Insert Cache                             | true    |      ? |    2518,2520,2525 |             2.7857 |
+Insert Cache Pair                        | true    |      ? |    3467,3470,3473 |             2.2804 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2386
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3539,3543,3546 |             2.2804 |
+Insert Cache                             | true    |      ? |    2561,2564,2911 |           139.1049 |
+Insert                                   | true    |      ? |    2846,2852,2863 |             5.7758 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2334
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3608,3617,3627 |             6.7112 |
+Insert Cache                             | true    |      ? |    2603,2609,2611 |             2.7857 |
+Insert                                   | true    |      ? |    2884,2893,2896 |             4.7159 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2392
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3673,3677,3693 |             7.0880 |
+Insert Cache                             | true    |      ? |    2643,2665,2788 |            62.4865 |
+Insert                                   | true    |      ? |    2940,2943,2955 |             5.3141 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2370
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3746,3749,3752 |             2.3324 |
+Insert Cache                             | true    |      ? |    2678,2697,3031 |           136.9593 |
+Insert                                   | true    |      ? |    3002,3005,3007 |             1.9391 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2459
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    2715,2716,2724 |             3.8262 |
+Insert                                   | true    |      ? |    3065,3071,3082 |             5.7758 |
+Insert Cache Pair                        | true    |      ? |    3823,3837,3845 |             7.2111 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2419
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    3899,3907,3923 |             8.7544 |
+Insert Cache                             | true    |      ? |    2750,2758,2766 |             5.4406 |
+Insert                                   | true    |      ? |    3125,3134,3149 |             8.5088 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2498
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    3179,3184,3189 |             3.3106 |
+Insert Cache Pair                        | true    |      ? |    3984,3988,3991 |             2.4166 |
+Insert Cache                             | true    |      ? |    2778,2783,2790 |             4.4091 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2470
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert                                   | true    |      ? |    3241,3242,3264 |             8.6626 |
+Insert Cache Pair                        | true    |      ? |    4052,4059,4066 |             5.0990 |
+Insert Cache                             | true    |      ? |    2822,2828,2833 |             3.9799 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2574
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache                             | true    |      ? |    2862,2865,3084 |            87.3650 |
+Insert                                   | true    |      ? |    3303,3310,3323 |             6.7231 |
+Insert Cache Pair                        | true    |      ? |    4131,4141,4145 |             5.4259 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2537
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    4209,4213,4216 |             2.7276 |
+Insert                                   | true    |      ? |    3364,3366,3371 |             2.4819 |
+Insert Cache                             | true    |      ? |    2901,2908,2961 |            22.1721 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2652
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair                        | true    |      ? |    4287,4290,4298 |             3.7630 |
+Insert Cache                             | true    |      ? |    2937,2944,3040 |            39.8075 |
+Insert                                   | true    |      ? |    3430,3436,3439 |             3.6551 |
