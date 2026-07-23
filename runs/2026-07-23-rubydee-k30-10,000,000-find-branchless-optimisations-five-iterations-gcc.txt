@@ -1,0 +1,290 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 30
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784782896
+MEMORY 2.23517 GiB
+
+Init: 7973
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 790
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Oz)               | true    |      ? |       139,139,139 |             0.0000 |
+Find Branchless Cache (O1)               | true    |      ? |       157,158,158 |             0.4000 |
+Find Branchless Cache (O3)               | true    |      ? |       143,143,144 |             0.4000 |
+Find Branchless Cache (O2)               | true    |      ? |       138,138,139 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       139,139,139 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1196
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |       190,190,191 |             0.4000 |
+Find Branchless Cache (O3)               | true    |      ? |       203,204,204 |             0.4899 |
+Find Branchless Cache (Oz)               | true    |      ? |       195,196,196 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       195,196,197 |             0.6325 |
+Find Branchless Cache (O1)               | true    |      ? |       219,219,220 |             0.4000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1271
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O3)               | true    |      ? |       269,269,270 |             0.4000 |
+Find Branchless Cache (Oz)               | true    |      ? |       258,259,259 |             0.4899 |
+Find Branchless Cache (O1)               | true    |      ? |       297,298,299 |             0.7483 |
+Find Branchless Cache (Os)               | true    |      ? |       258,258,261 |             1.1662 |
+Find Branchless Cache (O2)               | true    |      ? |       254,255,256 |             0.6325 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1687
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       349,349,351 |             0.8000 |
+Find Branchless Cache (O1)               | true    |      ? |       386,387,390 |             1.3565 |
+Find Branchless Cache (O2)               | true    |      ? |       329,329,330 |             0.4899 |
+Find Branchless Cache (Oz)               | true    |      ? |       349,349,351 |             0.8000 |
+Find Branchless Cache (O3)               | true    |      ? |       347,348,351 |             1.4697 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 1798
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       422,423,425 |             1.0954 |
+Find Branchless Cache (Oz)               | true    |      ? |       422,425,430 |             2.6533 |
+Find Branchless Cache (O2)               | true    |      ? |       421,421,424 |             1.1662 |
+Find Branchless Cache (O3)               | true    |      ? |       439,439,444 |             1.9391 |
+Find Branchless Cache (O1)               | true    |      ? |       509,512,515 |             2.0591 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O3)               | true    |      ? |       544,545,550 |             2.1354 |
+Find Branchless Cache (O2)               | true    |      ? |       512,513,517 |             1.8547 |
+Find Branchless Cache (Os)               | true    |      ? |       524,526,528 |             1.3266 |
+Find Branchless Cache (Oz)               | true    |      ? |       524,526,528 |             1.4142 |
+Find Branchless Cache (O1)               | true    |      ? |       609,610,612 |             1.1662 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2321
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       619,620,623 |             1.3565 |
+Find Branchless Cache (O3)               | true    |      ? |       662,662,663 |             0.4899 |
+Find Branchless Cache (O1)               | true    |      ? |       720,721,726 |             2.4000 |
+Find Branchless Cache (Oz)               | true    |      ? |       619,621,621 |             0.8000 |
+Find Branchless Cache (O2)               | true    |      ? |       612,612,616 |             1.6000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2732
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |       737,738,739 |             0.8944 |
+Find Branchless Cache (O2)               | true    |      ? |       745,748,749 |             1.3565 |
+Find Branchless Cache (O1)               | true    |      ? |       836,837,842 |             2.0976 |
+Find Branchless Cache (O3)               | true    |      ? |       780,781,813 |            12.9058 |
+Find Branchless Cache (Oz)               | true    |      ? |       738,740,744 |             1.9596 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |       958,959,969 |             4.1183 |
+Find Branchless Cache (O3)               | true    |      ? |       913,914,925 |             4.6217 |
+Find Branchless Cache (Os)               | true    |      ? |       857,857,858 |             0.4000 |
+Find Branchless Cache (Oz)               | true    |      ? |       856,856,864 |             3.2000 |
+Find Branchless Cache (O2)               | true    |      ? |       876,877,898 |             8.4238 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 3293
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    1103,1105,1109 |             1.9596 |
+Find Branchless Cache (O3)               | true    |      ? |    1051,1053,1058 |             2.4166 |
+Find Branchless Cache (O2)               | true    |      ? |    1005,1007,1010 |             1.7436 |
+Find Branchless Cache (Os)               | true    |      ? |      996,998,1036 |            15.4324 |
+Find Branchless Cache (Oz)               | true    |      ? |      997,997,1004 |             2.7276 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 3367
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O3)               | true    |      ? |    1201,1205,1208 |             2.3324 |
+Find Branchless Cache (Os)               | true    |      ? |    1127,1129,1138 |             3.9699 |
+Find Branchless Cache (O2)               | true    |      ? |    1143,1143,1145 |             0.8000 |
+Find Branchless Cache (Oz)               | true    |      ? |    1128,1130,1138 |             3.5440 |
+Find Branchless Cache (O1)               | true    |      ? |    1269,1271,1278 |             3.2619 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 3837
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    1438,1439,1451 |             4.9558 |
+Find Branchless Cache (Oz)               | true    |      ? |    1273,1275,1282 |             3.6000 |
+Find Branchless Cache (O3)               | true    |      ? |    1374,1376,1380 |             2.0591 |
+Find Branchless Cache (O2)               | true    |      ? |    1288,1290,1296 |             2.9394 |
+Find Branchless Cache (Os)               | true    |      ? |    1272,1276,1278 |             2.0591 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 3889
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O3)               | true    |      ? |    1533,1537,1543 |             3.4409 |
+Find Branchless Cache (O2)               | true    |      ? |    1444,1445,1447 |             1.2000 |
+Find Branchless Cache (Os)               | true    |      ? |    1435,1436,1472 |            14.5052 |
+Find Branchless Cache (O1)               | true    |      ? |    1608,1613,1617 |             3.3106 |
+Find Branchless Cache (Oz)               | true    |      ? |    1435,1436,1453 |             6.8527 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 4391
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Oz)               | true    |      ? |    1591,1595,1598 |             2.7276 |
+Find Branchless Cache (O3)               | true    |      ? |    1711,1715,1719 |             2.8000 |
+Find Branchless Cache (O1)               | true    |      ? |    1796,1802,1806 |             3.5553 |
+Find Branchless Cache (Os)               | true    |      ? |    1594,1596,1598 |             1.4142 |
+Find Branchless Cache (O2)               | true    |      ? |    1614,1618,1620 |             2.2271 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 4429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    1986,1994,2028 |            15.0917 |
+Find Branchless Cache (Oz)               | true    |      ? |    1768,1769,1774 |             2.1354 |
+Find Branchless Cache (O3)               | true    |      ? |    1906,1908,1910 |             1.4967 |
+Find Branchless Cache (O2)               | true    |      ? |    1798,1798,1808 |             4.4542 |
+Find Branchless Cache (Os)               | true    |      ? |    1771,1772,1790 |             7.2664 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 4905
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    2188,2194,2197 |             3.0594 |
+Find Branchless Cache (O3)               | true    |      ? |    2105,2110,2117 |             4.2237 |
+Find Branchless Cache (Oz)               | true    |      ? |    1949,1951,1954 |             1.7436 |
+Find Branchless Cache (O2)               | true    |      ? |    1988,1989,1991 |             1.1662 |
+Find Branchless Cache (Os)               | true    |      ? |    1950,1953,1955 |             2.0591 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 4954
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |    2212,2215,2222 |             4.1952 |
+Find Branchless Cache (Os)               | true    |      ? |    2151,2155,2206 |            20.7171 |
+Find Branchless Cache (O3)               | true    |      ? |    2316,2323,2328 |             4.0694 |
+Find Branchless Cache (Oz)               | true    |      ? |    2146,2150,2152 |             2.0591 |
+Find Branchless Cache (O1)               | true    |      ? |    2400,2402,2456 |            21.6647 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 5501
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    2626,2627,2633 |             2.5298 |
+Find Branchless Cache (O3)               | true    |      ? |    2541,2545,2555 |             4.9558 |
+Find Branchless Cache (Os)               | true    |      ? |    2356,2358,2361 |             1.8547 |
+Find Branchless Cache (O2)               | true    |      ? |    2383,2387,2388 |             1.9391 |
+Find Branchless Cache (Oz)               | true    |      ? |    2352,2354,2365 |             4.7582 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 5485
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    2567,2573,2579 |             4.1183 |
+Find Branchless Cache (O3)               | true    |      ? |    2777,2781,2782 |             1.7889 |
+Find Branchless Cache (O2)               | true    |      ? |    2593,2598,2602 |             3.4871 |
+Find Branchless Cache (Oz)               | true    |      ? |    2557,2565,2569 |             5.0596 |
+Find Branchless Cache (O1)               | true    |      ? |    2853,2859,2867 |             5.3516 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 5975
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Oz)               | true    |      ? |    2772,2783,2787 |             5.1769 |
+Find Branchless Cache (O2)               | true    |      ? |    2813,2824,2852 |            13.0323 |
+Find Branchless Cache (O3)               | true    |      ? |    3016,3022,3031 |             5.4037 |
+Find Branchless Cache (Os)               | true    |      ? |    2776,2778,2825 |            18.7681 |
+Find Branchless Cache (O1)               | true    |      ? |    3102,3107,3108 |             2.0976 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 6012
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    3357,3362,3375 |             6.1123 |
+Find Branchless Cache (O3)               | true    |      ? |    3275,3276,3285 |             3.7736 |
+Find Branchless Cache (Os)               | true    |      ? |    3023,3023,3034 |             4.3543 |
+Find Branchless Cache (O2)               | true    |      ? |    3047,3054,3058 |             3.5777 |
+Find Branchless Cache (Oz)               | true    |      ? |    3017,3019,3031 |             5.2154 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 6611
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |    3297,3298,3305 |             2.9257 |
+Find Branchless Cache (O1)               | true    |      ? |    3630,3634,3639 |             3.0332 |
+Find Branchless Cache (Os)               | true    |      ? |    3255,3260,3260 |             1.9391 |
+Find Branchless Cache (Oz)               | true    |      ? |    3256,3267,3304 |            16.3902 |
+Find Branchless Cache (O3)               | true    |      ? |    3534,3553,3554 |             8.0747 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 6561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    3505,3505,3523 |             8.5790 |
+Find Branchless Cache (O2)               | true    |      ? |    3541,3550,3551 |             3.6332 |
+Find Branchless Cache (Oz)               | true    |      ? |    3506,3513,3521 |             5.2383 |
+Find Branchless Cache (O1)               | true    |      ? |    3903,3917,3937 |            11.4298 |
+Find Branchless Cache (O3)               | true    |      ? |    3817,3822,3825 |             3.1875 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 7082
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |    3803,3804,3811 |             3.5440 |
+Find Branchless Cache (O3)               | true    |      ? |    4095,4102,4109 |             4.4989 |
+Find Branchless Cache (O1)               | true    |      ? |    4200,4206,4210 |             3.2619 |
+Find Branchless Cache (Oz)               | true    |      ? |    3761,3770,3775 |             5.3141 |
+Find Branchless Cache (Os)               | true    |      ? |    3767,3775,3778 |             4.2426 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 7096
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |    4068,4071,4074 |             1.8974 |
+Find Branchless Cache (O1)               | true    |      ? |    4492,4503,4513 |             7.8638 |
+Find Branchless Cache (Os)               | true    |      ? |    4046,4049,4074 |            10.1469 |
+Find Branchless Cache (Oz)               | true    |      ? |    4038,4044,4086 |            17.6816 |
+Find Branchless Cache (O3)               | true    |      ? |    4400,4409,4414 |             4.7917 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 7664
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    4321,4330,4339 |             6.0795 |
+Find Branchless Cache (O3)               | true    |      ? |    4714,4721,4732 |             6.3056 |
+Find Branchless Cache (O1)               | true    |      ? |    4804,4808,4839 |            12.7216 |
+Find Branchless Cache (O2)               | true    |      ? |    4348,4358,4364 |             5.2764 |
+Find Branchless Cache (Oz)               | true    |      ? |    4318,4336,4366 |            15.5126 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 7628
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O1)               | true    |      ? |    5134,5147,5150 |             5.8172 |
+Find Branchless Cache (O2)               | true    |      ? |    4641,4657,4661 |             7.5472 |
+Find Branchless Cache (Oz)               | true    |      ? |    4609,4610,4671 |            24.1413 |
+Find Branchless Cache (Os)               | true    |      ? |    4609,4610,4620 |             4.0792 |
+Find Branchless Cache (O3)               | true    |      ? |    5037,5044,5053 |             6.1514 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 8206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O3)               | true    |      ? |    5351,5358,5365 |             5.0990 |
+Find Branchless Cache (Os)               | true    |      ? |    4898,4912,4953 |            18.7979 |
+Find Branchless Cache (O2)               | true    |      ? |    4940,4943,4949 |             2.9665 |
+Find Branchless Cache (O1)               | true    |      ? |    5447,5456,5461 |             5.4918 |
+Find Branchless Cache (Oz)               | true    |      ? |    4888,4901,4948 |            21.0903 |
