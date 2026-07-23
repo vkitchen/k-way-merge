@@ -1,0 +1,50 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1784809097
+MEMORY 4.47035 GiB
+
+Init: 16882
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8423
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache (Oz)                 | true    |      ? |    1569,1570,1571 |             0.7483 |
+State Machine Cache (O3)                 | true    |      ? |    1613,1614,1614 |             0.4000 |
+State Machine Cache (O1)                 | true    |      ? |    1570,1570,1571 |             0.4899 |
+State Machine Cache (O2)                 | true    |      ? |    1618,1618,1619 |             0.4000 |
+State Machine Cache (Os)                 | true    |      ? |    1652,1653,1656 |             1.4697 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12775
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache (Oz)                 | true    |      ? |    2505,2505,2507 |             0.8000 |
+State Machine Cache (O3)                 | true    |      ? |    2352,2353,2356 |             1.6248 |
+State Machine Cache (O2)                 | true    |      ? |    2524,2526,2527 |             1.1662 |
+State Machine Cache (Os)                 | true    |      ? |    2432,2433,2436 |             1.3565 |
+State Machine Cache (O1)                 | true    |      ? |    2585,2586,2589 |             1.6248 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13258
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache (Oz)                 | true    |      ? |    3571,3572,3574 |             0.9798 |
+State Machine Cache (O1)                 | true    |      ? |    3639,3639,3644 |             1.9391 |
+State Machine Cache (O3)                 | true    |      ? |    3318,3319,3321 |             1.2000 |
+State Machine Cache (O2)                 | true    |      ? |    3472,3472,3477 |             1.9391 |
+State Machine Cache (Os)                 | true    |      ? |    3570,3570,3570 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 17862
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Cache (O3)                 | true    |      ? |    4834,4835,4836 |             0.8944 |
+State Machine Cache (Oz)                 | true    |      ? |    5148,5150,5152 |             1.6000 |
+State Machine Cache (O2)                 | true    |      ? |    4924,4925,4926 |             0.7483 |
+State Machine Cache (Os)                 | true    |      ? |    5154,5155,5155 |             0.4899 |
+State Machine Cache (O1)                 | true    |      ? |    5352,5353,5357 |             1.7205 |
