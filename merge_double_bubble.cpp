@@ -49,6 +49,13 @@ bool MergeDoubleBubble::merge(struct test *t, int n) {
 
 		t->results[pos++] = *segments[0]++;
 
+		if (*segments[0] < *segments[1]) std::swap(segments[0], segments[1]);
+
+		if (*segments[0] == 0)
+			break;
+
+		t->results[pos++] = *segments[0]++;
+
 		sort_partial(segments, n);
 	}
 
