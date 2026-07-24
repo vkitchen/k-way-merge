@@ -20,7 +20,7 @@ static void sort_partial(int **a, int length) {
 	int *x = a[0];
 	int *y = a[1];
 	if (*y > *x) std::swap(x, y);
-	for (size_t j = 2; j < length; j++) {
+	for (int j = 2; j < length; j++) {
 		int *z = a[j];
 		bool is_smaller = *z > *y;
 		int *w = is_smaller ? z : y;

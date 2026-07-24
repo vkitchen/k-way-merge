@@ -41,6 +41,7 @@
 #include "merge_bubble_branchless_unrolled.h"
 #include "merge_bubble_branchless_unrolled_cache.h"
 #include "merge_double_bubble.h"
+#include "merge_double_bubble_unrolled.h"
 #include "merge_insertion_sort.h"
 #include "merge_insert.h"
 #include "merge_insert_cache.h"
@@ -110,6 +111,7 @@ Merge *functions[] = {
 //	new MergeBubbleBranchlessUnrolled,
 //	new MergeBubbleBranchlessUnrolledCache,
 //	new MergeDoubleBubble,
+//	new MergeDoubleBubbleUnrolled,
 //
 //	new MergeInsertionSort,
 //	new MergeInsert,

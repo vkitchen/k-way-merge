@@ -48,6 +48,7 @@ SRC = \
 	merge_bubble_branchless_unrolled.cpp \
 	merge_bubble_branchless_unrolled_cache.cpp \
 	merge_double_bubble.cpp \
+	merge_double_bubble_unrolled.cpp \
 	merge_heap.cpp \
 	merge_heap_cache.cpp \
 	merge_heap_separate_init.cpp \
