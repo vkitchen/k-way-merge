@@ -251,6 +251,244 @@ bool MergeFindBranchlessCacheUnrolled::merge(struct test *t, int n) {
 			t->results[pos++] = best;
 			cache[best_i] = *++segments[best_i];
 		}
+	} else if (n == 17) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 17; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 18) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 18; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 19) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 19; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 20) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 20; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 21) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 21; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 22) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 22; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 23) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 23; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 24) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 24; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 25) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 25; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 26) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 26; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 27) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 27; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 28) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 28; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 29) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 29; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
+	} else if (n == 30) {
+		for (;;) {
+			int best = 0;
+			int best_i = 0;
+
+			for (int i = 0; i < 30; i++) {
+				int cmp = cache[i];
+				best = (best > cmp ? best : cmp);
+				best_i = (best > cmp ? best_i : i);
+			}
+
+			if (best == 0)
+				break;
+
+			t->results[pos++] = best;
+			cache[best_i] = *++segments[best_i];
+		}
 	} else {
 		for (;;) {
 			int best = 0;
