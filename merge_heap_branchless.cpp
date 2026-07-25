@@ -1,6 +1,6 @@
 #include "harness.h"
 
-#include "merge_heap_floyds.h"
+#include "merge_heap_branchless.h"
 
 class heap {
 	private:
@@ -51,39 +51,32 @@ class heap {
 
 		void promote() {
 			int *key = array[0];
-			size_t position = 0, hole = 0;
+			size_t position = 0;
 
 			while (true) {
-				size_t left = left_of(hole);
+				size_t left = left_of(position);
 				if (left >= size)
 					break;
 
 				size_t right = left + 1;
 
 				size_t child = left;
-				if (right < size && *array[right] > *array[left])
-					child = right;
+				if (right < size)
+					child += (*array[right] > *array[left]);
 
-				array[hole] = array[child];
-				hole = child;
-			}
-
-			while (hole != position) {
-				size_t parent = parent_of(hole);
-
-				if (*array[parent] >= *key)
+				if (*key >= *array[child])
 					break;
 
-				array[hole] = array[parent];
-				hole = parent;
+				array[position] = array[child];
+				position = child;
 			}
 
-			array[hole] = key;
+			array[position] = key;
 		}
 
 };
 
-bool MergeHeapFloyds::merge(struct test *t, int n) {
+bool MergeHeapBranchless::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
