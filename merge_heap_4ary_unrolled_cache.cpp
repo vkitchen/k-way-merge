@@ -66,22 +66,23 @@ class heap {
 				if (child >= size)
 					break;
 
-				int best = child;
+				int best_i = child;
+				auto best = array[child];
 
-				if (child + 1 < size && array[child + 1].first > array[best].first)
-					best = child + 1;
+				best_i = array[child + 1].first > best.first ? child + 1 : best_i;
+				best = array[child + 1].first > best.first ? array[child + 1] : best;
 
-				if (child + 2 < size && array[child + 2].first > array[best].first)
-					best = child + 2;
+				best_i = array[child + 2].first > best.first ? child + 2 : best_i;
+				best = array[child + 2].first > best.first ? array[child + 2] : best;
 
-				if (child + 3 < size && array[child + 3].first > array[best].first)
-					best = child + 3;
+				best_i = array[child + 3].first > best.first ? child + 3 : best_i;
+				best = array[child + 3].first > best.first ? array[child + 3] : best;
 
-				if (key.first >= array[best].first)
+				if (key.first >= best.first)
 					break;
 
-				array[position] = array[best];
-				position = best;
+				array[position] = best;
+				position = best_i;
 			}
 
 			array[position] = key;
@@ -91,12 +92,15 @@ class heap {
 
 bool MergeHeap4aryUnrolledCache::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
-	std::pair<int, int> *tree = (std::pair<int, int>*)malloc(sizeof(std::pair<int, int>) * n);
+	std::pair<int, int> *tree = (std::pair<int, int>*)malloc(sizeof(std::pair<int, int>) * (n + 3));
 
 	for (int i = 0; i < n; i++) {
 		segments[i] = t->postings[i];
 		tree[i] = { *t->postings[i], i };
 	}
+	tree[n] = { 0, 0 };
+	tree[n+1] = { 0, 0 };
+	tree[n+2] = { 0, 0 };
 	
 	heap priority(tree, n);
 
