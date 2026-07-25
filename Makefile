@@ -51,6 +51,7 @@ SRC = \
 	merge_double_bubble_unrolled.cpp \
 	merge_heap.cpp \
 	merge_heap_cache.cpp \
+	merge_heap_floyds.cpp \
 	merge_heap_separate_init.cpp \
 	merge_heap_stl.cpp \
 	merge_heap_stl_naive.cpp \
