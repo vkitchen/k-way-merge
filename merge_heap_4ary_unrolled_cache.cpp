@@ -6,7 +6,7 @@
 
 class heap {
 	private:
-		std::pair<int, int *>*array;
+		std::pair<int, int>*array;
 		size_t size;
 
 		void sift_down(size_t position) {
@@ -45,7 +45,7 @@ class heap {
 		}
 
 	public:
-		heap(std::pair<int, int *>*array, size_t size = 0) : array(array), size(size) {
+		heap(std::pair<int, int>*array, size_t size = 0) : array(array), size(size) {
 			/* Nothing */
 		}
 
@@ -62,33 +62,26 @@ class heap {
 			size_t position = 0;
 
 			while (true) {
-				size_t first_child = position * 4 + 1;
-				if (first_child >= size)
+				size_t child = position * 4 + 1;
+				if (child >= size)
 					break;
 
-				int child_pos = first_child;
-				auto child = array[first_child];
+				int best = child;
 
-				if (first_child + 1 < size && array[first_child + 1].first > child.first) {
-					child_pos = first_child + 1;
-					child = array[first_child + 1];
-				}
+				if (child + 1 < size && array[child + 1].first > array[best].first)
+					best = child + 1;
 
-				if (first_child + 2 < size && array[first_child + 2].first > child.first) {
-					child_pos = first_child + 2;
-					child = array[first_child + 2];
-				}
+				if (child + 2 < size && array[child + 2].first > array[best].first)
+					best = child + 2;
 
-				if (first_child + 3 < size && array[first_child + 3].first > child.first) {
-					child_pos = first_child + 3;
-					child = array[first_child + 3];
-				}
+				if (child + 3 < size && array[child + 3].first > array[best].first)
+					best = child + 3;
 
-				if (key.first >= child.first)
+				if (key.first >= array[best].first)
 					break;
 
-				array[position] = child;
-				position = child_pos;
+				array[position] = array[best];
+				position = best;
 			}
 
 			array[position] = key;
@@ -97,24 +90,28 @@ class heap {
 };
 
 bool MergeHeap4aryUnrolledCache::merge(struct test *t, int n) {
-	std::pair<int, int*> *segments = (std::pair<int, int *>*)malloc(sizeof(std::pair<int, int *>) * n);
+	int **segments = (int **)malloc(sizeof(int *) * n);
+	std::pair<int, int> *tree = (std::pair<int, int>*)malloc(sizeof(std::pair<int, int>) * n);
 
-	for (int i = 0; i < n; i++)
-		segments[i] = { *t->postings[i], t->postings[i] };
+	for (int i = 0; i < n; i++) {
+		segments[i] = t->postings[i];
+		tree[i] = { *t->postings[i], i };
+	}
 	
-	heap priority(segments, n);
+	heap priority(tree, n);
 
 	priority.heapify();
 
 	// process
 	size_t pos = 0;
 	for (;;) {
-		if (segments[0].first == 0)
+		if (tree[0].first == 0)
 			break;
 
-		t->results[pos++] = segments[0].first;
-		segments[0].second++;
-		segments[0].first = *segments[0].second;
+		t->results[pos++] = tree[0].first;
+		int pos = tree[0].second;
+		segments[pos]++;
+		tree[0].first = *segments[pos];
 
 		priority.promote();
 	}
