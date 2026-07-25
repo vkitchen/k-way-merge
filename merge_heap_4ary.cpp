@@ -69,15 +69,19 @@ class heap {
 				size_t child = first_child;
 				int child_value = *array[child];
 
-				// Find maximum among up to 4 children
-				for (size_t i = 1; i < 4 && first_child + i < size; i++) {
-					size_t candidate = first_child + i;
-					int value = *array[candidate];
+				if (first_child + 1 < size && *array[first_child + 1] > child_value) {
+					child = first_child + 1;
+					child_value = *array[child];
+				}
 
-					if (value > child_value) {
-						child = candidate;
-						child_value = value;
-					}
+				if (first_child + 2 < size && *array[first_child + 2] > child_value) {
+					child = first_child + 2;
+					child_value = *array[child];
+				}
+
+				if (first_child + 3 < size && *array[first_child + 3] > child_value) {
+					child = first_child + 3;
+					child_value = *array[child];
 				}
 
 				if (key_value >= child_value)

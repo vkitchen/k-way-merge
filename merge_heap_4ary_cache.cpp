@@ -2,7 +2,7 @@
 
 #include <utility>
 
-#include "merge_heap_4ary_unrolled_cache.h"
+#include "merge_heap_4ary_cache.h"
 
 class heap {
 	private:
@@ -90,7 +90,7 @@ class heap {
 
 };
 
-bool MergeHeap4aryUnrolledCache::merge(struct test *t, int n) {
+bool MergeHeap4aryCache::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	std::pair<int, int> *tree = (std::pair<int, int>*)malloc(sizeof(std::pair<int, int>) * (n + 3));
 
