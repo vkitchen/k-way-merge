@@ -60,6 +60,7 @@
 #include "merge_heap_floyds.h"
 #include "merge_heap_branchless.h"
 #include "merge_heap_4ary.h"
+#include "merge_heap_4ary_unrolled.h"
 #include "merge_heap_separate_init.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
@@ -136,6 +137,7 @@ Merge *functions[] = {
 //	new MergeHeapFloyds,
 //	new MergeHeapBranchless,
 //	new MergeHeap4ary,
+//	new MergeHeap4aryUnrolled,
 //	new MergeHeapSeparateInit,
 //	new MergeHeapStl,
 //	new MergeHeapStlNaive,
