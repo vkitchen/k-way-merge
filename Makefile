@@ -56,6 +56,7 @@ SRC = \
 	merge_heap_branchless.cpp \
 	merge_heap_4ary.cpp \
 	merge_heap_4ary_cache.cpp \
+	merge_heap_4ary_parallel.cpp \
 	merge_heap_separate_init.cpp \
 	merge_heap_stl.cpp \
 	merge_heap_stl_naive.cpp \
