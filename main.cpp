@@ -63,6 +63,7 @@
 #include "merge_heap_4ary.h"
 #include "merge_heap_4ary_cache.h"
 #include "merge_heap_4ary_parallel.h"
+#include "merge_heap_8ary_parallel.h"
 #include "merge_heap_separate_init.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
@@ -142,6 +143,7 @@ Merge *functions[] = {
 //	new MergeHeap4ary,
 //	new MergeHeap4aryCache,
 //	new MergeHeap4aryParallel,
+//	new MergeHeap8aryParallel,
 //	new MergeHeapSeparateInit,
 //	new MergeHeapStl,
 //	new MergeHeapStlNaive,
