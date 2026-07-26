@@ -9,6 +9,7 @@ SRC = \
 	merge_baseline_copy_sort_O3.cpp \
 	merge_baseline_copy_sort_Os.cpp \
 	merge_baseline_copy_sort_Oz.cpp \
+	merge_baseline_copy_wolfsort.cpp \
 	merge_find.cpp \
 	merge_find_cache.cpp \
 	merge_find_pair.cpp \

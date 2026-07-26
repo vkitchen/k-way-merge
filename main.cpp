@@ -15,6 +15,7 @@
 #include "harness.h"
 
 #include "merge_baseline_copy_sort.h"
+#include "merge_baseline_copy_wolfsort.h"
 #include "merge_find.h"
 #include "merge_find_cache.h"
 #include "merge_find_pair.h"
@@ -86,6 +87,7 @@
 
 Merge *functions[] = {
 	new MergeBaselineCopySort,
+//	new MergeBaselineCopyWolfSort,
 //
 //	new MergeFind,
 //	new MergeFindCache,
