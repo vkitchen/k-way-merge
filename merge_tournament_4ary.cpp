@@ -67,10 +67,7 @@ static void replay_games(Node *tree, int pos, int score) {
 	// Update
 	auto replace = tree[i].entries[0];
 
-	tree[i].entries[0].score = tree[i].entries[0].leaf == pos ? score : tree[i].entries[0].score;
-	tree[i].entries[1].score = tree[i].entries[1].leaf == pos ? score : tree[i].entries[1].score;
-	tree[i].entries[2].score = tree[i].entries[2].leaf == pos ? score : tree[i].entries[2].score;
-	tree[i].entries[3].score = tree[i].entries[3].leaf == pos ? score : tree[i].entries[3].score;
+	tree[i].entries[0].score = score;
 
 	// Sort
 	auto promote = tree[i].entries[3];
