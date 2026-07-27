@@ -89,7 +89,7 @@ bool MergeTournament4ary::merge(struct test *t, int n) {
 	if (n != 256) return false;
 
 	int **segments = (int **)malloc(sizeof(int *) * n);
-	Node *tree = (Node *)malloc(sizeof(Node) * (n - 1) / 3);
+	Node *tree = (Node *)aligned_alloc(32, sizeof(Node) * (n - 1) / 3);
 
 	for (int i = 0; i < n; i++)
 		segments[i] = t->postings[i];
