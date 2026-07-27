@@ -23,42 +23,27 @@ static void sort(Node &a) {
 	}
 }
 
-static size_t parent(size_t i) {
-	return i / 2;
-}
-
 static void initialise(int **segments, int n, Node *tree) {
-	// Load
-	tree[1].entries[0] = Entry{ .score = *segments[0], .leaf = 0 };
-	tree[1].entries[1] = Entry{ .score = *segments[1], .leaf = 1 };
-	tree[1].entries[2] = Entry{ .score = *segments[2], .leaf = 2 };
-	tree[1].entries[3] = Entry{ .score = *segments[3], .leaf = 3 };
-	tree[2].entries[0] = Entry{ .score = *segments[4], .leaf = 4 };
-	tree[2].entries[1] = Entry{ .score = *segments[5], .leaf = 5 };
-	tree[2].entries[2] = Entry{ .score = *segments[6], .leaf = 6 };
-	tree[2].entries[3] = Entry{ .score = *segments[7], .leaf = 7 };
-	tree[3].entries[0] = Entry{ .score = *segments[8], .leaf = 8 };
-	tree[3].entries[1] = Entry{ .score = *segments[9], .leaf = 9 };
-	tree[3].entries[2] = Entry{ .score = *segments[10], .leaf = 10 };
-	tree[3].entries[3] = Entry{ .score = *segments[11], .leaf = 11 };
-	tree[4].entries[0] = Entry{ .score = *segments[12], .leaf = 12 };
-	tree[4].entries[1] = Entry{ .score = *segments[13], .leaf = 13 };
-	tree[4].entries[2] = Entry{ .score = *segments[14], .leaf = 14 };
-	tree[4].entries[3] = Entry{ .score = *segments[15], .leaf = 15 };
+	// Load leaves
+	int leaf_nodes = n / 4;
 
-	// Sort
-	sort(tree[1]);
-	sort(tree[2]);
-	sort(tree[3]);
-	sort(tree[4]);
+	for (int node = 0; node < leaf_nodes; node++) {
+		for (int j = 0; j < 4; j++) {
+			int leaf = node * 4 + j;
 
-	// Load
-	tree[0].entries[0] = tree[1].entries[0];
-	tree[0].entries[1] = tree[2].entries[0];
-	tree[0].entries[2] = tree[3].entries[0];
-	tree[0].entries[3] = tree[4].entries[0];
+			tree[1 + node].entries[j] = {
+				.score = *segments[leaf],
+				.leaf = leaf,
+			};
+		}
 
-	// Sort
+		sort(tree[1 + node]);
+	}
+
+	// Load internal
+	for (int j = 0; j < 4; j++)
+		tree[0].entries[j] = tree[1 + j].entries[0];
+
 	sort(tree[0]);
 }
 
