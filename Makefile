@@ -72,6 +72,7 @@ SRC = \
 	merge_tournament_cache_branchless.cpp \
 	merge_tournament_external_branchless.cpp \
 	merge_tournament_external_cache_branchless.cpp \
+	merge_tournament_4ary.cpp \
 	merge_state_machine_compiled.cpp \
 	merge_state_machine_compiled_cache.cpp \
 	merge_state_machine_compiled_var.cpp \

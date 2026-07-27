@@ -78,6 +78,7 @@
 #include "merge_tournament_cache_branchless.h"
 #include "merge_tournament_external_branchless.h"
 #include "merge_tournament_external_cache_branchless.h"
+#include "merge_tournament_4ary.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
 #include "merge_state_machine_compiled_var.h"
@@ -159,8 +160,9 @@ Merge *functions[] = {
 //	new MergeTournamentExternalCache,
 //	new MergeTournamentBranchless,
 //	new MergeTournamentCacheBranchless,
-//	new MergeTournamentExternalBranchless,
+	new MergeTournamentExternalBranchless,
 //	new MergeTournamentExternalCacheBranchless,
+	new MergeTournament4ary,
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineCompiledCache,
