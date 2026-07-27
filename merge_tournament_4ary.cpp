@@ -76,27 +76,13 @@ static void replay_games(Node *tree, int pos, int score) {
 	// Find
 	int i = (5 + pos - 1) / 4;
 
-	auto replace = tree[i].entries[0];
-
 	// Update
 	tree[i].entries[0].score = score;
 
 	// Sort
 	sort_partial(tree[i]);
 
-	auto promote = tree[i].entries[0];
-
-	// Promote
-	
-	__m256i root = _mm256_loadu_si256((__m256i *)tree[0].entries);
-	__m256i old = _mm256_set1_epi64x(std::bit_cast<int64_t>(replace));
-
-	__m256i match = _mm256_cmpeq_epi64(root, old);
-	__m256i winner = _mm256_set1_epi64x(std::bit_cast<int64_t>(promote));
-
-	root = _mm256_blendv_epi8(root, winner, match);
-
-	_mm256_storeu_si256((__m256i *)tree[0].entries, root);
+	tree[0].entries[0] = tree[i].entries[0];
 
 	sort_partial(tree[0]);
 }
