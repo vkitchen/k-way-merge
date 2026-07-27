@@ -355,6 +355,11 @@ int main(int argc, char **argv) {
 		for (size_t i = 0; i < num_tests; i++) {
 			harness_reset(t);
 
+			// TODO this needs to go earlier and we need to run algorithms consecutively
+			// Also try a larger number and maybe a sleep?
+			for (volatile int i = 0; i < 1'000'000; i++)
+				asm volatile("");
+
 			int alg = order[i];
 
 			bool init_res, res;
