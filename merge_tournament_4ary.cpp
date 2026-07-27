@@ -1,5 +1,7 @@
 #include "harness.h"
 
+#include <immintrin.h>
+
 #include "merge_tournament_4ary.h"
 
 struct Entry {
@@ -74,9 +76,10 @@ static void replay_games(Node *tree, int pos, int score) {
 	// Find
 	int i = (5 + pos - 1) / 4;
 
+	auto replace = tree[i].entries[0];
+
 	// Update
 	tree[i].entries[0].score = score;
-	auto replace = tree[i].entries[0].leaf;
 
 	// Sort
 	sort_partial(tree[i]);
@@ -84,15 +87,16 @@ static void replay_games(Node *tree, int pos, int score) {
 	auto promote = tree[i].entries[0];
 
 	// Promote
+	
+	__m256i root = _mm256_loadu_si256((__m256i *)tree[0].entries);
+	__m256i old = _mm256_set1_epi64x(std::bit_cast<int64_t>(replace));
 
-	tree[0].entries[0].score = tree[0].entries[0].leaf == replace ? promote.score : tree[0].entries[0].score;
-	tree[0].entries[0].leaf = tree[0].entries[0].leaf == replace ? promote.leaf : tree[0].entries[0].leaf;
-	tree[0].entries[1].score = tree[0].entries[1].leaf == replace ? promote.score : tree[0].entries[1].score;
-	tree[0].entries[1].leaf = tree[0].entries[1].leaf == replace ? promote.leaf : tree[0].entries[1].leaf;
-	tree[0].entries[2].score = tree[0].entries[2].leaf == replace ? promote.score : tree[0].entries[2].score;
-	tree[0].entries[2].leaf = tree[0].entries[2].leaf == replace ? promote.leaf : tree[0].entries[2].leaf;
-	tree[0].entries[3].score = tree[0].entries[3].leaf == replace ? promote.score : tree[0].entries[3].score;
-	tree[0].entries[3].leaf = tree[0].entries[3].leaf == replace ? promote.leaf : tree[0].entries[3].leaf;
+	__m256i match = _mm256_cmpeq_epi64(root, old);
+	__m256i winner = _mm256_set1_epi64x(std::bit_cast<int64_t>(promote));
+
+	root = _mm256_blendv_epi8(root, winner, match);
+
+	_mm256_storeu_si256((__m256i *)tree[0].entries, root);
 
 	sort_partial(tree[0]);
 }
