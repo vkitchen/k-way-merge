@@ -24,27 +24,33 @@ static void sort(Node &a) {
 }
 
 static void initialise(int **segments, int n, Node *tree) {
-	// Load leaves
+	int total_nodes = (n - 1) / 3;
 	int leaf_nodes = n / 4;
+	int leaf_start = total_nodes - leaf_nodes;
 
+	// Load leaves
 	for (int node = 0; node < leaf_nodes; node++) {
 		for (int j = 0; j < 4; j++) {
 			int leaf = node * 4 + j;
 
-			tree[1 + node].entries[j] = {
+			tree[leaf_start + node].entries[j] = {
 				.score = *segments[leaf],
 				.leaf = leaf,
 			};
 		}
 
-		sort(tree[1 + node]);
+		sort(tree[leaf_start + node]);
 	}
 
 	// Load internal
-	for (int j = 0; j < 4; j++)
-		tree[0].entries[j] = tree[1 + j].entries[0];
+	for (int node = leaf_start - 1; node >= 0; node--) {
+		int first_child = node * 4 + 1;
 
-	sort(tree[0]);
+		for (int j = 0; j < 4; j++)
+			tree[node].entries[j] = tree[first_child + j].entries[0];
+
+		sort(tree[node]);
+	}
 }
 
 static void sort_partial(Node &a) {
