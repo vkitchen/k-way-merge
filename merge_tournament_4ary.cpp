@@ -64,8 +64,10 @@ static void sort_partial(Node &a) {
 }
 
 static void replay_games(Node *tree, int pos, int score) {
+	int nodes = 21;
+
 	// Find
-	int i = (5 + pos - 1) / 4;
+	int i = (nodes + pos - 1) / 4;
 
 	// Update
 	tree[i].entries[0].score = score;
@@ -73,13 +75,19 @@ static void replay_games(Node *tree, int pos, int score) {
 	// Sort
 	sort_partial(tree[i]);
 
-	tree[0].entries[0] = tree[i].entries[0];
+	int i2 = (i - 1) / 4;
+
+	tree[i2].entries[0] = tree[i].entries[0];
+
+	sort_partial(tree[i2]);
+
+	tree[0].entries[0] = tree[i2].entries[0];
 
 	sort_partial(tree[0]);
 }
 
 bool MergeTournament4ary::merge(struct test *t, int n) {
-	if (n != 16) return false;
+	if (n != 64) return false;
 
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	Node *tree = (Node *)malloc(sizeof(Node) * (n - 1) / 3);
