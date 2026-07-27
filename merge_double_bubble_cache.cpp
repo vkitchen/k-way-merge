@@ -22,8 +22,10 @@ static void sort_partial(int **a, int *cache, int length) {
 	int yv = cache[1];
 	int *y = a[1];
 
-	if (yv > xv) std::swap(x, y);
-	if (yv > xv) std::swap(xv, yv);
+	if (yv > xv) {
+		std::swap(x, y);
+		std::swap(xv, yv);
+	}
 
 	for (int j = 2; j < length; j++) {
 		int zv = cache[j];
@@ -74,8 +76,10 @@ bool MergeDoubleBubbleCache::merge(struct test *t, int n) {
 		segments[0]++;
 		cache[0] = *segments[0];
 
-		if (cache[0] < cache[1]) std::swap(segments[0], segments[1]);
-		if (cache[0] < cache[1]) std::swap(cache[0], cache[1]);
+		if (cache[0] < cache[1]) {
+			std::swap(segments[0], segments[1]);
+			std::swap(cache[0], cache[1]);
+		}
 
 		if (cache[0] == 0)
 			break;
