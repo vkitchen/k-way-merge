@@ -73,10 +73,23 @@ static void replay_games(Node *tree, int pos, int score) {
 	tree[i].entries[3].score = tree[i].entries[3].leaf == pos ? score : tree[i].entries[3].score;
 
 	// Sort
-	sort(tree[i]);
+	auto promote = tree[i].entries[3];
+	auto cmp = tree[i].entries[2];
+
+	tree[i].entries[3] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	cmp = tree[i].entries[1];
+	tree[i].entries[2] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	cmp = tree[i].entries[0];
+	tree[i].entries[1] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	tree[i].entries[0] = promote;
 
 	// Promote
-	auto promote = tree[i].entries[0];
 
 	tree[0].entries[0].score = tree[0].entries[0].leaf == replace.leaf ? promote.score : tree[0].entries[0].score;
 	tree[0].entries[0].leaf = tree[0].entries[0].leaf == replace.leaf ? promote.leaf : tree[0].entries[0].leaf;
@@ -87,7 +100,21 @@ static void replay_games(Node *tree, int pos, int score) {
 	tree[0].entries[3].score = tree[0].entries[3].leaf == replace.leaf ? promote.score : tree[0].entries[3].score;
 	tree[0].entries[3].leaf = tree[0].entries[3].leaf == replace.leaf ? promote.leaf : tree[0].entries[3].leaf;
 
-	sort(tree[0]);
+	promote = tree[0].entries[3];
+	cmp = tree[0].entries[2];
+
+	tree[0].entries[3] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	cmp = tree[0].entries[1];
+	tree[0].entries[2] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	cmp = tree[0].entries[0];
+	tree[0].entries[1] = cmp.score < promote.score ? cmp : promote;
+	promote = cmp.score < promote.score ? promote : cmp;
+
+	tree[0].entries[0] = promote;
 }
 
 bool MergeTournament4ary::merge(struct test *t, int n) {
