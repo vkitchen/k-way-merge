@@ -4,6 +4,11 @@
 
 #include "merge_heap_8ary_parallel_simd.h"
 
+static const __m256i lanes = _mm256_setr_epi32(0,1,2,3,4,5,6,7);
+static const __m256i perm1 = _mm256_setr_epi32(4,5,6,7,0,1,2,3);
+static const __m256i perm2 = _mm256_setr_epi32(2,3,0,1,6,7,4,5);
+static const __m256i perm3 = _mm256_setr_epi32(1,0,3,2,5,4,7,6);
+
 class heap {
 	private:
 		int **array;
@@ -71,52 +76,39 @@ class heap {
 				if (child >= size)
 					break;
 
-				// Tail case: fewer than 8 children.
-				if (child + 7 >= size) {
-					int best = cache[child];
-					size_t best_i = child;
-
-					for (size_t i = child + 1; i < size; ++i) {
-						if (cache[i] > best) {
-						    best = cache[i];
-						    best_i = i;
-						}
-					}
-
-					if (key_value >= best)
-						break;
-
-					cache[position] = best;
-					array[position] = array[best_i];
-					position = best_i;
-					continue;
-				}
-
 				// Load the 8 child values.
 				__m256i values = _mm256_loadu_si256((const __m256i *)&cache[child]);
 
-				// Horizontal maximum.
-				__m256i t = values;
+				// Early exit.
+				__m256i keyvec = _mm256_set1_epi32(key_value);
+				__m256i gt = _mm256_cmpgt_epi32(values, keyvec);
 
-				t = _mm256_max_epi32(t, _mm256_permutevar8x32_epi32(t, _mm256_setr_epi32(4,5,6,7,0,1,2,3)));
+				unsigned gtmask = _mm256_movemask_ps(_mm256_castsi256_ps(gt));
 
-				t = _mm256_max_epi32(t, _mm256_permutevar8x32_epi32(t, _mm256_setr_epi32(2,3,0,1,6,7,4,5)));
-
-				t = _mm256_max_epi32(t, _mm256_permutevar8x32_epi32(t, _mm256_setr_epi32(1,0,3,2,5,4,7,6)));
-
-				int best = _mm256_extract_epi32(t, 0);
-
-				// Find which child had the maximum.
-				__m256i bestvec = _mm256_set1_epi32(best);
-				__m256i eq = _mm256_cmpeq_epi32(values, bestvec);
-
-				unsigned mask =
-				_mm256_movemask_ps(_mm256_castsi256_ps(eq));
-
-				size_t best_i = child + __builtin_ctz(mask);
-
-				if (key_value >= best)
+				if (gtmask == 0)
 					break;
+
+				// Horizontal maximum.
+				__m256i indices = _mm256_add_epi32(lanes, _mm256_set1_epi32((int)child));
+
+				auto reduce = [&](__m256i perm) {
+					__m256i pv = _mm256_permutevar8x32_epi32(values, perm);
+					__m256i pi = _mm256_permutevar8x32_epi32(indices, perm);
+
+					__m256i mask = _mm256_cmpgt_epi32(pv, values);
+
+					values = _mm256_max_epi32(values, pv);
+
+					indices = _mm256_blendv_epi8(indices, pi, mask);
+				};
+
+				reduce(perm1);
+				reduce(perm2);
+				reduce(perm3);
+
+				int best = _mm256_extract_epi32(values, 0);
+
+				size_t best_i = (size_t)_mm256_extract_epi32(indices, 0);
 
 				cache[position] = best;
 				array[position] = array[best_i];
