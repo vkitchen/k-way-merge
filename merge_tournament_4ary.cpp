@@ -91,11 +91,7 @@ static void sort_partial(Node &a) {
 	a.entries[3] = min;
 }
 
-static void replay_games(Node *tree, int n, int pos, int score) {
-	int nodes = total_nodes(n);
-	int child_nodes = (n + 3) / 4;
-	int child_start = nodes - child_nodes;
-
+static void replay_games(Node *tree, int child_nodes, int child_start, int pos, int score) {
 	// Leaf
 	int node = child_start + pos / 4;
 	tree[node].entries[0].score = score;
@@ -119,6 +115,9 @@ static void replay_games(Node *tree, int n, int pos, int score) {
 
 bool MergeTournament4ary::merge(struct test *t, int n) {
 	int nodes = total_nodes(n);
+	int child_nodes = (n + 3) / 4;
+	int child_start = nodes - child_nodes;
+
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	Node *tree = (Node *)aligned_alloc(32, sizeof(Node) * nodes);
 
@@ -138,7 +137,7 @@ bool MergeTournament4ary::merge(struct test *t, int n) {
 		int index = tree[0].entries[0].leaf;
 		segments[index]++;
 
-		replay_games(tree, n, index, *segments[index]);
+		replay_games(tree, child_nodes, child_start, index, *segments[index]);
 	}
 
 	return true;
