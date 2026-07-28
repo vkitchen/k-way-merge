@@ -34,15 +34,6 @@ static int total_nodes(int n) {
 	return total + 1;
 }
 
-static int total_levels(int n) {
-	int levels = 0;
-	while (n > 1) {
-		n = (n + 3) / 4;
-		levels++;
-	}
-	return levels;
-}
-
 static void initialise(int **segments, int n, Node *tree) {
 	int nodes = total_nodes(n);
 	int child_nodes = (n + 3) / 4;
@@ -102,22 +93,27 @@ static void sort_partial(Node &a) {
 
 static void replay_games(Node *tree, int n, int pos, int score) {
 	int nodes = total_nodes(n);
-	int leaf_nodes = (n + 3) / 4;
-	int leaf_start = nodes - leaf_nodes;
+	int child_nodes = (n + 3) / 4;
+	int child_start = nodes - child_nodes;
 
 	// Leaf
-	int node = leaf_start + pos / 4;
+	int node = child_start + pos / 4;
 	tree[node].entries[0].score = score;
 	sort_partial(tree[node]);
 
 	// Internal
 	while (node != 0) {
-		int parent = (node - 1) / 4;
+		int parent_nodes = (child_nodes + 3) / 4;
+		int parent_start = child_start - parent_nodes;
+
+		int parent = parent_start + (node - child_start) / 4;
 
 		tree[parent].entries[0] = tree[node].entries[0];
 		sort_partial(tree[parent]);
 
 		node = parent;
+		child_nodes = parent_nodes;
+		child_start = parent_start;
 	}
 }
 
