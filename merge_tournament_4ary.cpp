@@ -23,20 +23,35 @@ static void sort(Node &a) {
 	}
 }
 
+static int total_nodes(int n) {
+	int level = (n + 3) / 4;
+
+	int total = 0;
+	while (level > 1) {
+		total += level;
+		level = (level + 3) / 4;
+	}
+	return total + 1;
+}
+
 static void initialise(int **segments, int n, Node *tree) {
-	int total_nodes = (n - 1) / 3;
-	int leaf_nodes = n / 4;
-	int leaf_start = total_nodes - leaf_nodes;
+	int nodes = total_nodes(n);
+	int leaf_nodes = (n + 3) / 4;
+	int leaf_start = nodes - leaf_nodes;
 
 	// Load leaves
 	for (int node = 0; node < leaf_nodes; node++) {
 		for (int j = 0; j < 4; j++) {
 			int leaf = node * 4 + j;
 
-			tree[leaf_start + node].entries[j] = {
-				.score = *segments[leaf],
-				.leaf = leaf,
-			};
+			if (leaf < n) {
+				tree[leaf_start + node].entries[j] = {
+					.score = *segments[leaf],
+					.leaf = leaf,
+				};
+			} else {
+				tree[leaf_start + node].entries[j] = { 0, 0 };
+			}
 		}
 
 		sort(tree[leaf_start + node]);
@@ -63,33 +78,33 @@ static void sort_partial(Node &a) {
 	a.entries[3] = min;
 }
 
-static void replay_games(Node *tree, int pos, int score) {
-	int nodes = 85;
+static void replay_games(Node *tree, int n, int pos, int score) {
+	int nodes = total_nodes(n);
+	int leaf_nodes = (n + 3) / 4;
+	int leaf_start = nodes - leaf_nodes;
 
 	// Leaf
-	int i = (nodes + pos - 1) / 4;
-	tree[i].entries[0].score = score;
-	sort_partial(tree[i]);
+	int node = leaf_start + pos / 4;
+	tree[node].entries[0].score = score;
+	sort_partial(tree[node]);
 
 	// Internal
-	int i2 = (i - 1) / 4;
-	tree[i2].entries[0] = tree[i].entries[0];
-	sort_partial(tree[i2]);
+	while (node != 0) {
+		int parent = (node - 1) / 4;
 
-	int i3 = (i2 - 1) / 4;
-	tree[i3].entries[0] = tree[i2].entries[0];
-	sort_partial(tree[i3]);
+		tree[parent].entries[0] = tree[node].entries[0];
+		sort_partial(tree[parent]);
 
-	// Root
-	tree[0].entries[0] = tree[i3].entries[0];
-	sort_partial(tree[0]);
+		node = parent;
+	}
 }
 
 bool MergeTournament4ary::merge(struct test *t, int n) {
-	if (n != 256) return false;
+	if (!(n == 16 or n == 64)) return false;
 
+	int nodes = total_nodes(n);
 	int **segments = (int **)malloc(sizeof(int *) * n);
-	Node *tree = (Node *)aligned_alloc(32, sizeof(Node) * (n - 1) / 3);
+	Node *tree = (Node *)aligned_alloc(32, sizeof(Node) * nodes);
 
 	for (int i = 0; i < n; i++)
 		segments[i] = t->postings[i];
@@ -107,7 +122,7 @@ bool MergeTournament4ary::merge(struct test *t, int n) {
 		int index = tree[0].entries[0].leaf;
 		segments[index]++;
 
-		replay_games(tree, index, *segments[index]);
+		replay_games(tree, n, index, *segments[index]);
 	}
 
 	return true;
