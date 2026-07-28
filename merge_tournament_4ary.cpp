@@ -81,8 +81,8 @@ static void initialise(int **segments, int n, Node *tree) {
 	}
 }
 
-static void sort_partial(Node &a) {
-	Entry min = a.entries[0];
+static void sort_partial(Node &a, Entry min) {
+	a.entries[0] = min;
 	for (int j = 1; j < 4; j++) {
 		Entry y = a.entries[j];
 		a.entries[j - 1] = min.score >= y.score ? min : y;
@@ -91,11 +91,10 @@ static void sort_partial(Node &a) {
 	a.entries[3] = min;
 }
 
-static void replay_games(Node *tree, int child_nodes, int child_start, int pos, int score) {
+static void replay_games(Node *tree, int child_nodes, int child_start, Entry update) {
 	// Leaf
-	int node = child_start + pos / 4;
-	tree[node].entries[0].score = score;
-	sort_partial(tree[node]);
+	int node = child_start + update.leaf / 4;
+	sort_partial(tree[node], update);
 
 	// Internal
 	while (node != 0) {
@@ -104,8 +103,7 @@ static void replay_games(Node *tree, int child_nodes, int child_start, int pos, 
 
 		int parent = parent_start + (node - child_start) / 4;
 
-		tree[parent].entries[0] = tree[node].entries[0];
-		sort_partial(tree[parent]);
+		sort_partial(tree[parent], tree[node].entries[0]);
 
 		node = parent;
 		child_nodes = parent_nodes;
@@ -137,7 +135,7 @@ bool MergeTournament4ary::merge(struct test *t, int n) {
 		int index = tree[0].entries[0].leaf;
 		segments[index]++;
 
-		replay_games(tree, child_nodes, child_start, index, *segments[index]);
+		replay_games(tree, child_nodes, child_start, { .score = *segments[index], .leaf = index });
 	}
 
 	return true;
