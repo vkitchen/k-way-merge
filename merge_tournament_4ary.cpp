@@ -34,37 +34,59 @@ static int total_nodes(int n) {
 	return total + 1;
 }
 
+static int total_levels(int n) {
+	int levels = 0;
+	while (n > 1) {
+		n = (n + 3) / 4;
+		levels++;
+	}
+	return levels;
+}
+
 static void initialise(int **segments, int n, Node *tree) {
 	int nodes = total_nodes(n);
-	int leaf_nodes = (n + 3) / 4;
-	int leaf_start = nodes - leaf_nodes;
+	int child_nodes = (n + 3) / 4;
+	int child_start = nodes - child_nodes;
 
 	// Load leaves
-	for (int node = 0; node < leaf_nodes; node++) {
+	for (int node = 0; node < child_nodes; node++) {
 		for (int j = 0; j < 4; j++) {
 			int leaf = node * 4 + j;
 
 			if (leaf < n) {
-				tree[leaf_start + node].entries[j] = {
+				tree[child_start + node].entries[j] = {
 					.score = *segments[leaf],
 					.leaf = leaf,
 				};
 			} else {
-				tree[leaf_start + node].entries[j] = { 0, 0 };
+				tree[child_start + node].entries[j] = { 0, 0 };
 			}
 		}
 
-		sort(tree[leaf_start + node]);
+		sort(tree[child_start + node]);
 	}
 
 	// Load internal
-	for (int node = leaf_start - 1; node >= 0; node--) {
-		int first_child = node * 4 + 1;
+	while (child_nodes > 1) {
+		int parent_nodes = (child_nodes + 3) / 4;
+		int parent_start = child_start - parent_nodes;
 
-		for (int j = 0; j < 4; j++)
-			tree[node].entries[j] = tree[first_child + j].entries[0];
+		for (int p = 0; p < parent_nodes; p++) {
+			for (int j = 0; j < 4; j++) {
+				int child = p * 4 + j;
 
-		sort(tree[node]);
+				if (child < child_nodes) {
+					tree[parent_start + p].entries[j] = tree[child_start + child].entries[0];
+				} else {
+					tree[parent_start + p].entries[j] = { 0, 0 };
+				}
+			}
+
+			sort(tree[parent_start + p]);
+		}
+
+		child_nodes = parent_nodes;
+		child_start = parent_start;
 	}
 }
 
@@ -100,8 +122,6 @@ static void replay_games(Node *tree, int n, int pos, int score) {
 }
 
 bool MergeTournament4ary::merge(struct test *t, int n) {
-	if (!(n == 16 or n == 64)) return false;
-
 	int nodes = total_nodes(n);
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	Node *tree = (Node *)aligned_alloc(32, sizeof(Node) * nodes);
