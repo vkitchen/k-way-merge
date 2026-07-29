@@ -1,6 +1,6 @@
 #include "harness.h"
 
-#include "merge_heap_branchless.h"
+#include "merge_heap_branchless_child.h"
 
 class heap {
 	private:
@@ -13,10 +13,6 @@ class heap {
 
 		size_t right_of(size_t position) {
 			return (position << 1) + 2;
-		}
-
-		size_t parent_of(size_t position) {
-			return (position - 1) >> 1;
 		}
 
 		void heapify(size_t position) {
@@ -76,7 +72,7 @@ class heap {
 
 };
 
-bool MergeHeapBranchless::merge(struct test *t, int n) {
+bool MergeHeapBranchlessChild::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 
 	for (int i = 0; i < n; i++)
