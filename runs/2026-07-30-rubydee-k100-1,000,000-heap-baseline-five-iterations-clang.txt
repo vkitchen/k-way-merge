@@ -1,0 +1,794 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 3
+TEST_TYPE random
+SEED 1785386057
+MEMORY 0.745058 GiB
+
+Init: 2363
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 70
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |          21,22,22 |             0.4899 |
+Heap Branchless                          | true    |      ? |          16,16,16 |             0.0000 |
+Heap (STL Naive)                         | true    |      ? |          26,26,26 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 104
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |          46,46,47 |             0.4899 |
+Heap                                     | true    |      ? |          34,34,34 |             0.0000 |
+Heap Branchless                          | true    |      ? |          31,31,32 |             0.4000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 112
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |          47,47,47 |             0.0000 |
+Heap Branchless                          | true    |      ? |          44,45,45 |             0.4000 |
+Heap (STL Naive)                         | true    |      ? |          66,67,67 |             0.4000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 152
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          59,59,59 |             0.0000 |
+Heap (STL Naive)                         | true    |      ? |          89,89,90 |             0.4000 |
+Heap                                     | true    |      ? |          64,65,65 |             0.4000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 161
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          62,62,63 |             0.4899 |
+Heap                                     | true    |      ? |          90,91,92 |             0.7483 |
+Heap (STL Naive)                         | true    |      ? |       115,115,116 |             0.4899 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 202
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          92,92,93 |             0.4000 |
+Heap (STL Naive)                         | true    |      ? |       141,141,144 |             1.1662 |
+Heap                                     | true    |      ? |       105,106,106 |             0.4899 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 208
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       125,125,126 |             0.4899 |
+Heap Branchless                          | true    |      ? |       118,119,119 |             0.4899 |
+Heap (STL Naive)                         | true    |      ? |       174,174,175 |             0.4000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 249
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       205,205,210 |             1.9391 |
+Heap Branchless                          | true    |      ? |       140,141,141 |             0.4000 |
+Heap                                     | true    |      ? |       146,146,146 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       174,174,175 |             0.4000 |
+Heap Branchless                          | true    |      ? |       149,149,150 |             0.4000 |
+Heap (STL Naive)                         | true    |      ? |       237,238,240 |             1.0198 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       198,199,200 |             0.6325 |
+Heap Branchless                          | true    |      ? |       168,168,169 |             0.4899 |
+Heap (STL Naive)                         | true    |      ? |       276,276,276 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 301
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       316,321,322 |             2.5768 |
+Heap                                     | true    |      ? |       226,226,226 |             0.0000 |
+Heap Branchless                          | true    |      ? |       181,181,182 |             0.4000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 345
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       254,256,258 |             1.3266 |
+Heap Branchless                          | true    |      ? |       201,201,203 |             0.8000 |
+Heap (STL Naive)                         | true    |      ? |       352,352,353 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 350
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       209,209,210 |             0.4899 |
+Heap                                     | true    |      ? |       293,294,295 |             0.6325 |
+Heap (STL Naive)                         | true    |      ? |       399,399,401 |             0.8000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 394
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       318,327,329 |             5.1147 |
+Heap (STL Naive)                         | true    |      ? |       438,439,441 |             1.0954 |
+Heap Branchless                          | true    |      ? |       251,251,252 |             0.4899 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 396
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       287,288,288 |             0.4899 |
+Heap (STL Naive)                         | true    |      ? |       468,481,483 |             6.6513 |
+Heap                                     | true    |      ? |       337,340,341 |             1.6248 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 444
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       334,335,337 |             0.9798 |
+Heap (STL Naive)                         | true    |      ? |       513,514,517 |             1.3565 |
+Heap                                     | true    |      ? |       366,369,373 |             2.7276 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 443
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       354,355,357 |             0.9798 |
+Heap (STL Naive)                         | true    |      ? |       551,552,554 |             1.0198 |
+Heap                                     | true    |      ? |       392,393,393 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 493
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       425,429,431 |             2.0591 |
+Heap (STL Naive)                         | true    |      ? |       590,590,591 |             0.4899 |
+Heap Branchless                          | true    |      ? |       397,399,405 |             3.0725 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 489
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       402,404,404 |             0.8000 |
+Heap (STL Naive)                         | true    |      ? |       643,643,645 |             0.8000 |
+Heap                                     | true    |      ? |       446,447,449 |             1.1662 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 545
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       497,502,505 |             2.6382 |
+Heap (STL Naive)                         | true    |      ? |       674,675,677 |             1.0954 |
+Heap Branchless                          | true    |      ? |       397,398,403 |             2.1354 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 542
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       725,726,741 |             6.1774 |
+Heap Branchless                          | true    |      ? |       390,394,395 |             1.7205 |
+Heap                                     | true    |      ? |       527,535,536 |             3.4986 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 594
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       796,796,797 |             0.4899 |
+Heap Branchless                          | true    |      ? |       384,384,392 |             3.2000 |
+Heap                                     | true    |      ? |       560,561,562 |             0.7483 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 591
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       585,592,593 |             2.8705 |
+Heap (STL Naive)                         | true    |      ? |       835,837,839 |             1.4142 |
+Heap Branchless                          | true    |      ? |       394,395,401 |             2.4980 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 648
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       876,876,877 |             0.4899 |
+Heap Branchless                          | true    |      ? |       397,398,400 |             1.2000 |
+Heap                                     | true    |      ? |       623,625,626 |             1.0198 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 640
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |       923,926,931 |             3.4059 |
+Heap                                     | true    |      ? |       663,665,666 |             1.0198 |
+Heap Branchless                          | true    |      ? |       408,411,414 |             2.2804 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 706
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       419,421,425 |             2.0591 |
+Heap                                     | true    |      ? |       707,709,710 |             1.0198 |
+Heap (STL Naive)                         | true    |      ? |       982,982,983 |             0.4899 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 685
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1041,1043,1045 |             1.2649 |
+Heap                                     | true    |      ? |       751,755,765 |             4.7159 |
+Heap Branchless                          | true    |      ? |       442,444,446 |             1.7889 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 777
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       790,790,796 |             2.4000 |
+Heap (STL Naive)                         | true    |      ? |    1075,1076,1077 |             0.8944 |
+Heap Branchless                          | true    |      ? |       456,457,463 |             2.8983 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 736
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1129,1132,1143 |             4.8826 |
+Heap                                     | true    |      ? |       838,840,845 |             2.4166 |
+Heap Branchless                          | true    |      ? |       488,490,494 |             1.9596 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 792
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1169,1169,1172 |             1.2649 |
+Heap                                     | true    |      ? |       883,885,885 |             0.8000 |
+Heap Branchless                          | true    |      ? |       512,515,517 |             1.8547 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 785
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1224,1225,1238 |             5.2383 |
+Heap Branchless                          | true    |      ? |       524,528,529 |             1.8547 |
+Heap                                     | true    |      ? |       899,900,906 |             2.8983 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 852
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       576,580,582 |             2.0591 |
+Heap                                     | true    |      ? |       940,942,945 |             1.6000 |
+Heap (STL Naive)                         | true    |      ? |    1254,1257,1267 |             4.9234 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 831
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |       980,986,988 |             2.6833 |
+Heap (STL Naive)                         | true    |      ? |    1299,1299,1302 |             1.2649 |
+Heap Branchless                          | true    |      ? |       591,593,602 |             3.9699 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 921
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1345,1347,1357 |             4.2143 |
+Heap Branchless                          | true    |      ? |       659,660,661 |             0.7483 |
+Heap                                     | true    |      ? |    1028,1029,1033 |             2.1541 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 882
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       675,676,680 |             1.8547 |
+Heap (STL Naive)                         | true    |      ? |    1396,1399,1412 |             5.6569 |
+Heap                                     | true    |      ? |    1032,1038,1044 |             4.2426 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 949
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       742,742,743 |             0.4899 |
+Heap (STL Naive)                         | true    |      ? |    1438,1440,1443 |             1.6733 |
+Heap                                     | true    |      ? |    1082,1090,1095 |             5.6214 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 926
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1489,1490,1507 |             6.8586 |
+Heap                                     | true    |      ? |    1098,1099,1103 |             1.8547 |
+Heap Branchless                          | true    |      ? |       752,753,754 |             0.7483 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1025
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    1150,1166,1169 |             6.7941 |
+Heap Branchless                          | true    |      ? |       825,827,827 |             0.9798 |
+Heap (STL Naive)                         | true    |      ? |    1564,1564,1569 |             2.0591 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 983
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1608,1609,1619 |             4.0299 |
+Heap                                     | true    |      ? |    1183,1184,1189 |             2.2804 |
+Heap Branchless                          | true    |      ? |       821,821,825 |             1.6000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1062
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    1216,1218,1223 |             2.3324 |
+Heap Branchless                          | true    |      ? |       862,864,875 |             4.6904 |
+Heap (STL Naive)                         | true    |      ? |    1649,1650,1652 |             1.0198 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1025
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       853,853,854 |             0.4899 |
+Heap (STL Naive)                         | true    |      ? |    1702,1703,1705 |             1.0198 |
+Heap                                     | true    |      ? |    1241,1244,1266 |             9.1433 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       877,879,886 |             3.1623 |
+Heap                                     | true    |      ? |    1302,1306,1310 |             2.7129 |
+Heap (STL Naive)                         | true    |      ? |    1758,1760,1763 |             2.0396 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1073
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1827,1830,1831 |             1.8330 |
+Heap                                     | true    |      ? |    1330,1332,1341 |             3.8781 |
+Heap Branchless                          | true    |      ? |       859,861,863 |             1.2649 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    1361,1363,1365 |             1.3266 |
+Heap Branchless                          | true    |      ? |       885,887,887 |             0.8000 |
+Heap (STL Naive)                         | true    |      ? |    1860,1863,1872 |             4.4091 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1123
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    1929,1930,1933 |             1.3565 |
+Heap Branchless                          | true    |      ? |       872,872,874 |             0.8000 |
+Heap                                     | true    |      ? |    1405,1408,1434 |            10.7703 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1195
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       897,899,903 |             2.0396 |
+Heap                                     | true    |      ? |    1454,1457,1458 |             1.4697 |
+Heap (STL Naive)                         | true    |      ? |    2013,2016,2027 |             4.7749 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1180
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    1467,1467,1469 |             0.8000 |
+Heap (STL Naive)                         | true    |      ? |    2072,2075,2090 |             6.5299 |
+Heap Branchless                          | true    |      ? |       870,870,874 |             1.5492 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       901,902,908 |             2.6077 |
+Heap                                     | true    |      ? |    1521,1528,1538 |             5.5353 |
+Heap (STL Naive)                         | true    |      ? |    2112,2116,2118 |             2.0396 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1217
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    1560,1561,1565 |             1.9391 |
+Heap Branchless                          | true    |      ? |       878,880,893 |             5.4626 |
+Heap (STL Naive)                         | true    |      ? |    2175,2176,2178 |             1.1662 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1306
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       911,912,913 |             0.6325 |
+Heap (STL Naive)                         | true    |      ? |    2219,2224,2235 |             5.2688 |
+Heap                                     | true    |      ? |    1603,1607,1611 |             2.7129 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1277
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       887,888,899 |             4.6217 |
+Heap                                     | true    |      ? |    1650,1655,1694 |            17.6341 |
+Heap (STL Naive)                         | true    |      ? |    2289,2293,2294 |             1.7205 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    2336,2339,2391 |            21.2170 |
+Heap Branchless                          | true    |      ? |       920,921,928 |             3.3466 |
+Heap                                     | true    |      ? |    1708,1714,1733 |             9.8590 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1325
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       897,899,904 |             2.4819 |
+Heap (STL Naive)                         | true    |      ? |    2402,2403,2406 |             1.3565 |
+Heap                                     | true    |      ? |    1782,1784,1799 |             6.1188 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1426
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       935,937,941 |             2.0591 |
+Heap                                     | true    |      ? |    1818,1819,1823 |             1.8547 |
+Heap (STL Naive)                         | true    |      ? |    2484,2487,2511 |            10.1311 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1378
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       903,905,906 |             1.0954 |
+Heap (STL Naive)                         | true    |      ? |    2542,2544,2596 |            20.9418 |
+Heap                                     | true    |      ? |    1869,1870,1871 |             0.7483 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1450
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    2584,2585,2624 |            15.6128 |
+Heap                                     | true    |      ? |    1917,1920,1920 |             1.2649 |
+Heap Branchless                          | true    |      ? |       941,942,944 |             1.0198 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1422
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    2650,2652,2705 |            21.3223 |
+Heap Branchless                          | true    |      ? |       918,920,921 |             1.0198 |
+Heap                                     | true    |      ? |    1965,1967,2001 |            13.7026 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1517
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2013,2014,2017 |             1.4967 |
+Heap Branchless                          | true    |      ? |       953,955,955 |             0.9798 |
+Heap (STL Naive)                         | true    |      ? |    2703,2709,2744 |            15.3023 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1482
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       929,931,933 |             1.3266 |
+Heap                                     | true    |      ? |    2063,2068,2103 |            14.6833 |
+Heap (STL Naive)                         | true    |      ? |    2768,2770,2771 |             1.1662 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1553
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    2811,2813,2882 |            27.7316 |
+Heap Branchless                          | true    |      ? |       964,966,966 |             0.8000 |
+Heap                                     | true    |      ? |    2116,2119,2191 |            28.7569 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1522
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2183,2186,2190 |             2.4000 |
+Heap (STL Naive)                         | true    |      ? |    2886,2889,2895 |             3.3106 |
+Heap Branchless                          | true    |      ? |       945,946,950 |             1.7436 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1619
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1023,1025,1032 |             3.0594 |
+Heap (STL Naive)                         | true    |      ? |    2909,2911,2912 |             1.3565 |
+Heap                                     | true    |      ? |    2216,2220,2229 |             4.6648 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1582
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1068,1068,1071 |             1.2649 |
+Heap                                     | true    |      ? |    2244,2245,2247 |             1.1662 |
+Heap (STL Naive)                         | true    |      ? |    2975,2978,2988 |             4.5343 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1652
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3012,3014,3024 |             4.4900 |
+Heap Branchless                          | true    |      ? |    1149,1152,1156 |             2.4000 |
+Heap                                     | true    |      ? |    2292,2294,2304 |             4.3635 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1634
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2330,2332,2338 |             3.2619 |
+Heap (STL Naive)                         | true    |      ? |    3069,3073,3081 |             3.9699 |
+Heap Branchless                          | true    |      ? |    1175,1178,1185 |             3.6661 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1712
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2370,2375,2383 |             5.2383 |
+Heap Branchless                          | true    |      ? |    1269,1271,1278 |             3.3823 |
+Heap (STL Naive)                         | true    |      ? |    3106,3108,3127 |             8.0895 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1677
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1301,1302,1305 |             1.4967 |
+Heap                                     | true    |      ? |    2403,2409,2418 |             4.9153 |
+Heap (STL Naive)                         | true    |      ? |    3180,3184,3186 |             2.0591 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1778
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2454,2459,2473 |             6.5115 |
+Heap Branchless                          | true    |      ? |    1379,1381,1384 |             1.7205 |
+Heap (STL Naive)                         | true    |      ? |    3214,3215,3226 |             4.4452 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1731
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3285,3289,3303 |             6.4684 |
+Heap Branchless                          | true    |      ? |    1409,1409,1412 |             1.2649 |
+Heap                                     | true    |      ? |    2497,2503,2510 |             4.3543 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1808
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2543,2546,2546 |             1.2649 |
+Heap (STL Naive)                         | true    |      ? |    3358,3360,3371 |             4.8826 |
+Heap Branchless                          | true    |      ? |    1505,1506,1511 |             2.8000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1785
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3408,3411,3414 |             1.9391 |
+Heap Branchless                          | true    |      ? |    1536,1539,1556 |             7.0824 |
+Heap                                     | true    |      ? |    2567,2569,2574 |             2.4166 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2615,2621,2679 |            23.6169 |
+Heap (STL Naive)                         | true    |      ? |    3453,3458,3466 |             4.3174 |
+Heap Branchless                          | true    |      ? |    1615,1621,1626 |             3.5214 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1826
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2652,2663,2673 |             7.3919 |
+Heap Branchless                          | true    |      ? |    1642,1643,1645 |             0.9798 |
+Heap (STL Naive)                         | true    |      ? |    3521,3523,3535 |             5.1225 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1931
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3568,3573,3576 |             2.9257 |
+Heap                                     | true    |      ? |    2702,2705,2706 |             1.3565 |
+Heap Branchless                          | true    |      ? |    1739,1742,1750 |             3.7417 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1878
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1761,1763,1765 |             1.3266 |
+Heap                                     | true    |      ? |    2728,2734,2743 |             5.3141 |
+Heap (STL Naive)                         | true    |      ? |    3644,3648,3658 |             4.7074 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 1967
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3682,3698,3723 |            13.7492 |
+Heap                                     | true    |      ? |    2785,2792,2798 |             4.6043 |
+Heap Branchless                          | true    |      ? |    1845,1853,1858 |             5.4185 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1942
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    2825,2831,2844 |             6.6332 |
+Heap (STL Naive)                         | true    |      ? |    3761,3765,3789 |            11.8929 |
+Heap Branchless                          | true    |      ? |    1862,1864,1881 |             7.1386 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2029
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1963,1967,1979 |             5.7271 |
+Heap                                     | true    |      ? |    2866,2867,2873 |             2.4980 |
+Heap (STL Naive)                         | true    |      ? |    3855,3856,3945 |            35.6168 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 1980
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3925,3925,3926 |             0.4899 |
+Heap Branchless                          | true    |      ? |    1975,1978,1979 |             1.4967 |
+Heap                                     | true    |      ? |    2898,2900,2906 |             2.8284 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2068
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    3958,3960,3981 |             8.6856 |
+Heap                                     | true    |      ? |    2951,2952,2990 |            15.1129 |
+Heap Branchless                          | true    |      ? |    2052,2057,2065 |             4.9558 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2024
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4036,4041,4056 |             7.5736 |
+Heap Branchless                          | true    |      ? |    2053,2057,2058 |             1.9391 |
+Heap                                     | true    |      ? |    2990,2991,3009 |             7.2277 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2136
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2123,2125,2128 |             1.7205 |
+Heap                                     | true    |      ? |    3034,3038,3056 |             7.8588 |
+Heap (STL Naive)                         | true    |      ? |    4060,4067,4083 |             7.9347 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2078
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4140,4142,4161 |             7.7045 |
+Heap                                     | true    |      ? |    3075,3080,3094 |             6.5299 |
+Heap Branchless                          | true    |      ? |    2122,2122,2135 |             5.1147 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2225
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3119,3123,3127 |             3.3705 |
+Heap (STL Naive)                         | true    |      ? |    4182,4186,4203 |             7.6263 |
+Heap Branchless                          | true    |      ? |    2173,2175,2193 |             7.3865 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2131
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3161,3164,3174 |             4.4989 |
+Heap Branchless                          | true    |      ? |    2168,2170,2188 |             7.5472 |
+Heap (STL Naive)                         | true    |      ? |    4259,4264,4275 |             5.4185 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2223
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4343,4345,4360 |             6.2418 |
+Heap Branchless                          | true    |      ? |    2209,2211,2221 |             4.8000 |
+Heap                                     | true    |      ? |    3209,3214,3222 |             4.4452 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2185
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4406,4414,4421 |             5.0359 |
+Heap                                     | true    |      ? |    3248,3253,3256 |             2.8705 |
+Heap Branchless                          | true    |      ? |    2191,2193,2206 |             5.4918 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2299
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4439,4442,4444 |             1.7436 |
+Heap Branchless                          | true    |      ? |    2233,2237,2253 |             7.4189 |
+Heap                                     | true    |      ? |    3304,3307,3354 |            19.0515 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2226
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4505,4509,4529 |             8.9353 |
+Heap Branchless                          | true    |      ? |    2222,2222,2226 |             1.5492 |
+Heap                                     | true    |      ? |    3347,3353,3367 |             7.1106 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3397,3400,3412 |             5.3889 |
+Heap (STL Naive)                         | true    |      ? |    4551,4553,4561 |             3.4871 |
+Heap Branchless                          | true    |      ? |    2251,2252,2256 |             1.7205 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2269
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3444,3449,3458 |             4.7582 |
+Heap Branchless                          | true    |      ? |    2233,2238,2251 |             6.3119 |
+Heap (STL Naive)                         | true    |      ? |    4620,4623,4635 |             5.4259 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2375
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3493,3499,3500 |             2.6077 |
+Heap (STL Naive)                         | true    |      ? |    4674,4680,4697 |             8.4522 |
+Heap Branchless                          | true    |      ? |    2264,2266,2275 |             3.9699 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2329
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    4747,4750,4764 |             6.1644 |
+Heap                                     | true    |      ? |    3550,3554,3567 |             5.9666 |
+Heap Branchless                          | true    |      ? |    2254,2258,2266 |             5.2307 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2431
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3596,3598,3619 |             8.4285 |
+Heap Branchless                          | true    |      ? |    2285,2286,2331 |            18.2055 |
+Heap (STL Naive)                         | true    |      ? |    4867,4870,4888 |             7.6158 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2388
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap                                     | true    |      ? |    3610,3616,3669 |            21.7127 |
+Heap (STL Naive)                         | true    |      ? |    4946,4953,5000 |            19.6937 |
+Heap Branchless                          | true    |      ? |    2258,2262,2271 |             4.6217 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2499
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2296,2297,2309 |             4.8415 |
+Heap                                     | true    |      ? |    3664,3669,3687 |             8.3090 |
+Heap (STL Naive)                         | true    |      ? |    4973,4981,5008 |            12.4419 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    5058,5060,5125 |            25.8503 |
+Heap Branchless                          | true    |      ? |    2276,2277,2298 |             8.4711 |
+Heap                                     | true    |      ? |    3696,3705,3768 |            27.1691 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2522
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap (STL Naive)                         | true    |      ? |    5087,5091,5102 |             5.1147 |
+Heap                                     | true    |      ? |    3746,3751,3830 |            32.2652 |
+Heap Branchless                          | true    |      ? |    2310,2314,2318 |             2.8705 |
