@@ -82,9 +82,11 @@ namespace {
 					best_i = cache[child + 3] > best ? child + 3 : best_i;
 					best = cache[child + 3] > best ? cache[child + 3] : best;
 
+					int *best_ptr = array[best_i];
+
 					cache[position] = (key_value > best ? key_value : best);
-					array[position] = (key_value > best ? key : array[best_i]);
-					key = (key_value > best ? array[best_i] : key);
+					array[position] = (key_value > best ? key : best_ptr);
+					key = (key_value > best ? best_ptr : key);
 					key_value = (key_value > best ? best : key_value);
 
 					position = best_i;
