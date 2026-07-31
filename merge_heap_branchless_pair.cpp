@@ -57,9 +57,7 @@ namespace {
 
 					size_t right = left + 1;
 
-					size_t child = left;
-					if (right < size)
-						child += (array[right].first > array[left].first);
+					size_t child = left + (array[right].first > array[left].first);
 
 					auto cmp = array[child];
 					array[position] = (key.first > cmp.first ? key : cmp);
@@ -75,11 +73,12 @@ namespace {
 }
 
 bool MergeHeapBranchlessPair::merge(struct test *t, int n) {
-	std::pair<int, int *> *segments = (std::pair<int, int *> *)malloc(sizeof(std::pair<int, int *>) * n);
+	std::pair<int, int *> *segments = (std::pair<int, int *> *)malloc(sizeof(std::pair<int, int *>) * (n + 1));
 
 	for (int i = 0; i < n; i++)
 		segments[i] = std::pair<int, int *>(*t->postings[i], t->postings[i]);
-	
+
+	segments[n] = {0, nullptr};
 	heap priority(segments, n);
 
 	priority.make_heap();

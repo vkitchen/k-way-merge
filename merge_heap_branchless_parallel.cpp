@@ -61,9 +61,7 @@ namespace {
 
 					size_t right = left + 1;
 
-					size_t child = left;
-					if (right < size)
-						child += (cache[right] > cache[left]);
+					size_t child = left + (cache[right] > cache[left]);
 
 					auto cmp = array[child];
 					auto cmp_value = cache[child];
@@ -85,12 +83,13 @@ namespace {
 
 bool MergeHeapBranchlessParallel::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
-	int *cache = (int *)malloc(sizeof(int) * n);
+	int *cache = (int *)malloc(sizeof(int) * (n + 1));
 
 	for (int i = 0; i < n; i++) {
 		segments[i] = t->postings[i];
 		cache[i] = *t->postings[i];
 	}
+	cache[n] = 0;
 	
 	heap priority(segments, cache, n);
 
