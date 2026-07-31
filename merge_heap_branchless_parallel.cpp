@@ -2,84 +2,86 @@
 
 #include "merge_heap_branchless_parallel.h"
 
-class heap {
-	private:
-		int **array;
-		int *cache;
-		size_t size;
+namespace {
+	class heap {
+		private:
+			int **array;
+			int *cache;
+			size_t size;
 
-		size_t left_of(size_t position) {
-			return (position << 1) + 1;
-		}
-
-		size_t right_of(size_t position) {
-			return (position << 1) + 2;
-		}
-
-		void heapify(size_t position) {
-			size_t smallest;
-
-			size_t left = left_of(position);
-			size_t right = right_of(position);
-
-			if (left < size && cache[left] > cache[position])
-				smallest = left;
-			else
-				smallest = position;
-
-			if (right < size && cache[right] > cache[smallest])
-				smallest = right;
-
-			if (smallest != position) {
-				std::swap(cache[position], cache[smallest]);
-				std::swap(array[position], array[smallest]);
-				heapify(smallest);
+			size_t left_of(size_t position) {
+				return (position << 1) + 1;
 			}
-		}
 
-	public:
-		heap(int **array, int *cache, size_t size = 0) : array(array), cache(cache), size(size) {
-			/* Nothing */
-		}
+			size_t right_of(size_t position) {
+				return (position << 1) + 2;
+			}
 
-		void make_heap(void) {
-			for (int64_t position = size / 2 - 1; position >= 0; position--)
-				heapify(position);
-		}
+			void heapify(size_t position) {
+				size_t smallest;
 
-		void promote() {
-			int *key = array[0];
-			int key_value = cache[0];
-
-			size_t position = 0;
-
-			while (true) {
 				size_t left = left_of(position);
-				if (left >= size)
-					break;
+				size_t right = right_of(position);
 
-				size_t right = left + 1;
+				if (left < size && cache[left] > cache[position])
+					smallest = left;
+				else
+					smallest = position;
 
-				size_t child = left;
-				if (right < size)
-					child += (cache[right] > cache[left]);
+				if (right < size && cache[right] > cache[smallest])
+					smallest = right;
 
-				auto cmp = array[child];
-				auto cmp_value = cache[child];
-
-				cache[position] = (key_value > cmp_value ? key_value : cmp_value);
-				array[position] = (key_value > cmp_value ? key : cmp);
-				key = (key_value > cmp_value ? cmp : key);
-				key_value = (key_value > cmp_value ? cmp_value : key_value);
-
-				position = child;
+				if (smallest != position) {
+					std::swap(cache[position], cache[smallest]);
+					std::swap(array[position], array[smallest]);
+					heapify(smallest);
+				}
 			}
 
-			cache[position] = key_value;
-			array[position] = key;
-		}
+		public:
+			heap(int **array, int *cache, size_t size = 0) : array(array), cache(cache), size(size) {
+				/* Nothing */
+			}
 
-};
+			void make_heap(void) {
+				for (int64_t position = size / 2 - 1; position >= 0; position--)
+					heapify(position);
+			}
+
+			void promote() {
+				int *key = array[0];
+				int key_value = cache[0];
+
+				size_t position = 0;
+
+				while (true) {
+					size_t left = left_of(position);
+					if (left >= size)
+						break;
+
+					size_t right = left + 1;
+
+					size_t child = left;
+					if (right < size)
+						child += (cache[right] > cache[left]);
+
+					auto cmp = array[child];
+					auto cmp_value = cache[child];
+
+					cache[position] = (key_value > cmp_value ? key_value : cmp_value);
+					array[position] = (key_value > cmp_value ? key : cmp);
+					key = (key_value > cmp_value ? cmp : key);
+					key_value = (key_value > cmp_value ? cmp_value : key_value);
+
+					position = child;
+				}
+
+				cache[position] = key_value;
+				array[position] = key;
+			}
+
+	};
+}
 
 bool MergeHeapBranchlessParallel::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
