@@ -60,6 +60,7 @@ SRC = \
 	merge_heap_4ary.cpp \
 	merge_heap_4ary_cache.cpp \
 	merge_heap_4ary_parallel.cpp \
+	merge_heap_4ary_branchless_parallel.cpp \
 	merge_heap_8ary_parallel.cpp \
 	merge_heap_8ary_parallel_simd.cpp \
 	merge_heap_separate_init.cpp \

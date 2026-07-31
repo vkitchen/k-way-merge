@@ -66,6 +66,7 @@
 #include "merge_heap_4ary.h"
 #include "merge_heap_4ary_cache.h"
 #include "merge_heap_4ary_parallel.h"
+#include "merge_heap_4ary_branchless_parallel.h"
 #include "merge_heap_8ary_parallel.h"
 #include "merge_heap_8ary_parallel_simd.h"
 #include "merge_heap_separate_init.h"
@@ -151,6 +152,7 @@ Merge *functions[] = {
 //	new MergeHeap4ary,
 //	new MergeHeap4aryCache,
 //	new MergeHeap4aryParallel,
+//	new MergeHeap4aryBranchlessParallel,
 //	new MergeHeap8aryParallel,
 //	new MergeHeap8aryParallelSimd,
 //	new MergeHeapSeparateInit,
@@ -363,10 +365,10 @@ int main(int argc, char **argv) {
 		for (size_t i = 0; i < num_tests; i++) {
 			harness_reset(t);
 
-			// TODO this needs to go earlier and we need to run algorithms consecutively
-			// Also try a larger number and maybe a sleep?
-			for (volatile int i = 0; i < 1'000'000; i++)
-				asm volatile("");
+//			// TODO this needs to go earlier and we need to run algorithms consecutively
+//			// Also try a larger number and maybe a sleep?
+//			for (volatile int i = 0; i < 1'000'000; i++)
+//				asm volatile("");
 
 			int alg = order[i];
 
