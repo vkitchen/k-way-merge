@@ -62,6 +62,7 @@
 #include "merge_heap_floyds.h"
 #include "merge_heap_branchless_child.h"
 #include "merge_heap_branchless.h"
+#include "merge_heap_branchless_pair.h"
 #include "merge_heap_branchless_parallel.h"
 #include "merge_heap_4ary.h"
 #include "merge_heap_4ary_cache.h"
@@ -148,6 +149,7 @@ Merge *functions[] = {
 //	new MergeHeapFloyds,
 //	new MergeHeapBranchlessChild,
 //	new MergeHeapBranchless,
+//	new MergeHeapBranchlessPair,
 //	new MergeHeapBranchlessParallel,
 //	new MergeHeap4ary,
 //	new MergeHeap4aryCache,
