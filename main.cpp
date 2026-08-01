@@ -255,6 +255,18 @@ Merge *functions[] = {
 //	new MergeHeapCacheOs,
 //	new MergeHeapCacheOz,
 //
+//	new MergeHeapBranchlessParallelO1,
+//	new MergeHeapBranchlessParallelO2,
+//	new MergeHeapBranchlessParallelO3,
+//	new MergeHeapBranchlessParallelOs,
+//	new MergeHeapBranchlessParallelOz,
+//
+//	new MergeHeap4aryBranchlessParallelO1,
+//	new MergeHeap4aryBranchlessParallelO2,
+//	new MergeHeap4aryBranchlessParallelO3,
+//	new MergeHeap4aryBranchlessParallelOs,
+//	new MergeHeap4aryBranchlessParallelOz,
+//
 //	new MergeTournamentCacheO1(),
 //	new MergeTournamentCacheO2(),
 //	new MergeTournamentCacheO3(),
