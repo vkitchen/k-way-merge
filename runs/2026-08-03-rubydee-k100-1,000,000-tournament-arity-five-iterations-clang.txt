@@ -1,0 +1,990 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1785737826
+MEMORY 0.745058 GiB
+
+Init: 2447
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 72
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |          16,16,16 |             0.0000 |
+Loser 4ary                               | true    |      ? |          12,13,13 |             0.4000 |
+Loser 8ary                               | true    |      ? |          15,15,15 |             0.0000 |
+Tournament 4ary                          | true    |      ? |          15,15,15 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          20,20,21 |             0.4000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |          20,20,20 |             0.0000 |
+Tournament 4ary                          | true    |      ? |          20,20,20 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          23,23,23 |             0.0000 |
+Loser 4ary                               | true    |      ? |          17,17,17 |             0.0000 |
+Tournament 8ary                          | true    |      ? |          22,22,22 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |          39,39,39 |             0.0000 |
+Loser 8ary                               | true    |      ? |          26,26,26 |             0.0000 |
+Loser 4ary                               | true    |      ? |          32,32,32 |             0.0000 |
+Tournament 4ary                          | true    |      ? |          33,33,34 |             0.4000 |
+Tournament 8ary                          | true    |      ? |          27,27,27 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |          40,40,41 |             0.4000 |
+Loser 4ary                               | true    |      ? |          38,39,39 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |          46,46,47 |             0.4899 |
+Tournament 8ary                          | true    |      ? |          33,33,33 |             0.0000 |
+Loser 8ary                               | true    |      ? |          31,31,31 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |          47,47,48 |             0.4000 |
+Loser 8ary                               | true    |      ? |          37,37,38 |             0.4000 |
+Tournament 8ary                          | true    |      ? |          39,39,39 |             0.0000 |
+Loser 4ary                               | true    |      ? |          46,46,46 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          50,50,50 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |          54,54,54 |             0.0000 |
+Loser 8ary                               | true    |      ? |          43,43,44 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |          55,55,55 |             0.0000 |
+Tournament 8ary                          | true    |      ? |          45,46,46 |             0.4899 |
+Loser 4ary                               | true    |      ? |          53,53,56 |             1.2000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |          61,61,61 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          71,71,71 |             0.0000 |
+Tournament 8ary                          | true    |      ? |          75,75,75 |             0.0000 |
+Loser 8ary                               | true    |      ? |          69,69,69 |             0.0000 |
+Loser 4ary                               | true    |      ? |          60,60,60 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 255
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |          68,68,72 |             1.6000 |
+Tournament 8ary                          | true    |      ? |          83,83,83 |             0.0000 |
+Loser 4ary                               | true    |      ? |          67,67,67 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          88,88,89 |             0.4000 |
+Loser 8ary                               | true    |      ? |          77,78,81 |             1.4697 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |          92,92,94 |             0.8000 |
+Tournament 4ary                          | true    |      ? |          75,75,78 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |       102,102,102 |             0.0000 |
+Loser 4ary                               | true    |      ? |          75,75,75 |             0.0000 |
+Loser 8ary                               | true    |      ? |          86,86,89 |             1.2000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 306
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |          82,82,87 |             2.0000 |
+Tournament 8ary                          | true    |      ? |       100,100,100 |             0.0000 |
+Tournament 4ary                          | true    |      ? |          82,82,83 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       107,107,110 |             1.2000 |
+Loser 8ary                               | true    |      ? |         94,95,109 |             5.8172 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 309
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |          90,90,93 |             1.2000 |
+Tournament Cache Branchless              | true    |      ? |       113,113,113 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       109,109,114 |             2.0000 |
+Tournament 4ary                          | true    |      ? |          89,89,89 |             0.0000 |
+Loser 8ary                               | true    |      ? |       103,103,104 |             0.4899 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 365
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       117,117,124 |             3.4293 |
+Tournament 4ary                          | true    |      ? |         96,96,100 |             1.6000 |
+Loser 4ary                               | true    |      ? |          97,97,97 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       119,119,124 |             2.0000 |
+Loser 8ary                               | true    |      ? |       112,112,112 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 360
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       121,121,121 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       123,123,124 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       103,103,103 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       125,126,126 |             0.4000 |
+Loser 4ary                               | true    |      ? |       105,105,105 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 408
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       127,127,127 |             0.0000 |
+Tournament 4ary                          | true    |      ? |       110,110,110 |             0.0000 |
+Loser 4ary                               | true    |      ? |       112,112,120 |             3.1241 |
+Tournament 8ary                          | true    |      ? |       134,134,145 |             4.4000 |
+Loser 8ary                               | true    |      ? |       129,129,134 |             2.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 410
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       153,153,154 |             0.4000 |
+Loser 8ary                               | true    |      ? |       138,138,141 |             1.1662 |
+Tournament 8ary                          | true    |      ? |       143,143,143 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       149,150,150 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       148,148,148 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 462
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       163,163,164 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       157,157,161 |             1.5492 |
+Tournament Cache Branchless              | true    |      ? |       167,167,167 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       151,152,155 |             1.8330 |
+Loser 8ary                               | true    |      ? |       147,150,153 |             2.4819 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 455
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       184,184,185 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       166,166,166 |             0.0000 |
+Loser 8ary                               | true    |      ? |       156,156,156 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       160,160,163 |             1.2000 |
+Loser 4ary                               | true    |      ? |       172,172,173 |             0.4899 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 506
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       202,203,203 |             0.4899 |
+Loser 8ary                               | true    |      ? |       165,165,170 |             2.0000 |
+Tournament 8ary                          | true    |      ? |       168,169,171 |             0.9798 |
+Loser 4ary                               | true    |      ? |       181,181,182 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       175,175,176 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 508
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       173,174,179 |             2.6382 |
+Tournament 8ary                          | true    |      ? |       177,177,203 |            10.3073 |
+Tournament 4ary                          | true    |      ? |       183,184,187 |             1.3565 |
+Loser 4ary                               | true    |      ? |       190,191,193 |             0.9798 |
+Tournament Cache Branchless              | true    |      ? |       220,220,220 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       182,183,183 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       186,186,201 |             6.1774 |
+Loser 4ary                               | true    |      ? |       200,201,201 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       192,193,234 |            16.6060 |
+Tournament Cache Branchless              | true    |      ? |       232,232,234 |             0.8000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 556
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       191,192,192 |             0.4000 |
+Loser 4ary                               | true    |      ? |       209,210,211 |             0.7483 |
+Tournament 8ary                          | true    |      ? |       194,195,198 |             1.3565 |
+Tournament 4ary                          | true    |      ? |       201,202,271 |            27.5391 |
+Tournament Cache Branchless              | true    |      ? |       240,240,240 |             0.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 613
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       204,209,222 |             6.9109 |
+Loser 8ary                               | true    |      ? |       200,200,206 |             2.3324 |
+Tournament Cache Branchless              | true    |      ? |       246,246,247 |             0.4000 |
+Loser 4ary                               | true    |      ? |       219,219,220 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       210,210,211 |             0.4000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 608
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       253,254,258 |             1.7436 |
+Tournament 4ary                          | true    |      ? |       219,220,220 |             0.4000 |
+Loser 4ary                               | true    |      ? |       227,227,229 |             0.8000 |
+Tournament 8ary                          | true    |      ? |       212,212,222 |             3.9192 |
+Loser 8ary                               | true    |      ? |       209,210,210 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 661
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       221,222,242 |             8.2122 |
+Loser 4ary                               | true    |      ? |       237,238,240 |             1.0954 |
+Loser 8ary                               | true    |      ? |       218,219,219 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       229,229,229 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       262,263,263 |             0.4899 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 655
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       238,238,239 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       271,272,272 |             0.4899 |
+Loser 4ary                               | true    |      ? |       246,247,247 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       230,230,233 |             1.1662 |
+Loser 8ary                               | true    |      ? |       228,228,233 |             2.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 713
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       247,247,252 |             2.0000 |
+Tournament Cache Branchless              | true    |      ? |       280,280,281 |             0.4000 |
+Tournament 8ary                          | true    |      ? |       239,240,243 |             1.6248 |
+Loser 4ary                               | true    |      ? |       256,256,256 |             0.0000 |
+Loser 8ary                               | true    |      ? |       237,237,238 |             0.4899 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 705
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       257,257,257 |             0.0000 |
+Loser 4ary                               | true    |      ? |       266,267,267 |             0.4000 |
+Loser 8ary                               | true    |      ? |       247,247,247 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       249,249,250 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       287,287,288 |             0.4899 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 767
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       256,256,261 |             1.9391 |
+Tournament 4ary                          | true    |      ? |       266,266,267 |             0.4899 |
+Loser 4ary                               | true    |      ? |       276,277,278 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |       294,294,294 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       258,258,282 |             9.5079 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 756
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       276,276,281 |             2.0000 |
+Tournament 8ary                          | true    |      ? |       267,267,268 |             0.4000 |
+Loser 8ary                               | true    |      ? |       265,265,266 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       300,300,300 |             0.0000 |
+Loser 4ary                               | true    |      ? |       285,286,288 |             1.0198 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 816
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       276,276,279 |             1.1662 |
+Tournament 4ary                          | true    |      ? |       285,285,286 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       308,308,309 |             0.4000 |
+Loser 8ary                               | true    |      ? |       275,275,280 |             2.0000 |
+Loser 4ary                               | true    |      ? |       296,296,297 |             0.4899 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 808
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       285,286,312 |            10.5071 |
+Loser 8ary                               | true    |      ? |       284,284,289 |             2.2271 |
+Loser 4ary                               | true    |      ? |       305,305,306 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       331,331,332 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       294,294,295 |             0.4899 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 868
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       352,352,352 |             0.0000 |
+Tournament 4ary                          | true    |      ? |       303,304,305 |             0.6325 |
+Tournament 8ary                          | true    |      ? |       294,295,305 |             5.0040 |
+Loser 8ary                               | true    |      ? |       293,293,298 |             1.9391 |
+Loser 4ary                               | true    |      ? |       315,316,316 |             0.4899 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 855
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       325,325,326 |             0.4000 |
+Tournament 8ary                          | true    |      ? |       304,304,306 |             0.8000 |
+Loser 8ary                               | true    |      ? |       303,303,304 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       313,314,315 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |       371,371,372 |             0.4899 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 918
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       313,313,320 |             2.8000 |
+Tournament 4ary                          | true    |      ? |       323,323,323 |             0.0000 |
+Loser 4ary                               | true    |      ? |       336,336,336 |             0.0000 |
+Loser 8ary                               | true    |      ? |       313,313,313 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       389,389,389 |             0.0000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 910
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       333,333,342 |             3.6551 |
+Tournament 8ary                          | true    |      ? |       322,323,332 |             3.7202 |
+Loser 8ary                               | true    |      ? |       323,323,328 |             1.9391 |
+Tournament Cache Branchless              | true    |      ? |       405,406,407 |             0.7483 |
+Loser 4ary                               | true    |      ? |       345,346,348 |             1.0954 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 976
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       332,333,345 |             4.9153 |
+Tournament 4ary                          | true    |      ? |       343,343,343 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       423,423,426 |             1.1662 |
+Loser 8ary                               | true    |      ? |       333,333,333 |             0.0000 |
+Loser 4ary                               | true    |      ? |       356,357,361 |             1.8547 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 960
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       343,343,343 |             0.0000 |
+Tournament 8ary                          | true    |      ? |       342,342,345 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |       442,442,445 |             1.2000 |
+Loser 4ary                               | true    |      ? |       366,367,369 |             1.1662 |
+Tournament 4ary                          | true    |      ? |       352,353,353 |             0.4899 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1025
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       362,363,368 |             2.2450 |
+Tournament Cache Branchless              | true    |      ? |       460,460,461 |             0.4000 |
+Tournament 8ary                          | true    |      ? |       351,352,364 |             5.0200 |
+Loser 8ary                               | true    |      ? |       352,353,353 |             0.4000 |
+Loser 4ary                               | true    |      ? |       376,377,380 |             1.4967 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1010
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       385,386,387 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       372,372,377 |             1.9391 |
+Tournament Cache Branchless              | true    |      ? |       479,479,480 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       361,361,362 |             0.4899 |
+Loser 8ary                               | true    |      ? |       362,362,367 |             1.9391 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1078
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       372,373,377 |             1.7436 |
+Tournament 8ary                          | true    |      ? |       371,372,375 |             1.3565 |
+Tournament Cache Branchless              | true    |      ? |       496,497,498 |             0.7483 |
+Loser 4ary                               | true    |      ? |       397,399,400 |             1.0198 |
+Tournament 4ary                          | true    |      ? |       382,383,383 |             0.4899 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1059
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       381,381,394 |             5.3814 |
+Tournament Cache Branchless              | true    |      ? |       512,512,513 |             0.4000 |
+Loser 8ary                               | true    |      ? |       383,383,384 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       392,393,393 |             0.4000 |
+Loser 4ary                               | true    |      ? |       407,408,408 |             0.4000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1131
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       418,419,423 |             1.8547 |
+Tournament 8ary                          | true    |      ? |       391,395,397 |             2.3152 |
+Loser 8ary                               | true    |      ? |       393,394,394 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       525,525,527 |             0.8000 |
+Tournament 4ary                          | true    |      ? |       403,403,408 |             2.4495 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1110
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       413,413,414 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       402,402,404 |             0.8000 |
+Loser 4ary                               | true    |      ? |       429,430,432 |             1.3565 |
+Loser 8ary                               | true    |      ? |       404,405,405 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       535,537,537 |             0.8000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1176
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       412,415,425 |             4.7749 |
+Tournament 4ary                          | true    |      ? |       424,424,429 |             2.0000 |
+Tournament Cache Branchless              | true    |      ? |       545,546,550 |             1.8547 |
+Loser 8ary                               | true    |      ? |       414,415,416 |             0.7483 |
+Loser 4ary                               | true    |      ? |       439,440,441 |             0.7483 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1157
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       425,426,426 |             0.4899 |
+Loser 4ary                               | true    |      ? |       452,453,454 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       434,435,565 |            52.1014 |
+Tournament Cache Branchless              | true    |      ? |       555,556,557 |             0.6325 |
+Tournament 8ary                          | true    |      ? |       422,423,465 |            16.8119 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1238
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       445,445,446 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       433,433,437 |             1.6000 |
+Loser 4ary                               | true    |      ? |       463,463,465 |             0.8000 |
+Loser 8ary                               | true    |      ? |       436,437,441 |             1.8547 |
+Tournament Cache Branchless              | true    |      ? |       564,564,565 |             0.4899 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1213
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       472,474,474 |             0.8000 |
+Tournament 4ary                          | true    |      ? |       455,456,457 |             0.7483 |
+Loser 8ary                               | true    |      ? |       447,447,453 |             2.3324 |
+Tournament Cache Branchless              | true    |      ? |       573,574,579 |             2.1354 |
+Tournament 8ary                          | true    |      ? |       443,444,447 |             1.3565 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1280
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       484,485,487 |             1.0198 |
+Tournament 8ary                          | true    |      ? |       454,455,463 |             3.2496 |
+Tournament 4ary                          | true    |      ? |       467,467,475 |             3.1241 |
+Tournament Cache Branchless              | true    |      ? |       583,584,584 |             0.4899 |
+Loser 8ary                               | true    |      ? |       457,459,461 |             1.2649 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       497,499,511 |             5.0990 |
+Tournament Cache Branchless              | true    |      ? |       593,594,598 |             1.7436 |
+Tournament 4ary                          | true    |      ? |       478,479,485 |             2.6382 |
+Loser 8ary                               | true    |      ? |       469,469,471 |             0.8000 |
+Tournament 8ary                          | true    |      ? |       465,465,466 |             0.4899 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1353
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       480,481,487 |             2.5298 |
+Loser 4ary                               | true    |      ? |       508,509,511 |             1.0954 |
+Tournament Cache Branchless              | true    |      ? |       604,605,609 |             1.8547 |
+Tournament 4ary                          | true    |      ? |       489,490,490 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       476,477,486 |             3.7630 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1324
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       487,487,500 |             5.1147 |
+Loser 8ary                               | true    |      ? |       492,493,493 |             0.4000 |
+Loser 4ary                               | true    |      ? |       519,520,521 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |       614,615,615 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       500,502,506 |             2.0396 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1396
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       503,505,509 |             2.0396 |
+Tournament 4ary                          | true    |      ? |       512,512,513 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       498,499,509 |             4.0200 |
+Tournament Cache Branchless              | true    |      ? |       624,625,625 |             0.4899 |
+Loser 4ary                               | true    |      ? |       529,531,533 |             1.4142 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1360
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       509,510,518 |             3.2496 |
+Tournament 4ary                          | true    |      ? |       523,523,524 |             0.4000 |
+Loser 8ary                               | true    |      ? |       515,516,541 |            10.1074 |
+Tournament Cache Branchless              | true    |      ? |       635,636,641 |             2.0976 |
+Loser 4ary                               | true    |      ? |       544,545,546 |             0.7483 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1445
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       521,521,536 |             5.9127 |
+Loser 4ary                               | true    |      ? |       553,556,557 |             1.4697 |
+Loser 8ary                               | true    |      ? |       526,528,528 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       647,647,654 |             3.2000 |
+Tournament 4ary                          | true    |      ? |       535,535,536 |             0.4899 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1416
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       567,567,569 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       657,658,659 |             0.8944 |
+Loser 8ary                               | true    |      ? |       539,539,545 |             2.3324 |
+Tournament 8ary                          | true    |      ? |       532,533,534 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       547,551,553 |             2.4000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1489
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       558,558,560 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       666,669,669 |             1.1662 |
+Loser 8ary                               | true    |      ? |       550,551,551 |             0.4000 |
+Loser 4ary                               | true    |      ? |       579,580,582 |             1.0198 |
+Tournament 8ary                          | true    |      ? |       544,544,555 |             4.4000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1460
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       680,680,682 |             0.8000 |
+Loser 4ary                               | true    |      ? |       590,591,594 |             1.3565 |
+Tournament 8ary                          | true    |      ? |       555,557,570 |             5.4626 |
+Loser 8ary                               | true    |      ? |       562,563,568 |             2.1354 |
+Tournament 4ary                          | true    |      ? |       570,570,571 |             0.4899 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1549
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       582,583,592 |             3.8262 |
+Tournament 8ary                          | true    |      ? |       567,567,568 |             0.4000 |
+Loser 8ary                               | true    |      ? |       575,575,580 |             2.0000 |
+Tournament Cache Branchless              | true    |      ? |       692,693,693 |             0.4899 |
+Loser 4ary                               | true    |      ? |       603,605,607 |             1.4142 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1511
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       593,594,600 |             2.6382 |
+Tournament Cache Branchless              | true    |      ? |       704,704,706 |             0.8000 |
+Loser 4ary                               | true    |      ? |       615,616,617 |             0.7483 |
+Tournament 8ary                          | true    |      ? |       578,582,593 |             6.2610 |
+Loser 8ary                               | true    |      ? |       585,587,587 |             0.8000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1606
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       590,591,600 |             3.8262 |
+Tournament 4ary                          | true    |      ? |       605,606,607 |             0.7483 |
+Loser 8ary                               | true    |      ? |       597,598,600 |             1.0198 |
+Loser 4ary                               | true    |      ? |       626,628,628 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       716,717,719 |             1.1662 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1570
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       610,611,628 |             7.0143 |
+Tournament 8ary                          | true    |      ? |       601,602,614 |             4.8415 |
+Loser 4ary                               | true    |      ? |       639,640,641 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |       728,728,729 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       617,618,618 |             0.4899 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1658
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       650,651,655 |             1.7889 |
+Tournament 4ary                          | true    |      ? |       629,630,630 |             0.4000 |
+Tournament 8ary                          | true    |      ? |       613,618,629 |             6.2418 |
+Loser 8ary                               | true    |      ? |       622,623,623 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       739,740,743 |             1.3565 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1614
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       803,803,805 |             0.8000 |
+Loser 8ary                               | true    |      ? |       773,773,774 |             0.4899 |
+Loser 4ary                               | true    |      ? |       846,846,847 |             0.4899 |
+Tournament 8ary                          | true    |      ? |       925,927,928 |             0.9798 |
+Tournament Cache Branchless              | true    |      ? |       762,762,769 |             2.8000 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1712
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       861,862,863 |             0.7483 |
+Loser 8ary                               | true    |      ? |       787,788,789 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       817,818,820 |             1.0198 |
+Tournament 8ary                          | true    |      ? |       943,943,943 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       783,785,790 |             2.8705 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1669
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       873,876,877 |             1.3565 |
+Tournament 4ary                          | true    |      ? |       831,833,836 |             1.6733 |
+Tournament Cache Branchless              | true    |      ? |       805,807,811 |             2.0591 |
+Loser 8ary                               | true    |      ? |       801,803,803 |             0.8000 |
+Tournament 8ary                          | true    |      ? |       959,959,960 |             0.4899 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1751
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       890,890,892 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       828,829,834 |             2.4166 |
+Loser 8ary                               | true    |      ? |       815,815,844 |            11.5065 |
+Tournament 4ary                          | true    |      ? |       845,846,848 |             0.9798 |
+Tournament 8ary                          | true    |      ? |      975,978,1052 |            29.3707 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |       990,991,992 |             0.7483 |
+Loser 8ary                               | true    |      ? |       829,829,834 |             2.0000 |
+Tournament 4ary                          | true    |      ? |       859,860,860 |             0.4899 |
+Loser 4ary                               | true    |      ? |       904,904,904 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       850,850,855 |             2.0000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1824
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       871,871,872 |             0.4899 |
+Tournament 8ary                          | true    |      ? |    1007,1022,1022 |             7.3485 |
+Loser 8ary                               | true    |      ? |       842,842,843 |             0.4000 |
+Loser 4ary                               | true    |      ? |       919,920,931 |             5.3292 |
+Tournament 4ary                          | true    |      ? |       873,873,874 |             0.4899 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1784
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |    1021,1037,1087 |            24.0915 |
+Loser 4ary                               | true    |      ? |       931,933,934 |             1.0198 |
+Tournament 4ary                          | true    |      ? |       886,887,887 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       893,894,898 |             1.8547 |
+Loser 8ary                               | true    |      ? |       854,856,861 |             2.6077 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |       899,901,902 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |       913,914,914 |             0.4000 |
+Tournament 8ary                          | true    |      ? |    1036,1037,1038 |             0.6325 |
+Loser 4ary                               | true    |      ? |       946,946,947 |             0.4899 |
+Loser 8ary                               | true    |      ? |       868,868,873 |             2.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       880,883,885 |             1.7436 |
+Tournament 8ary                          | true    |      ? |    1051,1052,1068 |             6.5422 |
+Tournament Cache Branchless              | true    |      ? |       934,934,935 |             0.4899 |
+Loser 4ary                               | true    |      ? |       959,959,960 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       912,913,913 |             0.4899 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1918
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       973,973,974 |             0.4899 |
+Tournament 4ary                          | true    |      ? |       925,926,927 |             0.6325 |
+Loser 8ary                               | true    |      ? |       892,893,898 |             2.1354 |
+Tournament 8ary                          | true    |      ? |    1066,1067,1067 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       955,955,956 |             0.4899 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1879
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |       987,988,989 |             0.6325 |
+Tournament Cache Branchless              | true    |      ? |       975,976,977 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       938,938,940 |             0.8000 |
+Tournament 8ary                          | true    |      ? |    1082,1092,1097 |             6.7823 |
+Loser 8ary                               | true    |      ? |       905,906,910 |             1.7436 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1964
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       996,996,997 |             0.4000 |
+Loser 4ary                               | true    |      ? |    1000,1002,1004 |             1.3266 |
+Tournament 4ary                          | true    |      ? |       951,952,953 |             0.8944 |
+Loser 8ary                               | true    |      ? |       918,918,924 |             2.7129 |
+Tournament 8ary                          | true    |      ? |    1096,1096,1112 |             6.3119 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1928
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1013,1014,1015 |             0.6325 |
+Tournament Cache Branchless              | true    |      ? |    1017,1018,1019 |             0.6325 |
+Tournament 4ary                          | true    |      ? |      964,965,1104 |            55.7049 |
+Loser 8ary                               | true    |      ? |       930,931,932 |             0.6325 |
+Tournament 8ary                          | true    |      ? |    1111,1112,1127 |             7.4458 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2010
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1027,1028,1029 |             0.6325 |
+Loser 8ary                               | true    |      ? |       943,943,948 |             1.9596 |
+Tournament 8ary                          | true    |      ? |    1126,1128,1214 |            33.7793 |
+Tournament Cache Branchless              | true    |      ? |    1038,1039,1040 |             0.7483 |
+Tournament 4ary                          | true    |      ? |       977,977,980 |             1.1662 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1990
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |       956,957,962 |             2.2450 |
+Loser 4ary                               | true    |      ? |    1041,1042,1042 |             0.4000 |
+Tournament 4ary                          | true    |      ? |       991,991,993 |             0.8000 |
+Tournament 8ary                          | true    |      ? |    1141,1142,1155 |             5.2383 |
+Tournament Cache Branchless              | true    |      ? |    1061,1061,1065 |             1.9596 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2072
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1081,1082,1088 |             2.5298 |
+Loser 4ary                               | true    |      ? |    1055,1055,1056 |             0.4899 |
+Loser 8ary                               | true    |      ? |       969,970,976 |             2.6382 |
+Tournament 4ary                          | true    |      ? |    1004,1005,1005 |             0.4899 |
+Tournament 8ary                          | true    |      ? |    1157,1159,1233 |            29.2192 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2026
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1070,1070,1071 |             0.4899 |
+Loser 8ary                               | true    |      ? |       983,983,984 |             0.4000 |
+Tournament 8ary                          | true    |      ? |    1174,1174,1190 |             6.3119 |
+Tournament Cache Branchless              | true    |      ? |    1104,1105,1106 |             0.7483 |
+Tournament 4ary                          | true    |      ? |    1018,1018,1019 |             0.4000 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |      998,998,1003 |             1.9391 |
+Tournament 4ary                          | true    |      ? |    1032,1033,1035 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |    1125,1126,1127 |             0.6325 |
+Tournament 8ary                          | true    |      ? |    1189,1191,1208 |             7.1386 |
+Loser 4ary                               | true    |      ? |    1083,1084,1085 |             0.6325 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2082
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1101,1101,1102 |             0.4899 |
+Tournament 8ary                          | true    |      ? |    1207,1208,1211 |             1.3565 |
+Tournament Cache Branchless              | true    |      ? |    1147,1148,1149 |             0.8944 |
+Loser 8ary                               | true    |      ? |    1012,1013,1019 |             2.8983 |
+Tournament 4ary                          | true    |      ? |    1047,1048,1050 |             1.1662 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2188
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1113,1117,1118 |             1.8547 |
+Loser 8ary                               | true    |      ? |    1027,1027,1028 |             0.4899 |
+Tournament 8ary                          | true    |      ? |    1223,1225,1234 |             3.8781 |
+Tournament 4ary                          | true    |      ? |    1062,1064,1065 |             1.2000 |
+Tournament Cache Branchless              | true    |      ? |    1168,1169,1172 |             1.3565 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2146
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1131,1133,1133 |             0.8000 |
+Tournament 8ary                          | true    |      ? |    1242,1243,1243 |             0.4899 |
+Tournament 4ary                          | true    |      ? |    1078,1080,1081 |             1.2000 |
+Tournament Cache Branchless              | true    |      ? |    1186,1187,1189 |             1.2000 |
+Loser 8ary                               | true    |      ? |    1042,1043,1071 |            11.1427 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2230
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1207,1208,1211 |             1.4697 |
+Loser 8ary                               | true    |      ? |    1058,1058,1059 |             0.4899 |
+Tournament 4ary                          | true    |      ? |    1093,1094,1096 |             1.1662 |
+Loser 4ary                               | true    |      ? |    1146,1147,1150 |             1.4967 |
+Tournament 8ary                          | true    |      ? |    1257,1261,1271 |             4.7329 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2188
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1165,1166,1168 |             1.0198 |
+Tournament 4ary                          | true    |      ? |    1110,1110,1112 |             0.8000 |
+Loser 8ary                               | true    |      ? |    1073,1075,1081 |             3.0725 |
+Tournament Cache Branchless              | true    |      ? |    1224,1227,1228 |             1.3565 |
+Tournament 8ary                          | true    |      ? |    1279,1281,1296 |             6.6753 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2298
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1243,1244,1245 |             0.7483 |
+Tournament 4ary                          | true    |      ? |    1125,1126,1128 |             0.9798 |
+Loser 8ary                               | true    |      ? |    1091,1091,1092 |             0.4000 |
+Loser 4ary                               | true    |      ? |    1180,1181,1182 |             0.7483 |
+Tournament 8ary                          | true    |      ? |    1298,1298,1315 |             6.7112 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2230
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1143,1145,1145 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |    1259,1259,1260 |             0.4899 |
+Tournament 8ary                          | true    |      ? |    1315,1316,1331 |             6.1123 |
+Loser 8ary                               | true    |      ? |    1105,1106,1113 |             2.9257 |
+Loser 4ary                               | true    |      ? |    1199,1202,1203 |             1.3565 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2361
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |    1332,1334,1352 |             8.9353 |
+Loser 8ary                               | true    |      ? |    1122,1124,1126 |             1.4967 |
+Tournament Cache Branchless              | true    |      ? |    1272,1275,1275 |             1.1662 |
+Tournament 4ary                          | true    |      ? |    1160,1160,1161 |             0.4000 |
+Loser 4ary                               | true    |      ? |    1217,1218,1219 |             0.7483 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2281
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |    1137,1139,1143 |             2.1541 |
+Tournament 4ary                          | true    |      ? |    1175,1176,1177 |             0.6325 |
+Tournament Cache Branchless              | true    |      ? |    1289,1289,1291 |             0.8000 |
+Tournament 8ary                          | true    |      ? |    1353,1353,1365 |             4.7159 |
+Loser 4ary                               | true    |      ? |    1230,1233,1235 |             1.8974 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2398
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1191,1192,1193 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |    1302,1304,1304 |             0.8000 |
+Loser 4ary                               | true    |      ? |    1247,1250,1251 |             1.4967 |
+Tournament 8ary                          | true    |      ? |    1369,1371,1372 |             0.9798 |
+Loser 8ary                               | true    |      ? |    1155,1155,1155 |             0.0000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2339
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary                               | true    |      ? |    1168,1170,1171 |             1.2000 |
+Tournament 4ary                          | true    |      ? |    1208,1208,1209 |             0.4000 |
+Tournament 8ary                          | true    |      ? |    1387,1388,1406 |             7.1666 |
+Loser 4ary                               | true    |      ? |    1265,1266,1268 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    1315,1316,1318 |             1.1662 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2447
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1223,1223,1225 |             0.8000 |
+Loser 8ary                               | true    |      ? |    1183,1186,1191 |             2.6382 |
+Loser 4ary                               | true    |      ? |    1281,1282,1283 |             0.8944 |
+Tournament Cache Branchless              | true    |      ? |    1327,1330,1331 |             1.4697 |
+Tournament 8ary                          | true    |      ? |    1403,1407,1424 |             7.5472 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2395
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1341,1343,1344 |             1.0198 |
+Tournament 8ary                          | true    |      ? |    1422,1423,1424 |             0.6325 |
+Tournament 4ary                          | true    |      ? |    1238,1238,1379 |            56.4000 |
+Loser 4ary                               | true    |      ? |    1297,1297,1299 |             0.8000 |
+Loser 8ary                               | true    |      ? |    1200,1200,1207 |             2.7129 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2497
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1252,1253,1394 |            56.3084 |
+Loser 8ary                               | true    |      ? |    1214,1217,1221 |             2.4495 |
+Loser 4ary                               | true    |      ? |    1312,1312,1314 |             0.8000 |
+Tournament 8ary                          | true    |      ? |    1440,1456,1457 |             6.3435 |
+Tournament Cache Branchless              | true    |      ? |    1352,1354,1356 |             1.2649 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2447
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1267,1268,1270 |             1.0198 |
+Tournament 8ary                          | true    |      ? |    1455,1456,1457 |             0.7483 |
+Loser 4ary                               | true    |      ? |    1326,1326,1328 |             0.9798 |
+Loser 8ary                               | true    |      ? |    1229,1230,1252 |             9.0111 |
+Tournament Cache Branchless              | true    |      ? |    1364,1365,1368 |             1.4697 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2560
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 8ary                          | true    |      ? |    1472,1473,1475 |             1.0198 |
+Tournament 4ary                          | true    |      ? |    1281,1282,1285 |             1.4697 |
+Loser 4ary                               | true    |      ? |    1342,1343,1345 |             0.9798 |
+Loser 8ary                               | true    |      ? |    1243,1244,1246 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    1374,1376,1378 |             1.2649 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2488
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary                          | true    |      ? |    1297,1299,1299 |             0.8000 |
+Loser 8ary                               | true    |      ? |    1258,1258,1260 |             0.8000 |
+Loser 4ary                               | true    |      ? |    1358,1358,1359 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1387,1388,1392 |             2.0976 |
+Tournament 8ary                          | true    |      ? |    1488,1491,1505 |             6.1838 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2599
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 4ary                               | true    |      ? |    1374,1374,1375 |             0.4000 |
+Loser 8ary                               | true    |      ? |    1273,1275,1298 |             9.5289 |
+Tournament Cache Branchless              | true    |      ? |    1398,1400,1404 |             2.0396 |
+Tournament 4ary                          | true    |      ? |    1312,1313,1315 |             1.1662 |
+Tournament 8ary                          | true    |      ? |    1505,1508,1514 |             3.0067 |
