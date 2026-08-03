@@ -70,6 +70,7 @@
 #include "merge_heap_4ary_branchless_parallel.h"
 #include "merge_heap_8ary_parallel.h"
 #include "merge_heap_8ary_parallel_simd.h"
+#include "merge_heap_8ary_branchless_parallel.h"
 #include "merge_heap_separate_init.h"
 #include "merge_heap_stl.h"
 #include "merge_heap_stl_naive.h"
@@ -160,6 +161,7 @@ Merge *functions[] = {
 //	new MergeHeap4aryBranchlessParallel,
 //	new MergeHeap8aryParallel,
 //	new MergeHeap8aryParallelSimd,
+//	new MergeHeap8aryBranchlessParallel,
 //	new MergeHeapSeparateInit,
 //	new MergeHeapStl,
 //	new MergeHeapStlNaive,
