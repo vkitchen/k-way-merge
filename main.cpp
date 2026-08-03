@@ -85,6 +85,7 @@
 #include "merge_tournament_4ary.h"
 #include "merge_tournament_8ary.h"
 #include "merge_loser_4ary.h"
+#include "merge_loser_8ary.h"
 #include "merge_state_machine_compiled.h"
 #include "merge_state_machine_compiled_cache.h"
 #include "merge_state_machine_compiled_var.h"
@@ -175,6 +176,7 @@ Merge *functions[] = {
 //	new MergeTournament4ary,
 //	new MergeTournament8ary,
 //	new MergeLoser4ary,
+//	new MergeLoser8ary,
 //
 //	new MergeStateMachineCompiled,
 //	new MergeStateMachineCompiledCache,
