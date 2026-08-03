@@ -1,0 +1,990 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1785742721
+MEMORY 0.745058 GiB
+
+Init: 2334
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 69
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |          15,15,15 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          15,15,15 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |          15,15,15 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |          29,29,30 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |          15,15,15 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |          20,20,21 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |          20,20,21 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |          40,40,40 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          20,20,20 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |          20,20,20 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 114
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |          25,26,26 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |          26,26,26 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |          25,25,26 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |          50,50,50 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |          26,26,26 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 150
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |          60,60,60 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          31,31,31 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |          31,31,31 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          31,31,32 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |          31,31,31 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 159
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |          37,37,37 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |          70,70,70 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |          37,37,37 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          37,37,37 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          37,37,38 |             0.4899 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 197
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |          43,43,43 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          43,43,44 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |          43,43,44 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |          80,80,80 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          43,43,46 |             1.1662 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 207
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |          69,69,70 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |          69,69,70 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |          69,69,70 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       151,151,151 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          69,69,69 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 251
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       168,169,169 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |          78,78,78 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |          78,78,78 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          78,78,81 |             1.2000 |
+Loser 8ary (O2)                          | true    |      ? |          77,77,78 |             0.4000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 252
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |          86,86,88 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |          87,87,87 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |          87,87,87 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          86,86,86 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       186,186,186 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 297
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |          95,95,95 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |          95,95,95 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |          94,95,95 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |         95,95,100 |             2.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       203,203,203 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       103,103,104 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       104,104,104 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       220,221,221 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       103,103,104 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       104,104,104 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 350
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       112,112,115 |             1.2000 |
+Loser 8ary (O1)                          | true    |      ? |       112,112,113 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       112,112,117 |             1.9391 |
+Loser 8ary (Os)                          | true    |      ? |       113,113,113 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       238,238,239 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 346
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       121,121,121 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       121,121,121 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       121,121,121 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       255,256,256 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       121,121,121 |             0.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 403
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       129,130,130 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       129,129,133 |             1.6000 |
+Loser 8ary (Oz)                          | true    |      ? |       273,273,273 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       129,129,130 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       130,130,130 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 394
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       138,138,143 |             2.0000 |
+Loser 8ary (O1)                          | true    |      ? |       138,138,139 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       138,138,139 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       138,138,138 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       290,290,291 |             0.4000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 444
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       147,147,147 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       307,308,308 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       147,147,152 |             1.9391 |
+Loser 8ary (O1)                          | true    |      ? |       147,147,147 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       147,147,147 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 439
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       156,156,167 |             4.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       325,325,325 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       155,156,162 |             2.6382 |
+Loser 8ary (O1)                          | true    |      ? |       156,156,156 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       155,156,156 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 493
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       165,165,165 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       164,165,168 |             1.4697 |
+Loser 8ary (Os)                          | true    |      ? |       164,165,170 |             2.2450 |
+Loser 8ary (Oz)                          | true    |      ? |       342,342,343 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       164,164,165 |             0.4899 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 487
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       360,360,360 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |       174,174,174 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       173,173,174 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       173,173,174 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       173,173,174 |             0.4899 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 551
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       182,182,183 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       182,182,183 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       182,182,183 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       377,377,377 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       182,182,182 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 538
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       191,191,191 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |       191,192,192 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       395,395,395 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       191,192,196 |             1.9391 |
+Loser 8ary (O2)                          | true    |      ? |       191,191,192 |             0.4000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 592
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       413,413,414 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       200,200,201 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       200,200,200 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       200,200,201 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       200,200,200 |             0.0000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 583
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       209,210,214 |             1.8547 |
+Loser 8ary (Oz)                          | true    |      ? |       430,431,431 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       209,209,209 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       209,209,209 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       209,209,226 |             6.7112 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 640
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       218,218,219 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       218,218,219 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       218,219,219 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       448,448,448 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       218,218,219 |             0.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 632
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       228,228,228 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       466,466,467 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       227,228,228 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       227,228,228 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       227,227,232 |             2.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 681
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       237,237,237 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       236,237,242 |             2.1354 |
+Loser 8ary (O1)                          | true    |      ? |       237,238,240 |             1.0954 |
+Loser 8ary (Oz)                          | true    |      ? |       484,485,486 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |       237,237,237 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 691
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       246,247,251 |             1.8547 |
+Loser 8ary (Os)                          | true    |      ? |       246,247,252 |             2.4166 |
+Loser 8ary (Oz)                          | true    |      ? |       502,502,502 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       247,247,252 |             2.0000 |
+Loser 8ary (O2)                          | true    |      ? |       246,247,247 |             0.4000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 733
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       256,257,257 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       520,520,531 |             4.3174 |
+Loser 8ary (O1)                          | true    |      ? |       256,256,257 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       256,256,256 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       256,257,261 |             1.7436 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 726
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       266,266,271 |             2.0000 |
+Loser 8ary (O1)                          | true    |      ? |       266,266,271 |             2.4495 |
+Loser 8ary (O3)                          | true    |      ? |       266,266,266 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       265,265,266 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       538,538,539 |             0.4000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 796
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       556,556,557 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       274,275,275 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       275,275,275 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |       275,275,276 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       275,275,276 |             0.4000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 780
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       284,284,285 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       284,284,284 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       284,285,290 |             2.1354 |
+Loser 8ary (O2)                          | true    |      ? |       284,284,285 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       573,574,575 |             0.6325 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       294,294,294 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       591,592,593 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |       294,294,298 |             1.5492 |
+Loser 8ary (Os)                          | true    |      ? |       293,293,293 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       294,294,310 |             6.4000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 823
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       303,304,305 |             0.6325 |
+Loser 8ary (O1)                          | true    |      ? |       303,304,312 |             3.4293 |
+Loser 8ary (Oz)                          | true    |      ? |       610,610,610 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       304,304,309 |             2.4495 |
+Loser 8ary (Os)                          | true    |      ? |       302,303,307 |             1.7436 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 885
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       313,313,313 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       313,314,314 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       628,628,629 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       313,314,318 |             1.8547 |
+Loser 8ary (Os)                          | true    |      ? |       312,313,318 |             2.2450 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 871
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       323,324,324 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       323,323,324 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |       323,323,323 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       322,323,327 |             1.7436 |
+Loser 8ary (Oz)                          | true    |      ? |       646,646,647 |             0.4899 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 937
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       333,333,334 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       333,334,334 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       333,334,339 |             2.2450 |
+Loser 8ary (Os)                          | true    |      ? |       332,333,333 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       664,664,665 |             0.4899 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 919
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       343,343,347 |             1.6000 |
+Loser 8ary (O2)                          | true    |      ? |       343,343,347 |             1.6000 |
+Loser 8ary (Oz)                          | true    |      ? |       683,683,684 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |       342,343,343 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       342,342,347 |             2.4495 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 987
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       353,353,357 |             1.6000 |
+Loser 8ary (O1)                          | true    |      ? |       353,353,353 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       352,352,352 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       353,353,354 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       701,701,702 |             0.4899 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 968
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       362,362,362 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |       362,363,368 |             2.1354 |
+Loser 8ary (Oz)                          | true    |      ? |       720,720,721 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       363,363,382 |             7.6000 |
+Loser 8ary (O2)                          | true    |      ? |       363,363,368 |             2.0000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1032
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       373,374,374 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       373,373,373 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       373,373,379 |             2.5298 |
+Loser 8ary (Oz)                          | true    |      ? |       738,739,740 |             0.7483 |
+Loser 8ary (Os)                          | true    |      ? |       372,372,373 |             0.4000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1013
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       384,384,384 |             0.0000 |
+Loser 8ary (Os)                          | true    |      ? |       382,382,388 |             2.3324 |
+Loser 8ary (Oz)                          | true    |      ? |       757,757,758 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       383,384,390 |             2.5298 |
+Loser 8ary (O1)                          | true    |      ? |       383,383,393 |             4.0000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1094
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       393,394,394 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       775,776,776 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       394,398,399 |             2.3152 |
+Loser 8ary (Os)                          | true    |      ? |       393,393,393 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       393,394,400 |             2.6382 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1071
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       404,405,406 |             0.7483 |
+Loser 8ary (O1)                          | true    |      ? |       404,405,405 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       794,795,795 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       405,405,410 |             2.0000 |
+Loser 8ary (Os)                          | true    |      ? |       403,403,403 |             0.0000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1130
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       813,814,814 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       414,415,415 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       415,415,416 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       415,416,421 |             2.1354 |
+Loser 8ary (Os)                          | true    |      ? |       413,414,414 |             0.4899 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1113
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       426,426,431 |             1.9391 |
+Loser 8ary (O2)                          | true    |      ? |       426,426,427 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       833,833,834 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |       426,426,430 |             1.6000 |
+Loser 8ary (Os)                          | true    |      ? |       424,425,426 |             0.7483 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1185
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       436,437,442 |             2.2450 |
+Loser 8ary (Os)                          | true    |      ? |       435,435,436 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |       852,853,853 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       436,437,443 |             2.6077 |
+Loser 8ary (O2)                          | true    |      ? |       436,437,455 |             7.3103 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1164
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       447,449,453 |             2.0396 |
+Loser 8ary (Os)                          | true    |      ? |       445,446,452 |             2.5298 |
+Loser 8ary (O1)                          | true    |      ? |       447,448,452 |             1.7436 |
+Loser 8ary (Oz)                          | true    |      ? |       870,872,872 |             0.8000 |
+Loser 8ary (O2)                          | true    |      ? |       447,448,453 |             2.2450 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1237
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       459,459,462 |             1.1662 |
+Loser 8ary (Oz)                          | true    |      ? |       891,891,895 |             1.6000 |
+Loser 8ary (O1)                          | true    |      ? |       458,458,462 |             1.5492 |
+Loser 8ary (Os)                          | true    |      ? |       457,457,458 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       458,459,460 |             0.6325 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1213
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |       910,911,912 |             0.7483 |
+Loser 8ary (O2)                          | true    |      ? |       468,470,471 |             1.0198 |
+Loser 8ary (O3)                          | true    |      ? |       471,471,473 |             0.8000 |
+Loser 8ary (O1)                          | true    |      ? |       468,470,478 |             3.4871 |
+Loser 8ary (Os)                          | true    |      ? |       468,469,469 |             0.4899 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1282
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       481,482,485 |             1.3565 |
+Loser 8ary (Os)                          | true    |      ? |       479,479,485 |             2.7129 |
+Loser 8ary (O2)                          | true    |      ? |       481,482,487 |             2.2450 |
+Loser 8ary (O1)                          | true    |      ? |       479,481,481 |             0.8000 |
+Loser 8ary (Oz)                          | true    |      ? |       929,930,931 |             0.7483 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1257
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       492,492,498 |             2.3324 |
+Loser 8ary (Oz)                          | true    |      ? |       948,951,951 |             1.2000 |
+Loser 8ary (O3)                          | true    |      ? |       493,498,498 |             2.4495 |
+Loser 8ary (Os)                          | true    |      ? |       490,491,500 |             3.9799 |
+Loser 8ary (O2)                          | true    |      ? |       493,493,493 |             0.0000 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1340
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       500,502,503 |             1.0198 |
+Loser 8ary (O3)                          | true    |      ? |       502,505,509 |             2.2804 |
+Loser 8ary (O1)                          | true    |      ? |       503,504,504 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |       970,970,970 |             0.0000 |
+Loser 8ary (O2)                          | true    |      ? |       504,504,510 |             2.3324 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1308
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       514,516,516 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |       511,513,514 |             0.9798 |
+Loser 8ary (O1)                          | true    |      ? |       515,515,515 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |       989,990,995 |             2.2450 |
+Loser 8ary (O2)                          | true    |      ? |       516,516,519 |             1.2000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1388
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       525,527,527 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |       522,524,525 |             1.0954 |
+Loser 8ary (O2)                          | true    |      ? |       525,527,527 |             0.9798 |
+Loser 8ary (O3)                          | true    |      ? |       527,528,528 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |    1008,1010,1010 |             0.8000 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1356
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    1028,1030,1030 |             0.8000 |
+Loser 8ary (O2)                          | true    |      ? |       538,544,545 |             3.0594 |
+Loser 8ary (Os)                          | true    |      ? |       535,536,537 |             0.6325 |
+Loser 8ary (O1)                          | true    |      ? |       538,539,539 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       539,539,557 |             6.9971 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1439
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       549,551,552 |             1.0198 |
+Loser 8ary (Os)                          | true    |      ? |       548,549,553 |             1.8547 |
+Loser 8ary (O1)                          | true    |      ? |       549,550,551 |             0.7483 |
+Loser 8ary (O2)                          | true    |      ? |       549,551,551 |             0.9798 |
+Loser 8ary (Oz)                          | true    |      ? |    1047,1048,1050 |             1.2000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1408
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       563,563,568 |             1.9391 |
+Loser 8ary (Oz)                          | true    |      ? |    1069,1069,1070 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       560,560,565 |             2.0000 |
+Loser 8ary (O2)                          | true    |      ? |       562,563,572 |             3.8262 |
+Loser 8ary (O1)                          | true    |      ? |       562,567,571 |             3.4293 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1485
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       571,572,573 |             0.6325 |
+Loser 8ary (O2)                          | true    |      ? |       573,574,576 |             0.9798 |
+Loser 8ary (O3)                          | true    |      ? |       574,579,581 |             3.0067 |
+Loser 8ary (Oz)                          | true    |      ? |    1088,1089,1089 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       573,574,574 |             0.4000 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1455
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       586,587,587 |             0.4000 |
+Loser 8ary (Os)                          | true    |      ? |       583,584,584 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |       585,586,595 |             3.6551 |
+Loser 8ary (O2)                          | true    |      ? |       586,587,592 |             2.2450 |
+Loser 8ary (Oz)                          | true    |      ? |    1107,1109,1109 |             0.8000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1538
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       598,599,603 |             1.8547 |
+Loser 8ary (Oz)                          | true    |      ? |    1129,1129,1130 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       598,598,599 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       597,598,603 |             2.1354 |
+Loser 8ary (Os)                          | true    |      ? |       595,596,596 |             0.4000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1508
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       609,610,614 |             1.7205 |
+Loser 8ary (O3)                          | true    |      ? |       610,610,616 |             2.3324 |
+Loser 8ary (Oz)                          | true    |      ? |    1149,1149,1150 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       607,607,608 |             0.4000 |
+Loser 8ary (O1)                          | true    |      ? |       609,610,610 |             0.4899 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1597
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       619,625,625 |             2.7129 |
+Loser 8ary (Oz)                          | true    |      ? |    1169,1171,1171 |             0.8000 |
+Loser 8ary (O1)                          | true    |      ? |       622,622,630 |             3.4871 |
+Loser 8ary (O2)                          | true    |      ? |       623,623,628 |             1.9391 |
+Loser 8ary (O3)                          | true    |      ? |       622,623,623 |             0.4899 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1544
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    1616,1618,1619 |             1.0198 |
+Loser 8ary (O3)                          | true    |      ? |       782,782,786 |             1.6000 |
+Loser 8ary (O1)                          | true    |      ? |       777,779,783 |             2.0396 |
+Loser 8ary (O2)                          | true    |      ? |       774,774,779 |             2.0000 |
+Loser 8ary (Os)                          | true    |      ? |       776,776,782 |             2.3324 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1637
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       790,791,792 |             0.7483 |
+Loser 8ary (O3)                          | true    |      ? |       792,797,801 |             2.8705 |
+Loser 8ary (O2)                          | true    |      ? |       788,788,795 |             2.7276 |
+Loser 8ary (O1)                          | true    |      ? |       792,793,798 |             2.1354 |
+Loser 8ary (Oz)                          | true    |      ? |    1644,1645,1646 |             0.7483 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1605
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       805,805,806 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       799,803,825 |             9.4149 |
+Loser 8ary (Oz)                          | true    |      ? |    1669,1673,1674 |             1.8547 |
+Loser 8ary (O3)                          | true    |      ? |       807,811,811 |             1.5492 |
+Loser 8ary (O1)                          | true    |      ? |       807,807,812 |             2.2271 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1705
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       824,828,828 |             1.7436 |
+Loser 8ary (Oz)                          | true    |      ? |    1698,1698,1700 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |       814,819,824 |             3.8158 |
+Loser 8ary (O2)                          | true    |      ? |       816,817,822 |             2.2271 |
+Loser 8ary (O1)                          | true    |      ? |       820,820,821 |             0.4899 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1643
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       834,834,835 |             0.4000 |
+Loser 8ary (Oz)                          | true    |      ? |    1721,1726,1726 |             1.9596 |
+Loser 8ary (Os)                          | true    |      ? |       832,832,833 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       837,837,838 |             0.4000 |
+Loser 8ary (O2)                          | true    |      ? |       829,829,835 |             2.4000 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1741
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       841,843,849 |             2.8000 |
+Loser 8ary (Os)                          | true    |      ? |       845,845,845 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |    1751,1751,1752 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       848,851,855 |             2.2271 |
+Loser 8ary (O1)                          | true    |      ? |       847,847,848 |             0.4899 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1695
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |       854,858,878 |             8.4758 |
+Loser 8ary (O2)                          | true    |      ? |       856,857,862 |             2.4000 |
+Loser 8ary (O3)                          | true    |      ? |       861,864,865 |             1.4697 |
+Loser 8ary (Oz)                          | true    |      ? |    1778,1778,1778 |             0.0000 |
+Loser 8ary (O1)                          | true    |      ? |       860,860,861 |             0.4000 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1790
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       875,876,881 |             2.0976 |
+Loser 8ary (O2)                          | true    |      ? |       868,868,870 |             0.8000 |
+Loser 8ary (O1)                          | true    |      ? |       872,873,873 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |    1802,1803,1804 |             0.8944 |
+Loser 8ary (Os)                          | true    |      ? |       871,871,871 |             0.0000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1746
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       880,881,886 |             2.1354 |
+Loser 8ary (O3)                          | true    |      ? |       888,889,893 |             1.7205 |
+Loser 8ary (O1)                          | true    |      ? |       884,885,886 |             0.7483 |
+Loser 8ary (Oz)                          | true    |      ? |    1828,1830,1830 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |       883,889,890 |             2.8983 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1846
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       893,894,899 |             2.6382 |
+Loser 8ary (Oz)                          | true    |      ? |    1854,1855,1856 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |       902,905,906 |             1.8330 |
+Loser 8ary (O1)                          | true    |      ? |       897,898,904 |             2.4819 |
+Loser 8ary (Os)                          | true    |      ? |       896,897,901 |             1.8547 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1798
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       910,910,916 |             2.3324 |
+Loser 8ary (Os)                          | true    |      ? |       908,909,915 |             2.5298 |
+Loser 8ary (O3)                          | true    |      ? |       914,914,918 |             1.5492 |
+Loser 8ary (Oz)                          | true    |      ? |    1881,1882,1883 |             0.8944 |
+Loser 8ary (O2)                          | true    |      ? |       905,907,912 |             2.4166 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1896
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       922,923,924 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |       925,927,927 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |       920,921,921 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |       918,918,923 |             2.4495 |
+Loser 8ary (Oz)                          | true    |      ? |    1905,1906,1907 |             0.7483 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1857
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       935,935,936 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       933,934,939 |             2.1354 |
+Loser 8ary (O2)                          | true    |      ? |       929,931,936 |             3.0067 |
+Loser 8ary (Oz)                          | true    |      ? |    1931,1934,1934 |             1.1662 |
+Loser 8ary (O3)                          | true    |      ? |       939,939,940 |             0.4899 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 1944
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       943,944,950 |             2.5298 |
+Loser 8ary (O1)                          | true    |      ? |       948,949,953 |             2.1541 |
+Loser 8ary (Oz)                          | true    |      ? |    1958,1958,1959 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |       946,947,947 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       951,952,953 |             0.6325 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1904
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |       961,961,966 |             1.9391 |
+Loser 8ary (O2)                          | true    |      ? |       956,957,958 |             0.6325 |
+Loser 8ary (Oz)                          | true    |      ? |    1984,1986,1987 |             1.0954 |
+Loser 8ary (O3)                          | true    |      ? |       965,966,991 |            10.2098 |
+Loser 8ary (Os)                          | true    |      ? |       959,960,966 |             2.4819 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2000
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    2011,2012,2014 |             1.0954 |
+Loser 8ary (O2)                          | true    |      ? |       969,969,970 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       977,978,980 |             1.1662 |
+Loser 8ary (Os)                          | true    |      ? |       972,973,974 |             0.7483 |
+Loser 8ary (O1)                          | true    |      ? |       973,974,975 |             0.6325 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 1959
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |       983,984,991 |             2.9257 |
+Loser 8ary (Oz)                          | true    |      ? |    2038,2039,2040 |             0.7483 |
+Loser 8ary (O1)                          | true    |      ? |       987,988,989 |             0.7483 |
+Loser 8ary (O3)                          | true    |      ? |       992,992,996 |             1.6000 |
+Loser 8ary (Os)                          | true    |      ? |       986,987,992 |             2.5768 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2044
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    2066,2067,2070 |             1.3565 |
+Loser 8ary (O2)                          | true    |      ? |       997,997,998 |             0.4899 |
+Loser 8ary (Os)                          | true    |      ? |     999,1000,1001 |             0.7483 |
+Loser 8ary (O3)                          | true    |      ? |    1005,1007,1012 |             2.4166 |
+Loser 8ary (O1)                          | true    |      ? |    1002,1003,1007 |             1.8547 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 1993
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |    1011,1012,1019 |             3.1875 |
+Loser 8ary (O1)                          | true    |      ? |    1016,1017,1022 |             2.2271 |
+Loser 8ary (O3)                          | true    |      ? |    1020,1020,1022 |             0.8000 |
+Loser 8ary (Oz)                          | true    |      ? |    2093,2094,2097 |             1.3565 |
+Loser 8ary (Os)                          | true    |      ? |    1015,1016,1018 |             1.3565 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |    1031,1033,1038 |             2.9665 |
+Loser 8ary (O3)                          | true    |      ? |    1035,1035,1036 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |    1027,1028,1032 |             1.8547 |
+Loser 8ary (Os)                          | true    |      ? |    1028,1030,1031 |             0.9798 |
+Loser 8ary (Oz)                          | true    |      ? |    2122,2123,2123 |             0.4000 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2050
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |    1045,1046,1051 |             2.1354 |
+Loser 8ary (O2)                          | true    |      ? |    1042,1043,1048 |             2.1354 |
+Loser 8ary (Oz)                          | true    |      ? |    2150,2151,2151 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1051,1051,1056 |             2.0000 |
+Loser 8ary (O1)                          | true    |      ? |    1046,1047,1053 |             2.7129 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2144
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |    1062,1064,1069 |             2.4166 |
+Loser 8ary (Os)                          | true    |      ? |    1062,1062,1062 |             0.0000 |
+Loser 8ary (Oz)                          | true    |      ? |    2179,2180,2180 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |    1066,1068,1071 |             1.6733 |
+Loser 8ary (O2)                          | true    |      ? |    1058,1058,1059 |             0.4000 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2089
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |    1080,1080,1084 |             1.6000 |
+Loser 8ary (O3)                          | true    |      ? |    1081,1083,1110 |            10.7517 |
+Loser 8ary (Os)                          | true    |      ? |    1078,1078,1084 |             2.7129 |
+Loser 8ary (O2)                          | true    |      ? |    1074,1076,1097 |             8.6810 |
+Loser 8ary (Oz)                          | true    |      ? |    2208,2209,2210 |             0.6325 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2199
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |    1093,1094,1095 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |    1099,1100,1100 |             0.4899 |
+Loser 8ary (O2)                          | true    |      ? |    1090,1091,1092 |             0.6325 |
+Loser 8ary (Oz)                          | true    |      ? |    2236,2238,2239 |             1.0198 |
+Loser 8ary (O1)                          | true    |      ? |    1094,1096,1097 |             1.0198 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2139
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |    1106,1113,1114 |             3.3823 |
+Loser 8ary (Oz)                          | true    |      ? |    2265,2266,2267 |             0.8944 |
+Loser 8ary (Os)                          | true    |      ? |    1109,1111,1112 |             1.2000 |
+Loser 8ary (O3)                          | true    |      ? |    1113,1116,1120 |             2.2450 |
+Loser 8ary (O1)                          | true    |      ? |    1112,1113,1113 |             0.4000 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2242
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    2293,2295,2296 |             1.1662 |
+Loser 8ary (O3)                          | true    |      ? |    1132,1133,1137 |             2.3152 |
+Loser 8ary (O1)                          | true    |      ? |    1127,1129,1136 |             3.1875 |
+Loser 8ary (Os)                          | true    |      ? |    1126,1127,1129 |             1.0198 |
+Loser 8ary (O2)                          | true    |      ? |    1123,1124,1124 |             0.4000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2206
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |    1147,1149,1149 |             0.8000 |
+Loser 8ary (Os)                          | true    |      ? |    1142,1143,1144 |             0.7483 |
+Loser 8ary (O1)                          | true    |      ? |    1143,1143,1150 |             2.7129 |
+Loser 8ary (Oz)                          | true    |      ? |    2323,2324,2325 |             0.7483 |
+Loser 8ary (O2)                          | true    |      ? |    1138,1140,1145 |             3.0067 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2338
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |    1156,1161,1162 |             2.1354 |
+Loser 8ary (O3)                          | true    |      ? |    1163,1164,1165 |             0.7483 |
+Loser 8ary (O1)                          | true    |      ? |    1160,1160,1167 |             2.7276 |
+Loser 8ary (Os)                          | true    |      ? |    1158,1158,1159 |             0.4899 |
+Loser 8ary (Oz)                          | true    |      ? |    2349,2352,2354 |             1.6733 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2264
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |    1177,1178,1184 |             2.4980 |
+Loser 8ary (Oz)                          | true    |      ? |    2379,2380,2383 |             1.6248 |
+Loser 8ary (Os)                          | true    |      ? |    1174,1174,1180 |             2.3324 |
+Loser 8ary (O1)                          | true    |      ? |    1176,1176,1178 |             0.8000 |
+Loser 8ary (O2)                          | true    |      ? |    1170,1171,1176 |             2.1354 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2373
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O1)                          | true    |      ? |    1190,1191,1192 |             0.7483 |
+Loser 8ary (O3)                          | true    |      ? |    1193,1194,1199 |             2.1354 |
+Loser 8ary (O2)                          | true    |      ? |    1184,1186,1191 |             2.4166 |
+Loser 8ary (Oz)                          | true    |      ? |    2407,2408,2409 |             0.7483 |
+Loser 8ary (Os)                          | true    |      ? |    1188,1189,1190 |             0.7483 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2307
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |    1201,1201,1203 |             0.8000 |
+Loser 8ary (O1)                          | true    |      ? |    1204,1205,1212 |             2.9933 |
+Loser 8ary (O3)                          | true    |      ? |    1208,1209,1210 |             0.6325 |
+Loser 8ary (Os)                          | true    |      ? |    1203,1205,1210 |             2.4166 |
+Loser 8ary (Oz)                          | true    |      ? |    2434,2436,2437 |             1.0198 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2406
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |    1218,1219,1225 |             2.6382 |
+Loser 8ary (O2)                          | true    |      ? |    1213,1220,1221 |             3.0332 |
+Loser 8ary (O1)                          | true    |      ? |    1219,1219,1221 |             0.8000 |
+Loser 8ary (O3)                          | true    |      ? |    1223,1224,1228 |             2.3152 |
+Loser 8ary (Oz)                          | true    |      ? |    2461,2464,2464 |             1.1662 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2353
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Os)                          | true    |      ? |    1233,1235,1239 |             2.7129 |
+Loser 8ary (O1)                          | true    |      ? |    1234,1235,1240 |             2.2450 |
+Loser 8ary (O3)                          | true    |      ? |    1237,1238,1242 |             1.7436 |
+Loser 8ary (O2)                          | true    |      ? |    1229,1230,1236 |             2.8983 |
+Loser 8ary (Oz)                          | true    |      ? |    2490,2491,2492 |             0.6325 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2456
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |    1253,1255,1258 |             1.8547 |
+Loser 8ary (Os)                          | true    |      ? |    1247,1248,1248 |             0.4899 |
+Loser 8ary (O1)                          | true    |      ? |    1249,1250,1251 |             0.6325 |
+Loser 8ary (O2)                          | true    |      ? |    1243,1247,1250 |             2.7857 |
+Loser 8ary (Oz)                          | true    |      ? |    2516,2517,2520 |             1.3565 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2382
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O2)                          | true    |      ? |    1258,1260,1265 |             2.6077 |
+Loser 8ary (O3)                          | true    |      ? |    1267,1268,1272 |             1.8547 |
+Loser 8ary (Os)                          | true    |      ? |    1261,1262,1264 |             1.1662 |
+Loser 8ary (Oz)                          | true    |      ? |    2544,2545,2546 |             0.6325 |
+Loser 8ary (O1)                          | true    |      ? |    1265,1265,1270 |             2.0591 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2516
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (Oz)                          | true    |      ? |    2570,2572,2572 |             0.8000 |
+Loser 8ary (O2)                          | true    |      ? |    1272,1274,1274 |             0.8000 |
+Loser 8ary (O1)                          | true    |      ? |    1279,1279,1284 |             1.9391 |
+Loser 8ary (Os)                          | true    |      ? |    1275,1277,1284 |             3.4059 |
+Loser 8ary (O3)                          | true    |      ? |    1281,1283,1287 |             2.5298 |
