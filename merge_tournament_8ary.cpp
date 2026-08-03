@@ -1,8 +1,8 @@
 #include "harness.h"
 
-#include "merge_tournament_4ary.h"
+#include "merge_tournament_8ary.h"
 
-#define ARITY 4
+#define ARITY 8
 
 struct Entry {
 	int score;
@@ -111,7 +111,7 @@ static void replay_games(Node *tree, int child_nodes, int child_start, Entry upd
 	}
 }
 
-bool MergeTournament4ary::merge(struct test *t, int n) {
+bool MergeTournament8ary::merge(struct test *t, int n) {
 	int nodes = total_nodes(n);
 	int child_nodes = (n + (ARITY - 1)) / ARITY;
 	int child_start = nodes - child_nodes;
