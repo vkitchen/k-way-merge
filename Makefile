@@ -132,6 +132,16 @@ SRC = \
 	merge_tournament_external_cache_branchless_O3.cpp \
 	merge_tournament_external_cache_branchless_Os.cpp \
 	merge_tournament_external_cache_branchless_Oz.cpp \
+	merge_tournament_4ary_O1.cpp \
+	merge_tournament_4ary_O2.cpp \
+	merge_tournament_4ary_O3.cpp \
+	merge_tournament_4ary_Os.cpp \
+	merge_tournament_4ary_Oz.cpp \
+	merge_loser_8ary_O1.cpp \
+	merge_loser_8ary_O2.cpp \
+	merge_loser_8ary_O3.cpp \
+	merge_loser_8ary_Os.cpp \
+	merge_loser_8ary_Oz.cpp \
 	merge_state_machine_compiled_var_O1.cpp \
 	merge_state_machine_compiled_var_O2.cpp \
 	merge_state_machine_compiled_var_O3.cpp \
@@ -301,6 +311,36 @@ merge_tournament_external_cache_branchless_Os.o: merge_tournament_external_cache
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_tournament_external_cache_branchless_Oz.o: merge_tournament_external_cache_branchless_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_tournament_4ary_O1.o: merge_tournament_4ary_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_tournament_4ary_O2.o: merge_tournament_4ary_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_tournament_4ary_O3.o: merge_tournament_4ary_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_tournament_4ary_Os.o: merge_tournament_4ary_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_tournament_4ary_Oz.o: merge_tournament_4ary_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_loser_8ary_O1.o: merge_loser_8ary_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_loser_8ary_O2.o: merge_loser_8ary_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_loser_8ary_O3.o: merge_loser_8ary_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_loser_8ary_Os.o: merge_loser_8ary_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_loser_8ary_Oz.o: merge_loser_8ary_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_state_machine_compiled_var_O1.o: merge_state_machine_compiled_var_O1.cpp
