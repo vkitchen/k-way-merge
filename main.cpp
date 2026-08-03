@@ -189,12 +189,6 @@ Merge *functions[] = {
 //	new MergeBaselineCopySortOs,
 //	new MergeBaselineCopySortOz,
 //
-//	new MergeFindCacheUnrolledO1,
-//	new MergeFindCacheUnrolledO2,
-//	new MergeFindCacheUnrolledO3,
-//	new MergeFindCacheUnrolledOs,
-//	new MergeFindCacheUnrolledOz,
-//
 //	new MergeFindBranchlessCacheO1,
 //	new MergeFindBranchlessCacheO2,
 //	new MergeFindBranchlessCacheO3,
@@ -206,18 +200,6 @@ Merge *functions[] = {
 //	new MergeFindCacheSimdO3,
 //	new MergeFindCacheSimdOs,
 //	new MergeFindCacheSimdOz,
-//
-//	new MergeInsertO1,
-//	new MergeInsertO2,
-//	new MergeInsertO3,
-//	new MergeInsertOs,
-//	new MergeInsertOz,
-//
-//	new MergeInsertCacheO1,
-//	new MergeInsertCacheO2,
-//	new MergeInsertCacheO3,
-//	new MergeInsertCacheOs,
-//	new MergeInsertCacheOz,
 //
 //	new MergeInsertCachePairO1,
 //	new MergeInsertCachePairO2,
@@ -237,24 +219,6 @@ Merge *functions[] = {
 //	new MergeBubbleBranchlessCacheOs,
 //	new MergeBubbleBranchlessCacheOz,
 //
-//	new MergeBubbleBranchlessPairO1,
-//	new MergeBubbleBranchlessPairO2,
-//	new MergeBubbleBranchlessPairO3,
-//	new MergeBubbleBranchlessPairOs,
-//	new MergeBubbleBranchlessPairOz,
-//
-//	new MergeHeapO1,
-//	new MergeHeapO2,
-//	new MergeHeapO3,
-//	new MergeHeapOs,
-//	new MergeHeapOz,
-//
-//	new MergeHeapCacheO1,
-//	new MergeHeapCacheO2,
-//	new MergeHeapCacheO3,
-//	new MergeHeapCacheOs,
-//	new MergeHeapCacheOz,
-//
 //	new MergeHeapBranchlessParallelO1,
 //	new MergeHeapBranchlessParallelO2,
 //	new MergeHeapBranchlessParallelO3,
@@ -267,12 +231,6 @@ Merge *functions[] = {
 //	new MergeHeap4aryBranchlessParallelOs,
 //	new MergeHeap4aryBranchlessParallelOz,
 //
-//	new MergeTournamentCacheO1(),
-//	new MergeTournamentCacheO2(),
-//	new MergeTournamentCacheO3(),
-//	new MergeTournamentCacheOs(),
-//	new MergeTournamentCacheOz(),
-//
 //	new MergeTournamentCacheBranchlessO1,
 //	new MergeTournamentCacheBranchlessO2,
 //	new MergeTournamentCacheBranchlessO3,
@@ -284,12 +242,6 @@ Merge *functions[] = {
 //	new MergeTournamentExternalCacheBranchlessO3,
 //	new MergeTournamentExternalCacheBranchlessOs,
 //	new MergeTournamentExternalCacheBranchlessOz,
-//
-//	new MergeStateMachineCompiledCacheO1,
-//	new MergeStateMachineCompiledCacheO2,
-//	new MergeStateMachineCompiledCacheO3,
-//	new MergeStateMachineCompiledCacheOs,
-//	new MergeStateMachineCompiledCacheOz,
 //
 //	new MergeStateMachineCompiledVarO1,
 //	new MergeStateMachineCompiledVarO2,

@@ -92,16 +92,6 @@ SRC = \
 	merge_find_cache_simd_O3.cpp \
 	merge_find_cache_simd_Os.cpp \
 	merge_find_cache_simd_Oz.cpp \
-	merge_insert_O1.cpp \
-	merge_insert_O2.cpp \
-	merge_insert_O3.cpp \
-	merge_insert_Os.cpp \
-	merge_insert_Oz.cpp \
-	merge_insert_cache_O1.cpp \
-	merge_insert_cache_O2.cpp \
-	merge_insert_cache_O3.cpp \
-	merge_insert_cache_Os.cpp \
-	merge_insert_cache_Oz.cpp \
 	merge_insert_cache_pair_O1.cpp \
 	merge_insert_cache_pair_O2.cpp \
 	merge_insert_cache_pair_O3.cpp \
@@ -117,21 +107,6 @@ SRC = \
 	merge_bubble_branchless_cache_O3.cpp \
 	merge_bubble_branchless_cache_Os.cpp \
 	merge_bubble_branchless_cache_Oz.cpp \
-	merge_bubble_branchless_pair_O1.cpp \
-	merge_bubble_branchless_pair_O2.cpp \
-	merge_bubble_branchless_pair_O3.cpp \
-	merge_bubble_branchless_pair_Os.cpp \
-	merge_bubble_branchless_pair_Oz.cpp \
-	merge_heap_O1.cpp \
-	merge_heap_O2.cpp \
-	merge_heap_O3.cpp \
-	merge_heap_Os.cpp \
-	merge_heap_Oz.cpp \
-	merge_heap_cache_O1.cpp \
-	merge_heap_cache_O2.cpp \
-	merge_heap_cache_O3.cpp \
-	merge_heap_cache_Os.cpp \
-	merge_heap_cache_Oz.cpp \
 	merge_heap_branchless_parallel_O1.cpp \
 	merge_heap_branchless_parallel_O2.cpp \
 	merge_heap_branchless_parallel_O3.cpp \
@@ -142,11 +117,6 @@ SRC = \
 	merge_heap_4ary_branchless_parallel_O3.cpp \
 	merge_heap_4ary_branchless_parallel_Os.cpp \
 	merge_heap_4ary_branchless_parallel_Oz.cpp \
-	merge_tournament_cache_O1.cpp \
-	merge_tournament_cache_O2.cpp \
-	merge_tournament_cache_O3.cpp \
-	merge_tournament_cache_Os.cpp \
-	merge_tournament_cache_Oz.cpp \
 	merge_tournament_cache_branchless_O1.cpp \
 	merge_tournament_cache_branchless_O2.cpp \
 	merge_tournament_cache_branchless_O3.cpp \
@@ -157,11 +127,6 @@ SRC = \
 	merge_tournament_external_cache_branchless_O3.cpp \
 	merge_tournament_external_cache_branchless_Os.cpp \
 	merge_tournament_external_cache_branchless_Oz.cpp \
-	merge_state_machine_compiled_cache_O1.cpp \
-	merge_state_machine_compiled_cache_O2.cpp \
-	merge_state_machine_compiled_cache_O3.cpp \
-	merge_state_machine_compiled_cache_Os.cpp \
-	merge_state_machine_compiled_cache_Oz.cpp \
 	merge_state_machine_compiled_var_O1.cpp \
 	merge_state_machine_compiled_var_O2.cpp \
 	merge_state_machine_compiled_var_O3.cpp \
@@ -182,6 +147,21 @@ all: gen gen-cache gen-var gen-binary-search-4 gen-binary-search-cache-4 gen-loo
 
 main.o: main.cpp config.h
 	$(CXX) $(CFLAGS) $(OPT) -c $<
+
+merge_baseline_copy_sort_O1.o: merge_baseline_copy_sort_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_baseline_copy_sort_O2.o: merge_baseline_copy_sort_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_baseline_copy_sort_O3.o: merge_baseline_copy_sort_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_baseline_copy_sort_Os.o: merge_baseline_copy_sort_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_baseline_copy_sort_Oz.o: merge_baseline_copy_sort_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_find_branchless_cache_O1.o: merge_find_branchless_cache_O1.cpp
 	$(CXX) $(CFLAGS) -O1 -c $<
@@ -211,36 +191,6 @@ merge_find_cache_simd_Os.o: merge_find_cache_simd_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_find_cache_simd_Oz.o: merge_find_cache_simd_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_insert_O1.o: merge_insert_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_insert_O2.o: merge_insert_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_insert_O3.o: merge_insert_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_insert_Os.o: merge_insert_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_insert_Oz.o: merge_insert_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_insert_cache_O1.o: merge_insert_cache_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_insert_cache_O2.o: merge_insert_cache_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_insert_cache_O3.o: merge_insert_cache_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_insert_cache_Os.o: merge_insert_cache_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_insert_cache_Oz.o: merge_insert_cache_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_insert_cache_pair_O1.o: merge_insert_cache_pair_O1.cpp
@@ -288,51 +238,6 @@ merge_bubble_branchless_cache_Os.o: merge_bubble_branchless_cache_Os.cpp
 merge_bubble_branchless_cache_Oz.o: merge_bubble_branchless_cache_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
-merge_bubble_branchless_pair_O1.o: merge_bubble_branchless_pair_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_bubble_branchless_pair_O2.o: merge_bubble_branchless_pair_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_bubble_branchless_pair_O3.o: merge_bubble_branchless_pair_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_bubble_branchless_pair_Os.o: merge_bubble_branchless_pair_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_bubble_branchless_pair_Oz.o: merge_bubble_branchless_pair_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_heap_O1.o: merge_heap_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_heap_O2.o: merge_heap_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_heap_O3.o: merge_heap_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_heap_Os.o: merge_heap_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_heap_Oz.o: merge_heap_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_heap_cache_O1.o: merge_heap_cache_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_heap_cache_O2.o: merge_heap_cache_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_heap_cache_O3.o: merge_heap_cache_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_heap_cache_Os.o: merge_heap_cache_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_heap_cache_Oz.o: merge_heap_cache_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
 merge_heap_branchless_parallel_O1.o: merge_heap_branchless_parallel_O1.cpp
 	$(CXX) $(CFLAGS) -O1 -c $<
 
@@ -363,21 +268,6 @@ merge_heap_4ary_branchless_parallel_Os.o: merge_heap_4ary_branchless_parallel_Os
 merge_heap_4ary_branchless_parallel_Oz.o: merge_heap_4ary_branchless_parallel_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
-merge_tournament_cache_O1.o: merge_tournament_cache_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_tournament_cache_O2.o: merge_tournament_cache_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_tournament_cache_O3.o: merge_tournament_cache_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_tournament_cache_Os.o: merge_tournament_cache_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_tournament_cache_Oz.o: merge_tournament_cache_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
 merge_tournament_cache_branchless_O1.o: merge_tournament_cache_branchless_O1.cpp
 	$(CXX) $(CFLAGS) -O1 -c $<
 
@@ -406,21 +296,6 @@ merge_tournament_external_cache_branchless_Os.o: merge_tournament_external_cache
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_tournament_external_cache_branchless_Oz.o: merge_tournament_external_cache_branchless_Oz.cpp
-	$(CXX) $(CFLAGS) -Oz -c $<
-
-merge_state_machine_compiled_cache_O1.o: merge_state_machine_compiled_cache_O1.cpp
-	$(CXX) $(CFLAGS) -O1 -c $<
-
-merge_state_machine_compiled_cache_O2.o: merge_state_machine_compiled_cache_O2.cpp
-	$(CXX) $(CFLAGS) -O2 -c $<
-
-merge_state_machine_compiled_cache_O3.o: merge_state_machine_compiled_cache_O3.cpp
-	$(CXX) $(CFLAGS) -O3 -c $<
-
-merge_state_machine_compiled_cache_Os.o: merge_state_machine_compiled_cache_Os.cpp
-	$(CXX) $(CFLAGS) -Os -c $<
-
-merge_state_machine_compiled_cache_Oz.o: merge_state_machine_compiled_cache_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_state_machine_compiled_var_O1.o: merge_state_machine_compiled_var_O1.cpp
