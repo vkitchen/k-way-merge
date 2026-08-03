@@ -103,10 +103,12 @@ static void initialise(int **segments, int n, Node *tree) {
 static Entry replay_games(Node *tree, int child_nodes, int child_start, Entry winner) {
 	// Leaf
 	int node = child_start + winner.leaf / ARITY;
-	int pair = (winner.leaf & 2) >> 1;
+	int child = winner.leaf & (ARITY - 1);
 
 	// Internal
 	while (true) {
+		int pair = child >> 1;
+
 		auto cmp = tree[node].entries[2 + pair];
 		tree[node].entries[2 + pair] = winner.score < cmp.score ? winner : cmp;
 		winner = winner.score < cmp.score ? cmp : winner;
@@ -118,15 +120,15 @@ static Entry replay_games(Node *tree, int child_nodes, int child_start, Entry wi
 		if (node == 0)
 			break;
 
-		int child = (node - child_start) % 4;
-		pair = (child & 2) >> 1;
+		int offset = node - child_start;
 
-		int parent_nodes = (child_nodes + (ARITY - 1)) / ARITY;
+		int parent_nodes = (child_nodes + ARITY - 1) / ARITY;
 		int parent_start = child_start - parent_nodes;
 
-		int parent = parent_start + (node - child_start) / ARITY;
+		child = offset & (ARITY - 1);
 
-		node = parent;
+		node = parent_start + offset / ARITY;
+
 		child_nodes = parent_nodes;
 		child_start = parent_start;
 	}

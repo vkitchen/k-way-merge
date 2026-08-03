@@ -184,18 +184,6 @@ static Entry replay_games(Node *tree, int child_nodes, int child_start, Entry wi
 
 		child_nodes = parent_nodes;
 		child_start = parent_start;
-
-//		int child = (node - child_start) % 4;
-//		pair = (child & 2) >> 1;
-//
-//		int parent_nodes = (child_nodes + (ARITY - 1)) / ARITY;
-//		int parent_start = child_start - parent_nodes;
-//
-//		int parent = parent_start + (node - child_start) / ARITY;
-//
-//		node = parent;
-//		child_nodes = parent_nodes;
-//		child_start = parent_start;
 	}
 
 	return winner;
