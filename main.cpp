@@ -64,6 +64,7 @@
 #include "merge_heap_branchless.h"
 #include "merge_heap_branchless_pair.h"
 #include "merge_heap_branchless_parallel.h"
+#include "merge_heap_3ary_branchless_parallel.h"
 #include "merge_heap_4ary.h"
 #include "merge_heap_4ary_cache.h"
 #include "merge_heap_4ary_parallel.h"
@@ -156,6 +157,7 @@ Merge *functions[] = {
 //	new MergeHeapBranchless,
 //	new MergeHeapBranchlessPair,
 //	new MergeHeapBranchlessParallel,
+//	new MergeHeap3aryBranchlessParallel,
 //	new MergeHeap4ary,
 //	new MergeHeap4aryCache,
 //	new MergeHeap4aryParallel,
