@@ -1,0 +1,990 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1785740248
+MEMORY 0.745058 GiB
+
+Init: 2504
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 75
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |          31,31,31 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          15,15,15 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |          14,14,14 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          14,14,14 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          15,15,15 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 109
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |          19,19,20 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |          20,20,20 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |          42,42,42 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          20,20,20 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          19,19,19 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 121
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |          33,34,34 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |          85,85,86 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |          36,36,36 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          34,34,34 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |          35,35,35 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 163
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |          43,43,44 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       103,103,103 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          40,40,41 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |          41,41,41 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |          43,43,43 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 172
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |          50,50,54 |             1.6000 |
+Tournament 4ary (O2)                     | true    |      ? |          48,48,48 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          47,47,47 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       120,121,121 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |          51,51,51 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 215
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |          58,58,58 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       138,138,139 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |          55,55,55 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          58,59,62 |             1.3565 |
+Tournament 4ary (O3)                     | true    |      ? |          54,54,54 |             0.0000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 222
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |          61,61,61 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |          65,65,65 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       156,156,156 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          66,66,66 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          62,62,65 |             1.2000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 262
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |          68,68,68 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       173,173,184 |             4.3174 |
+Tournament 4ary (Os)                     | true    |      ? |          74,74,74 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          69,69,69 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |          73,73,78 |             2.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 275
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |          81,81,82 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |          76,76,76 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          82,82,82 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       191,191,192 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |          75,75,75 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 316
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |          89,89,89 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          83,83,83 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |          90,90,90 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       209,209,209 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          82,82,82 |             0.0000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 322
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       226,227,227 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |          97,98,98 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |          89,89,90 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |          90,90,90 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |         97,97,103 |             2.7129 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 368
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       244,244,245 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       105,105,105 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |          97,97,97 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |          96,96,97 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       105,106,112 |             2.8983 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 374
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       113,113,114 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       262,262,263 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       103,103,104 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       104,104,105 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       112,113,117 |             1.8547 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 421
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       111,112,115 |             1.4697 |
+Tournament 4ary (O1)                     | true    |      ? |       120,120,121 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |       280,280,280 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       110,110,113 |             1.1662 |
+Tournament 4ary (Os)                     | true    |      ? |       121,121,127 |             2.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 425
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       195,195,196 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |       406,407,407 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       149,149,156 |             2.7276 |
+Tournament 4ary (O1)                     | true    |      ? |       165,166,170 |             1.8547 |
+Tournament 4ary (O3)                     | true    |      ? |       148,149,150 |             0.7483 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 472
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       157,157,165 |             3.1241 |
+Tournament 4ary (O1)                     | true    |      ? |       175,175,176 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       206,207,208 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       157,157,164 |             2.7568 |
+Tournament 4ary (Oz)                     | true    |      ? |       431,431,431 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 475
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       185,185,185 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |       455,455,456 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       166,166,166 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       218,219,220 |             0.6325 |
+Tournament 4ary (O2)                     | true    |      ? |       166,166,167 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 533
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       479,480,480 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       175,175,175 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       175,175,183 |             3.2000 |
+Tournament 4ary (Os)                     | true    |      ? |       230,230,231 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       195,195,196 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 526
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       183,184,187 |             1.4697 |
+Tournament 4ary (Os)                     | true    |      ? |       242,243,243 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       504,504,505 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       184,184,184 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |       205,205,205 |             0.0000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 580
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       192,193,200 |             2.9257 |
+Tournament 4ary (Oz)                     | true    |      ? |       529,529,530 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       193,193,198 |             2.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       253,254,255 |             0.6325 |
+Tournament 4ary (O1)                     | true    |      ? |       215,215,215 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 580
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       265,266,266 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       201,201,202 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       225,225,226 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |       553,554,554 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       202,202,207 |             2.0000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 638
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       210,211,218 |             3.0332 |
+Tournament 4ary (Oz)                     | true    |      ? |       578,578,579 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       235,236,244 |             3.3226 |
+Tournament 4ary (O2)                     | true    |      ? |       211,211,211 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       277,278,278 |             0.4899 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 630
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       246,246,247 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       220,220,225 |             2.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       288,289,289 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       219,220,220 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       603,603,604 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 684
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       300,302,302 |             0.8000 |
+Tournament 4ary (Oz)                     | true    |      ? |       628,628,629 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       229,229,229 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       229,230,237 |             2.8705 |
+Tournament 4ary (O1)                     | true    |      ? |       256,256,257 |             0.4899 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 682
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       653,653,653 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       239,239,239 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       313,314,314 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       266,267,267 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       238,238,243 |             2.0000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 737
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       247,247,250 |             1.1662 |
+Tournament 4ary (O2)                     | true    |      ? |       248,248,249 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       678,678,679 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       277,277,278 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       325,325,326 |             0.4000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 735
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       257,257,257 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |       288,288,288 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       337,338,339 |             0.7483 |
+Tournament 4ary (O2)                     | true    |      ? |       257,258,258 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       703,703,703 |             0.0000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 795
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       728,729,763 |            13.8072 |
+Tournament 4ary (O1)                     | true    |      ? |       298,299,299 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       266,266,267 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       267,267,309 |            16.8000 |
+Tournament 4ary (Os)                     | true    |      ? |       349,350,351 |             0.7483 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 786
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       753,753,754 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       309,309,309 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       276,277,277 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       362,362,362 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       276,276,276 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 875
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       319,319,327 |             3.2000 |
+Tournament 4ary (O3)                     | true    |      ? |       285,285,286 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       286,286,295 |             3.5214 |
+Tournament 4ary (Oz)                     | true    |      ? |       778,778,779 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       373,375,375 |             0.8000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 838
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       294,294,295 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       330,330,330 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       295,296,301 |             2.2450 |
+Tournament 4ary (Os)                     | true    |      ? |       386,387,388 |             0.7483 |
+Tournament 4ary (Oz)                     | true    |      ? |       803,803,804 |             0.4899 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 901
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       305,305,401 |            38.3020 |
+Tournament 4ary (Oz)                     | true    |      ? |       828,828,867 |            15.5048 |
+Tournament 4ary (O3)                     | true    |      ? |       304,304,304 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |       397,398,400 |             1.1662 |
+Tournament 4ary (O1)                     | true    |      ? |       340,341,341 |             0.4899 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 895
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       313,313,316 |             1.1662 |
+Tournament 4ary (O1)                     | true    |      ? |       351,351,352 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       410,411,411 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |       853,854,854 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       314,314,315 |             0.4000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 952
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       323,323,326 |             1.2000 |
+Tournament 4ary (Oz)                     | true    |      ? |       879,879,880 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       362,363,370 |             2.9933 |
+Tournament 4ary (O2)                     | true    |      ? |       324,324,330 |             2.3324 |
+Tournament 4ary (Os)                     | true    |      ? |       423,423,424 |             0.4000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 942
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       333,333,334 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |       904,904,905 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       436,437,437 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       373,373,381 |             3.1241 |
+Tournament 4ary (O2)                     | true    |      ? |       334,334,340 |             2.5298 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 1008
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       929,930,930 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       343,344,346 |             1.0954 |
+Tournament 4ary (Os)                     | true    |      ? |       447,448,449 |             0.6325 |
+Tournament 4ary (O2)                     | true    |      ? |       344,344,345 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       384,384,385 |             0.4899 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 992
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       354,354,362 |             3.1241 |
+Tournament 4ary (Os)                     | true    |      ? |       460,461,462 |             0.6325 |
+Tournament 4ary (Oz)                     | true    |      ? |       955,955,955 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       353,353,353 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |       395,395,403 |             3.2000 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1061
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |       980,980,981 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       406,407,407 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       472,473,474 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       363,363,363 |             0.0000 |
+Tournament 4ary (O2)                     | true    |      ? |       363,364,407 |            16.7881 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1048
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    1005,1006,1007 |             0.6325 |
+Tournament 4ary (O2)                     | true    |      ? |       373,374,488 |            45.2486 |
+Tournament 4ary (O1)                     | true    |      ? |       417,418,418 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       372,373,373 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       486,486,487 |             0.4000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1123
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       384,388,389 |             2.0976 |
+Tournament 4ary (Oz)                     | true    |      ? |    1031,1032,1032 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       383,383,387 |             1.6000 |
+Tournament 4ary (Os)                     | true    |      ? |       498,500,501 |             1.0198 |
+Tournament 4ary (O1)                     | true    |      ? |       428,429,429 |             0.4000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1099
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       394,395,400 |             2.2450 |
+Tournament 4ary (O1)                     | true    |      ? |       440,440,441 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1057,1057,1058 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       393,393,398 |             2.4495 |
+Tournament 4ary (Os)                     | true    |      ? |       512,512,515 |             1.2649 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1169
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       451,452,452 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       524,525,526 |             0.7483 |
+Tournament 4ary (O2)                     | true    |      ? |       405,405,406 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       403,404,404 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1083,1083,1084 |             0.4899 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    1109,1109,1110 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       415,415,422 |             2.7276 |
+Tournament 4ary (Os)                     | true    |      ? |       539,540,540 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       414,415,538 |            49.0347 |
+Tournament 4ary (O1)                     | true    |      ? |       463,464,472 |             3.4293 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1232
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       426,426,427 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       552,553,553 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       475,476,478 |             1.0954 |
+Tournament 4ary (Oz)                     | true    |      ? |    1134,1135,1136 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       424,425,431 |             2.6382 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1205
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       565,565,567 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |       486,486,495 |             3.5214 |
+Tournament 4ary (O2)                     | true    |      ? |       436,437,442 |             2.1354 |
+Tournament 4ary (O3)                     | true    |      ? |       435,436,441 |             2.2450 |
+Tournament 4ary (Oz)                     | true    |      ? |    1161,1162,1163 |             0.7483 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1280
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       446,446,447 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       579,580,582 |             1.2000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1187,1188,1188 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       499,499,501 |             0.8000 |
+Tournament 4ary (O2)                     | true    |      ? |       447,447,447 |             0.0000 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       458,459,462 |             1.4697 |
+Tournament 4ary (Os)                     | true    |      ? |       592,594,594 |             0.8000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1213,1214,1214 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       511,511,511 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       457,458,463 |             2.5768 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1329
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       469,470,470 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       523,523,524 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       606,607,608 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |       468,468,469 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    1239,1240,1241 |             0.6325 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1309
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       480,481,482 |             0.7483 |
+Tournament 4ary (Os)                     | true    |      ? |       620,621,622 |             0.7483 |
+Tournament 4ary (O1)                     | true    |      ? |       535,536,536 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       479,479,483 |             1.5492 |
+Tournament 4ary (Oz)                     | true    |      ? |    1266,1267,1320 |            21.3035 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1388
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    1293,1294,1294 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       548,548,548 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       490,491,536 |            18.1041 |
+Tournament 4ary (Os)                     | true    |      ? |       633,636,636 |             1.1662 |
+Tournament 4ary (O2)                     | true    |      ? |       492,492,493 |             0.4899 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1367
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    1319,1320,1322 |             1.0954 |
+Tournament 4ary (Os)                     | true    |      ? |       648,648,650 |             0.9798 |
+Tournament 4ary (O3)                     | true    |      ? |       501,502,510 |             3.3226 |
+Tournament 4ary (O2)                     | true    |      ? |       503,504,504 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       560,561,570 |             3.8262 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1451
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       514,515,519 |             1.7436 |
+Tournament 4ary (O1)                     | true    |      ? |       573,573,574 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       513,514,516 |             1.0954 |
+Tournament 4ary (Oz)                     | true    |      ? |    1346,1347,1348 |             0.7483 |
+Tournament 4ary (Os)                     | true    |      ? |       661,662,663 |             0.6325 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1416
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       524,525,525 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       585,586,593 |             3.0332 |
+Tournament 4ary (O2)                     | true    |      ? |       526,526,526 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1373,1374,1430 |            22.6044 |
+Tournament 4ary (Os)                     | true    |      ? |       677,679,680 |             1.0198 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1494
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       536,536,542 |             2.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       537,538,538 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       690,691,692 |             0.7483 |
+Tournament 4ary (Oz)                     | true    |      ? |    1399,1400,1579 |            71.7010 |
+Tournament 4ary (O1)                     | true    |      ? |       598,599,607 |             3.4293 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1468
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       704,705,706 |             0.6325 |
+Tournament 4ary (O1)                     | true    |      ? |       610,611,612 |             0.7483 |
+Tournament 4ary (Oz)                     | true    |      ? |    1426,1427,1427 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       547,548,548 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       549,550,555 |             2.2450 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1558
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       559,559,560 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    1453,1455,1514 |            24.4916 |
+Tournament 4ary (Os)                     | true    |      ? |       719,719,721 |             0.8000 |
+Tournament 4ary (O2)                     | true    |      ? |       561,561,562 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |       624,624,625 |             0.4899 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1525
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |       732,733,735 |             1.0198 |
+Tournament 4ary (O2)                     | true    |      ? |       572,573,573 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       571,571,572 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |    1480,1480,1602 |            48.9015 |
+Tournament 4ary (O1)                     | true    |      ? |       637,637,647 |             4.0000 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1615
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    1506,1508,1508 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |       649,650,650 |             0.4000 |
+Tournament 4ary (Os)                     | true    |      ? |       748,748,750 |             0.8000 |
+Tournament 4ary (O2)                     | true    |      ? |       584,584,592 |             3.1241 |
+Tournament 4ary (O3)                     | true    |      ? |       582,583,584 |             0.6325 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1583
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       594,595,602 |             2.9257 |
+Tournament 4ary (Oz)                     | true    |      ? |    1534,1535,1597 |            24.9110 |
+Tournament 4ary (O1)                     | true    |      ? |       663,663,673 |             4.4542 |
+Tournament 4ary (Os)                     | true    |      ? |       762,763,765 |             1.1662 |
+Tournament 4ary (O2)                     | true    |      ? |       595,597,606 |             4.1761 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1653
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       607,607,613 |             2.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       608,608,609 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    1560,1561,1562 |             0.7483 |
+Tournament 4ary (O1)                     | true    |      ? |       676,677,685 |             3.4293 |
+Tournament 4ary (Os)                     | true    |      ? |       777,777,778 |             0.4000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1622
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       620,620,621 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |       793,793,796 |             1.1662 |
+Tournament 4ary (Oz)                     | true    |      ? |    1587,1588,1654 |            26.3181 |
+Tournament 4ary (O1)                     | true    |      ? |       689,691,697 |             3.4871 |
+Tournament 4ary (O3)                     | true    |      ? |       619,619,625 |             2.9394 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1714
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       633,633,633 |             0.0000 |
+Tournament 4ary (O1)                     | true    |      ? |       702,703,703 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    1615,1616,1617 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |       629,631,639 |             3.5777 |
+Tournament 4ary (Os)                     | true    |      ? |       806,808,808 |             0.8000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1680
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       890,891,891 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    2074,2074,2074 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       804,806,809 |             1.8547 |
+Tournament 4ary (Os)                     | true    |      ? |    1107,1110,1159 |            19.9038 |
+Tournament 4ary (O2)                     | true    |      ? |       798,798,801 |             1.1662 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1766
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       812,814,817 |             1.7205 |
+Tournament 4ary (O1)                     | true    |      ? |       905,906,907 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       819,819,821 |             0.8000 |
+Tournament 4ary (Oz)                     | true    |      ? |    2107,2107,2109 |             0.8000 |
+Tournament 4ary (Os)                     | true    |      ? |    1127,1128,1129 |             0.6325 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1735
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    2139,2141,2143 |             1.4142 |
+Tournament 4ary (O1)                     | true    |      ? |       921,922,922 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       826,827,828 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |       833,833,836 |             1.1662 |
+Tournament 4ary (Os)                     | true    |      ? |    1146,1147,1149 |             0.9798 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1842
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |    1163,1165,1165 |             0.8000 |
+Tournament 4ary (O3)                     | true    |      ? |       847,847,890 |            17.0176 |
+Tournament 4ary (O2)                     | true    |      ? |       841,841,841 |             0.0000 |
+Tournament 4ary (Oz)                     | true    |      ? |    2173,2175,2175 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |       936,937,937 |             0.4899 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1788
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |       951,952,953 |             0.6325 |
+Tournament 4ary (Os)                     | true    |      ? |    1184,1184,1185 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    2208,2209,2307 |            39.3070 |
+Tournament 4ary (O3)                     | true    |      ? |       861,861,863 |             0.8000 |
+Tournament 4ary (O2)                     | true    |      ? |       854,855,897 |            16.9163 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1893
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       874,875,878 |             1.3565 |
+Tournament 4ary (Os)                     | true    |      ? |    1201,1201,1203 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |       967,967,968 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       867,868,870 |             1.0198 |
+Tournament 4ary (Oz)                     | true    |      ? |    2242,2243,2349 |            42.6023 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1837
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       881,881,884 |             1.1662 |
+Tournament 4ary (Os)                     | true    |      ? |    1220,1221,1221 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |       981,989,989 |             3.6878 |
+Tournament 4ary (Oz)                     | true    |      ? |    2275,2275,2276 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       888,889,890 |             0.7483 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1924
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |      995,996,1003 |             3.6111 |
+Tournament 4ary (O3)                     | true    |      ? |       901,902,943 |            16.5167 |
+Tournament 4ary (O2)                     | true    |      ? |       893,894,896 |             0.9798 |
+Tournament 4ary (Os)                     | true    |      ? |    1236,1238,1238 |             0.8000 |
+Tournament 4ary (Oz)                     | true    |      ? |    2307,2309,2309 |             0.8000 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1893
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       913,914,916 |             1.2000 |
+Tournament 4ary (Os)                     | true    |      ? |    1254,1255,1258 |             1.3565 |
+Tournament 4ary (O1)                     | true    |      ? |    1009,1010,1013 |             1.3565 |
+Tournament 4ary (Oz)                     | true    |      ? |    2340,2342,2453 |            44.7062 |
+Tournament 4ary (O2)                     | true    |      ? |       906,907,907 |             0.4000 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1996
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       926,926,929 |             1.1662 |
+Tournament 4ary (O1)                     | true    |      ? |    1023,1024,1024 |             0.4899 |
+Tournament 4ary (Oz)                     | true    |      ? |    2373,2377,2488 |            44.3874 |
+Tournament 4ary (Os)                     | true    |      ? |    1270,1273,1274 |             1.3565 |
+Tournament 4ary (O2)                     | true    |      ? |       919,920,922 |             1.0954 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1947
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       932,932,935 |             1.2000 |
+Tournament 4ary (Os)                     | true    |      ? |    1288,1288,1292 |             1.5492 |
+Tournament 4ary (O3)                     | true    |      ? |       939,940,958 |             7.2277 |
+Tournament 4ary (Oz)                     | true    |      ? |    2405,2407,2408 |             0.9798 |
+Tournament 4ary (O1)                     | true    |      ? |    1037,1038,1039 |             0.7483 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2068
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    2440,2441,2442 |             0.7483 |
+Tournament 4ary (Os)                     | true    |      ? |    1306,1308,1308 |             0.8000 |
+Tournament 4ary (O3)                     | true    |      ? |       952,952,953 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |    1052,1052,1053 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |       944,947,969 |             9.4953 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 2006
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    2474,2474,2475 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |    1066,1067,1075 |             3.3823 |
+Tournament 4ary (O3)                     | true    |      ? |      965,966,1010 |            17.8056 |
+Tournament 4ary (Os)                     | true    |      ? |    1325,1325,1326 |             0.4899 |
+Tournament 4ary (O2)                     | true    |      ? |       958,959,960 |             0.8944 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2087
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |    1342,1343,1343 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |    1081,1081,1089 |             3.2000 |
+Tournament 4ary (Oz)                     | true    |      ? |    2507,2508,2628 |            48.1016 |
+Tournament 4ary (O2)                     | true    |      ? |       970,971,973 |             1.0198 |
+Tournament 4ary (O3)                     | true    |      ? |       978,979,979 |             0.4899 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2062
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |       984,984,988 |             1.5492 |
+Tournament 4ary (Oz)                     | true    |      ? |    2541,2542,2543 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       992,992,994 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |    1096,1096,1104 |             3.2000 |
+Tournament 4ary (Os)                     | true    |      ? |    1360,1361,1363 |             1.0954 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1110,1111,1119 |             3.2619 |
+Tournament 4ary (O3)                     | true    |      ? |    1005,1006,1006 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |    1378,1380,1380 |             0.9798 |
+Tournament 4ary (O2)                     | true    |      ? |      997,997,1000 |             1.1662 |
+Tournament 4ary (Oz)                     | true    |      ? |    2575,2576,2577 |             0.6325 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2113
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1018,1019,1023 |             1.7436 |
+Tournament 4ary (Oz)                     | true    |      ? |    2608,2609,2611 |             1.0198 |
+Tournament 4ary (O1)                     | true    |      ? |    1125,1127,1134 |             3.3823 |
+Tournament 4ary (O2)                     | true    |      ? |    1011,1014,1014 |             1.2000 |
+Tournament 4ary (Os)                     | true    |      ? |    1397,1398,1399 |             0.7483 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2210
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    2643,2645,2645 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |    1142,1142,1143 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |    1032,1035,1081 |            18.7467 |
+Tournament 4ary (Os)                     | true    |      ? |    1415,1417,1419 |             1.3266 |
+Tournament 4ary (O2)                     | true    |      ? |    1024,1026,1029 |             1.6000 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1156,1157,1159 |             1.2000 |
+Tournament 4ary (O2)                     | true    |      ? |    1039,1040,1041 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |    1047,1048,1051 |             1.4697 |
+Tournament 4ary (Os)                     | true    |      ? |    1436,1436,1439 |             1.1662 |
+Tournament 4ary (Oz)                     | true    |      ? |    2677,2679,2680 |             1.0954 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2265
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1063,1064,1064 |             0.4000 |
+Tournament 4ary (O1)                     | true    |      ? |    1175,1175,1183 |             3.1241 |
+Tournament 4ary (O2)                     | true    |      ? |    1055,1055,1058 |             1.1662 |
+Tournament 4ary (Os)                     | true    |      ? |    1454,1456,1459 |             1.6248 |
+Tournament 4ary (Oz)                     | true    |      ? |    2713,2715,2716 |             1.0198 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2220
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1077,1078,1078 |             0.4899 |
+Tournament 4ary (O1)                     | true    |      ? |    1188,1191,1198 |             3.7630 |
+Tournament 4ary (Os)                     | true    |      ? |    1476,1476,1480 |             1.6000 |
+Tournament 4ary (O2)                     | true    |      ? |    1069,1070,1073 |             1.4697 |
+Tournament 4ary (Oz)                     | true    |      ? |    2748,2750,2782 |            13.0231 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2304
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1206,1209,1217 |             3.7417 |
+Tournament 4ary (Oz)                     | true    |      ? |    2781,2784,2785 |             1.4697 |
+Tournament 4ary (O3)                     | true    |      ? |    1093,1094,1136 |            17.0059 |
+Tournament 4ary (O2)                     | true    |      ? |    1084,1084,1085 |             0.4899 |
+Tournament 4ary (Os)                     | true    |      ? |    1492,1495,1499 |             2.5768 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2280
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O2)                     | true    |      ? |    1099,1102,1105 |             2.2804 |
+Tournament 4ary (O1)                     | true    |      ? |    1223,1226,1228 |             1.7205 |
+Tournament 4ary (O3)                     | true    |      ? |    1108,1110,1112 |             1.4967 |
+Tournament 4ary (Oz)                     | true    |      ? |    2820,2820,2820 |             0.0000 |
+Tournament 4ary (Os)                     | true    |      ? |    1514,1517,1519 |             1.6248 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2383
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |    1536,1538,1541 |             1.7205 |
+Tournament 4ary (O3)                     | true    |      ? |    1126,1127,1129 |             0.9798 |
+Tournament 4ary (Oz)                     | true    |      ? |    2854,2856,2857 |             0.9798 |
+Tournament 4ary (O1)                     | true    |      ? |    1243,1244,1244 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |    1116,1118,1118 |             0.8000 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2324
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1262,1263,1271 |             4.0299 |
+Tournament 4ary (O3)                     | true    |      ? |    1141,1142,1143 |             0.7483 |
+Tournament 4ary (O2)                     | true    |      ? |    1132,1133,1135 |             1.2000 |
+Tournament 4ary (Oz)                     | true    |      ? |    2889,2892,2893 |             1.4697 |
+Tournament 4ary (Os)                     | true    |      ? |    1557,1560,1561 |             1.3565 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2437
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1279,1280,1281 |             0.7483 |
+Tournament 4ary (Os)                     | true    |      ? |    1578,1580,1582 |             1.4142 |
+Tournament 4ary (Oz)                     | true    |      ? |    2928,2929,3081 |            60.5244 |
+Tournament 4ary (O2)                     | true    |      ? |    1150,1151,1152 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |    1158,1160,1160 |             0.8000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2380
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1294,1297,1305 |             4.0299 |
+Tournament 4ary (Oz)                     | true    |      ? |    2962,2964,2965 |             1.0198 |
+Tournament 4ary (Os)                     | true    |      ? |    1598,1600,1602 |             1.3266 |
+Tournament 4ary (O2)                     | true    |      ? |    1166,1167,1316 |            72.6719 |
+Tournament 4ary (O3)                     | true    |      ? |    1174,1176,1179 |             1.8330 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2496
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1190,1191,1192 |             0.7483 |
+Tournament 4ary (O1)                     | true    |      ? |    1313,1315,1322 |             3.1875 |
+Tournament 4ary (O2)                     | true    |      ? |    1180,1182,1183 |             1.1662 |
+Tournament 4ary (Oz)                     | true    |      ? |    2998,2999,3001 |             1.0198 |
+Tournament 4ary (Os)                     | true    |      ? |    1617,1620,1622 |             1.8330 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2437
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |    1640,1641,1642 |             0.7483 |
+Tournament 4ary (Oz)                     | true    |      ? |    3034,3034,3036 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |    1331,1331,1332 |             0.4000 |
+Tournament 4ary (O2)                     | true    |      ? |    1196,1198,1201 |             1.6733 |
+Tournament 4ary (O3)                     | true    |      ? |    1207,1207,1208 |             0.4899 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2531
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    3068,3069,3214 |            58.0034 |
+Tournament 4ary (O3)                     | true    |      ? |    1222,1223,1225 |             1.0954 |
+Tournament 4ary (Os)                     | true    |      ? |    1658,1660,1661 |             1.0198 |
+Tournament 4ary (O1)                     | true    |      ? |    1345,1348,1348 |             1.2649 |
+Tournament 4ary (O2)                     | true    |      ? |    1213,1213,1216 |             1.1662 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2487
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Oz)                     | true    |      ? |    3104,3105,3134 |            11.8085 |
+Tournament 4ary (O2)                     | true    |      ? |    1228,1228,1231 |             1.4697 |
+Tournament 4ary (Os)                     | true    |      ? |    1679,1681,1683 |             1.3266 |
+Tournament 4ary (O1)                     | true    |      ? |    1363,1364,1365 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |    1237,1238,1256 |             9.1520 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2603
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1380,1381,1389 |             3.4293 |
+Tournament 4ary (O2)                     | true    |      ? |    1242,1243,1246 |             1.8330 |
+Tournament 4ary (Os)                     | true    |      ? |    1697,1699,1701 |             1.2649 |
+Tournament 4ary (O3)                     | true    |      ? |    1251,1253,1256 |             1.7205 |
+Tournament 4ary (Oz)                     | true    |      ? |    3137,3139,3140 |             0.9798 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2549
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (Os)                     | true    |      ? |    1718,1718,1720 |             0.8000 |
+Tournament 4ary (O1)                     | true    |      ? |    1396,1397,1404 |             2.9257 |
+Tournament 4ary (O3)                     | true    |      ? |    1265,1268,1268 |             1.1662 |
+Tournament 4ary (O2)                     | true    |      ? |    1256,1257,1261 |             1.7436 |
+Tournament 4ary (Oz)                     | true    |      ? |    3172,3173,3175 |             1.0198 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2638
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1282,1283,1303 |             8.1093 |
+Tournament 4ary (Oz)                     | true    |      ? |    3207,3208,3358 |            60.2017 |
+Tournament 4ary (Os)                     | true    |      ? |    1737,1738,1740 |             0.9798 |
+Tournament 4ary (O2)                     | true    |      ? |    1271,1273,1276 |             1.6733 |
+Tournament 4ary (O1)                     | true    |      ? |    1412,1413,1421 |             3.4293 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2589
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O1)                     | true    |      ? |    1427,1429,1431 |             1.2649 |
+Tournament 4ary (Os)                     | true    |      ? |    1755,1757,1758 |             0.9798 |
+Tournament 4ary (O3)                     | true    |      ? |    1297,1299,1316 |             7.2553 |
+Tournament 4ary (O2)                     | true    |      ? |    1288,1288,1311 |             9.0333 |
+Tournament 4ary (Oz)                     | true    |      ? |    3240,3242,3242 |             0.8000 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2721
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1311,1312,1312 |             0.4000 |
+Tournament 4ary (Oz)                     | true    |      ? |    3276,3277,3278 |             0.7483 |
+Tournament 4ary (O2)                     | true    |      ? |    1302,1302,1325 |             8.9755 |
+Tournament 4ary (O1)                     | true    |      ? |    1445,1445,1453 |             3.3226 |
+Tournament 4ary (Os)                     | true    |      ? |    1775,1776,1777 |             0.7483 |
