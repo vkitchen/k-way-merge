@@ -1,0 +1,696 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 2
+TEST_TYPE random
+SEED 1785800785
+MEMORY 0.745058 GiB
+
+Init: 2497
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 74
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |          15,15,16 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |          12,12,12 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 111
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          27,27,27 |             0.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |          32,32,32 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 120
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          33,34,38 |             1.7436 |
+Heap Branchless Parallel Early Terminate | true    |      ? |          38,38,38 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 160
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |          44,44,44 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          39,39,39 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 171
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          45,45,45 |             0.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |          49,49,49 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 212
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |          73,73,73 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          64,64,83 |             7.6000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 219
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |          83,84,84 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |          74,74,74 |             0.0000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 262
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          80,80,89 |             3.5214 |
+Heap Branchless Parallel Early Terminate | true    |      ? |          95,95,95 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 271
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          87,87,98 |             4.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       102,102,102 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 317
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       111,111,112 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |          88,89,89 |             0.4899 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 320
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          95,95,95 |             0.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       118,118,118 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 366
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          97,97,98 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       127,127,142 |             6.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 373
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       134,134,134 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |       104,104,105 |             0.4000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 420
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       131,131,132 |             0.4899 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       159,159,160 |             0.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 424
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       146,146,147 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       173,173,173 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 485
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       172,172,172 |             0.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       197,198,199 |             0.6325 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 475
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       186,187,188 |             0.7483 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       209,209,209 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 524
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       222,222,223 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       184,185,187 |             0.9798 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 524
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       188,188,190 |             0.8000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       229,230,230 |             0.4899 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 582
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       183,183,195 |             4.7159 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       236,236,236 |             0.0000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 577
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       189,189,209 |             7.9095 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       242,243,265 |             9.4953 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 633
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       255,255,256 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       184,184,185 |             0.4000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 633
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       190,190,191 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       263,263,264 |             0.4000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 689
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       190,190,191 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       276,276,292 |             6.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 680
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       284,285,286 |             0.6325 |
+Heap Branchless Parallel                 | true    |      ? |       196,196,198 |             0.8000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 739
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       298,299,301 |             1.0954 |
+Heap Branchless Parallel                 | true    |      ? |       193,193,193 |             0.0000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 735
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       307,308,308 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       199,199,238 |            15.5048 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 789
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       199,199,239 |            16.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       321,321,322 |             0.4899 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 782
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       330,330,331 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       206,206,206 |             0.0000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 841
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       352,353,353 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       243,243,244 |             0.4000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 837
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       365,365,367 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       261,262,270 |             3.4293 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 897
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       381,382,410 |            11.4088 |
+Heap Branchless Parallel                 | true    |      ? |       290,290,297 |             2.8000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 885
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       306,307,374 |            26.4167 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       391,392,393 |             0.7483 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 957
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       412,413,443 |            12.0167 |
+Heap Branchless Parallel                 | true    |      ? |       339,340,353 |             5.3516 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       425,426,461 |            14.0143 |
+Heap Branchless Parallel                 | true    |      ? |       356,357,358 |             0.7483 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 1033
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       451,451,452 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       387,387,387 |             0.0000 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 994
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       404,405,407 |             1.1662 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       463,464,534 |            27.7157 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1064
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       436,436,437 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       484,484,521 |            15.0811 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1042
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       451,451,512 |            24.3031 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       492,492,599 |            42.8000 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1112
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       462,463,464 |             0.6325 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       506,506,523 |             6.7112 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1097
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       473,473,475 |             0.8000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       513,514,524 |             4.7917 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1180
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       472,472,481 |             3.6000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       522,522,532 |             4.0000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1147
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       528,528,546 |             7.1106 |
+Heap Branchless Parallel                 | true    |      ? |       479,480,481 |             0.6325 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1218
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       537,537,538 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       478,479,480 |             0.7483 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       544,544,545 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       488,488,490 |             0.8000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1275
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       553,553,555 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       482,483,605 |            47.5117 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1262
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       490,490,492 |             0.8000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       560,561,561 |             0.4899 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1326
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       489,489,490 |             0.4899 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       571,571,572 |             0.4000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       498,499,500 |             0.6325 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       578,579,582 |             1.3565 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1390
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       589,589,590 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       495,496,506 |             4.7917 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1362
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       505,505,505 |             0.0000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       596,597,598 |             0.7483 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1433
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       505,505,580 |            29.3080 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       608,608,609 |             0.4000 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1417
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       514,515,524 |             3.7202 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       615,616,667 |            20.5134 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1502
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       627,627,648 |             8.3090 |
+Heap Branchless Parallel                 | true    |      ? |       510,511,517 |             2.5298 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1467
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       635,635,759 |            49.5015 |
+Heap Branchless Parallel                 | true    |      ? |       519,520,528 |             3.2619 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1541
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       646,647,649 |             1.0954 |
+Heap Branchless Parallel                 | true    |      ? |       521,521,528 |             2.7276 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1514
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       531,531,532 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       654,655,784 |            51.7015 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1616
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       666,667,668 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |       530,531,531 |             0.4899 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1562
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       540,541,628 |            34.9021 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       674,674,677 |             1.2000 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1671
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       541,543,544 |             1.0198 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       682,685,687 |             1.6248 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1632
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       552,554,565 |             4.7074 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       692,693,833 |            55.9085 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1703
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       731,731,742 |             4.3174 |
+Heap Branchless Parallel                 | true    |      ? |       595,596,634 |            15.2132 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1668
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       748,750,752 |             1.6000 |
+Heap Branchless Parallel                 | true    |      ? |       619,620,621 |             0.6325 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1769
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       780,781,806 |            10.0200 |
+Heap Branchless Parallel                 | true    |      ? |       657,658,665 |             2.9257 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1732
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       679,680,696 |             6.6151 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       798,798,804 |             2.3324 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1825
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       723,725,732 |             3.1875 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       832,834,859 |            10.4000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1783
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       745,747,747 |             0.8000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |      847,848,1023 |            69.9068 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1881
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       881,882,883 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |       783,784,812 |            11.7405 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1849
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |       899,902,918 |             6.9971 |
+Heap Branchless Parallel                 | true    |      ? |       803,804,805 |             0.7483 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       842,842,945 |            41.1018 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       933,934,951 |             6.8293 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1897
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |      862,864,1066 |            80.4622 |
+Heap Branchless Parallel Early Terminate | true    |      ? |       951,951,953 |             0.9798 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1994
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       894,896,912 |             6.8000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |      985,986,1070 |            33.1928 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1947
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       912,914,916 |             1.3266 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1003,1005,1038 |            13.1848 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 2031
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1038,1040,1045 |             2.4166 |
+Heap Branchless Parallel                 | true    |      ? |       953,954,967 |             5.4185 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1992
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       971,975,981 |             3.3466 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1055,1057,1076 |             7.8638 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2077
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1087,1089,1096 |             3.1875 |
+Heap Branchless Parallel                 | true    |      ? |    1001,1004,1035 |            12.7028 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 2057
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1103,1104,1123 |             7.7356 |
+Heap Branchless Parallel                 | true    |      ? |    1021,1022,1025 |             1.3565 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2152
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1133,1134,1135 |             0.6325 |
+Heap Branchless Parallel                 | true    |      ? |    1061,1070,1103 |            15.2971 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2096
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1082,1083,1084 |             0.7483 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1147,1148,1330 |            72.8082 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2195
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1172,1173,1218 |            18.0111 |
+Heap Branchless Parallel                 | true    |      ? |    1106,1107,1107 |             0.4899 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1123,1124,1133 |             3.7736 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1186,1187,1370 |            72.6565 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2251
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1207,1208,1227 |             7.7356 |
+Heap Branchless Parallel                 | true    |      ? |    1139,1141,1184 |            17.5157 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2209
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1218,1219,1267 |            19.2312 |
+Heap Branchless Parallel                 | true    |      ? |    1154,1154,1163 |             3.4986 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1161,1162,1162 |             0.4000 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1237,1241,1426 |            74.3521 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2265
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1247,1250,1250 |             1.1662 |
+Heap Branchless Parallel                 | true    |      ? |    1172,1304,1399 |            91.3170 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2363
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1264,1266,1273 |             3.2619 |
+Heap Branchless Parallel                 | true    |      ? |    1172,1173,1195 |             8.8227 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2307
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1184,1190,1435 |            98.2637 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1273,1280,1297 |             8.6394 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2433
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1185,1186,1187 |             0.7483 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1288,1289,1310 |             8.5697 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2371
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1298,1299,1304 |             2.2271 |
+Heap Branchless Parallel                 | true    |      ? |    1196,1200,1209 |             4.2615 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2476
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1309,1311,1318 |             3.0594 |
+Heap Branchless Parallel                 | true    |      ? |    1197,1197,1198 |             0.4000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2426
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1319,1329,1341 |             8.4475 |
+Heap Branchless Parallel                 | true    |      ? |    1206,1207,1208 |             0.6325 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2532
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1210,1212,1213 |             1.0198 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1330,1330,1333 |             1.2649 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2484
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1223,1224,1225 |             0.6325 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1339,1339,1345 |             2.5298 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2584
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1350,1354,1575 |            86.6289 |
+Heap Branchless Parallel                 | true    |      ? |    1221,1223,1332 |            43.7109 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2534
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1358,1359,1360 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |    1232,1234,1478 |            95.0739 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2643
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1236,1238,1383 |            58.3047 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1369,1371,1373 |             1.3266 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2579
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel Early Terminate | true    |      ? |    1378,1381,1395 |             6.3056 |
+Heap Branchless Parallel                 | true    |      ? |    1249,1249,1259 |             3.9192 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2704
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1251,1251,1292 |            16.0175 |
+Heap Branchless Parallel Early Terminate | true    |      ? |    1389,1391,1447 |            22.6221 |
