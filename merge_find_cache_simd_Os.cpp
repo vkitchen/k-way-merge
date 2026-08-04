@@ -58,26 +58,20 @@ bool MergeFindCacheSimdOs::merge(struct test *t, int n) {
 		_mm_storeu_si128((__m128i*)values_array, maxvalues1);
 		_mm_storeu_si128((__m128i*)indices_array, maxindices1);
 
-		if (values_array[0] == 0 && values_array[1] == 0 && values_array[2] == 0 && values_array[3] == 0)
-			break;
+		int best = values_array[0];
+		int best_i = 0;
 
-		if (values_array[0] >= values_array[1] && values_array[0] >= values_array[2] && values_array[0] >= values_array[3]) {
-			size_t maxindex = indices_array[0];
-			t->results[pos++] = values_array[0];
-			cache[maxindex] = *++segments[maxindex];
-		} else if (values_array[1] >= values_array[0] && values_array[1] >= values_array[2] && values_array[1] >= values_array[3]) {
-			size_t maxindex = indices_array[1];
-			t->results[pos++] = values_array[1];
-			cache[maxindex] = *++segments[maxindex];
-		} else if (values_array[2] >= values_array[0] && values_array[2] >= values_array[1] && values_array[2] >= values_array[3]) {
-			size_t maxindex = indices_array[2];
-			t->results[pos++] = values_array[2];
-			cache[maxindex] = *++segments[maxindex];
-		} else {
-			size_t maxindex = indices_array[3];
-			t->results[pos++] = values_array[3];
-			cache[maxindex] = *++segments[maxindex];
+		for (int i = 1; i < 4; i++) {
+			int cmp = values_array[i];
+			best = (best > cmp ? best : cmp);
+			best_i = (best > cmp ? best_i : i);
 		}
+
+		if (best == 0) break;
+
+		t->results[pos++] = best;
+		size_t maxindex = indices_array[best_i];
+		cache[maxindex] = *++segments[maxindex];
 	}
 
 	free(cache);
