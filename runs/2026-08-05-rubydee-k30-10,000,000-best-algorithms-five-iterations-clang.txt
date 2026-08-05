@@ -1,0 +1,402 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 30
+ITER_COUNT 5
+NUM_TESTS 9
+TEST_TYPE random
+SEED 1785900269
+MEMORY 2.23517 GiB
+
+Init: 7520
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 732
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Baseline (copy+sort)                     | true    |      0 |       698,699,700 |             0.7483 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       108,108,108 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       140,140,140 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       152,153,153 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       151,151,153 |             0.8000 |
+Insert Cache Pair (Os)                   | true    |      ? |       189,189,190 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       320,320,320 |             0.0000 |
+Bubble Branchless (O3)                   | true    |      ? |          91,91,91 |             0.0000 |
+Bubble Branchless Cache (O1)             | true    |      ? |          84,84,84 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1129
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair (Os)                   | true    |      ? |       284,284,285 |             0.4899 |
+Find SIMD (Os)                           | true    |      ? |       427,427,428 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       204,204,204 |             0.0000 |
+Bubble Branchless (O3)                   | true    |      ? |       129,129,129 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       193,193,193 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       147,147,148 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       132,133,133 |             0.4000 |
+Baseline (copy+sort)                     | true    |      0 |    1115,1116,1118 |             0.9798 |
+Tournament 4ary (O3)                     | true    |      ? |       202,202,202 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |       343,344,344 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       535,536,537 |             0.7483 |
+Bubble Branchless Cache (O1)             | true    |      ? |       200,200,201 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       195,195,196 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |       237,238,238 |             0.4899 |
+Insert Cache Pair (Os)                   | true    |      ? |       387,388,389 |             0.6325 |
+Baseline (copy+sort)                     | true    |      0 |    1200,1201,1201 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       257,258,258 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       256,257,257 |             0.4899 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1646
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair (Os)                   | true    |      ? |       493,493,495 |             0.9798 |
+Find Branchless Cache (Os)               | true    |      ? |       328,328,329 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       402,402,403 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       288,288,289 |             0.4000 |
+Baseline (copy+sort)                     | true    |      0 |    1634,1635,1635 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       412,413,414 |             0.6325 |
+Find SIMD (Os)                           | true    |      ? |       644,644,645 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |       309,309,320 |             4.4000 |
+Bubble Branchless (O3)                   | true    |      ? |       379,379,380 |             0.4000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 1719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |       754,754,755 |             0.4000 |
+Insert Cache Pair (Os)                   | true    |      ? |       603,604,605 |             0.7483 |
+Baseline (copy+sort)                     | true    |      0 |    1706,1706,1707 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |       421,421,421 |             0.0000 |
+Loser 8ary (O3)                          | true    |      ? |       361,361,362 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |       489,489,490 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       481,482,482 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       395,395,395 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       513,514,514 |             0.4899 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2169
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       415,415,416 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       605,605,606 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |       864,865,865 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    2153,2157,2158 |             1.7205 |
+Find Branchless Cache (Os)               | true    |      ? |       521,521,521 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |       551,551,552 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       515,515,535 |             8.0000 |
+Bubble Branchless (O3)                   | true    |      ? |       595,595,595 |             0.0000 |
+Insert Cache Pair (Os)                   | true    |      ? |       717,717,719 |             0.8000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2241
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |       656,656,656 |             0.0000 |
+Insert Cache Pair (Os)                   | true    |      ? |       844,845,845 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       682,682,744 |            24.7030 |
+Baseline (copy+sort)                     | true    |      0 |    2228,2228,2229 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |       649,650,651 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    1019,1020,1020 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       620,621,622 |             0.7483 |
+Loser 8ary (O3)                          | true    |      ? |       711,711,711 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |       615,615,616 |             0.4899 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       790,791,791 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    1127,1128,1128 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       723,723,724 |             0.4000 |
+Bubble Branchless (O3)                   | true    |      ? |       878,878,879 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |       740,741,772 |            12.6079 |
+Bubble Branchless Cache (O1)             | true    |      ? |       808,808,810 |             0.8000 |
+Tournament 4ary (O3)                     | true    |      ? |       689,690,703 |             5.2383 |
+Baseline (copy+sort)                     | true    |      0 |    2683,2683,2684 |             0.4899 |
+Insert Cache Pair (Os)                   | true    |      ? |       981,982,984 |             1.1662 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |       982,982,983 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    2707,2708,2709 |             0.7483 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       786,786,788 |             0.8000 |
+Find Branchless Cache (Os)               | true    |      ? |       869,869,871 |             0.8000 |
+Tournament 4ary (O3)                     | true    |      ? |       759,760,760 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |       869,870,870 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    1242,1242,1242 |             0.0000 |
+Insert Cache Pair (Os)                   | true    |      ? |    1131,1131,1131 |             0.0000 |
+Bubble Branchless (O3)                   | true    |      ? |    1044,1044,1045 |             0.4000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 3181
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |       948,949,950 |             0.6325 |
+Find Branchless Cache (Os)               | true    |      ? |      992,993,1021 |            11.3066 |
+Insert Cache Pair (Os)                   | true    |      ? |    1271,1273,1273 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |    1358,1359,1360 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |       829,829,829 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |    3167,3169,3170 |             1.1662 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1158,1160,1161 |             1.0198 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       852,852,853 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    1211,1213,1215 |             1.3266 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 3227
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless (O3)                   | true    |      ? |    1158,1159,1162 |             1.3565 |
+Find Branchless Cache (Os)               | true    |      ? |    1131,1131,1132 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    1474,1474,1475 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |       898,899,899 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1028,1028,1029 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    3214,3215,3216 |             0.7483 |
+Insert Cache Pair (Os)                   | true    |      ? |    1442,1443,1444 |             0.7483 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1360,1361,1361 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       919,919,920 |             0.4000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 3730
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       989,990,990 |             0.4000 |
+Baseline (copy+sort)                     | true    |      0 |    3717,3720,3720 |             1.4697 |
+Insert Cache Pair (Os)                   | true    |      ? |    1608,1608,1610 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |    1593,1594,1594 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1566,1566,1567 |             0.4000 |
+Loser 8ary (O3)                          | true    |      ? |    1108,1108,1109 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |    1273,1273,1274 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |       968,969,969 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    1466,1467,1477 |             4.4452 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 3736
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1038,1038,1040 |             0.8000 |
+Baseline (copy+sort)                     | true    |      0 |    3725,3726,3728 |             1.0198 |
+Find SIMD (Os)                           | true    |      ? |    1713,1713,1713 |             0.0000 |
+Bubble Branchless (O3)                   | true    |      ? |    1680,1683,1684 |             1.3565 |
+Loser 8ary (O3)                          | true    |      ? |    1187,1188,1189 |             0.6325 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1803,1803,1832 |            11.5065 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1053,1053,1165 |            44.7017 |
+Find Branchless Cache (Os)               | true    |      ? |    1429,1429,1432 |             1.1662 |
+Insert Cache Pair (Os)                   | true    |      ? |    1771,1772,1772 |             0.4899 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 4259
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find SIMD (Os)                           | true    |      ? |    1830,1831,1831 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    1883,1888,1890 |             3.0067 |
+Tournament 4ary (O3)                     | true    |      ? |    1108,1108,1109 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1119,1120,1211 |            36.6027 |
+Insert Cache Pair (Os)                   | true    |      ? |    1932,1932,1932 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 |    4247,4248,4249 |             0.8944 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2041,2041,2043 |             0.8000 |
+Loser 8ary (O3)                          | true    |      ? |    1268,1268,1268 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |    1595,1596,1596 |             0.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 4256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless (O3)                   | true    |      ? |    1776,1777,1779 |             0.9798 |
+Baseline (copy+sort)                     | true    |      0 |    4242,4243,4244 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    2032,2033,2033 |             0.4899 |
+Insert Cache Pair (Os)                   | true    |      ? |    2091,2092,2092 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |    1494,1494,1495 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2313,2313,2314 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1186,1187,1187 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1348,1348,1348 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |    1760,1760,1762 |             0.8000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 4797
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    1959,1959,1960 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1428,1428,1429 |             0.4899 |
+Insert Cache Pair (Os)                   | true    |      ? |    2255,2256,2257 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |    1582,1582,1643 |            24.3031 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1276,1276,1277 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    4788,4790,4793 |             1.9391 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2584,2585,2587 |             1.1662 |
+Bubble Branchless (O3)                   | true    |      ? |    2160,2160,2160 |             0.0000 |
+Find SIMD (Os)                           | true    |      ? |    2152,2156,2157 |             1.8547 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 4754
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Baseline (copy+sort)                     | true    |      0 |    4743,4743,4744 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    2413,2414,2415 |             0.8944 |
+Find SIMD (Os)                           | true    |      ? |    2274,2278,2279 |             1.7205 |
+Insert Cache Pair (Os)                   | true    |      ? |    2428,2429,2431 |             1.0198 |
+Loser 8ary (O3)                          | true    |      ? |    1509,1509,1513 |             1.6000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1349,1349,1350 |             0.4000 |
+Find Branchless Cache (Os)               | true    |      ? |    2138,2139,2140 |             0.7483 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2887,2888,2889 |             0.6325 |
+Tournament 4ary (O3)                     | true    |      ? |    1670,1671,1671 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 5342
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    3194,3194,3265 |            28.4000 |
+Baseline (copy+sort)                     | true    |      0 |    5332,5335,5337 |             2.0396 |
+Insert Cache Pair (Os)                   | true    |      ? |    2604,2605,2605 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    2398,2402,2403 |             2.3152 |
+Find Branchless Cache (Os)               | true    |      ? |    2342,2343,2370 |            10.9252 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1421,1421,1421 |             0.0000 |
+Bubble Branchless (O3)                   | true    |      ? |    2646,2647,2647 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1589,1590,1597 |             2.9257 |
+Tournament 4ary (O3)                     | true    |      ? |    1759,1760,1760 |             0.4899 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 5256
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament 4ary (O3)                     | true    |      ? |    1848,1851,1851 |             1.1662 |
+Find SIMD (Os)                           | true    |      ? |    2525,2526,2528 |             1.3565 |
+Loser 8ary (O3)                          | true    |      ? |    1671,1674,1675 |             1.3565 |
+Insert Cache Pair (Os)                   | true    |      ? |    2792,2794,2796 |             1.6000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    3534,3538,3539 |             1.7889 |
+Find Branchless Cache (Os)               | true    |      ? |    2567,2567,2570 |             1.4697 |
+Baseline (copy+sort)                     | true    |      0 |    5242,5243,5256 |             5.1769 |
+Bubble Branchless (O3)                   | true    |      ? |    2676,2677,2702 |            10.0200 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1493,1493,1494 |             0.4899 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 5876
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    3865,3868,3871 |             2.4819 |
+Find SIMD (Os)                           | true    |      ? |    2655,2655,2657 |             0.8000 |
+Baseline (copy+sort)                     | true    |      0 |    5857,5865,5868 |             4.6043 |
+Tournament 4ary (O3)                     | true    |      ? |    1937,1939,1940 |             1.1662 |
+Find Branchless Cache (Os)               | true    |      ? |    2760,2761,3166 |           162.0012 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1750,1751,1751 |             0.4899 |
+Insert Cache Pair (Os)                   | true    |      ? |    2973,2973,2976 |             1.1662 |
+Loser 8ary (O3)                          | true    |      ? |    1753,1754,1754 |             0.4000 |
+Bubble Branchless (O3)                   | true    |      ? |    3139,3140,3149 |             3.6551 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 5783
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    3014,3015,3016 |             0.6325 |
+Loser 8ary (O3)                          | true    |      ? |    1836,1837,1837 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |    2029,2030,2030 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1907,1907,1908 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    5771,5773,5774 |             1.1662 |
+Bubble Branchless (O3)                   | true    |      ? |    3458,3459,3460 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    2780,2781,2784 |             1.4697 |
+Insert Cache Pair (Os)                   | true    |      ? |    3169,3169,3170 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    4234,4239,4255 |             7.1722 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 6338
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Baseline (copy+sort)                     | true    |      0 |    6328,6334,6335 |             2.6382 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2063,2064,2104 |            16.1047 |
+Loser 8ary (O3)                          | true    |      ? |    1923,1923,1928 |             2.2271 |
+Find SIMD (Os)                           | true    |      ? |    2916,2916,2917 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |    2120,2121,2122 |             0.7483 |
+Insert Cache Pair (Os)                   | true    |      ? |    3381,3383,3385 |             1.3266 |
+Bubble Branchless (O3)                   | true    |      ? |    3759,3760,3774 |             6.7941 |
+Find Branchless Cache (Os)               | true    |      ? |    3226,3227,3228 |             0.6325 |
+Bubble Branchless Cache (O1)             | true    |      ? |    4612,4613,4615 |             1.2000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 6314
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Insert Cache Pair (Os)                   | true    |      ? |    3580,3581,3583 |             1.0198 |
+Find Branchless Cache (Os)               | true    |      ? |    3506,3507,3507 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    2008,2008,2009 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5020,5021,5022 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    3160,3161,3161 |             0.4000 |
+Baseline (copy+sort)                     | true    |      0 |    6300,6300,6302 |             0.8000 |
+Bubble Branchless (O3)                   | true    |      ? |    4206,4212,4256 |            19.3701 |
+Tournament 4ary (O3)                     | true    |      ? |    2213,2213,2214 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2219,2220,2223 |             1.3565 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 6872
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless (O3)                   | true    |      ? |    4467,4470,4472 |             1.7205 |
+Tournament 4ary (O3)                     | true    |      ? |    2306,2307,2324 |             6.8293 |
+Find Branchless Cache (Os)               | true    |      ? |    3738,3738,3739 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    6860,6862,6866 |             2.0591 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2460,2461,2464 |             1.3565 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5413,5417,5430 |             5.9532 |
+Loser 8ary (O3)                          | true    |      ? |    2094,2095,2097 |             1.0198 |
+Insert Cache Pair (Os)                   | true    |      ? |    3809,3810,3811 |             0.7483 |
+Find SIMD (Os)                           | true    |      ? |    3294,3296,3340 |            17.8281 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 6801
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (Os)               | true    |      ? |    4045,4045,4046 |             0.4000 |
+Insert Cache Pair (Os)                   | true    |      ? |    3997,3998,4000 |             1.1662 |
+Tournament 4ary (O3)                     | true    |      ? |    2401,2402,2403 |             0.7483 |
+Bubble Branchless (O3)                   | true    |      ? |    5044,5117,5142 |            37.0621 |
+Loser 8ary (O3)                          | true    |      ? |    2183,2184,2184 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 |    6792,6792,6792 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2613,2616,2619 |             2.3324 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5847,5861,5866 |             6.8819 |
+Find SIMD (Os)                           | true    |      ? |    3427,3428,3429 |             0.8944 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 7462
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |    2273,2274,2276 |             0.9798 |
+Find SIMD (Os)                           | true    |      ? |    3567,3568,3569 |             0.8944 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2763,2770,2773 |             3.3705 |
+Baseline (copy+sort)                     | true    |      0 |    7450,7452,7455 |             1.6248 |
+Insert Cache Pair (Os)                   | true    |      ? |    4220,4221,4222 |             0.8944 |
+Tournament 4ary (O3)                     | true    |      ? |    2499,2500,2524 |             9.8102 |
+Bubble Branchless (O3)                   | true    |      ? |    5413,5446,5499 |            28.5545 |
+Find Branchless Cache (Os)               | true    |      ? |    4294,4296,4318 |             9.5205 |
+Bubble Branchless Cache (O1)             | true    |      ? |    6309,6313,6338 |            12.8903 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 7354
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless (O3)                   | true    |      ? |    5598,5638,5657 |            20.6243 |
+Find Branchless Cache (Os)               | true    |      ? |    4627,4629,4632 |             1.8547 |
+Insert Cache Pair (Os)                   | true    |      ? |    4453,4456,4458 |             1.7205 |
+Tournament 4ary (O3)                     | true    |      ? |    2596,2597,2602 |             2.2450 |
+Loser 8ary (O3)                          | true    |      ? |    2367,2370,2379 |             4.2615 |
+Bubble Branchless Cache (O1)             | true    |      ? |    6767,6774,6824 |            20.9628 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    2914,2919,2980 |            24.8145 |
+Find SIMD (Os)                           | true    |      ? |    3706,3707,3708 |             0.7483 |
+Baseline (copy+sort)                     | true    |      0 |    7333,7334,7336 |             1.0954 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 8033
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    7237,7239,7240 |             1.0954 |
+Bubble Branchless (O3)                   | true    |      ? |    6164,6198,6280 |            38.6657 |
+Insert Cache Pair (Os)                   | true    |      ? |    4690,4690,4692 |             0.8000 |
+Find SIMD (Os)                           | true    |      ? |    3844,3846,3847 |             0.9798 |
+Loser 8ary (O3)                          | true    |      ? |    2452,2453,2453 |             0.4899 |
+Tournament 4ary (O3)                     | true    |      ? |    2687,2688,2757 |            27.7027 |
+Find Branchless Cache (Os)               | true    |      ? |    4885,4885,4893 |             3.2000 |
+Baseline (copy+sort)                     | true    |      0 |    8024,8026,8032 |             2.9257 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    3085,3091,3173 |            33.4042 |
