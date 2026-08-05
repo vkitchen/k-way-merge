@@ -16,7 +16,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
-static void merge_3(struct test *t, int **segments) {
+void merge_3(struct test *t, int **segments) {
 	size_t pos = 0;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
@@ -54,7 +54,7 @@ static void merge_3(struct test *t, int **segments) {
 	}
 }
 
-static void merge_4(struct test *t, int **segments) {
+void merge_4(struct test *t, int **segments) {
 	size_t pos = 0;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
@@ -101,58 +101,63 @@ static void merge_4(struct test *t, int **segments) {
 	}
 }
 
-static void merge_5(struct test *t, int **segments) {
+void merge_5(struct test *t, int **segments) {
 	size_t pos = 0;
-	int cache0 = *segments[0];
-	int cache1 = *segments[1];
-	int cache2 = *segments[2];
-	int cache3 = *segments[3];
-	int cache4 = *segments[4];
+	int *segments0 = segments[0];
+	int *segments1 = segments[1];
+	int *segments2 = segments[2];
+	int *segments3 = segments[3];
+	int *segments4 = segments[4];
+	int cache0 = *segments0;
+	int cache1 = *segments1;
+	int cache2 = *segments2;
+	int cache3 = *segments3;
+	int cache4 = *segments4;
 
 	for (;;) {
 		if (cache0 == 0)
 			break;
 
 		t->results[pos++] = cache0;
-		cache0 = *++segments[0];
+		cache0 = *++segments0;
 
 		int min = cache0;
-		int *x = segments[0];
+		int *x = segments0;
 
 		int cmp = cache1;
-		int *y = segments[1];
+		int *y = segments1;
 		cache0 = (min >= cmp ? min : cmp);
-		segments[0] = (min >= cmp ? x : y);
+		segments0 = (min >= cmp ? x : y);
 		min = (min >= cmp ? cmp : min);
 		x = (min >= cmp ? y : x);
 
 		cmp = cache2;
-		y = segments[2];
+		y = segments2;
 		cache1 = (min >= cmp ? min : cmp);
-		segments[1] = (min >= cmp ? x : y);
+		segments1 = (min >= cmp ? x : y);
 		min = (min >= cmp ? cmp : min);
 		x = (min >= cmp ? y : x);
 
 		cmp = cache3;
-		y = segments[3];
+		y = segments3;
 		cache2 = (min >= cmp ? min : cmp);
-		segments[2] = (min >= cmp ? x : y);
+		segments2 = (min >= cmp ? x : y);
 		min = (min >= cmp ? cmp : min);
 		x = (min >= cmp ? y : x);
 
 		cmp = cache4;
-		y = segments[4];
+		y = segments4;
 		cache3 = (min >= cmp ? min : cmp);
-		segments[3] = (min >= cmp ? x : y);
+		segments3 = (min >= cmp ? x : y);
 		min = (min >= cmp ? cmp : min);
 		x = (min >= cmp ? y : x);
 
 		cache4 = min;
-		segments[4] = x;
+		segments4 = x;
 	}
 }
 
-static void merge_6(struct test *t, int **segments) {
+void merge_6(struct test *t, int **segments) {
 	size_t pos = 0;
 	int cache0 = *segments[0];
 	int cache1 = *segments[1];
