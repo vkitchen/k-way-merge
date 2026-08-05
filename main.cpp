@@ -241,6 +241,12 @@ Merge *functions[] = {
 //	new MergeBubbleBranchlessCacheOs,
 //	new MergeBubbleBranchlessCacheOz,
 //
+//	new MergeBubbleBranchlessCacheManuallyUnrolledO1,
+//	new MergeBubbleBranchlessCacheManuallyUnrolledO2,
+//	new MergeBubbleBranchlessCacheManuallyUnrolledO3,
+//	new MergeBubbleBranchlessCacheManuallyUnrolledOs,
+//	new MergeBubbleBranchlessCacheManuallyUnrolledOz,
+//
 //	new MergeHeapBranchlessParallelO1,
 //	new MergeHeapBranchlessParallelO2,
 //	new MergeHeapBranchlessParallelO3,

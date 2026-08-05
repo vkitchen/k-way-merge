@@ -118,6 +118,11 @@ SRC = \
 	merge_bubble_branchless_cache_O3.cpp \
 	merge_bubble_branchless_cache_Os.cpp \
 	merge_bubble_branchless_cache_Oz.cpp \
+	merge_bubble_branchless_cache_manually_unrolled_O1.cpp \
+	merge_bubble_branchless_cache_manually_unrolled_O2.cpp \
+	merge_bubble_branchless_cache_manually_unrolled_O3.cpp \
+	merge_bubble_branchless_cache_manually_unrolled_Os.cpp \
+	merge_bubble_branchless_cache_manually_unrolled_Oz.cpp \
 	merge_heap_branchless_parallel_O1.cpp \
 	merge_heap_branchless_parallel_O2.cpp \
 	merge_heap_branchless_parallel_O3.cpp \
@@ -257,6 +262,21 @@ merge_bubble_branchless_cache_Os.o: merge_bubble_branchless_cache_Os.cpp
 	$(CXX) $(CFLAGS) -Os -c $<
 
 merge_bubble_branchless_cache_Oz.o: merge_bubble_branchless_cache_Oz.cpp
+	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_bubble_branchless_cache_manually_unrolled_O1.o: merge_bubble_branchless_cache_manually_unrolled_O1.cpp
+	$(CXX) $(CFLAGS) -O1 -c $<
+
+merge_bubble_branchless_cache_manually_unrolled_O2.o: merge_bubble_branchless_cache_manually_unrolled_O2.cpp
+	$(CXX) $(CFLAGS) -O2 -c $<
+
+merge_bubble_branchless_cache_manually_unrolled_O3.o: merge_bubble_branchless_cache_manually_unrolled_O3.cpp
+	$(CXX) $(CFLAGS) -O3 -c $<
+
+merge_bubble_branchless_cache_manually_unrolled_Os.o: merge_bubble_branchless_cache_manually_unrolled_Os.cpp
+	$(CXX) $(CFLAGS) -Os -c $<
+
+merge_bubble_branchless_cache_manually_unrolled_Oz.o: merge_bubble_branchless_cache_manually_unrolled_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
 
 merge_heap_branchless_parallel_O1.o: merge_heap_branchless_parallel_O1.cpp
