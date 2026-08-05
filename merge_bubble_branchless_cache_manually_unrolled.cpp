@@ -26,174 +26,201 @@ bool MergeBubbleBranchlessCacheManuallyUnrolled::merge(struct test *t, int n) {
 
 	sort_full(segments, n);
 
-	int cache0 = *segments[0];
-	int cache1 = *segments[1];
-	int cache2 = *segments[2];
-	int cache3;
-	int cache4;
-	int cache5;
-	if (n > 3)
-		cache3 = *segments[3];
-	if (n > 4)
-		cache4 = *segments[4];
-	if (n > 5)
-		cache5 = *segments[5];
-
 	// process
 	size_t pos = 0;
 	if (n == 3) {
+		int *segments0 = segments[0];
+		int *segments1 = segments[1];
+		int *segments2 = segments[2];
+		int cache0 = *segments0;
+		int cache1 = *segments1;
+		int cache2 = *segments2;
+
 		for (;;) {
 			if (cache0 == 0)
 				break;
 
 			t->results[pos++] = cache0;
-			cache0 = *++segments[0];
+			cache0 = *++segments0;
 
 			int min = cache0;
-			int *x = segments[0];
+			int *x = segments0;
 
 			int cmp = cache1;
-			int *y = segments[1];
+			int *y = segments1;
 			cache0 = (min >= cmp ? min : cmp);
-			segments[0] = (min >= cmp ? x : y);
+			segments0 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache2;
-			y = segments[2];
+			y = segments2;
 			cache1 = (min >= cmp ? min : cmp);
-			segments[1] = (min >= cmp ? x : y);
+			segments1 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cache2 = min;
-			segments[2] = x;
+			segments2 = x;
 		}
 	} else if (n == 4) {
+		int *segments0 = segments[0];
+		int *segments1 = segments[1];
+		int *segments2 = segments[2];
+		int *segments3 = segments[3];
+		int cache0 = *segments0;
+		int cache1 = *segments1;
+		int cache2 = *segments2;
+		int cache3 = *segments3;
+
 		for (;;) {
 			if (cache0 == 0)
 				break;
 
 			t->results[pos++] = cache0;
-			cache0 = *++segments[0];
+			cache0 = *++segments0;
 
 			int min = cache0;
-			int *x = segments[0];
+			int *x = segments0;
 
 			int cmp = cache1;
-			int *y = segments[1];
+			int *y = segments1;
 			cache0 = (min >= cmp ? min : cmp);
-			segments[0] = (min >= cmp ? x : y);
+			segments0 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache2;
-			y = segments[2];
+			y = segments2;
 			cache1 = (min >= cmp ? min : cmp);
-			segments[1] = (min >= cmp ? x : y);
+			segments1 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache3;
-			y = segments[3];
+			y = segments3;
 			cache2 = (min >= cmp ? min : cmp);
-			segments[2] = (min >= cmp ? x : y);
+			segments2 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cache3 = min;
-			segments[3] = x;
+			segments3 = x;
 		}
 	} else if (n == 5) {
+		int *segments0 = segments[0];
+		int *segments1 = segments[1];
+		int *segments2 = segments[2];
+		int *segments3 = segments[3];
+		int *segments4 = segments[4];
+		int cache0 = *segments0;
+		int cache1 = *segments1;
+		int cache2 = *segments2;
+		int cache3 = *segments3;
+		int cache4 = *segments4;
+
 		for (;;) {
 			if (cache0 == 0)
 				break;
 
 			t->results[pos++] = cache0;
-			cache0 = *++segments[0];
+			cache0 = *++segments0;
 
 			int min = cache0;
-			int *x = segments[0];
+			int *x = segments0;
 
 			int cmp = cache1;
-			int *y = segments[1];
+			int *y = segments1;
 			cache0 = (min >= cmp ? min : cmp);
-			segments[0] = (min >= cmp ? x : y);
+			segments0 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache2;
-			y = segments[2];
+			y = segments2;
 			cache1 = (min >= cmp ? min : cmp);
-			segments[1] = (min >= cmp ? x : y);
+			segments1 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache3;
-			y = segments[3];
+			y = segments3;
 			cache2 = (min >= cmp ? min : cmp);
-			segments[2] = (min >= cmp ? x : y);
+			segments2 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache4;
-			y = segments[4];
+			y = segments4;
 			cache3 = (min >= cmp ? min : cmp);
-			segments[3] = (min >= cmp ? x : y);
+			segments3 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cache4 = min;
-			segments[4] = x;
+			segments4 = x;
 		}
 	} else if (n == 6) {
+		int *segments0 = segments[0];
+		int *segments1 = segments[1];
+		int *segments2 = segments[2];
+		int *segments3 = segments[3];
+		int *segments4 = segments[4];
+		int *segments5 = segments[5];
+		int cache0 = *segments0;
+		int cache1 = *segments1;
+		int cache2 = *segments2;
+		int cache3 = *segments3;
+		int cache4 = *segments4;
+		int cache5 = *segments5;
+
 		for (;;) {
 			if (cache0 == 0)
 				break;
 
 			t->results[pos++] = cache0;
-			cache0 = *++segments[0];
+			cache0 = *++segments0;
 
 			int min = cache0;
-			int *x = segments[0];
+			int *x = segments0;
 
 			int cmp = cache1;
-			int *y = segments[1];
+			int *y = segments1;
 			cache0 = (min >= cmp ? min : cmp);
-			segments[0] = (min >= cmp ? x : y);
+			segments0 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache2;
-			y = segments[2];
+			y = segments2;
 			cache1 = (min >= cmp ? min : cmp);
-			segments[1] = (min >= cmp ? x : y);
+			segments1 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache3;
-			y = segments[3];
+			y = segments3;
 			cache2 = (min >= cmp ? min : cmp);
-			segments[2] = (min >= cmp ? x : y);
+			segments2 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache4;
-			y = segments[4];
+			y = segments4;
 			cache3 = (min >= cmp ? min : cmp);
-			segments[3] = (min >= cmp ? x : y);
+			segments3 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cmp = cache5;
-			y = segments[5];
+			y = segments5;
 			cache4 = (min >= cmp ? min : cmp);
-			segments[4] = (min >= cmp ? x : y);
+			segments4 = (min >= cmp ? x : y);
 			min = (min >= cmp ? cmp : min);
 			x = (min >= cmp ? y : x);
 
 			cache5 = min;
-			segments[5] = x;
+			segments5 = x;
 		}
 	}
 
