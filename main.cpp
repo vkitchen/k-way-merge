@@ -40,6 +40,7 @@
 #include "merge_bubble_branchless_partially_unrolled.h"
 #include "merge_bubble_branchless_cache.h"
 #include "merge_bubble_branchless_cache_partially_unrolled.h"
+#include "merge_bubble_branchless_cache_manually_unrolled.h"
 #include "merge_bubble_branchless_pair.h"
 #include "merge_bubble_branchless_unrolled.h"
 #include "merge_bubble_branchless_unrolled_cache.h"
@@ -133,6 +134,7 @@ Merge *functions[] = {
 //	new MergeBubbleBranchlessPartiallyUnrolled,
 //	new MergeBubbleBranchlessCache,
 //	new MergeBubbleBranchlessCachePartiallyUnrolled,
+//	new MergeBubbleBranchlessCacheManuallyUnrolled,
 //	new MergeBubbleBranchlessPair,
 //	new MergeBubbleBranchlessUnrolled,
 //	new MergeBubbleBranchlessUnrolledCache,

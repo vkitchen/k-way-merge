@@ -47,6 +47,7 @@ SRC = \
 	merge_bubble_branchless_partially_unrolled.cpp \
 	merge_bubble_branchless_cache.cpp \
 	merge_bubble_branchless_cache_partially_unrolled.cpp \
+	merge_bubble_branchless_cache_manually_unrolled.cpp \
 	merge_bubble_branchless_pair.cpp \
 	merge_bubble_branchless_unrolled.cpp \
 	merge_bubble_branchless_unrolled_cache.cpp \
