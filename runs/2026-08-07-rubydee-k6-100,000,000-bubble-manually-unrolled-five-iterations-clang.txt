@@ -1,0 +1,46 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 4
+TEST_TYPE random
+SEED 1786069952
+MEMORY 4.47035 GiB
+
+Init: 16299
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8075
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Manually Unrolled      | true    |      ? |    1089,1092,1095 |             1.9391 |
+Bubble Branchless Cache                  | true    |      ? |    1239,1241,1264 |             9.4573 |
+Bubble Branchless                        | true    |      ? |       921,922,924 |             1.0198 |
+Bubble Branchless Cache Manually Unrolled | true    |      ? |       564,565,566 |             0.7483 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12953
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache Manually Unrolled | true    |      ? |       789,790,798 |             3.2619 |
+Bubble Branchless Cache                  | true    |      ? |    2015,2021,2027 |             4.7497 |
+Bubble Branchless Manually Unrolled      | true    |      ? |    2330,2334,2349 |             7.0880 |
+Bubble Branchless                        | true    |      ? |    1281,1283,1291 |             3.5440 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13189
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache                  | true    |      ? |    3209,3212,3214 |             1.7205 |
+Bubble Branchless                        | true    |      ? |    1691,1692,1707 |             6.0992 |
+Bubble Branchless Manually Unrolled      | true    |      ? |    3257,3258,3280 |             8.6856 |
+Bubble Branchless Cache Manually Unrolled | true    |      ? |    1134,1135,1141 |             2.5768 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache Manually Unrolled | true    |      ? |    1949,1954,1955 |             2.0976 |
+Bubble Branchless                        | true    |      ? |    2394,2396,2418 |             9.1302 |
+Bubble Branchless Cache                  | true    |      ? |    4411,4414,4436 |             9.0907 |
+Bubble Branchless Manually Unrolled      | true    |      ? |    4722,4727,4738 |             5.8856 |

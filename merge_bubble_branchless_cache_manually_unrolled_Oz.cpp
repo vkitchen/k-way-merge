@@ -17,7 +17,7 @@ static void sort_full(int **a, int length) {
 }
 
 [[gnu::noinline]] static void merge_3(struct test *t, int **segments) {
-	size_t pos = 0;
+	int *out = t->results;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
 	int *segments2 = segments[2];
@@ -29,7 +29,7 @@ static void sort_full(int **a, int length) {
 		if (cache0 == 0)
 			break;
 
-		t->results[pos++] = cache0;
+		*out++ = cache0;
 		cache0 = *++segments0;
 
 		int min = cache0;
@@ -55,7 +55,7 @@ static void sort_full(int **a, int length) {
 }
 
 [[gnu::noinline]] static void merge_4(struct test *t, int **segments) {
-	size_t pos = 0;
+	int *out = t->results;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
 	int *segments2 = segments[2];
@@ -69,7 +69,7 @@ static void sort_full(int **a, int length) {
 		if (cache0 == 0)
 			break;
 
-		t->results[pos++] = cache0;
+		*out++ = cache0;
 		cache0 = *++segments0;
 
 		int min = cache0;
@@ -102,7 +102,7 @@ static void sort_full(int **a, int length) {
 }
 
 [[gnu::noinline]] static void merge_5(struct test *t, int **segments) {
-	size_t pos = 0;
+	int *out = t->results;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
 	int *segments2 = segments[2];
@@ -118,7 +118,7 @@ static void sort_full(int **a, int length) {
 		if (cache0 == 0)
 			break;
 
-		t->results[pos++] = cache0;
+		*out++ = cache0;
 		cache0 = *++segments0;
 
 		int min = cache0;
@@ -158,7 +158,7 @@ static void sort_full(int **a, int length) {
 }
 
 [[gnu::noinline]] static void merge_6(struct test *t, int **segments) {
-	size_t pos = 0;
+	int *out = t->results;
 	int *segments0 = segments[0];
 	int *segments1 = segments[1];
 	int *segments2 = segments[2];
@@ -176,7 +176,7 @@ static void sort_full(int **a, int length) {
 		if (cache0 == 0)
 			break;
 
-		t->results[pos++] = cache0;
+		*out++ = cache0;
 		cache0 = *++segments0;
 
 		int min = cache0;
