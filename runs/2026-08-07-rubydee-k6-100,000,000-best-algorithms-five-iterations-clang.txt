@@ -1,0 +1,82 @@
+COMPILER_VERSION Clang 22.1.7
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 13
+TEST_TYPE random
+SEED 1786070981
+MEMORY 4.47035 GiB
+
+Init: 15927
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8159
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1085,1085,1086 |             0.4000 |
+Insert Cache Pair (Os)                   | true    |      ? |    1881,1882,1884 |             0.9798 |
+Baseline (copy+sort)                     | true    |      0 |    7855,7859,7861 |             2.0591 |
+Bubble Branchless Cache (O1)             | true    |      ? |       850,850,851 |             0.4899 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |       559,560,560 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    1527,1528,1530 |             0.9798 |
+State Machine Var (O1)                   | true    |      ? |    1526,1526,1526 |             0.0000 |
+Tournament 4ary (O3)                     | true    |      ? |    1520,1520,1520 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |    1401,1405,1405 |             1.5492 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2077,2078,2080 |             1.1662 |
+Bubble Branchless (O3)                   | true    |      ? |       913,913,914 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    3198,3202,3204 |             2.0396 |
+Heap Branchless Parallel (O3)            | true    |      ? |    1229,1229,1231 |             0.8000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 13000
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1478,1478,1479 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    1265,1266,1266 |             0.4000 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |       779,779,779 |             0.0000 |
+Find Branchless Cache (Os)               | true    |      ? |    1930,1931,1931 |             0.4000 |
+Insert Cache Pair (Os)                   | true    |      ? |    2840,2844,2848 |             2.7129 |
+State Machine Var (O1)                   | true    |      ? |    2426,2427,2427 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    4279,4280,4281 |             0.7483 |
+Tournament Cache Branchless (O3)         | true    |      ? |    2283,2283,2284 |             0.4899 |
+Loser 8ary (O3)                          | true    |      ? |    2042,2042,2043 |             0.4899 |
+Baseline (copy+sort)                     | true    |      0 | 12896,12900,12905 |             3.1241 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1358,1358,1358 |             0.0000 |
+Heap Branchless Parallel (O3)            | true    |      ? |    2744,2744,2745 |             0.4000 |
+Tournament 4ary (O3)                     | true    |      ? |    2025,2027,2028 |             0.9798 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 12965
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    2033,2034,2036 |             0.9798 |
+Tournament 4ary (O3)                     | true    |      ? |    3439,3440,3440 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1958,1959,2211 |           100.9027 |
+State Machine Var (O1)                   | true    |      ? |    3361,3361,3362 |             0.4899 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |    1121,1121,1122 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |    2575,2575,2575 |             0.0000 |
+Baseline (copy+sort)                     | true    |      0 | 12848,12851,12854 |             1.9391 |
+Bubble Branchless (O3)                   | true    |      ? |    1673,1674,1674 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    5353,5359,5360 |             2.5298 |
+Loser 8ary (O3)                          | true    |      ? |    2560,2561,2831 |           108.0019 |
+Insert Cache Pair (Os)                   | true    |      ? |    3830,3834,3843 |             5.3066 |
+Heap Branchless Parallel (O3)            | true    |      ? |    3378,3379,3379 |             0.4899 |
+Tournament Cache Branchless (O3)         | true    |      ? |    3886,3889,3895 |             3.7202 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 18145
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Loser 8ary (O3)                          | true    |      ? |    3084,3084,3085 |             0.4899 |
+Bubble Branchless (O3)                   | true    |      ? |    2373,2374,2378 |             1.7436 |
+State Machine Var (O1)                   | true    |      ? |    4720,4720,4721 |             0.4899 |
+Find Branchless Cache (Os)               | true    |      ? |    3321,3323,3323 |             0.8000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    4038,4040,4041 |             1.0954 |
+Tournament Cache Branchless (O3)         | true    |      ? |    4588,4593,4593 |             1.9596 |
+Heap Branchless Parallel (O3)            | true    |      ? |    3921,3922,3923 |             0.7483 |
+Tournament 4ary (O3)                     | true    |      ? |    4129,4129,4130 |             0.4000 |
+Find SIMD (Os)                           | true    |      ? |    6434,6447,6448 |             5.3141 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2911,2912,2913 |             0.6325 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |    1928,1929,1929 |             0.4000 |
+Insert Cache Pair (Os)                   | true    |      ? |    4822,4823,4835 |             5.0200 |
+Baseline (copy+sort)                     | true    |      0 | 18029,18033,18038 |             3.1241 |
