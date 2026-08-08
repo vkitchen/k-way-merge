@@ -1,0 +1,794 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 3
+TEST_TYPE random
+SEED 1786152944
+MEMORY 0.745058 GiB
+
+Init: 2454
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |          13,13,15 |             0.8000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          30,31,31 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |          13,13,13 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 104
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          29,29,29 |             0.0000 |
+Heap 4ary Branchless Parallel            | true    |      ? |          18,18,21 |             1.2000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          41,42,42 |             0.4899 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |          51,51,53 |             0.8000 |
+Heap 4ary Branchless Parallel            | true    |      ? |          23,23,28 |             2.0000 |
+Heap Branchless Parallel                 | true    |      ? |          35,35,36 |             0.4000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          35,36,36 |             0.4000 |
+Heap 4ary Branchless Parallel            | true    |      ? |          49,49,61 |             4.8000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          61,61,61 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |          62,62,62 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          41,42,42 |             0.4899 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          72,72,72 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |          71,72,77 |             2.1354 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          82,82,82 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          72,72,73 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 213
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          85,85,85 |             0.0000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |          92,92,93 |             0.4899 |
+Heap 4ary Branchless Parallel            | true    |      ? |          79,79,80 |             0.4000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 252
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |          81,81,82 |             0.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       122,123,123 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |          91,91,91 |             0.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |          88,88,88 |             0.0000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       141,144,144 |             1.2649 |
+Heap Branchless Parallel                 | true    |      ? |          98,98,98 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |          95,95,96 |             0.4000 |
+Heap 4ary Branchless Parallel            | true    |      ? |         95,95,118 |             9.1082 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       160,164,172 |             4.3818 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 312
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       102,102,103 |             0.4000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       103,103,111 |             3.2000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       178,183,183 |             2.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       194,201,201 |             3.4293 |
+Heap 4ary Branchless Parallel            | true    |      ? |       104,104,122 |             7.2000 |
+Heap Branchless Parallel                 | true    |      ? |       101,101,107 |             2.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 362
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       108,109,109 |             0.4899 |
+Heap 4ary Branchless Parallel            | true    |      ? |       110,111,111 |             0.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       209,217,218 |             4.0299 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 405
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       148,148,149 |             0.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       223,224,231 |             2.9933 |
+Heap 4ary Branchless Parallel            | true    |      ? |       117,117,118 |             0.4899 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 411
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       245,245,246 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       166,167,167 |             0.4000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       124,124,125 |             0.4899 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 459
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       254,259,260 |             2.2450 |
+Heap 4ary Branchless Parallel            | true    |      ? |       125,125,125 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |       199,200,208 |             3.3823 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 460
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       267,268,272 |             1.9391 |
+Heap 4ary Branchless Parallel            | true    |      ? |       132,132,152 |             7.7872 |
+Heap Branchless Parallel                 | true    |      ? |       217,218,281 |            24.8886 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 505
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       281,282,290 |             3.2496 |
+Heap 4ary Branchless Parallel            | true    |      ? |       138,138,142 |             1.6000 |
+Heap Branchless Parallel                 | true    |      ? |       240,241,241 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 511
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       145,145,153 |             3.2000 |
+Heap Branchless Parallel                 | true    |      ? |       251,251,251 |             0.0000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       297,297,298 |             0.4000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 555
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       177,177,177 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |       252,253,269 |             6.9685 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       309,309,310 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 559
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       262,262,288 |            10.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       322,322,335 |             6.1319 |
+Heap 4ary Branchless Parallel            | true    |      ? |       195,195,196 |             0.4899 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 607
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       259,259,264 |             2.0000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       335,335,353 |             7.3103 |
+Heap 4ary Branchless Parallel            | true    |      ? |       214,217,262 |            18.3347 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 609
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       268,268,343 |            30.0000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       348,348,348 |             0.0000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       231,231,232 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 657
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       261,261,270 |             3.5214 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       365,366,369 |             1.3565 |
+Heap Branchless Parallel                 | true    |      ? |       268,268,269 |             0.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 659
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       278,278,283 |             1.9391 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       380,380,382 |             0.9798 |
+Heap 4ary Branchless Parallel            | true    |      ? |       280,280,291 |             5.1536 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 707
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       275,275,276 |             0.4899 |
+Heap 4ary Branchless Parallel            | true    |      ? |       297,298,300 |             1.1662 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       394,396,396 |             0.8000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 709
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       410,410,414 |             1.5492 |
+Heap Branchless Parallel                 | true    |      ? |       284,285,292 |             3.0332 |
+Heap 4ary Branchless Parallel            | true    |      ? |       317,318,326 |             3.4293 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 761
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       286,286,376 |            36.0000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       348,348,349 |             0.4899 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       423,424,424 |             0.4000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 762
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       366,366,367 |             0.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       437,438,460 |             8.8679 |
+Heap Branchless Parallel                 | true    |      ? |       296,296,350 |            21.6000 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 815
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       450,452,453 |             1.1662 |
+Heap Branchless Parallel                 | true    |      ? |       349,349,350 |             0.4000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       384,384,391 |             3.0067 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 812
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       464,468,486 |             8.0598 |
+Heap Branchless Parallel                 | true    |      ? |       373,375,535 |            63.4842 |
+Heap 4ary Branchless Parallel            | true    |      ? |       398,399,409 |             4.0792 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 867
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       414,415,508 |            37.3020 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       484,484,488 |             1.5492 |
+Heap Branchless Parallel                 | true    |      ? |       412,412,412 |             0.0000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       433,433,434 |             0.4899 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       497,498,509 |             4.4452 |
+Heap 4ary Branchless Parallel            | true    |      ? |       426,427,427 |             0.4000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 917
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       438,438,439 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       473,474,475 |             0.7483 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       511,512,512 |             0.4000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 912
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       525,526,527 |             0.7483 |
+Heap 4ary Branchless Parallel            | true    |      ? |       450,450,455 |             1.9391 |
+Heap Branchless Parallel                 | true    |      ? |       494,495,496 |             0.7483 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 990
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       531,532,557 |            10.1272 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       539,539,552 |             5.2000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       453,454,471 |             6.7705 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 962
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       464,465,473 |             3.3226 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       553,553,555 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       552,554,688 |            53.4356 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1023
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       473,474,477 |             1.4967 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       567,568,587 |             7.7356 |
+Heap Branchless Parallel                 | true    |      ? |       588,591,593 |             2.0591 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1014
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       483,483,488 |             2.0591 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       581,582,586 |             1.8547 |
+Heap Branchless Parallel                 | true    |      ? |       609,610,678 |            27.2074 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1073
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       625,627,629 |             1.2649 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       600,605,620 |             7.3376 |
+Heap 4ary Branchless Parallel            | true    |      ? |       487,487,517 |            12.0000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1061
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       640,641,642 |             0.8944 |
+Heap 4ary Branchless Parallel            | true    |      ? |       497,498,528 |            12.1062 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       616,622,622 |             2.3324 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       509,509,524 |             5.9127 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       631,632,660 |            11.1104 |
+Heap Branchless Parallel                 | true    |      ? |       644,646,690 |            17.7133 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1112
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       519,519,587 |            27.1028 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       646,650,652 |             2.5298 |
+Heap Branchless Parallel                 | true    |      ? |       657,657,689 |            12.7059 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1178
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       661,662,666 |             1.9391 |
+Heap 4ary Branchless Parallel            | true    |      ? |       524,525,590 |            26.2038 |
+Heap Branchless Parallel                 | true    |      ? |       660,661,663 |             1.0198 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1162
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       535,536,570 |            13.8622 |
+Heap Branchless Parallel                 | true    |      ? |       674,675,676 |             0.6325 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       678,685,705 |             9.1345 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1219
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       546,547,550 |             1.3565 |
+Heap Branchless Parallel                 | true    |      ? |       673,674,689 |             6.1774 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       694,695,696 |             0.8944 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1216
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       558,559,559 |             0.4899 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       710,711,725 |             5.7480 |
+Heap Branchless Parallel                 | true    |      ? |       685,686,712 |            11.9933 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1274
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       563,563,565 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       688,689,759 |            28.1027 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       728,729,736 |             3.0332 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1266
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       575,575,582 |             2.7276 |
+Heap Branchless Parallel                 | true    |      ? |       701,702,703 |             0.6325 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       743,743,744 |             0.4000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1326
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       758,758,779 |             8.3090 |
+Heap Branchless Parallel                 | true    |      ? |       703,703,885 |            72.7010 |
+Heap 4ary Branchless Parallel            | true    |      ? |       586,587,588 |             0.8944 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1320
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       716,717,738 |             8.4994 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       773,774,775 |             0.7483 |
+Heap 4ary Branchless Parallel            | true    |      ? |       598,599,602 |             1.3565 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1368
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       788,789,790 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |       721,722,747 |            10.1074 |
+Heap 4ary Branchless Parallel            | true    |      ? |       600,601,631 |            12.0167 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1366
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       804,804,805 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       736,738,763 |            10.3073 |
+Heap 4ary Branchless Parallel            | true    |      ? |       612,613,613 |             0.4000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1422
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       624,624,648 |             9.5079 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       819,820,820 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       737,738,796 |            23.2551 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1416
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       635,636,637 |             0.7483 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       834,835,835 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       749,750,780 |            12.0167 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1488
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       640,641,653 |             4.9153 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       855,855,875 |             8.0000 |
+Heap Branchless Parallel                 | true    |      ? |       756,757,837 |            31.2960 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1471
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       870,871,890 |             7.6263 |
+Heap Branchless Parallel                 | true    |      ? |       769,771,801 |            12.4676 |
+Heap 4ary Branchless Parallel            | true    |      ? |       652,653,656 |             1.4697 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1533
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       664,665,666 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |       773,774,775 |             0.6325 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       888,889,893 |             1.8547 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1529
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       904,905,906 |             0.6325 |
+Heap Branchless Parallel                 | true    |      ? |       787,788,819 |            12.5220 |
+Heap 4ary Branchless Parallel            | true    |      ? |       676,677,680 |             1.3565 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1585
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       681,682,682 |             0.4000 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       921,922,924 |             0.9798 |
+Heap Branchless Parallel                 | true    |      ? |       796,796,827 |            12.3061 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1573
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       809,810,827 |             7.0143 |
+Heap 4ary Branchless Parallel            | true    |      ? |       694,695,744 |            19.8050 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       939,940,944 |             1.9391 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1643
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       859,860,862 |             0.9798 |
+Heap 8ary Parallel SIMD                  | true    |      ? |       956,957,976 |             7.8588 |
+Heap 4ary Branchless Parallel            | true    |      ? |       706,707,716 |             3.8262 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1625
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |       972,972,978 |             2.4000 |
+Heap Branchless Parallel                 | true    |      ? |       887,889,913 |             9.8306 |
+Heap 4ary Branchless Parallel            | true    |      ? |       719,719,769 |            19.9038 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1698
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       931,932,936 |             1.8547 |
+Heap 8ary Parallel SIMD                  | true    |      ? |      988,999,1007 |             7.3919 |
+Heap 4ary Branchless Parallel            | true    |      ? |       725,726,902 |            70.6014 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1678
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1003,1004,1005 |             0.7483 |
+Heap 4ary Branchless Parallel            | true    |      ? |       735,737,742 |             2.6077 |
+Heap Branchless Parallel                 | true    |      ? |      956,958,1057 |            39.8126 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1746
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1018,1019,1028 |             3.7202 |
+Heap Branchless Parallel                 | true    |      ? |    1004,1005,1057 |            20.6204 |
+Heap 4ary Branchless Parallel            | true    |      ? |       749,749,772 |             8.9755 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1725
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       760,760,790 |            12.0000 |
+Heap Branchless Parallel                 | true    |      ? |    1030,1031,1047 |             6.6151 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1034,1035,1053 |             7.2388 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1800
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       763,764,764 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |    1071,1073,1159 |            34.3372 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1048,1049,1053 |             1.7436 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1780
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       774,829,857 |            32.7622 |
+Heap Branchless Parallel                 | true    |      ? |    1097,1103,1121 |             8.9889 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1065,1066,1108 |            16.6060 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1854
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       786,789,796 |             3.5440 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1078,1079,1080 |             0.8944 |
+Heap Branchless Parallel                 | true    |      ? |    1144,1145,1146 |             0.6325 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1839
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1092,1093,1102 |             3.8262 |
+Heap 4ary Branchless Parallel            | true    |      ? |       796,796,825 |            11.5065 |
+Heap Branchless Parallel                 | true    |      ? |    1171,1172,1190 |             7.4135 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1908
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1136,1137,1149 |             4.8415 |
+Heap Branchless Parallel                 | true    |      ? |    1211,1213,1319 |            41.6960 |
+Heap 4ary Branchless Parallel            | true    |      ? |       800,800,843 |            17.1044 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1885
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1237,1237,1251 |             5.4553 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1165,1166,1178 |             6.0531 |
+Heap 4ary Branchless Parallel            | true    |      ? |       810,811,815 |             1.7205 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1966
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |      822,822,1025 |            80.1349 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1193,1194,1206 |             4.8744 |
+Heap Branchless Parallel                 | true    |      ? |    1281,1282,1316 |            13.3116 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1940
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |       833,835,891 |            22.4357 |
+Heap Branchless Parallel                 | true    |      ? |    1306,1315,1320 |             6.1123 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1222,1222,1235 |             5.0359 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2031
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1344,1346,1352 |             2.7857 |
+Heap 4ary Branchless Parallel            | true    |      ? |       837,838,874 |            14.5190 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1249,1250,1250 |             0.4899 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1985
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1368,1369,1370 |             0.8944 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1279,1279,1284 |             1.9596 |
+Heap 4ary Branchless Parallel            | true    |      ? |       850,851,908 |            22.3643 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2062
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1307,1308,1320 |             4.9558 |
+Heap Branchless Parallel                 | true    |      ? |    1415,1415,1545 |            52.0000 |
+Heap 4ary Branchless Parallel            | true    |      ? |       860,861,900 |            15.4583 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2044
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1334,1335,1348 |             5.2383 |
+Heap Branchless Parallel                 | true    |      ? |    1439,1455,1568 |            46.6159 |
+Heap 4ary Branchless Parallel            | true    |      ? |       872,873,883 |             4.0792 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2123
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1377,1379,1395 |             7.4833 |
+Heap 4ary Branchless Parallel            | true    |      ? |       876,877,888 |             4.6217 |
+Heap Branchless Parallel                 | true    |      ? |    1473,1474,1475 |             0.7483 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2090
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1493,1496,1504 |             3.6551 |
+Heap 4ary Branchless Parallel            | true    |      ? |      889,890,1282 |           156.8013 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1406,1406,1419 |             5.0359 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1434,1436,1438 |             1.4142 |
+Heap 4ary Branchless Parallel            | true    |      ? |       901,906,914 |             5.4626 |
+Heap Branchless Parallel                 | true    |      ? |    1524,1527,1545 |             7.5736 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2150
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1546,1546,1556 |             3.8781 |
+Heap 4ary Branchless Parallel            | true    |      ? |      917,922,1033 |            50.9643 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1464,1465,1505 |            15.8164 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2218
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1565,1567,1713 |            58.1460 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1492,1493,1504 |             4.5607 |
+Heap 4ary Branchless Parallel            | true    |      ? |       954,955,956 |             0.7483 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2194
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |      977,978,1036 |            23.4043 |
+Heap Branchless Parallel                 | true    |      ? |    1586,1589,1618 |            13.3417 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1519,1521,1538 |             8.1633 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2283
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1547,1549,1566 |             7.2222 |
+Heap Branchless Parallel                 | true    |      ? |    1599,1601,1648 |            19.9399 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1002,1003,1007 |             1.8547 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2243
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1576,1578,1590 |             5.7480 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1026,1027,1030 |             1.4697 |
+Heap Branchless Parallel                 | true    |      ? |    1616,1618,1773 |            60.4926 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2323
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1620,1622,1622 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |    1631,1639,1788 |            60.3901 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1061,1064,1165 |            39.7744 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2298
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1651,1652,1693 |            16.4000 |
+Heap Branchless Parallel                 | true    |      ? |    1650,1650,2475 |           329.7020 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1087,1191,1920 |           312.4723 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2380
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |    1108,1109,1182 |            29.4034 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1678,1679,1680 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |    1658,1659,1665 |             2.4980 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2347
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |    1131,1143,1189 |            25.4370 |
+Heap Branchless Parallel                 | true    |      ? |    1677,1678,1682 |             1.8547 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1707,1720,1750 |            17.2511 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2437
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1688,1690,1717 |            13.0323 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1167,1168,1227 |            23.1741 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1735,1740,1758 |             8.2801 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2405
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |    1190,1196,1456 |           102.2123 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1764,1766,1828 |            24.6577 |
+Heap Branchless Parallel                 | true    |      ? |    1707,1708,1729 |             8.6116 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2490
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1713,1714,1724 |             4.1665 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1793,1794,1803 |             3.6551 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1213,1214,1235 |             8.3570 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2445
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1730,1732,1908 |            80.3004 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1823,1825,1860 |            13.9800 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1236,1236,1298 |            24.8000 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2539
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel            | true    |      ? |    1270,1271,1278 |             3.0725 |
+Heap 8ary Parallel SIMD                  | true    |      ? |    1865,1867,1879 |             5.0990 |
+Heap Branchless Parallel                 | true    |      ? |    1738,1740,1783 |            17.0575 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2511
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1896,1897,1898 |             0.8944 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1294,1297,1304 |             4.3174 |
+Heap Branchless Parallel                 | true    |      ? |    1757,1757,1759 |             0.8000 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2607
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD                  | true    |      ? |    1924,1924,1928 |             1.6000 |
+Heap Branchless Parallel                 | true    |      ? |    1765,1774,1794 |            12.0731 |
+Heap 4ary Branchless Parallel            | true    |      ? |    1317,1318,1431 |            45.0378 |

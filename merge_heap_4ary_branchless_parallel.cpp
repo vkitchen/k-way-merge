@@ -60,6 +60,7 @@ namespace {
 					sift_down(i);
 			}
 
+			__attribute__((optimize("no-thread-jumps")))
 			void promote() {
 				int *key = array[0];
 				int key_value = cache[0];
