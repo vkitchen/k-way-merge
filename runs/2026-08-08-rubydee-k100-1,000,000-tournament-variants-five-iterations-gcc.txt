@@ -1,0 +1,1284 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 8
+TEST_TYPE random
+SEED 1786173993
+MEMORY 0.745058 GiB
+
+Init: 2447
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 72
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |          29,29,29 |             0.0000 |
+Tournament External Branchless           | true    |      ? |          23,23,23 |             0.0000 |
+Tournament Cache                         | true    |      ? |          25,25,25 |             0.0000 |
+Tournament Branchless                    | true    |      ? |          34,34,34 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          38,38,38 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |          20,20,20 |             0.0000 |
+Tournament External                      | true    |      ? |          23,23,23 |             0.0000 |
+Tournament External Cache                | true    |      ? |          24,24,25 |             0.4000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |          60,60,60 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |          24,24,24 |             0.0000 |
+Tournament Branchless                    | true    |      ? |          57,57,58 |             0.4000 |
+Tournament External Cache                | true    |      ? |          42,42,42 |             0.0000 |
+Tournament External Branchless           | true    |      ? |          27,27,27 |             0.0000 |
+Tournament External                      | true    |      ? |          40,40,41 |             0.4000 |
+Tournament Tree                          | true    |      ? |          50,50,50 |             0.0000 |
+Tournament Cache                         | true    |      ? |          42,42,42 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |          62,62,62 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |          84,84,84 |             0.0000 |
+Tournament External Cache                | true    |      ? |          66,66,67 |             0.4899 |
+Tournament External Branchless           | true    |      ? |          44,44,44 |             0.0000 |
+Tournament Branchless                    | true    |      ? |          83,83,84 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |          40,40,40 |             0.0000 |
+Tournament Tree                          | true    |      ? |          73,73,73 |             0.0000 |
+Tournament Cache                         | true    |      ? |          60,60,60 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 153
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |          77,77,77 |             0.0000 |
+Tournament External Cache                | true    |      ? |          80,80,81 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       104,104,104 |             0.0000 |
+Tournament Cache                         | true    |      ? |          77,77,77 |             0.0000 |
+Tournament External Branchless           | true    |      ? |          51,51,52 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |          45,45,45 |             0.0000 |
+Tournament Tree                          | true    |      ? |          92,92,93 |             0.4899 |
+Tournament Branchless                    | true    |      ? |       105,105,105 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |       106,106,106 |             0.0000 |
+Tournament Cache                         | true    |      ? |       104,104,105 |             0.4000 |
+Tournament Tree                          | true    |      ? |       125,125,125 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       136,136,137 |             0.4000 |
+Tournament External Branchless           | true    |      ? |          61,61,61 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |          51,52,53 |             0.7483 |
+Tournament Branchless                    | true    |      ? |       140,140,140 |             0.0000 |
+Tournament External                      | true    |      ? |       104,104,104 |             0.0000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 204
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       159,159,159 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |          57,57,57 |             0.0000 |
+Tournament Tree                          | true    |      ? |       148,148,149 |             0.4000 |
+Tournament Cache                         | true    |      ? |       119,119,119 |             0.0000 |
+Tournament External                      | true    |      ? |       122,122,122 |             0.0000 |
+Tournament External Cache                | true    |      ? |       122,122,123 |             0.4000 |
+Tournament External Branchless           | true    |      ? |          70,70,70 |             0.0000 |
+Tournament Branchless                    | true    |      ? |       165,165,166 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |       150,150,151 |             0.4899 |
+Tournament Tree                          | true    |      ? |       186,186,186 |             0.0000 |
+Tournament Branchless                    | true    |      ? |       205,205,205 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       194,194,195 |             0.4000 |
+Tournament External Branchless           | true    |      ? |          86,86,86 |             0.0000 |
+Tournament External Cache                | true    |      ? |       157,157,157 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |          73,74,77 |             1.3565 |
+Tournament External                      | true    |      ? |       154,154,158 |             1.6000 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 251
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |       239,239,240 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |          88,88,88 |             0.0000 |
+Tournament External Cache                | true    |      ? |       188,188,189 |             0.4899 |
+Tournament External                      | true    |      ? |       182,183,185 |             1.0954 |
+Tournament External Branchless           | true    |      ? |       101,101,102 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       226,226,226 |             0.0000 |
+Tournament Tree                          | true    |      ? |       216,216,217 |             0.4899 |
+Tournament Cache                         | true    |      ? |       177,177,178 |             0.4899 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |          95,95,96 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       260,261,261 |             0.4000 |
+Tournament Tree                          | true    |      ? |       245,245,245 |             0.0000 |
+Tournament External Branchless           | true    |      ? |       110,110,111 |             0.4899 |
+Tournament External                      | true    |      ? |       212,212,213 |             0.4899 |
+Tournament Branchless                    | true    |      ? |       276,277,279 |             1.0954 |
+Tournament External Cache                | true    |      ? |       222,222,224 |             0.8000 |
+Tournament Cache                         | true    |      ? |       204,204,204 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 301
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |       101,101,102 |             0.4000 |
+Tournament Branchless                    | true    |      ? |       301,301,301 |             0.0000 |
+Tournament Cache                         | true    |      ? |       222,222,223 |             0.4000 |
+Tournament External Branchless           | true    |      ? |       119,119,123 |             1.5492 |
+Tournament External Cache                | true    |      ? |       242,242,242 |             0.0000 |
+Tournament Tree                          | true    |      ? |       265,265,265 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       279,279,280 |             0.4000 |
+Tournament External                      | true    |      ? |       234,234,235 |             0.4000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 312
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |       313,313,315 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       109,109,109 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       319,319,319 |             0.0000 |
+Tournament Branchless                    | true    |      ? |       345,345,346 |             0.4000 |
+Tournament External Branchless           | true    |      ? |       129,129,129 |             0.0000 |
+Tournament Cache                         | true    |      ? |       257,258,258 |             0.4000 |
+Tournament External Cache                | true    |      ? |       272,272,274 |             0.8000 |
+Tournament External                      | true    |      ? |       267,268,268 |             0.4899 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |       342,342,342 |             0.0000 |
+Tournament External Branchless           | true    |      ? |       139,139,140 |             0.4899 |
+Tournament Cache                         | true    |      ? |       276,277,277 |             0.4899 |
+Tournament Branchless                    | true    |      ? |       376,376,377 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       346,346,347 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       117,117,117 |             0.0000 |
+Tournament External                      | true    |      ? |       291,292,292 |             0.4899 |
+Tournament External Cache                | true    |      ? |       292,292,292 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 360
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       373,373,374 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       125,125,127 |             0.8000 |
+Tournament Cache                         | true    |      ? |       298,299,300 |             0.6325 |
+Tournament Branchless                    | true    |      ? |       407,408,408 |             0.4000 |
+Tournament External Cache                | true    |      ? |       314,314,315 |             0.4000 |
+Tournament External                      | true    |      ? |       316,317,317 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       149,149,149 |             0.0000 |
+Tournament Tree                          | true    |      ? |       371,372,372 |             0.4000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 403
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       401,401,403 |             0.8000 |
+Tournament External Cache                | true    |      ? |       333,334,335 |             0.7483 |
+Tournament External                      | true    |      ? |       338,338,338 |             0.0000 |
+Tournament Cache                         | true    |      ? |       318,318,319 |             0.4899 |
+Tournament Branchless                    | true    |      ? |       438,438,440 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       134,134,159 |            10.0000 |
+Tournament External Branchless           | true    |      ? |       160,160,161 |             0.4000 |
+Tournament Tree                          | true    |      ? |       399,399,400 |             0.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 410
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |       378,379,380 |             0.6325 |
+Tournament External Branchless           | true    |      ? |       176,176,176 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |       443,443,445 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       146,146,147 |             0.4000 |
+Tournament Cache                         | true    |      ? |       359,359,360 |             0.4000 |
+Tournament Tree                          | true    |      ? |       446,447,448 |             0.7483 |
+Tournament Branchless                    | true    |      ? |       487,487,488 |             0.4899 |
+Tournament External                      | true    |      ? |       378,378,379 |             0.4000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 456
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |       490,490,491 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       192,192,194 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |       484,484,486 |             0.8000 |
+Tournament External Cache                | true    |      ? |       418,419,420 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       161,161,161 |             0.0000 |
+Tournament Branchless                    | true    |      ? |       533,533,534 |             0.4000 |
+Tournament Cache                         | true    |      ? |       396,396,396 |             0.0000 |
+Tournament External                      | true    |      ? |       418,419,419 |             0.4899 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |       582,583,584 |             0.6325 |
+Tournament Tree                          | true    |      ? |       537,537,538 |             0.4899 |
+Tournament Cache                         | true    |      ? |       431,431,432 |             0.4000 |
+Tournament External                      | true    |      ? |       458,459,460 |             0.6325 |
+Tournament Cache Branchless              | true    |      ? |       525,526,527 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       208,208,209 |             0.4000 |
+Tournament External Cache                | true    |      ? |       459,459,461 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |       176,176,176 |             0.0000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 500
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Branchless           | true    |      ? |       223,224,227 |             1.3565 |
+Tournament Tree                          | true    |      ? |       577,578,579 |             0.6325 |
+Tournament External                      | true    |      ? |       496,497,500 |             1.4697 |
+Tournament Branchless                    | true    |      ? |       627,628,629 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       190,190,192 |             0.8000 |
+Tournament Cache                         | true    |      ? |       459,460,460 |             0.4899 |
+Tournament External Cache                | true    |      ? |       496,496,499 |             1.2000 |
+Tournament Cache Branchless              | true    |      ? |       562,562,563 |             0.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 509
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |       621,622,623 |             0.7483 |
+Tournament External                      | true    |      ? |       528,529,529 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       609,610,610 |             0.4000 |
+Tournament External Cache Branchless     | true    |      ? |       201,201,202 |             0.4000 |
+Tournament External Cache                | true    |      ? |       529,530,530 |             0.4000 |
+Tournament Cache                         | true    |      ? |       497,499,500 |             0.9798 |
+Tournament Branchless                    | true    |      ? |       675,676,678 |             1.1662 |
+Tournament External Branchless           | true    |      ? |       236,237,237 |             0.4000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 553
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |       712,713,714 |             0.7483 |
+Tournament Tree                          | true    |      ? |       653,654,655 |             0.6325 |
+Tournament External Cache                | true    |      ? |       562,563,565 |             1.1662 |
+Tournament External Branchless           | true    |      ? |       245,246,247 |             0.6325 |
+Tournament External                      | true    |      ? |       556,558,559 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |       641,642,642 |             0.4000 |
+Tournament Cache                         | true    |      ? |       520,520,521 |             0.4000 |
+Tournament External Cache Branchless     | true    |      ? |       208,208,210 |             0.8000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 561
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |       544,545,546 |             0.6325 |
+Tournament External Cache                | true    |      ? |       591,592,592 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |       669,670,671 |             0.7483 |
+Tournament Branchless                    | true    |      ? |       747,748,749 |             0.7483 |
+Tournament Tree                          | true    |      ? |       684,685,685 |             0.4899 |
+Tournament External                      | true    |      ? |       584,585,591 |             2.4819 |
+Tournament External Branchless           | true    |      ? |       255,255,265 |             3.9192 |
+Tournament External Cache Branchless     | true    |      ? |       215,215,216 |             0.4899 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 605
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |       779,780,781 |             0.7483 |
+Tournament Tree                          | true    |      ? |       712,713,714 |             0.7483 |
+Tournament External                      | true    |      ? |       611,612,612 |             0.4899 |
+Tournament External Cache                | true    |      ? |       621,622,626 |             1.7436 |
+Tournament External Branchless           | true    |      ? |       266,266,266 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |       223,223,224 |             0.4000 |
+Tournament Cache                         | true    |      ? |       565,566,576 |             4.2237 |
+Tournament Cache Branchless              | true    |      ? |       694,695,696 |             0.7483 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 608
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |       760,760,761 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       739,739,741 |             0.8000 |
+Tournament External Cache                | true    |      ? |       658,659,659 |             0.4899 |
+Tournament Cache                         | true    |      ? |       599,600,602 |             1.0954 |
+Tournament External Cache Branchless     | true    |      ? |       231,231,233 |             0.8000 |
+Tournament Branchless                    | true    |      ? |       827,827,828 |             0.4899 |
+Tournament External                      | true    |      ? |       650,651,655 |             1.8547 |
+Tournament External Branchless           | true    |      ? |       277,277,278 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 656
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |       776,776,778 |             0.8000 |
+Tournament External                      | true    |      ? |       684,685,689 |             1.7205 |
+Tournament External Cache                | true    |      ? |       690,690,691 |             0.4899 |
+Tournament Cache                         | true    |      ? |       627,628,629 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       288,288,292 |             1.5492 |
+Tournament Branchless                    | true    |      ? |       869,870,872 |             1.0954 |
+Tournament Tree                          | true    |      ? |       801,801,801 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |       240,240,241 |             0.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 659
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |       909,909,911 |             0.8000 |
+Tournament External Cache                | true    |      ? |       720,720,721 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       299,300,300 |             0.4899 |
+Tournament External                      | true    |      ? |       714,714,717 |             1.1662 |
+Tournament Tree                          | true    |      ? |       838,839,840 |             0.7483 |
+Tournament Cache                         | true    |      ? |       653,654,655 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |       809,810,810 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       248,249,249 |             0.4899 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 706
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |       748,749,751 |             1.0198 |
+Tournament Branchless                    | true    |      ? |       945,945,946 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       258,258,260 |             0.8000 |
+Tournament External                      | true    |      ? |       744,745,747 |             0.9798 |
+Tournament Cache Branchless              | true    |      ? |       839,840,841 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       311,312,313 |             0.6325 |
+Tournament Cache                         | true    |      ? |       679,679,680 |             0.4899 |
+Tournament Tree                          | true    |      ? |       872,872,873 |             0.4000 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 709
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |       773,773,775 |             0.8000 |
+Tournament Cache                         | true    |      ? |       707,707,710 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |       873,874,874 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       267,267,268 |             0.4000 |
+Tournament Branchless                    | true    |      ? |       985,987,989 |             1.4142 |
+Tournament External Cache                | true    |      ? |       778,779,780 |             0.7483 |
+Tournament External Branchless           | true    |      ? |       324,324,335 |             4.3174 |
+Tournament Tree                          | true    |      ? |       909,909,910 |             0.4899 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 762
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |       276,276,278 |             0.8000 |
+Tournament External Branchless           | true    |      ? |       336,337,337 |             0.4899 |
+Tournament External Cache                | true    |      ? |       806,807,808 |             0.7483 |
+Tournament Cache                         | true    |      ? |       731,732,733 |             0.6325 |
+Tournament Branchless                    | true    |      ? |    1022,1023,1025 |             1.0198 |
+Tournament External                      | true    |      ? |       802,804,804 |             0.8000 |
+Tournament Tree                          | true    |      ? |       943,943,946 |             1.2649 |
+Tournament Cache Branchless              | true    |      ? |       904,905,907 |             1.1662 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 758
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    1061,1063,1065 |             1.4967 |
+Tournament External Cache                | true    |      ? |       832,834,836 |             1.6000 |
+Tournament Cache                         | true    |      ? |       758,758,759 |             0.4899 |
+Tournament Tree                          | true    |      ? |       979,981,981 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |       286,286,287 |             0.4899 |
+Tournament External                      | true    |      ? |       830,831,837 |             2.6077 |
+Tournament Cache Branchless              | true    |      ? |       936,939,940 |             1.4967 |
+Tournament External Branchless           | true    |      ? |       348,349,352 |             1.3565 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 810
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |       781,782,782 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |       971,971,972 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       295,295,296 |             0.4000 |
+Tournament External                      | true    |      ? |       857,858,859 |             0.8944 |
+Tournament Branchless                    | true    |      ? |    1097,1098,1098 |             0.4000 |
+Tournament External Branchless           | true    |      ? |       360,361,362 |             0.7483 |
+Tournament External Cache                | true    |      ? |       861,862,863 |             0.7483 |
+Tournament Tree                          | true    |      ? |    1010,1010,1011 |             0.4000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 813
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1020,1020,1021 |             0.4000 |
+Tournament Cache                         | true    |      ? |       825,826,826 |             0.4000 |
+Tournament External Cache                | true    |      ? |       909,913,913 |             1.5492 |
+Tournament Tree                          | true    |      ? |    1068,1068,1069 |             0.4000 |
+Tournament Branchless                    | true    |      ? |    1155,1157,1158 |             1.2000 |
+Tournament External                      | true    |      ? |       912,914,915 |             0.9798 |
+Tournament External Branchless           | true    |      ? |       377,377,379 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       311,311,313 |             0.8000 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    1209,1209,1211 |             0.8000 |
+Tournament External Branchless           | true    |      ? |       393,394,397 |             1.6248 |
+Tournament Cache Branchless              | true    |      ? |    1069,1069,1071 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |       326,326,329 |             1.1662 |
+Tournament External                      | true    |      ? |       958,959,960 |             0.8944 |
+Tournament Cache                         | true    |      ? |       867,868,868 |             0.4000 |
+Tournament Tree                          | true    |      ? |    1120,1120,1121 |             0.4000 |
+Tournament External Cache                | true    |      ? |       956,957,959 |             1.1662 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 862
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    1003,1004,1005 |             0.6325 |
+Tournament Tree                          | true    |      ? |    1172,1174,1175 |             1.0198 |
+Tournament Branchless                    | true    |      ? |    1264,1265,1270 |             2.2804 |
+Tournament Cache                         | true    |      ? |       909,910,911 |             0.6325 |
+Tournament External Cache                | true    |      ? |       997,997,998 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       410,412,415 |             2.0396 |
+Tournament Cache Branchless              | true    |      ? |    1116,1118,1119 |             1.1662 |
+Tournament External Cache Branchless     | true    |      ? |       342,342,345 |             1.1662 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 904
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    1224,1225,1225 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1164,1165,1166 |             0.7483 |
+Tournament Branchless                    | true    |      ? |    1317,1319,1320 |             1.0198 |
+Tournament External Branchless           | true    |      ? |       427,428,444 |             6.4684 |
+Tournament External Cache Branchless     | true    |      ? |       358,358,362 |             1.6000 |
+Tournament Cache                         | true    |      ? |       950,950,951 |             0.4000 |
+Tournament External                      | true    |      ? |    1050,1051,1052 |             0.8944 |
+Tournament External Cache                | true    |      ? |    1041,1042,1044 |             0.9798 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 909
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    1374,1374,1377 |             1.2649 |
+Tournament Cache                         | true    |      ? |       995,995,996 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       444,444,445 |             0.4000 |
+Tournament Tree                          | true    |      ? |    1279,1281,1281 |             0.8000 |
+Tournament External                      | true    |      ? |    1098,1099,1100 |             0.6325 |
+Tournament External Cache Branchless     | true    |      ? |       374,374,375 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1215,1216,1216 |             0.4899 |
+Tournament External Cache                | true    |      ? |    1084,1085,1086 |             0.7483 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 959
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1036,1036,1038 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |    1262,1262,1264 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    1428,1429,1430 |             0.7483 |
+Tournament External                      | true    |      ? |    1143,1144,1145 |             0.7483 |
+Tournament Tree                          | true    |      ? |    1331,1332,1332 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       460,461,461 |             0.4899 |
+Tournament External Cache                | true    |      ? |    1128,1129,1130 |             0.8944 |
+Tournament External Cache Branchless     | true    |      ? |       390,390,391 |             0.4899 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 970
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    1381,1382,1383 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       476,476,488 |             4.6476 |
+Tournament Cache                         | true    |      ? |    1075,1076,1077 |             0.7483 |
+Tournament External Cache                | true    |      ? |    1168,1168,1170 |             0.8000 |
+Tournament External                      | true    |      ? |    1187,1188,1193 |             2.2450 |
+Tournament Branchless                    | true    |      ? |    1481,1482,1484 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |       406,406,407 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1307,1308,1310 |             1.0954 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1018
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1112,1113,1114 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       420,421,423 |             0.9798 |
+Tournament External Cache                | true    |      ? |    1210,1211,1212 |             0.7483 |
+Tournament External Branchless           | true    |      ? |       491,492,500 |             3.3226 |
+Tournament Tree                          | true    |      ? |    1426,1427,1428 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |    1350,1351,1352 |             0.7483 |
+Tournament Branchless                    | true    |      ? |    1531,1532,1532 |             0.4899 |
+Tournament External                      | true    |      ? |    1226,1231,1234 |             2.9257 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1013
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    1590,1591,1593 |             1.0954 |
+Tournament External Cache                | true    |      ? |    1250,1250,1250 |             0.0000 |
+Tournament Cache Branchless              | true    |      ? |    1407,1409,1410 |             1.0198 |
+Tournament External Cache Branchless     | true    |      ? |       434,434,434 |             0.0000 |
+Tournament Tree                          | true    |      ? |    1480,1481,1482 |             0.7483 |
+Tournament External                      | true    |      ? |    1267,1268,1268 |             0.4899 |
+Tournament Cache                         | true    |      ? |    1149,1149,1150 |             0.4000 |
+Tournament External Branchless           | true    |      ? |       505,505,514 |             3.7947 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1076
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1183,1183,1183 |             0.0000 |
+Tournament External Cache Branchless     | true    |      ? |       446,446,448 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    1642,1643,1645 |             0.9798 |
+Tournament Tree                          | true    |      ? |    1527,1527,1529 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |    1461,1462,1462 |             0.4899 |
+Tournament External Cache                | true    |      ? |    1286,1288,1290 |             1.4142 |
+Tournament External Branchless           | true    |      ? |       518,521,528 |             3.5440 |
+Tournament External                      | true    |      ? |    1306,1306,1307 |             0.4899 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1062
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1509,1510,1511 |             0.6325 |
+Tournament External Branchless           | true    |      ? |       530,531,533 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |       456,457,460 |             1.3565 |
+Tournament External Cache                | true    |      ? |    1323,1324,1327 |             1.4697 |
+Tournament Cache                         | true    |      ? |    1214,1215,1216 |             0.7483 |
+Tournament External                      | true    |      ? |    1342,1343,1347 |             1.8547 |
+Tournament Tree                          | true    |      ? |    1571,1572,1573 |             0.7483 |
+Tournament Branchless                    | true    |      ? |    1693,1694,1695 |             0.8944 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1120
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    1378,1379,1380 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       542,542,544 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    1736,1738,1739 |             1.3565 |
+Tournament Tree                          | true    |      ? |    1610,1611,1611 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       465,468,469 |             1.6248 |
+Tournament Cache Branchless              | true    |      ? |    1550,1551,1552 |             0.7483 |
+Tournament Cache                         | true    |      ? |    1245,1246,1248 |             0.9798 |
+Tournament External Cache                | true    |      ? |    1361,1362,1366 |             1.9391 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1112
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    1398,1402,1405 |             2.4166 |
+Tournament Cache Branchless              | true    |      ? |    1595,1595,1596 |             0.4000 |
+Tournament External                      | true    |      ? |    1412,1413,1413 |             0.4000 |
+Tournament External Branchless           | true    |      ? |       553,554,556 |             1.0954 |
+Tournament Tree                          | true    |      ? |    1650,1653,1655 |             1.7205 |
+Tournament Branchless                    | true    |      ? |    1785,1786,1786 |             0.4000 |
+Tournament Cache                         | true    |      ? |    1277,1278,1279 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       475,477,480 |             1.8547 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1173
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    1823,1826,1828 |             1.7205 |
+Tournament External Branchless           | true    |      ? |       565,567,575 |             3.7094 |
+Tournament Cache                         | true    |      ? |    1306,1307,1308 |             0.8944 |
+Tournament Cache Branchless              | true    |      ? |    1634,1637,1640 |             2.0591 |
+Tournament Tree                          | true    |      ? |    1688,1691,1692 |             1.4697 |
+Tournament External                      | true    |      ? |    1445,1445,1449 |             1.5492 |
+Tournament External Cache                | true    |      ? |    1436,1436,1440 |             1.5492 |
+Tournament External Cache Branchless     | true    |      ? |       485,486,487 |             0.6325 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1163
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Branchless           | true    |      ? |       576,578,581 |             1.6733 |
+Tournament External Cache                | true    |      ? |    1475,1476,1478 |             1.0198 |
+Tournament Cache                         | true    |      ? |    1332,1334,1334 |             0.8000 |
+Tournament Tree                          | true    |      ? |    1724,1725,1726 |             0.7483 |
+Tournament Branchless                    | true    |      ? |    1865,1866,1866 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1671,1672,1673 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       495,495,496 |             0.4899 |
+Tournament External                      | true    |      ? |    1478,1478,1478 |             0.0000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1226
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    1509,1509,1511 |             0.8000 |
+Tournament External Branchless           | true    |      ? |       591,594,595 |             1.6248 |
+Tournament Branchless                    | true    |      ? |    1903,1903,1907 |             1.5492 |
+Tournament Tree                          | true    |      ? |    1761,1762,1762 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    1708,1710,1710 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       506,506,508 |             0.8000 |
+Tournament External                      | true    |      ? |    1510,1510,1512 |             0.8000 |
+Tournament Cache                         | true    |      ? |    1362,1363,1365 |             1.0198 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1218
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1397,1399,1400 |             1.0198 |
+Tournament Branchless                    | true    |      ? |    1961,1963,1964 |             1.1662 |
+Tournament External Branchless           | true    |      ? |       604,614,616 |             5.3666 |
+Tournament Tree                          | true    |      ? |    1814,1815,1816 |             0.7483 |
+Tournament External Cache                | true    |      ? |    1549,1550,1550 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |    1763,1764,1765 |             0.6325 |
+Tournament External Cache Branchless     | true    |      ? |       518,518,519 |             0.4000 |
+Tournament External                      | true    |      ? |    1551,1553,1557 |             2.0396 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1281
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    1860,1861,1863 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    1811,1812,1813 |             0.7483 |
+Tournament External                      | true    |      ? |    1588,1588,1589 |             0.4899 |
+Tournament Branchless                    | true    |      ? |    2010,2010,2011 |             0.4000 |
+Tournament Cache                         | true    |      ? |    1431,1432,1432 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       617,617,620 |             1.4697 |
+Tournament External Cache                | true    |      ? |    1589,1590,1595 |             2.2450 |
+Tournament External Cache Branchless     | true    |      ? |       527,529,533 |             2.0396 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1268
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    1862,1863,1864 |             0.6325 |
+Tournament External                      | true    |      ? |    1626,1627,1629 |             1.0198 |
+Tournament External Cache                | true    |      ? |    1626,1628,1628 |             0.8000 |
+Tournament Tree                          | true    |      ? |    1906,1907,1910 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    2065,2066,2068 |             1.2000 |
+Tournament External Cache Branchless     | true    |      ? |       540,541,542 |             0.7483 |
+Tournament External Branchless           | true    |      ? |       631,633,648 |             6.2801 |
+Tournament Cache                         | true    |      ? |    1464,1465,1467 |             1.1662 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1343
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    1662,1663,1670 |             3.0332 |
+Tournament External Branchless           | true    |      ? |       645,649,650 |             1.9391 |
+Tournament Tree                          | true    |      ? |    1951,1952,1953 |             0.8944 |
+Tournament Cache Branchless              | true    |      ? |    1905,1906,1906 |             0.4000 |
+Tournament External Cache Branchless     | true    |      ? |       551,553,554 |             1.0198 |
+Tournament Branchless                    | true    |      ? |    2107,2109,2111 |             1.6000 |
+Tournament External Cache                | true    |      ? |    1664,1664,1667 |             1.1662 |
+Tournament Cache                         | true    |      ? |    1496,1497,1498 |             0.6325 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1316
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    1700,1700,1704 |             1.6000 |
+Tournament Cache                         | true    |      ? |    1528,1529,1530 |             0.6325 |
+Tournament External                      | true    |      ? |    1697,1698,1702 |             2.0976 |
+Tournament Branchless                    | true    |      ? |    2157,2160,2163 |             1.9391 |
+Tournament External Cache Branchless     | true    |      ? |       564,566,570 |             2.2271 |
+Tournament External Branchless           | true    |      ? |       659,660,661 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |    1953,1954,1955 |             0.7483 |
+Tournament Tree                          | true    |      ? |    1997,1998,2000 |             1.1662 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1383
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    2038,2039,2039 |             0.4899 |
+Tournament Branchless                    | true    |      ? |    2202,2204,2207 |             1.6248 |
+Tournament External Cache Branchless     | true    |      ? |       575,575,580 |             1.9391 |
+Tournament Cache                         | true    |      ? |    1561,1561,1564 |             1.2649 |
+Tournament Cache Branchless              | true    |      ? |    1994,1995,1997 |             1.0198 |
+Tournament External                      | true    |      ? |    1730,1732,1734 |             1.4142 |
+Tournament External Cache                | true    |      ? |    1738,1742,1743 |             1.9391 |
+Tournament External Branchless           | true    |      ? |       674,675,681 |             2.7129 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1369
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    1772,1773,1774 |             0.8944 |
+Tournament External                      | true    |      ? |    1767,1773,1774 |             2.8983 |
+Tournament Cache                         | true    |      ? |    1589,1589,1591 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    2245,2246,2250 |             1.8547 |
+Tournament External Cache Branchless     | true    |      ? |       587,589,612 |             9.5289 |
+Tournament Tree                          | true    |      ? |    2076,2077,2080 |             1.4697 |
+Tournament Cache Branchless              | true    |      ? |    2036,2037,2039 |             1.0198 |
+Tournament External Branchless           | true    |      ? |       688,688,701 |             5.2000 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1438
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |       599,600,602 |             1.3565 |
+Tournament Cache                         | true    |      ? |    1622,1623,1624 |             0.7483 |
+Tournament External Branchless           | true    |      ? |       702,703,716 |             5.3141 |
+Tournament Cache Branchless              | true    |      ? |    2075,2076,2077 |             0.7483 |
+Tournament Tree                          | true    |      ? |    2116,2118,2120 |             1.3266 |
+Tournament Branchless                    | true    |      ? |    2288,2290,2292 |             1.3266 |
+Tournament External                      | true    |      ? |    1800,1804,1813 |             4.5869 |
+Tournament External Cache                | true    |      ? |    1808,1809,1812 |             1.6248 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1418
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    2337,2338,2341 |             1.4697 |
+Tournament External Cache Branchless     | true    |      ? |       611,612,615 |             1.6248 |
+Tournament External                      | true    |      ? |    1838,1838,1840 |             0.9798 |
+Tournament Cache                         | true    |      ? |    1653,1653,1654 |             0.4899 |
+Tournament External Cache                | true    |      ? |    1844,1845,1847 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    2120,2121,2122 |             0.8944 |
+Tournament External Branchless           | true    |      ? |       716,716,730 |             5.5136 |
+Tournament Tree                          | true    |      ? |    2160,2161,2163 |             0.9798 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1494
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    1882,1883,1884 |             0.6325 |
+Tournament External                      | true    |      ? |    1870,1873,1878 |             2.8705 |
+Tournament Cache Branchless              | true    |      ? |    2163,2165,2177 |             5.2307 |
+Tournament External Cache Branchless     | true    |      ? |       624,625,627 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    2382,2385,2388 |             2.3324 |
+Tournament External Branchless           | true    |      ? |       731,731,733 |             0.8000 |
+Tournament Tree                          | true    |      ? |    2203,2204,2205 |             0.8944 |
+Tournament Cache                         | true    |      ? |    1685,1686,1686 |             0.4000 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1474
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    2247,2248,2251 |             1.3565 |
+Tournament External                      | true    |      ? |    1906,1908,1912 |             2.0396 |
+Tournament External Branchless           | true    |      ? |       746,747,748 |             0.6325 |
+Tournament Cache Branchless              | true    |      ? |    2207,2208,2209 |             0.7483 |
+Tournament Cache                         | true    |      ? |    1716,1717,1719 |             1.0954 |
+Tournament Branchless                    | true    |      ? |    2429,2430,2432 |             1.0198 |
+Tournament External Cache Branchless     | true    |      ? |       635,637,644 |             3.1623 |
+Tournament External Cache                | true    |      ? |    1915,1919,1921 |             2.0396 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1547
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    1941,1942,1943 |             0.8944 |
+Tournament Cache                         | true    |      ? |    1748,1748,1749 |             0.4000 |
+Tournament External Cache Branchless     | true    |      ? |       648,648,653 |             1.9596 |
+Tournament Cache Branchless              | true    |      ? |    2245,2246,2247 |             0.6325 |
+Tournament Branchless                    | true    |      ? |    2471,2473,2473 |             0.9798 |
+Tournament External Branchless           | true    |      ? |       761,764,767 |             2.1354 |
+Tournament Tree                          | true    |      ? |    2287,2288,2289 |             0.6325 |
+Tournament External Cache                | true    |      ? |    1952,1953,1954 |             0.6325 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1527
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Branchless           | true    |      ? |       776,777,781 |             1.7436 |
+Tournament Branchless                    | true    |      ? |    2513,2514,2515 |             0.7483 |
+Tournament Cache                         | true    |      ? |    1778,1779,1781 |             1.0198 |
+Tournament External                      | true    |      ? |    1978,1978,1979 |             0.4899 |
+Tournament External Cache Branchless     | true    |      ? |       661,661,661 |             0.0000 |
+Tournament External Cache                | true    |      ? |    1986,1987,1990 |             1.3565 |
+Tournament Tree                          | true    |      ? |    2331,2331,2332 |             0.4899 |
+Tournament Cache Branchless              | true    |      ? |    2286,2287,2289 |             0.9798 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1585
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    2022,2023,2024 |             0.6325 |
+Tournament Cache                         | true    |      ? |    1809,1813,1813 |             1.6000 |
+Tournament Tree                          | true    |      ? |    2372,2373,2373 |             0.4000 |
+Tournament External Cache Branchless     | true    |      ? |       673,675,681 |             2.8284 |
+Tournament Cache Branchless              | true    |      ? |    2325,2327,2328 |             1.1662 |
+Tournament Branchless                    | true    |      ? |    2558,2558,2563 |             1.9391 |
+Tournament External Branchless           | true    |      ? |       791,793,810 |             7.0029 |
+Tournament External                      | true    |      ? |    2011,2013,2014 |             0.9798 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1571
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1840,1842,1842 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |    2366,2368,2369 |             1.0198 |
+Tournament Tree                          | true    |      ? |    2416,2416,2416 |             0.0000 |
+Tournament External Cache                | true    |      ? |    2057,2060,2062 |             1.7436 |
+Tournament External Cache Branchless     | true    |      ? |       686,687,691 |             1.9391 |
+Tournament External Branchless           | true    |      ? |       807,808,819 |             4.6648 |
+Tournament Branchless                    | true    |      ? |    2603,2603,2603 |             0.0000 |
+Tournament External                      | true    |      ? |    2047,2048,2049 |             0.6325 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1649
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    2449,2451,2452 |             1.0198 |
+Tournament External                      | true    |      ? |    2082,2085,2088 |             2.4819 |
+Tournament External Cache Branchless     | true    |      ? |       709,709,711 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    2647,2650,2651 |             1.4967 |
+Tournament External Branchless           | true    |      ? |       824,825,829 |             1.7436 |
+Tournament External Cache                | true    |      ? |    2090,2092,2094 |             1.4142 |
+Tournament Cache Branchless              | true    |      ? |    2407,2408,2410 |             1.0954 |
+Tournament Cache                         | true    |      ? |    1868,1870,1885 |             6.2801 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1621
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    1919,1921,1922 |             1.1662 |
+Tournament External Branchless           | true    |      ? |       844,845,864 |             7.9649 |
+Tournament External Cache                | true    |      ? |    2139,2141,2143 |             1.4142 |
+Tournament External Cache Branchless     | true    |      ? |       714,715,718 |             1.3565 |
+Tournament Cache Branchless              | true    |      ? |    2470,2470,2473 |             1.1662 |
+Tournament Tree                          | true    |      ? |    2518,2520,2520 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    2715,2716,2719 |             1.3565 |
+Tournament External                      | true    |      ? |    2138,2142,2177 |            14.4416 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1688
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    2186,2189,2190 |             1.4697 |
+Tournament Branchless                    | true    |      ? |    2779,2784,2785 |             2.4000 |
+Tournament Cache                         | true    |      ? |    1967,1967,1971 |             1.6000 |
+Tournament External Branchless           | true    |      ? |       862,863,875 |             5.2307 |
+Tournament Cache Branchless              | true    |      ? |    2530,2531,2533 |             1.3565 |
+Tournament Tree                          | true    |      ? |    2577,2578,2580 |             1.3565 |
+Tournament External                      | true    |      ? |    2187,2189,2193 |             2.3324 |
+Tournament External Cache Branchless     | true    |      ? |       732,733,736 |             1.6248 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1673
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    2589,2589,2589 |             0.0000 |
+Tournament Branchless                    | true    |      ? |    2844,2847,2852 |             2.6382 |
+Tournament External                      | true    |      ? |    2236,2236,2243 |             2.7276 |
+Tournament Cache                         | true    |      ? |    2013,2013,2015 |             0.8000 |
+Tournament External Cache Branchless     | true    |      ? |       750,753,754 |             1.6248 |
+Tournament External Cache                | true    |      ? |    2235,2236,2239 |             1.4697 |
+Tournament Tree                          | true    |      ? |    2636,2636,2640 |             1.7436 |
+Tournament External Branchless           | true    |      ? |       882,887,900 |             7.3593 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1751
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    2643,2645,2646 |             1.0198 |
+Tournament External Branchless           | true    |      ? |       903,907,918 |             5.1147 |
+Tournament Tree                          | true    |      ? |    2695,2696,2698 |             1.3565 |
+Tournament External                      | true    |      ? |    2286,2287,2292 |             2.1354 |
+Tournament Cache                         | true    |      ? |    2059,2060,2060 |             0.4899 |
+Tournament Branchless                    | true    |      ? |    2907,2907,2914 |             2.7276 |
+Tournament External Cache Branchless     | true    |      ? |       768,770,775 |             2.4819 |
+Tournament External Cache                | true    |      ? |    2281,2282,2289 |             3.1875 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1730
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    2329,2329,2334 |             1.9391 |
+Tournament Cache Branchless              | true    |      ? |    2702,2703,2704 |             0.6325 |
+Tournament Cache                         | true    |      ? |    2106,2106,2108 |             0.8000 |
+Tournament Tree                          | true    |      ? |    2754,2755,2757 |             1.1662 |
+Tournament External                      | true    |      ? |    2336,2338,2346 |             3.5440 |
+Tournament External Branchless           | true    |      ? |       920,921,924 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    2978,2979,2983 |             1.9391 |
+Tournament External Cache Branchless     | true    |      ? |       787,788,791 |             1.4697 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1799
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |       804,806,812 |             2.7857 |
+Tournament Branchless                    | true    |      ? |    3035,3038,3040 |             1.6248 |
+Tournament Tree                          | true    |      ? |    2812,2813,2814 |             0.6325 |
+Tournament External Branchless           | true    |      ? |       938,940,946 |             3.0984 |
+Tournament Cache                         | true    |      ? |    2151,2153,2154 |             1.0198 |
+Tournament External                      | true    |      ? |    2385,2387,2391 |             2.5298 |
+Tournament Cache Branchless              | true    |      ? |    2755,2758,2772 |             6.1514 |
+Tournament External Cache                | true    |      ? |    2374,2375,2379 |             1.9391 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1779
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    2197,2197,2201 |             1.6000 |
+Tournament External Cache Branchless     | true    |      ? |       822,823,827 |             2.0976 |
+Tournament External                      | true    |      ? |    2433,2434,2447 |             5.4185 |
+Tournament Tree                          | true    |      ? |    2874,2875,2876 |             0.7483 |
+Tournament Cache Branchless              | true    |      ? |    2811,2812,2813 |             0.8944 |
+Tournament External Cache                | true    |      ? |    2421,2422,2424 |             1.0198 |
+Tournament External Branchless           | true    |      ? |       957,957,959 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    3097,3100,3104 |             2.4495 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1852
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    2491,2493,2501 |             3.4871 |
+Tournament External Cache                | true    |      ? |    2467,2468,2469 |             0.6325 |
+Tournament Cache                         | true    |      ? |    2241,2242,2243 |             0.6325 |
+Tournament Tree                          | true    |      ? |    2931,2932,2934 |             0.9798 |
+Tournament Cache Branchless              | true    |      ? |    2861,2864,2865 |             1.3565 |
+Tournament External Cache Branchless     | true    |      ? |       839,839,840 |             0.4899 |
+Tournament External Branchless           | true    |      ? |       975,976,992 |             6.6151 |
+Tournament Branchless                    | true    |      ? |    3158,3160,3161 |             1.1662 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1835
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    2994,2995,3002 |             3.0725 |
+Tournament External                      | true    |      ? |    2542,2543,2544 |             0.6325 |
+Tournament External Cache                | true    |      ? |    2517,2519,2522 |             1.8974 |
+Tournament Branchless                    | true    |      ? |    3228,3229,3235 |             2.6077 |
+Tournament Cache                         | true    |      ? |    2293,2294,2295 |             0.7483 |
+Tournament External Cache Branchless     | true    |      ? |       855,857,860 |             1.7436 |
+Tournament External Branchless           | true    |      ? |      994,996,1011 |             6.2801 |
+Tournament Cache Branchless              | true    |      ? |    2918,2919,2922 |             1.3565 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1900
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    3304,3305,3309 |             1.7205 |
+Tournament Tree                          | true    |      ? |    3058,3060,3061 |             1.1662 |
+Tournament External Cache                | true    |      ? |    2566,2566,2569 |             1.1662 |
+Tournament External Branchless           | true    |      ? |    1011,1011,1021 |             3.9192 |
+Tournament External                      | true    |      ? |    2593,2594,2599 |             2.1354 |
+Tournament Cache                         | true    |      ? |    2341,2342,2342 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |    2974,2975,2977 |             1.0198 |
+Tournament External Cache Branchless     | true    |      ? |       873,873,875 |             0.8000 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1883
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |       890,892,894 |             1.6000 |
+Tournament Cache                         | true    |      ? |    2388,2389,2391 |             1.0198 |
+Tournament External Branchless           | true    |      ? |    1028,1030,1048 |             7.9347 |
+Tournament Tree                          | true    |      ? |    3120,3122,3122 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    3358,3360,3364 |             1.9596 |
+Tournament Cache Branchless              | true    |      ? |    3024,3027,3029 |             1.6248 |
+Tournament External                      | true    |      ? |    2647,2648,2650 |             1.1662 |
+Tournament External Cache                | true    |      ? |    2613,2615,2625 |             4.3174 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1957
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    3077,3079,3079 |             0.9798 |
+Tournament Branchless                    | true    |      ? |    3423,3425,3428 |             1.6000 |
+Tournament External Cache                | true    |      ? |    2659,2661,2663 |             1.4142 |
+Tournament External Branchless           | true    |      ? |    1047,1047,1054 |             2.7129 |
+Tournament Tree                          | true    |      ? |    3176,3177,3180 |             1.4967 |
+Tournament External                      | true    |      ? |    2702,2705,2708 |             2.3324 |
+Tournament External Cache Branchless     | true    |      ? |       907,908,908 |             0.4899 |
+Tournament Cache                         | true    |      ? |    2433,2435,2436 |             1.0198 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    2756,2762,2769 |             4.4091 |
+Tournament External Cache Branchless     | true    |      ? |       924,924,928 |             1.5492 |
+Tournament Cache Branchless              | true    |      ? |    3130,3132,3135 |             1.8547 |
+Tournament External Cache                | true    |      ? |    2707,2708,2708 |             0.4899 |
+Tournament Branchless                    | true    |      ? |    3483,3483,3486 |             1.1662 |
+Tournament External Branchless           | true    |      ? |    1064,1065,1080 |             5.9800 |
+Tournament Tree                          | true    |      ? |    3230,3234,3240 |             3.7630 |
+Tournament Cache                         | true    |      ? |    2480,2482,2483 |             1.3565 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2006
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    3544,3546,3550 |             2.0591 |
+Tournament External Cache Branchless     | true    |      ? |       942,943,945 |             1.0198 |
+Tournament External Cache                | true    |      ? |    2756,2757,2758 |             0.6325 |
+Tournament Tree                          | true    |      ? |    3294,3294,3297 |             1.2649 |
+Tournament External                      | true    |      ? |    2808,2814,2821 |             4.4542 |
+Tournament Cache                         | true    |      ? |    2522,2523,2526 |             1.4967 |
+Tournament External Branchless           | true    |      ? |    1084,1084,1087 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |    3184,3185,3187 |             1.2000 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1992
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Branchless                    | true    |      ? |    3603,3605,3609 |             2.0591 |
+Tournament External Cache Branchless     | true    |      ? |       959,960,968 |             3.2496 |
+Tournament External Branchless           | true    |      ? |    1101,1104,1110 |             3.0594 |
+Tournament External Cache                | true    |      ? |    2800,2802,2803 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    3232,3236,3238 |             2.0591 |
+Tournament External                      | true    |      ? |    2850,2853,2861 |             3.9699 |
+Tournament Tree                          | true    |      ? |    3350,3350,3351 |             0.4899 |
+Tournament Cache                         | true    |      ? |    2564,2564,2566 |             0.8000 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2067
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    2908,2912,2913 |             2.3152 |
+Tournament Cache                         | true    |      ? |    2605,2607,2607 |             0.9798 |
+Tournament Tree                          | true    |      ? |    3398,3398,3405 |             2.7276 |
+Tournament Cache Branchless              | true    |      ? |    3285,3286,3288 |             1.0198 |
+Tournament External Cache                | true    |      ? |    2846,2848,2851 |             2.2450 |
+Tournament Branchless                    | true    |      ? |    3662,3664,3667 |             1.8547 |
+Tournament External Cache Branchless     | true    |      ? |       975,976,983 |             3.0725 |
+Tournament External Branchless           | true    |      ? |    1116,1118,1131 |             5.5498 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2042
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    2650,2653,2655 |             1.8547 |
+Tournament External                      | true    |      ? |    2957,2959,2965 |             2.8000 |
+Tournament External Cache                | true    |      ? |    2893,2893,2894 |             0.4899 |
+Tournament Branchless                    | true    |      ? |    3719,3720,3724 |             1.7205 |
+Tournament External Branchless           | true    |      ? |    1136,1139,1154 |             6.6933 |
+Tournament External Cache Branchless     | true    |      ? |       992,993,996 |             1.4697 |
+Tournament Cache Branchless              | true    |      ? |    3340,3342,3347 |             2.4166 |
+Tournament Tree                          | true    |      ? |    3461,3462,3463 |             0.7483 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2127
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    3398,3399,3411 |             4.8415 |
+Tournament External Branchless           | true    |      ? |    1148,1150,1157 |             3.0725 |
+Tournament External                      | true    |      ? |    3011,3012,3015 |             1.4697 |
+Tournament External Cache                | true    |      ? |    2939,2940,2942 |             1.1662 |
+Tournament External Cache Branchless     | true    |      ? |    1009,1011,1014 |             2.0396 |
+Tournament Tree                          | true    |      ? |    3524,3525,3527 |             1.0198 |
+Tournament Branchless                    | true    |      ? |    3788,3790,3792 |             1.4142 |
+Tournament Cache                         | true    |      ? |    2692,2692,2693 |             0.4899 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2092
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |    1027,1027,1028 |             0.4000 |
+Tournament Cache Branchless              | true    |      ? |    3455,3457,3458 |             1.0954 |
+Tournament External Cache                | true    |      ? |    2984,2986,2986 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    3844,3845,3848 |             1.4697 |
+Tournament Tree                          | true    |      ? |    3579,3582,3583 |             1.4697 |
+Tournament External                      | true    |      ? |    3059,3060,3071 |             4.4452 |
+Tournament External Branchless           | true    |      ? |    1166,1169,1180 |             4.8990 |
+Tournament Cache                         | true    |      ? |    2732,2734,2735 |             1.0198 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2167
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    3028,3029,3031 |             1.0954 |
+Tournament Branchless                    | true    |      ? |    3906,3907,3917 |             4.0792 |
+Tournament Cache Branchless              | true    |      ? |    3508,3510,3512 |             1.6000 |
+Tournament External Cache Branchless     | true    |      ? |    1043,1044,1047 |             1.3565 |
+Tournament Cache                         | true    |      ? |    2773,2774,2774 |             0.4899 |
+Tournament External Branchless           | true    |      ? |    1181,1185,1188 |             2.6382 |
+Tournament Tree                          | true    |      ? |    3630,3632,3634 |             1.3266 |
+Tournament External                      | true    |      ? |    3108,3110,3114 |             2.0396 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2143
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    2812,2813,2814 |             0.8944 |
+Tournament External                      | true    |      ? |    3157,3159,3164 |             2.3152 |
+Tournament Cache Branchless              | true    |      ? |    3568,3569,3571 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |    1058,1060,1063 |             1.6248 |
+Tournament External Cache                | true    |      ? |    3075,3076,3078 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    3969,3971,3972 |             1.0198 |
+Tournament External Branchless           | true    |      ? |    1200,1207,1227 |             9.3081 |
+Tournament Tree                          | true    |      ? |    3688,3689,3693 |             1.7436 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2220
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    3118,3121,3123 |             1.7436 |
+Tournament External Cache Branchless     | true    |      ? |    1073,1075,1075 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    4020,4024,4025 |             2.0976 |
+Tournament External Branchless           | true    |      ? |    1216,1219,1235 |             6.7941 |
+Tournament Cache                         | true    |      ? |    2849,2851,2853 |             1.3266 |
+Tournament Cache Branchless              | true    |      ? |    3623,3625,3626 |             1.2000 |
+Tournament External                      | true    |      ? |    3211,3214,3218 |             2.3152 |
+Tournament Tree                          | true    |      ? |    3740,3741,3745 |             1.9391 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2194
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |    1092,1093,1094 |             0.8944 |
+Tournament Branchless                    | true    |      ? |    4083,4084,4088 |             1.7436 |
+Tournament Cache                         | true    |      ? |    2890,2890,2892 |             0.8000 |
+Tournament Cache Branchless              | true    |      ? |    3674,3676,3680 |             2.1541 |
+Tournament External Cache                | true    |      ? |    3167,3168,3169 |             0.7483 |
+Tournament Tree                          | true    |      ? |    3790,3792,3793 |             1.2000 |
+Tournament External                      | true    |      ? |    3252,3253,3254 |             0.7483 |
+Tournament External Branchless           | true    |      ? |    1229,1233,1239 |             3.2000 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2270
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    3297,3300,3306 |             3.0594 |
+Tournament Cache Branchless              | true    |      ? |    3721,3724,3725 |             1.4697 |
+Tournament Cache                         | true    |      ? |    2920,2921,2926 |             2.0976 |
+Tournament External Branchless           | true    |      ? |    1243,1246,1251 |             2.8566 |
+Tournament Tree                          | true    |      ? |    3833,3837,3839 |             2.1541 |
+Tournament External Cache                | true    |      ? |    3209,3211,3217 |             2.7857 |
+Tournament External Cache Branchless     | true    |      ? |    1106,1108,1109 |             1.0954 |
+Tournament Branchless                    | true    |      ? |    4130,4131,4132 |             0.6325 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2249
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Tree                          | true    |      ? |    3887,3887,3889 |             0.9798 |
+Tournament External Cache                | true    |      ? |    3256,3261,3268 |             4.2708 |
+Tournament Cache                         | true    |      ? |    2966,2969,2977 |             3.7630 |
+Tournament Branchless                    | true    |      ? |    4191,4193,4196 |             1.7205 |
+Tournament External                      | true    |      ? |    3343,3344,3356 |             4.9234 |
+Tournament External Cache Branchless     | true    |      ? |    1120,1120,1123 |             1.2649 |
+Tournament External Branchless           | true    |      ? |    1263,1263,1276 |             5.0438 |
+Tournament Cache Branchless              | true    |      ? |    3776,3776,3777 |             0.4899 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2332
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache Branchless     | true    |      ? |    1134,1135,1137 |             0.9798 |
+Tournament External Branchless           | true    |      ? |    1277,1288,1302 |             9.0642 |
+Tournament Branchless                    | true    |      ? |    4243,4245,4249 |             2.1909 |
+Tournament Cache                         | true    |      ? |    2993,2996,2999 |             1.9391 |
+Tournament External                      | true    |      ? |    3388,3389,3391 |             0.9798 |
+Tournament Cache Branchless              | true    |      ? |    3825,3826,3842 |             6.4931 |
+Tournament Tree                          | true    |      ? |    3929,3931,3932 |             1.0198 |
+Tournament External Cache                | true    |      ? |    3297,3298,3300 |             1.0954 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    3435,3436,3441 |             2.2450 |
+Tournament Cache                         | true    |      ? |    3029,3029,3031 |             0.8000 |
+Tournament External Branchless           | true    |      ? |    1291,1294,1299 |             2.7276 |
+Tournament Cache Branchless              | true    |      ? |    3875,3878,3879 |             1.3565 |
+Tournament External Cache Branchless     | true    |      ? |    1148,1149,1150 |             0.7483 |
+Tournament Branchless                    | true    |      ? |    4299,4301,4304 |             1.8330 |
+Tournament External Cache                | true    |      ? |    3340,3340,3343 |             1.1662 |
+Tournament Tree                          | true    |      ? |    3977,3978,3980 |             1.0954 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2392
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    3924,3925,3928 |             1.6248 |
+Tournament External Branchless           | true    |      ? |    1304,1307,1310 |             2.0000 |
+Tournament Branchless                    | true    |      ? |    4351,4353,4357 |             2.0591 |
+Tournament Cache                         | true    |      ? |    3064,3065,3066 |             0.7483 |
+Tournament External Cache                | true    |      ? |    3383,3386,3388 |             1.6248 |
+Tournament Tree                          | true    |      ? |    4020,4021,4023 |             1.0954 |
+Tournament External                      | true    |      ? |    3478,3481,3488 |             3.3705 |
+Tournament External Cache Branchless     | true    |      ? |    1163,1164,1170 |             2.6382 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2349
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Cache                | true    |      ? |    3427,3428,3433 |             2.2271 |
+Tournament External                      | true    |      ? |    3523,3527,3529 |             2.0591 |
+Tournament Branchless                    | true    |      ? |    4405,4406,4410 |             1.7889 |
+Tournament Cache Branchless              | true    |      ? |    3970,3973,3985 |             5.2307 |
+Tournament Cache                         | true    |      ? |    3099,3099,3102 |             1.2000 |
+Tournament External Branchless           | true    |      ? |    1324,1329,1345 |             9.4573 |
+Tournament External Cache Branchless     | true    |      ? |    1178,1179,1182 |             1.6248 |
+Tournament Tree                          | true    |      ? |    4071,4073,4076 |             1.7436 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2433
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    4022,4025,4026 |             1.4967 |
+Tournament External Cache                | true    |      ? |    3472,3474,3476 |             1.3266 |
+Tournament External Cache Branchless     | true    |      ? |    1194,1194,1196 |             0.8000 |
+Tournament Branchless                    | true    |      ? |    4459,4461,4467 |             2.8284 |
+Tournament Tree                          | true    |      ? |    4118,4119,4133 |             5.7131 |
+Tournament Cache                         | true    |      ? |    3133,3135,3136 |             1.0954 |
+Tournament External                      | true    |      ? |    3573,3575,3582 |             3.7417 |
+Tournament External Branchless           | true    |      ? |    1337,1344,1354 |             6.2610 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2402
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    4070,4073,4074 |             1.3565 |
+Tournament Tree                          | true    |      ? |    4164,4167,4169 |             1.6248 |
+Tournament External                      | true    |      ? |    3619,3619,3623 |             1.5492 |
+Tournament Branchless                    | true    |      ? |    4509,4511,4514 |             1.6248 |
+Tournament External Branchless           | true    |      ? |    1355,1363,1370 |             5.8515 |
+Tournament External Cache Branchless     | true    |      ? |    1208,1210,1215 |             2.7857 |
+Tournament Cache                         | true    |      ? |    3168,3169,3170 |             0.6325 |
+Tournament External Cache                | true    |      ? |    3516,3520,3520 |             1.9596 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2481
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External                      | true    |      ? |    3660,3661,3674 |             6.0465 |
+Tournament Branchless                    | true    |      ? |    4561,4565,4566 |             1.8547 |
+Tournament External Cache Branchless     | true    |      ? |    1221,1222,1224 |             1.2000 |
+Tournament Cache                         | true    |      ? |    3201,3202,3204 |             1.1662 |
+Tournament Tree                          | true    |      ? |    4204,4206,4206 |             0.9798 |
+Tournament External Branchless           | true    |      ? |    1369,1370,1377 |             2.8705 |
+Tournament External Cache                | true    |      ? |    3558,3559,3561 |             1.0198 |
+Tournament Cache Branchless              | true    |      ? |    4113,4114,4131 |             6.8293 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2451
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    3239,3240,3244 |             1.8547 |
+Tournament External Cache                | true    |      ? |    3603,3605,3610 |             2.6077 |
+Tournament Branchless                    | true    |      ? |    4626,4629,4632 |             2.2804 |
+Tournament External Branchless           | true    |      ? |    1385,1388,1401 |             5.7758 |
+Tournament Cache Branchless              | true    |      ? |    4165,4166,4169 |             1.3565 |
+Tournament External Cache Branchless     | true    |      ? |    1234,1236,1238 |             1.3266 |
+Tournament External                      | true    |      ? |    3705,3711,3714 |             3.1623 |
+Tournament Tree                          | true    |      ? |    4266,4268,4270 |             1.4142 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2535
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament External Branchless           | true    |      ? |    1401,1405,1425 |             8.7955 |
+Tournament Cache                         | true    |      ? |    3274,3276,3277 |             0.9798 |
+Tournament External Cache Branchless     | true    |      ? |    1249,1251,1252 |             1.1662 |
+Tournament Cache Branchless              | true    |      ? |    4216,4221,4223 |             2.3152 |
+Tournament Branchless                    | true    |      ? |    4688,4694,4698 |             3.4871 |
+Tournament External                      | true    |      ? |    3744,3749,3753 |             3.2863 |
+Tournament External Cache                | true    |      ? |    3649,3650,3716 |            26.3408 |
+Tournament Tree                          | true    |      ? |    4329,4330,4331 |             0.7483 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2510
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache Branchless              | true    |      ? |    4272,4274,4274 |             0.8000 |
+Tournament External Branchless           | true    |      ? |    1417,1426,1432 |             4.9639 |
+Tournament External                      | true    |      ? |    3794,3797,3800 |             2.0591 |
+Tournament Cache                         | true    |      ? |    3315,3316,3318 |             0.9798 |
+Tournament External Cache                | true    |      ? |    3694,3695,3696 |             0.8944 |
+Tournament Tree                          | true    |      ? |    4381,4382,4384 |             1.1662 |
+Tournament External Cache Branchless     | true    |      ? |    1264,1265,1268 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    4751,4756,4761 |             3.3106 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2595
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Tournament Cache                         | true    |      ? |    3355,3355,3357 |             0.8000 |
+Tournament Tree                          | true    |      ? |    4441,4444,4445 |             1.6248 |
+Tournament External Branchless           | true    |      ? |    1437,1441,1454 |             5.8856 |
+Tournament External Cache Branchless     | true    |      ? |    1276,1279,1281 |             1.6248 |
+Tournament External                      | true    |      ? |    3843,3845,3850 |             2.4819 |
+Tournament Cache Branchless              | true    |      ? |    4323,4328,4343 |             7.0597 |
+Tournament External Cache                | true    |      ? |    3739,3740,3742 |             1.3565 |
+Tournament Branchless                    | true    |      ? |    4820,4821,4827 |             2.5298 |

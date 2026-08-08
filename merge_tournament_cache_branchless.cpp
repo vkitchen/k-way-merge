@@ -32,6 +32,7 @@ static void initialise(std::vector<int *> &segments, std::vector<std::pair<int, 
 	tree[0] = std::make_pair(tree[winners[1]].first, tree[winners[1]].second);
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void replay_games(std::vector<std::pair<int, int>> &tree, int pos) {
 	auto winner = tree[pos];
 
