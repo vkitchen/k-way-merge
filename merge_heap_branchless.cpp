@@ -46,6 +46,7 @@ namespace {
 					heapify(position);
 			}
 
+			__attribute__((optimize("no-thread-jumps")))
 			void promote() {
 				int *key = array[0];
 				size_t position = 0;
