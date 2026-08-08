@@ -1,0 +1,794 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 3
+TEST_TYPE random
+SEED 1786149365
+MEMORY 0.745058 GiB
+
+Init: 2452
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          22,22,22 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          13,13,13 |             0.0000 |
+Heap Branchless Pair                     | true    |      ? |          19,19,19 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 105
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          46,47,47 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |          30,30,30 |             0.0000 |
+Heap Branchless Pair                     | true    |      ? |          41,41,41 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 118
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |          49,49,49 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          36,36,37 |             0.4000 |
+Heap Branchless                          | true    |      ? |          70,70,71 |             0.4000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |          89,90,90 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |          35,36,38 |             1.0198 |
+Heap Branchless Pair                     | true    |      ? |          62,62,63 |             0.4000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 167
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |          69,69,75 |             2.4000 |
+Heap Branchless                          | true    |      ? |          99,99,99 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          41,42,42 |             0.4000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       136,136,137 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       102,102,113 |             4.4000 |
+Heap Branchless Parallel                 | true    |      ? |          72,72,73 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       170,170,171 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |          85,85,86 |             0.4000 |
+Heap Branchless Pair                     | true    |      ? |       115,116,116 |             0.4899 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 254
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       195,195,195 |             0.0000 |
+Heap Branchless Parallel                 | true    |      ? |          91,91,97 |             2.4000 |
+Heap Branchless Pair                     | true    |      ? |       130,131,131 |             0.4000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |         98,98,100 |             0.8000 |
+Heap Branchless Pair                     | true    |      ? |       137,137,137 |             0.0000 |
+Heap Branchless                          | true    |      ? |       219,220,228 |             3.3823 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 308
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       237,240,243 |             2.0591 |
+Heap Branchless Parallel                 | true    |      ? |          96,96,96 |             0.0000 |
+Heap Branchless Pair                     | true    |      ? |       148,148,152 |             1.6000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 312
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       102,103,103 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       155,155,158 |             1.2000 |
+Heap Branchless                          | true    |      ? |       266,269,280 |             4.7917 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 365
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       281,284,287 |             2.3324 |
+Heap Branchless Parallel                 | true    |      ? |       101,101,101 |             0.0000 |
+Heap Branchless Pair                     | true    |      ? |       166,167,167 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 364
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       177,178,179 |             0.6325 |
+Heap Branchless                          | true    |      ? |       308,309,317 |             3.2863 |
+Heap Branchless Parallel                 | true    |      ? |       108,110,142 |            13.2303 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       346,346,353 |             2.8000 |
+Heap Branchless Pair                     | true    |      ? |       215,215,227 |             4.6476 |
+Heap Branchless Parallel                 | true    |      ? |       150,150,151 |             0.4000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 411
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       391,392,392 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       232,236,238 |             2.1909 |
+Heap Branchless Parallel                 | true    |      ? |       169,170,188 |             7.2498 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       430,436,438 |             2.9257 |
+Heap Branchless Parallel                 | true    |      ? |       201,201,203 |             0.8000 |
+Heap Branchless Pair                     | true    |      ? |       270,270,270 |             0.0000 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 459
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       286,286,286 |             0.0000 |
+Heap Branchless                          | true    |      ? |       456,462,467 |             3.9699 |
+Heap Branchless Parallel                 | true    |      ? |       219,220,229 |             3.7736 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 501
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       499,504,507 |             3.1875 |
+Heap Branchless Pair                     | true    |      ? |       319,322,328 |             3.1241 |
+Heap Branchless Parallel                 | true    |      ? |       243,245,272 |            11.0200 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 510
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       254,256,259 |             1.6248 |
+Heap Branchless Pair                     | true    |      ? |       324,329,330 |             2.4166 |
+Heap Branchless                          | true    |      ? |       512,512,513 |             0.4000 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 554
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       548,548,550 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       257,257,261 |             1.6000 |
+Heap Branchless Pair                     | true    |      ? |       339,340,355 |             6.1123 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 560
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       552,553,553 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       348,349,349 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       266,267,271 |             1.8547 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 608
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       590,591,593 |             1.0198 |
+Heap Branchless Pair                     | true    |      ? |       360,361,362 |             0.6325 |
+Heap Branchless Parallel                 | true    |      ? |       265,266,266 |             0.4899 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 610
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       274,275,279 |             1.7889 |
+Heap Branchless                          | true    |      ? |       601,601,602 |             0.4000 |
+Heap Branchless Pair                     | true    |      ? |       368,368,369 |             0.4000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 659
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       381,383,383 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       275,275,275 |             0.0000 |
+Heap Branchless                          | true    |      ? |       634,635,648 |             5.3141 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 661
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       641,642,642 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       284,285,351 |            26.1304 |
+Heap Branchless Pair                     | true    |      ? |       390,391,391 |             0.4000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 706
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       277,278,279 |             0.6325 |
+Heap Branchless                          | true    |      ? |       677,677,678 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       404,404,405 |             0.4899 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 708
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       413,413,414 |             0.4000 |
+Heap Branchless                          | true    |      ? |       686,688,688 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       287,287,294 |             2.8000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 762
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       285,285,287 |             0.8000 |
+Heap Branchless                          | true    |      ? |       720,721,721 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       428,429,430 |             0.7483 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 760
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       295,296,348 |            25.3976 |
+Heap Branchless                          | true    |      ? |       728,728,729 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       437,438,439 |             0.6325 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 808
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       484,485,490 |             2.0976 |
+Heap Branchless Parallel                 | true    |      ? |       353,354,405 |            20.5037 |
+Heap Branchless                          | true    |      ? |       790,792,793 |             1.0954 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 807
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       381,381,383 |             0.8000 |
+Heap Branchless                          | true    |      ? |       828,829,830 |             0.6325 |
+Heap Branchless Pair                     | true    |      ? |       506,507,507 |             0.4899 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 864
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       897,897,900 |             1.4697 |
+Heap Branchless Parallel                 | true    |      ? |       422,422,429 |             2.8000 |
+Heap Branchless Pair                     | true    |      ? |       548,548,549 |             0.4000 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 858
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |       926,927,928 |             0.8944 |
+Heap Branchless Parallel                 | true    |      ? |       443,444,452 |             3.6551 |
+Heap Branchless Pair                     | true    |      ? |       568,568,569 |             0.4000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 914
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1007,1009,1010 |             1.2000 |
+Heap Branchless Parallel                 | true    |      ? |       481,481,506 |             9.9076 |
+Heap Branchless Pair                     | true    |      ? |       617,617,619 |             0.8000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 911
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       503,504,522 |             7.2664 |
+Heap Branchless Pair                     | true    |      ? |       638,638,640 |             0.8000 |
+Heap Branchless                          | true    |      ? |    1034,1035,1035 |             0.4899 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 961
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1109,1109,1114 |             2.0591 |
+Heap Branchless Pair                     | true    |      ? |       683,684,712 |            13.5735 |
+Heap Branchless Parallel                 | true    |      ? |       539,543,599 |            25.0312 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 963
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       561,562,562 |             0.4899 |
+Heap Branchless                          | true    |      ? |    1132,1132,1137 |             1.9596 |
+Heap Branchless Pair                     | true    |      ? |       701,701,702 |             0.4899 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1021
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1211,1214,1273 |            23.9366 |
+Heap Branchless Parallel                 | true    |      ? |       596,597,597 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       744,745,746 |             0.7483 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1016
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1228,1229,1230 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |       615,616,616 |             0.4000 |
+Heap Branchless Pair                     | true    |      ? |       761,762,767 |             2.2804 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1072
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       633,635,776 |            55.3484 |
+Heap Branchless                          | true    |      ? |    1290,1291,1292 |             0.6325 |
+Heap Branchless Pair                     | true    |      ? |       786,787,787 |             0.4000 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1063
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       647,648,649 |             0.6325 |
+Heap Branchless Pair                     | true    |      ? |       799,799,800 |             0.4899 |
+Heap Branchless                          | true    |      ? |    1300,1300,1301 |             0.4000 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1141
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1356,1357,1363 |             2.4819 |
+Heap Branchless Parallel                 | true    |      ? |       651,651,652 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       821,822,822 |             0.4000 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1119
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       663,664,665 |             0.6325 |
+Heap Branchless Pair                     | true    |      ? |       833,834,839 |             2.2450 |
+Heap Branchless                          | true    |      ? |    1365,1366,1366 |             0.4000 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1188
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1413,1414,1414 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       852,852,857 |             2.2271 |
+Heap Branchless Parallel                 | true    |      ? |       667,668,724 |            22.5122 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       681,681,755 |            29.5025 |
+Heap Branchless Pair                     | true    |      ? |       863,864,869 |             2.2450 |
+Heap Branchless                          | true    |      ? |    1420,1420,1428 |             3.1241 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1233
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1471,1472,1472 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |       879,880,898 |             7.4135 |
+Heap Branchless Parallel                 | true    |      ? |       679,680,680 |             0.4899 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1215
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1482,1482,1484 |             0.8000 |
+Heap Branchless Pair                     | true    |      ? |       890,891,895 |             1.7205 |
+Heap Branchless Parallel                 | true    |      ? |       691,691,712 |             8.3522 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1285
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       907,907,908 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       693,693,694 |             0.4899 |
+Heap Branchless                          | true    |      ? |    1527,1527,1533 |             2.4000 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1268
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       707,707,722 |             6.1774 |
+Heap Branchless Pair                     | true    |      ? |       918,918,919 |             0.4899 |
+Heap Branchless                          | true    |      ? |    1533,1534,1534 |             0.4000 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1327
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1579,1580,1590 |             4.1183 |
+Heap Branchless Parallel                 | true    |      ? |       707,707,711 |             1.6000 |
+Heap Branchless Pair                     | true    |      ? |       933,934,971 |            15.0067 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1314
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       944,945,950 |             2.0976 |
+Heap Branchless Parallel                 | true    |      ? |       720,721,902 |            72.5010 |
+Heap Branchless                          | true    |      ? |    1588,1589,1590 |             0.7483 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1377
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1631,1633,1636 |             1.7205 |
+Heap Branchless Pair                     | true    |      ? |       962,962,963 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |       724,724,734 |             3.9192 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1369
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |       975,975,977 |             0.8000 |
+Heap Branchless                          | true    |      ? |    1638,1640,1721 |            32.1559 |
+Heap Branchless Parallel                 | true    |      ? |       738,744,765 |            11.9766 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1431
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |      990,991,1003 |             5.0200 |
+Heap Branchless                          | true    |      ? |    1688,1688,1690 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       739,747,832 |            35.5831 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1424
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1700,1701,1701 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |    1002,1002,1006 |             1.5492 |
+Heap Branchless Parallel                 | true    |      ? |       751,752,753 |             0.6325 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1493
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       756,756,766 |             3.8781 |
+Heap Branchless                          | true    |      ? |    1743,1744,1744 |             0.4899 |
+Heap Branchless Pair                     | true    |      ? |    1021,1021,1026 |             2.2271 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1471
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1753,1753,1754 |             0.4000 |
+Heap Branchless Pair                     | true    |      ? |    1034,1034,1039 |             2.2271 |
+Heap Branchless Parallel                 | true    |      ? |       771,772,860 |            34.5913 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1541
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1799,1799,1800 |             0.4000 |
+Heap Branchless Pair                     | true    |      ? |    1050,1051,1056 |             2.8000 |
+Heap Branchless Parallel                 | true    |      ? |       774,776,864 |            35.6112 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1523
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    1805,1806,1808 |             0.9798 |
+Heap Branchless Parallel                 | true    |      ? |       789,789,799 |             3.9192 |
+Heap Branchless Pair                     | true    |      ? |    1062,1063,1063 |             0.4899 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1585
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       796,797,798 |             0.6325 |
+Heap Branchless Pair                     | true    |      ? |    1079,1080,1081 |             0.7483 |
+Heap Branchless                          | true    |      ? |    1848,1848,1849 |             0.4000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1575
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |       811,813,814 |             0.9798 |
+Heap Branchless                          | true    |      ? |    1856,1857,1858 |             0.7483 |
+Heap Branchless Pair                     | true    |      ? |    1094,1094,1099 |             2.0000 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1649
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1142,1142,1144 |             0.8000 |
+Heap Branchless                          | true    |      ? |    1938,1938,1939 |             0.4000 |
+Heap Branchless Parallel                 | true    |      ? |       859,860,861 |             0.7483 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1627
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1167,1168,1172 |             1.8547 |
+Heap Branchless Parallel                 | true    |      ? |       886,887,888 |             0.7483 |
+Heap Branchless                          | true    |      ? |    1971,1971,1978 |             2.7276 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1696
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1211,1212,1212 |             0.4000 |
+Heap Branchless                          | true    |      ? |    2049,2051,2052 |             0.9798 |
+Heap Branchless Parallel                 | true    |      ? |       928,929,942 |             5.5498 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1675
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2077,2077,2079 |             0.8000 |
+Heap Branchless Parallel                 | true    |      ? |       957,959,967 |             3.5553 |
+Heap Branchless Pair                     | true    |      ? |    1234,1235,1237 |             0.9798 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1750
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1007,1015,1059 |            19.4772 |
+Heap Branchless                          | true    |      ? |    2163,2163,2172 |             3.4871 |
+Heap Branchless Pair                     | true    |      ? |    1283,1285,1293 |             3.4871 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1731
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2188,2190,2191 |             1.0198 |
+Heap Branchless Parallel                 | true    |      ? |    1036,1040,1291 |           100.7385 |
+Heap Branchless Pair                     | true    |      ? |    1307,1308,1309 |             0.7483 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1798
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2267,2269,2280 |             5.4626 |
+Heap Branchless Parallel                 | true    |      ? |    1081,1088,1106 |             8.8408 |
+Heap Branchless Pair                     | true    |      ? |    1352,1354,1364 |             4.2708 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1791
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1107,1108,1118 |             4.6303 |
+Heap Branchless Pair                     | true    |      ? |    1376,1377,1455 |            31.4032 |
+Heap Branchless                          | true    |      ? |    2296,2296,2300 |             1.5492 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1861
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2387,2388,2400 |             5.0200 |
+Heap Branchless Pair                     | true    |      ? |    1427,1428,1432 |             1.7889 |
+Heap Branchless Parallel                 | true    |      ? |    1163,1164,1171 |             3.0332 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1832
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2420,2421,2432 |             4.5166 |
+Heap Branchless Parallel                 | true    |      ? |    1191,1193,1195 |             1.3266 |
+Heap Branchless Pair                     | true    |      ? |    1452,1453,1454 |             0.6325 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1904
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1502,1502,1506 |             1.5492 |
+Heap Branchless Parallel                 | true    |      ? |    1234,1241,1257 |             8.0846 |
+Heap Branchless                          | true    |      ? |    2507,2507,2509 |             0.8000 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1885
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1526,1527,1598 |            28.6035 |
+Heap Branchless Parallel                 | true    |      ? |    1259,1261,1525 |           105.8028 |
+Heap Branchless                          | true    |      ? |    2537,2539,2544 |             2.3152 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1961
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    2636,2637,2648 |             4.6217 |
+Heap Branchless Parallel                 | true    |      ? |    1304,1309,1323 |             6.7231 |
+Heap Branchless Pair                     | true    |      ? |    1578,1579,1587 |             3.2619 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1935
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1328,1329,1424 |            37.9125 |
+Heap Branchless Pair                     | true    |      ? |    1602,1604,1605 |             1.0198 |
+Heap Branchless                          | true    |      ? |    2664,2666,2679 |             5.8856 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 2011
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1649,1652,1661 |             4.4091 |
+Heap Branchless Parallel                 | true    |      ? |    1363,1365,1368 |             1.7436 |
+Heap Branchless                          | true    |      ? |    2755,2756,2769 |             5.8652 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1993
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1389,1391,1395 |             2.1541 |
+Heap Branchless Pair                     | true    |      ? |    1673,1674,1676 |             1.1662 |
+Heap Branchless                          | true    |      ? |    2782,2783,2784 |             0.6325 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2059
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1726,1727,1727 |             0.4899 |
+Heap Branchless Parallel                 | true    |      ? |    1430,1433,1437 |             2.4000 |
+Heap Branchless                          | true    |      ? |    2887,2887,2893 |             2.3324 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2044
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1455,1460,1592 |            52.6900 |
+Heap Branchless Pair                     | true    |      ? |    1749,1750,1753 |             1.6248 |
+Heap Branchless                          | true    |      ? |    2911,2911,2925 |             5.5136 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2115
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1790,1790,1791 |             0.4899 |
+Heap Branchless                          | true    |      ? |    2998,2999,3000 |             0.7483 |
+Heap Branchless Parallel                 | true    |      ? |    1487,1498,1854 |           142.6388 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2087
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1509,1512,1513 |             1.6248 |
+Heap Branchless                          | true    |      ? |    3017,3019,3032 |             5.4185 |
+Heap Branchless Pair                     | true    |      ? |    1809,1812,1814 |             1.7205 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2175
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1537,1541,1546 |             3.0332 |
+Heap Branchless                          | true    |      ? |    3105,3107,3120 |             5.3666 |
+Heap Branchless Pair                     | true    |      ? |    1849,1853,1856 |             2.4819 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2149
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1560,1562,1575 |             5.5498 |
+Heap Branchless                          | true    |      ? |    3127,3127,3129 |             0.8000 |
+Heap Branchless Pair                     | true    |      ? |    1868,1870,1873 |             1.8547 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2228
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1900,1903,1905 |             1.8547 |
+Heap Branchless Parallel                 | true    |      ? |    1581,1583,1585 |             1.4967 |
+Heap Branchless                          | true    |      ? |    3194,3198,3207 |             5.2688 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2198
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    3215,3216,3218 |             1.0198 |
+Heap Branchless Parallel                 | true    |      ? |    1599,1599,1602 |             1.1662 |
+Heap Branchless Pair                     | true    |      ? |    1916,1918,1921 |             1.7205 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2327
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1947,1948,1951 |             1.4697 |
+Heap Branchless                          | true    |      ? |    3286,3286,3302 |             6.3119 |
+Heap Branchless Parallel                 | true    |      ? |    1613,1624,1920 |           117.8280 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2242
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1963,1966,1969 |             2.2804 |
+Heap Branchless                          | true    |      ? |    3313,3316,3332 |             6.9455 |
+Heap Branchless Parallel                 | true    |      ? |    1633,1635,1657 |             9.1302 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2336
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    1991,1994,1997 |             2.6833 |
+Heap Branchless Parallel                 | true    |      ? |    1647,1647,1649 |             0.8000 |
+Heap Branchless                          | true    |      ? |    3367,3369,3383 |             5.8856 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2298
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    3392,3394,3401 |             3.1875 |
+Heap Branchless Pair                     | true    |      ? |    2005,2006,2011 |             2.0976 |
+Heap Branchless Parallel                 | true    |      ? |    1664,1665,1826 |            63.6270 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2385
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    3443,3444,3448 |             1.7205 |
+Heap Branchless Parallel                 | true    |      ? |    1674,1677,1680 |             2.0000 |
+Heap Branchless Pair                     | true    |      ? |    2030,2030,2034 |             1.6000 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2347
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    3477,3479,3495 |             6.7409 |
+Heap Branchless Parallel                 | true    |      ? |    1691,1697,1705 |             4.8000 |
+Heap Branchless Pair                     | true    |      ? |    2043,2046,2051 |             2.7568 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2429
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Parallel                 | true    |      ? |    1704,1704,1871 |            66.7011 |
+Heap Branchless                          | true    |      ? |    3518,3518,3527 |             3.5214 |
+Heap Branchless Pair                     | true    |      ? |    2070,2070,2072 |             0.8000 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2416
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    2084,2086,2089 |             2.0396 |
+Heap Branchless                          | true    |      ? |    3551,3552,3568 |             6.5422 |
+Heap Branchless Parallel                 | true    |      ? |    1722,1723,2057 |           133.7021 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2494
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    2101,2109,2112 |             4.4452 |
+Heap Branchless                          | true    |      ? |    3590,3593,3600 |             3.4986 |
+Heap Branchless Parallel                 | true    |      ? |    1728,1733,1807 |            30.1529 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    2119,2123,2126 |             2.2804 |
+Heap Branchless Parallel                 | true    |      ? |    1743,1746,1914 |            66.8269 |
+Heap Branchless                          | true    |      ? |    3639,3641,3662 |             8.5650 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2535
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    2143,2145,2148 |             1.6733 |
+Heap Branchless Parallel                 | true    |      ? |    1755,1756,1771 |             6.4992 |
+Heap Branchless                          | true    |      ? |    3670,3672,3690 |             7.5366 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2526
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless Pair                     | true    |      ? |    2159,2160,2163 |             1.4697 |
+Heap Branchless Parallel                 | true    |      ? |    1772,1774,1782 |             3.5777 |
+Heap Branchless                          | true    |      ? |    3710,3718,3769 |            22.0127 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2594
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap Branchless                          | true    |      ? |    3744,3746,3748 |             1.3266 |
+Heap Branchless Parallel                 | true    |      ? |    1779,1788,1801 |             7.1722 |
+Heap Branchless Pair                     | true    |      ? |    2176,2178,2193 |             6.1123 |
