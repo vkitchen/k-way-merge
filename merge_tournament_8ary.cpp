@@ -81,6 +81,7 @@ static void initialise(int **segments, int n, Node *tree) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void sort_partial(Node &a, Entry min) {
 	a.entries[0] = min;
 	for (int j = 1; j < ARITY; j++) {
@@ -91,6 +92,7 @@ static void sort_partial(Node &a, Entry min) {
 	a.entries[ARITY - 1] = min;
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void replay_games(Node *tree, int child_nodes, int child_start, Entry update) {
 	// Leaf
 	int node = child_start + update.leaf / ARITY;

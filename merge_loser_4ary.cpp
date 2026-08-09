@@ -100,6 +100,7 @@ static void initialise(int **segments, int n, Node *tree) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static Entry replay_games(Node *tree, int child_nodes, int child_start, Entry winner) {
 	// Leaf
 	int node = child_start + winner.leaf / ARITY;
