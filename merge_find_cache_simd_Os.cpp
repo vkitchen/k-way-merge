@@ -10,6 +10,7 @@
 #include <algorithm>
 #include <immintrin.h>
 
+__attribute__((optimize("no-thread-jumps")))
 bool MergeFindCacheSimdOs::merge(struct test *t, int n) {
 	size_t rounded = (size_t)ceil((double)n / 8) * 8;
 

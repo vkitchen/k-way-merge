@@ -2,6 +2,7 @@
 
 #include "merge_find_branchless_cache.h"
 
+__attribute__((optimize("no-thread-jumps")))
 bool MergeFindBranchlessCache::merge(struct test *t, int n) {
 	int **segments = (int **)malloc(sizeof(int *) * n);
 	int *cache = (int *)malloc(sizeof(int) * n);

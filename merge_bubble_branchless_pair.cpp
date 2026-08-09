@@ -14,6 +14,7 @@ static void sort_full(std::pair<int, int *>*a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void sort_partial(std::pair<int, int *>*a, int length) {
 	auto min = a[0];
 	for (int j = 1; j < length; j++) {

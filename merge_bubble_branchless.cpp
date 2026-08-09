@@ -16,6 +16,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 static void sort_partial(int **a, int length) {
 	int *min = a[0];
 	for (int j = 1; j < length; j++) {

@@ -1,0 +1,290 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 10000000
+ARRAY_COUNT 30
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1786237546
+MEMORY 2.23517 GiB
+
+Init: 7874
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 778
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |       113,113,114 |             0.4000 |
+Bubble Branchless Cache (Os)             | true    |      ? |       116,116,116 |             0.0000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       120,120,120 |             0.0000 |
+Bubble Branchless Cache (O3)             | true    |      ? |       112,112,112 |             0.0000 |
+Bubble Branchless Cache (O2)             | true    |      ? |       112,112,113 |             0.4899 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 1146
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |       171,171,172 |             0.4000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       182,183,183 |             0.4899 |
+Bubble Branchless Cache (Os)             | true    |      ? |       187,187,188 |             0.4000 |
+Bubble Branchless Cache (O2)             | true    |      ? |       171,172,172 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |       174,174,195 |             9.2000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 1247
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |       252,252,252 |             0.0000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       278,279,279 |             0.4000 |
+Bubble Branchless Cache (O3)             | true    |      ? |       252,252,252 |             0.0000 |
+Bubble Branchless Cache (Os)             | true    |      ? |       273,273,273 |             0.0000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       256,256,257 |             0.4899 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 1653
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |       419,420,420 |             0.4899 |
+Bubble Branchless Cache (O2)             | true    |      ? |       353,353,354 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |       353,353,354 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       385,386,394 |             3.2863 |
+Bubble Branchless Cache (O1)             | true    |      ? |       359,359,359 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 1769
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Oz)             | true    |      ? |       548,548,548 |             0.0000 |
+Bubble Branchless Cache (Os)             | true    |      ? |       523,523,523 |             0.0000 |
+Bubble Branchless Cache (O3)             | true    |      ? |       477,477,477 |             0.0000 |
+Bubble Branchless Cache (O2)             | true    |      ? |       477,477,477 |             0.0000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       482,482,561 |            31.6000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 2205
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |       653,654,654 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       696,697,707 |             4.2237 |
+Bubble Branchless Cache (O2)             | true    |      ? |       607,608,608 |             0.4000 |
+Bubble Branchless Cache (O3)             | true    |      ? |       607,607,608 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |       622,622,623 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 2290
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |       759,759,759 |             0.0000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |       843,843,844 |             0.4000 |
+Bubble Branchless Cache (Os)             | true    |      ? |       815,815,817 |             0.8000 |
+Bubble Branchless Cache (O1)             | true    |      ? |       773,774,774 |             0.4899 |
+Bubble Branchless Cache (O2)             | true    |      ? |       759,759,760 |             0.4899 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 2727
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |       926,927,927 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |       926,927,927 |             0.4000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    1051,1055,1055 |             1.5492 |
+Bubble Branchless Cache (Os)             | true    |      ? |       995,996,996 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |       949,950,950 |             0.4000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 2795
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |    1116,1116,1117 |             0.4899 |
+Bubble Branchless Cache (O2)             | true    |      ? |    1116,1117,1117 |             0.4899 |
+Bubble Branchless Cache (Os)             | true    |      ? |    1159,1160,1294 |            52.7083 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1131,1131,1132 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    1254,1257,1257 |             1.2000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 3246
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |    1314,1314,1315 |             0.4000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    1481,1482,1482 |             0.4899 |
+Bubble Branchless Cache (Os)             | true    |      ? |    1363,1363,1364 |             0.4000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1339,1340,1340 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |    1314,1314,1315 |             0.4000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 3317
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    1561,1562,1569 |             3.0332 |
+Bubble Branchless Cache (Os)             | true    |      ? |    1581,1582,1583 |             0.6325 |
+Bubble Branchless Cache (O3)             | true    |      ? |    1531,1532,1539 |             2.9257 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    1707,1710,1817 |            43.1203 |
+Bubble Branchless Cache (O2)             | true    |      ? |    1531,1532,1533 |             0.6325 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 3759
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |    1770,1770,1771 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |    1769,1770,1771 |             0.7483 |
+Bubble Branchless Cache (Os)             | true    |      ? |    1833,1834,1852 |             7.3376 |
+Bubble Branchless Cache (O1)             | true    |      ? |    1796,1796,1797 |             0.4000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    1935,1935,1936 |             0.4000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 3850
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |    2027,2028,2055 |            10.9069 |
+Bubble Branchless Cache (O2)             | true    |      ? |    2027,2028,2028 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    2207,2207,2208 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2058,2059,2094 |            14.1053 |
+Bubble Branchless Cache (Os)             | true    |      ? |    2090,2091,2092 |             0.7483 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 4302
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |    2375,2376,2376 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    2503,2504,2504 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |    2292,2293,2353 |            24.0083 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2329,2330,2330 |             0.4899 |
+Bubble Branchless Cache (O2)             | true    |      ? |    2292,2293,2297 |             1.7436 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 4363
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |    2577,2577,2899 |           128.8000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2619,2620,2666 |            18.4109 |
+Bubble Branchless Cache (Os)             | true    |      ? |    2668,2669,2670 |             0.7483 |
+Bubble Branchless Cache (O3)             | true    |      ? |    2576,2577,2577 |             0.4899 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    2795,2796,2796 |             0.4899 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 4892
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |    2880,2881,2883 |             1.3565 |
+Bubble Branchless Cache (Os)             | true    |      ? |    2989,2990,2991 |             0.6325 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    3099,3100,3101 |             0.7483 |
+Bubble Branchless Cache (O1)             | true    |      ? |    2913,2914,2915 |             0.6325 |
+Bubble Branchless Cache (O3)             | true    |      ? |    2880,2881,2931 |            24.5813 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 4882
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |    3316,3317,3318 |             0.7483 |
+Bubble Branchless Cache (O2)             | true    |      ? |    3205,3206,3206 |             0.4000 |
+Bubble Branchless Cache (O3)             | true    |      ? |    3205,3205,3206 |             0.4000 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    3442,3443,3444 |             0.6325 |
+Bubble Branchless Cache (O1)             | true    |      ? |    3247,3250,3250 |             1.1662 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 5399
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Oz)             | true    |      ? |    3798,3799,3887 |            34.7885 |
+Bubble Branchless Cache (Os)             | true    |      ? |    3670,3670,3711 |            16.3046 |
+Bubble Branchless Cache (O2)             | true    |      ? |    3539,3540,3541 |             0.6325 |
+Bubble Branchless Cache (O1)             | true    |      ? |    3591,3593,3647 |            21.6518 |
+Bubble Branchless Cache (O3)             | true    |      ? |    4459,4461,4462 |             0.9798 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 5402
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |    4023,4025,4172 |            58.9149 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    4154,4155,4156 |             0.7483 |
+Bubble Branchless Cache (O3)             | true    |      ? |    3893,3893,3906 |             5.0596 |
+Bubble Branchless Cache (O1)             | true    |      ? |    3952,3952,3952 |             0.0000 |
+Bubble Branchless Cache (O2)             | true    |      ? |    3893,3894,3907 |             5.4185 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 5929
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |    4268,4268,4269 |             0.4899 |
+Bubble Branchless Cache (O1)             | true    |      ? |    4301,4303,4645 |           133.2435 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    4557,4557,4755 |            79.1009 |
+Bubble Branchless Cache (Os)             | true    |      ? |    4423,4423,4424 |             0.4000 |
+Bubble Branchless Cache (O2)             | true    |      ? |    4268,4269,4269 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 5953
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |    4664,4664,4666 |             0.8000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    4724,4726,4739 |             5.7480 |
+Bubble Branchless Cache (O2)             | true    |      ? |    4664,4665,4728 |            25.0679 |
+Bubble Branchless Cache (Os)             | true    |      ? |    4815,4816,4918 |            40.9018 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    4974,4976,5538 |           225.1012 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 6500
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O2)             | true    |      ? |    5071,5072,5072 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |    5071,5072,5081 |             3.6551 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    5384,5385,5427 |            16.9044 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5137,5138,5186 |            19.3142 |
+Bubble Branchless Cache (Os)             | true    |      ? |    5245,5245,5249 |             1.5492 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 6476
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Oz)             | true    |      ? |    5827,5829,6048 |            87.2573 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5564,5565,5565 |             0.4899 |
+Bubble Branchless Cache (O3)             | true    |      ? |    5497,5498,5499 |             0.7483 |
+Bubble Branchless Cache (Os)             | true    |      ? |    5673,5674,5675 |             0.7483 |
+Bubble Branchless Cache (O2)             | true    |      ? |    5497,5498,5498 |             0.4000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 7159
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |    6151,6152,6153 |             0.7483 |
+Bubble Branchless Cache (O2)             | true    |      ? |    5944,5944,5945 |             0.4000 |
+Bubble Branchless Cache (O3)             | true    |      ? |    5940,5945,5950 |             3.1875 |
+Bubble Branchless Cache (O1)             | true    |      ? |    5981,5982,5983 |             0.6325 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    6301,6302,6303 |             0.7483 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 7015
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    6474,6475,6475 |             0.4000 |
+Bubble Branchless Cache (O3)             | true    |      ? |    6403,6404,6406 |             1.0198 |
+Bubble Branchless Cache (O2)             | true    |      ? |    6403,6405,6449 |            17.9154 |
+Bubble Branchless Cache (Os)             | true    |      ? |    6614,6616,6621 |             2.9665 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    6800,6801,6803 |             1.0954 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 7542
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O1)             | true    |      ? |    6958,6959,7577 |           247.3011 |
+Bubble Branchless Cache (O3)             | true    |      ? |    6880,6882,6891 |             3.8781 |
+Bubble Branchless Cache (Os)             | true    |      ? |    7123,7123,7124 |             0.4000 |
+Bubble Branchless Cache (O2)             | true    |      ? |    6881,6882,6884 |             0.9798 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    7280,7282,7471 |            75.1835 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 7545
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (Os)             | true    |      ? |    7620,7621,7622 |             0.7483 |
+Bubble Branchless Cache (O3)             | true    |      ? |    7373,7373,7375 |             0.8000 |
+Bubble Branchless Cache (O1)             | true    |      ? |    7460,7462,7463 |             1.3565 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    7793,7794,7795 |             0.7483 |
+Bubble Branchless Cache (O2)             | true    |      ? |    7373,7374,7375 |             0.7483 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 8164
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache (O3)             | true    |      ? |    7888,7890,7962 |            28.9164 |
+Bubble Branchless Cache (O1)             | true    |      ? |    7927,7930,7931 |             1.4967 |
+Bubble Branchless Cache (Oz)             | true    |      ? |    8338,8339,8340 |             0.6325 |
+Bubble Branchless Cache (O2)             | true    |      ? |    7890,7890,7934 |            17.5043 |
+Bubble Branchless Cache (Os)             | true    |      ? |    8170,8172,8173 |             1.0954 |
