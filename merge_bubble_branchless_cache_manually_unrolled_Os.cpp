@@ -16,6 +16,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 [[gnu::noinline]] static void merge_3(struct test *t, int **segments) {
 	int *out = t->results;
 	int *segments0 = segments[0];
@@ -54,6 +55,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 [[gnu::noinline]] static void merge_4(struct test *t, int **segments) {
 	int *out = t->results;
 	int *segments0 = segments[0];
@@ -101,6 +103,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 [[gnu::noinline]] static void merge_5(struct test *t, int **segments) {
 	int *out = t->results;
 	int *segments0 = segments[0];
@@ -157,6 +160,7 @@ static void sort_full(int **a, int length) {
 	}
 }
 
+__attribute__((optimize("no-thread-jumps")))
 [[gnu::noinline]] static void merge_6(struct test *t, int **segments) {
 	int *out = t->results;
 	int *segments0 = segments[0];
