@@ -1,0 +1,990 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1786321249
+MEMORY 0.745058 GiB
+
+Init: 2447
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 72
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |          42,42,42 |             0.0000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          30,30,32 |             0.8000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |          41,41,42 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          28,28,29 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          30,31,31 |             0.4899 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 111
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          40,41,42 |             0.8944 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |          57,57,57 |             0.0000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          37,39,41 |             1.4967 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          41,42,42 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |          55,55,56 |             0.4899 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          51,51,53 |             0.9798 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |          70,70,73 |             1.1662 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |          72,72,73 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          51,52,52 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          46,46,46 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 154
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |          84,85,85 |             0.4899 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          61,61,62 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          55,55,55 |             0.0000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          60,60,60 |             0.0000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |          87,87,88 |             0.4000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 165
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          64,64,64 |             0.0000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          72,72,72 |             0.0000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |         99,99,100 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          71,71,71 |             0.0000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       102,102,103 |             0.4000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 201
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       117,117,117 |             0.0000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          73,73,74 |             0.4899 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          82,82,82 |             0.0000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          81,81,81 |             0.0000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       114,114,115 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |          91,91,92 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       132,132,132 |             0.0000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |          83,83,83 |             0.0000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       129,129,129 |             0.0000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |          92,93,95 |             1.0954 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 253
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       115,118,118 |             1.2000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       122,122,123 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       122,122,123 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       179,179,180 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       173,173,174 |             0.4000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 262
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       136,136,137 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       211,212,212 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       141,144,144 |             1.1662 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       141,144,144 |             1.4697 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       203,204,205 |             0.8944 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 300
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       159,164,164 |             2.0000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       155,156,156 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       244,245,245 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       234,235,236 |             0.6325 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       159,159,164 |             2.4495 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 310
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       276,277,277 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       177,183,184 |             2.5298 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       265,265,266 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       177,183,183 |             2.9394 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       174,174,175 |             0.4899 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 351
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       194,194,201 |             3.4293 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       308,310,312 |             1.3266 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       192,193,196 |             1.4967 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       194,195,204 |             4.3081 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       295,296,297 |             0.7483 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 359
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       338,339,345 |             2.4819 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       209,217,217 |             3.9192 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       209,209,211 |             0.8000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       209,216,225 |             5.9464 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       324,325,329 |             1.7436 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 399
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       367,370,372 |             1.8547 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       351,352,353 |             0.6325 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       225,225,228 |             1.2000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       223,230,231 |             3.7736 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       223,232,233 |             4.3543 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 409
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       394,400,400 |             2.7129 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       238,245,247 |             3.9699 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       241,244,247 |             2.2450 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       236,237,245 |             4.0988 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       378,380,381 |             1.0198 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 452
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       254,260,267 |             4.2143 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       252,254,258 |             2.0396 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       262,263,275 |             4.9153 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       425,426,431 |             2.2450 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       406,409,410 |             1.6733 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       433,433,435 |             0.8000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       277,278,278 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       266,267,271 |             1.9391 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       452,453,468 |             6.0795 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       267,268,272 |             1.9391 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 501
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       479,481,482 |             1.0198 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       457,457,464 |             2.7276 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       281,283,283 |             0.9798 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       291,293,294 |             1.2000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       283,283,285 |             0.8000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 506
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       294,294,297 |             1.1662 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       296,297,311 |             6.0332 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       482,482,483 |             0.4899 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       304,305,309 |             2.3152 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       504,506,507 |             1.0198 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 552
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       308,308,309 |             0.4899 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       506,507,508 |             0.7483 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       318,318,319 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       532,532,549 |             6.8000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       309,309,310 |             0.4000 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 556
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       554,557,558 |             1.3565 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       332,332,333 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       321,321,321 |             0.0000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       321,322,323 |             0.7483 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       531,531,532 |             0.4899 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 602
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       556,556,557 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       581,582,583 |             0.7483 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       333,334,334 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       334,335,336 |             0.6325 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       346,346,347 |             0.4899 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 608
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       579,580,595 |             6.1123 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       348,348,349 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       360,360,361 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       607,607,608 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       346,347,347 |             0.4899 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 655
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       366,366,369 |             1.4697 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       638,643,661 |             9.9599 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       379,379,388 |             4.4091 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       608,609,613 |             1.9391 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       368,368,380 |             4.7159 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 656
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       663,664,664 |             0.4899 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       395,395,403 |             3.9192 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       635,636,636 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       380,383,386 |             1.9391 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       379,381,382 |             1.2000 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 706
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       689,690,691 |             0.7483 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       661,661,668 |             2.7276 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       394,395,396 |             0.8944 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       411,418,422 |             3.5440 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       394,395,398 |             1.4697 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 705
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       426,426,432 |             2.9394 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       408,408,411 |             1.2000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       714,715,716 |             0.7483 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       409,410,410 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       686,687,688 |             0.7483 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 755
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       740,744,759 |             7.9246 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       442,447,448 |             2.2450 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       712,713,725 |             5.4037 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       423,424,428 |             1.8547 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       423,423,470 |            18.8000 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 756
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       457,462,469 |             4.4091 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       437,438,452 |             5.7131 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       436,437,438 |             0.7483 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       765,770,783 |             6.2738 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       735,739,739 |             1.7436 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 810
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       760,761,765 |             1.7205 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       451,452,452 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       450,453,490 |            15.3441 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       472,476,478 |             2.3152 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       791,797,807 |             5.1536 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 806
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       816,817,832 |             6.1188 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       463,466,485 |             8.3090 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       784,786,792 |             2.7129 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       465,467,496 |            12.0333 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       488,491,498 |             3.6661 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 859
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       505,505,506 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       851,852,852 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       484,484,516 |            12.4964 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       820,827,833 |             4.3543 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       482,483,492 |             3.7202 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 854
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       497,498,510 |             5.0200 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       844,844,846 |             0.8000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       496,496,514 |             7.1106 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       877,878,893 |             6.1123 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       519,519,520 |             0.4000 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 910
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       902,903,904 |             0.7483 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       511,511,512 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       510,510,510 |             0.0000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       869,870,876 |             2.5298 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       534,534,535 |             0.4000 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 909
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       524,524,538 |             5.5136 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       928,929,932 |             1.4697 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       549,549,553 |             1.5492 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       893,894,894 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       525,526,539 |             6.4684 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 965
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       537,537,541 |             1.5492 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       945,954,956 |             3.8262 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       919,920,920 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       538,539,551 |             4.8415 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       563,564,566 |             0.9798 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 958
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       578,579,579 |             0.4899 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       942,944,952 |             3.5440 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       552,553,553 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |       979,980,999 |             7.8128 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       551,552,561 |             3.7202 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1018
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |       969,969,998 |            11.5065 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       566,567,567 |             0.4899 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       593,593,594 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1004,1006,1027 |             8.4711 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       565,565,565 |             0.0000 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1006
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       578,579,579 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       580,581,597 |             6.6151 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1031,1031,1032 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |      994,995,1003 |             3.3226 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       608,608,612 |             1.5492 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1060
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1025,1029,1031 |             2.7129 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       599,600,608 |             3.8678 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       597,605,606 |             4.0299 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1063,1067,1068 |             1.9391 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       628,629,645 |             6.6151 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1057
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       615,622,622 |             3.4293 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       644,660,660 |             7.6000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1051,1051,1056 |             2.4495 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       613,614,621 |             3.6111 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1090,1093,1132 |            15.9925 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1116
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1118,1121,1122 |             1.6733 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       629,635,649 |             6.7052 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       661,670,719 |            21.4346 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       631,637,651 |             9.0863 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1078,1079,1081 |             1.3565 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1111
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1105,1106,1117 |             4.6217 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       678,691,692 |             6.5422 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       644,649,663 |             6.8819 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       647,657,666 |             6.4312 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1146,1146,1169 |             9.0022 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1168
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       662,666,682 |             7.3865 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1132,1132,1192 |            24.0000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1167,1173,1185 |             5.8788 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       660,664,670 |             3.2000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       694,695,707 |             4.9558 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1157
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1157,1158,1160 |             1.0954 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       675,677,679 |             1.6000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       678,681,692 |             5.1769 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1197,1200,1201 |             1.3565 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       711,723,750 |            14.2464 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1221
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       692,694,706 |             6.1644 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1184,1185,1196 |             4.6217 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       693,696,696 |             1.2649 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1226,1229,1236 |             3.4986 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       728,739,758 |             9.6871 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1211
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       708,709,728 |             7.7097 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       745,755,775 |            10.9618 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       709,711,770 |            23.2465 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1252,1253,1264 |             4.5869 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1211,1215,1226 |             5.1147 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1280
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       725,726,726 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       728,728,748 |             8.0000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1284,1286,1293 |             3.1875 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1243,1244,1250 |             2.4819 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       752,763,764 |             4.6217 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1310,1312,1313 |             1.0198 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1268,1269,1278 |             3.6551 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       779,779,810 |            12.3061 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       743,743,743 |             0.0000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       741,742,751 |             4.7497 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1320
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       795,796,797 |             0.7483 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       758,759,778 |             8.0895 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       756,757,758 |             0.7483 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1336,1338,1384 |            18.7147 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1294,1296,1329 |            13.4373 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1308
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       811,811,836 |            10.0000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       772,773,782 |             3.6551 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1320,1321,1322 |             0.7483 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       770,772,772 |             0.8000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1359,1365,1373 |             4.4900 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1369
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1391,1391,1393 |             0.8000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       827,828,834 |             3.0594 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       788,788,804 |             6.3119 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1347,1348,1350 |             1.0198 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       786,787,800 |             5.4185 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1361
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       843,843,844 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1372,1375,1401 |            10.9618 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       802,802,802 |             0.0000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1418,1418,1419 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       803,804,817 |             5.3141 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1420
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       819,819,820 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1446,1446,1496 |            19.3659 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1399,1400,1400 |             0.4899 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       816,817,830 |             5.2383 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       859,860,888 |            11.3066 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       834,834,847 |             5.1147 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       832,833,845 |             4.8415 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       875,875,876 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1472,1473,1482 |             3.7736 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1424,1425,1425 |             0.4000 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1480
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1454,1457,1485 |            14.0086 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       854,855,856 |             0.6325 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       852,853,853 |             0.4000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1503,1505,1525 |             8.1584 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       896,897,926 |            11.7064 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1465
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       914,915,918 |             1.4697 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1534,1535,1558 |             9.0995 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       869,870,879 |             3.9799 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1483,1485,1487 |             1.4142 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       871,872,885 |             6.0860 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1536
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       931,932,933 |             0.6325 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       885,886,890 |             1.7205 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       888,888,889 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1561,1563,1633 |            28.0171 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1513,1514,1522 |             3.3823 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1513
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1589,1591,1634 |            17.5385 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1539,1542,1548 |             3.0594 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       905,906,922 |             6.5422 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       903,904,915 |             5.4918 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       949,950,950 |             0.4899 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1579
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1616,1617,1619 |             1.0198 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       919,919,931 |             4.7159 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       921,922,923 |             0.6325 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1569,1572,1580 |             3.8781 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       967,967,968 |             0.4000 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1573
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1597,1598,1624 |            10.6094 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1644,1646,1648 |             1.4142 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |       985,985,986 |             0.4899 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       935,936,936 |             0.4000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       938,939,951 |             4.8415 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1638
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1675,1676,1686 |             4.1183 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1625,1627,1653 |            10.7257 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       953,954,966 |             5.5642 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1002,1002,1003 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       955,955,957 |             0.8000 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1619
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       970,971,984 |             5.1769 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       972,973,990 |             6.8293 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1704,1705,1712 |             3.0332 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1021,1021,1073 |            20.2820 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1654,1657,1669 |             5.4553 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1690
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1038,1038,1040 |             0.8000 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |       987,988,989 |             0.7483 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1682,1683,1683 |             0.4000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |       987,988,999 |             4.4452 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1732,1732,1757 |             9.7980 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1670
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1709,1710,1717 |             2.9933 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1003,1004,1021 |             7.0143 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1054,1055,1086 |            12.2213 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1003,1003,1009 |             2.3324 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1757,1761,1763 |             2.0591 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1735
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1735,1737,1765 |            11.3772 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1018,1021,1030 |             4.2426 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1785,1786,1787 |             0.6325 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1018,1019,1034 |             6.1123 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1071,1071,1072 |             0.4000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1730
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1762,1764,1789 |            10.4384 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1034,1047,1049 |             6.6513 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1812,1813,1830 |             6.8586 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1084,1087,1091 |             2.2450 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1034,1035,1046 |             4.6217 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1801
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1103,1104,1105 |             0.6325 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1839,1842,1859 |             9.1345 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1049,1049,1054 |             1.9391 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1786,1789,1790 |             1.6733 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1049,1055,1069 |             7.4404 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1775
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1814,1816,1824 |             4.2237 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1101,1119,1120 |             7.2277 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1866,1867,1868 |             0.8944 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1063,1065,1076 |             4.8580 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1064,1064,1076 |             4.8000 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1840
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1078,1078,1098 |             9.5582 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1838,1842,1848 |             3.4293 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1892,1893,1894 |             0.7483 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1134,1134,1150 |             6.5115 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1077,1078,1096 |             8.9129 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1819
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1149,1149,1149 |             0.0000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1865,1866,1868 |             1.0198 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1092,1093,1105 |             4.9558 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1091,1092,1105 |             5.3141 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1918,1920,1921 |             1.1662 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1896
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1135,1136,1149 |             6.0860 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1923,1925,1958 |            15.1605 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1133,1134,1145 |             4.5607 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1187,1188,1188 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    1973,1980,1993 |             7.4993 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1873
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1162,1163,1173 |             4.2237 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2023,2023,2034 |             4.3174 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1162,1163,1173 |             4.0299 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    1964,1965,1970 |             2.1354 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1213,1213,1214 |             0.4899 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1947
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2058,2065,2066 |             2.8705 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1189,1191,1209 |             7.2664 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1238,1239,1268 |            14.5382 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1187,1188,1189 |             0.7483 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2004,2005,2015 |             4.1183 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1931
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2108,2111,2126 |             6.8877 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1214,1215,1232 |             7.6053 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1264,1272,1294 |            13.4700 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2045,2046,2048 |             1.0954 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1219,1227,1231 |             5.0596 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 1991
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2085,2088,2093 |             2.6533 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1240,1241,1252 |             4.5166 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1291,1291,1297 |             2.3324 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1246,1246,1250 |             1.5492 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2149,2150,2160 |             4.0497 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1975
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2193,2194,2212 |             7.2829 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2126,2127,2129 |             1.0198 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1273,1274,1287 |             5.2383 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1267,1267,1268 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1314,1316,1320 |             2.1541 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2052
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1294,1294,1305 |             5.3889 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2235,2236,2255 |             8.2316 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1340,1341,1371 |            12.2082 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1303,1304,1316 |             5.1147 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2166,2168,2195 |            11.0454 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2029
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2206,2206,2210 |             1.6000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1366,1367,1368 |             0.7483 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1331,1331,1349 |             7.7563 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1319,1320,1325 |             2.0976 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2277,2291,2343 |            23.6812 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2103
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1359,1360,1378 |             7.9145 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2338,2339,2339 |             0.4000 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1402,1404,1404 |             0.8000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2262,2264,2267 |             2.0591 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1374,1376,1380 |             2.0396 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2080
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2305,2313,2330 |            10.5262 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1402,1403,1410 |             3.0332 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1385,1385,1387 |             0.8000 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2382,2383,2394 |             4.4452 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1431,1431,1433 |             0.8000 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2173
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1411,1413,1418 |             2.4166 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1431,1431,1432 |             0.4899 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1456,1456,1463 |             2.8566 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2343,2352,2387 |            16.0674 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2425,2429,2437 |             4.1183 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2130
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2468,2471,2481 |             4.7159 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2382,2385,2422 |            14.8782 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1458,1459,1461 |             1.0198 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1480,1481,1482 |             0.8944 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1438,1440,1451 |             5.8515 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2423,2426,2449 |             9.4953 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1504,1505,1507 |             0.9798 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2511,2514,2522 |             4.6733 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1470,1476,1484 |             6.0663 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1486,1488,1488 |             0.9798 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2185
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1491,1491,1503 |             4.7159 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2556,2560,2567 |             4.9558 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2467,2473,2497 |            10.9069 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1529,1530,1538 |             3.2496 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1515,1516,1523 |             2.9933 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2271
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1543,1544,1555 |             4.4452 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2505,2506,2518 |             5.0200 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2597,2599,2605 |             3.2619 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1556,1557,1557 |             0.4899 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1519,1519,1522 |             1.1662 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2237
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1546,1548,1559 |             4.8332 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2547,2549,2556 |             3.0594 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1573,1573,1574 |             0.4899 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2642,2643,2686 |            17.1278 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1580,1582,1582 |             0.9798 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2308
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1621,1622,1711 |            35.2965 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1589,1590,1618 |            11.4088 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2598,2609,2644 |            16.0125 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1618,1619,1624 |             2.2450 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2703,2705,2718 |             5.6000 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2287
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1646,1649,1657 |             3.7417 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2641,2644,2715 |            28.0528 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2749,2752,2805 |            21.2094 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1648,1650,1676 |            10.8370 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1616,1618,1631 |             5.4626 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2376
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1674,1674,1731 |            22.7033 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1645,1646,1657 |             4.5607 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1675,1679,1694 |             6.9685 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2787,2795,2884 |            36.2381 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2678,2680,2688 |             4.0200 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2335
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1699,1701,1704 |             1.7205 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1673,1673,1693 |             7.9095 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2833,2834,2853 |             9.6416 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2719,2721,2770 |            19.4381 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1704,1705,1707 |             1.3565 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2419
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2874,2877,2888 |             4.8990 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1727,1728,1740 |             4.8000 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1732,1735,1747 |             5.9532 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1700,1701,1701 |             0.4000 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2759,2761,2803 |            16.8523 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2395
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1764,1764,1804 |            15.4919 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2802,2808,2809 |             2.5768 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1729,1730,1731 |             0.7483 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2915,2920,3003 |            33.5976 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1752,1754,1831 |            30.8260 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2467
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2841,2842,2851 |             3.7202 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1789,1793,1796 |             2.3324 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    2959,2961,2970 |             3.8262 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1780,1782,1811 |            11.8423 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1758,1769,1775 |             6.7350 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2452
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2880,2888,2905 |             8.7316 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1785,1787,1812 |            11.8423 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    3006,3009,3021 |             5.3141 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1806,1808,1813 |             2.4819 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1818,1819,1821 |             1.0954 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2523
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    3062,3065,3088 |             9.5708 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1863,1866,1883 |             7.5631 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2934,2934,2940 |             2.3324 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1846,1847,1858 |             4.4091 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1828,1830,1831 |             1.0198 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2505
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1827,1870,1873 |            17.6567 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    2974,2975,2983 |             3.2619 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1857,1857,1876 |             7.3648 |
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    3110,3120,3197 |            32.4777 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1892,1892,1908 |             6.2482 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2592
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 8ary Parallel SIMD (Oz)             | true    |      ? |    3150,3156,3195 |            16.3878 |
+Heap 8ary Parallel SIMD (O2)             | true    |      ? |    1886,1893,1894 |             3.5440 |
+Heap 8ary Parallel SIMD (Os)             | true    |      ? |    3016,3017,3098 |            32.4185 |
+Heap 8ary Parallel SIMD (O3)             | true    |      ? |    1920,1921,1922 |             0.7483 |
+Heap 8ary Parallel SIMD (O1)             | true    |      ? |    1895,1901,1983 |            33.7188 |

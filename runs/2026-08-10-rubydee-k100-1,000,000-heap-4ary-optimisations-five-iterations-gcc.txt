@@ -1,0 +1,990 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 1000000
+ARRAY_COUNT 100
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1786319096
+MEMORY 0.745058 GiB
+
+Init: 2449
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 73
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          13,13,22 |             3.6000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          13,13,14 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          13,13,23 |             4.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          13,13,13 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          13,13,13 |             0.0000 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 106
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          18,18,18 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          18,18,18 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          17,17,20 |             1.1662 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          17,17,17 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          18,18,18 |             0.0000 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          23,23,23 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          23,23,23 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          23,23,23 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          23,23,23 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          23,23,23 |             0.0000 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 152
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          50,50,51 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          51,51,52 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          49,49,49 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          50,51,57 |             2.5298 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          50,50,50 |             0.0000 |
+
+## MERGING 7 LISTS ##
+Baseline (copy+sort) 166
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          65,65,66 |             0.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          63,63,63 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          62,62,66 |             1.6000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          64,64,64 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          64,64,65 |             0.4000 |
+
+## MERGING 8 LISTS ##
+Baseline (copy+sort) 202
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          74,74,74 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          72,72,72 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          75,75,75 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          75,75,75 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          71,72,72 |             0.4000 |
+
+## MERGING 9 LISTS ##
+Baseline (copy+sort) 214
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          79,80,90 |             4.1183 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          82,82,83 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          79,79,79 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          81,82,82 |             0.4899 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          82,83,95 |             5.3889 |
+
+## MERGING 10 LISTS ##
+Baseline (copy+sort) 255
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          84,84,94 |             4.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          83,83,84 |             0.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          81,82,82 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          81,81,85 |             1.6000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          84,84,94 |             4.0000 |
+
+## MERGING 11 LISTS ##
+Baseline (copy+sort) 263
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |          90,91,91 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          91,91,91 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          91,91,91 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          88,88,96 |             3.1241 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |          89,89,89 |             0.0000 |
+
+## MERGING 12 LISTS ##
+Baseline (copy+sort) 301
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |          95,95,95 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |          98,98,99 |             0.4899 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |          98,98,98 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |         96,96,104 |             3.2000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |         97,97,103 |             2.4000 |
+
+## MERGING 13 LISTS ##
+Baseline (copy+sort) 311
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       105,105,105 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       104,104,104 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       104,105,105 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       106,106,106 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       102,102,102 |             0.0000 |
+
+## MERGING 14 LISTS ##
+Baseline (copy+sort) 359
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       105,105,106 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       103,104,124 |             9.4446 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       107,107,107 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       104,104,104 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       105,105,105 |             0.0000 |
+
+## MERGING 15 LISTS ##
+Baseline (copy+sort) 359
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       114,114,123 |             3.4871 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       112,112,112 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       112,112,112 |             0.0000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       110,110,111 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       110,110,115 |             2.0000 |
+
+## MERGING 16 LISTS ##
+Baseline (copy+sort) 399
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       117,117,127 |             4.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       121,121,130 |             3.9699 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       119,119,119 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       118,119,119 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       117,117,117 |             0.0000 |
+
+## MERGING 17 LISTS ##
+Baseline (copy+sort) 408
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       123,123,127 |             1.5492 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       126,126,126 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       128,128,130 |             0.8000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       125,125,141 |             6.3119 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       124,124,124 |             0.0000 |
+
+## MERGING 18 LISTS ##
+Baseline (copy+sort) 458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       125,125,125 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       125,125,154 |            11.6000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       129,130,130 |             0.4899 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       122,122,126 |             1.6000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       126,126,127 |             0.4899 |
+
+## MERGING 19 LISTS ##
+Baseline (copy+sort) 458
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       128,128,128 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       131,131,132 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       136,136,136 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       131,131,136 |             2.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       132,132,133 |             0.4000 |
+
+## MERGING 20 LISTS ##
+Baseline (copy+sort) 503
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       143,143,149 |             2.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       134,134,135 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       139,139,153 |             5.6000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       138,138,138 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       138,138,144 |             2.4000 |
+
+## MERGING 21 LISTS ##
+Baseline (copy+sort) 508
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       144,145,153 |             4.2615 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       141,146,152 |             4.2237 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       145,145,145 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       144,144,150 |             2.7129 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       149,150,150 |             0.4899 |
+
+## MERGING 22 LISTS ##
+Baseline (copy+sort) 550
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       176,177,180 |             1.4697 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       174,174,174 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       179,179,180 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       183,183,184 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       180,181,204 |             9.0642 |
+
+## MERGING 23 LISTS ##
+Baseline (copy+sort) 559
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       194,194,195 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       198,198,199 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       195,195,223 |            11.1068 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       204,204,204 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       201,201,202 |             0.4000 |
+
+## MERGING 24 LISTS ##
+Baseline (copy+sort) 602
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       221,221,222 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       214,214,220 |             2.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       224,224,224 |             0.0000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       213,214,214 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       216,216,223 |             2.8000 |
+
+## MERGING 25 LISTS ##
+Baseline (copy+sort) 607
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       234,234,250 |             6.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       234,235,242 |             3.0332 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       231,231,231 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       244,245,245 |             0.4899 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       240,240,240 |             0.0000 |
+
+## MERGING 26 LISTS ##
+Baseline (copy+sort) 652
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       263,264,268 |             1.7436 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       260,260,260 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       270,270,271 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       266,266,292 |            10.0876 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       278,278,279 |             0.4000 |
+
+## MERGING 27 LISTS ##
+Baseline (copy+sort) 657
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       278,278,287 |             3.5214 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       289,289,323 |            13.6000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       285,285,288 |             1.1662 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       297,298,300 |             1.0954 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       281,282,294 |             5.0200 |
+
+## MERGING 28 LISTS ##
+Baseline (copy+sort) 719
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       308,308,309 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       316,317,319 |             1.1662 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       297,299,305 |             2.8000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       301,301,302 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       303,305,306 |             1.3565 |
+
+## MERGING 29 LISTS ##
+Baseline (copy+sort) 703
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       319,320,324 |             1.7436 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       315,316,322 |             2.4819 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       328,329,330 |             0.7483 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       323,324,355 |            12.5634 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       336,336,368 |            12.8000 |
+
+## MERGING 30 LISTS ##
+Baseline (copy+sort) 754
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       353,356,370 |             6.2097 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       367,368,370 |             1.1662 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       347,349,353 |             2.0591 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       359,361,368 |             3.1623 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       352,353,354 |             0.8944 |
+
+## MERGING 31 LISTS ##
+Baseline (copy+sort) 756
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       366,374,445 |            30.2126 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       369,371,375 |             2.1909 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       373,374,378 |             1.7205 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       384,385,396 |             4.5166 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       378,378,381 |             1.1662 |
+
+## MERGING 32 LISTS ##
+Baseline (copy+sort) 808
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       394,395,395 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       382,383,384 |             0.7483 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       387,387,398 |             4.3543 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       389,390,391 |             0.6325 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       402,403,403 |             0.4000 |
+
+## MERGING 33 LISTS ##
+Baseline (copy+sort) 804
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       402,403,465 |            24.7435 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       398,398,399 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       409,410,410 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       405,407,413 |             2.8284 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       417,417,528 |            44.0273 |
+
+## MERGING 34 LISTS ##
+Baseline (copy+sort) 854
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       413,414,414 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       417,417,418 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       431,432,446 |             5.7061 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       420,421,461 |            16.1171 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       424,427,454 |            11.4123 |
+
+## MERGING 35 LISTS ##
+Baseline (copy+sort) 855
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       431,431,451 |             7.9095 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       443,444,444 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       425,426,426 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       429,429,501 |            28.8000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       435,436,436 |             0.4899 |
+
+## MERGING 36 LISTS ##
+Baseline (copy+sort) 909
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       440,444,445 |             2.1541 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       443,444,448 |             1.8547 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       455,455,463 |             3.1241 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       446,446,482 |            14.3052 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       437,438,453 |             6.1123 |
+
+## MERGING 37 LISTS ##
+Baseline (copy+sort) 907
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       457,460,505 |            18.3150 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       454,457,554 |            38.7577 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       449,449,449 |             0.0000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       451,452,457 |             2.1354 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       467,467,489 |             8.8000 |
+
+## MERGING 38 LISTS ##
+Baseline (copy+sort) 965
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       452,452,457 |             1.9391 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       471,471,517 |            18.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       459,460,513 |            23.3118 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       454,455,461 |             2.6077 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       460,461,513 |            20.6204 |
+
+## MERGING 39 LISTS ##
+Baseline (copy+sort) 958
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       481,481,578 |            38.8000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       463,464,517 |            21.3035 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       462,463,490 |            10.7443 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       469,469,472 |             1.1662 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       469,470,522 |            21.8412 |
+
+## MERGING 40 LISTS ##
+Baseline (copy+sort) 1009
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       480,483,504 |             8.8318 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       473,474,490 |             6.4931 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       491,492,494 |             0.9798 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       479,480,480 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       472,472,473 |             0.4899 |
+
+## MERGING 41 LISTS ##
+Baseline (copy+sort) 1010
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       484,484,485 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       501,502,517 |             6.2161 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       490,491,733 |            97.0010 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       482,483,487 |             1.8547 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       489,491,496 |             2.4166 |
+
+## MERGING 42 LISTS ##
+Baseline (copy+sort) 1061
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       486,487,515 |            11.2178 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       487,487,500 |             5.1147 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       504,505,505 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       494,494,497 |             1.1662 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       493,494,494 |             0.4899 |
+
+## MERGING 43 LISTS ##
+Baseline (copy+sort) 1060
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       496,497,514 |             6.9109 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       498,498,527 |            11.5065 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       515,516,517 |             0.7483 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       505,505,506 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       505,505,506 |             0.4899 |
+
+## MERGING 44 LISTS ##
+Baseline (copy+sort) 1114
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       527,527,529 |             0.8000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       509,510,634 |            49.4344 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       516,517,576 |            23.8042 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       516,516,547 |            12.3061 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       509,509,539 |            11.9063 |
+
+## MERGING 45 LISTS ##
+Baseline (copy+sort) 1107
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       518,519,520 |             0.7483 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       521,522,658 |            53.5036 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       527,528,535 |             3.1875 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       527,528,528 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       538,539,592 |            21.4047 |
+
+## MERGING 46 LISTS ##
+Baseline (copy+sort) 1162
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       530,531,534 |             1.3565 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       542,542,567 |            10.0519 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       524,524,525 |             0.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       524,524,526 |             0.8000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       531,532,539 |             2.8705 |
+
+## MERGING 47 LISTS ##
+Baseline (copy+sort) 1161
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       552,554,554 |             0.8000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       541,543,642 |            39.8276 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       535,536,564 |            11.3066 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       535,535,544 |             3.5214 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       544,544,545 |             0.4000 |
+
+## MERGING 48 LISTS ##
+Baseline (copy+sort) 1226
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       545,547,547 |             0.8000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       555,555,556 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       562,564,568 |             1.9596 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       546,547,687 |            56.1013 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       552,553,584 |            12.4483 |
+
+## MERGING 49 LISTS ##
+Baseline (copy+sort) 1215
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       558,558,559 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       575,576,595 |             7.6785 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       567,568,569 |             0.7483 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       558,558,559 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       564,564,565 |             0.4000 |
+
+## MERGING 50 LISTS ##
+Baseline (copy+sort) 1267
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       580,580,594 |             5.4553 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       563,563,567 |             1.5492 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       572,572,573 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       563,564,567 |             1.3565 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       565,566,567 |             0.7483 |
+
+## MERGING 51 LISTS ##
+Baseline (copy+sort) 1260
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       591,592,592 |             0.4899 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       574,575,575 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       577,578,581 |             1.4697 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       582,583,585 |             1.1662 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       574,575,697 |            48.7221 |
+
+## MERGING 52 LISTS ##
+Baseline (copy+sort) 1317
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       595,596,597 |             0.8944 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       603,603,604 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       588,589,595 |             2.5768 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       586,587,597 |             4.0497 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       586,587,590 |             1.4697 |
+
+## MERGING 53 LISTS ##
+Baseline (copy+sort) 1309
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       597,599,600 |             1.0198 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       599,600,608 |             3.2619 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       598,598,655 |            22.7033 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       614,615,615 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       607,608,624 |             6.6151 |
+
+## MERGING 54 LISTS ##
+Baseline (copy+sort) 1379
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       609,610,611 |             0.6325 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       600,602,633 |            12.4354 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       601,601,608 |             3.4293 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       599,599,599 |             0.0000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       616,617,618 |             0.7483 |
+
+## MERGING 55 LISTS ##
+Baseline (copy+sort) 1369
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       608,609,644 |            13.6909 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       628,630,773 |            57.3292 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       612,613,640 |            10.7592 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       620,621,622 |             0.6325 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       612,613,675 |            24.2537 |
+
+## MERGING 56 LISTS ##
+Baseline (copy+sort) 1431
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       632,633,698 |            26.1029 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       623,625,659 |            13.9198 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       618,620,621 |             0.9798 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       623,624,637 |             5.1923 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       638,639,675 |            14.4139 |
+
+## MERGING 57 LISTS ##
+Baseline (copy+sort) 1412
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       651,653,676 |             9.6416 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       634,635,635 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       635,635,708 |            28.5979 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       643,644,712 |            27.4036 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       631,631,664 |            12.9522 |
+
+## MERGING 58 LISTS ##
+Baseline (copy+sort) 1478
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       639,639,640 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       639,670,679 |            14.4028 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       632,632,707 |            30.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       646,647,648 |             0.7483 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       654,680,719 |            23.6356 |
+
+## MERGING 59 LISTS ##
+Baseline (copy+sort) 1466
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       659,659,660 |             0.4899 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       643,645,686 |            16.7165 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       667,668,693 |            10.1272 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       651,682,726 |            32.1086 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       652,652,681 |            11.6000 |
+
+## MERGING 60 LISTS ##
+Baseline (copy+sort) 1534
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       679,680,744 |            26.6158 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       655,656,688 |            12.8156 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       663,664,664 |             0.4899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       664,664,693 |            11.6000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       672,672,746 |            31.3075 |
+
+## MERGING 61 LISTS ##
+Baseline (copy+sort) 1520
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       675,676,676 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       691,691,718 |            10.7070 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       667,668,712 |            17.7155 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       675,676,705 |            11.5412 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       683,684,734 |            20.1137 |
+
+## MERGING 62 LISTS ##
+Baseline (copy+sort) 1582
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       681,681,704 |             9.2000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       697,698,724 |            10.7070 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       688,688,782 |            37.1505 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       680,683,714 |            14.3304 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       670,673,716 |            19.0011 |
+
+## MERGING 63 LISTS ##
+Baseline (copy+sort) 1575
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       681,682,685 |             1.3565 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       693,697,842 |            57.1559 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       692,694,740 |            18.6269 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       709,710,711 |             0.7483 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       700,723,778 |            30.4473 |
+
+## MERGING 64 LISTS ##
+Baseline (copy+sort) 1629
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       705,705,734 |            11.3596 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       711,713,791 |            31.0200 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       705,706,708 |             0.9798 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       722,723,749 |            12.6649 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       693,693,696 |             1.1662 |
+
+## MERGING 65 LISTS ##
+Baseline (copy+sort) 1621
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       717,718,747 |            11.6172 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       706,706,707 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       734,735,741 |             2.5298 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       725,726,845 |            47.0123 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       718,720,723 |             1.8547 |
+
+## MERGING 66 LISTS ##
+Baseline (copy+sort) 1695
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       724,725,902 |            70.8028 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       741,742,813 |            28.6035 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       730,730,732 |             0.8000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       709,711,763 |            21.0238 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       723,724,733 |             3.6551 |
+
+## MERGING 67 LISTS ##
+Baseline (copy+sort) 1677
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       752,753,754 |             0.7483 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       736,737,765 |            11.2178 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       721,722,725 |             1.3565 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       742,742,746 |             1.5492 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       736,737,766 |            11.3737 |
+
+## MERGING 68 LISTS ##
+Baseline (copy+sort) 1738
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       766,766,768 |             0.8000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       754,755,755 |             0.4899 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |      732,734,1013 |           108.5899 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       748,749,749 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       748,748,750 |             0.8000 |
+
+## MERGING 69 LISTS ##
+Baseline (copy+sort) 1723
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       744,746,816 |            28.3097 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       766,767,767 |             0.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       761,761,764 |             1.1662 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       760,761,765 |             1.7436 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       778,779,804 |             9.9479 |
+
+## MERGING 70 LISTS ##
+Baseline (copy+sort) 1801
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       764,764,772 |             3.2000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       780,782,808 |            12.5443 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       745,746,754 |             3.2863 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       768,774,798 |            10.9069 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       763,765,774 |             4.4900 |
+
+## MERGING 71 LISTS ##
+Baseline (copy+sort) 1771
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       774,775,781 |             2.4819 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       792,793,845 |            20.7229 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       774,774,963 |            75.5010 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       755,756,763 |             3.0332 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       779,780,803 |             9.2390 |
+
+## MERGING 72 LISTS ##
+Baseline (copy+sort) 1836
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       786,789,795 |             3.2863 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       785,787,789 |             1.4967 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       766,767,800 |            13.1818 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       790,790,791 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       803,804,830 |            10.3460 |
+
+## MERGING 73 LISTS ##
+Baseline (copy+sort) 1822
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       813,815,826 |             4.6648 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       796,801,878 |            31.4617 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       796,800,806 |             4.2895 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       800,801,894 |            36.9400 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       776,777,784 |             2.8705 |
+
+## MERGING 74 LISTS ##
+Baseline (copy+sort) 1894
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       800,800,801 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       818,819,819 |             0.4899 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       804,804,805 |             0.4000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       799,800,875 |            30.0067 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       779,783,883 |            40.8392 |
+
+## MERGING 75 LISTS ##
+Baseline (copy+sort) 1875
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       829,831,835 |             2.2271 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       814,815,831 |             6.5422 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       810,812,823 |             4.7074 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       810,814,839 |            10.8185 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       789,790,882 |            36.2458 |
+
+## MERGING 76 LISTS ##
+Baseline (copy+sort) 1955
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       822,822,832 |             3.8781 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |      839,840,1068 |            91.0099 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       799,803,815 |             5.7061 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       821,821,831 |             3.9192 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       824,825,849 |             9.7077 |
+
+## MERGING 77 LISTS ##
+Baseline (copy+sort) 1927
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       831,831,832 |             0.4899 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       851,853,862 |             4.3174 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |      832,833,1072 |            93.7157 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       810,810,810 |             0.0000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       835,838,892 |            21.6481 |
+
+## MERGING 78 LISTS ##
+Baseline (copy+sort) 1994
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       813,814,821 |             3.0332 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       836,838,875 |            14.8674 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       840,841,850 |             3.7202 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       856,863,868 |             4.4091 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       836,837,837 |             0.4899 |
+
+## MERGING 79 LISTS ##
+Baseline (copy+sort) 1978
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       825,833,921 |            38.5933 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       847,851,865 |             6.4992 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       851,856,863 |             4.7582 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       867,867,868 |             0.4000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       848,866,934 |            31.5366 |
+
+## MERGING 80 LISTS ##
+Baseline (copy+sort) 2058
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       878,879,906 |            10.9069 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       858,915,947 |            35.3440 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       863,863,957 |            37.6000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       859,859,888 |            11.5065 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       836,837,849 |             4.9234 |
+
+## MERGING 81 LISTS ##
+Baseline (copy+sort) 2035
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       871,875,900 |            10.8185 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |      875,875,1006 |            51.7316 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       847,848,946 |            42.2422 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       890,893,945 |            21.3317 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       869,870,873 |             1.3565 |
+
+## MERGING 82 LISTS ##
+Baseline (copy+sort) 2117
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       876,877,880 |             1.4697 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       895,897,904 |             3.0984 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       876,877,919 |            16.7690 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       852,853,922 |            27.8036 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       880,881,984 |            40.3851 |
+
+## MERGING 83 LISTS ##
+Baseline (copy+sort) 2084
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |      864,865,1099 |            93.8011 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       892,893,967 |            31.4681 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       889,889,983 |            38.9338 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       909,910,927 |             6.9109 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       889,890,890 |             0.4899 |
+
+## MERGING 84 LISTS ##
+Baseline (copy+sort) 2165
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       901,902,902 |             0.4000 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |      923,938,1010 |            32.3073 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       906,907,915 |             3.4293 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |      902,903,1303 |           157.7915 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       877,877,912 |            16.4390 |
+
+## MERGING 85 LISTS ##
+Baseline (copy+sort) 2142
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |       936,939,997 |            23.8378 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       915,916,919 |             1.6248 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       890,890,892 |             0.8000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       915,915,918 |             1.2000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       917,920,939 |             8.0747 |
+
+## MERGING 86 LISTS ##
+Baseline (copy+sort) 2221
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |       952,963,999 |            17.2348 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |      976,978,1158 |            70.7344 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |      930,933,1068 |            54.0999 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |       959,960,981 |             8.4238 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |      953,953,1049 |            38.1177 |
+
+## MERGING 87 LISTS ##
+Baseline (copy+sort) 2182
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1001,1001,1003 |             0.8000 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |      978,978,1035 |            22.6133 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |       955,956,960 |             1.7205 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |       977,978,978 |             0.4899 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |      984,985,1042 |            22.9033 |
+
+## MERGING 88 LISTS ##
+Baseline (copy+sort) 2261
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1026,1027,1034 |             2.9933 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1001,1002,1012 |             4.2237 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |     985,1000,1260 |           105.8176 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1002,1003,1102 |            39.6051 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1009,1011,1115 |            41.9066 |
+
+## MERGING 89 LISTS ##
+Baseline (copy+sort) 2236
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1026,1029,1041 |             5.5353 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1034,1036,1045 |             3.9294 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1051,1052,1147 |            37.8238 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1027,1028,1052 |             9.8102 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1007,1065,1139 |            54.9385 |
+
+## MERGING 90 LISTS ##
+Baseline (copy+sort) 2322
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1074,1075,1143 |            30.9361 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1087,1089,1157 |            27.0081 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1062,1063,1072 |             3.6551 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1045,1047,1047 |             0.8000 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1060,1061,1065 |             2.1541 |
+
+## MERGING 91 LISTS ##
+Baseline (copy+sort) 2286
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1085,1087,1090 |             1.7205 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1099,1100,1155 |            21.8412 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1111,1118,1145 |            13.8477 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1071,1074,1099 |            10.2567 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1084,1084,1087 |             1.2000 |
+
+## MERGING 92 LISTS ##
+Baseline (copy+sort) 2366
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1126,1126,1232 |            41.6461 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1134,1136,1138 |             1.3266 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1108,1110,1127 |             7.1386 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1107,1108,1109 |             0.7483 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1098,1100,1154 |            23.2517 |
+
+## MERGING 93 LISTS ##
+Baseline (copy+sort) 2338
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1133,1134,1181 |            19.1144 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1161,1162,1301 |            55.8018 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1123,1124,1159 |            14.8674 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1131,1132,1132 |             0.4000 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1150,1155,1265 |            54.9742 |
+
+## MERGING 94 LISTS ##
+Baseline (copy+sort) 2418
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1196,1197,1201 |             1.7436 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1168,1169,1186 |             7.0143 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1167,1170,1190 |             8.6116 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1164,1169,1182 |             6.2738 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1191,1193,1216 |            11.7745 |
+
+## MERGING 95 LISTS ##
+Baseline (copy+sort) 2398
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1218,1221,1227 |             3.3823 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1192,1197,1216 |             8.6394 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1223,1224,1245 |             8.4711 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1191,1193,1457 |           105.9064 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1192,1194,1200 |             3.4409 |
+
+## MERGING 96 LISTS ##
+Baseline (copy+sort) 2486
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1216,1220,1325 |            41.4873 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1242,1243,1266 |             9.0465 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1213,1214,1331 |            46.8128 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1247,1250,1386 |            53.0713 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1218,1219,1263 |            18.3804 |
+
+## MERGING 97 LISTS ##
+Baseline (copy+sort) 2455
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1274,1275,1300 |            10.1272 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1245,1245,1375 |            50.7291 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1239,1239,1369 |            51.9014 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1270,1271,1340 |            33.7248 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1240,1242,1256 |             5.8447 |
+
+## MERGING 98 LISTS ##
+Baseline (copy+sort) 2535
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1286,1289,1302 |             5.7758 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1277,1277,1330 |            20.5563 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1313,1319,1556 |            94.2478 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1271,1273,1323 |            20.1832 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1309,1310,1310 |             0.4899 |
+
+## MERGING 99 LISTS ##
+Baseline (copy+sort) 2498
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1335,1343,1463 |            49.2301 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1294,1296,1300 |             2.0396 |
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1338,1339,1348 |             4.5166 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1311,1315,1316 |             2.3152 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1302,1326,1474 |            78.8355 |
+
+## MERGING 100 LISTS ##
+Baseline (copy+sort) 2590
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Heap 4ary Branchless Parallel (Oz)       | true    |      ? |    1365,1366,1371 |             2.2804 |
+Heap 4ary Branchless Parallel (O3)       | true    |      ? |    1318,1321,1325 |             2.7857 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1339,1341,1393 |            21.0523 |
+Heap 4ary Branchless Parallel (O1)       | true    |      ? |    1360,1388,2402 |           402.9988 |
+Heap 4ary Branchless Parallel (O2)       | true    |      ? |    1325,1335,1442 |            45.3370 |
