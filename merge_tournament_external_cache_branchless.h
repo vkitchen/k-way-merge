@@ -49,3 +49,11 @@ class MergeTournamentExternalCacheBranchlessOz : public Merge {
 		}
 		bool merge(struct test *t, int n) override;
 };
+
+class MergeTournamentExternalCacheBranchlessO3Gcc : public Merge {
+	public:
+		MergeTournamentExternalCacheBranchlessO3Gcc() {
+			name = "Tournament External Cache Branchless (O3, GCC)";
+		}
+		bool merge(struct test *t, int n) override;
+};

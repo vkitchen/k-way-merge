@@ -148,6 +148,7 @@ SRC = \
 	merge_tournament_external_cache_branchless_O3.cpp \
 	merge_tournament_external_cache_branchless_Os.cpp \
 	merge_tournament_external_cache_branchless_Oz.cpp \
+	merge_tournament_external_cache_branchless_O3_gcc.cpp \
 	merge_tournament_4ary_O1.cpp \
 	merge_tournament_4ary_O2.cpp \
 	merge_tournament_4ary_O3.cpp \
@@ -358,6 +359,9 @@ merge_tournament_external_cache_branchless_Os.o: merge_tournament_external_cache
 
 merge_tournament_external_cache_branchless_Oz.o: merge_tournament_external_cache_branchless_Oz.cpp
 	$(CXX) $(CFLAGS) -Oz -c $<
+
+merge_tournament_external_cache_branchless_O3_gcc.o: merge_tournament_external_cache_branchless_O3_gcc.cpp
+	g++ $(CFLAGS) -O3 -c $<
 
 merge_tournament_4ary_O1.o: merge_tournament_4ary_O1.cpp
 	$(CXX) $(CFLAGS) -O1 -c $<

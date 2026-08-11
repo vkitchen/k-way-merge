@@ -276,6 +276,7 @@ Merge *functions[] = {
 //	new MergeTournamentExternalCacheBranchlessO3,
 //	new MergeTournamentExternalCacheBranchlessOs,
 //	new MergeTournamentExternalCacheBranchlessOz,
+//	new MergeTournamentExternalCacheBranchlessO3Gcc,
 //
 //	new MergeTournament4aryO1,
 //	new MergeTournament4aryO2,
