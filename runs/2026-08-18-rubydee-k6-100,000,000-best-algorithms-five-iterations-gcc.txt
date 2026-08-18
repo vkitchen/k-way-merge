@@ -1,0 +1,58 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 7
+TEST_TYPE random
+SEED 1787031959
+MEMORY 4.47035 GiB
+
+Init: 16880
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8311
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |       575,576,576 |             0.4899 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1333,1334,1339 |             2.2450 |
+Baseline (copy+sort)                     | true    |      0 |    7996,8011,8012 |             7.2829 |
+Tournament External Cache Branchless (O3) | true    |      ? |    2074,2075,2094 |             7.6577 |
+Find Branchless Cache (O2)               | true    |      ? |    1380,1381,1382 |             0.7483 |
+Insert Cache Pair (O1)                   | true    |      ? |    2104,2106,2107 |             1.2000 |
+State Machine Var (O3)                   | true    |      ? |    1556,1556,1557 |             0.4899 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12480
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache (O2)               | true    |      ? |    1898,1898,1899 |             0.4899 |
+State Machine Var (O3)                   | true    |      ? |    2375,2377,2378 |             1.2000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    1784,1784,1785 |             0.4000 |
+Insert Cache Pair (O1)                   | true    |      ? |    3088,3089,3090 |             0.7483 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |    1370,1370,1371 |             0.4000 |
+Baseline (copy+sort)                     | true    |      0 | 12373,12378,12387 |             5.1923 |
+Tournament External Cache Branchless (O3) | true    |      ? |    2436,2437,2442 |             2.2450 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13291
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+State Machine Var (O3)                   | true    |      ? |    3319,3320,3321 |             0.7483 |
+Find Branchless Cache (O2)               | true    |      ? |    2541,2543,2544 |             1.0198 |
+Baseline (copy+sort)                     | true    |      0 | 13171,13176,13182 |             3.7630 |
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |    1114,1115,1115 |             0.4000 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    2258,2258,2261 |             1.2649 |
+Insert Cache Pair (O1)                   | true    |      ? |    4118,4120,4121 |             1.1662 |
+Tournament External Cache Branchless (O3) | true    |      ? |    4010,4013,4014 |             1.6248 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 17794
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Bubble Branchless Cache Manually Unrolled (O3) | true    |      ? |    1681,1681,1683 |             0.8000 |
+Baseline (copy+sort)                     | true    |      0 | 17680,17684,17691 |             4.0200 |
+Insert Cache Pair (O1)                   | true    |      ? |    5171,5173,5176 |             1.6733 |
+Heap 4ary Branchless Parallel (Os)       | true    |      ? |    5088,5098,5234 |            55.4891 |
+State Machine Var (O3)                   | true    |      ? |    4830,4833,4835 |             1.7205 |
+Tournament External Cache Branchless (O3) | true    |      ? |    4510,4511,4513 |             0.9798 |
+Find Branchless Cache (O2)               | true    |      ? |    3256,3259,3441 |            72.9257 |
