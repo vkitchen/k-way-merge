@@ -1,0 +1,50 @@
+COMPILER_VERSION 16.1.0
+ARRAY_LENGTH 100000000
+ARRAY_COUNT 6
+ITER_COUNT 5
+NUM_TESTS 5
+TEST_TYPE random
+SEED 1787021648
+MEMORY 4.47035 GiB
+
+Init: 17079
+
+## MERGING 3 LISTS ##
+Baseline (copy+sort) 8465
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    1969,1974,1981 |             4.7582 |
+Find SIMD                                | true    |      ? |    3761,3766,3773 |             4.2615 |
+Find Cache                               | true    |      ? |    1977,1983,1985 |             3.2619 |
+Find                                     | true    |      ? |    2012,2018,2021 |             3.1369 |
+Find Branchless Cache                    | true    |      ? |    1432,1435,1439 |             2.2271 |
+
+## MERGING 4 LISTS ##
+Baseline (copy+sort) 12934
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Branchless Cache                    | true    |      ? |    2035,2037,2046 |             3.9294 |
+Find Pair                                | true    |      ? |    3034,3047,3056 |             7.2553 |
+Find Cache                               | true    |      ? |    3016,3019,3026 |             3.7736 |
+Find                                     | true    |      ? |    3171,3177,3188 |             5.6569 |
+Find SIMD                                | true    |      ? |    4973,4979,4980 |             2.7276 |
+
+## MERGING 5 LISTS ##
+Baseline (copy+sort) 13533
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Pair                                | true    |      ? |    4157,4165,4177 |             7.2222 |
+Find SIMD                                | true    |      ? |    6012,6019,6025 |             4.6733 |
+Find Branchless Cache                    | true    |      ? |    2687,2690,2695 |             3.4059 |
+Find Cache                               | true    |      ? |    4166,4198,4199 |            12.6712 |
+Find                                     | true    |      ? |    4500,4526,4549 |            18.9251 |
+
+## MERGING 6 LISTS ##
+Baseline (copy+sort) 17954
+Name                                     | Success | Init   | Min, Med, Max     | Standard Deviation | Error Msg
+----------------------------------------------------------------------------------------------------------------
+Find Cache                               | true    |      ? |    5388,5396,5403 |             4.8580 |
+Find Pair                                | true    |      ? |    5369,5375,5385 |             5.2688 |
+Find SIMD                                | true    |      ? |    7034,7037,7051 |             6.3435 |
+Find                                     | true    |      ? |    5928,5977,5995 |            22.6186 |
+Find Branchless Cache                    | true    |      ? |    3465,3470,3480 |             5.1614 |
